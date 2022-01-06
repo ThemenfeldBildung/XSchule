@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="xschule"
+           version="0.1"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:include schemaLocation="xschule-basisdatentypen.xsd"/>
+   <xs:include schemaLocation="xschule-baukasten.xsd"/>
+   <xs:include schemaLocation="xschule-nachweise.xsd"/>
+</xs:schema>

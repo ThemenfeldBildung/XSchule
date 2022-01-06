@@ -1,0 +1,3509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsc="xschule"
+           xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+           xmlns:xikomm="http://www.osci.de/xinneres/kommunikation/3"
+           xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+           xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+           targetNamespace="xschule"
+           version="0.1"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:appinfo>
+         <standard>
+            <nameLang>XSchule</nameLang>
+            <nameKurz>XSchule</nameKurz>
+            <nameTechnisch>xschule</nameTechnisch>
+            <kennung>urn:xoev-de:xschule-digital:def:standard:xschule</kennung>
+            <beschreibung>XSchule</beschreibung>
+         </standard>
+         <versionStandard>
+            <version>0.1</version>
+            <versionXOEVProfil>1.7.2</versionXOEVProfil>
+            <versionXOEVHandbuch>2.3</versionXOEVHandbuch>
+            <versionXGenerator>3.0.1</versionXGenerator>
+            <versionModellierungswerkzeug>19.0</versionModellierungswerkzeug>
+            <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+         </versionStandard>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:include schemaLocation="xschule-basisdatentypen.xsd"/>
+   <xs:import schemaLocation="http://www.osci.de/xinneres/kommunikation/3/xinneres-kommunikation.xsd"
+              namespace="http://www.osci.de/xinneres/kommunikation/3"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.8/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.8/xsd"/>
+   <xs:import schemaLocation="http://xoev.de/DIN-SPEC-91379/2019-03/datatypes/din-91379-datatypes.xsd"
+              namespace="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
+   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
+              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
+   <xs:import schemaLocation="http://xoev.de/latinchars/1_1/datatypes/latinchars.xsd"
+              namespace="http://xoev.de/latinchars/1_1/datatypes"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
+              namespace="http://xoev.de/schemata/code/1_0"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
+              namespace="http://xoev.de/schemata/code/1_0"/>
+   <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
+              namespace="http://xoev.de/schemata/code/1_0"/>
+   <xs:complexType name="ArtDerHZB">
+      <xs:annotation>
+         <xs:documentation>Gibt die Art der Hochschulzugangsberechtigung an. Bsp. http://www.xbildung.de/def/xbildung/0.7/code/ArtDerHZB/03 für die allg. Hochschulzulassung am Gymnasium.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="artDerHZB" minOccurs="0" type="xbd:Code.ArtDerHZB">
+            <xs:annotation>
+               <xs:documentation>Gibt die Art der Hochschulzugangsberechtigung an. Bsp. http://www.xbildung.de/def/xbildung/0.7/code/ArtDerHZB/03 für die allg. Hochschulzulassung am Gymnasium.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Bemerkung">
+      <xs:annotation>
+         <xs:documentation>Der Wert Bemerkung beinhaltet Angaben zu weiterführenden Lernen bzw. Engagement mit direktem Schulbezug, die aber nicht einzelnen Fächern zuegordnet sind. Darunter fallen können etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder Schülerwettbewerben. Bsp. "Teilnahme an Jugend Forscht".</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="bemerkungen" minOccurs="0" type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Der Wert Bemerkung beinhaltet Angaben zu weiterführenden Lernen bzw. Engagement mit direktem Schulbezug, die aber nicht einzelnen Fächern zuegordnet sind. Darunter fallen können etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder Schülerwettbewerben. Bsp. "Teilnahme an Jugend Forscht"</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="artDerBemerkung"
+                     minOccurs="0"
+                     type="xsc:Code.ArtDerBemerkung">
+            <xs:annotation>
+               <xs:documentation>Die Art der Bemerkung beinhaltet Angaben zu weiterführenden Lernen bzw. Engagement mit direktem Schulbezug, die aber nicht einzelnen Fächern zuegordnet sind. Darunter fallen können etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder Schülerwettbewerben. Bsp. "Teilnahme an Jugend Forscht"</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="BesuchteSchule">
+      <xs:annotation>
+         <xs:documentation>Die Klasse Schule enthält für Bildungseinrichtungen entlang der Lebenslage Schule, Hochschule, berufliche Aus- und Weiterbildung allgemeine Angaben zu Organisationen, die einen Bildungsnachweis ausstellen. Eurovoc-Term: http://publications.europa.eu/resource/authority/eurovoc/873</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Bildungseinrichtung">
+            <xs:sequence>
+               <xs:element name="schule"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xsc:SchuleStammdaten">
+                  <xs:annotation>
+                     <xs:documentation>Die Kontaktmöglichkeit fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="zeitraum" type="xbd:Zeitraum">
+                  <xs:annotation>
+                     <xs:documentation>Der Wert Ende gibt Aufschluss über das Ende der Belegung einer Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerBemerkung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerBemerkung</nameLang>
+               <nameKurz>ArtDerBemerkung</nameKurz>
+               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:artderbemerkung</kennung>
+               <beschreibung>Die Art der Bemerkung gibt an ob es sich um standardisierte Bemerkungen handelt, oder nicht.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Art der Bemerkung gibt an, ob es sich um eine standardisierte Bemerkung handelt, oder aber um eine frei verfasste Art.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Arten der Bemerkungen an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:ArtDerBemerkung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:artderbemerkung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.ArtDerEinschulung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerEinschulung</nameLang>
+               <nameKurz>ArtDerEinschulung</nameKurz>
+               <nameTechnisch>ArtDerEinschulung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:artdereinschulung</kennung>
+               <beschreibung>Die Art der Einschulung gibt an wie der Schüler eingeschult wurde.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Arten der Einschulung an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:ArtDerEinschulung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:artdereinschulung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Auskunftssperre">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Auskunftssperre</nameLang>
+               <nameKurz>Auskunftssperre</nameKurz>
+               <nameTechnisch>Auskunftssperre-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:auskunftssperre</kennung>
+               <beschreibung>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12 führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“). In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert). Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre
+nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12
+führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“).
+
+In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert).
+
+Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein
+bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Arten der Auskunftssperre an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Auskunftssperre-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:auskunftssperre"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.BewertungsschemaAbitur">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Bewertungsschema</nameLang>
+               <nameKurz>Bewertungsschema</nameKurz>
+               <nameTechnisch>Bewertungsschema-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:kmk:codeliste:bewertungsschema</kennung>
+               <beschreibung>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt das Bewertungsschema an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Bewertungsschema-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:kmk:codeliste:bewertungsschema"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Bildungsgang">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Bildungsgang</nameLang>
+               <nameKurz>Bildungsgang</nameKurz>
+               <nameTechnisch>Bildungsgang-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:bildungsgang</kennung>
+               <beschreibung>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Art des Bildungsgänge an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Bildungsgang-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:bildungsgang"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.BrancheDesUnternehmens">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>BrancheDesUnternehmens</nameLang>
+               <nameKurz>BrancheDesUnternehmens</nameKurz>
+               <nameTechnisch>BrancheDesUnternehmens-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:branchedesunternehmens</kennung>
+               <beschreibung>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Branche des Unternehmens der reisenden Eltern an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xsc:BrancheDesUnternehmens-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:branchedesunternehmens"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Faecherliste">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Faecherliste</nameLang>
+               <nameKurz>Faecherliste</nameKurz>
+               <nameTechnisch>Faecherliste-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:kmk:codeliste:faecherliste</kennung>
+               <beschreibung>Die Codeliste bildet die gegenseitig anerkannten angebotenen , länderspezifischen Fächer in der Abiturprüfung ab.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Codeliste bildet die gegenseitig anerkannten angebotenen , länderspezifischen Fächer in der Abiturprüfung ab. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Liste der Fächer an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Faecherliste-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:kmk:codeliste:faecherliste"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Halbjahr">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Halbjahr</nameLang>
+               <nameKurz>Halbjahr</nameKurz>
+               <nameTechnisch>Halbjahr-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:halbjahr</kennung>
+               <beschreibung>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden oder sich über das ganze Jahr überstrecken.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt das Halbjahr an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Halbjahr-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:halbjahr"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Impfstatus">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Impfstatus</nameLang>
+               <nameKurz>Impfstatus</nameKurz>
+               <nameTechnisch>Impfstatus-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:impfstatus</kennung>
+               <beschreibung>Hier können Angaben über den Impfschutz von Schüler:innen gemacht werden. Mit dem Impfstatus wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Mit dem Impfstatus wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt den Impfstatus an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Impfstatus-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:impfstatus"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Klassenstufe">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Klassenstufe</nameLang>
+               <nameKurz>Klassenstufe</nameKurz>
+               <nameTechnisch>Klassenstufe-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:klassenstufe</kennung>
+               <beschreibung>Die Angabe KlassenstufeBeginn gibt Aufschluss über das Einsetzen der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Angabe KlassenstufeBeginn gibt Aufschluss über das Einsetzen der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Klassenstufe an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Klassenstufe-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:klassenstufe"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Krankheit">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Krankheit</nameLang>
+               <nameKurz>Krankheit</nameKurz>
+               <nameTechnisch>Krankheit-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:krankheit</kennung>
+               <beschreibung>Liste von Krankheiten, zu denen ein Impfstatus erhoben wird.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Liste von Krankheiten, zu denen ein Impfstatus erhoben wird.	</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Krankheit an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Krankheit-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:krankheit"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Kursart">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Kursart</nameLang>
+               <nameKurz>Kursart</nameKurz>
+               <nameTechnisch>Kursart-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:kursart</kennung>
+               <beschreibung>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Kursart an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Kursart-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:kursart"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Nachpruefung">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Nachpruefung</nameLang>
+               <nameKurz>Nachpruefung</nameKurz>
+               <nameTechnisch>Nachpruefung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:nachpruefung</kennung>
+               <beschreibung>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angaben zur Nachprüfung. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Arten der Nachpruefung an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Nachpruefung-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:nachpruefung"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Nachweisperiode">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Nachweisperiode</nameLang>
+               <nameKurz>Nachweisperiode</nameKurz>
+               <nameTechnisch>Nachweisperiode-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:nachweisperiode</kennung>
+               <beschreibung>Die Nachweisperiode gibt an um welchen Zeitraum es sich handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die "nachweisperiode" beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Nachweisperiode an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Nachweisperiode-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:nachweisperiode"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Schulprofil">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Schulprofil</nameLang>
+               <nameKurz>Schulprofil</nameKurz>
+               <nameTechnisch>Schulprofil-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:schulprofil</kennung>
+               <beschreibung>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt das Schulprofil an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Schulprofil-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:schulprofil"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.TeilnahmeGemeinsamerUnterricht">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>TeilnahmeGemeinsamerUnterricht</nameLang>
+               <nameKurz>TeilnahmeGemeinsamerUnterricht</nameKurz>
+               <nameTechnisch>TeilnahmeGemeinsamerUnterricht-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamererunterricht</kennung>
+               <beschreibung>Teilnahme am gemeinsamen Unterricht.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Gibt um welche Art derTeilnahme am gemeinsamen Unterricht es sich handelt.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Gibt um welche Art derTeilnahme am gemeinsamen Unterricht es sich handelt.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xsc:TeilnahmeGemeinsamerUnterricht-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamererunterricht"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Unterrichtsteilnahme">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Unterrichtsteilnahme</nameLang>
+               <nameKurz>Unterrichtsteilnahme</nameKurz>
+               <nameTechnisch>Unterrichtsteilnahme-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:unterrichtsteilnahme</kennung>
+               <beschreibung>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Art der Teilnahme am Unterricht an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code"
+                           form="unqualified"
+                           type="xsc:Unterrichtsteilnahme-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:unterrichtsteilnahme"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Versetzungstyp">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Versetzungstyp</nameLang>
+               <nameKurz>Versetzungstyp</nameKurz>
+               <nameTechnisch>Versetzungstyp-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:versetzungstyp</kennung>
+               <beschreibung>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt den Versetzungstyp an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Versetzungstyp-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:versetzungstyp"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Zeugnisart">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Zeugnisart</nameLang>
+               <nameKurz>Zeugnisart</nameKurz>
+               <nameTechnisch>Zeugnisart-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:zeugnisart</kennung>
+               <beschreibung>Die Art des Zeugnisse gibt an um welche Zeugnisart es sich handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+            <genutzteCodeSpalte>code</genutzteCodeSpalte>
+         </xs:appinfo>
+         <xs:documentation>Diese Liste gibt die Art des Zeugnisses an.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" form="unqualified" type="xsc:Zeugnisart-Codes"/>
+            </xs:sequence>
+            <xs:attribute name="listURI"
+                          type="xs:anyURI"
+                          use="optional"
+                          fixed="urn:xschule-digital:xschule:codeliste:zeugnisart"/>
+            <xs:attribute name="listVersionID"
+                          type="xs:normalizedString"
+                          use="optional"
+                          fixed="0.1"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Einschulung">
+      <xs:annotation>
+         <xs:documentation>Hier können Angaben zur erstmaligen Aufnahme eines Kindes in die Schullaufbahn gemacht werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="eintrittsdatum" minOccurs="0" type="xs:date"/>
+         <xs:element name="artDerEinschulung"
+                     minOccurs="0"
+                     type="xsc:Code.ArtDerEinschulung"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Fremdsprache">
+      <xs:annotation>
+         <xs:documentation>Der Wert Fremdsprache fasst die Angaben zu den Sprachen die abgelegt wurden zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="bezeichnung" type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Die Bezeichnung gibt Aufschluss über den Namen der Sprache, die abgelegt wurde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="beginn" type="xsc:Code.Klassenstufe">
+            <xs:annotation>
+               <xs:documentation>Die Wert Beginn gibt Aufschluss über den Anfang der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ende" type="xsc:Code.Klassenstufe">
+            <xs:annotation>
+               <xs:documentation>Der Wert Ende gibt Aufschluss über das Ende der Belegung einer Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ger" type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Für die modernen Fremdsprachen schließt dieses Zeugnis Kompetenzen des Gemeinsamen europäischen Referenzrahmens für Sprachen (GeR) ein.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Impfung">
+      <xs:annotation>
+         <xs:documentation>Hier können Angaben über den Impfschutz von Schüler:innen gemacht werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="impfstatus" type="xsc:Code.Impfstatus">
+            <xs:annotation>
+               <xs:documentation>Mit dem Impfstatus wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="krankheit" type="xsc:Code.Krankheit">
+            <xs:annotation>
+               <xs:documentation>Liste von Krankheiten, zu denen ein Impfstatus erhoben wird.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Nachrichtenkopf">
+      <xs:annotation>
+         <xs:documentation>Dieser Datentyp führt die technischen Inhalte zur Nachrichtenübermittlung im Schulkontext zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="sender" type="xoev-lc:String.Latin">
+            <xs:annotation>
+               <xs:documentation>In diesem Element wird der Sender des Nachweises übermittelt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="empfaenger" type="xoev-lc:String.Latin">
+            <xs:annotation>
+               <xs:documentation>In diesem Element wird der Empfänger des Nachweises übermittelt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="erstellungszeitpunkt" type="xs:dateTime" use="required">
+         <xs:annotation>
+            <xs:documentation>In diesem Attribut wird der Erstellungszeitpunkt der Nachricht dokumentiert.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+   </xs:complexType>
+   <xs:complexType name="Pruefungsergebnis">
+      <xs:annotation>
+         <xs:documentation>Die Klasse Prüfungsergebnis fasst die Angaben zur den bei der Abiturprüfung abgelegten Prüfungen zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="fach" type="xsc:Code.Faecherliste">
+            <xs:annotation>
+               <xs:documentation>Das Fach des Prüfungsergebnisses beschreibt den Namen des Faches in der die Abiturprüfung abgelegt wurde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="artDerPruefung" type="xbd:Code.ArtDerPruefung">
+            <xs:annotation>
+               <xs:documentation>Die Art der Prüfung kann verschiedene Ausprägungen haben. Bspw. kann angebenden werden, ob es sich um eine schriftlich oder mündlich abgelegte Prüfung handelt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="note" type="xbd:Benotung">
+            <xs:annotation>
+               <xs:documentation>Die Benotungen der jeweiligen Prüfungen werden als ganzzahlige Werte abgebildet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="nachpruefung" type="xsc:Code.Nachpruefung">
+            <xs:annotation>
+               <xs:documentation>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Qualifikation">
+      <xs:annotation>
+         <xs:documentation>Die Klasse Qualifikation fasst die erreichte Gesamtpunktzahl und die ermittelte Durchschnittsnote zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="gesamtpunktzahl" minOccurs="0" type="xbd:Benotung">
+            <xs:annotation>
+               <xs:documentation>Angaben zur erreichten Gesamtpunktzahl aus allen erbrachten Leistungen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="durchschnittsnote" type="xbd:Benotung">
+            <xs:annotation>
+               <xs:documentation>Angaben zu der ermittelten Durchschnittsnote aus allen erbrachten Leistungen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Schueler">
+      <xs:annotation>
+         <xs:documentation>Der Schüler ist eine natürliche Person welche ein Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) wahrgenommen hat und auf die ein Bildungsnachweis (z.B. Zeugnis) ausgestellt wurde.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Lernender">
+            <xs:sequence>
+               <xs:element name="kontaktmoeglichkeit"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xbd:Kommunikation">
+                  <xs:annotation>
+                     <xs:documentation>Die Kontaktmöglichkeit fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="herkunftssprache"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xbd:Code.Language">
+                  <xs:annotation>
+                     <xs:documentation>Hier wird die Sprache angegeben, die eine Person als erstes erworben hat. In der Regel handelt es sich um die Sprache des Herkunftslandes.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="verkehrssprache"
+                           maxOccurs="unbounded"
+                           type="xbd:Code.Language">
+                  <xs:annotation>
+                     <xs:documentation>Hier wird die Sprache angegeben, die vorrangig im Haushalt des Kindes gesprochen wird.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="auskunftssperre" minOccurs="0" type="xbd:Code.Language">
+                  <xs:annotation>
+                     <xs:documentation>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12 führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“). In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert). Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SchuelerReisender">
+      <xs:annotation>
+         <xs:documentation>Hier werden Angaben zu Schüler:innen gemacht, die sich aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen befinden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="kindBeruflichReisender" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation>Angabe, ob ein Lernender in die Kategorie "Kind beruflich Reisender" fällt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="reiseMitUnternehmenName"
+                     minOccurs="0"
+                     type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Hier kann der Name des Unternehmens angegeben werden, mit welchem sich ein Kind auf Reisen befindet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="reiseUnternehmenBranche"
+                     minOccurs="0"
+                     type="xsc:Code.BrancheDesUnternehmens">
+            <xs:annotation>
+               <xs:documentation>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="stammschule" minOccurs="0" type="xsc:SchuleStammdaten">
+            <xs:annotation>
+               <xs:documentation>Hier können Angaben zu einer Schule gemacht werden, der ein Kind beruflich Reisender primär zugeordnet ist. Die Stammschule ist die Schule, an der die Kinder während der reisefreien Zeit über einen längeren Zeitraum verweilen. In der Regel ist dies eine Schule am Hauptwohnsitz oder am Winterstandort der beruflich reisenden Familie.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SchuleStammdaten">
+      <xs:annotation>
+         <xs:documentation>Die Klasse Schule enthält für Bildungseinrichtungen entlang der Lebenslage Schule, Hochschule, berufliche Aus- und Weiterbildung allgemeine Angaben zu Organisationen, die einen Bildungsnachweis ausstellen. Eurovoc-Term: http://publications.europa.eu/resource/authority/eurovoc/873</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Bildungseinrichtung">
+            <xs:sequence>
+               <xs:element name="erreichbarkeit"
+                           maxOccurs="unbounded"
+                           type="xbd:Kommunikation">
+                  <xs:annotation>
+                     <xs:documentation>Die Kontaktmöglichkeit fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="aufnehmendeSchuleBekannt" minOccurs="0" type="xs:boolean">
+                  <xs:annotation>
+                     <xs:documentation>Gibt an, ob aus Sicht eines Datensatzes einer abgebenden Schule bekannt ist, welches die aufnehmende Schule ist.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="schulform" minOccurs="0" type="xbd:Code.ArtDerSchule">
+                  <xs:annotation>
+                     <xs:documentation>Art der Bildungseinrichtung (Schulen) gemäß Kultusministerkonferenz vom 15.12.2011.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="schulprofil" minOccurs="0" type="xsc:Code.Schulprofil">
+                  <xs:annotation>
+                     <xs:documentation>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="bildungsgang"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xsc:Code.Bildungsgang">
+                  <xs:annotation>
+                     <xs:documentation>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SchulformspezifischeZusatzdaten">
+      <xs:annotation>
+         <xs:documentation>Angaben zu schulformspezifischen Zusatzdaten.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="schulbesuchsjahreInSchuleingangsphase"
+                     minOccurs="0"
+                     type="xs:integer">
+            <xs:annotation>
+               <xs:documentation>Schulbesuchsjahre innerhalb der Schuleingangsphase</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="teilnahmeGemeinsamerUnterricht"
+                     minOccurs="0"
+                     type="xsc:Code.TeilnahmeGemeinsamerUnterricht"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Schuljahrgang">
+      <xs:annotation>
+         <xs:documentation>ier können Angaben zur Jahrgangsstufe eines Kindes gemacht werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="zeitraum" minOccurs="0" type="xbd:Zeitraum"/>
+         <xs:element name="verweildauer" minOccurs="0" type="xs:integer"/>
+         <xs:element name="versetzungstyp" minOccurs="0" type="xsc:Code.Versetzungstyp"/>
+         <xs:element name="teilnahmeAmGanztagsangebot" minOccurs="0" type="xs:boolean">
+            <xs:annotation>
+               <xs:documentation>Hier kann angegeben werden, ob ein Kind an einem Ganztagesangebot teilgenommen hat oder nicht.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Schulkurs">
+      <xs:annotation>
+         <xs:documentation>Der Wert Leistung fasst die erbrachten Leistungen der Lernenden eines bestimmten Bildungsabschlusses zusammen.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Kurs">
+            <xs:sequence>
+               <xs:element name="bereich" minOccurs="0" type="dinspec91379:datatypeC">
+                  <xs:annotation>
+                     <xs:documentation>Die Pflicht- und Wahlfächer umfassen - das sprachlich-literarisch-künstlerische Aufgabenfeld - das gesellschaftswissenschaftliche Aufgabenfeld - das mathematisch-naturwissenschaftlich-technische Aufgabenfeld - Religionslehre bzw. ein Ersatzfach - Sport. Für den Unterricht in Religionslehre bzw. im Ersatzfach gelten jeweils die Bestimmungen der Länder. Quelle: https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="fach"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xsc:Code.Faecherliste">
+                  <xs:annotation>
+                     <xs:documentation>Der Schlüsselwert der Leistung.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="berechnungsgrundlage"
+                           minOccurs="0"
+                           type="dinspec91379:datatypeC">
+                  <xs:annotation>
+                     <xs:documentation>Die Berechnungsgrundlage nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="kursart" type="xsc:Code.Kursart">
+                  <xs:annotation>
+                     <xs:documentation>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="bewertungsschemaAbitur"
+                           minOccurs="0"
+                           type="xbd:Code.Bewertungsschema">
+                  <xs:annotation>
+                     <xs:documentation>Die Berechnungsgrundlage nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="halbjahr" type="xsc:Code.Halbjahr">
+                  <xs:annotation>
+                     <xs:documentation>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SorgeberechtigteOrganisation">
+      <xs:annotation>
+         <xs:documentation>Hier kann der Name einer Organisation angegeben werden, die für das Kind sorgeberechtigt ist. Dies kann beispielsweise das Jugendamt sein.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Sorgeberechtigter">
+            <xs:sequence>
+               <xs:element name="NameSorgeberechigteOrganisation"
+                           minOccurs="0"
+                           type="dinspec91379:datatypeC"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Sorgeberechtigter">
+      <xs:annotation>
+         <xs:documentation>Hier kann der Name einer Organisation angegeben werden, die für das Kind sorgeberechtigt ist. Dies kann beispielsweise das Jugendamt sein.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Sorgeberechtigter">
+            <xs:sequence>
+               <xs:element name="anschriftZuzug" minOccurs="0" type="xbd:Meldeanschrift">
+                  <xs:annotation>
+                     <xs:documentation>Mit diesem Datentyp wird die Inlandsanschrift einer Person abgebildet. Er basiert auf der Anschrift des XInneres-Basismoduls.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="beziehungZumSchueler"
+                           minOccurs="0"
+                           type="xbd:Code.ArtDesSorgeberechtigten">
+                  <xs:annotation>
+                     <xs:documentation>Hier muss eine Angabe gemacht werden, in welchem Verhältnis die sorgeberechtigte Person zum Kind steht. Sollte keine Angabe gemacht werden können, wird der Grund dafür angegeben.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="kontaktmoeglichkeit"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xbd:Kommunikation">
+                  <xs:annotation>
+                     <xs:documentation>Die Kontaktmöglichkeit fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="auskunftssperre" minOccurs="0" type="xbd:Code.Language">
+                  <xs:annotation>
+                     <xs:documentation>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12 führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“). In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert). Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Unterrichtsteilnahme">
+      <xs:annotation>
+         <xs:documentation>Es können Angaben zu einer bestimmten Unterrichtsteilnahme gemacht werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="fach" minOccurs="0" type="xsc:Code.Faecherliste">
+            <xs:annotation>
+               <xs:documentation>Der Name des Faches, an dem teilgenommen wurde als ausgeschriebenes Wort.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="arbeitsgemeinschaft"
+                     minOccurs="0"
+                     type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Name der Arbeitsgemeinschaft, an der teilgenommen wurde.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="unterrichtsteilnahmeBezeichnung"
+                     minOccurs="0"
+                     type="dinspec91379:datatypeC">
+            <xs:annotation>
+               <xs:documentation>Hier kann eine Bemerkung zu Freistellung, Wahl-, Pflichtteilnahme erfolgen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="unterrichtsteilnahme"
+                     minOccurs="0"
+                     type="xsc:Code.Unterrichtsteilnahme">
+            <xs:annotation>
+               <xs:documentation>Hier kann eine Bemerkung zu Freistellung, Wahl-, Pflichtteilnahme erfolgen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Zeugnis">
+      <xs:annotation>
+         <xs:documentation>Mit dem Bildungsnachweis wird ein Bildungsabschluss nachgewiesen.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="xbd:Bildungsnachweis">
+            <xs:sequence>
+               <xs:element name="nachweisperiode" type="xsc:Code.Nachweisperiode">
+                  <xs:annotation>
+                     <xs:documentation>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="id" type="xbd:Identifikation">
+                  <xs:annotation>
+                     <xs:documentation>Unter "Identifikation" werden die Informationen zusammengefasst, die die eindeutige Identifikation von Objekten in einem fachlichen Kontext erlauben.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="artDesZeugnisses" type="xsc:Code.Zeugnisart">
+                  <xs:annotation>
+                     <xs:documentation>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="ZusaetzlicherAnhang">
+      <xs:annotation>
+         <xs:documentation>Hier können zusätzliche Anhänge angegeben werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="letztesZeugnis"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="xs:base64Binary">
+            <xs:annotation>
+               <xs:documentation>Als Dokument.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="notenuebersichtUnterjaehrigerWechsel"
+                     minOccurs="0"
+                     type="xbd:Kurs">
+            <xs:annotation>
+               <xs:documentation>Notenübersicht bei unterjährigem Wechsel.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="ArtDerBemerkung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerBemerkung</nameLang>
+               <nameKurz>ArtDerBemerkung</nameKurz>
+               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:artderbemerkung</kennung>
+               <beschreibung>Die Art der Bemerkung gibt an ob es sich um standardisierte Bemerkungen handelt, oder nicht.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Art der Bemerkung gibt an, ob es sich um eine standardisierte Bemerkung handelt, oder aber um eine frei verfasste Art.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artderanmerkung/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artderanmerkung/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artderanmerkung/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ArtDerEinschulung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>ArtDerEinschulung</nameLang>
+               <nameKurz>ArtDerEinschulung</nameKurz>
+               <nameTechnisch>ArtDerEinschulung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:artdereinschulung</kennung>
+               <beschreibung>Die Art der Einschulung gibt an wie der Schüler eingeschult wurde.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Einschulung Schule freier Trägerschaft">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Einschulung Schule freier Trägerschaft</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Einschulung mit Inklusion">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Einschulung mit Inklusion</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Einschulung nach Zurückstellung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Einschulung nach Zurückstellung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Regeleinschulung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Regeleinschulung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Schulwechsel (außerhalb Schulbezirk)">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schulwechsel (außerhalb Schulbezirk)</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/Zurückstellung gewünscht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Zurückstellung gewünscht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/artdereinschulung/vorzeitige Einschulung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>vorzeitige Einschulung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Auskunftssperre-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Auskunftssperre</nameLang>
+               <nameKurz>Auskunftssperre</nameKurz>
+               <nameTechnisch>Auskunftssperre-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:auskunftssperre</kennung>
+               <beschreibung>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12 führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“). In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert). Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Mit diesem Element wird die Tatsache des Vorliegens einer Auskunftssperre übermittelt. Liegt eine Auskunftssperre
+nach § 51 BMG mit einem Schlüssel 1, 3 oder 11 vor, ist das Element zu übermitteln (Die Sperren 6 und 12
+führen nie zu der Übermittlung einer „Tatsache, dass eine Auskunftssperre vorliegt“).
+
+In diesem Element/Attribut ist nur Wert „true“ zulässig (fixed-Wert).
+
+Die Daten des Kindes dürfen nur beauskunftet werden, wenn für das Kind weder Auskunftssperre nach § 51 BMG noch ein
+bedingter Sperrvermerk nach § 52 BMG eingetragen ist (siehe § 18 Abs. 4 und § 18a Abs. 3 BMG).</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/auskunftssperre/Auskunftssperre nach §51 BMG">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Auskunftssperre nach §51 BMG</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/auskunftssperre/Auskunftssperre nach §51 BMG">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Auskunftssperre nach §52 BMG</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/auskunftssperre/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Bewertungsschema-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Bewertungsschema</nameLang>
+               <nameKurz>Bewertungsschema</nameKurz>
+               <nameTechnisch>Bewertungsschema-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:kmk:codeliste:bewertungsschema</kennung>
+               <beschreibung>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/bewertungsschemaabitur/xx">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>xx</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Bildungsgang-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Bildungsgang</nameLang>
+               <nameKurz>Bildungsgang</nameKurz>
+               <nameTechnisch>Bildungsgang-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:bildungsgang</kennung>
+               <beschreibung>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/bildungsgang/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/bildungsgang/G8">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>G8</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/bildungsgang/G9">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>G9</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/bildungsgang/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="BrancheDesUnternehmens-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>BrancheDesUnternehmens</nameLang>
+               <nameKurz>BrancheDesUnternehmens</nameKurz>
+               <nameTechnisch>BrancheDesUnternehmens-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:branchedesunternehmens</kennung>
+               <beschreibung>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/branchedesunternehmens/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/branchedesunternehmens/Schausteller">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schausteller</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/branchedesunternehmens/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/branchedesunternehmens/Zirkusangehörige">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Zirkusangehörige</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/branchedesunternehmes/Binnenschiffer">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Binnenschiffer</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Faecherliste-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Faecherliste</nameLang>
+               <nameKurz>Faecherliste</nameKurz>
+               <nameTechnisch>Faecherliste-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:kmk:codeliste:faecherliste</kennung>
+               <beschreibung>Die Codeliste bildet die gegenseitig anerkannten angebotenen , länderspezifischen Fächer in der Abiturprüfung ab.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Codeliste bildet die gegenseitig anerkannten angebotenen , länderspezifischen Fächer in der Abiturprüfung ab. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Altgriechisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Altgriechisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Andere/sonst. techn. Fach">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Andere/sonst. techn. Fach</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Andere/sonstiges naturwiss. Fach">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Andere/sonstiges naturwiss. Fach</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Arabisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Arabisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Arbeitslehre">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Arbeitslehre</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Bautechnik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Bautechnik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Berufsbezogenes Fach (FP und FT)">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Berufsbezogenes Fach (FP und FT)</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Bildende Kunst">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Bildende Kunst</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Biologie">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Biologie</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Chemie">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Chemie</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Deutsch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Deutsch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Deutsch als Zweitsprache">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Deutsch als Zweitsprache</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Englisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Englisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Erdkunde">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Erdkunde</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Ethik/Religionskunde">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ethik/Religionskunde</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Ev. Religionsunterricht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ev. Religionsunterricht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Farsi">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Farsi</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Französisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Französisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Geologie">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Geologie</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Geschichte">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Geschichte</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Griechisch-orthodoxe Religionslehre">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Griechisch-orthodoxe Religionslehre</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Hebräisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Hebräisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Informatik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Informatik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Islam. Religionsunterricht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Islam. Religionsunterricht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Israelitische Religionslehre">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Israelitische Religionslehre</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Italienisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Italienisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Jüdische Religionslehre">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Jüdische Religionslehre</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Kath. Religionsunterricht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Kath. Religionsunterricht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Latein">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Latein</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Litauisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Litauisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Mathematik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Mathematik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Musik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Musik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Neugriechisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Neugriechisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Niederdeutsch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Niederdeutsch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Philosophie">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Philosophie</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Physik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Physik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Portugiesisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Portugiesisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Psychologie/Pädagogik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Psychologie/Pädagogik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Russisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Russisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Russisch-orthodoxe Religionslehre">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Russisch-orthodoxe Religionslehre</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Schwedisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Schwedisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonst. Fach musisch-künstl. Bereich">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonst. Fach musisch-künstl. Bereich</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonst. gesellschaftswiss. Fach">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonst. gesellschaftswiss. Fach</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonstige alte Sprache">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonstige alte Sprache</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonstige moderne FS">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonstige moderne FS</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonstiger Religionsunterricht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonstiger Religionsunterricht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sonstiges Fach">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sonstiges Fach</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sorbisch/Wendisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sorbisch/Wendisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sozialkunde/Politik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sozialkunde/Politik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sozialwissenschaften">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sozialwissenschaften</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Spanisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Spanisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Sport">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sport</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Textiles Gestalten">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Textiles Gestalten</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Türkisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Türkisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Ungarisch">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ungarisch</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Werken">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Werken</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Wirtschaft/Verwaltung/Recht">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wirtschaft/Verwaltung/Recht</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/Wirtschaftsinformatik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wirtschaftsinformatik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/faecherliste/fächerübergreifend">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>fächerübergreifend</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/krankheit/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/krankheit/Masern">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Masern</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/krankheit/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/krankheit/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachpruefung/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachpruefung/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Halbjahr-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Halbjahr</nameLang>
+               <nameKurz>Halbjahr</nameKurz>
+               <nameTechnisch>Halbjahr-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:halbjahr</kennung>
+               <beschreibung>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden oder sich über das ganze Jahr überstrecken.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/halbjahr/1. Halbjahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>1. Halbjahr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/halbjahrt/2. Halbjahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>2. Halbjahr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/halbjahrt/Ganzes Jahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ganzes Jahr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Impfstatus-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Impfstatus</nameLang>
+               <nameKurz>Impfstatus</nameKurz>
+               <nameTechnisch>Impfstatus-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:impfstatus</kennung>
+               <beschreibung>Hier können Angaben über den Impfschutz von Schüler:innen gemacht werden. Mit dem Impfstatus wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Mit dem Impfstatus wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Ja">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ja</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/impfstatus/Nein">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nein</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Klassenstufe-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Klassenstufe</nameLang>
+               <nameKurz>Klassenstufe</nameKurz>
+               <nameTechnisch>Klassenstufe-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:klassenstufe</kennung>
+               <beschreibung>Die Angabe KlassenstufeBeginn gibt Aufschluss über das Einsetzen der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</beschreibung>
+               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
+               <herausgebernameKurz>KMK</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Angabe KlassenstufeBeginn gibt Aufschluss über das Einsetzen der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Einführungsphase">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Einführungsphase</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 0">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 0</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 1</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 10">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 10</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 2">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 2</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 3">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 3</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 4">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 4</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 5">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 5</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 6">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 6</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 7">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 7</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 8">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 8</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufe 9">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufe 9</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufenübergreifende Klasse-Primar und Sek I">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufenübergreifende Klasse-Primar und Sek I</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufenübergreifende Klasse-Primarstufe">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufenübergreifende Klasse-Primarstufe</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufenübergreifende Klasse-Sek I und Sek II">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufenübergreifende Klasse-Sek I und Sek II</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufenübergreifende Klasse-Sek II">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufenübergreifende Klasse-Sek II</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Klassenstufenübergreifende Klasse-Sekundarstufe I">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Klassenstufenübergreifende Klasse-Sekundarstufe I</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Qualifikationsphase 1">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Qualifikationsphase 1</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/Qualifikationsphase 3">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Qualifikationsphase 3</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/kmk/0.1/code/klassenstufe/keiner Klassenstufe/keinem Schuljahrgang zugeordnet">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>keiner Klassenstufe/keinem Schuljahrgang zugeordnet</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Krankheit-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Krankheit</nameLang>
+               <nameKurz>Krankheit</nameKurz>
+               <nameTechnisch>Krankheit-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:krankheit</kennung>
+               <beschreibung>Liste von Krankheiten, zu denen ein Impfstatus erhoben wird.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Liste von Krankheiten, zu denen ein Impfstatus erhoben wird.	</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token"/>
+   </xs:simpleType>
+   <xs:simpleType name="Kursart-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Kursart</nameLang>
+               <nameKurz>Kursart</nameKurz>
+               <nameTechnisch>Kursart-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:kursart</kennung>
+               <beschreibung>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/kursarrt/Leistungskurs">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Leistungskurs</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/kursart/Grundkurs">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Grundkurs</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Nachpruefung-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Nachpruefung</nameLang>
+               <nameKurz>Nachpruefung</nameKurz>
+               <nameTechnisch>Nachpruefung-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:nachpruefung</kennung>
+               <beschreibung>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angaben zur Nachprüfung. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachpruefung/freiwillige Nachpruefung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>freiwillige Nachpruefung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachpruefung/verpflichtende Nachpruefung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>verpflichtende Nachpruefung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Nachweisperiode-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Nachweisperiode</nameLang>
+               <nameKurz>Nachweisperiode</nameKurz>
+               <nameTechnisch>Nachweisperiode-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:nachweisperiode</kennung>
+               <beschreibung>Die Nachweisperiode gibt an um welchen Zeitraum es sich handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die "nachweisperiode" beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Halbjahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Halbjahr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Jahr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Jahr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Semester">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Semester</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/nachweisperiode/Trimester">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Trimester</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Schulprofil-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Schulprofil</nameLang>
+               <nameKurz>Schulprofil</nameKurz>
+               <nameTechnisch>Schulprofil-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:schulprofil</kennung>
+               <beschreibung>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/schulprofil/Musik">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Musik</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/schulprofil/Sport">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Sport</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/schulprofil/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/schulprofil/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="TeilnahmeGemeinsamerUnterricht-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>TeilnahmeGemeinsamerUnterricht</nameLang>
+               <nameKurz>TeilnahmeGemeinsamerUnterricht</nameKurz>
+               <nameTechnisch>TeilnahmeGemeinsamerUnterricht-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamererunterricht</kennung>
+               <beschreibung>Teilnahme am gemeinsamen Unterricht.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Gibt um welche Art derTeilnahme am gemeinsamen Unterricht es sich handelt.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/teilnahmegemeinsamerunterricht/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/teilnahmegemeinsamerunterricht/Wert nicht bekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht bekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/teilnahmegemeinsamerunterricht/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/teilnahmegemeinsamerunterricht/Zieldifferent">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Zieldifferent</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/teilnahmegemeinsamerunterricht/Zielgleich">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Zielgleich</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Unterrichtsteilnahme-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Unterrichtsteilnahme</nameLang>
+               <nameKurz>Unterrichtsteilnahme</nameKurz>
+               <nameTechnisch>Unterrichtsteilnahme-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:unterrichtsteilnahme</kennung>
+               <beschreibung>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/unterrichtsteilnahme/Wert nicht bekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht bekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/unterrichtsteilnahme/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/unterrichtsteilnahme/freigestellt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>freigestellt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/unterrichtsteilnahme/freiwillig">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>freiwillig</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/unterrichtsteilnahme/verpflichtend">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>verpflichtend</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Versetzungstyp-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Versetzungstyp</nameLang>
+               <nameKurz>Versetzungstyp</nameKurz>
+               <nameTechnisch>Versetzungstyp-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:versetzungstyp</kennung>
+               <beschreibung>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Ja">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ja</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Ja durch Konferenzbeschluss">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Ja durch Konferenzbeschluss</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Keine Versetzungsbemerkung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Keine Versetzungsbemerkung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Nein">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nein</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Nein mit Nachprüfung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nein mit Nachprüfung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Nein mit Schulformwechsel">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nein mit Schulformwechsel</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Nein und keine Nachprüfung mehr">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Nein und keine Nachprüfung mehr</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Wer nicht bekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wer nicht bekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/versetzungstyp/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Zeugnisart-Codes">
+      <xs:annotation>
+         <xs:appinfo>
+            <codeliste>
+               <nameLang>Zeugnisart</nameLang>
+               <nameKurz>Zeugnisart</nameKurz>
+               <nameTechnisch>Zeugnisart-Codes</nameTechnisch>
+               <kennung>urn:xschule-digital:xschule:codeliste:zeugnisart</kennung>
+               <beschreibung>Die Art des Zeugnisse gibt an um welche Zeugnisart es sich handelt.</beschreibung>
+               <herausgebernameLang>XSchule</herausgebernameLang>
+               <herausgebernameKurz>XSchule</herausgebernameKurz>
+            </codeliste>
+            <versionCodeliste>
+               <version>0.1</version>
+               <beschreibung>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt. </beschreibung>
+               <datumGueltigkeitAb>2021-12-21</datumGueltigkeitAb>
+               <versionCodelistenHandbuch>1.0</versionCodelistenHandbuch>
+            </versionCodeliste>
+            <codelistenspalten>
+               <code>
+                  <spaltennameLang>Code</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>true</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
+               </code>
+               <description-de-DE>
+                  <spaltennameLang>deutsche Übersetzung</spaltennameLang>
+                  <datentyp>string</datentyp>
+                  <codeSpalte>false</codeSpalte>
+                  <verwendung>required</verwendung>
+                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
+               </description-de-DE>
+            </codelistenspalten>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:restriction base="xs:token">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Abgangszeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Abgangszeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Abschlusszeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Abschlusszeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Angabe unbekannt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Angabe unbekannt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Halbsjahreszeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Halbjahreszeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Vorläufiges Zeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Vorläufiges Zeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Wert aus rechtlichen Gründen nicht übermittelt">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert aus rechtlichen Gründen nicht übermittelt</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Wert nicht in Liste">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Wert nicht in Liste</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/Zwischenzeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Zwischenzeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.1/code/zeugnisart/jahreszeugnis">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>Jahreszeugnis</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

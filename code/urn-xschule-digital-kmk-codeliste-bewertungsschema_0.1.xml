@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-3="http://xoev.de/schemata/genericode/3">
+   <Annotation>
+      <Description>
+         <xoev-cl-3:nameKurz>Bewertungsschema</xoev-cl-3:nameKurz>
+         <xoev-cl-3:beschreibung-codeliste>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xoev-cl-3:beschreibung-codeliste>
+         <xoev-cl-3:herausgebernameKurz>KMK</xoev-cl-3:herausgebernameKurz>
+         <xoev-cl-3:beschreibung-versionCodeliste>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xoev-cl-3:beschreibung-versionCodeliste>
+         <xoev-cl-3:datumGueltigkeitAb>2021-12-21</xoev-cl-3:datumGueltigkeitAb>
+         <xoev-cl-3:versionCodelistenHandbuch>1.0</xoev-cl-3:versionCodelistenHandbuch>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Bewertungsschema-Codes</ShortName>
+      <LongName>Bewertungsschema</LongName>
+      <Version>0.1</Version>
+      <CanonicalUri>urn:xschule-digital:kmk:codeliste:bewertungsschema</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:bewertungsschema_0.1</CanonicalVersionUri>
+      <Agency>
+         <LongName>Kultusministerkonferenz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>deutsche Übersetzung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-3:empfohleneCodeSpalte/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/0.1/code/bewertungsschemaabitur/xx</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>xx</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
