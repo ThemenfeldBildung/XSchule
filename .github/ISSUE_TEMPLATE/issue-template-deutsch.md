@@ -1,12 +1,12 @@
 ---
 name: Issue Template Deutsch
-about: Beteiligungsverfahren zur Version 0.4 von XHochschule
+about: Beteiligungsverfahren zur Version 0.1 von XSchule
 title: ''
 labels: ''
-assignees: XHochschuleDE
+assignees: OZG-TFBildung
 
 ---
 
 Autor: [bitte angeben]
-Art der Organisation: [ CAMS-Hersteller / Hochschule / Ministerium / andere ]
+Art der Organisation: [ Hersteller / Schule / Ministerium / andere ]
 Beschreibung: [bitte Beschreibung der Rückmeldung angeben]
