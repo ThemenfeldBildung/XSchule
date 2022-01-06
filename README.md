@@ -19,7 +19,7 @@ XHochschule besteht aus verschiedenen Artefakten, welche einem URI-Konzept folge
 
 # Das Beteiligungsverfahren
 
-Das Vorgehen bei der Erarbeitung von XShule ist transparent und partizipativ. Bereits zu Beginn der Vorarbeiten von XSchule wurden alle Bildungsministerien der Länder, Schulen und weitere Organisationen in die Arbeiten einbezogen.
+Das Vorgehen bei der Erarbeitung von XShule ist transparent und partizipativ. Bereits zu Beginn der Vorarbeiten von XSchule wurden alle Bildungsministerien der Länder, Schulen und weitere Organisationen in die Arbeiten einbezogen. Der [Kurzfilm](https://youtu.be/mzUE9pdrNmc) "Wann, wenn nicht jetzt?! Digitalisierung im Bildungsföderalismus" verdeutlicht diesen Weg zur fertigen Spezifikation.
 
 Mit der Veröffentlichung von diesem Repository folgt der nächste logische Schritt in der Öffentlichkeitsbeteiligung, indem nun jeder interessierten Person ermöglicht wird, sich in den Erarbeitungsprozess einzubringen und  zur Definition des Standards beizutragen. 
 
