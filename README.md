@@ -9,7 +9,7 @@ XSchule ist ein vom [IT-Planungsrat](https://www.it-planungsrat.de/beschluss/bes
 
 # Veröffentlichte Artefakte von XSchule
 
-XHochschule besteht aus verschiedenen Artefakten, welche einem URI-Konzept folgend versioniert in diesem Repository erreichbar sind. 
+XSchule besteht aus verschiedenen Artefakten, welche einem URI-Konzept folgend versioniert in diesem Repository erreichbar sind. 
 
 * Die eingebundenen Codelisten im Ordner [/code](https://github.com/OZG-TFBildung/XSchule/tree/main/code)
 * Die XSD-Schemata im Ordner [/xsd](https://github.com/OZG-TFBildung/XSchule/tree/main/xsd)
