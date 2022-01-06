@@ -1,9 +1,9 @@
 ---
 name: Issue Template English
-about: Contribution for version 0.2 of XSchule
+about: Contribution for version 0.1 of XSchule
 title: ''
 labels: ''
-assignees: XSchuleDE
+assignees: OZG-TFBildung
 
 ---
 
