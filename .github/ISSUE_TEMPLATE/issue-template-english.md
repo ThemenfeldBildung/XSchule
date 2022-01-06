@@ -3,7 +3,7 @@ name: Issue Template English
 about: Contribution for version 0.1 of XSchule
 title: ''
 labels: ''
-assignees: OZG-TFBildung
+assignees: XSchuleDE
 
 ---
 
