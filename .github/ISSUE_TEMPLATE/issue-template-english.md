@@ -1,12 +1,12 @@
 ---
 name: Issue Template English
-about: Contribution for version 0.4 of XHochschule
+about: Contribution for version 0.2 of XSchule
 title: ''
 labels: ''
-assignees: XHochschuleDE
+assignees: XSchuleDE
 
 ---
 
 Creator: [please fill in]
-Type of the organisation: [ vendor / university / ministry / other ]
+Type of the organisation: [ school / ministry / other ]
 Description: [please fill in description of your feedback]
