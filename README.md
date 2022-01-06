@@ -5,7 +5,7 @@
 
 # Was ist XSchule?
 
-XSchule ist ein vom [IT-Planungsrat](https://www.it-planungsrat.de/beschluss/beschluss-2021-42) auf die Standardisierungsagenda gehobenes Standardisierungsvorhaben des Themenfeld Bildung unter Federführung des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung und Forschung. Ein [Animationsvideo](https://www.youtube.com/watch?v=c3P4dU6hAYU) illustriert den fachlichen Bedarf dieser Spezifikation im Schulwesen.
+XSchule ist ein vom [IT-Planungsrat](https://www.it-planungsrat.de/beschluss/beschluss-2021-42) auf die Standardisierungsagenda gehobenes Standardisierungsvorhaben des Themenfeld Bildung unter Federführung des Landes Sachsen-Anhalt und des Bundesministeriums für Bildung und Forschung. Ein [Animationsvideo](https://youtu.be/_G0x8sDEKas) illustriert den fachlichen Bedarf dieser Spezifikation im Schulwesen.
 
 # Veröffentlichte Artefakte von XSchule
 
