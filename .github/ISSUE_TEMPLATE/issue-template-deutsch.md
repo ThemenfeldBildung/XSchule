@@ -3,7 +3,7 @@ name: Issue Template Deutsch
 about: Beteiligungsverfahren zur Version 0.1 von XSchule
 title: ''
 labels: ''
-assignees: OZG-TFBildung
+assignees: XSchuleDE
 
 ---
 
