@@ -23,7 +23,7 @@ Das Vorgehen bei der Erarbeitung von XSchule ist transparent und partizipativ. B
 
 Mit der Veröffentlichung von diesem Repository folgt der nächste logische Schritt in der Öffentlichkeitsbeteiligung, indem nun jeder interessierten Person ermöglicht wird, sich in den Erarbeitungsprozess einzubringen und  zur Definition des Standards beizutragen. 
 
-Das Vorgehen für Ihre Teilnahme umfasst folgende Schritte :
+Das Vorgehen für Ihre Teilnahme umfasst folgende Schritte, für die wir für Sie [hier](https://xschule.digital/web/node/66) auch eine detaillierte Anleitung erstellt haben :
 
 1. Sie erstellen ein [Nutzerkonto bei GitHub](https://github.com/join?ref_cta=Sign+up) oder loggen Sie sich mit einem bestehenden Konto ein.
 2. Sie erstellen [ein Issue](https://github.com/OZG-TFBildung/XSchule/issues/new/choose) in dem Sie Ihr Anliegen beschreiben.
