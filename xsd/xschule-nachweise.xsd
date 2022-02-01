@@ -4,7 +4,7 @@
            xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
            targetNamespace="xschule"
-           version="0.1"
+           version="0.1.1"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,9 +17,9 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.1</version>
-            <versionXOEVProfil>1.7.2</versionXOEVProfil>
-            <versionXOEVHandbuch>2.3</versionXOEVHandbuch>
+            <version>0.1.1</version>
+            <versionXOEVProfil>2.0.0</versionXOEVProfil>
+            <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0</versionModellierungswerkzeug>
             <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
@@ -36,27 +36,13 @@
          <xs:appinfo>
             <rechtsgrundlage/>
          </xs:appinfo>
-         <xs:documentation>Diese Nachricht dient der Anmeldung eines Schuelers an einer Schule.</xs:documentation>
+         <xs:documentation>Diese Daten dienen der Anmeldung eines Schülers an einer anderen Schule.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
-            <xs:element name="nachrichtenkopf" type="xsc:Nachrichtenkopf"/>
             <xs:element name="schueler" type="xsc:Schueler">
                <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden die Daten des Schuelers mitgeteilt.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="impfung"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:Impfung">
-               <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des Schuelers mitgeteilt.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schuelerReisender" minOccurs="0" type="xsc:SchuelerReisender">
-               <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden Daten eines Schülers reisender Eltern übermittelt.</xs:documentation>
+                  <xs:documentation>Mit diesem Element werden die Daten des Schülers mitgeteilt.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:SchuleStammdaten">
@@ -64,18 +50,17 @@
                   <xs:documentation>Mit diesem Element werden Daten eines Schülers reisender Eltern übermittelt.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="besuchteSchulen" minOccurs="0" type="xsc:SchuleStammdaten">
+            <xs:element name="besuchteSchulen"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xsc:BesuchteSchule">
                <xs:annotation>
                   <xs:documentation>Hier können alle Schulen angegeben werden, die das Kind in der Vergangenheit besucht hat.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="schuljahrgaenge" minOccurs="0" type="xsc:Schuljahrgang">
-               <xs:annotation>
-                  <xs:documentation>Hier können Angaben zur Jahrgangsstufe eines Kindes gemacht werden.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
             <xs:element name="unterrichtsteilnahme"
                         minOccurs="0"
+                        maxOccurs="unbounded"
                         type="xsc:Unterrichtsteilnahme">
                <xs:annotation>
                   <xs:documentation>Es können Angaben zu einer bestimmten Unterrichtsteilnahme gemacht werden.</xs:documentation>
@@ -83,9 +68,36 @@
             </xs:element>
             <xs:element name="zusaetzlicherAnhang"
                         minOccurs="0"
+                        maxOccurs="unbounded"
                         type="xsc:ZusaetzlicherAnhang">
                <xs:annotation>
                   <xs:documentation>Es können zusätzliche Anhänge angegeben werden.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="sorgeberechtigter"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xsc:GesetzlicherVertreter">
+               <xs:annotation>
+                  <xs:documentation>s sind mehrere Sorgeberechtigte möglich, das Familienverhältnis (z.B. Mutter, Vater, Pflegemutter) wird nicht erfasst.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="sorgeberechtigteOrganisation"
+                        minOccurs="0"
+                        type="xsc:SorgeberechtigteOrganisation">
+               <xs:annotation>
+                  <xs:documentation>Hier kann der Name einer Organisation angegeben werden, die für das Kind sorgeberechtigt ist. Dies kann beispielsweise das Jugendamt sein.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="schullaufbahn" type="xsc:Einschulung">
+               <xs:annotation>
+                  <xs:documentation>Hier können Angaben über die Schullaufbahn gemacht werden.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="schulformspezifischeZusatzdaten"
+                        type="xsc:SchulformspezifischeZusatzdaten">
+               <xs:annotation>
+                  <xs:documentation>Angaben zu schulformspezifischen Zusatzdaten.</xs:documentation>
                </xs:annotation>
             </xs:element>
          </xs:sequence>
@@ -100,10 +112,9 @@
       </xs:annotation>
       <xs:complexType>
          <xs:sequence>
-            <xs:element name="nachrichtenkopf" type="xsc:Nachrichtenkopf"/>
-            <xs:element name="schule" type="xsc:SchuleStammdaten">
+            <xs:element name="zeugnis" type="xsc:Zeugnis">
                <xs:annotation>
-                  <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Schule.</xs:documentation>
+                  <xs:documentation>Mit dem Bildungsnachweis wird ein Bildungsabschluss nachgewiesen.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="schueler" type="xsc:Schueler">
@@ -111,14 +122,21 @@
                   <xs:documentation>Der Lernende ist eine natürliche Person welche ein Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) wahrgenommen hat und auf die ein Bildungsnachweis (z.B. Zeugnis) ausgestellt wurde.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="kurs" type="xsc:Schulkurs">
+            <xs:element name="schule" type="xsc:SchuleStammdaten">
                <xs:annotation>
-                  <xs:documentation>Die Klasse Kurs fasst die erbrachten Leistungen der Schueler bestimmten Kurse zusammen.</xs:documentation>
+                  <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Schule.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="pruefungsergebnis" type="xsc:Pruefungsergebnis">
+            <xs:element name="kurs" maxOccurs="unbounded" type="xsc:Schulkurs">
                <xs:annotation>
-                  <xs:documentation>Die Klasse Prüfungsergebnis fasst die Angaben zur den bei der Abiturprüfung abgelegten Prüfungen zusammen.</xs:documentation>
+                  <xs:documentation>Die Klasse Kurs fasst die abgelegten Kurse des Schülers zusammen.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="pruefungsergebnis"
+                        maxOccurs="unbounded"
+                        type="xsc:Pruefungsergebnis">
+               <xs:annotation>
+                  <xs:documentation>Die Klasse Prüfungsergebnis fasst die Ergebnisse der Prüfungen zusammen.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="qualifikation" type="xsc:Qualifikation">
@@ -128,17 +146,20 @@
             </xs:element>
             <xs:element name="artDerHZB" type="xbd:Code.ArtDerHZB">
                <xs:annotation>
-                  <xs:documentation>Die die Art der Hochschulezugangsberechtigung an. Bsp. http://www.xbildung.de/def/xbildung/0.7/code/ArtDerHZB/03 für die allg. Hochschulzulassung am Gymnasium.</xs:documentation>
+                  <xs:documentation>Die die Art der Hochschulzugangsberechtigung an. Bsp. http://www.xbildung.de/def/xbildung/0.8/code/ArtDerHZB/03 für die allg. Hochschulzulassung am Gymnasium.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="artDerBemerkung" type="xsc:Bemerkung">
+            <xs:element name="bemerkung"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                        type="xsc:Bemerkung">
                <xs:annotation>
                   <xs:documentation>Die Art der Bemerkung gibt an, ob es sich um eine standardisierte Bemerkung handelt, oder aber um eine frei verfasste Art.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="fremdsprache" type="xsc:Fremdsprache">
+            <xs:element name="fremdsprache" maxOccurs="unbounded" type="xsc:Fremdsprache">
                <xs:annotation>
-                  <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen die abgelegt wurden zusammen.</xs:documentation>
+                  <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen in denen Kenntnisse erworben wurden zusammen.</xs:documentation>
                </xs:annotation>
             </xs:element>
          </xs:sequence>

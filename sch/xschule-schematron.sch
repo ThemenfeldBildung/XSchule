@@ -30,121 +30,141 @@
    <sch:pattern>
       <!--Abstrakte Regeln-->
       <!-- /Data/XSchule/Nachweise/schueler.wechsel.0001 -->
-      <sch:rule id="rule-SCH-0020-NameNatuerlichePersonMussVorkommen" abstract="true">
-         <sch:assert id="SCH-0020-NameNatuerlichePersonMussVorkommen"
-                     test="count(xsc:schueler/xbd:nameNatuerlichePerson)&gt;=1">Der Name muss enthalten sein. Die Multiplizität ist gleich 1..*.</sch:assert>
+      <sch:rule id="rule-SCH-0014-AnschriftMussVorkommen" abstract="true">
+         <sch:assert id="SCH-0014-AnschriftMussVorkommen"
+                     test="count(xsc:schueler/xbd:anschrift)&gt;=1">Das Element "Anschrift" muss enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0021-AlternativeRepraesentationNichtEnthalten"
                 abstract="true">
          <sch:assert id="SCH-0021-AlternativeRepraesentationNichtEnthalten"
-                     test="empty(xbd:alternativeRepraesentation)">Die Alternative Repräsentation darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:alternativeRepraesentation)">Das Element "Alternative Repräsentation" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0022-ExistenzzeitraumNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0022-ExistenzzeitraumNichtEnthalten"
-                     test="empty(xbd:existenzzeitraum)">Der Existenzzeitraum darf nicht enthalten sein.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-0023-GeschlechtNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0023-GeschlechtNichtEnthalten" test="empty(xbd:geschlecht)">Das Geschlecht darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:existenzzeitraum)">Das Element "Existenzzeitraum" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0024-NamenssuffixNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0024-NamenssuffixNichtEnthalten" test="empty(xbd:namenssuffix)">Der Namenssuffix darf nicht enthalten sein.</sch:assert>
+         <sch:assert id="SCH-0024-NamenssuffixNichtEnthalten" test="empty(xbd:namenssuffix)">Das Element "Namenssuffix" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0025-UnterorganisationNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0025-UnterorganisationNichtEnthalten"
-                     test="empty(xbd:unterorganisation)">Unterorganisation darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:unterorganisation)">Das Element "Unterorganisation" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0027-KursBeschreibungNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0027-KursBeschreibungNichtEnthalten"
                      test="empty(xbd:Kurs.Beschreibung)">Beschreibung darf nicht enthalten sein.</sch:assert>
       </sch:rule>
-      <sch:rule id="rule-SCH-0028-KursFachbezeichnungNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0028-KursFachbezeichnungNichtEnthalten"
-                     test="empty(xbd:Kurs.Fachbezeichnung)">Fachbezeichnung darf nicht enthalten sein.</sch:assert>
+      <sch:rule id="rule-SCH-0029-NoteInGesamtpunktzahlNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0029-NoteInGesamtpunktzahlNichtEnthalten"
+                     test="empty(xsc:Gesamtpunktzahl.Note)">Das Element "Note" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
-      <sch:rule id="rule-SCH-0029-NoteinGesamtpunktzahlNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0029-NoteinGesamtpunktzahlNichtEnthalten"
-                     test="empty(xsc:Gesamtpunktzahl.Note)">Note darf nicht enthalten sein.</sch:assert>
+      <sch:rule id="rule-SCH-0030-WohnortMussVorkommen" abstract="true">
+         <sch:assert id="SCH-0030-WohnortMussVorkommen"
+                     test="count(xsc:schueler.wohnort)&gt;=1">Das Element "Anschrift" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
-      <sch:rule id="rule-SCH-0030-AnschriftMussVorkommen" abstract="true">
-         <sch:assert id="SCH-0030-AnschriftMussVorkommen"
-                     test="count(xsc:schueler/xbd:anschrift)&gt;=1">Die Anschrfit muss enthalten sein.</sch:assert>
+      <sch:rule id="rule-SCH-0032-GueltigkeitNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0032-GueltigkeitNichtEnthalten"
+                     test="empty(xbd:natuerlichePerson.id.gueltigkeit)">Das Element "Gültigkeit der ID" wird nicht genutzt.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0034-IdentifikationSorgeberechtigterNichtEnthalten"
+                abstract="true">
+         <sch:assert id="SCH-0034-IdentifikationSorgeberechtigterNichtEnthalten"
+                     test="empty(xsc:gesetzlichervertreter.identifikation)">Das Element Identifikation wir bereits mit der Natürlichen Person gesendet.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0038-WohnortNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0038-WohnortNichtEnthalten" test="empty(xsc:schueler.wohnort)">Beim Wechsel dürfen keine Angaben zum Wohnort enthalten sein. Diese Angaben werden durch die Angaben zur Natürlichen Person geliefert.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0040-KontaktmoeglichkeitMussEnthaltenSein" abstract="true">
+         <sch:assert id="SCH-0040-KontaktmoeglichkeitMussEnthaltenSein"
+                     test="empty(xsc:schulestammdaten.kontaktmoeglichkeit)">Beim Wechsel muss die Kontaktmöglichkeit angegeben werden.</sch:assert>
       </sch:rule>
       <!-- /Data/XSchule/Nachweise/schueler.zeugnis.0002 -->
-      <sch:rule id="rule-SCH-0001-NameNatuerlichePersonMussVorkommen" abstract="true">
-         <sch:assert id="SCH-0001-NameNatuerlichePersonMussVorkommen"
-                     test="count(xsc:schueler/xbd:nameNatuerlichePerson)&gt;=1">Der Name muss enthalten sein. Die Multiplizität ist gleich 1..*.</sch:assert>
-      </sch:rule>
       <sch:rule id="rule-SCH-0002-AlternativeRepraesentationNichtEnthalten"
                 abstract="true">
          <sch:assert id="SCH-0002-AlternativeRepraesentationNichtEnthalten"
-                     test="empty(xbd:alternativeRepraesentation)">Die Alternative Repräsentation darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:alternativeRepraesentation)">Das Element "Alternative Repräsentation" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0003-ExistenzzeitraumNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0003-ExistenzzeitraumNichtEnthalten"
-                     test="empty(xbd:existenzzeitraum)">Der Existenzzeitraum darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:existenzzeitraum)">Das Element "Existenzzeitraum" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0004-GeschlechtNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0004-GeschlechtNichtEnthalten" test="empty(xbd:geschlecht)">Das Geschlecht darf nicht enthalten sein.</sch:assert>
+         <sch:assert id="SCH-0004-GeschlechtNichtEnthalten" test="empty(xbd:geschlecht)">Das Element "Geschlecht" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0005-NamenssuffixNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0005-NamenssuffixNichtEnthalten" test="empty(xbd:namenssuffix)">Der Namenssuffix darf nicht enthalten sein.</sch:assert>
+         <sch:assert id="SCH-0005-NamenssuffixNichtEnthalten" test="empty(xbd:namenssuffix)">Das Element "Namenssuffix" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0006-UnterorganisationNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0006-UnterorganisationNichtEnthalten"
-                     test="empty(xbd:unterorganisation)">Unterorganisation darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:unterorganisation)">Das Element "Unterorganisation" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0007-ArtDerTraegerschaftNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0007-ArtDerTraegerschaftNichtEnthalten"
-                     test="empty(xbd:artDerTraegerschaft)">Art der Trägerschaft darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:artDerTraegerschaft)">"Art der Trägerschaft" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0008-HerkunftsspracheNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0008-HerkunftsspracheNichtEnthalten"
-                     test="empty(xsc:herkunftssprache)">Herkunftssprache darf nicht enthalten sein.</sch:assert>
+                     test="empty(xsc:herkunftssprache)">Das Element "Herkunftssprache" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0009-AuskunftssperreNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0009-AuskunftssperreNichtEnthalten"
-                     test="empty(xsc:auskunftssperre)">Auskunftssperre darf nicht enthalten sein.</sch:assert>
+                     test="empty(xsc:auskunftssperre)">"Auskunfstsperre" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0010-AngabeWohnungsinhaberNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0010-AngabeWohnungsinhaberNichtEnthalten"
-                     test="empty(xbd:Meldeanschrift.Wohnungsinhaber)">Wohnungsinhaber darf nicht enthalten sein.</sch:assert>
+                     test="empty(xbd:Meldeanschrift.Wohnungsinhaber)">Das Element "Wohnungsinhaber" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0011-KursBeschreibungNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0011-KursBeschreibungNichtEnthalten"
                      test="empty(xbd:Kurs.Beschreibung)">Beschreibung darf nicht enthalten sein.</sch:assert>
       </sch:rule>
-      <sch:rule id="rule-SCH-0012-KursFachbezeichnungNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0012-KursFachbezeichnungNichtEnthalten"
-                     test="empty(xbd:Kurs.Fachbezeichnung)">Fachbezeichnung darf nicht enthalten sein.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-0013-NoteinGesamtpunktzahlNichtEnthalten" abstract="true">
-         <sch:assert id="SCH-0013-NoteinGesamtpunktzahlNichtEnthalten"
-                     test="empty(xsc:Gesamtpunktzahl.Note)">Note darf nicht enthalten sein.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-0014-AnschriftMussVorkommen" abstract="true">
-         <sch:assert id="SCH-0014-AnschriftMussVorkommen"
-                     test="count(xsc:schueler/xbd:anschrift)&gt;=1">Die Anschrfit muss enthalten sein.</sch:assert>
+      <sch:rule id="rule-SCH-0013-NoteInGesamtpunktzahlNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0013-NoteInGesamtpunktzahlNichtEnthalten"
+                     test="empty(xsc:Gesamtpunktzahl.Note)">Das Element "Note" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0015-AufnehmendeSchuleBekanntNichtEnthalten"
                 abstract="true">
          <sch:assert id="SCH-0015-AufnehmendeSchuleBekanntNichtEnthalten"
-                     test="empty(xsc:schule.aufnehmendeschulebekannt)">Das Atribut "aufnehmendeSchuleBekannt" ist nur für den Nachweis "schueler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.aufnehmendeschulebekannt)">Das Element "aufnehmendeSchuleBekannt" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0016-SchulformNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0016-SchulformNichtEnthalten"
-                     test="empty(xsc:schule.schulform)">Das Atribut "schulform" ist nur für den Nachweis "schueler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.schulform)">Das Element "schulform" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0017-SchulprofilNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0017-SchulprofilNichtEnthalten"
-                     test="empty(xsc:schule.schulprofil)">Das Atribut "schulprofil" ist nur für den Nachweis "schueler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.schulprofil)">Das Element "schulprofil" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0018-BildungsgangNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0018-BildungsgangNichtEnthalten"
-                     test="empty(xsc:schule.bildungsgang)">Das Atribut "bildungsgang" ist nur für den Nachweis "schueler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.bildungsgang)">Das Element "bildungsgang" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0031-PunkteInDurchschnittsnoteNichtEnthalten"
+                abstract="true">
+         <sch:assert id="SCH-0031-PunkteInDurchschnittsnoteNichtEnthalten"
+                     test="empty(xsc:Durchschnittsnote.Punkte)&#xA;">Das Element "Punkte" darf nicht enthalten sein.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0033-ImpfungNichtEnhalten" abstract="true">
+         <sch:assert id="SCH-0033-ImpfungNichtEnhalten" test="empty(xsc:schueler.impfung)">Die Angabe zur Impfung darf im Zeugnis nicht enthalten sein.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0035-SchuelerReisenderNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0035-SchuelerReisenderNichtEnthalten"
+                     test="empty(xsc:schueler.schuelerReisender)">Im Zeugnis dürfen keine Angaben zum Schüler reisender Eltern enthalten sein.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0036-BildungsgangNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0036-BildungsgangNichtEnthalten"
+                     test="empty(xsc:schule.bildungsgang)">Im Zeugnis dürfen keine Angaben zum Bildungsgang enthalten sein.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0037-AnschriftNichtEnthalten" abstract="true">
+         <sch:assert id="SCH-0037-AnschriftNichtEnthalten"
+                     test="empty(xbd:natuerlicheperson.meldeanschrift)">Im Zeugnis dürfen keine Angaben zur gesamten Anschrift enthalten sein. Nur Angaben zum Wohnort sind gestattet.</sch:assert>
+      </sch:rule>
+      <sch:rule id="rule-SCH-0041-AufgabenfeldMussVorkommen" abstract="true">
+         <sch:assert id="SCH-0041-AufgabenfeldMussVorkommen"
+                     test="empty(xsc:schulkurs.aufgabenfeld)">Im Zeugnis muss die Angabe zum Aufgabenfeld enthalten sein.</sch:assert>
       </sch:rule>
       <!--Konkrete Regeln-->
       <sch:rule context="xsc:schueler.zeugnis.0002">
-         <sch:extends rule="rule-SCH-0001-NameNatuerlichePersonMussVorkommen"/>
          <sch:extends rule="rule-SCH-0002-AlternativeRepraesentationNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0003-ExistenzzeitraumNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0004-GeschlechtNichtEnthalten"/>
@@ -155,25 +175,31 @@
          <sch:extends rule="rule-SCH-0009-AuskunftssperreNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0010-AngabeWohnungsinhaberNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0011-KursBeschreibungNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0012-KursFachbezeichnungNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0013-NoteinGesamtpunktzahlNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0014-AnschriftMussVorkommen"/>
+         <sch:extends rule="rule-SCH-0013-NoteInGesamtpunktzahlNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0015-AufnehmendeSchuleBekanntNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0016-SchulformNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0017-SchulprofilNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0018-BildungsgangNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0031-PunkteInDurchschnittsnoteNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0033-ImpfungNichtEnhalten"/>
+         <sch:extends rule="rule-SCH-0035-SchuelerReisenderNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0036-BildungsgangNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0037-AnschriftNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0041-AufgabenfeldMussVorkommen"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.wechsel.0001">
-         <sch:extends rule="rule-SCH-0020-NameNatuerlichePersonMussVorkommen"/>
+         <sch:extends rule="rule-SCH-0014-AnschriftMussVorkommen"/>
          <sch:extends rule="rule-SCH-0021-AlternativeRepraesentationNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0022-ExistenzzeitraumNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0023-GeschlechtNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0024-NamenssuffixNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0025-UnterorganisationNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0027-KursBeschreibungNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0028-KursFachbezeichnungNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0029-NoteinGesamtpunktzahlNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0030-AnschriftMussVorkommen"/>
+         <sch:extends rule="rule-SCH-0029-NoteInGesamtpunktzahlNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0030-WohnortMussVorkommen"/>
+         <sch:extends rule="rule-SCH-0032-GueltigkeitNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0034-IdentifikationSorgeberechtigterNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0038-WohnortNichtEnthalten"/>
+         <sch:extends rule="rule-SCH-0040-KontaktmoeglichkeitMussEnthaltenSein"/>
       </sch:rule>
    </sch:pattern>
 </sch:schema>
