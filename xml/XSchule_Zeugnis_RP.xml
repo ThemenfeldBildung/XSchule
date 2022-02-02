@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.zeugnis.0002 xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+ xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+ xmlns:eup="http://data.europa.eu/snb"
+ xmlns:xiaa="http://www.osci.de/xinneres/auslandsanschrift/3"
+ xmlns:xicgvz="http://www.osci.de/xinneres/codes/gemeindeverzeichnis/2"
+ xmlns:xima="http://www.osci.de/xinneres/meldeanschrift/3"
+ xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+ xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+ xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+ xmlns:xsc="xschule"
+ xmlns:cred="http://data.europa.eu/europass/model/credentials/w3c#"
+ xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xschule.digital/def/xschule/0.1.1/xsd/xschule.xsd">
+<!--
+        Datum: 31.01.2022
+        Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Gudula Barmett
+        Lizenz: Creative Commons 4.0 Namensnennung International, "init AG im Auftrag des Landes Sachsen-Anhalt"-->
+   
+    <xsc:zeugnis>
+        
+        
+        <xbd:ausstellung>
+            <xbd:datum>2021-03-21</xbd:datum>
+            <xbd:ort xml:lang="DE">Mainz</xbd:ort>
+        </xbd:ausstellung>
+        
+        <xbd:artDesNachweises>
+            <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDesNachweises/sonstigerNachweis</code>
+            <!-- in XBildung V0.9 gibt es hier einen Wert "Schulzeugnis" -->
+        </xbd:artDesNachweises>
+        <xsc:artDesZeugnisses>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/zeugnisart/Abschlusszeugnis</code>
+        </xsc:artDesZeugnisses>
+        <xsc:niveau>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/4</code>
+        </xsc:niveau>
+        
+    </xsc:zeugnis>
+    
+    
+    <xsc:schueler>
+       
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Barmett</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Gudula</xbd:name>
+            </xbd:vorname>
+            <xbd:anrede>Frau</xbd:anrede>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>2003-05-16</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:wohnort>Wiesbaden-Dotzheim</xbd:wohnort>
+            </xbd:geburtsort>
+        </xbd:geburt>
+       <xsc:wohnort>Hochheim</xsc:wohnort>
+   
+       
+    </xsc:schueler>
+    
+    <xsc:schule>
+        <xbd:identifikation>
+            <xbd:id>NW_168890</xbd:id>
+            <xbd:beschreibung xml:lang="de">XSchule Schulnummer vom </xbd:beschreibung>
+        </xbd:identifikation>
+        <xbd:name>
+            <xbd:name xml:lang="de">Privat Bischöfliches Willigis-Gymnasium</xbd:name>
+            <xbd:kurzbezeichnung xml:lang="de">Priv. Bischöfl. Willigis-Gymnasium</xbd:kurzbezeichnung>
+        </xbd:name>
+        <xbd:anschrift>
+            <xbd:gemeindeschluessel listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags" listVersionID="2021-10-31">
+                <code>05774032</code>
+            </xbd:gemeindeschluessel>
+            <xbd:hausnummer>2</xbd:hausnummer>
+            <xbd:postleitzahl>55116</xbd:postleitzahl>
+            <xbd:strasse>Willigisplatz</xbd:strasse>
+            <xbd:wohnort>Mainz</xbd:wohnort>
+        </xbd:anschrift>
+        <xbd:artDerTraegerschaft listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft" listVersionID="0.8">
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerTraegerschaft/4</code>
+        </xbd:artDerTraegerschaft>
+        
+        <xsc:schulform listURI="urn:xbildung-de:xbildung:codeliste:artderschule" listVersionID="0.8">
+            <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDerSchule/100</code>
+        </xsc:schulform>
+    </xsc:schule>
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+            <!--- Deutsch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    
+    
+    
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/schriftlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>01</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+    
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>00</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+    
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/003</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/schriftlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>08</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+    
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/003</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>07</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+    
+    
+    <xsc:qualifikation>
+        <xsc:gesamtpunktzahl>
+            <xbd:punkte>385</xbd:punkte>
+        </xsc:gesamtpunktzahl>
+        <xsc:durchschnittsnote>
+            <xbd:note>3.5</xbd:note>
+        </xsc:durchschnittsnote>
+    </xsc:qualifikation>
+    
+    <xsc:artDerHZB>
+        <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDerHZB/03</code>
+    </xsc:artDerHZB>
+    
+    
+    <!-- Englisch B2/C1, Französisch A2, Spanisch B1--> 
+    <xsc:fremdsprache> 
+        <xsc:sprache>
+            <code>https://publications.europa.eu/resource/authority/language/ENG</code>
+        </xsc:sprache>
+        <xsc:beginn>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_5</code>
+        </xsc:beginn>
+        <xsc:ende>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:ende>
+        <xsc:ger>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/B2</code>
+        </xsc:ger>
+        <xsc:ger>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/C1</code>
+        </xsc:ger>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+        </xsc:fach>
+    </xsc:fremdsprache>
+    
+    
+    
+    <xsc:fremdsprache>
+        <xsc:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
+        </xsc:sprache>
+        
+        <xsc:beginn listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_7</code>
+        </xsc:beginn>
+        <xsc:ende listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:ende>
+        <xsc:ger listURI="urn:xschule-digital:xschule:codeliste:ger" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/A2</code>
+        </xsc:ger>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/003</code>
+        </xsc:fach>
+    </xsc:fremdsprache>
+    
+    <xsc:fremdsprache>
+        <xsc:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>http://publications.europa.eu/resource/authority/language/SPA</code>
+        </xsc:sprache>
+        
+        <xsc:beginn listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_8</code>
+        </xsc:beginn>
+        <xsc:ende listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_10</code>
+        </xsc:ende>
+        <xsc:ger listURI="urn:xschule-digital:xschule:codeliste:ger" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/B1</code>
+        </xsc:ger>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/006</code>
+        </xsc:fach>
+    </xsc:fremdsprache>
+    
+    </xsc:schueler.zeugnis.0002>
