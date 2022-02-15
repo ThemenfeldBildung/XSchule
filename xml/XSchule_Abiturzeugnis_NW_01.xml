@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.zeugnis.0002 xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+    xmlns:xsc="xschule"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/0.1.1/xsd/xschule.xsd">
+
+    <xsc:zeugnis>
+        <xbd:ausstellung>
+            <xbd:datum>2019-05-07</xbd:datum>
+            <xbd:ort xml:lang="DE">Lemgo</xbd:ort>
+        </xbd:ausstellung>
+
+        <xbd:artDesNachweises>
+            <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDesNachweises/sonstigerNachweis</code>
+            <!-- in XBildung V0.9 gibt es hier einen Wert "Schulzeugnis" -->
+        </xbd:artDesNachweises>
+        <xsc:nachweisperiode>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/nachweisperiode/Jahr</code>
+        </xsc:nachweisperiode>
+        <xsc:artDesZeugnisses>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/zeugnisart/Abschlusszeugnis</code>
+        </xsc:artDesZeugnisses>
+        <xsc:niveau>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/4</code>
+        </xsc:niveau>
+    </xsc:zeugnis>
+    <xsc:schueler>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Aschenborn</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Niklas</xbd:name>
+            </xbd:vorname>
+            <xbd:anrede>Herr</xbd:anrede>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>1999-12-30</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:wohnort>Paderborn</xbd:wohnort>
+            </xbd:geburtsort>
+        </xbd:geburt>
+
+        <xsc:wohnort>Bonn</xsc:wohnort>
+        <!--  Möglichkeit einer ID einer Schülerin oder eines Schülers - Für Beispiel NRW ausgeklammert-->
+        <!--
+        <xbd:identifikation>
+            <xbd:id>ID-123123</xbd:id>
+            <xbd:beschreibung xml:lang="de">Beispielbeschreibung</xbd:beschreibung>
+            <xbd:gueltigkeit>
+                <xbd:beginn>2015-08-01</xbd:beginn>
+            </xbd:gueltigkeit>
+        </xbd:identifikation>
+       -->
+
+    </xsc:schueler>
+    <xsc:schule>
+        <xbd:identifikation>
+            <xbd:id>NW_168890</xbd:id>
+            <xbd:beschreibung xml:lang="de">XSchule Schulnummer vom Engelbert-Kaempfer-Gymnasium in Lemgo</xbd:beschreibung>
+        </xbd:identifikation>
+        <xbd:name>
+            <xbd:name xml:lang="de">Engelbert-Kaempfer-Gymnasium</xbd:name>
+            <xbd:kurzbezeichnung xml:lang="de">Engelbert-Kaempfer-Gymnasium</xbd:kurzbezeichnung>
+        </xbd:name>
+        <xbd:anschrift>
+            <xbd:gemeindeschluessel
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags"
+                listVersionID="2021-10-31">
+                <code>05774032</code>
+            </xbd:gemeindeschluessel>
+            <xbd:hausnummer>63</xbd:hausnummer>
+            <xbd:postleitzahl>32657</xbd:postleitzahl>
+            <xbd:strasse>Rampendal</xbd:strasse>
+            <xbd:wohnort>Lemgo</xbd:wohnort>
+        </xbd:anschrift>
+        <xbd:artDerTraegerschaft listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft"
+            listVersionID="0.8">
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerTraegerschaft/1</code>
+        </xbd:artDerTraegerschaft>
+
+        <xsc:schulform listURI="urn:xbildung-de:xbildung:codeliste:artderschule" listVersionID="0.8">
+            <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDerSchule/100</code>
+        </xsc:schulform>
+    </xsc:schule>
+
+
+
+    <!-- 
+        Sprachlich-literarisch-künstlerisches Aufgabenfeld
+         Deutsch - 05 05 07 05
+         Englisch 05 08 07 06
+         Kunsterziehung 05 06 __ __
+        
+        
+        Gesellschaftswissenschaftliches Aufgabenfeld
+         Geographie (06) 09 (07) (04)
+         Geschichte __ __ 10 07
+         Sozialwissenschaften __ __ 10 05
+         Erziehungswissenschaft 12 08 08 07
+        
+        
+        Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld
+         Mathematik 04 04 05 05
+         Biologie   (04) (05) 08 07
+         Physik     05 06 07 07
+         Kath Religionslehre 05 10 __ __ 
+         Sport         12 12 08 08
+        -->
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+            <!--- Deutsch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+            <!--- Deutsch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+            <!--- Deutsch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+            <!--- Deutsch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sonst. gesellschaftswiss. Fach (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>12</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+            <!--- Sonst. gesellschaftswiss. Fach -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sonst. gesellschaftswiss. Fach (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+            <!--- Sonst. gesellschaftswiss. Fach -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sonst. gesellschaftswiss. Fach (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+            <!--- Sonst. gesellschaftswiss. Fach -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sonst. gesellschaftswiss. Fach (LK/eA)</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+            <!--- Sonst. gesellschaftswiss. Fach -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Leistungskurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Englisch</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+            <!--- Englisch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Englisch</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+            <!--- Englisch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Englisch</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+            <!--- Englisch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Englisch</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>06</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+            <!--- Englisch -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Textiles Gestalten</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/033</code>
+            <!--- Textiles Gestalten -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Textiles Gestalten</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>06</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/033</code>
+            <!--- Textiles Gestalten -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Erdkunde</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>06</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/019</code>
+            <!--- Erdkunde -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Erdkunde</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>09</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/019</code>
+            <!--- Erdkunde -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Erdkunde</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/019</code>
+            <!--- Erdkunde -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Erdkunde</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>04</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/019</code>
+            <!--- Erdkunde -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Geschichte</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>10</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/020</code>
+            <!--- Geschichte -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Geschichte</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/020</code>
+            <!--- Geschichte -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Mathematik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>04</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/014</code>
+            <!--- Mathematik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Mathematik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>04</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/014</code>
+            <!--- Mathematik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Mathematik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/014</code>
+            <!--- Mathematik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Mathematik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/014</code>
+            <!--- Mathematik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sozialwissenschaften</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>10</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/051</code>
+            <!--- Sozialwissenschaften -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sozialwissenschaften</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/051</code>
+            <!--- Sozialwissenschaften -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Biologie</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>04</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/017</code>
+            <!--- Biologie -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Biologie</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/017</code>
+            <!--- Biologie -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Biologie</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/017</code>
+            <!--- Biologie -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Biologie</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/017</code>
+            <!--- Biologie -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Physik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/015</code>
+            <!--- Physik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Physik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>06</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/015</code>
+            <!--- Physik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Physik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/015</code>
+            <!--- Physik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Physik</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>07</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/015</code>
+            <!--- Physik -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Kath. Religionslehre</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>05</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/025</code>
+            <!--- Kath. Religionslehre -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Kath. Religionslehre</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>10</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/025</code>
+            <!--- Kath. Religionslehre -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sport</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>12</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/035</code>
+            <!--- Sport -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sport</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>12</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/035</code>
+            <!--- Sport -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sport</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/035</code>
+            <!--- Sport -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/1._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+    
+    <xsc:kurs>
+        <xbd:fachbezeichnung xml:lang="de">Sport</xbd:fachbezeichnung>
+        <xbd:note>
+            <xbd:bewertungsschema>
+                <xbd:schemaURI listVersionID="1972">
+                    <code>https://xschule.digital/def/KMK/Abiturschema</code>
+                </xbd:schemaURI>
+                <xbd:beschreibung xml:lang="DE">Für die Umsetzung von Noten in Punkte gilt das Bewertungsschema der KMK von 1972</xbd:beschreibung>
+            </xbd:bewertungsschema>
+            <xbd:punkte>08</xbd:punkte>
+        </xbd:note>
+        <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:faecherliste" listVersionID="2019">
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/035</code>
+            <!--- Sport -->
+        </xsc:fach>
+        <xsc:kursart listURI="urn:xschule-digital:xschule:codeliste:kursart" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/kursart/Grundkurs</code>
+        </xsc:kursart>
+        <xsc:halbjahr listURI="urn:xschule-digital:xschule:codeliste:halbjahr" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/halbjahr/2._Halbjahr</code>
+        </xsc:halbjahr>
+        <xsc:klassenstufe>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:klassenstufe>
+        <xsc:aufgabenfeld>
+            <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</code>
+        </xsc:aufgabenfeld>
+        <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+    </xsc:kurs>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/schriftlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>01</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/001</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>00</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/schriftlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>08</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>07</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/schriftlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>11</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/023</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>11</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:pruefungsergebnis>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/015</code>
+        </xsc:fach>
+        <xsc:artDerPruefung>
+            <code>http://xbildung.de/def/xbildung/0.8/code/ArtDerPruefung/muendlichePruefung</code>
+        </xsc:artDerPruefung>
+        <xsc:note>
+            <xbd:punkte>03</xbd:punkte>
+        </xsc:note>
+    </xsc:pruefungsergebnis>
+
+    <xsc:qualifikation>
+        <xsc:gesamtpunktzahl>
+            <xbd:punkte>385</xbd:punkte>
+        </xsc:gesamtpunktzahl>
+        <xsc:durchschnittsnote>
+            <xbd:note>3.5</xbd:note>
+        </xsc:durchschnittsnote>
+    </xsc:qualifikation>
+
+    <xsc:artDerHZB>
+        <code>http://www.xbildung.de/def/xbildung/0.8/code/ArtDerHZB/03</code>
+    </xsc:artDerHZB>
+
+    <xsc:bemerkung>
+        <xsc:bemerkungen>Mitarbeit im Technik-Team.</xsc:bemerkungen>
+        <xsc:artDerBemerkung>
+            <code>http://xschule.digital/def/xschule/0.1.1/code/artderbemerkung/001</code>
+        </xsc:artDerBemerkung>
+    </xsc:bemerkung>
+
+    <xsc:fremdsprache>
+        <xsc:sprache>
+            <code>https://publications.europa.eu/resource/authority/language/ENG</code>
+        </xsc:sprache>
+        <xsc:beginn>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_5</code>
+        </xsc:beginn>
+        <xsc:ende>
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</code>
+        </xsc:ende>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/002</code>
+        </xsc:fach>
+    </xsc:fremdsprache>
+
+
+
+    <xsc:fremdsprache>
+        <xsc:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
+        </xsc:sprache>
+
+        <xsc:beginn listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_5</code>
+        </xsc:beginn>
+        <xsc:ende listURI="urn:xschule-digital:kmk:codeliste:klassenstufe" listVersionID="4.0">
+            <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_10</code>
+        </xsc:ende>
+        <xsc:ger listURI="urn:xschule-digital:xschule:codeliste:ger" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/B2</code>
+        </xsc:ger>
+        <xsc:ger listURI="urn:xschule-digital:xschule:codeliste:ger" listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/GER/C1</code>
+        </xsc:ger>
+        <xsc:fach>
+            <code>http://xschule.digital/def/kmk/2019/code/faecherliste/003</code>
+        </xsc:fach>
+
+    </xsc:fremdsprache>
+
+</xsc:schueler.zeugnis.0002>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.wechsel.0001 xmlns:xsc="xschule"
+    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://xschule.digital/def/xschule/0.1.1/xsd/xschule-nachweise.xsd">
+    <!--Datum: 15.02.2022
+        Name der Beispieldatei: Wechsel_01
+        Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Primarstufe
+        Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, "]init[ AG im Auftrag des Landes Sachsen-Anhalt"-->
+    <xsc:schueler>
+        <xbd:nameNatuerlichePerson>
+            <xbd:familienname>
+                <xbd:name>Wagner</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>René</xbd:name>
+            </xbd:vorname>
+            <xbd:rufname>
+                <xbd:name>René</xbd:name>
+            </xbd:rufname>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>2013-02-26</xbd:datum>
+            <xbd:geburtsort>
+                <xbd:gemeindeschluessel
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags"
+                    listVersionID="listVersionID6">
+                    <code>08326074</code>
+                    <name>Villingen-Schwenningen</name>
+                </xbd:gemeindeschluessel>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        <xbd:identifikation>
+            <xbd:id>7568522</xbd:id>
+            <xbd:beschreibung xml:lang="de">Schülernummer</xbd:beschreibung>
+        </xbd:identifikation>
+
+
+        <xsc:herkunftssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+        </xsc:herkunftssprache>
+        <xsc:verkehrssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+            listVersionID="20210929-0">
+            <code>http://publications.europa.eu/resource/authority/language/POR</code>
+        </xsc:verkehrssprache>
+        <xsc:impfung>
+            <xsc:impfschutz>
+                <code>http://xschule.digital/def/xschule/0.1.1/code/impfschutz/Ja</code>
+            </xsc:impfschutz>
+            <xsc:krankheit>
+                <code>http://xschule.digital/def/xschule/0.1.1/code/krankheit/Masern</code>
+            </xsc:krankheit>
+        </xsc:impfung>
+
+        <xsc:schuelerReisender>
+            <xsc:kindBeruflichReisender>false</xsc:kindBeruflichReisender>
+        </xsc:schuelerReisender>
+        <xsc:wohnort>Villingen-Schwellingen</xsc:wohnort>
+        <!-- diese Angabe kommt in V0.2 noch raus -->
+    </xsc:schueler>
+
+    <xsc:aufnehmendeSchule>
+        <xbd:identifikation>
+            <xbd:id/>
+        </xbd:identifikation>
+        <xbd:name>
+            <xbd:name xml:lang="de">Regenbogenschule im Breisgau</xbd:name>
+            <xbd:kurzbezeichnung xml:lang="de">Regenbogenschule</xbd:kurzbezeichnung>
+        </xbd:name>
+
+        <xbd:anschrift>
+            <xbd:gemeindeschluessel
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags"
+                listVersionID="2021-12-31">
+                <code>09773136</code>
+                <name>Gundelfingen a.d.Donau, St</name>
+            </xbd:gemeindeschluessel>
+            <xbd:hausnummer>107</xbd:hausnummer>
+            <xbd:hausnummerBuchstabeZusatzziffer>C</xbd:hausnummerBuchstabeZusatzziffer>
+            <xbd:postleitzahl>79194</xbd:postleitzahl>
+            <xbd:strasse>Schwarzwaldstraße</xbd:strasse>
+            <xbd:wohnort>Gundelfingen</xbd:wohnort>
+            <xbd:wohnortFruehererGemeindename>Vörstetten</xbd:wohnortFruehererGemeindename>
+        </xbd:anschrift>
+    </xsc:aufnehmendeSchule>
+
+    <xsc:besuchteSchulen>
+        <xsc:schule>
+            <xbd:identifikation>
+                <xbd:id>BB106124</xbd:id>
+                <xbd:beschreibung xml:lang="de">Schulnummer</xbd:beschreibung>
+            </xbd:identifikation>
+            <xbd:name>
+
+                <xbd:name xml:lang="de">Grundschule Potsdam</xbd:name>
+                <xbd:kurzbezeichnung xml:lang="de">GS Potsdam</xbd:kurzbezeichnung>
+            </xbd:name>
+            <xbd:anschrift>
+                <xbd:gemeindeschluessel
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags"
+                    listVersionID="listVersionID0">
+                    <code>12054000</code>
+                    <name>Potsdam</name>
+                </xbd:gemeindeschluessel>
+                <xbd:hausnummer>55</xbd:hausnummer>
+                <xbd:postleitzahl>14471</xbd:postleitzahl>
+                <xbd:strasse>Lennéstraße</xbd:strasse>
+                <xbd:wohnort>Potsdam</xbd:wohnort>
+            </xbd:anschrift>
+            <xsc:kontaktmoeglichkeit>
+                <xbd:kanal listURI="urn:xschule-digital:xschule:codeliste:kanal"
+                    listVersionID="0.1.1">
+                    <code> http://xschule.digital/def/xschule/0.1.1/code/kanal/E-Mail </code>
+                </xbd:kanal>
+                <xbd:kennung>beispielschule@example.com</xbd:kennung>
+            </xsc:kontaktmoeglichkeit>
+            <xsc:schulform listURI="urn:xbildung-de:xbildung:codeliste:artderschule"
+                listVersionID="0.8">
+                <code> http://www.xbildung.de/def/xbildung/0.8/code/ArtDerSchule/050</code>
+            </xsc:schulform>
+            <xsc:schulprofil listURI="urn:xschule-digital:xschule:codeliste:schulprofil"
+                listVersionID="0.1.1">
+                <code>http://xschule.digital/def/xschule/0.1.1/code/schulprofil/Musik</code>
+            </xsc:schulprofil>
+            <xsc:bildungsgang listURI="urn:xschule-digital:xschule:codeliste:bildungsgang"
+                listVersionID="0.1.1">
+                <code> http://xschule.digital/def/xschule/0.1.1/code/bildungsgang/G8</code>
+            </xsc:bildungsgang>
+        </xsc:schule>
+        <xsc:zeitraum>
+            <xbd:beginn>2019-09-01</xbd:beginn>
+            <xbd:ende>2020-09-01</xbd:ende>
+        </xsc:zeitraum>
+        <xsc:schuljahrgang>
+            <xsc:klassenstufe>
+                <code>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_1</code>
+            </xsc:klassenstufe>
+        </xsc:schuljahrgang>
+    </xsc:besuchteSchulen>
+
+    <xsc:sorgeberechtigter>
+        <xsc:name>
+            <xbd:familienname>
+                <xbd:name>Wagner</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Sabine</xbd:name>
+            </xbd:vorname>
+        </xsc:name>
+        <xsc:geburt>
+
+            <teilbekanntesDatum>
+                <jahrMonatTag>1980-05-02</jahrMonatTag>
+            </teilbekanntesDatum>
+
+        </xsc:geburt>
+
+        <xsc:anschrift>
+            <xbd:gemeindeschluessel
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags"
+                listVersionID="listVersionID6">
+                <code>08311000</code>
+                <name>Freiburg im Breisgau</name>
+            </xbd:gemeindeschluessel>
+            <xbd:hausnummer>85</xbd:hausnummer>
+            <xbd:hausnummerBuchstabeZusatzziffer> B </xbd:hausnummerBuchstabeZusatzziffer>
+            <xbd:postleitzahl>79115</xbd:postleitzahl>
+            <xbd:strasse>Markgrafenstraße </xbd:strasse>
+            <xbd:wohnort>Freiburg im Breisgau </xbd:wohnort>
+        </xsc:anschrift>
+        <xsc:gesetzlichervertreterschluessel>
+            <code>2</code>
+            <!-- Mutter -->
+        </xsc:gesetzlichervertreterschluessel>
+
+    </xsc:sorgeberechtigter>
+
+    <xsc:schullaufbahn>
+        <xsc:eintrittsdatum> 2020-08-01 </xsc:eintrittsdatum>
+        <xsc:artDerEinschulung listURI="urn:xschule-digital:xschule:codeliste:artdereinschulung"
+            listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Regeleinschulung</code>
+        </xsc:artDerEinschulung>
+    </xsc:schullaufbahn>
+
+    <xsc:schulformspezifischeZusatzdaten>
+        <xsc:schulbesuchsjahreInSchuleingangsphase>1</xsc:schulbesuchsjahreInSchuleingangsphase>
+        <xsc:teilnahmeGemeinsamerUnterricht
+            listURI="urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht"
+            listVersionID="0.1.1">
+            <code>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/Zielgleich</code>
+        </xsc:teilnahmeGemeinsamerUnterricht>
+    </xsc:schulformspezifischeZusatzdaten>
+</xsc:schueler.wechsel.0001>
