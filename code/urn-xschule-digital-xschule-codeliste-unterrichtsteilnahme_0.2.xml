@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>ArtDerBemerkung</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Art der Bemerkung gibt an ob es sich um standardisierte Bemerkungen handelt, oder nicht.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Unterrichtsteilnahme</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Die Art der Bemerkung gibt an, ob es sich um eine standardisierte Bemerkung handelt, oder aber um eine frei verfasste Art.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:versionDescription>Art der Teilnahme am Unterricht. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>ArtDerBemerkung-Codes</ShortName>
-      <LongName>ArtDerBemerkung</LongName>
-      <Version>0.1.1</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderbemerkung</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderbemerkung_0.1.1</CanonicalVersionUri>
+      <ShortName>Unterrichtsteilnahme-Codes</ShortName>
+      <LongName>Unterrichtsteilnahme</LongName>
+      <Version>0.2</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:unterrichtsteilnahme</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:unterrichtsteilnahme_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,34 +45,34 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artderanmerkung/001</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Freie Formulierung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artderanmerkung/002</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Standardisierte Bemerkung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artderanmerkung/997</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artderanmerkung/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/unterrichtsteilnahme/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/unterrichtsteilnahme/freigestellt</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>freigestellt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/unterrichtsteilnahme/freiwillig</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>freiwillig</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/unterrichtsteilnahme/verpflichtend</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>verpflichtend</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

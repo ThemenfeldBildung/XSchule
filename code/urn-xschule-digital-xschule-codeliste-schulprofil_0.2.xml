@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Krankheit</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Liste von Krankheiten, zu denen ein impfschutz erhoben wird.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Schulprofil</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Angabe zum Schulprofil der jeweiligen Schule.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Liste von Krankheiten, zu denen ein impfschutz erhoben wird.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:versionDescription>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Krankheit-Codes</ShortName>
-      <LongName>Krankheit</LongName>
-      <Version>0.1.1</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:krankheit</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:krankheit_0.1.1</CanonicalVersionUri>
+      <ShortName>Schulprofil-Codes</ShortName>
+      <LongName>Schulprofil</LongName>
+      <Version>0.2</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:schulprofil</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:schulprofil_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/krankheit/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/997</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
@@ -53,7 +53,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/krankheit/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -61,10 +61,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/krankheit/Masern</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/musik</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Masern</SimpleValue>
+            <SimpleValue>Musik</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/sport</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Sport</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>TeilnahmeGemeinsamerUnterricht</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Gibt um welche Art der Teilnahme am gemeinsamen Unterricht es sich handelt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Impfschutz</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Hier können Angaben öber den Impfschutz von Schüler:innen gemacht werden.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Gibt um welche Art derTeilnahme am gemeinsamen Unterricht es sich handelt.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:versionDescription>Mit dem impfschutz wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe ueber die Impfung vorliegt.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>TeilnahmeGemeinsamerUnterricht-Codes</ShortName>
-      <LongName>TeilnahmeGemeinsamerUnterricht</LongName>
-      <Version>0.1.1</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht_0.1.1</CanonicalVersionUri>
+      <ShortName>Impfschutz-Codes</ShortName>
+      <LongName>Impfschutz</LongName>
+      <Version>0.2</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:impfschutz</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:impfschutz_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/impfschutz/997</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
@@ -53,7 +53,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/impfschutz/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -61,7 +61,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/impfschutz/999</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -69,18 +69,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/Zieldifferent</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/impfschutz/nicht_vorhanden</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Zieldifferent</SimpleValue>
+            <SimpleValue>nicht vorhanden</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/teilnahmegemeinsamerunterricht/Zielgleich</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/impfschutz/vorhanden</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Zielgleich</SimpleValue>
+            <SimpleValue>vorhanden</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

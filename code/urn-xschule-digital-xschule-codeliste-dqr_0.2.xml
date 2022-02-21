@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>ArtDesQualifikationsrahmens</xoev-cl-4:shortName>
+         <xoev-cl-4:shortName>DQR</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Die Art des Qualifikationsrahmens.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:versionDescription>Der Deusche Qualifikationsrahmen (DQR) und die Gegenüberstellung zum Europäischen Qualifikationsrahmens (EQR).</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>ArtDesQualifikationsrahmens-Codes</ShortName>
-      <LongName>ArtDesQualifikationsrahmens</LongName>
-      <Version>0.1.1</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artdesqualifikationsrahmens</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artdesqualifikationsrahmens_0.1.1</CanonicalVersionUri>
+      <ShortName>DQR-Codes</ShortName>
+      <LongName>Deutscher Qualifikationsrahmen</LongName>
+      <Version>0.2</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:dqr</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:dqr_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -49,7 +49,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/1</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/1</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Berufsausbildungsvorbereitung</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/2</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/2</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Hauptschulabschluss</SimpleValue>
@@ -71,7 +71,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/3</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/3</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Zweijaehrige Berufsausbildung, Mittlerer Schulabschluss</SimpleValue>
@@ -82,7 +82,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/4</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/4</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Dreijaehrige Berufsausbildung, Hochschulreife, Fachhochschulreife</SimpleValue>
@@ -93,7 +93,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/5</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/5</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Erste berufliche Fortbildungsqualifikation, Fachwirt</SimpleValue>
@@ -104,7 +104,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/6</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/6</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>FH-Diplom, Staatsexamen, Operativer Professional, Meister, Fachschule, Berufsakademie</SimpleValue>
@@ -115,7 +115,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/7</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/7</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Uni-Diplom, Magister, Staatsexamen, Strategischer Professional, Technisch gepruefter Betriebswirt</SimpleValue>
@@ -126,7 +126,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/8</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/dqr/8</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Promotion zum Dr.</SimpleValue>
@@ -134,33 +134,6 @@
          <Value ColumnRef="EQR">
             <SimpleValue>dritter Studienzyklus (Ph.D.)</SimpleValue>
          </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/997</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
-         </Value>
-         <Value ColumnRef="EQR"/>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-         <Value ColumnRef="EQR"/>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/ArtdesQualifikationsrahmens/999</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht bekannt</SimpleValue>
-         </Value>
-         <Value ColumnRef="EQR"/>
       </Row>
    </SimpleCodeList>
 </gc:CodeList>

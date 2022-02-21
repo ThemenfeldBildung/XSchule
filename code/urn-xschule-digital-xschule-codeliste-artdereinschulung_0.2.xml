@@ -8,16 +8,16 @@
          <xoev-cl-4:codelistDescription>Die Art der Einschulung gibt an wie der Schüler eingeschult wurde.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>ArtDerEinschulung-Codes</ShortName>
       <LongName>ArtDerEinschulung</LongName>
-      <Version>0.1.1</Version>
+      <Version>0.2</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artdereinschulung</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artdereinschulung_0.1.1</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artdereinschulung_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/997</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
@@ -53,7 +53,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -61,7 +61,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/999</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -69,15 +69,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Einschulung_Schule_freier_Traegerschaft</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Einschulung Schule freier Traegerschaft</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Einschulung_mit_Inklusion</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/einschulung_mit_inklusion</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Einschulung mit Inklusion</SimpleValue>
@@ -85,7 +77,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Einschulung_nach_Zurueckstellung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/einschulung_nach_zurueckstellung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Einschulung nach Zurueckstellung</SimpleValue>
@@ -93,7 +85,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Regeleinschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/einschulung_schule_freier_traegerschaft</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Einschulung Schule freier Traegerschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/regeleinschulung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Regeleinschulung</SimpleValue>
@@ -101,7 +101,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Schulwechsel_(außerhalb_Schulbezirk)</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Schulwechsel (außerhalb Schulbezirk)</SimpleValue>
@@ -109,18 +109,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/Zurueckstellung_gewuenscht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/vorzeitige_einschulung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Zurueckstellung gewuenscht</SimpleValue>
+            <SimpleValue>vorzeitige Einschulung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/artdereinschulung/vorzeitige_Einschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/artdereinschulung/zurueckstellung_gewuenscht</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>vorzeitige Einschulung</SimpleValue>
+            <SimpleValue>Zurueckstellung gewuenscht</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

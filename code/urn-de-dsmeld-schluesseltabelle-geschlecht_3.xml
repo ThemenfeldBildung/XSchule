@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Geschlecht</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Gibt das Geschlecht einer natürlichen Person an.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:validFrom>2019-05-01</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Geschlecht-Codes</ShortName>
+      <LongName>DSMeld Geschlecht (DSMeld-Blatt 0701)</LongName>
+      <Version>3</Version>
+      <CanonicalUri>urn:de:dsmeld:schluesseltabelle:geschlecht</CanonicalUri>
+      <CanonicalVersionUri>urn:de:dsmeld:schluesseltabelle:geschlecht_3</CanonicalVersionUri>
+      <AlternateFormatLocationUri>https://www.xrepository.de/details/urn:de:dsmeld:schluesseltabelle:geschlecht_3#version </AlternateFormatLocationUri>
+      <Agency>
+         <LongName/>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName/>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName/>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/dsmeld/geschlecht/3/code/d</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>divers</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/dsmeld/geschlecht/3/code/m</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>männlich</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/dsmeld/geschlecht/3/code/w</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>weiblich</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/dsmeld/geschlecht/3/code/x</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>ohne Angabe</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

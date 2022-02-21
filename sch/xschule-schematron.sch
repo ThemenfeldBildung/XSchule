@@ -4,9 +4,8 @@
             queryBinding="xslt2">
    <sch:ns prefix="dinspec91379"
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
-   <sch:ns prefix="eup" uri="http://data.europa.eu/snb"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.8/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.9/xsd"/>
    <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
    <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
    <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
@@ -32,7 +31,7 @@
       <!-- /Data/XSchule/Nachweise/schueler.wechsel.0001 -->
       <sch:rule id="rule-SCH-0014-AnschriftMussVorkommen" abstract="true">
          <sch:assert id="SCH-0014-AnschriftMussVorkommen"
-                     test="count(xsc:schueler/xbd:anschrift)&gt;=1">Das Element "Anschrift" muss enthalten sein.</sch:assert>
+                     test="empty(xsc:schueler/xbd:anschrift)">Das Element "Anschrift" muss enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0021-AlternativeRepraesentationNichtEnthalten"
                 abstract="true">
@@ -57,10 +56,6 @@
       <sch:rule id="rule-SCH-0029-NoteInGesamtpunktzahlNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0029-NoteInGesamtpunktzahlNichtEnthalten"
                      test="empty(xsc:Gesamtpunktzahl.Note)">Das Element "Note" darf nicht enthalten sein.</sch:assert>
-      </sch:rule>
-      <sch:rule id="rule-SCH-0030-WohnortMussVorkommen" abstract="true">
-         <sch:assert id="SCH-0030-WohnortMussVorkommen"
-                     test="count(xsc:schueler.wohnort)&gt;=1">Das Element "Anschrift" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0032-GueltigkeitNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0032-GueltigkeitNichtEnthalten"
@@ -108,7 +103,7 @@
       </sch:rule>
       <sch:rule id="rule-SCH-0009-AuskunftssperreNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0009-AuskunftssperreNichtEnthalten"
-                     test="empty(xsc:auskunftssperre)">"Auskunfstsperre" darf nicht enthalten sein.</sch:assert>
+                     test="empty(xsc:auskunftssperre)">"Auskunftssperre" darf nicht enthalten sein.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0010-AngabeWohnungsinhaberNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0010-AngabeWohnungsinhaberNichtEnthalten"
@@ -125,19 +120,19 @@
       <sch:rule id="rule-SCH-0015-AufnehmendeSchuleBekanntNichtEnthalten"
                 abstract="true">
          <sch:assert id="SCH-0015-AufnehmendeSchuleBekanntNichtEnthalten"
-                     test="empty(xsc:schule.aufnehmendeschulebekannt)">Das Element "aufnehmendeSchuleBekannt" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.aufnehmendeschulebekannt)">Das Element "aufnehmendeSchuleBekannt" ist nur für "schueler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0016-SchulformNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0016-SchulformNichtEnthalten"
-                     test="empty(xsc:schule.schulform)">Das Element "schulform" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.schulform)">Das Element "schulform" ist nur für "schueler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0017-SchulprofilNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0017-SchulprofilNichtEnthalten"
-                     test="empty(xsc:schule.schulprofil)">Das Element "schulprofil" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.schulprofil)">Das Element "schulprofil" ist nur für "schueler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0018-BildungsgangNichtEnthalten" abstract="true">
          <sch:assert id="SCH-0018-BildungsgangNichtEnthalten"
-                     test="empty(xsc:schule.bildungsgang)">Das Element "bildungsgang" ist nur für den Nachweis "schüler.wechsel.0001" relevant.</sch:assert>
+                     test="empty(xsc:schule.bildungsgang)">Das Element "bildungsgang" ist nur für "schueler.wechsel.0001" relevant.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-SCH-0031-PunkteInDurchschnittsnoteNichtEnthalten"
                 abstract="true">
@@ -195,7 +190,6 @@
          <sch:extends rule="rule-SCH-0025-UnterorganisationNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0027-KursBeschreibungNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0029-NoteInGesamtpunktzahlNichtEnthalten"/>
-         <sch:extends rule="rule-SCH-0030-WohnortMussVorkommen"/>
          <sch:extends rule="rule-SCH-0032-GueltigkeitNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0034-IdentifikationSorgeberechtigterNichtEnthalten"/>
          <sch:extends rule="rule-SCH-0038-WohnortNichtEnthalten"/>

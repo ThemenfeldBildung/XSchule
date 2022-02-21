@@ -8,16 +8,16 @@
          <xoev-cl-4:codelistDescription>Die Angabe Klassenstufe gibt Aufschluss über die jeweilige Stufe. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu können.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Die Angabe KlassenstufeBeginn gibt Aufschluss ueber das Einsetzen der Fremdsprache. In den Anwendungsfaellen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Klassenstufe (1-13) angeben zu koennen.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Klassenstufe-Codes</ShortName>
       <LongName>Klassenstufe</LongName>
       <Version>4.0</Version>
-      <CanonicalUri>urn:xschule-digital:kmk:codeliste:klassenstufe</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:klassenstufe_4.0</CanonicalVersionUri>
+      <CanonicalUri>urn:xschule-digital:kmk:kds:codeliste:klassenstufe</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:kds:codeliste:klassenstufe_4.0</CanonicalVersionUri>
       <Agency>
          <LongName>Kultusministerkonferenz</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Einfuehrungsphase</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/einfuehrungsphase</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Einführungsphase</SimpleValue>
@@ -53,7 +53,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_0</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/keiner_klassenstufe/keinem_schuljahrgang_zugeordnet</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>keiner Klassenstufe/keinem Schuljahrgang zugeordnet</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_0</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 0</SimpleValue>
@@ -61,7 +69,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_1</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_1</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 1</SimpleValue>
@@ -69,7 +77,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_10</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_10</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 10</SimpleValue>
@@ -77,7 +85,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_2</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_2</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 2</SimpleValue>
@@ -85,7 +93,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_3</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_3</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 3</SimpleValue>
@@ -93,7 +101,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_4</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_4</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 4</SimpleValue>
@@ -101,7 +109,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_5</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_5</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 5</SimpleValue>
@@ -109,7 +117,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_6</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_6</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 6</SimpleValue>
@@ -117,7 +125,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_7</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_7</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 7</SimpleValue>
@@ -125,7 +133,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_8</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_8</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 8</SimpleValue>
@@ -133,7 +141,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufe_9</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufe_9</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufe 9</SimpleValue>
@@ -141,7 +149,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufenuebergreifende_Klasse-Primar_und_Sek_I</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufenuebergreifende_klasse-primar_und_sek_I</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufenübergreifende Klasse-Primar und Sek I</SimpleValue>
@@ -149,7 +157,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufenuebergreifende_Klasse-Primarstufe</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufenuebergreifende_klasse-primarstufe</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufenübergreifende Klasse-Primarstufe</SimpleValue>
@@ -157,7 +165,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufenuebergreifende_Klasse-Sek_II</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufenuebergreifende_klasse-sek_II</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufenübergreifende Klasse-Sek II</SimpleValue>
@@ -165,7 +173,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufenuebergreifende_Klasse-Sek_I_und_Sek_II</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufenuebergreifende_klasse-sek_I_und_sek_II</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufenübergreifende Klasse-Sek I und Sek II</SimpleValue>
@@ -173,7 +181,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Klassenstufenuebergreifende_Klasse-Sekundarstufe_I</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/klassenstufenuebergreifende_klasse-sekundarstufe_I</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Klassenstufenübergreifende Klasse-Sekundarstufe I</SimpleValue>
@@ -181,7 +189,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_1</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/qualifikationsphase_1</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Qualifikationsphase 1</SimpleValue>
@@ -189,18 +197,10 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/Qualifikationsphase_2</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/kds/4.0/code/klassenstufe/qualifikationsphase_2</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Qualifikationsphase 2</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/4.0/code/klassenstufe/keiner_Klassenstufe/keinem_Schuljahrgang_zugeordnet</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>keiner Klassenstufe/keinem Schuljahrgang zugeordnet</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

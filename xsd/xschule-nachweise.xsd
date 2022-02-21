@@ -2,9 +2,9 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:xsc="xschule"
            xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.8/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd"
            targetNamespace="xschule"
-           version="0.1.1"
+           version="0.2"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +17,7 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.1.1</version>
+            <version>0.2</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -27,8 +27,8 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.8/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.8/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.9/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.9/xsd"/>
    <xs:import schemaLocation="http://xoev.de/DIN-SPEC-91379/2019-03/datatypes/din-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <xs:element name="schueler.wechsel.0001">
@@ -42,12 +42,12 @@
          <xs:sequence>
             <xs:element name="schueler" type="xsc:Schueler">
                <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden die Daten des Schülers mitgeteilt.</xs:documentation>
+                  <xs:documentation>Der Schüler ist eine natürliche Person welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, welche man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:SchuleStammdaten">
+            <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:AufnehmendeSchule">
                <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden Daten eines Schülers reisender Eltern übermittelt.</xs:documentation>
+                  <xs:documentation>Mit diesem Element werden Daten der aufnehmenden Schule übermittelt.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="besuchteSchulen"
@@ -55,21 +55,13 @@
                         maxOccurs="unbounded"
                         type="xsc:BesuchteSchule">
                <xs:annotation>
-                  <xs:documentation>Hier können alle Schulen angegeben werden, die das Kind in der Vergangenheit besucht hat.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="unterrichtsteilnahme"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:Unterrichtsteilnahme">
-               <xs:annotation>
-                  <xs:documentation>Es können Angaben zu einer bestimmten Unterrichtsteilnahme gemacht werden.</xs:documentation>
+                  <xs:documentation>Hier kann die letzte besuchte Schule angegeben werden.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="zusaetzlicherAnhang"
                         minOccurs="0"
                         maxOccurs="unbounded"
-                        type="xsc:ZusaetzlicherAnhang">
+                        type="xsc:NotenuebersichtUndZeugnis">
                <xs:annotation>
                   <xs:documentation>Es können zusätzliche Anhänge angegeben werden.</xs:documentation>
                </xs:annotation>
@@ -77,27 +69,26 @@
             <xs:element name="sorgeberechtigter"
                         minOccurs="0"
                         maxOccurs="unbounded"
-                        type="xsc:GesetzlicherVertreter">
+                        type="xsc:Sorgeberechtigter">
                <xs:annotation>
-                  <xs:documentation>s sind mehrere Sorgeberechtigte möglich, das Familienverhältnis (z.B. Mutter, Vater, Pflegemutter) wird nicht erfasst.</xs:documentation>
+                  <xs:documentation>Es sind mehrere Sorgeberechtigte möglich.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="sorgeberechtigteOrganisation"
-                        minOccurs="0"
-                        type="xsc:SorgeberechtigteOrganisation">
-               <xs:annotation>
-                  <xs:documentation>Hier kann der Name einer Organisation angegeben werden, die für das Kind sorgeberechtigt ist. Dies kann beispielsweise das Jugendamt sein.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schullaufbahn" type="xsc:Einschulung">
+            <xs:element name="schullaufbahn" minOccurs="0" type="xsc:Einschulung">
                <xs:annotation>
                   <xs:documentation>Hier können Angaben über die Schullaufbahn gemacht werden.</xs:documentation>
                </xs:annotation>
             </xs:element>
             <xs:element name="schulformspezifischeZusatzdaten"
+                        minOccurs="0"
                         type="xsc:SchulformspezifischeZusatzdaten">
                <xs:annotation>
                   <xs:documentation>Angaben zu schulformspezifischen Zusatzdaten.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="aufnehmendeSchuleBekannt" minOccurs="0" type="xs:boolean">
+               <xs:annotation>
+                  <xs:documentation>Gibt an, ob aus Sicht eines Datensatzes einer abgebenden Schule bekannt ist, welches die aufnehmende Schule ist.</xs:documentation>
                </xs:annotation>
             </xs:element>
          </xs:sequence>
@@ -119,10 +110,10 @@
             </xs:element>
             <xs:element name="schueler" type="xsc:Schueler">
                <xs:annotation>
-                  <xs:documentation>Der Lernende ist eine natürliche Person welche ein Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) wahrgenommen hat und auf die ein Bildungsnachweis (z.B. Zeugnis) ausgestellt wurde.</xs:documentation>
+                  <xs:documentation>Der Schüler ist eine natürliche Person welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, welche man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="schule" type="xsc:SchuleStammdaten">
+            <xs:element name="schule" type="xsc:Schule">
                <xs:annotation>
                   <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Schule.</xs:documentation>
                </xs:annotation>

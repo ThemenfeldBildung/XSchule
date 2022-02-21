@@ -8,16 +8,16 @@
          <xoev-cl-4:codelistDescription>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Angabe des Bildungsganges an einer Schule. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-01-31</xoev-cl-4:validFrom>
-         <xoev-cl-4:versionHandbook>1.0</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Bildungsgang-Codes</ShortName>
       <LongName>Bildungsgang</LongName>
-      <Version>0.1.1</Version>
+      <Version>0.2</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:bildungsgang</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:bildungsgang_0.1.1</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:bildungsgang_0.2</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,23 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/bildungsgang/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/bildungsgang/999</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht bekannt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/bildungsgang/G8</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/bildungsgang/10</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>G8</SimpleValue>
@@ -69,10 +53,26 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.1.1/code/bildungsgang/G9</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/bildungsgang/20</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>G9</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/bildungsgang/998</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/bildungsgang/999</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>
