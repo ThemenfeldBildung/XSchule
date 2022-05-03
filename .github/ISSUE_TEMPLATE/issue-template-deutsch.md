@@ -1,12 +1,23 @@
 ---
 name: Issue Template Deutsch
-about: Beteiligungsverfahren zur Version 0.2 von XSchule
+about: Beteiligungsverfahren zur Spezifikation von XSchule
 title: ''
-labels: ''
-assignees: XSchuleDE
+labels: V0.2, open
+assignees: init-xschule
 
 ---
 
-Autor: [bitte angeben]
-Art der Organisation: [ Hersteller / Schule / Ministerium / andere ]
-Beschreibung: [bitte Beschreibung der Rückmeldung angeben]
+<!--
+Die aktuelle Version wird als Label automatisch vergeben. 
+Sollte sich Ihre Rückmeldung auf eine andere Version beziehen, passen Sie das Label bitte an.
+-->
+
+**Autor:** [bitte angeben]  
+**Art der Organisation:** [ Hersteller / Schule / Ministerium / andere ]  
+**Bundesland:** [wenn zutreffend, bitte angeben]
+
+**Kategorie(n) der Rückmeldung:** [z.B.: Allgemein / Fehler / Bedeutung unklar / Datentyp / Kardinalität / Doppelung / ...]
+**Betroffenes Feld:** [wenn zutreffend, z.B. `pruefungsergebnis.fachbezeichnung` / -]
+
+**Beschreibung:**  
+[bitte Beschreibung der Rückmeldung angeben]  
