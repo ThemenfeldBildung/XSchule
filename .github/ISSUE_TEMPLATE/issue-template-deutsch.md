@@ -7,11 +7,6 @@ assignees: init-xschule
 
 ---
 
-<!--
-Die aktuelle Version wird als Label automatisch vergeben. 
-Sollte sich Ihre Rückmeldung auf eine andere Version beziehen, passen Sie das Label bitte an.
--->
-
 **Autor:** [bitte angeben]  
 **Art der Organisation:** [ Hersteller / Schule / Ministerium / andere ]  
 **Bundesland:** [wenn zutreffend, bitte angeben]
@@ -21,3 +16,14 @@ Sollte sich Ihre Rückmeldung auf eine andere Version beziehen, passen Sie das L
 
 **Beschreibung:**  
 [bitte Beschreibung der Rückmeldung angeben]  
+
+<!--
+
+Es wird davon ausgegangen, dass das Issue sich auf die aktuelle Version von XSchule bezieht. Sollte dies nicht der Fall sein, erwähnen Sie es bitte in der Beschreibung.
+Weitere Punkte, die in der Beschreibung besonders hilfreich sind, sind zum Beispiel:  
+ - Herleitung des Änderungsbedarfs aus der Verwaltungspraxis (wofür wird eine Änderung benötigt)
+ - Beschreibung des Anwendungsfalls  
+ - Häufigkeit des Vorkommens  
+ - Bezug zu anderen Spezifikationen  
+
+-->
