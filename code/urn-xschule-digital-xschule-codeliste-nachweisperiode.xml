@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Nachweisperiode</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Nachweisperiode gibt an um welchen Zeitraum es sich handelt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionDescription>Die "nachweisperiode" beinhaltet Angaben zum konkreten Gueltigkeitszeitraum fuer das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Nachweisperiode-Codes</ShortName>
+      <LongName>Nachweisperiode</LongName>
+      <Version>0.3</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachweisperiode</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.3</CanonicalVersionUri>
+      <Agency>
+         <LongName>XSchule</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="beschreibung" Use="required">
+         <ShortName>beschreibung</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/998</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/halbjahr</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Halbjahr</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/jahr</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Jahr</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/semester</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Semester</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/trimester</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Trimester</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

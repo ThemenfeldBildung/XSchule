@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsc="xschule"
+           xmlns:xsc="http://xschule.digital/def/xschule/0.3/xsd"
            xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.9/xsd"
-           targetNamespace="xschule"
-           version="0.2"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.92/xsd"
+           targetNamespace="http://xschule.digital/def/xschule/0.3/xsd"
+           version="0.3"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,7 +17,7 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.2</version>
+            <version>0.3</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
@@ -27,133 +27,430 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.9/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.9/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.92/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.92/xsd"/>
    <xs:import schemaLocation="http://xoev.de/DIN-SPEC-91379/2019-03/datatypes/din-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <xs:element name="schueler.wechsel.0001">
       <xs:annotation>
-         <xs:appinfo>
-            <rechtsgrundlage/>
-         </xs:appinfo>
-         <xs:documentation>Diese Daten dienen der Anmeldung eines Schülers an einer anderen Schule.</xs:documentation>
+         <xs:documentation>Diese Nachricht dient der Anmeldung eines Schülers / einer Schülerin an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum/zur Schüler:in und den Sorgeberechtigten übermittelt.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
-         <xs:sequence>
-            <xs:element name="schueler" type="xsc:Schueler">
-               <xs:annotation>
-                  <xs:documentation>Der Schüler ist eine natürliche Person welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, welche man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:AufnehmendeSchule">
-               <xs:annotation>
-                  <xs:documentation>Mit diesem Element werden Daten der aufnehmenden Schule übermittelt.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="besuchteSchulen"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:BesuchteSchule">
-               <xs:annotation>
-                  <xs:documentation>Hier kann die letzte besuchte Schule angegeben werden.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="zusaetzlicherAnhang"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:NotenuebersichtUndZeugnis">
-               <xs:annotation>
-                  <xs:documentation>Es können zusätzliche Anhänge angegeben werden.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="sorgeberechtigter"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:Sorgeberechtigter">
-               <xs:annotation>
-                  <xs:documentation>Es sind mehrere Sorgeberechtigte möglich.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schullaufbahn" minOccurs="0" type="xsc:Einschulung">
-               <xs:annotation>
-                  <xs:documentation>Hier können Angaben über die Schullaufbahn gemacht werden.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schulformspezifischeZusatzdaten"
-                        minOccurs="0"
-                        type="xsc:SchulformspezifischeZusatzdaten">
-               <xs:annotation>
-                  <xs:documentation>Angaben zu schulformspezifischen Zusatzdaten.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="aufnehmendeSchuleBekannt" minOccurs="0" type="xs:boolean">
-               <xs:annotation>
-                  <xs:documentation>Gibt an, ob aus Sicht eines Datensatzes einer abgebenden Schule bekannt ist, welches die aufnehmende Schule ist.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-         </xs:sequence>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="schueler" type="xsc:WechselnderSchueler">
+                     <xs:annotation>
+                        <xs:documentation>Der Schüler ist eine natürliche Person, welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:AufnehmendeSchule">
+                     <xs:annotation>
+                        <xs:documentation>Mit diesem Element werden Daten der aufnehmenden Schule übermittelt, sofern sie der besuchten Schule zum Zeitpunkt der Nachrichtenerstellung bekannt sind.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="besuchteSchule" minOccurs="0" type="xsc:BesuchteSchule">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann die letzte besuchte Schule angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="zusaetzlicherAnhang"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xsc:NotenuebersichtUndZeugnis">
+                     <xs:annotation>
+                        <xs:documentation>Es können zusätzliche Anhänge angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="sorgeberechtigter"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xsc:Sorgeberechtigter">
+                     <xs:annotation>
+                        <xs:documentation>Es sind mehrere Sorgeberechtigte möglich.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="schullaufbahn" minOccurs="0" type="xsc:Schulaufnahme">
+                     <xs:annotation>
+                        <xs:documentation>Hier können Angaben über die Schullaufbahn gemacht werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="schulformspezifischeZusatzdaten"
+                              minOccurs="0"
+                              type="xsc:SchulformspezifischeZusatzdaten">
+                     <xs:annotation>
+                        <xs:documentation>Angaben zu schulformspezifischen Zusatzdaten.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="aufnahmedatum" minOccurs="0" type="xs:date">
+                     <xs:annotation>
+                        <xs:documentation>Gibt das (geplante) Aufnahmedatum an, sofern es der besuchten Schule zum Zeitpunkt der Nachrichtenerstellung bekannt ist.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
       </xs:complexType>
    </xs:element>
-   <xs:element name="schueler.zeugnis.0002">
+   <xs:element name="schueler.abiturzeugnis.0002">
       <xs:annotation>
-         <xs:appinfo>
-            <rechtsgrundlage/>
-         </xs:appinfo>
-         <xs:documentation>Dieser Nachweis bildet das Abiturzeugnis ab.</xs:documentation>
+         <xs:documentation>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
-         <xs:sequence>
-            <xs:element name="zeugnis" type="xsc:Zeugnis">
-               <xs:annotation>
-                  <xs:documentation>Mit dem Bildungsnachweis wird ein Bildungsabschluss nachgewiesen.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schueler" type="xsc:Schueler">
-               <xs:annotation>
-                  <xs:documentation>Der Schüler ist eine natürliche Person welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, welche man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schule" type="xsc:Schule">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Schule.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="kurs" maxOccurs="unbounded" type="xsc:Schulkurs">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Kurs fasst die abgelegten Kurse des Schülers zusammen.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="pruefungsergebnis"
-                        maxOccurs="unbounded"
-                        type="xsc:Pruefungsergebnis">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Prüfungsergebnis fasst die Ergebnisse der Prüfungen zusammen.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="qualifikation" type="xsc:Qualifikation">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Qualifikation fasst die erreichte Gesamtpunktzahl und die ermittelte Durchschnittsnote zusammen.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="artDerHZB" type="xbd:Code.ArtDerHZB">
-               <xs:annotation>
-                  <xs:documentation>Die die Art der Hochschulzugangsberechtigung an. Bsp. http://www.xbildung.de/def/xbildung/0.8/code/ArtDerHZB/03 für die allg. Hochschulzulassung am Gymnasium.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="bemerkung"
-                        minOccurs="0"
-                        maxOccurs="unbounded"
-                        type="xsc:Bemerkung">
-               <xs:annotation>
-                  <xs:documentation>Die Art der Bemerkung gibt an, ob es sich um eine standardisierte Bemerkung handelt, oder aber um eine frei verfasste Art.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="fremdsprache" maxOccurs="unbounded" type="xsc:Fremdsprache">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen in denen Kenntnisse erworben wurden zusammen.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-         </xs:sequence>
+         <xs:complexContent>
+            <xs:extension base="xbd:Bildungsnachweis">
+               <xs:sequence>
+                  <xs:element name="allgemeineAngaben">
+                     <xs:annotation>
+                        <xs:documentation>Mit den hier angegebenen allgemeinen Informationen soll der Bildungsabschluss kodiert werden.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="artDesZeugnisses" type="xsc:Code.Zeugnisart">
+                              <xs:annotation>
+                                 <xs:documentation>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="klassenstufe" minOccurs="0" type="xsc:Code.Klassenstufe">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt die Klassenstufe an, auf die sich das Zeugnis bezieht.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nachweisperiode"
+                                       minOccurs="0"
+                                       type="xsc:Code.Nachweisperiode">
+                              <xs:annotation>
+                                 <xs:documentation>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="bundesland" minOccurs="0" type="xsc:Code.Bundesland">
+                              <xs:annotation>
+                                 <xs:documentation>Hier können Angaben zum Bundesland als Ort der Austellung angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="niveau" minOccurs="0" type="xsc:Code.NQR-DQR">
+                              <xs:annotation>
+                                 <xs:documentation>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="artDerHZB"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt die Art der Hochschulzugangsberechtigung an.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="schueler" type="xsc:NachweisinhabenderSchueler">
+                     <xs:annotation>
+                        <xs:documentation>Der Schüler ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="schule" type="xsc:Schule">
+                     <xs:annotation>
+                        <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Bildungseinrichtung, die das Zeugnis ausgestellt hat.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="block-i">
+                     <xs:annotation>
+                        <xs:documentation>Der Block I beinhaltet die Ergebnisse in der Qualifikationsphase (Bezeichnung kann je nach Bundesland variieren). Dies beinhaltet insbesondere die Halbjahresergebnisse der belegten Fächer. Zusätzlich können weitere Leistungen angegeben werden. Auch wenn alle Meta-Daten zu einer Leistung (Halbjahr, Kursart, ...) in den Kurs-Elementen angegeben werden, soll die Reihenfolge der XML-Elemente der Regelung des Landes folgen.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="kurs" maxOccurs="unbounded" type="xsc:Schulkurs">
+                              <xs:annotation>
+                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des Schülers zusammen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="weitereLeistung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Pruefungsergebnis">
+                              <xs:annotation>
+                                 <xs:documentation>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen oder Facharbeiten angegeben, die Teil des Block I sind.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="block-ii">
+                     <xs:annotation>
+                        <xs:documentation>Der Block II beinhaltet die Ergebnisse der vier bis fünf Abiturprüfungen und weiterer besonderer Lernleistungen. Auch wenn alle Meta-Daten zu einer Leistung (Art der Prüfung, Kursart, ...) in den Prüfungsergebnis-Elementen angegeben werden, soll die Reihenfolge der XML-Elemente der Regelung des Landes folgen.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="pruefungsergebnis"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Pruefungsergebnis">
+                              <xs:annotation>
+                                 <xs:documentation>Die abgelegten Abiturprüfungen und ggf. besonderen Lernleistungen werden jeweils mit der Klasse Prüfungsergebnis beschrieben.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="block-iii">
+                     <xs:annotation>
+                        <xs:documentation>Der Block III fasst die Berechnung der Gesamtqualifikation und der Durchschnittsnote zusammen.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="durchschnittsnote" type="xbd:Benotung">
+                              <xs:annotation>
+                                 <xs:documentation>Angaben zu der ermittelten Durchschnittsnote aus allen erbrachten Leistungen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="gesamtpunktzahl" minOccurs="0" type="xbd:Benotung">
+                              <xs:annotation>
+                                 <xs:documentation>Angaben zur erreichten Gesamtpunktzahl aus allen erbrachten Leistungen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="punktsummeBlockI" minOccurs="0" type="xbd:Benotung">
+                              <xs:annotation>
+                                 <xs:documentation>Angaben zur erreichten Punktzahl in Block I.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="punktsummeBlockII" minOccurs="0" type="xbd:Benotung">
+                              <xs:annotation>
+                                 <xs:documentation>Angaben zur erreichten Punktzahl in Block II.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beschreibung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bei Bedarf kann hier mehrsprachig beschrieben werden, die Durchschnittsnote und Punktzahl berechnet wird. Grundsätzlich sollte davon ausgegangen werden, dass sich dies aus den Angaben in Block I und II und den Vorgaben der KMK ableiten lässt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="fremdsprachen">
+                     <xs:annotation>
+                        <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen zusammen, in denen Kenntnisse erworben wurden.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="fremdsprache"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Fremdsprache">
+                              <xs:annotation>
+                                 <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen in denen Kenntnisse erworben wurden zusammen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beinhaltetLatinum" minOccurs="0" type="xs:boolean">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt an, ob dieses Zeugnis das Latinum gemäß „Vereinbarung über das Latinum und das Graecum“ (Beschluss der Kultusministerkonferenz vom 22.09.2005) einschließt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beinhaltetGraecum" minOccurs="0" type="xs:boolean">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt an, ob dieses Zeugnis das Graecum gemäß „Vereinbarung über das Latinum und das Graecum“ (Beschluss der Kultusministerkonferenz vom 22.09.2005) einschließt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="bemerkung"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xsc:Bemerkung">
+                     <xs:annotation>
+                        <xs:documentation>Als Bemerkung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen erfasst werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="schueler.zeugnis.0003">
+      <xs:annotation>
+         <xs:documentation>Diese Nachricht bildet ein "generisches" Zeugnis ab. Es wird davon ausgegangen, dass alle Angaben, die auf einem Realschuabschluss-Zeugnis gemacht werden müssen, mit diesem generischen Zeugnis abgedeckt werden. Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art der des Abschulsses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="xbd:Bildungsnachweis">
+               <xs:sequence>
+                  <xs:element name="allgemeineAngaben">
+                     <xs:annotation>
+                        <xs:documentation>Die allgemeinen Angaben beschreiben das Zeugnis und den fachlichen Kontext.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="artDesZeugnisses" type="xsc:Code.Zeugnisart">
+                              <xs:annotation>
+                                 <xs:documentation>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="klassenstufe" minOccurs="0" type="xsc:Code.Klassenstufe">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt die Klassenstufe an, auf die sich das Zeugnis bezieht.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="nachweisperiode"
+                                       minOccurs="0"
+                                       type="xsc:Code.Nachweisperiode">
+                              <xs:annotation>
+                                 <xs:documentation>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="bundesland" minOccurs="0" type="xsc:Code.Bundesland">
+                              <xs:annotation>
+                                 <xs:documentation>Hier können Angaben zum Bundesland als Ort der Austellung angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="niveau" minOccurs="0" type="xsc:Code.NQR-DQR">
+                              <xs:annotation>
+                                 <xs:documentation>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="artDerHZB"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt die Art der Hochschulzugangsberechtigung an.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="schueler" type="xsc:NachweisinhabenderSchueler">
+                     <xs:annotation>
+                        <xs:documentation>Der Schüler ist eine natürliche Person, welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="schule" type="xsc:Schule">
+                     <xs:annotation>
+                        <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Schule.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="leistungen" minOccurs="0" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:documentation>Kurse und Prüfungen, die dieses Zeugnis dokumentiert, werden in Blöcken zusammengefasst. Es wird empfohlen, Leistungen nicht ohne fachlichen Grund auf mehrere Blöcke aufzuteilen. Die Möglichkeit Blöcke zu bilden und diese zu beschreiben, darf nicht dazu führen, dass auf die Befüllung der Meta-Daten einer Leistung (Art der Prüfung, Kursart, ...) verzichtet wird. Zudem soll die Reihenfolge der XML-Elemente den üblichen Regelungen folgen.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="kurs"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Schulkurs">
+                              <xs:annotation>
+                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des Schülers zusammen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="pruefung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Pruefungsergebnis">
+                              <xs:annotation>
+                                 <xs:documentation>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="bezeichnung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bei Bedarf kann hier die Bezeichnung dieses Blocks mehrsprachig angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beschreibung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bei Bedarf kann hier die Beschreibung dieses Blocks mehrsprachig angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="kombinierteBewertung" minOccurs="0" maxOccurs="unbounded">
+                     <xs:annotation>
+                        <xs:documentation>Die kombinierteBewertung erlaubt eine flexible Erstellung verschiedener „Gesamtnoten“.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="note"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:Benotung">
+                              <xs:annotation>
+                                 <xs:documentation>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="kursart"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Code.Kursart">
+                              <xs:annotation>
+                                 <xs:documentation>Bezieht sich diese kombinierte Bewertung auf bestimmte Kursarten, kann dies hier angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="bezeichnung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bei Bedarf kann hier die Bezeichnung dieser kombinierten Bewertung mehrsprachig angegeben werden.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beschreibung"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xbd:String.Localized">
+                              <xs:annotation>
+                                 <xs:documentation>Bei Bedarf kann hier mehrsprachig beschrieben werden, wie die kombinierte Bewertung berechnet wird. Um die einbezogenen Kurse zu kennzeichnen, sind auch die Eigenschaften kursart und berechnungsgrundlage zu nutzen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="fremdsprachen" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen zusammen, in denen Kenntnisse erworben wurden.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="fremdsprache"
+                                       minOccurs="0"
+                                       maxOccurs="unbounded"
+                                       type="xsc:Fremdsprache">
+                              <xs:annotation>
+                                 <xs:documentation>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen in denen Kenntnisse erworben wurden zusammen.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beinhaltetLatinum" minOccurs="0" type="xs:boolean">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt an, ob dieses Zeugnis das Latinum gemäß „Vereinbarung über das Latinum und das Graecum“ (Beschluss der Kultusministerkonferenz vom 22.09.2005) einschließt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="beinhaltetGraecum" minOccurs="0" type="xs:boolean">
+                              <xs:annotation>
+                                 <xs:documentation>Gibt an, ob dieses Zeugnis das Graecum gemäß „Vereinbarung über das Latinum und das Graecum“ (Beschluss der Kultusministerkonferenz vom 22.09.2005) einschließt.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="bemerkung"
+                              minOccurs="0"
+                              maxOccurs="unbounded"
+                              type="xsc:Bemerkung">
+                     <xs:annotation>
+                        <xs:documentation>Als Bemerkung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen erfasst werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
       </xs:complexType>
    </xs:element>
 </xs:schema>

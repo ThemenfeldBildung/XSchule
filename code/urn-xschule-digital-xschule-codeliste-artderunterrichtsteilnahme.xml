@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Schulprofil</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Angabe zum Schulprofil der jeweiligen Schule.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>ArtDerUnterrichtsteilnahme</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:versionDescription>Art der Teilnahme am Unterricht. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
          <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Schulprofil-Codes</ShortName>
-      <LongName>Schulprofil</LongName>
-      <Version>0.2</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:schulprofil</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:schulprofil_0.2</CanonicalVersionUri>
+      <ShortName>ArtDerUnterrichtsteilnahme-Codes</ShortName>
+      <LongName>ArtDerUnterrichtsteilnahme</LongName>
+      <Version>0.3</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme_0.3</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,15 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/997</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_unterrichtsteilnahme/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -61,18 +53,26 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/musik</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_unterrichtsteilnahme/freigestellt</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Musik</SimpleValue>
+            <SimpleValue>freigestellt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/schulprofil/sport</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_unterrichtsteilnahme/freiwillig</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Sport</SimpleValue>
+            <SimpleValue>freiwillig</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_unterrichtsteilnahme/verpflichtend</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>verpflichtend</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

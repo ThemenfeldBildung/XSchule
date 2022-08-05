@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Versetzungstyp</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>ArtDerSchulaufnahme</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Art der Schulaufnahme gibt an, wie der Schüler aufgenommen wurde.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:versionDescription>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
          <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Versetzungstyp-Codes</ShortName>
-      <LongName>Versetzungstyp</LongName>
-      <Version>0.2</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:versetzungstyp</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:versetzungstyp_0.2</CanonicalVersionUri>
+      <ShortName>ArtDerSchulaufnahme-Codes</ShortName>
+      <LongName>ArtDerSchulaufnahme</LongName>
+      <Version>0.3</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme_0.3</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,7 +45,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/997</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
@@ -53,7 +53,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -61,7 +61,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/999</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -69,58 +69,58 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/ja</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/einschulung_mit_inklusion</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Ja</SimpleValue>
+            <SimpleValue>Einschulung mit Inklusion</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/ja_durch_konferenzbeschluss</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/einschulung_nach_zurueckstellung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Ja durch Konferenzbeschluss</SimpleValue>
+            <SimpleValue>Einschulung nach Zurückstellung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/keine_versetzungsbemerkung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/einschulung_schule_freier_traegerschaft</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Keine Versetzungsbemerkung</SimpleValue>
+            <SimpleValue>Einschulung Schule freier Trägerschaft</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/nein</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/regeleinschulung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Nein</SimpleValue>
+            <SimpleValue>Regeleinschulung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/nein_mit_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Nein mit Nachpruefung</SimpleValue>
+            <SimpleValue>Schulwechsel (außerhalb Schulbezirk)</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/nein_mit_schulformwechsel</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/vorzeitige_einschulung</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Nein mit Schulformwechsel</SimpleValue>
+            <SimpleValue>vorzeitige Einschulung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/versetzungstyp/nein_und_keine_nachpruefung_mehr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_schulaufnahme/zurueckstellung_gewuenscht</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Nein und keine Nachpruefung mehr</SimpleValue>
+            <SimpleValue>Zurückstellung gewünscht</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

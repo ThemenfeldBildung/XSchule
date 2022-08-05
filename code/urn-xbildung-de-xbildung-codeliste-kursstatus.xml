@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Kursstatus</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen des Status eines Kurses.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XBildung.de</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:validFrom>2022-07-21</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Kursstatus-Codes</ShortName>
+      <LongName>Kursstatus</LongName>
+      <Version>0.92</Version>
+      <CanonicalUri>urn:xbildung-de:xbildung:codeliste:kursstatus</CanonicalUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:kursstatus_0.92</CanonicalVersionUri>
+      <Agency>
+         <LongName>XBildung</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code Name</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="optional">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Status</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-en-GB" Use="optional">
+         <ShortName>description-en-GB</ShortName>
+         <LongName>Status</LongName>
+         <Data Type="string" Lang="en-GB"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/xbildung/0.92/code/kursstatus/befreit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>befreit</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>exempted</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/xbildung/0.92/code/kursstatus/bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>passed</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/xbildung/0.92/code/kursstatus/erfolgreich_teilgenommen</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>erfolgreich teilgenommen</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>participation successful</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://www.xbildung.de/def/xbildung/0.92/code/kursstatus/nicht_bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>nicht bestanden</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>failed</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

@@ -4,20 +4,20 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Nachpruefung</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste gibt an, ob es sich um eine Nachpruefung freiwilliger oder verpflichtender Art handelt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Halbjahr</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Codeliste bildet die möglichen Halbjahre ab.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Angaben zur Nachpruefung.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:versionDescription>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden.</xoev-cl-4:versionDescription>
          <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Nachpruefung-Codes</ShortName>
-      <LongName>Nachpruefung</LongName>
-      <Version>0.2</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachpruefung</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachpruefung_0.2</CanonicalVersionUri>
+      <ShortName>Halbjahr-Codes</ShortName>
+      <LongName>Halbjahr</LongName>
+      <Version>0.3</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:halbjahr</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:halbjahr_0.3</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,34 +45,26 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/nachpruefung/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/halbjahr/1._halbjahr</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
+            <SimpleValue>1. Halbjahr</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/nachpruefung/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/halbjahr/2._halbjahr</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht bekannt</SimpleValue>
+            <SimpleValue>2. Halbjahr</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/nachpruefung/freiwillige_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/halbjahr/ganzes_jahr</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>freiwillige Nachpruefung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.2/code/nachpruefung/verpflichtende_nachpruefung</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>verpflichtende Nachpruefung</SimpleValue>
+            <SimpleValue>Ganzes Jahr</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

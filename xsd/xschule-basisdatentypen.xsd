@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsc="xschule"
+           xmlns:xsc="http://xschule.digital/def/xschule/0.3/xsd"
            xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-           targetNamespace="xschule"
-           version="0.2"
+           targetNamespace="http://xschule.digital/def/xschule/0.3/xsd"
+           version="0.3"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -16,7 +16,7 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.2</version>
+            <version>0.3</version>
             <versionXOEVProfil>2.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>

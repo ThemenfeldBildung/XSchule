@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Abiturfach</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Liste enthält von der KMK beschlossene Abiturfächer.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionDescription>Diese Liste enthält von der KMK beschlossene Abiturfächer.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2019-02-14</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Abiturfach-Codes</ShortName>
+      <LongName>Abiturfach</LongName>
+      <Version>2019</Version>
+      <CanonicalUri>urn:xschule-digital:kmk:codeliste:abiturfach</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:abiturfach_2019</CanonicalVersionUri>
+      <Agency>
+         <LongName>Kultusministerkonferenz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="beschreibung-DE" Use="required">
+         <ShortName>beschreibung-DE</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="mapping-ISCEDF2013URI" Use="required">
+         <ShortName>mapping-ISCEDF2013URI</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Beschreibung-EN" Use="required">
+         <ShortName>Beschreibung-EN</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Mapping-ISOLanguage-URI" Use="optional">
+         <ShortName>Mapping-ISOLanguage-URI</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/100</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Biologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0511</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Biology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1000</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Russisch-orthodoxe Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1020</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Schwedisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/SWE</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1040</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Sorbisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/DSB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1060</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Sorbisch/Wendisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/HSB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1080</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Sozialkunde/Politik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0312</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Political sciences and civics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Sozialwissenschaften</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0319</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Social and behavioural sciences</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1120</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Soziologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0314</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Sociology and cultural studies</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1140</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Spanisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/SPA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Sport</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/1014</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Sports</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1180</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Technik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0799</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Engineering, manufacturing and construction</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/120</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Chemie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0531</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Chemistry</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1200</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Tschechisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/CES</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1220</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Türkisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/TUR</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1240</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Ungarisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/HUN</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1260</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Wirtschaft</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0311</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Economics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/1280</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Wirtschaftsinformatik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0619</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Information and Communication Technologies</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/140</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Chinesisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ZHO</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/160</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Dänisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/DAN</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/180</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Darstellendes Spiel</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0215</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Music and performing arts</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/200</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Deutsch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Literature and linguistics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/DEU</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/220</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Englisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ENG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/240</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Ernährung</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0510</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Biological and related sciences</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/260</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Erziehungswissenschaft</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0111</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Education science</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/280</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Erziehungswissenschaften (Pädagogik/Psychologie)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0188</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Inter-disciplinary programmes and qualifications involving education</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/300</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Ethik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Philosophy and ethics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/320</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Evangelische Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/340</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Farsi</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/PES</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/360</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Französisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/FRA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/380</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Geographie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0532</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Earth Sciences</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/40</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Agrartechnik mit Biologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0810</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Agriculture</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/400</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Geologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0532</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Earth Sciences</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/420</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Geschichte</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0222</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>History and archaeology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/440</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Gesundheit</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0910</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Health</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/460</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Griechisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ELL</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/480</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Griechisch-orthodoxe Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/500</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Hebräisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/HEB</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/520</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Informatik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0611</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Computer use</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/540</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Islamischer Religionsunterricht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/560</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Israelitische Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/580</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Italienisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ITA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/60</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Arabisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ARA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/600</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Japanisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/JPN</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/620</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Jüdische Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/640</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Katholische Religionslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/660</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Kunst</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0213</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Fine arts</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/680</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Latein</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Literature and linguistics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/LAT</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/700</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Lettisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/LAV</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/720</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Litauisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/LIT</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/740</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Mathematik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0541</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Mathematics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/760</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Musik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0215</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Music and performing arts</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/780</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Neugriechisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/GRC</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/80</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Bautechnik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0730</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Architecture and construction</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/800</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Niederdeutsch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/NDS</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/820</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Niederländisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/NLD</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/840</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Philosophie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Philosophy and ethics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/860</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Physik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0533</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Physics</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/880</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Polnisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/POL</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/900</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Portugiesisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/POR</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/920</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Psychologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0313</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Psychology</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/940</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Recht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0421</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Law</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue/>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/960</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Rumänisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/RON</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/abiturfach/980</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung-DE">
+            <SimpleValue>Russisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="Beschreibung-EN">
+            <SimpleValue>Language acquisition</SimpleValue>
+         </Value>
+         <Value ColumnRef="Mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/RUS</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

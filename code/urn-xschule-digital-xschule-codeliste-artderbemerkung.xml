@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>ArtDerBemerkung</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionDescription>Die Art der Bemerkung gibt an ob es sich um standardisierte Bemerkungen handelt, oder nicht.</xoev-cl-4:versionDescription>
+         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>ArtDerBemerkung-Codes</ShortName>
+      <LongName>ArtDerBemerkung</LongName>
+      <Version>0.3</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderbemerkung</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderbemerkung_0.3</CanonicalVersionUri>
+      <Agency>
+         <LongName>XSchule</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="beschreibung" Use="required">
+         <ShortName>beschreibung</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/10</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>freie Formulierung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/20</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>sonstige standardisierte Bemerkung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/25</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Äquivalenzbemerkung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/28</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Rechtsgrundlage</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/30</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>Arbeitsgemeinschaft</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/40</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>allgemeine Beurteilung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/50</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>schulisches Engagement</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/art_der_bemerkung/55</SimpleValue>
+         </Value>
+         <Value ColumnRef="beschreibung">
+            <SimpleValue>außerschulisches Engagement</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>
