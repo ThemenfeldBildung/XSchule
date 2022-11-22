@@ -4,20 +4,19 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Schulprofil</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Angabe zum Schulprofil der jeweiligen Schule.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Kursbereich</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Die Leistung kann in einem bestimmen Kursbereich erbracht werden.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Angabe der Festlegung einer Schule auf eine bestimmt Ausbildungsrichtung bzw. verschiedene Schulzweige. Sollte keine Angabe moeglich sein, wird der Grund dafuer angegeben.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionDescription>Die Leistung kann in einem bestimmen Kursbereich erbracht werden.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Schulprofil-Codes</ShortName>
-      <LongName>Schulprofil</LongName>
-      <Version>0.3</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:schulprofil</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:schulprofil_0.3</CanonicalVersionUri>
+      <ShortName>Kursbereich-Codes</ShortName>
+      <LongName>Kursbereich</LongName>
+      <Version>0.4</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:kursbereich</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:kursbereich_0.4</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,34 +44,26 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/schulprofil/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/kursbereich/pflichtunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
+            <SimpleValue>Pflichtunterricht</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/schulprofil/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlpflichtunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
+            <SimpleValue>Wahlpflichtunterricht</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/schulprofil/musik</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Musik</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/schulprofil/sport</SimpleValue>
-         </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Sport</SimpleValue>
+            <SimpleValue>Wahlunterricht</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

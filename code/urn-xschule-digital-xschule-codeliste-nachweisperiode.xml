@@ -5,19 +5,18 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Nachweisperiode</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Nachweisperiode gibt an um welchen Zeitraum es sich handelt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Nachweisperiode gibt an, um welchen Zeitraum es sich handelt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Die "nachweisperiode" beinhaltet Angaben zum konkreten Gueltigkeitszeitraum fuer das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
+         <xoev-cl-4:versionDescription>Die Codeliste beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahres- bzw. Volljahreszeugnis).</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Nachweisperiode-Codes</ShortName>
       <LongName>Nachweisperiode</LongName>
-      <Version>0.3</Version>
+      <Version>0.4</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachweisperiode</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.3</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.4</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -45,7 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachweisperiode/998</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -53,7 +52,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/halbjahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachweisperiode/halbjahr</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Halbjahr</SimpleValue>
@@ -61,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/jahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachweisperiode/jahr</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Jahr</SimpleValue>
@@ -69,7 +68,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/semester</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachweisperiode/semester</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Semester</SimpleValue>
@@ -77,7 +76,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/nachweisperiode/trimester</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachweisperiode/trimester</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Trimester</SimpleValue>

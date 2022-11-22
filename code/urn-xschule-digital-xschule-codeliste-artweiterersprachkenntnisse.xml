@@ -4,20 +4,18 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Kursart</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>ArtWeitererSprachkenntnisse</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste ermöglicht die Angabe von zusätzlichen Sprachkenntnissen.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Die Leistung kann in einer bestimmen Kursart erbracht werden. Die Kursarten werden zwischen Grund- und Leistungskurs unterschieden.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2022-02-22</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Kursart-Codes</ShortName>
-      <LongName>Kursart</LongName>
-      <Version>0.3</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:kursart</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:kursart_0.3</CanonicalVersionUri>
+      <ShortName>artWeitererSprachkenntnisse-Codes</ShortName>
+      <LongName>ArtWeitererSprachkenntnisse</LongName>
+      <Version>0.4</Version>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse_0.4</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -33,11 +31,6 @@
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
-         <Annotation>
-            <AppInfo>
-               <xoev-cl-4:recommendedKeyColumn/>
-            </AppInfo>
-         </Annotation>
          <ShortName>codeKey</ShortName>
          <ColumnRef Ref="code"/>
       </Key>
@@ -45,50 +38,50 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/grundkurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/graecum</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Grundkurs</SimpleValue>
+            <SimpleValue>Graecum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/leistungskurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_alt_und_neusprachlich</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Leistungskurs</SimpleValue>
+            <SimpleValue>Alt- und Neusprachliches Hebraicum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/pflichtkurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_altsprachlich</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Pflichtkurs</SimpleValue>
+            <SimpleValue>Altsprachliches Hebraicum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/vertiefungsfach</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Vertiefungsfach</SimpleValue>
+            <SimpleValue>Latinum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/wahlkurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_gross</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wahlkurs</SimpleValue>
+            <SimpleValue>Großes Latinum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.3/code/kursart/wahlpflichtkurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_klein</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
-            <SimpleValue>Wahlpflichtkurs</SimpleValue>
+            <SimpleValue>Kleines Latinum</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

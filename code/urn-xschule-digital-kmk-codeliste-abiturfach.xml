@@ -8,7 +8,6 @@
          <xoev-cl-4:codelistDescription>Diese Liste enthält von der KMK beschlossene Abiturfächer.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Diese Liste enthält von der KMK beschlossene Abiturfächer.</xoev-cl-4:versionDescription>
-         <xoev-cl-4:validFrom>2019-02-14</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
@@ -36,8 +35,8 @@
          <ShortName>mapping-ISCEDF2013URI</ShortName>
          <Data Type="string"/>
       </Column>
-      <Column Id="Beschreibung-EN" Use="required">
-         <ShortName>Beschreibung-EN</ShortName>
+      <Column Id="beschreibung-EN" Use="required">
+         <ShortName>beschreibung-EN</ShortName>
          <Data Type="string"/>
       </Column>
       <Column Id="Mapping-ISOLanguage-URI" Use="optional">
@@ -65,7 +64,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0511</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Biology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -82,7 +81,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -99,7 +98,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -116,7 +115,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -133,7 +132,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -150,7 +149,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0312</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Political sciences and civics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -167,7 +166,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0319</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Social and behavioural sciences</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -184,7 +183,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0314</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Sociology and cultural studies</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -201,7 +200,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -218,7 +217,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/1014</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Sports</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -235,7 +234,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0799</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Engineering, manufacturing and construction</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -252,7 +251,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0531</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Chemistry</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -269,7 +268,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -286,7 +285,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -303,7 +302,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -320,7 +319,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0311</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Economics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -337,7 +336,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0619</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Information and Communication Technologies</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -354,7 +353,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -371,7 +370,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -388,7 +387,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0215</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Music and performing arts</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -405,7 +404,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Literature and linguistics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -422,7 +421,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -439,7 +438,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0510</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Biological and related sciences</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -456,7 +455,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0111</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Education science</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -473,7 +472,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0188</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Inter-disciplinary programmes and qualifications involving education</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -490,7 +489,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Philosophy and ethics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -507,7 +506,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -524,7 +523,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -541,7 +540,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -558,7 +557,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0532</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Earth Sciences</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -575,7 +574,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0810</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Agriculture</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -592,7 +591,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0532</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Earth Sciences</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -609,7 +608,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0222</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>History and archaeology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -626,7 +625,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0910</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Health</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -643,7 +642,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -660,7 +659,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -677,7 +676,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -694,7 +693,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0611</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Computer use</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -711,7 +710,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -728,7 +727,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -745,7 +744,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -762,7 +761,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -779,7 +778,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -796,7 +795,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -813,7 +812,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Religion and theology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -830,7 +829,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0213</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Fine arts</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -847,7 +846,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Literature and linguistics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -864,7 +863,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -881,7 +880,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -898,7 +897,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0541</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Mathematics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -915,7 +914,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0215</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Music and performing arts</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -932,7 +931,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -949,7 +948,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0730</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Architecture and construction</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -966,7 +965,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -983,7 +982,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1000,7 +999,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Philosophy and ethics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1017,7 +1016,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0533</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Physics</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1034,7 +1033,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1051,7 +1050,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1068,7 +1067,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0313</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Psychology</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1085,7 +1084,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0421</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Law</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1102,7 +1101,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
@@ -1119,7 +1118,7 @@
          <Value ColumnRef="mapping-ISCEDF2013URI">
             <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
          </Value>
-         <Value ColumnRef="Beschreibung-EN">
+         <Value ColumnRef="beschreibung-EN">
             <SimpleValue>Language acquisition</SimpleValue>
          </Value>
          <Value ColumnRef="Mapping-ISOLanguage-URI">
