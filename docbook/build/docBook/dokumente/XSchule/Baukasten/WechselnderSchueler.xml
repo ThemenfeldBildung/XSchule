@@ -8,7 +8,7 @@
          xml:id="XSchule.Baukasten.WechselnderSchueler">
    <title>WechselnderSchueler</title>
    <subtitle>Typ: <emphasis role="codebf">WechselnderSchueler</emphasis>
-   </subtitle><para>Der wechselnde Schüler ist eine natürliche Person, die bei einer anderen Schule angemeldet wird. Die aufnehmende Schule benötigt dabei Informationen, die über die Daten der Klasse "NachweisinhabenderSchueler" hinausgehen.</para><figure xml:id="figure.XSchule.Baukasten.WechselnderSchueler">
+   </subtitle><para>Der wechselnde Schüler bzw. die wechselnde Schülerin ist eine natürliche Person, die bei einer anderen Schule angemeldet wird. Die aufnehmende Schule benötigt dabei Informationen, die über die Daten der Klasse "NachweisinhabenderSchueler" hinausgehen.</para><figure xml:id="figure.XSchule.Baukasten.WechselnderSchueler">
       <title>WechselnderSchueler</title>
       <mediaobject>
          <imageobject>
@@ -85,7 +85,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier wird die Sprache angegeben, die eine Person als erstes erworben hat. In der Regel handelt es sich um die Sprache des Herkunftslandes. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier wird die Sprache angegeben, die eine Person als erstes erworben hat. In der Regel handelt es sich um die Sprache des Herkunftslandes. Es ist die URI zu verwenden, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -105,27 +105,70 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann die Sprache angegeben werden, die vorrangig im Haushalt des Kindes gesprochen wird. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier kann die Sprache angegeben werden, die vorrangig im Haushalt des jungen Menschen gesprochen wird. Es ist die URI zu verwenden, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">impfung</emphasis>
+                  <emphasis role="bold">schulform</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Impfschutz</emphasis>
+                  <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Impfschutz" role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Impfschutz" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des Schülers mitgeteilt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet, da es keine bundesländerübergreifende Definition gibt. Vergleiche an dieser Stelle die Art der Bildungseinrichtung (Schulen) gemäß Kultusministerkonferenz vom 15.12.2011.</para>
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bildungsgang</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet den Bildungsganges, den der junge Mensch zuletzt besucht hat. Das kann beispielsweise der G8 oder G9 Bildungsgang sein.</para>
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schulprofil</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Als Schulprofil wird ein besonderer Bildungsschwerpunkt der besuchten Schule verstanden, wenn sich dieser zum Beispiel auf das Vorhandensein und die Intensität bestimmter Fächer im Lehrplan auswirkt.</para>
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -145,7 +188,27 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Befinden sich Schüler:innen aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen, müssen hier zusätzliche Angaben gemacht werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Befinden sich junge Menschen aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen, müssen hier zusätzliche Angaben gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">impfung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Impfschutz</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Impfschutz" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Impfschutz" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des jungen Menschen mitgeteilt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -165,7 +228,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum Schüler übermittelt.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum jungen Mensch übermittelt.</para></entry>
             </row>
          </tbody>
       </tgroup>

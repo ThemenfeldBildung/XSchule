@@ -4,8 +4,8 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>VersetzungsOderAusnahmetatbestandstyp</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür angegeben.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>Versetzungstyp</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden. Sollte keine Angabe möglich sein, kann der Grund dafür angegeben werden. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>VersetzungsOderAusnahmetatbestandstyp-Codes</ShortName>
       <LongName>VersetzungsOderAusnahmetatbestandstyp</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:versetzungsoderausnahmetatbestandstyp</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:versetzungsoderausnahmetatbestandstyp_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:versetzungsoderausnahmetatbestandstyp_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -23,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Beschreibung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -43,97 +43,97 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/997</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/998</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/999</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/aufruecken</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/aufruecken</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Aufrücken</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>freiwillige Wiederholung (Rückversetzung)</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/keine_versetzung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>keine Versetzung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Keine Versetzung und keine Nachprüfung mehr</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/schulformwechsel_ohne_versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/schulformwechsel_ohne_versetzung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Schulformwechsel ohne Versetzung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/versetzung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_auf_probe</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/versetzung_auf_probe</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung auf Probe</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_durch_konferenzbeschluss</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/versetzung_durch_konferenzbeschluss</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung durch Konferenzbeschluss</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_mit_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/versetzung_mit_nachpruefung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung mit Nachprüfung</SimpleValue>
          </Value>
       </Row>

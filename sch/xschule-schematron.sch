@@ -2,31 +2,23 @@
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
             queryBinding="xslt2">
+   <sch:ns prefix="bn-beh"
+           uri="http://xoev.de/schemata/basisnachricht/behoerde/1_0"/>
+   <sch:ns prefix="bn-g2g" uri="http://xoev.de/schemata/basisnachricht/g2g/1_0"/>
+   <sch:ns prefix="bn-kom"
+           uri="http://xoev.de/schemata/basisnachricht/kommunikation/1_0"/>
+   <sch:ns prefix="bn-uq-g2g"
+           uri="http://xoev.de/schemata/basisnachricht/unqualified/g2g/1_0"/>
+   <sch:ns prefix="din91379"
+           uri="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"/>
    <sch:ns prefix="dinspec91379"
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
-   <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.93/xsd"/>
-   <sch:ns prefix="xiaa" uri="http://www.osci.de/xinneres/auslandsanschrift/3"/>
-   <sch:ns prefix="xian" uri="http://www.osci.de/xinneres/allgemeinername/2"/>
-   <sch:ns prefix="xiaz" uri="http://www.osci.de/xinneres/azrnummer/1"/>
-   <sch:ns prefix="xibehoerde" uri="http://www.osci.de/xinneres/behoerde/4"/>
-   <sch:ns prefix="xicgvz"
-           uri="http://www.osci.de/xinneres/codes/gemeindeverzeichnis/2"/>
-   <sch:ns prefix="xida" uri="http://www.osci.de/xinneres/datum/2"/>
-   <sch:ns prefix="xikomm" uri="http://www.osci.de/xinneres/kommunikation/3"/>
-   <sch:ns prefix="xilb" uri="http://www.osci.de/xinneres/lichtbild/1"/>
-   <sch:ns prefix="xima" uri="http://www.osci.de/xinneres/meldeanschrift/3"/>
-   <sch:ns prefix="xink" uri="http://www.osci.de/xinneres/basisnachricht/4"/>
-   <sch:ns prefix="xint" uri="http://www.osci.de/xinneres/nachrichtentypen/4"/>
-   <sch:ns prefix="xipa" uri="http://www.osci.de/xinneres/postanschrift/3"/>
-   <sch:ns prefix="xiqu" uri="http://www.osci.de/xinneres/quittung/2"/>
-   <sch:ns prefix="xirts" uri="http://www.osci.de/xinneres/rueckweisung/3"/>
-   <sch:ns prefix="xiwl" uri="http://www.osci.de/xinneres/weiterleitung/4"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/0.94/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
-   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/0.4/xsd"/>
+   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/0.5/xsd"/>
    <sch:pattern>
       <!--Abstrakte Regeln-->
       <!-- /Data/XSchule/Nachweise/schueler.abiturzeugnis.0002 -->
@@ -48,7 +40,7 @@
       </sch:rule>
       <sch:rule id="rule-XSC-0002-0015-MUSS-Wohnort" abstract="true">
          <sch:assert id="XSC-0002-0015-MUSS-Wohnort"
-                     test="not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:wohnort[1]))">Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</sch:assert>
+                     test="not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))">Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-XSC-0002-0100-MUSS-BildungseinrichtungName" abstract="true">
          <sch:assert id="XSC-0002-0100-MUSS-BildungseinrichtungName"
@@ -90,7 +82,7 @@
       </sch:rule>
       <sch:rule id="rule-XSC-0003-0015-MUSS-Wohnort" abstract="true">
          <sch:assert id="XSC-0003-0015-MUSS-Wohnort"
-                     test="not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:wohnort[1]))">Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</sch:assert>
+                     test="not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))">Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</sch:assert>
       </sch:rule>
       <sch:rule id="rule-XSC-0003-0100-MUSS-BildungseinrichtungName" abstract="true">
          <sch:assert id="XSC-0003-0100-MUSS-BildungseinrichtungName"

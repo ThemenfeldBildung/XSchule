@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Nachpruefung</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Nachpruefung-Codes</ShortName>
       <LongName>Nachpruefung</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachpruefung</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachpruefung_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachpruefung_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -23,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der Nachprüfung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -43,33 +43,33 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachpruefung/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachpruefung/998</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachpruefung/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachpruefung/999</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachpruefung/freiwillige_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachpruefung/freiwillige_nachpruefung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>freiwillige Nachprüfung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/nachpruefung/verpflichtende_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachpruefung/verpflichtende_nachpruefung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>verpflichtende Nachprüfung</SimpleValue>
          </Value>
       </Row>

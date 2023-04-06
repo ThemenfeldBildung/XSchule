@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Art der Trägerschaft</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen der Art einer Trägerschaft einer Bildungseinrichtung.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen der Art einer Trägerschaft einer Bildungseinrichtung. Sie basiert auf dem Dokument "Schlüsselverzeichnisse, Datensatzbeschreibungen und Definitionenkatalog für die Statistik zum Deutschlandstipendium", ergänzt um den Wert "Kreis".</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XBildung.de</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:validFrom>2020-04-26</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>ArtderTraegerschaft-Codes</ShortName>
       <LongName>Art der Trägerschaft</LongName>
-      <Version>0.93</Version>
+      <Version>0.94</Version>
       <CanonicalUri>urn:xbildung-de:xbildung:codeliste:artdertraegerschaft</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:artdertraegerschaft_0.93</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:artdertraegerschaft_0.94</CanonicalVersionUri>
       <Agency>
          <LongName>XBildung</LongName>
       </Agency>
@@ -24,7 +23,6 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code Name</LongName>
          <Data Type="string"/>
       </Column>
       <Column Id="description-de-DE" Use="optional">
@@ -45,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/10</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/10</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Bund</SimpleValue>
@@ -53,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/20</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/20</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Land</SimpleValue>
@@ -61,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/30</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/30</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kreis</SimpleValue>
@@ -69,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/40</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/40</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kommune</SimpleValue>
@@ -77,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/50</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/50</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Privat</SimpleValue>
@@ -85,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/60</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/60</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kirchlich</SimpleValue>
@@ -93,7 +91,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.93/code/ArtDerTraegerschaft/70</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/70</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sonstige</SimpleValue>

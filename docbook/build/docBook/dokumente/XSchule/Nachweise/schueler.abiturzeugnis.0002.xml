@@ -8,13 +8,13 @@
          xml:id="XSchule.Nachweise.schueler.abiturzeugnis.0002">
    <title>schueler.abiturzeugnis.0002</title>
    <subtitle>Nachricht: <emphasis role="codebf">schueler.abiturzeugnis.0002</emphasis>
-   </subtitle><para>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</para><figure xml:id="figure.XSchule.Nachweise.schueler.abiturzeugnis.0002">
+   </subtitle><para>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</para><figure xml:id="figure.XSchule.Nachweise.schueler.abiturzeugnis.0002">
       <title>schueler.abiturzeugnis.0002</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="98"
+                       scale="89"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.abiturzeugnis.0002.svg"/>
          </imageobject>
       </mediaobject>
@@ -217,8 +217,69 @@
                </entry>
             </row>
             <row>
-               <entry rowsep="1" colsep="1"/>
+               <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Angabe der Art des Schulabschlusses.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">erwerb</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Datum und Ort des Erwebs des Zeugnisses. Unterscheidet sich vom (ggf. technischen) Angaben der Eigenschaft "ausstellung", die das xbd:Dokument zur Verfügung stellt. Wird ein Zeugnis neu ausgestellt, ändert sich dadurch üblicherweise der Zeitpunkt des Erwebs nicht.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">datum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:date</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Das "datum" besteht aus Tag, Monat und Jahr.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">ort</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).</para>
+<para>Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -240,7 +301,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Schüler ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Schüler bzw. die Schülerin ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -297,7 +358,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Fasst alle Angaben zu den belegten Schulkursen des Schülers zusammen.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Fasst alle Angaben zu den belegten Schulkursen des jungen Menschs zusammen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -630,7 +691,7 @@
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:wohnort[1]))</emphasis>
+                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))</emphasis>
                      </para>
                   </entry>
                </row>

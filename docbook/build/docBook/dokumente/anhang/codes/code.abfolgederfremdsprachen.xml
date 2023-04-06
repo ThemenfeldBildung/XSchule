@@ -5,10 +5,11 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.Kursdifferenzierung"
+         xml:id="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Kursdifferenzierung</title><para>Diese Liste gibt die Kursdifferenzierung an.</para><informaltable>
+   <title>Code.AbfolgeDerFremdsprachen</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,26 +22,26 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Die Leistung kann in einer bestimmten Kursdifferenzierung erbracht
-			werden.</entry>
+               <entry><para>Diese Codeliste enhält Werte, um angeben zu können, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde.</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursdifferenzierung.Kursdifferenzierung-Codes"
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.abfolgederfremdsprachen.AbfolgeDerFremdsprachen-Codes"
                         role="Seite"/>
                </entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:kursdifferenzierung</entry>
+               <entry>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.4</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.kursdifferenzierung_list.xml"/>
+            href="../verwendung/complexTypes/code.abfolgederfremdsprachen_list.xml"/>
 </section>

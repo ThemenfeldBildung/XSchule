@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>ArtWeitererSprachkenntnisse</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste ermöglicht die Angabe von zusätzlichen Sprachkenntnissen.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste ermöglicht die Angabe von zusätzlichen, standardisierten Sprachkenntnissen. Sie basiert auf der "Vereinbarung über das Latinum und das Graecum", erweitert um landesspezifische Bedarfe der XSchule-Stakeholdern. Grundlage: https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_​Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>artWeitererSprachkenntnisse-Codes</ShortName>
       <LongName>ArtWeitererSprachkenntnisse</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -23,14 +23,19 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Beschreibung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
          <ShortName>codeKey</ShortName>
          <ColumnRef Ref="code"/>
       </Key>
@@ -38,49 +43,49 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/graecum</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/graecum</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Graecum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_alt_und_neusprachlich</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/hebraicum_alt_und_neusprachlich</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Alt- und Neusprachliches Hebraicum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_altsprachlich</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/hebraicum_altsprachlich</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Altsprachliches Hebraicum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/latinum</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Latinum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_gross</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/latinum_gross</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Großes Latinum</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_klein</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artweiterersprachkenntnisse/latinum_klein</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Kleines Latinum</SimpleValue>
          </Value>
       </Row>

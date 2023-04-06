@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsc="http://xschule.digital/def/xschule/0.4/xsd"
+           xmlns:xsc="http://xschule.digital/def/xschule/0.5/xsd"
            xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
-           xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd"
-           targetNamespace="http://xschule.digital/def/xschule/0.4/xsd"
-           version="0.4"
+           xmlns:xbd="http://xbildung.de/def/xbildung/0.94/xsd"
+           targetNamespace="http://xschule.digital/def/xschule/0.5/xsd"
+           version="0.5"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -17,8 +17,8 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.4</version>
-            <versionXOEVProfil>2.0.0</versionXOEVProfil>
+            <version>0.5</version>
+            <versionXOEVProfil>3.0.0</versionXOEVProfil>
             <versionXOEVHandbuch>2.4</versionXOEVHandbuch>
             <versionXGenerator>3.0.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0</versionModellierungswerkzeug>
@@ -27,13 +27,13 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:include schemaLocation="xschule-baukasten.xsd"/>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.93/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/0.93/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/0.94/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/0.94/xsd"/>
    <xs:import schemaLocation="http://xoev.de/DIN-SPEC-91379/2019-03/datatypes/din-91379-datatypes.xsd"
               namespace="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <xs:element name="schueler.wechsel.0001">
       <xs:annotation>
-         <xs:documentation>Diese Nachricht dient der Anmeldung eines Schülers / einer Schülerin an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum/zur Schüler:in und den Sorgeberechtigten übermittelt.</xs:documentation>
+         <xs:documentation>Diese Nachricht dient der Anmeldung eines jungen Menschen an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum jungen Mensch und den Sorgeberechtigten übermittelt.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
@@ -41,7 +41,7 @@
                <xs:sequence>
                   <xs:element name="schueler" type="xsc:WechselnderSchueler">
                      <xs:annotation>
-                        <xs:documentation>Der Schüler ist eine natürliche Person, welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+                        <xs:documentation>Der Schüler bzw. die Schülerin ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="aufnehmendeSchule" minOccurs="0" type="xsc:AufnehmendeSchule">
@@ -51,7 +51,7 @@
                   </xs:element>
                   <xs:element name="besuchteSchule" minOccurs="0" type="xsc:BesuchteSchule">
                      <xs:annotation>
-                        <xs:documentation>Hier kann die letzte besuchte Schule angegeben werden. Verfügt die besuchte Schule über mehrere Schulformen, Profile oder Bildungsgänge, werden hier nur die angegeben, die auf den wechselnden Schüler zutreffen.</xs:documentation>
+                        <xs:documentation>Hier kann die letzte besuchte Schule angegeben werden.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="zusaetzlicherAnhang"
@@ -72,7 +72,7 @@
                               <xs:sequence>
                                  <xs:element name="zukuenftigeAnschrift" minOccurs="0">
                                     <xs:annotation>
-                                       <xs:documentation>Wenn der Erziehungsberechtigte kürzlich umgezogen (meist zugezogen) ist, kann es sein, dass die für den Schulbesuch in Zukunft relevante Adresse nicht aktuelle Adresse ist. Die zukünftig relevante Adresse wird hier angegeben. Die aktuelle Adresse wird hingegen im Feld "adresse" der Basisklasse GesetzlicherVertreter übertragen.</xs:documentation>
+                                       <xs:documentation>Wenn der Erziehungsberechtigte kürzlich umgezogen (meist zugezogen) ist, kann es sein, dass die für den Schulbesuch in Zukunft relevante Adresse nicht aktuelle Adresse ist. Die zukünftig relevante Adresse wird hier angegeben. Die aktuelle Adresse wird hingegen im Feld "anschrift" der Basisklasse GesetzlicherVertreter übertragen.</xs:documentation>
                                     </xs:annotation>
                                     <xs:complexType>
                                        <xs:sequence>
@@ -111,7 +111,7 @@
                   </xs:element>
                   <xs:element name="aufnahme" minOccurs="0">
                      <xs:annotation>
-                        <xs:documentation>Bündelt Angaben zur Aufnahme des Schülers.</xs:documentation>
+                        <xs:documentation>Bündelt Angaben zur Aufnahme des jungen Menschen.</xs:documentation>
                      </xs:annotation>
                      <xs:complexType>
                         <xs:sequence>
@@ -122,7 +122,7 @@
                            </xs:element>
                            <xs:element name="jahrgang" minOccurs="0" type="xsc:Code.Jahrgangsstufe">
                               <xs:annotation>
-                                 <xs:documentation>Gibt den (geplanten) Jahrgang an, in den der Schüler nach dem Wechsel aufgenommen werden soll.</xs:documentation>
+                                 <xs:documentation>Gibt den (geplanten) Jahrgang an, in den der junge Mensch nach dem Wechsel aufgenommen werden soll.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="versetzt" minOccurs="0" type="xs:boolean">
@@ -147,7 +147,7 @@
    </xs:element>
    <xs:element name="schueler.abiturzeugnis.0002">
       <xs:annotation>
-         <xs:documentation>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</xs:documentation>
+         <xs:documentation>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
@@ -205,12 +205,31 @@
                                  <xs:documentation>Angabe der Art des Schulabschlusses.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
+                           <xs:element name="erwerb" minOccurs="0">
+                              <xs:annotation>
+                                 <xs:documentation>Datum und Ort des Erwebs des Zeugnisses. Unterscheidet sich vom (ggf. technischen) Angaben der Eigenschaft "ausstellung", die das xbd:Dokument zur Verfügung stellt. Wird ein Zeugnis neu ausgestellt, ändert sich dadurch üblicherweise der Zeitpunkt des Erwebs nicht.</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="datum" minOccurs="0" type="xs:date">
+                                       <xs:annotation>
+                                          <xs:documentation>Das "datum" besteht aus Tag, Monat und Jahr.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="ort" minOccurs="0" type="dinspec91379:datatypeC">
+                                       <xs:annotation>
+                                          <xs:documentation>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt). Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
                   <xs:element name="schueler" type="xsc:NachweisinhabenderSchueler">
                      <xs:annotation>
-                        <xs:documentation>Der Schüler ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat.</xs:documentation>
+                        <xs:documentation>Der Schüler bzw. die Schülerin ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="schule" type="xsc:Schule">
@@ -226,7 +245,7 @@
                         <xs:sequence>
                            <xs:element name="kurs" maxOccurs="unbounded" type="xsc:Schulkurs">
                               <xs:annotation>
-                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des Schülers zusammen.</xs:documentation>
+                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des jungen Menschs zusammen.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="weitereLeistung"
@@ -333,7 +352,7 @@
    </xs:element>
    <xs:element name="schueler.zeugnis.0003">
       <xs:annotation>
-         <xs:documentation>Diese Nachricht bildet ein "generisches" Zeugnis ab. Es wird davon ausgegangen, dass alle Angaben, die auf einem Realschulabschluss-Zeugnis gemacht werden müssen, mit diesem generischen Zeugnis abgedeckt werden. Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art des Abschlusses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</xs:documentation>
+         <xs:documentation>Diese Nachricht bildet ein "generisches" Zeugnis ab. Es wird davon ausgegangen, dass alle Angaben, die auf einem Realschulabschluss-Zeugnis gemacht werden müssen, mit diesem generischen Zeugnis abgedeckt werden. Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art des Abschlusses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
          <xs:complexContent>
@@ -391,12 +410,31 @@
                                  <xs:documentation>Angabe der Art des Schulabschlusses.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
+                           <xs:element name="erwerb" minOccurs="0">
+                              <xs:annotation>
+                                 <xs:documentation>Datum und Ort des Erwebs des Zeugnisses. Unterscheidet sich vom (ggf. technischen) Angaben der Eigenschaft "ausstellung", die das xbd:Dokument zur Verfügung stellt. Wird ein Zeugnis neu ausgestellt, ändert sich dadurch üblicherweise der Zeitpunkt des Erwebs nicht.</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="datum" minOccurs="0" type="xs:date">
+                                       <xs:annotation>
+                                          <xs:documentation>Das "datum" besteht aus Tag, Monat und Jahr.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="ort" minOccurs="0" type="dinspec91379:datatypeC">
+                                       <xs:annotation>
+                                          <xs:documentation>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt). Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
                         </xs:sequence>
                      </xs:complexType>
                   </xs:element>
                   <xs:element name="schueler" type="xsc:NachweisinhabenderSchueler">
                      <xs:annotation>
-                        <xs:documentation>Der Schüler ist eine natürliche Person, welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
+                        <xs:documentation>Der Schüler bzw. die Schülerin ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</xs:documentation>
                      </xs:annotation>
                   </xs:element>
                   <xs:element name="schule" type="xsc:Schule">
@@ -415,7 +453,7 @@
                                        maxOccurs="unbounded"
                                        type="xsc:Schulkurs">
                               <xs:annotation>
-                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des Schülers zusammen.</xs:documentation>
+                                 <xs:documentation>Fasst alle Angaben zu den belegten Schulkursen des jungen Menschs zusammen.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="pruefung"
@@ -459,20 +497,20 @@
                                  <xs:documentation>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="kursdifferenzierung"
+                           <xs:element name="anforderungsniveau"
                                        minOccurs="0"
                                        maxOccurs="unbounded"
-                                       type="xsc:Code.Kursdifferenzierung">
+                                       type="xsc:Code.Anforderungsniveau">
                               <xs:annotation>
-                                 <xs:documentation>Bezieht sich diese kombinierte Bewertung auf bestimmte Kursdifferenzierungen, kann dies hier angegeben werden.</xs:documentation>
+                                 <xs:documentation>Die kombinierte Bewertung kann auf einem bestimmen Anforderungsniveau erbracht werden.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
-                           <xs:element name="kursbereich"
+                           <xs:element name="verpflichtungsgrad"
                                        minOccurs="0"
                                        maxOccurs="unbounded"
-                                       type="xsc:Code.Kursbereich">
+                                       type="xsc:Code.Verpflichtungsgrad">
                               <xs:annotation>
-                                 <xs:documentation>Bezieht sich diese kombinierte Bewertung auf bestimmte Kursbereiche, kann dies hier angegeben werden.</xs:documentation>
+                                 <xs:documentation>Die kombinierte Bewertung kann evtl. mit einem bestimmen Verpflichtungsgrad erbracht werden.</xs:documentation>
                               </xs:annotation>
                            </xs:element>
                            <xs:element name="bezeichnung"

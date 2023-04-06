@@ -8,7 +8,7 @@
          xml:id="XSchule.Baukasten.ReisenderSchueler">
    <title>ReisenderSchueler</title>
    <subtitle>Typ: <emphasis role="codebf">ReisenderSchueler</emphasis>
-   </subtitle><para>Hier werden Angaben zu Schüler:innen gemacht, die sich aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen befinden.</para><figure xml:id="figure.XSchule.Baukasten.ReisenderSchueler">
+   </subtitle><para>Hier werden Angaben zu jungen Menschen gemacht, die sich aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen befinden.</para><figure xml:id="figure.XSchule.Baukasten.ReisenderSchueler">
       <title>ReisenderSchueler</title>
       <mediaobject>
          <imageobject>
@@ -51,7 +51,7 @@
                   <emphasis role="bold">reiseMitUnternehmenName</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
@@ -64,29 +64,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier kann der Name des Unternehmens angegeben werden, mit welchem sich ein Kind auf Reisen befindet.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">reiseUnternehmenBranche</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.BrancheDesUnternehmens</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.BrancheDesUnternehmens"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.BrancheDesUnternehmens"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Angabe des Wirtschafts- oder Geschäftszweiges, dem das Unternehmen zugeordnet werden kann, mit dem sich das Kind auf Reisen befindet.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier kann der Name des Unternehmens angegeben werden, mit welchem sich ein junger Mensch auf Reisen befindet.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -96,7 +74,7 @@
                   <emphasis role="codebf">Schule</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Schule" role="AbschnittNummer"/>
@@ -106,7 +84,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier können Angaben zu einer Schule gemacht werden, der ein Kind beruflich Reisender primär zugeordnet ist. Die Stammschule ist die Schule, an der die Kinder während der reisefreien Zeit über einen längeren Zeitraum verweilen. In der Regel ist dies eine Schule am Hauptwohnsitz oder am Winterstandort der beruflich reisenden Familie.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier müssen Angaben zu einer Schule gemacht werden, der ein junger Mensch beruflich Reisender primär zugeordnet ist. Die Stammschule ist die Schule, an der die jungen Menschen während der reisefreien Zeit über einen längeren Zeitraum verweilen. In der Regel ist dies eine Schule am Hauptwohnsitz oder am Winterstandort der beruflich reisenden Familie.</para></entry>
             </row>
          </tbody>
       </tgroup>

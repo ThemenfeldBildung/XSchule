@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Halbjahr</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste bildet die möglichen Halbjahre ab.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste bildet typische Zeiträume im schulischen Kontext ab, insbesondere die möglichen Halbjahre. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Halbjahr-Codes</ShortName>
       <LongName>Halbjahr</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:halbjahr</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:halbjahr_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:halbjahr_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -24,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Zeitraum</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -44,25 +43,25 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/halbjahr/1_halbjahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/halbjahr/1_halbjahr</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>1. Halbjahr</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/halbjahr/2_halbjahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/halbjahr/2_halbjahr</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>2. Halbjahr</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/halbjahr/ganzes_jahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Ganzes Jahr</SimpleValue>
          </Value>
       </Row>

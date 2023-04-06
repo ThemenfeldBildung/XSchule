@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>ArtDerSchulaufnahme</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Art der Schulaufnahme gibt an, wie der Schüler aufgenommen wurde.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Art der Schulaufnahme gibt an, wie der junge Mensch in die Schule aufgenommen wurde. Sollte keine Auskunft möglich sein, kann der Grund dafür angegeben werden. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>ArtDerSchulaufnahme-Codes</ShortName>
       <LongName>ArtDerSchulaufnahme</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -24,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Art der Schulaufnahme</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -44,81 +43,81 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/997</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/998</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/999</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_mit_inklusion</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_mit_inklusion</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung mit Inklusion</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_nach_zurueckstellung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_nach_zurueckstellung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung nach Zurückstellung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_schule_freier_traegerschaft</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung Schule freier Trägerschaft</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/regeleinschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/regeleinschulung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Regeleinschulung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Schulwechsel (außerhalb Schulbezirk)</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/vorzeitige_einschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/vorzeitige_einschulung</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>vorzeitige Einschulung</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/zurueckstellung_gewuenscht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/zurueckstellung_gewuenscht</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Zurückstellung gewünscht</SimpleValue>
          </Value>
       </Row>

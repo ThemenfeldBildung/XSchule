@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Aufgabenfeld</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste enhält die einheitlichen Aufgabenfelder der allgemeinen Hochschulreife, die von der KMK festgelegt wurden. Quelle: https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste enthält die einheitlichen Aufgabenfelder der allgemeinen Hochschulreife, die von der KMK festgelegt wurden. Quelle: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/​1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -23,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Beschreibung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -45,7 +45,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Sprachlich-literarisch-künstlerisches Aufgabenfeld</SimpleValue>
          </Value>
       </Row>
@@ -53,7 +53,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesellschaftswissenschaftliches Aufgabenfeld</SimpleValue>
          </Value>
       </Row>
@@ -61,7 +61,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Mathematisch-naturwissenschaftlich technisches Aufgabenfeld</SimpleValue>
          </Value>
       </Row>
@@ -69,7 +69,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/40</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Facharbeit</SimpleValue>
          </Value>
       </Row>
@@ -77,7 +77,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/50</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Besondere Lernleistung</SimpleValue>
          </Value>
       </Row>
@@ -85,7 +85,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>

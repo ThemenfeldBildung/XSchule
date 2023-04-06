@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>BewertungsschemaAbitur</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Das Bewertungsschema nach dem Beschluss der KMK zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -23,15 +23,16 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Wortschrift</LongName>
          <Data Type="string"/>
       </Column>
       <Column Id="note" Use="required">
          <ShortName>note</ShortName>
+         <LongName>Note</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -49,7 +50,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/0</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>ungenügend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -60,7 +61,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/1</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>mangelhaft</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -71,7 +72,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/10</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -82,7 +83,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/11</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -93,7 +94,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/12</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -104,7 +105,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/13</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>sehr gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -115,7 +116,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/14</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>sehr gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -126,7 +127,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/15</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>sehr gut</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -137,7 +138,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/2</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>mangelhaft</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -148,7 +149,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/3</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>mangelhaft</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -159,7 +160,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/4</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>ausreichend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -170,7 +171,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/5</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>ausreichend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -181,7 +182,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/6</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>ausreichend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -192,7 +193,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/7</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>befriedigend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -203,7 +204,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/8</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>befriedigend</SimpleValue>
          </Value>
          <Value ColumnRef="note">
@@ -214,7 +215,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/kmk/1972/code/bewertungsschema/9</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>befriedigend</SimpleValue>
          </Value>
          <Value ColumnRef="note">

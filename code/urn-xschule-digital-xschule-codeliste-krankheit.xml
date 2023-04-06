@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Krankheit</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Liste von Krankheiten, zu denen ein Impfschutz erhoben wird.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Liste von Krankheiten, zu denen Informationen erhoben werden können. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Liste von Krankheiten, zu denen ein Impfschutz erhoben wird.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Krankheit-Codes</ShortName>
       <LongName>Krankheit</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:krankheit</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:krankheit_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:krankheit_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -24,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
       <Column Id="beschreibung" Use="required">
          <ShortName>beschreibung</ShortName>
+         <LongName>Krankheit</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -44,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/krankheit/masern</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/krankheit/masern</SimpleValue>
          </Value>
          <Value ColumnRef="beschreibung">
             <SimpleValue>Masern</SimpleValue>

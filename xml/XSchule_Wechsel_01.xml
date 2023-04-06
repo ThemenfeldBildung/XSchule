@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.wechsel.0001 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://xschule.digital/def/xschule/0.4/xsd https://xschule.digital/def/xschule/0.4/xsd/xschule.xsd"
+ xsi:schemaLocation="http://xschule.digital/def/xschule/0.5/xsd https://xschule.digital/def/xschule/0.5/xsd/xschule.xsd"
  xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
  xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
- xmlns:xsc="http://xschule.digital/def/xschule/0.4/xsd"
- xmlns:xbd="http://xbildung.de/def/xbildung/0.93/xsd">
+ xmlns:xsc="http://xschule.digital/def/xschule/0.5/xsd"
+ xmlns:xbd="http://xbildung.de/def/xbildung/0.94/xsd">
 
     <!--
-        Datum: 21.11.2022
+        Datum: 06.04.2022
         Name der Beispieldatei: Wechsel_01
         Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Primarstufe
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
@@ -45,19 +45,19 @@
  
 
         <xsc:herkunftssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20210929-0">
+            listVersionID="20220928-0">
             <code>http://publications.europa.eu/resource/authority/language/DEU</code>
         </xsc:herkunftssprache>
         <xsc:verkehrssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20210929-0">
+            listVersionID="20220928-0">
             <code>http://publications.europa.eu/resource/authority/language/POR</code>
         </xsc:verkehrssprache>
         <xsc:impfung>
             <xsc:impfschutz>
-                <code>http://xschule.digital/def/xschule/0.4/code/impfschutz/vorhanden</code>
+                <code>http://xschule.digital/def/xschule/0.5/code/impfschutz/vorhanden</code>
             </xsc:impfschutz>
             <xsc:krankheit>
-                <code>http://xschule.digital/def/xschule/0.4/code/krankheit/masern</code>
+                <code>http://xschule.digital/def/xschule/0.5/code/krankheit/masern</code>
             </xsc:krankheit>
         </xsc:impfung>
 
@@ -104,7 +104,7 @@
             </xbd:name>
             <xbd:kommunikation>
                 <xbd:kanal>
-                    <code>http://www.xbildung.de/def/xoev/erreichbarkeit/3/code/01</code>
+                    <code>http://xbildung.de/def/xoev/erreichbarkeit/3/code/01</code>
                 </xbd:kanal>
                 <xbd:kennung>beispielschule@example.com</xbd:kennung>
             </xbd:kommunikation>
@@ -119,7 +119,7 @@
             <xbd:ende>2021-07-01</xbd:ende>
         </xsc:zeitraum>
         <xsc:schuljahrgang><xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_1</code>
         </xsc:jahrgangsstufe>
             <xsc:unterrichtsteilnahme> <!-- Genehmigte Nichtteilnahme am Unterricht im ersten Monat der ersten Klasse -->
                 <xsc:zeitraum>
@@ -127,7 +127,7 @@
                 <xbd:ende>2020-10-01</xbd:ende>
                 </xsc:zeitraum>
                 <xsc:art>
-                    <code>http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/freigestellt</code>
+                    <code>http://xschule.digital/def/xschule/0.5/code/artderunterrichtsteilnahme/freigestellt</code>
                 </xsc:art>
                 <xsc:nichtteilnahmeAmUnterricht>true</xsc:nichtteilnahmeAmUnterricht>
                 <xsc:nichtteilnahmeGenehmigt>true</xsc:nichtteilnahmeGenehmigt>
@@ -152,7 +152,7 @@
         </xsc:anschrift>
         <xsc:kontakt>
                 <xbd:kanal>
-                    <code>http://www.xbildung.de/def/xoev/erreichbarkeit/3/code/03</code>
+                    <code>http://xbildung.de/def/xoev/erreichbarkeit/3/code/03</code>
                 </xbd:kanal>
                 <xbd:kennung>0049 171 443 353</xbd:kennung>
                 <!-- Telefon mobil -->
@@ -165,7 +165,7 @@
                     <xbd:vorname><xbd:name>Peter</xbd:name></xbd:vorname>
                     <xbd:anrede>Herr</xbd:anrede>
                 </xsc:name>
-                <xsc:geburt><teilbekanntesDatum><jahrMonatTag>1980-11-14</jahrMonatTag></teilbekanntesDatum></xsc:geburt>
+                <xsc:geburt><xsc:teilbekanntesDatum><xsc:jahrMonatTag>1980-11-14</xsc:jahrMonatTag></xsc:teilbekanntesDatum></xsc:geburt>
             </xsc:natuerlichePerson>
         </xsc:weitereDaten>
     </xsc:erziehungsberechtigter>
@@ -188,7 +188,7 @@
         </xsc:anschrift>
         <xsc:kontakt>
             <xbd:kanal>
-                <code>http://www.xbildung.de/def/xoev/erreichbarkeit/3/code/03</code>
+                <code>http://xbildung.de/def/xoev/erreichbarkeit/3/code/03</code>
             </xbd:kanal>
             <xbd:kennung>0049 123 456 789</xbd:kennung>
             <!-- Telefon mobil -->
@@ -202,7 +202,7 @@
                     <xbd:vorname><xbd:name>Sabine</xbd:name></xbd:vorname>
                     <xbd:anrede>Frau</xbd:anrede>
                 </xsc:name>
-                <xsc:geburt><teilbekanntesDatum><jahrMonatTag>1980-12-20</jahrMonatTag></teilbekanntesDatum></xsc:geburt>
+                <xsc:geburt><xsc:teilbekanntesDatum><xsc:jahrMonatTag>1980-12-20</xsc:jahrMonatTag></xsc:teilbekanntesDatum></xsc:geburt>
             </xsc:natuerlichePerson>
         </xsc:weitereDaten>
     </xsc:erziehungsberechtigter>
@@ -210,7 +210,7 @@
     <xsc:schullaufbahn>
         <xsc:eintrittsdatum>2021-08-01</xsc:eintrittsdatum>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/regeleinschulung</code>
+            <code>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/regeleinschulung</code>
         </xsc:art>
     </xsc:schullaufbahn>
 
@@ -218,19 +218,19 @@
         <xsc:schulbesuchsjahreInSchuleingangsphase>1</xsc:schulbesuchsjahreInSchuleingangsphase>
         <xsc:teilnahmeGemeinsamerUnterricht
             listURI="urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht"
-            listVersionID="0.4">
-            <code>http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/zielgleich</code>
+            listVersionID="0.5">
+            <code>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/zielgleich</code>
         </xsc:teilnahmeGemeinsamerUnterricht>
     </xsc:schulformspezifischeZusatzdaten>
     <xsc:aufnahme>
         
         <xsc:datum>2022-09-01</xsc:datum>
         <xsc:jahrgang>
-            <code>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_2</code>
         </xsc:jahrgang>
         <xsc:versetzt>true</xsc:versetzt> <!-- normale Versetzung ohne Ausnahmetatbestand -->
         <xsc:versetzungsOderAusnahmetatbestandstyp>
-            <code>http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung</code>
+            <code>http://xschule.digital/def/xschule/0.5/code/versetzungstyp/versetzung</code>
         </xsc:versetzungsOderAusnahmetatbestandstyp>
     </xsc:aufnahme>
 </xsc:schueler.wechsel.0001>

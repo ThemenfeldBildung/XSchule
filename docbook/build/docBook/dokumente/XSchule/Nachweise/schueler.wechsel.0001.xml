@@ -8,7 +8,7 @@
          xml:id="XSchule.Nachweise.schueler.wechsel.0001">
    <title>schueler.wechsel.0001</title>
    <subtitle>Nachricht: <emphasis role="codebf">schueler.wechsel.0001</emphasis>
-   </subtitle><para>Diese Nachricht dient der Anmeldung eines Schülers / einer Schülerin an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum/zur Schüler:in und den Sorgeberechtigten übermittelt.</para><figure xml:id="figure.XSchule.Nachweise.schueler.wechsel.0001">
+   </subtitle><para>Diese Nachricht dient der Anmeldung eines jungen Menschen an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum jungen Mensch und den Sorgeberechtigten übermittelt.</para><figure xml:id="figure.XSchule.Nachweise.schueler.wechsel.0001">
       <title>schueler.wechsel.0001</title>
       <mediaobject>
          <imageobject>
@@ -65,7 +65,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Schüler ist eine natürliche Person, welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Schüler bzw. die Schülerin ist eine natürliche Person, welche durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, die man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -106,7 +106,7 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Hier kann die letzte besuchte Schule angegeben werden.</para>
-<para>Verfügt die besuchte Schule über mehrere Schulformen, Profile oder Bildungsgänge, werden hier nur die angegeben, die auf den wechselnden Schüler zutreffen.</para></entry>
+</entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -134,7 +134,7 @@
                   <emphasis role="bold">erziehungsberechtigter</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">GesetzlicherVertreter</emphasis> (Basistyp) </entry>
+                  <emphasis role="codebf">GesetzlicherVertreter</emphasis> (Basistyp)</entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
@@ -164,7 +164,7 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Wenn der Erziehungsberechtigte kürzlich umgezogen (meist zugezogen) ist, kann es sein, dass die für den Schulbesuch in Zukunft relevante Adresse nicht aktuelle Adresse ist. Die zukünftig relevante Adresse wird hier angegeben.</para>
-<para>Die aktuelle Adresse wird hingegen im Feld "adresse" der Basisklasse GesetzlicherVertreter übertragen.</para></entry>
+<para>Die aktuelle Adresse wird hingegen im Feld "anschrift" der Basisklasse GesetzlicherVertreter übertragen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="0"/>
@@ -268,7 +268,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Bündelt Angaben zur Aufnahme des Schülers.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Bündelt Angaben zur Aufnahme des jungen Menschen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -309,7 +309,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt den (geplanten) Jahrgang an, in den der Schüler nach dem Wechsel aufgenommen werden soll.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Gibt den (geplanten) Jahrgang an, in den der junge Mensch nach dem Wechsel aufgenommen werden soll.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>

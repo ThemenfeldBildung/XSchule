@@ -5,9 +5,8 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Art der Schule</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen von Schularten nach dem Kerndatensatz (KDS) 4.0 der Kultusministerkonferenz (KMK).</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen des Merkmals "Schulart/-typ im Sinne der schulartspezifischen Einrichtung" nach dem Kerndatensatz (KDS) der Kultusministerkonferenz (KMK). Quelle: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:validFrom>2021-06-01</xoev-cl-4:validFrom>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
@@ -24,7 +23,6 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code Name</LongName>
          <Data Type="string"/>
       </Column>
       <Column Id="description-de-DE" Use="required">

@@ -5,21 +5,22 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Schulaufnahme">
-   <title>Schulaufnahme</title>
-   <subtitle>Typ: <emphasis role="codebf">Schulaufnahme</emphasis>
-   </subtitle><para>Hier können Angaben zur erstmaligen Aufnahme eines jungen Menschen in die Schullaufbahn gemacht werden.</para><figure xml:id="figure.XSchule.Baukasten.Schulaufnahme">
-      <title>Schulaufnahme</title>
+         xml:id="XSchule.Baukasten.TeilbekanntesDatum">
+   <title>TeilbekanntesDatum</title>
+   <subtitle>Typ: <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+   </subtitle><para>Mit diesem Datentyp kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden. Die Angabe einer Zeitzone ist in keinem Fall möglich.</para>
+<para><emphasis>Hinweis: </emphasis>Diese Klasse wurde aus XInneres übernommen.</para><figure xml:id="figure.XSchule.Baukasten.TeilbekanntesDatum">
+      <title>TeilbekanntesDatum</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/Schulaufnahme.svg"/>
+                       fileref="../../../zeichnungen/XSchule/Baukasten/TeilbekanntesDatum.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XSchule.Baukasten.Schulaufnahme">
+   <informaltable xml:id="table.XSchule.Baukasten.TeilbekanntesDatum">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +35,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Schulaufnahme</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">TeilbekanntesDatum</emphasis>
                </entry>
             </row>
             <row>
@@ -48,46 +49,56 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">eintrittsdatum</emphasis>
+                  <emphasis role="bold">jahrMonatTag</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">xs:date</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Datum des Eintritts in die Schullaufbahn.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe eines vollständigen Datums</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">art</emphasis>
+                  <emphasis role="bold">jahrMonat</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.ArtDerSchulaufnahme</emphasis>
+                  <emphasis role="codebf">xs:gYearMonth</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
-                        role="Seitenzahl"/>
-               </entry>
+               <entry/>
+               <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe eines Datums mit Jahr und Monat</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">jahr</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:gYear</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe eines Datums durch eine Jahresangabe</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/schulaufnahme_list.xml"/>
+            href="../../anhang/verwendung/complexTypes/teilbekanntesdatum_list.xml"/>
 </section>

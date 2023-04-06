@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Jahrgangsstufe</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde allerdings mit einigen zusätzlichen Werten ergänzt. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können. Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde jedoch um zusätzliche Werten ergänzt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Jahrgangsstufe-Codes</ShortName>
       <LongName>Jahrgangsstufe</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:jahrgangsstufe</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:jahrgangsstufe_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:jahrgangsstufe_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -23,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Jahrgangsstufe</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -43,201 +43,201 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/einfuehrungsphase</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/einfuehrungsphase</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Einführungsphase</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_0</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_0</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 0</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_1</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_1</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 1</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_10</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 10</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_11</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_11</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 11</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_12</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_12</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 12</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_13</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_13</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 13</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_2</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_2</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 2</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_3</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_3</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 3</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_4</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_4</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 4</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_5</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_5</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 5</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_6</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_6</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 6</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_7</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_7</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 7</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_8</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_8</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 8</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_9</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_9</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsstufe 9</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/nicht_zugeordnet</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/nicht_zugeordnet</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>keiner Jahrgangsstufe zugeordnet</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_1</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/qualifikationsphase_1</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Qualifikationsphase 1</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_2</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/qualifikationsphase_2</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Qualifikationsphase 2</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_3</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/qualifikationsphase_3</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Qualifikationsphase 3</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_4</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/qualifikationsphase_4</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Qualifikationsphase 4</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/uebergreifend_primar</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsübergreifende Primarstufe</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar_sekundar_I</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/uebergreifend_primar_sekundar_I</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsübergreifende Primar- und Sekundarstufe I</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/uebergreifend_sekundar_I</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsübergreifende Sekundarstufe I</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_II</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/uebergreifend_sekundar_II</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsübergreifende Sekundarstufe II</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I_II</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/uebergreifend_sekundar_I_II</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahrgangsübergreifende Sekundarstufe I und II</SimpleValue>
          </Value>
       </Row>

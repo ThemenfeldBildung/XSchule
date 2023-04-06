@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Zeugnisart</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Liste der möglichen Zeugnisarten.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste beinhaltet Arten von Zeugnissen, die mit XSchule modelliert werden können. Die Liste wurde vom XSchule-Projekt erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Zeugnisart-Codes</ShortName>
       <LongName>Zeugnisart</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:zeugnisart</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:zeugnisart_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:zeugnisart_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -24,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Zeugnisart</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -44,49 +43,49 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/abgangszeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/abgangszeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Abgangszeugnis</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/abschlusszeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/abschlusszeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Abschlusszeugnis</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/halbsjahreszeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/halbsjahreszeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Halbjahreszeugnis</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/jahreszeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/jahreszeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahreszeugnis</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/vorlaeufiges_zeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/vorlaeufiges_zeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
-            <SimpleValue>Vorlaeufiges Zeugnis</SimpleValue>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Vorläufiges Zeugnis</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/zeugnisart/zwischenzeugnis</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/zeugnisart/zwischenzeugnis</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Zwischenzeugnis</SimpleValue>
          </Value>
       </Row>

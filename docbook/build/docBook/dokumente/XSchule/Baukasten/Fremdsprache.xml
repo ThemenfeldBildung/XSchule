@@ -64,7 +64,29 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angabe der betrachteten Sprache. Dies erfolgt über die URI, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe der betrachteten Sprache. Dies erfolgt über die URI, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">abfolge</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.AbfolgeDerFremdsprachen</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit der Abfolge der Fremdsprachen kann festgehalten werden, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -111,23 +133,40 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">ger</emphasis>
+                  <emphasis role="bold">belegteJahre</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
+                  <emphasis role="codebf">xs:decimal</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..2</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
+               <entry namest="indent0" nameend="page"><para>In einigen fachlichen Kontexten kann es notwendig sein anzugeben, wie viele Jahre eine Fremdsprache bereits belegt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.CEFR</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..2</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
                <entry namest="indent0" nameend="page"><para>Für moderne Fremdsprachen kann das Kompetenzlevel des Nachweisinhabers gemäß des Gemeinsamen europäischen Referenzrahmens für Sprachen (GER) - engl: Common European Reference Framework for Languages (CEFR) angegeben werden.</para>
-
-<para><emphasis>Spezialfall Zwischenniveau (Übergänge, z.B. "B2/C1"): </emphasis>Das Niveau entspricht zum Teil dem oberen Bereich des unteren Niveaus (B2) und zum Teil dem unteren Bereich des oberen Niveaus (C1). Ein solches Zwischenniveau wird dadurch angegeben, dass beide GERs getrennt voneinander angegeben werden. Sie werden NICHT in ein Element geschrieben, da davon ausgegangen wird, dass Zwischenniveaus nicht Teil der Codeliste des EU Publication Office sind.</para>
-
-<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als String (A1, A2, B1, B2, C1, C2), bis die Codeliste, die vom EU Publication Office technisch zur Verfügung gestellt wird, vollständig zur Verfügung steht.</para></entry>
+<para><emphasis>Spezialfall Zwischenniveau (Übergänge, z.B. "B2/C1"):</emphasis> Das Niveau entspricht zum Teil dem oberen Bereich des unteren Niveaus (B2) und zum Teil dem unteren Bereich des oberen Niveaus (C1). Ein solches Zwischenniveau wird dadurch angegeben, dass das Element GER zweimal verwendet wird, beginnend mit dem niedrigeren Niveau.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -149,6 +188,22 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Hier ist die Angabe zum Fach möglich.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">herkunftssprachlicherUnterricht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element kann angegeben werden, ob es sich bei der unterrichteten Fremdsprache um herkunftssprachlichen Unterricht für den jungen Mensch handelt.</para></entry>
             </row>
          </tbody>
       </tgroup>

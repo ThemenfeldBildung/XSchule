@@ -5,10 +5,11 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.Kursbereich"
+         xml:id="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Kursbereich</title><para>Diese Liste gibt die Kursdifferenzierung an.</para><informaltable>
+   <title>Code.Anforderungsniveau</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,26 +22,26 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Die Leistung kann in einem bestimmen Kursbereich erbracht
-			werden.</entry>
+               <entry><para>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern.</para>
+<para><emphasis role="bold">Grundlage:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf">https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</link></para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursbereich.Kursbereich-Codes"
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.anforderungsniveau.Anforderungsniveau-Codes"
                         role="Seite"/>
                </entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:kursbereich</entry>
+               <entry>urn:xschule-digital:xschule:codeliste:anforderungsniveau</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.4</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.kursbereich_list.xml"/>
+            href="../verwendung/complexTypes/code.anforderungsniveau_list.xml"/>
 </section>

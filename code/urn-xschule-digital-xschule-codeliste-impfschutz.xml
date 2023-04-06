@@ -5,18 +5,17 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Impfschutz</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Hier können Angaben über den Impfschutz von Schüler:innen gemacht werden.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste soll es ermöglichen, möglichst datensparsam den Stand des gesetzlich geforderten Nachweises einer Immunität zu übermitteln, ohne auf medizinische Details einzugehen. Hinweis: Benennung und Inhalt der Codeliste und der dazugehörigen Klassen und Eigenschaften, befinden sich weiterhin in der Abstimmung. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionDescription>Mit dem Impfschutz wird angegeben, ob ein Kind geimpft wurde oder nicht bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</xoev-cl-4:versionDescription>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
       <ShortName>Impfschutz-Codes</ShortName>
       <LongName>Impfschutz</LongName>
-      <Version>0.4</Version>
+      <Version>0.5</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:impfschutz</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:impfschutz_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:impfschutz_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -24,11 +23,11 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code</LongName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Wert</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -44,41 +43,41 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/impfschutz/997</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/impfschutz/997</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/impfschutz/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/impfschutz/998</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/impfschutz/999</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/impfschutz/999</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/impfschutz/nicht_vorhanden</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/impfschutz/nicht_vorhanden</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>nicht vorhanden</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.4/code/impfschutz/vorhanden</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/impfschutz/vorhanden</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>vorhanden</SimpleValue>
          </Value>
       </Row>

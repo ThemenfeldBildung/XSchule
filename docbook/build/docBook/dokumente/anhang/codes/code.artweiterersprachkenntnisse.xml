@@ -8,7 +8,8 @@
          xml:id="XSchule.Baukasten.Codes.Code.ArtWeitererSprachkenntnisse"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.ArtWeitererSprachkenntnisse</title><para>Diese Liste gibt die Art der zusätzlichen Sprachprüfung im Abitur an.</para><informaltable>
+   <title>Code.ArtWeitererSprachkenntnisse</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,7 +22,8 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Diese Codeliste ermöglicht die Angabe von zusätzlichen Sprachkenntnissen.</entry>
+               <entry><para>Diese Codeliste ermöglicht die Angabe von zusätzlichen, standardisierten Sprachkenntnissen. Sie basiert auf der "Vereinbarung über das Latinum und das Graecum", erweitert um landesspezifische Bedarfe der XSchule-Stakeholdern.</para>
+<para><emphasis role="bold">Grundlage:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf">https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_​Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf</link></para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -35,7 +37,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.4</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>

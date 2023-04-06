@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="259.03125" height="286">
+<svg xmlns="http://www.w3.org/2000/svg" width="321.703125" height="430">
    <defs>
       <style type="text/css">
                         text {
@@ -37,8 +37,8 @@
                         } 
                     </style>
    </defs>
-   <rect width="249.03125"
-         height="276"
+   <rect width="311.703125"
+         height="420"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -67,14 +67,14 @@
             y2="18"
             class="type-structure-required"/>
       <g transform="translate(55,48)">
-         <rect width="178.03125" height="18" class="element-upper"/>
-         <rect width="178.03125" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">beginn</text>
-         <line x1="0" y1="18" x2="178.03125" y2="18"/>
+         <rect width="240.703125" height="18" class="element-upper"/>
+         <rect width="240.703125" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">abfolge</text>
+         <line x1="0" y1="18" x2="240.703125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:Code.Jahrgangsstufe</text>
-         <g transform="translate(178.03125,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Code.AbfolgeDerFremdsprachen</text>
+         <g transform="translate(240.703125,0)"/>
       </g>
       <line x1="33"
             y1="66"
@@ -90,7 +90,7 @@
       <g transform="translate(55,96)">
          <rect width="178.03125" height="18" class="element-upper"/>
          <rect width="178.03125" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">ende</text>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">beginn</text>
          <line x1="0" y1="18" x2="178.03125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
@@ -113,14 +113,14 @@
             y2="114"
             class="type-structure-optional"/>
       <g transform="translate(55,144)">
-         <rect width="83.734375" height="18" class="element-upper"/>
-         <rect width="83.734375" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">ger</text>
-         <line x1="0" y1="18" x2="83.734375" y2="18"/>
+         <rect width="178.03125" height="18" class="element-upper"/>
+         <rect width="178.03125" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">ende</text>
+         <line x1="0" y1="18" x2="178.03125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xs:string</text>
-         <g transform="translate(83.734375,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Code.Jahrgangsstufe</text>
+         <g transform="translate(178.03125,0)"/>
       </g>
       <line x1="33"
             y1="162"
@@ -131,21 +131,21 @@
             fill="black"
             x="53"
             y="160"
-            text-anchor="end">0..2</text>
+            text-anchor="end">0..1</text>
       <line x1="33"
             y1="114"
             x2="33"
             y2="162"
             class="type-structure-optional"/>
       <g transform="translate(55,192)">
-         <rect width="145.71875" height="18" class="element-upper"/>
-         <rect width="145.71875" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">fach</text>
-         <line x1="0" y1="18" x2="145.71875" y2="18"/>
+         <rect width="96.6875" height="18" class="element-upper"/>
+         <rect width="96.6875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">belegteJahre</text>
+         <line x1="0" y1="18" x2="96.6875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:Code.Abiturfach</text>
-         <g transform="translate(145.71875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xs:decimal</text>
+         <g transform="translate(96.6875,0)"/>
       </g>
       <line x1="33"
             y1="210"
@@ -161,6 +161,84 @@
             y1="162"
             x2="33"
             y2="210"
+            class="type-structure-optional"/>
+      <g transform="translate(55,240)">
+         <rect width="126.375" height="18" class="element-upper"/>
+         <rect width="126.375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">ger</text>
+         <line x1="0" y1="18" x2="126.375" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xbd:Code.CEFR</text>
+         <g transform="translate(126.375,0)"/>
+      </g>
+      <line x1="33"
+            y1="258"
+            x2="55"
+            y2="258"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="256"
+            text-anchor="end">0..2</text>
+      <line x1="33"
+            y1="210"
+            x2="33"
+            y2="258"
+            class="type-structure-optional"/>
+      <g transform="translate(55,288)">
+         <rect width="145.71875" height="18" class="element-upper"/>
+         <rect width="145.71875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">fach</text>
+         <line x1="0" y1="18" x2="145.71875" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Code.Abiturfach</text>
+         <g transform="translate(145.71875,0)"/>
+      </g>
+      <line x1="33"
+            y1="306"
+            x2="55"
+            y2="306"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="304"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="258"
+            x2="33"
+            y2="306"
+            class="type-structure-optional"/>
+      <g transform="translate(55,336)">
+         <rect width="193.78437499999998" height="18" class="element-upper"/>
+         <rect width="193.78437499999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">herkunftssprachlicherUnterricht</text>
+         <line x1="0" y1="18" x2="193.78437499999998" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xs:boolean</text>
+         <g transform="translate(193.78437499999998,0)"/>
+      </g>
+      <line x1="33"
+            y1="354"
+            x2="55"
+            y2="354"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="352"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="306"
+            x2="33"
+            y2="354"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

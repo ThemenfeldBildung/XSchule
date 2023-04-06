@@ -8,7 +8,8 @@
          xml:id="XSchule.Baukasten.Codes.Code.ArtDerBemerkung"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.ArtDerBemerkung</title><para>Diese Liste gibt die Arten der Bemerkungen an.</para><informaltable>
+   <title>Code.ArtDerBemerkung</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,8 +22,9 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie
-			trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können. </entry>
+               <entry><para>Die Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</para>
+<para>Welcher Wert verwendet wird, beeinflusst insbesondere, welche bzw. ob eine "Beschreibung" in der Klasse "Bemerkung" erwartet wird.</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -36,7 +38,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.4</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>

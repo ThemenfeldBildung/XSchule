@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.AktiveSchulenDE"
+         xml:id="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.AktiveSchulenDE</title>
+   <title>Code.Verpflichtungsgrad</title>
    <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
@@ -22,24 +22,27 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Liste der aktiven Schulen in Deutschland, die für einen Schulwechsel in Frage
-			kommen.</entry>
+               <entry><para>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern.</para>
+<para>Die Teilnahme an einer Arbeitsgemeinschaft muss als <link linkend="XSchule.Baukasten.Bemerkung">strukturierte Bemerkung</link> (Seite <xref linkend="XSchule.Baukasten.Bemerkung" role="Seitenzahl"/>) modelliert werden.</para>
+<para><emphasis role="bold">Grundlage:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf">https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</link></para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 3, siehe Beschreibung</entry>
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.verpflichtungsgrad.Verpflichtungsgrad-Codes"
+                        role="Seite"/>
+               </entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:aktiveschulen-de</entry>
+               <entry>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>unbestimmt</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.aktiveschulende_list.xml"/>
+            href="../verwendung/complexTypes/code.verpflichtungsgrad_list.xml"/>
 </section>

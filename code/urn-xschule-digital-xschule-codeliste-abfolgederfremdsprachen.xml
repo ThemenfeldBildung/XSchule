@@ -4,18 +4,18 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>Nachweisperiode</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Nachweisperiode gibt an, um welchen Zeitraum es sich handelt. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:shortName>AbfolgeDerFremdsprachen</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enhält Werte, um angeben zu können, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
-      <ShortName>Nachweisperiode-Codes</ShortName>
-      <LongName>Nachweisperiode</LongName>
+      <ShortName>AbfolgeDerFremdsprachen-Codes</ShortName>
+      <LongName>AbfolgeDerFremdsprachen</LongName>
       <Version>0.5</Version>
-      <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachweisperiode</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.5</CanonicalVersionUri>
+      <CanonicalUri>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen_0.5</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -27,7 +27,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Art der Nachweisperiode</LongName>
+         <LongName>Reihenfolge</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -43,42 +43,34 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/1_fremdsprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>1. Fremdsprache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/2_fremdsprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>2. Fremdsprache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/3_fremdsprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>3. Fremdsprache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/998</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/halbjahr</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Halbjahr</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/jahr</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Jahr</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/semester</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Semester</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/trimester</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Trimester</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

@@ -8,7 +8,8 @@
          xml:id="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Jahrgangsstufe</title><para>Diese Liste gibt die Jahrgangsstufe an.</para><informaltable>
+   <title>Code.Jahrgangsstufe</title>
+   <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -21,9 +22,8 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. 
-
-Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde allerdings mit einigen zusätzlichen Werten ergänzt. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können.</entry>
+               <entry><para>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können.</para>
+<para>Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde jedoch um zusätzliche Werten ergänzt.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -37,7 +37,7 @@ Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde allerdings mit einigen z
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.4</entry>
+               <entry>0.5</entry>
             </row>
          </tbody>
       </tgroup>
