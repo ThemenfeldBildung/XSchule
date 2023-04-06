@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.WechselnderSchueler">
+   <title>WechselnderSchueler</title>
+   <subtitle>Typ: <emphasis role="codebf">WechselnderSchueler</emphasis>
+   </subtitle><para>Der wechselnde Schüler ist eine natürliche Person, die bei einer anderen Schule angemeldet wird. Die aufnehmende Schule benötigt dabei Informationen, die über die Daten der Klasse "NachweisinhabenderSchueler" hinausgehen.</para><figure xml:id="figure.XSchule.Baukasten.WechselnderSchueler">
+      <title>WechselnderSchueler</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XSchule/Baukasten/WechselnderSchueler.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">NatuerlichePerson</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <informaltable xml:id="table.XSchule.Baukasten.WechselnderSchueler">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">WechselnderSchueler</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kontaktmoeglichkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Kontaktmöglichkeit fasst Angaben über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">herkunftssprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Language</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier wird die Sprache angegeben, die eine Person als erstes erworben hat. In der Regel handelt es sich um die Sprache des Herkunftslandes. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">verkehrssprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Language</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann die Sprache angegeben werden, die vorrangig im Haushalt des Kindes gesprochen wird. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">impfung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Impfschutz</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Impfschutz" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Impfschutz" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des Schülers mitgeteilt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schuelerReisender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">ReisenderSchueler</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.ReisenderSchueler" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.ReisenderSchueler" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Befinden sich Schüler:innen aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen, müssen hier zusätzliche Angaben gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">auskunftssperreGueltigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Zeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum Schüler übermittelt.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/wechselnderschueler_list.xml"/>
+</section>

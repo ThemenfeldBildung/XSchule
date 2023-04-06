@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Fremdsprache">
+   <title>Fremdsprache</title>
+   <subtitle>Typ: <emphasis role="codebf">Fremdsprache</emphasis>
+   </subtitle><para>Die Klasse Fremdsprache fasst die Angaben zu den abgelegten Sprachen zusammen.</para><figure xml:id="figure.XSchule.Baukasten.Fremdsprache">
+      <title>Fremdsprache</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XSchule/Baukasten/Fremdsprache.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Fremdsprache">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Fremdsprache</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">sprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Language</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe der betrachteten Sprache. Dies erfolgt über die URI, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat. Es ist der 3-stellige ISO 639-3 zu verwenden, bspw. DEU für Deutsch.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beginn</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Wert Beginn gibt Aufschluss über den Anfang der Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können, ab der der Spracherwerb begonnen hat.</para>
+<para>Gleichzeitig wird diese Eigenschaft benutzt, um bei Bedarf zu errechnen, ob es sich um die 1., 2. oder 3. Fremdsprache handelt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ende</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Wert Ende gibt Aufschluss über das Ende der Belegung einer Fremdsprache. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können, bis welcher der Spracherwerb statt fand.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ger</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..2</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Für moderne Fremdsprachen kann das Kompetenzlevel des Nachweisinhabers gemäß des Gemeinsamen europäischen Referenzrahmens für Sprachen (GER) - engl: Common European Reference Framework for Languages (CEFR) angegeben werden.</para>
+
+<para><emphasis>Spezialfall Zwischenniveau (Übergänge, z.B. "B2/C1"): </emphasis>Das Niveau entspricht zum Teil dem oberen Bereich des unteren Niveaus (B2) und zum Teil dem unteren Bereich des oberen Niveaus (C1). Ein solches Zwischenniveau wird dadurch angegeben, dass beide GERs getrennt voneinander angegeben werden. Sie werden NICHT in ein Element geschrieben, da davon ausgegangen wird, dass Zwischenniveaus nicht Teil der Codeliste des EU Publication Office sind.</para>
+
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als String (A1, A2, B1, B2, C1, C2), bis die Codeliste, die vom EU Publication Office technisch zur Verfügung gestellt wird, vollständig zur Verfügung steht.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">fach</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Abiturfach</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Abiturfach"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Abiturfach" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier ist die Angabe zum Fach möglich.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/fremdsprache_list.xml"/>
+</section>

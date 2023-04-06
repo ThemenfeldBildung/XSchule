@@ -1,0 +1,68 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE book [
+    <!ENTITY % complete SYSTEM "../ent/complete.ent">
+    %complete;
+]>
+<book xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de" status="&specstatus;">
+	<info revision="1.0">
+		<title>Spezifikation &fachmodul;</title>
+		<subtitle>Version &version;</subtitle>
+		<abstract>
+			<para>Fassung: &fassung;</para>
+			<para>Herausgeber: Land Sachsen-Anhalt</para>
+			<para>Bezugsort: <link xmlns:xlink="http://www.w3.org/1999/xlink"
+					xlink:href="https://&fachmodul_low;.digital/def/&fachmodul_low;/&version;/spec/spezifikation_&version;.pdf"
+					>https://&fachmodul_low;.digital/def/&fachmodul_low;/&version;/spec/spezifikation_&version;.pdf</link></para>
+		</abstract>
+	</info>
+
+	<part xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+		xml:id="spezifikation.einleitung">
+		<info>
+			<title>Einleitung</title>
+		</info>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="einleitung/Vision.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="einleitung/HintergrundZuXSchule.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="einleitung/dieSchuljourney.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="einleitung/dieKernanwendungsf%C3%A4lle.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="einleitung/spezifikationXSchule.xml"
+		/>
+	</part>
+
+
+	<part xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+		xml:id="spezifikation.fachlicheModellierung">
+		<info>
+			<title>Fachliche Modellierung</title>
+		</info>
+		<!--<include xmlns="http://www.w3.org/2001/XInclude" href="grundl_begriffe/grundl_begriffe.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="basisdatentypen/basisdatentypen.xml"/>-->
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="../build/docBook/dokumente/anhang/externeModelle/externeModelle.xml"/>
+
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="fachlicheModellierung/code-Datentypen.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="fachlicheModellierung/klassenFuerDenDatenaustausch.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="fachlicheModellierung/dokumenteFuerDenDatenaustausch.xml"/>
+
+	</part>
+
+	<part xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+		xml:id="spezifikation.anhang">
+		<info>
+			<title>Anhänge</title>
+		</info>
+
+		<!-- <include xmlns="http://www.w3.org/2001/XInclude" href="anhang/codelisten/codelisten.xml"/> -->
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="../build/docBook/dokumente/anhang/schluesseltabellen/schluesseltabellen.xml"/>
+		<include xmlns="http://www.w3.org/2001/XInclude" href="anhang/glossar_xsc.xml"/>
+		<!--<include xmlns="http://www.w3.org/2001/XInclude" href="anhang/transportprofil/transportprofil.xml"/>-->
+		<include xmlns="http://www.w3.org/2001/XInclude"
+			href="anhang/versionshistorie.xml"/>
+	</part>
+</book>

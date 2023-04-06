@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE preface [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="spezifikation.einleitung.spezifikationXSchule">
+
+	<info>
+		<title>Spezifikation XSchule</title>
+	</info>
+
+
+	
+
+	
+		<section>
+			<title>Aufbau der Spezifikation </title>
+
+			<para>Das vorliegende Dokument ist in drei Teile gegliedert. XSchule besteht im
+				Wesentlichen aus Prozess- und Nachweisdefinitionen. Das einleitende Kapitel zeigt
+				außerdem den Hintergrund XSchule auf und stellt die Schuljourney dar. Darüber hinaus
+				werden die Anwendungsfälle Schulwechsel in der Primarstufe sowie Ausstellen des
+				Abiturzeugnisses beschrieben. Das darauffolgende Kapitel ist das inhaltliche Kapitel
+				zu den fachlichen Modellierungen mit Metadaten-Strukturen für die initial
+				abgebildeten (Kern-)Anwendungsfälle. Zuletzt werden in dem Glossar alle verwendeten
+				Fachtermini erläutert und im Anhang u.a. konkrete Werte aus der KMK-Schulstatistik
+				oder eigens geschaffene Wertelisten zur Verfügung gestellt. </para>
+		</section>
+
+		<section>
+
+			<title>Vorgehen zur Erarbeitung</title>
+			<para> Das Vorgehen bei der Erarbeitung des Datenaustauschformates XSchule ist transparent und
+			partizipativ. Bereits zu Beginn der Vorarbeiten von XSchule wurden alle
+			Bildungsministerien der Länder über gemeinsame virtuelle (Bundesländer-)Workshops
+			einbezogen und weitere, relevanten Stakeholder aktiv informiert (z.B. mithilfe eines
+			monatlich erscheinenden Newsletters, Durchführung von übergreifenden Veranstaltungen,
+			etc.). Diese Vorarbeiten wurden in einer <link
+				xlink:href="https://xschule.digital/def/strat/xschule/0.6/Vorstudie_XSchule_XBildung.pdf"
+				>Standardisierungsstrategie (Vorstudie)</link> zusammengeführt und die Strategie in
+			einer offenen Kommentierungsphase entsprechend abgestimmt. Auf die Vorstudie aufbauend
+			wurde mit der Dokumentation des <link
+				xlink:href="https://xschule.digital/def/req/1.0/Bedarfsbeschreibung_XSchule.pdf"
+				>Standardisierungsbedarfes (Bedarfsbeschreibung)</link> und die hier angestellte
+			erste Bearbeitung des Bedarfs durch Aufnahme entsprechender Umsetzungsarbeiten begonnen.
+			Für das Jahr 2022 sind daran anknüpfend themenspezifische Standardisierungsmeetings
+			geplant, in denen die ersten Anwendungsfälle und Anforderungen an den Datenaustausch im
+			Schulwesen analysiert und der Fokus von XSchule geschärft wird. Das methodische Vorgehen
+			der Datenmodellierung ist an zwei bewährten Methodiken angelehnt: </para>
+			<itemizedlist>
+				<listitem>
+					<para>deutsches XÖV-Vorgehen und</para>
+				</listitem>
+				<listitem>
+					<para>europäische Methodik der Entwicklung von Core Vocabularies.</para>
+				</listitem>
+			</itemizedlist>
+			<para> Beiden Methoden gemeinsam ist die modellgetriebene Spezifikationsentwicklung,
+				transparente Erarbeitung durch Veröffentlichung von Änderungsanmerkungen, der Aspekt
+				der starken Nachnutzung von bereits Bewährten und die Verwendung von
+				nicht-proprietären zukunftssicheren und freien Technologien wie etwa des W3C
+				Technology Stacks (XML, XSD; Schematron). Die Spezifikation XSchule als Fachmodul
+				des Basismoduls XBildung versucht die Komplexität im Bildungswesen, soweit wie dies
+				möglich ist, abzubilden. Zugunsten von Interoperabilität zwischen den Fachverfahren
+				im Schulwesen können nicht alle Länderspezifika Berücksichtigung finden. Dazu ist
+				der Einsatz von abgestimmten harmonisierten Interoperabilitätsartefakten wie
+				gemeinsame Datenmodelle, Wertelisten und Datentypen notwendig. Es gilt vor dem
+				Hintergrund des Bildungsföderalismus in Deutschland und unter Wahrung der Autonomie
+				der Bundesländer im Schulwesen der Grundsatz "So viel Vielfalt wie möglich bei so
+				viel Einheit wie nötig". </para>
+
+		</section>
+		<section>
+			<title>Bestandteile des Standards</title>
+			<itemizedlist>
+				<listitem>
+					<para><emphasis role="bold">Spezifikationsdokument</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">XML Schema-Definitionen</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Codelisten</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Beispielnachweise</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Schematron-Regeln</emphasis></para>
+				</listitem>
+			</itemizedlist>
+		</section>
+
+</chapter>

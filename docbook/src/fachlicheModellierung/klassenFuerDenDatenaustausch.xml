@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE chapter [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+  xml:id="spezifikation.klassenFuerDenDatenaustausch">
+  <info>
+    <title>Klassen für den Datenaustausch</title>
+  </info>
+  
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/aufnehmendeschule.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/bemerkung.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/besuchteSchule.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/fremdsprache.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/GesetzlicherVertreter.xml"/> 
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/impfschutz.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/nachweisinhabenderschueler.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/NotenuebersichtUndZeugnis.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/pruefungsergebnis.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/reisenderschueler.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/Schulaufnahme.xml"/>  
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/schule.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/SchulformspezifischeZusatzdaten.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/Schuljahrgang.xml"/>  
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/schulkurs.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/Unterrichtsteilnahme.xml"/> 
+  <include xmlns="http://www.w3.org/2001/XInclude" href="../../build/docBook/dokumente/xschule/baukasten/wechselnderschueler.xml"/>
+
+  
+  <!-- <include xmlns="http://www.w3.org/2001/XInclude" href="codesundcodelisten.xml"/> -->
+  
+  
+</chapter>

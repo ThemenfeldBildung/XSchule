@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE appendix [
+        <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+
+<appendix version="5" xml:id="anhang.historie" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+        <title>Versionshistorie</title>
+    </info>
+    <para>In der Versionshistorie werden die Änderungen der aktuellen Version zur Vorversion der
+        Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen aufgeführt.</para>
+    
+    <section xml:id="spezifikation.anhang.versionshistorie04">
+        <info>
+            <title>Version &version;</title>
+        </info>
+        <para>Veröffentlichungsdatum: &fassung;</para>
+        <para>Veränderungen zur vorherigen Version:</para>
+        <itemizedlist>
+            <listitem><para>XSC-225: Wechselnachricht um Angabe der geplanten Jahrgangsstufe und Informationen zur Versetzung ergänzen, Beschreibung Schule anpassen</para></listitem>
+            <listitem><para>XSC-222: GesetzlicherVertreterSchlüssel Version 3 mit "Mutter, Elternteil" und "Vater, Elternteil" verwenden</para></listitem>
+            <listitem><para>XSC-213: AufnehmendeSchule/Schule von xbd:Organisation statt xbd:Bildungseinrichtung erben lassen</para></listitem>
+            <listitem><para>XSC-212: Zeugnisse von xbd:Dokument statt xbd:Bildungsnachweis erben lassen</para></listitem>
+            <listitem><para>XSC-210: Codeliste Halbjahr einen Punkt aus URL entfernen</para></listitem>
+            <listitem><para>XSC-209: Verwendung von 3-stelligen ISO 639-3 Language Codes präzisieren</para></listitem>
+            <listitem><para>XSC-197: Codeliste Kursbereich erstellen</para></listitem>
+            <listitem><para>XSC-196: Codeliste Kursdifferenzierung erstellen</para></listitem>
+            <listitem><para>XSC-195: Kardinalität von fach auf 0..* ändern</para></listitem>
+            <listitem><para>XSC-194: Schulprofil von Codeliste auf String.Localized ändern, Codeliste entfernen</para></listitem>
+            <listitem><para>XSC-191: Kardinalität von GER auf 2 reduzieren</para></listitem>
+            <listitem><para>XSC-189: Codeliste Versetzungstyp Wert "Nein mit Nachprüfung" auf "Ja mit Nachprüfung" ändern</para></listitem>
+            <listitem><para>XSC-185: Abiturzeugnis: Bezug auf gesamte Oberstufe erweitern</para></listitem>
+            <listitem><para>XSC-176: Codeliste ArtWeitererSprachkenntnisse erstellen und verwenden</para></listitem>
+            <listitem><para>XSC-172: Unterrichtsteilnahme überarbeiten</para></listitem>
+            <listitem><para>XSC-153: Schullaufbahn auf letzten Eintrag beschränken</para></listitem>
+            <listitem><para>XSC-143: Angaben zum gesetzlichen Vertreter und Einbindung als Erziehungsberechtigter in der Wechselnachricht überarbeiten</para></listitem>
+            <listitem><para>XSC-118: Schulform und Schulart von Codeliste auf String.Localized ändern</para></listitem>
+            <listitem><para>XSC-113: Anschriften auf xbd:Anschrift vereinheitlichen und Pflichtfelder entfernen</para></listitem>
+            <listitem><para>XSC-104: Bildungsgang von Codeliste auf String.Localized ändern</para></listitem>
+            <listitem><para>XSC-40: Beschreibung zum AW-Schulwechsel überarbeiten</para></listitem>
+        </itemizedlist>
+    </section>
+    <section xml:id="spezifikation.anhang.versionshistorie03">
+        <info>
+            <title>Version 0.3</title>
+        </info>
+        <para>Veröffentlichungsdatum: 5. August 2022</para>
+        <para>Veränderungen zur vorherigen Version:</para>
+        <itemizedlist>
+            <listitem><para>Abiturzeugnis und "generisches" Zeugnis nach Workshops inkl. Instanzdateien überarbeitet</para></listitem>
+            <listitem><para>XSC-170: Schematron-Regeln für Zeugnisse als PoC angelegt</para></listitem>
+            <listitem><para>XSC-168: Klasse Schueler nach Anwendungsfall aufgespalten</para></listitem>
+            <listitem><para>XSC-167 i.V.m. 160, 158: Codeliste ArtDerBemerkung und Klasse Bemerkung überarbeitet</para></listitem>
+            <listitem><para>XSC-166: Aufbau der XSC Spezifikation an XBD und XHS angeglichen</para></listitem>
+            <listitem><para>XSC-163: Fremdsprache in Schulkurs aufnehmen und Inhalte überarbeitet</para></listitem>
+            <listitem><para>XSC-151: Klasse Unterrichtsteilnahme überarbeitet</para></listitem>
+            <listitem><para>XSC-149: Tag des (geplanten) Wechsels in Wechselnachricht aufgenommen</para></listitem>
+            <listitem><para>XSC-135: Klasse pruefungsergebnis erweitert um kursart LK/GK und Beschreibung überarbeitet</para></listitem>
+            <listitem><para>XSC-134: Codeliste Bildungsgang Wert g8/g9 ergänzt</para></listitem>
+            <listitem><para>XSC-127: DQR/EQR als Publications Office URIs und Liste vom Typ II angelegt</para></listitem>
+            <listitem><para>XSC-125 i.V.m. 130: Instanzdatei des Zeugnisses um Signatur erweitert</para></listitem>
+            <listitem><para>XSC-124: ArtDerHZB von Code in String.Localised geändert</para></listitem>
+            <listitem><para>XSC-115: Codeliste Auskunftssperre ausgebaut</para></listitem>
+            <listitem><para>XSC-109: Genericode-Listen werden ohne Dateinamen-Versionierung veröffentlicht</para></listitem>           
+        </itemizedlist>
+    </section>
+</appendix>

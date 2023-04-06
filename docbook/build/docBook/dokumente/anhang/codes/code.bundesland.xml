@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Codes.Code.Bundesland"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.Bundesland</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry>Die Bundesrepublik Deutschland ist ein Zusammenschluss von Bundesländern. Die
+			meisten Bundesländer umfassen mehrere Kreise und Bezirke. Diese Codeliste stellt die
+			deutschen Bundesländer nach dem Gemeindeverzeichnis des Statistischen Bundesamtes dar.
+			Dieser Code ist auch Bestandteil des Amtlichen Gemeindeschlüssels (AGS).</entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 3, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>unbestimmt</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.bundesland_list.xml"/>
+</section>

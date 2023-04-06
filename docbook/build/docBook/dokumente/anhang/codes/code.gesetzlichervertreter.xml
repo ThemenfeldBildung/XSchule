@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Codes.Code.GesetzlicherVertreter"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.GesetzlicherVertreter</title><para>Diese Liste gibt die Art des gesetzlichen Vertreters an.</para><informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung
+			abgebildet. Siehe Blatt 0001 des DSMeld.</entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 2, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>3</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.gesetzlichervertreter_list.xml"/>
+</section>

@@ -1,0 +1,3294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE
+                    appendix
+                    [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><appendix xmlns="http://docbook.org/ns/docbook"
+          version="5"
+          xml:lang="de"
+          xml:id="schluesseltabellen"
+          status="&specstatus;"
+          revision="&xrecent;">
+   <title xmlns:xlink="http://www.w3.org/1999/xlink">Codelisten</title>
+   <para xmlns:xlink="http://www.w3.org/1999/xlink">In diesem Abschnitt sind die in XSchule verwendeten Codelisten und ihre Inhalte aufgeführt.</para>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.uebersicht">
+      <title>Übersicht</title>
+      <para>In der nachstehenden Tabelle werden die folgenden Informationen dargestellt:</para>
+      <variablelist>
+         <varlistentry>
+            <term>Codeliste</term>
+            <listitem>
+               <para>Alle in XSchule genutzten Codelisten in alphabetischer Reihenfolge, die in mindestens einem Code-Datentyp genutzt werden (Typ der Codelistennutzung 1 bis 3).<footnote xml:id="no-entry">
+                     <para>Sofern in der Spalte „Code-Datentyp(en)“ kein Eintrag vorhanden ist, bedeutet dies, dass der Standard die jeweilige Codeliste verwendet und dokumentieren möchte. Der die Codeliste nutzende Code-Datentyp ist jedoch nicht im Standard spezifiziert.</para>
+                  </footnote>
+               </para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Version</term>
+            <listitem>
+               <para>Die Version der Codeliste.</para>
+            </listitem>
+         </varlistentry>
+         <varlistentry>
+            <term>Code-Datentyp(en)</term>
+            <listitem>
+               <para>Die die jeweilige Codeliste nutzenden Code-Datentypen.<footnoteref linkend="no-entry"/>
+               </para>
+            </listitem>
+         </varlistentry>
+      </variablelist>
+      <para>Die Namen der Code-Datentypen und der Codelisten stellen Links zu den jeweiligen Detail-Abschnitten dar.</para>
+      <informaltable version="5" xml:lang="de" xml:id="codelisten-uebersichtstabelle">
+         <tgroup cols="3">
+            <colspec colname="codeliste" colnum="1" colwidth="65mm"/>
+            <colspec colname="version" colnum="2" colwidth="30mm"/>
+            <colspec colname="code" colnum="3" colwidth="65mm"/>
+            <thead>
+               <row>
+                  <entry>Codeliste</entry>
+                  <entry>Version</entry>
+                  <entry>Code-Datentyp(en)</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes">Abiturfach</link>
+                  </entry>
+                  <entry align="left">2019</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Abiturfach">Code.Abiturfach</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.aktiveschulen-de.AktiveSchuleDE-Codes">AktiveSchulenDE</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.AktiveSchulenDE">Code.AktiveSchulenDE</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderbemerkung.artDerBemerkung-Codes">ArtDerBemerkung</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.ArtDerBemerkung">Code.ArtDerBemerkung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.artDerSchulaufnahme-Codes">ArtDerSchulaufnahme</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme">Code.ArtDerSchulaufnahme</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.artDerUnterrichtsteilnahme-Codes">ArtDerUnterrichtsteilnahme</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.ArtDerUnterrichtsteilnahme">Code.ArtDerUnterrichtsteilnahme</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.artweiterersprachkenntnisse.artWeitererSprachkenntnisse-Code">ArtWeitererSprachkenntnisse</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.ArtWeitererSprachkenntnisse">Code.ArtWeitererSprachkenntnisse</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.kmk.codeliste.aufgabenfeld.Aufgabenfeld-Codes">Aufgabenfeld</link>
+                  </entry>
+                  <entry align="left">1974</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Aufgabenfeld">Code.Aufgabenfeld</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.kmk.codeliste.bewertungsschemaabitur.BewertungsschemaAbitur-Codes">BewertungsschemaAbitur</link>
+                  </entry>
+                  <entry align="left">1972</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.BewertungsschemaAbitur">Code.BewertungsschemaAbitur</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.branchedesunternehmens.BrancheDesUnternehmens-Codes">BrancheDesUnternehmens</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.BrancheDesUnternehmens">Code.BrancheDesUnternehmens</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.de.bund.destatis.bevoelkerungsstatistik.schluessel.bundesland.Bundesland">Bundesland</link>
+                  </entry>
+                  <entry align="left">--</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Bundesland">Code.Bundesland</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.de.dsmeld.schluesseltabelle.gesetzlicher.vertreter.GesetzlicherVertreter-Codes">DSMeld Gesetzlicher Vertreter (DSMeld 0001)</link>
+                  </entry>
+                  <entry align="left">3</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.GesetzlicherVertreter">Code.GesetzlicherVertreter</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.halbjahr.Halbjahr-Codes">Halbjahr</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Halbjahr">Code.Halbjahr</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.impfschutz.Impfschutz-Codes">Impfschutz</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Impfschutz">Code.Impfschutz</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.jahrgangsstufe.Jahrgangsstufe-Codes">Jahrgangsstufe</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe">Code.Jahrgangsstufe</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.krankheit.Krankheit-Codes">Krankheit</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Krankheit">Code.Krankheit</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursbereich.Kursbereich-Codes">Kursbereich</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Kursbereich">Code.Kursbereich</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursdifferenzierung.Kursdifferenzierung-Codes">Kursdifferenzierung</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.Kursdifferenzierung">Code.Kursdifferenzierung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xbildung-de.publicationsoffice-eu.taxonomie.nqr-dqr.NQR-DQR-Codes">NQR/DQR</link>
+                  </entry>
+                  <entry align="left">v.5.</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.NQR_DQR">Code.NQR-DQR</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachpruefung.Nachpruefung-Codes">Nachpruefung</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Nachpruefung">Code.Nachpruefung</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachweisperiode.Nachweisperiode-Codes">Nachweisperiode</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode">Code.Nachweisperiode</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.teilnahmegemeinsamerunterricht.TeilnahmeGemeinsamerUnterricht-Codes">TeilnahmeGemeinsamerUnterricht</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.TeilnahmeGemeinsamerUnterricht">Code.TeilnahmeGemeinsamerUnterricht</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.versetzungsoderausnahmetatbestandstyp.VersetzungsOderAusnahmetatbestandstyp-Codes">VersetzungsOderAusnahmetatbestandstyp</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp">Code.VersetzungsOderAusnahmetatbestandstyp</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.zeugnisart.Zeugnisart-Codes">Zeugnisart</link>
+                  </entry>
+                  <entry align="left">0.4</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Zeugnisart">Code.Zeugnisart</link>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+   <section xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:id="schluesseltabellen.details">
+      <title>Details</title>
+      <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes">
+         <title>Abiturfach</title><para>Diese Liste enthält von der KMK beschlossene
+			Abiturfächer.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Abiturfach</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Abiturfach</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:kmk:codeliste:abiturfach</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Kultusministerkonferenz (KMK)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>2019</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Diese Liste enthält von der KMK beschlossene Abiturfächer.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="5">
+                  <colspec colname="col1" colnum="1" colwidth="50mm"/>
+                  <colspec colname="col2" colnum="2" colwidth="20mm"/>
+                  <colspec colname="col3" colnum="3" colwidth="30mm"/>
+                  <colspec colname="col4" colnum="4" colwidth="30mm"/>
+                  <colspec colname="lastcol" colnum="5" colwidth="30mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung-DE</entry>
+                        <entry align="left">mapping-ISCEDF2013URI</entry>
+                        <entry align="left">beschreibung-EN</entry>
+                        <entry align="left">Mapping-ISOLanguage-URI</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/40">http://xschule.digital/def/kmk/2019/code/abiturfach/40</link>
+                        </entry>
+                        <entry align="left">Agrartechnik mit Biologie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0810">http://data.europa.eu/snb/isced-f/0810</link>
+                        </entry>
+                        <entry align="left">Agriculture</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/60">http://xschule.digital/def/kmk/2019/code/abiturfach/60</link>
+                        </entry>
+                        <entry align="left">Arabisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ARA">http://publications.europa.eu/resource/authority/language/ARA</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/80">http://xschule.digital/def/kmk/2019/code/abiturfach/80</link>
+                        </entry>
+                        <entry align="left">Bautechnik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0730">http://data.europa.eu/snb/isced-f/0730</link>
+                        </entry>
+                        <entry align="left">Architecture and construction</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/100">http://xschule.digital/def/kmk/2019/code/abiturfach/100</link>
+                        </entry>
+                        <entry align="left">Biologie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0511">http://data.europa.eu/snb/isced-f/0511</link>
+                        </entry>
+                        <entry align="left">Biology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/120">http://xschule.digital/def/kmk/2019/code/abiturfach/120</link>
+                        </entry>
+                        <entry align="left">Chemie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0531">http://data.europa.eu/snb/isced-f/0531</link>
+                        </entry>
+                        <entry align="left">Chemistry</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/140">http://xschule.digital/def/kmk/2019/code/abiturfach/140</link>
+                        </entry>
+                        <entry align="left">Chinesisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ZHO">http://publications.europa.eu/resource/authority/language/ZHO</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/160">http://xschule.digital/def/kmk/2019/code/abiturfach/160</link>
+                        </entry>
+                        <entry align="left">Dänisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/DAN">http://publications.europa.eu/resource/authority/language/DAN</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/180">http://xschule.digital/def/kmk/2019/code/abiturfach/180</link>
+                        </entry>
+                        <entry align="left">Darstellendes Spiel</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0215">http://data.europa.eu/snb/isced-f/0215</link>
+                        </entry>
+                        <entry align="left">Music and performing arts</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/200">http://xschule.digital/def/kmk/2019/code/abiturfach/200</link>
+                        </entry>
+                        <entry align="left">Deutsch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0232">http://data.europa.eu/snb/isced-f/0232</link>
+                        </entry>
+                        <entry align="left">Literature and linguistics</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/DEU">https://publications.europa.eu/resource/authority/language/DEU</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/220">http://xschule.digital/def/kmk/2019/code/abiturfach/220</link>
+                        </entry>
+                        <entry align="left">Englisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ENG">http://publications.europa.eu/resource/authority/language/ENG</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/240">http://xschule.digital/def/kmk/2019/code/abiturfach/240</link>
+                        </entry>
+                        <entry align="left">Ernährung</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0510">http://data.europa.eu/snb/isced-f/0510</link>
+                        </entry>
+                        <entry align="left">Biological and related sciences</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/260">http://xschule.digital/def/kmk/2019/code/abiturfach/260</link>
+                        </entry>
+                        <entry align="left">Erziehungswissenschaft</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0111">http://data.europa.eu/snb/isced-f/0111</link>
+                        </entry>
+                        <entry align="left">Education science</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/280">http://xschule.digital/def/kmk/2019/code/abiturfach/280</link>
+                        </entry>
+                        <entry align="left">Erziehungswissenschaften (Pädagogik/Psychologie)</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0188">http://data.europa.eu/snb/isced-f/0188</link>
+                        </entry>
+                        <entry align="left">Inter-disciplinary programmes and qualifications involving education</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/300">http://xschule.digital/def/kmk/2019/code/abiturfach/300</link>
+                        </entry>
+                        <entry align="left">Ethik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0223">http://data.europa.eu/snb/isced-f/0223</link>
+                        </entry>
+                        <entry align="left">Philosophy and ethics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/320">http://xschule.digital/def/kmk/2019/code/abiturfach/320</link>
+                        </entry>
+                        <entry align="left">Evangelische Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/340">http://xschule.digital/def/kmk/2019/code/abiturfach/340</link>
+                        </entry>
+                        <entry align="left">Farsi</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/PES">http://publications.europa.eu/resource/authority/language/PES</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/360">http://xschule.digital/def/kmk/2019/code/abiturfach/360</link>
+                        </entry>
+                        <entry align="left">Französisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/FRA">https://publications.europa.eu/resource/authority/language/FRA</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/380">http://xschule.digital/def/kmk/2019/code/abiturfach/380</link>
+                        </entry>
+                        <entry align="left">Geographie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0532">http://data.europa.eu/snb/isced-f/0532</link>
+                        </entry>
+                        <entry align="left">Earth Sciences</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/400">http://xschule.digital/def/kmk/2019/code/abiturfach/400</link>
+                        </entry>
+                        <entry align="left">Geologie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0532">http://data.europa.eu/snb/isced-f/0532</link>
+                        </entry>
+                        <entry align="left">Earth Sciences</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/420">http://xschule.digital/def/kmk/2019/code/abiturfach/420</link>
+                        </entry>
+                        <entry align="left">Geschichte</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0222">http://data.europa.eu/snb/isced-f/0222</link>
+                        </entry>
+                        <entry align="left">History and archaeology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/440">http://xschule.digital/def/kmk/2019/code/abiturfach/440</link>
+                        </entry>
+                        <entry align="left">Gesundheit</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0910">http://data.europa.eu/snb/isced-f/0910</link>
+                        </entry>
+                        <entry align="left">Health</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/460">http://xschule.digital/def/kmk/2019/code/abiturfach/460</link>
+                        </entry>
+                        <entry align="left">Griechisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ELL">http://publications.europa.eu/resource/authority/language/ELL</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/480">http://xschule.digital/def/kmk/2019/code/abiturfach/480</link>
+                        </entry>
+                        <entry align="left">Griechisch-orthodoxe Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/500">http://xschule.digital/def/kmk/2019/code/abiturfach/500</link>
+                        </entry>
+                        <entry align="left">Hebräisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/HEB">http://publications.europa.eu/resource/authority/language/HEB</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/520">http://xschule.digital/def/kmk/2019/code/abiturfach/520</link>
+                        </entry>
+                        <entry align="left">Informatik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0611">http://data.europa.eu/snb/isced-f/0611</link>
+                        </entry>
+                        <entry align="left">Computer use</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/540">http://xschule.digital/def/kmk/2019/code/abiturfach/540</link>
+                        </entry>
+                        <entry align="left">Islamischer Religionsunterricht</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/560">http://xschule.digital/def/kmk/2019/code/abiturfach/560</link>
+                        </entry>
+                        <entry align="left">Israelitische Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/580">http://xschule.digital/def/kmk/2019/code/abiturfach/580</link>
+                        </entry>
+                        <entry align="left">Italienisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ITA">http://publications.europa.eu/resource/authority/language/ITA</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/600">http://xschule.digital/def/kmk/2019/code/abiturfach/600</link>
+                        </entry>
+                        <entry align="left">Japanisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/JPN">http://publications.europa.eu/resource/authority/language/JPN</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/620">http://xschule.digital/def/kmk/2019/code/abiturfach/620</link>
+                        </entry>
+                        <entry align="left">Jüdische Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/640">http://xschule.digital/def/kmk/2019/code/abiturfach/640</link>
+                        </entry>
+                        <entry align="left">Katholische Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/660">http://xschule.digital/def/kmk/2019/code/abiturfach/660</link>
+                        </entry>
+                        <entry align="left">Kunst</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0213">http://data.europa.eu/snb/isced-f/0213</link>
+                        </entry>
+                        <entry align="left">Fine arts</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/680">http://xschule.digital/def/kmk/2019/code/abiturfach/680</link>
+                        </entry>
+                        <entry align="left">Latein</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0232">http://data.europa.eu/snb/isced-f/0232</link>
+                        </entry>
+                        <entry align="left">Literature and linguistics</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/LAT">https://publications.europa.eu/resource/authority/language/LAT</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/700">http://xschule.digital/def/kmk/2019/code/abiturfach/700</link>
+                        </entry>
+                        <entry align="left">Lettisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/LAV">https://publications.europa.eu/resource/authority/language/LAV</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/720">http://xschule.digital/def/kmk/2019/code/abiturfach/720</link>
+                        </entry>
+                        <entry align="left">Litauisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/LIT">http://publications.europa.eu/resource/authority/language/LIT</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/740">http://xschule.digital/def/kmk/2019/code/abiturfach/740</link>
+                        </entry>
+                        <entry align="left">Mathematik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0541">http://data.europa.eu/snb/isced-f/0541</link>
+                        </entry>
+                        <entry align="left">Mathematics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/760">http://xschule.digital/def/kmk/2019/code/abiturfach/760</link>
+                        </entry>
+                        <entry align="left">Musik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0215">http://data.europa.eu/snb/isced-f/0215</link>
+                        </entry>
+                        <entry align="left">Music and performing arts</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/780">http://xschule.digital/def/kmk/2019/code/abiturfach/780</link>
+                        </entry>
+                        <entry align="left">Neugriechisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/GRC">http://publications.europa.eu/resource/authority/language/GRC</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/800">http://xschule.digital/def/kmk/2019/code/abiturfach/800</link>
+                        </entry>
+                        <entry align="left">Niederdeutsch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/NDS">http://publications.europa.eu/resource/authority/language/NDS</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/820">http://xschule.digital/def/kmk/2019/code/abiturfach/820</link>
+                        </entry>
+                        <entry align="left">Niederländisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/NLD">http://publications.europa.eu/resource/authority/language/NLD</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/840">http://xschule.digital/def/kmk/2019/code/abiturfach/840</link>
+                        </entry>
+                        <entry align="left">Philosophie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0223">http://data.europa.eu/snb/isced-f/0223</link>
+                        </entry>
+                        <entry align="left">Philosophy and ethics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/860">http://xschule.digital/def/kmk/2019/code/abiturfach/860</link>
+                        </entry>
+                        <entry align="left">Physik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0533">http://data.europa.eu/snb/isced-f/0533</link>
+                        </entry>
+                        <entry align="left">Physics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/880">http://xschule.digital/def/kmk/2019/code/abiturfach/880</link>
+                        </entry>
+                        <entry align="left">Polnisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/POL">http://publications.europa.eu/resource/authority/language/POL</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/900">http://xschule.digital/def/kmk/2019/code/abiturfach/900</link>
+                        </entry>
+                        <entry align="left">Portugiesisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/POR">http://publications.europa.eu/resource/authority/language/POR</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/920">http://xschule.digital/def/kmk/2019/code/abiturfach/920</link>
+                        </entry>
+                        <entry align="left">Psychologie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0313">http://data.europa.eu/snb/isced-f/0313</link>
+                        </entry>
+                        <entry align="left">Psychology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/940">http://xschule.digital/def/kmk/2019/code/abiturfach/940</link>
+                        </entry>
+                        <entry align="left">Recht</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0421">http://data.europa.eu/snb/isced-f/0421</link>
+                        </entry>
+                        <entry align="left">Law</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/960">http://xschule.digital/def/kmk/2019/code/abiturfach/960</link>
+                        </entry>
+                        <entry align="left">Rumänisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/RON">https://publications.europa.eu/resource/authority/language/RON</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/980">http://xschule.digital/def/kmk/2019/code/abiturfach/980</link>
+                        </entry>
+                        <entry align="left">Russisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="https://publications.europa.eu/resource/authority/language/RUS">https://publications.europa.eu/resource/authority/language/RUS</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1000">http://xschule.digital/def/kmk/2019/code/abiturfach/1000</link>
+                        </entry>
+                        <entry align="left">Russisch-orthodoxe Religionslehre</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0221">http://data.europa.eu/snb/isced-f/0221</link>
+                        </entry>
+                        <entry align="left">Religion and theology</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1020">http://xschule.digital/def/kmk/2019/code/abiturfach/1020</link>
+                        </entry>
+                        <entry align="left">Schwedisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/SWE">http://publications.europa.eu/resource/authority/language/SWE</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1040">http://xschule.digital/def/kmk/2019/code/abiturfach/1040</link>
+                        </entry>
+                        <entry align="left">Sorbisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/DSB">http://publications.europa.eu/resource/authority/language/DSB</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1060">http://xschule.digital/def/kmk/2019/code/abiturfach/1060</link>
+                        </entry>
+                        <entry align="left">Sorbisch/Wendisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/HSB">http://publications.europa.eu/resource/authority/language/HSB</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1080">http://xschule.digital/def/kmk/2019/code/abiturfach/1080</link>
+                        </entry>
+                        <entry align="left">Sozialkunde/Politik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0312">http://data.europa.eu/snb/isced-f/0312</link>
+                        </entry>
+                        <entry align="left">Political sciences and civics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1100">http://xschule.digital/def/kmk/2019/code/abiturfach/1100</link>
+                        </entry>
+                        <entry align="left">Sozialwissenschaften</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0319">http://data.europa.eu/snb/isced-f/0319</link>
+                        </entry>
+                        <entry align="left">Social and behavioural sciences</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1120">http://xschule.digital/def/kmk/2019/code/abiturfach/1120</link>
+                        </entry>
+                        <entry align="left">Soziologie</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0314">http://data.europa.eu/snb/isced-f/0314</link>
+                        </entry>
+                        <entry align="left">Sociology and cultural studies</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1140">http://xschule.digital/def/kmk/2019/code/abiturfach/1140</link>
+                        </entry>
+                        <entry align="left">Spanisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/SPA">http://publications.europa.eu/resource/authority/language/SPA</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1160">http://xschule.digital/def/kmk/2019/code/abiturfach/1160</link>
+                        </entry>
+                        <entry align="left">Sport</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/1014">http://data.europa.eu/snb/isced-f/1014</link>
+                        </entry>
+                        <entry align="left">Sports</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1180">http://xschule.digital/def/kmk/2019/code/abiturfach/1180</link>
+                        </entry>
+                        <entry align="left">Technik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0799">http://data.europa.eu/snb/isced-f/0799</link>
+                        </entry>
+                        <entry align="left">Engineering, manufacturing and construction</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1200">http://xschule.digital/def/kmk/2019/code/abiturfach/1200</link>
+                        </entry>
+                        <entry align="left">Tschechisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/CES">http://publications.europa.eu/resource/authority/language/CES</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1220">http://xschule.digital/def/kmk/2019/code/abiturfach/1220</link>
+                        </entry>
+                        <entry align="left">Türkisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/TUR">http://publications.europa.eu/resource/authority/language/TUR</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1240">http://xschule.digital/def/kmk/2019/code/abiturfach/1240</link>
+                        </entry>
+                        <entry align="left">Ungarisch</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">http://data.europa.eu/snb/isced-f/0231</link>
+                        </entry>
+                        <entry align="left">Language acquisition</entry>
+                        <entry align="left">
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/HUN">http://publications.europa.eu/resource/authority/language/HUN</link>
+                        </entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1260">http://xschule.digital/def/kmk/2019/code/abiturfach/1260</link>
+                        </entry>
+                        <entry align="left">Wirtschaft</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0311">http://data.europa.eu/snb/isced-f/0311</link>
+                        </entry>
+                        <entry align="left">Economics</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/2019/code/abiturfach/1280">http://xschule.digital/def/kmk/2019/code/abiturfach/1280</link>
+                        </entry>
+                        <entry align="left">Wirtschaftsinformatik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0619">http://data.europa.eu/snb/isced-f/0619</link>
+                        </entry>
+                        <entry align="left">Information and Communication Technologies</entry>
+                        <entry align="left"/>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.aktiveschulen-de.AktiveSchuleDE-Codes">
+         <title>AktiveSchulenDE</title>
+         <para>Liste der aktiven Schulen in Deutschland, die für einen Schulwechsel in Frage
+			kommen.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Liste der aktiven Schulen in Deutschland</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>AktiveSchulenDE</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:aktiveschulen-de</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderbemerkung.artDerBemerkung-Codes">
+         <title>ArtDerBemerkung</title>
+         <para>Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie
+			trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>ArtDerBemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>ArtDerBemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:artderbemerkung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Die Art der Bemerkung gibt an, ob es sich um standardisierte Bemerkungen
+			handelt oder nicht. </entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/20">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/20</link>
+                        </entry>
+                        <entry align="left">sonstige standardisierte Bemerkung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/10">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/10</link>
+                        </entry>
+                        <entry align="left">freie Formulierung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/25">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/25</link>
+                        </entry>
+                        <entry align="left">Äquivalenzbemerkung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/28">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/28</link>
+                        </entry>
+                        <entry align="left">Rechtsgrundlage</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/40">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/40</link>
+                        </entry>
+                        <entry align="left">allgemeine Beurteilung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/30">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/30</link>
+                        </entry>
+                        <entry align="left">Arbeitsgemeinschaft</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/50">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/50</link>
+                        </entry>
+                        <entry align="left">schulisches Engagement</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/55">http://xschule.digital/def/xschule/0.4/code/art_der_bemerkung/55</link>
+                        </entry>
+                        <entry align="left">außerschulisches Engagement</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.artDerSchulaufnahme-Codes">
+         <title>ArtDerSchulaufnahme</title>
+         <para>Die Art der Schulaufnahme gibt an, wie der Schüler aufgenommen wurde. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>ArtDerSchulaufnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>ArtDerSchulaufnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:artderschulaufnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte
+			keine Auskunft möglich sein, wird der Grund dafür angegeben.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/regeleinschulung">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/regeleinschulung</link>
+                        </entry>
+                        <entry align="left">Regeleinschulung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/vorzeitige_einschulung">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/vorzeitige_einschulung</link>
+                        </entry>
+                        <entry align="left">vorzeitige Einschulung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_nach_zurueckstellung">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_nach_zurueckstellung</link>
+                        </entry>
+                        <entry align="left">Einschulung nach Zurückstellung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_mit_inklusion">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_mit_inklusion</link>
+                        </entry>
+                        <entry align="left">Einschulung mit Inklusion</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/zurueckstellung_gewuenscht">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/zurueckstellung_gewuenscht</link>
+                        </entry>
+                        <entry align="left">Zurückstellung gewünscht</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/schulwechsel_ausserhalb_schulbezirk">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/schulwechsel_ausserhalb_schulbezirk</link>
+                        </entry>
+                        <entry align="left">Schulwechsel (außerhalb Schulbezirk)</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_schule_freier_traegerschaft">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/einschulung_schule_freier_traegerschaft</link>
+                        </entry>
+                        <entry align="left">Einschulung Schule freier Trägerschaft</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/997">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/997</link>
+                        </entry>
+                        <entry align="left">Wert aus rechtlichen Gründen nicht übermittelt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/998">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/999">http://xschule.digital/def/xschule/0.4/code/art_der_schulaufnahme/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.artDerUnterrichtsteilnahme-Codes">
+         <title>ArtDerUnterrichtsteilnahme</title>
+         <para>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der
+			Grund dafür angegeben.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>ArtDerUnterrichtsteilnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>ArtDerUnterrichtsteilnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Art der Teilnahme am Unterricht. Sollte keine Angabe möglich sein, wird der
+			Grund dafür angegeben.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/998">http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/freigestellt">http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/freigestellt</link>
+                        </entry>
+                        <entry align="left">freigestellt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/freiwillig">http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/freiwillig</link>
+                        </entry>
+                        <entry align="left">freiwillig</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/verpflichtend">http://xschule.digital/def/xschule/0.4/code/art_der_unterrichtsteilnahme/verpflichtend</link>
+                        </entry>
+                        <entry align="left">verpflichtend</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artweiterersprachkenntnisse.artWeitererSprachkenntnisse-Code">
+         <title>ArtWeitererSprachkenntnisse</title>
+         <para>Diese Codeliste ermöglicht die Angabe von zusätzlichen Sprachkenntnissen.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>ArtWeitererSprachkenntnisse</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>ArtWeitererSprachkenntnisse</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:artweiterersprachkenntnisse</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum</link>
+                        </entry>
+                        <entry align="left">Latinum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_klein">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_klein</link>
+                        </entry>
+                        <entry align="left">Kleines Latinum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_gross">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/latinum_gross</link>
+                        </entry>
+                        <entry align="left">Großes Latinum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/graecum">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/graecum</link>
+                        </entry>
+                        <entry align="left">Graecum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_altsprachlich">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_altsprachlich</link>
+                        </entry>
+                        <entry align="left">Altsprachliches Hebraicum</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_alt_und_neusprachlich">http://xschule.digital/def/xschule/0.4/code/art_weiterer_sprachkenntnisse/hebraicum_alt_und_neusprachlich</link>
+                        </entry>
+                        <entry align="left">Alt- und Neusprachliches Hebraicum</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.aufgabenfeld.Aufgabenfeld-Codes">
+         <title>Aufgabenfeld</title><para>Die Codeliste enhält die einheitlichen Aufgabenfelder der
+			allgemeinen Hochschulreife, die von der KMK festgelegt wurden.</para>
+			<para>Quelle: <link
+			xlink:href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf">https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</link></para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:kmk:codeliste:aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Kultusministerkonferenz (KMK)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1974</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</link>
+                        </entry>
+                        <entry align="left">Sprachlich-literarisch-künstlerisches Aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</link>
+                        </entry>
+                        <entry align="left">Gesellschaftswissenschaftliches Aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</link>
+                        </entry>
+                        <entry align="left">Mathematisch-naturwissenschaftlich technisches Aufgabenfeld</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/40">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/40</link>
+                        </entry>
+                        <entry align="left">Facharbeit</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/50">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/50</link>
+                        </entry>
+                        <entry align="left">Besondere Lernleistung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998">http://xschule.digital/def/kmk/1974/code/aufgabenfeld/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.bewertungsschemaabitur.BewertungsschemaAbitur-Codes">
+         <title>BewertungsschemaAbitur</title>
+         <para>Das Bewertungsschema nach dem KMK Beschluss zur Umsetzung der Noten in Punkte
+			gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in
+			Wortschrift.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>BewertungsschemaAbitur</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>BewertungsschemaAbitur</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:kmk:codeliste:bewertungsschemaabitur</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Kultusministerkonferenz (KMK)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1972</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colname="key" colnum="1" colwidth="60mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <colspec colname="desc" colnum="3" colwidth="30mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                        <entry align="left">note</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/15">http://xschule.digital/def/kmk/1972/code/bewertungsschema/15</link>
+                        </entry>
+                        <entry align="left">sehr gut</entry>
+                        <entry align="left">1+</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/14">http://xschule.digital/def/kmk/1972/code/bewertungsschema/14</link>
+                        </entry>
+                        <entry align="left">sehr gut</entry>
+                        <entry align="left">1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/13">http://xschule.digital/def/kmk/1972/code/bewertungsschema/13</link>
+                        </entry>
+                        <entry align="left">sehr gut</entry>
+                        <entry align="left">1-</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/12">http://xschule.digital/def/kmk/1972/code/bewertungsschema/12</link>
+                        </entry>
+                        <entry align="left">gut</entry>
+                        <entry align="left">2+</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/11">http://xschule.digital/def/kmk/1972/code/bewertungsschema/11</link>
+                        </entry>
+                        <entry align="left">gut</entry>
+                        <entry align="left">2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/10">http://xschule.digital/def/kmk/1972/code/bewertungsschema/10</link>
+                        </entry>
+                        <entry align="left">gut</entry>
+                        <entry align="left">2-</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/9">http://xschule.digital/def/kmk/1972/code/bewertungsschema/9</link>
+                        </entry>
+                        <entry align="left">befriedigend</entry>
+                        <entry align="left">3+</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/8">http://xschule.digital/def/kmk/1972/code/bewertungsschema/8</link>
+                        </entry>
+                        <entry align="left">befriedigend</entry>
+                        <entry align="left">3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/7">http://xschule.digital/def/kmk/1972/code/bewertungsschema/7</link>
+                        </entry>
+                        <entry align="left">befriedigend</entry>
+                        <entry align="left">3-</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/6">http://xschule.digital/def/kmk/1972/code/bewertungsschema/6</link>
+                        </entry>
+                        <entry align="left">ausreichend</entry>
+                        <entry align="left">4+</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/5">http://xschule.digital/def/kmk/1972/code/bewertungsschema/5</link>
+                        </entry>
+                        <entry align="left">ausreichend</entry>
+                        <entry align="left">4</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/4">http://xschule.digital/def/kmk/1972/code/bewertungsschema/4</link>
+                        </entry>
+                        <entry align="left">ausreichend</entry>
+                        <entry align="left">4-</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/3">http://xschule.digital/def/kmk/1972/code/bewertungsschema/3</link>
+                        </entry>
+                        <entry align="left">mangelhaft</entry>
+                        <entry align="left">5+</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/2">http://xschule.digital/def/kmk/1972/code/bewertungsschema/2</link>
+                        </entry>
+                        <entry align="left">mangelhaft</entry>
+                        <entry align="left">5</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/1">http://xschule.digital/def/kmk/1972/code/bewertungsschema/1</link>
+                        </entry>
+                        <entry align="left">mangelhaft</entry>
+                        <entry align="left">5-</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1972/code/bewertungsschema/0">http://xschule.digital/def/kmk/1972/code/bewertungsschema/0</link>
+                        </entry>
+                        <entry align="left">ungenügend</entry>
+                        <entry align="left">6</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.branchedesunternehmens.BrancheDesUnternehmens-Codes">
+         <title>BrancheDesUnternehmens</title>
+         <para>Angabe des Wirtschafts- oder Geschaeftszweiges, dem das Unternehmen zugeordnet
+			werden kann, mit dem sich das Kind auf Reisen befindet. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>BrancheDesUnternehmens</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>BrancheDesUnternehmens</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:branchedesunternehmens</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Angabe des Wirtschafts- oder Geschaeftszweiges, dem das Unternehmen zugeordnet
+			werden kann, mit dem sich das Kind auf Reisen befindet.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/zirkusangehoerige">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/zirkusangehoerige</link>
+                        </entry>
+                        <entry align="left">Zirkusangehörige</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/999">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/binnenschiffer">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/binnenschiffer</link>
+                        </entry>
+                        <entry align="left">Binnenschiffer</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/997">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/997</link>
+                        </entry>
+                        <entry align="left">Wert aus rechtlichen Gründen nicht übermittelt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/998">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/schausteller">http://xschule.digital/def/xschule/0.4/code/branchedesunternehmens/schausteller</link>
+                        </entry>
+                        <entry align="left">Schausteller</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.de.bund.destatis.bevoelkerungsstatistik.schluessel.bundesland.Bundesland">
+         <title>Bundesland</title>
+         <para>Die Bundesrepublik Deutschland ist ein Zusammenschluss von Bundesländern. Die
+			meisten Bundesländer umfassen mehrere Kreise und Bezirke. Diese Codeliste stellt die
+			deutschen Bundesländer nach dem Gemeindeverzeichnis des Statistischen Bundesamtes dar.
+			Dieser Code ist auch Bestandteil des Amtlichen Gemeindeschlüssels (AGS).</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Die deutschen Bundesländer nach dem Gemeindeverzeichnis des Statistischen
+			Bundesamtes</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Bundesland</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Statistisches Bundesamt, Wiesbaden (Destatis)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>unbestimmt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.de.dsmeld.schluesseltabelle.gesetzlicher.vertreter.GesetzlicherVertreter-Codes">
+         <title>DSMeld Gesetzlicher Vertreter (DSMeld 0001)</title>
+         <para>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung
+			abgebildet. Siehe Blatt 0001 des DSMeld.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Gesetzlicher Vertreter</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>DSMeld Gesetzlicher Vertreter (DSMeld 0001)</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Koordinierungsstelle für IT-Standards (KoSIT)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>3</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">key (key)</entry>
+                        <entry align="left">name (name)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">1</entry>
+                        <entry align="left">Vater, Elternteil</entry>
+                     </row>
+                     <row>
+                        <entry align="left">2</entry>
+                        <entry align="left">Mutter, Elternteil</entry>
+                     </row>
+                     <row>
+                        <entry align="left">3</entry>
+                        <entry align="left">anderer gesetzlicher Vertreter (natürliche Person)</entry>
+                     </row>
+                     <row>
+                        <entry align="left">4</entry>
+                        <entry align="left">anderer gesetzlicher Vertreter (juristische Person)</entry>
+                     </row>
+                     <row>
+                        <entry align="left">5</entry>
+                        <entry align="left">Betreuer mit Einwilligungsvorbehalt, der sich auf die Aufenthaltsbestimmung erstreckt (nur bei Volljährigen) (§ 309 des Gesetzes über das Verfahren in Familiensachen und in den Angelegenheiten der freiwilligen Gerichtsbarkeit vom 17. Dezember 2008 (BGBl. I S. 2586, 2587) in der jeweils gültigen Fassung)</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.halbjahr.Halbjahr-Codes">
+         <title>Halbjahr</title>
+         <para>Die Codeliste bildet die möglichen Halbjahre ab. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres
+			stattfinden. </entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/halbjahr/2_halbjahr">http://xschule.digital/def/xschule/0.4/code/halbjahr/2_halbjahr</link>
+                        </entry>
+                        <entry align="left">2. Halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/halbjahr/1_halbjahr">http://xschule.digital/def/xschule/0.4/code/halbjahr/1_halbjahr</link>
+                        </entry>
+                        <entry align="left">1. Halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/halbjahr/ganzes_jahr">http://xschule.digital/def/xschule/0.4/code/halbjahr/ganzes_jahr</link>
+                        </entry>
+                        <entry align="left">Ganzes Jahr</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.impfschutz.Impfschutz-Codes">
+         <title>Impfschutz</title>
+         <para>Hier können Angaben über den Impfschutz von Schüler:innen gemacht
+			werden.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Impfschutz</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Impfschutz</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:impfschutz</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Mit dem Impfschutz wird angegeben, ob ein Kind geimpft wurde oder nicht bzw.
+			aus welchem Grund keine Angabe über die Impfung vorliegt.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/impfschutz/vorhanden">http://xschule.digital/def/xschule/0.4/code/impfschutz/vorhanden</link>
+                        </entry>
+                        <entry align="left">vorhanden</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/impfschutz/nicht_vorhanden">http://xschule.digital/def/xschule/0.4/code/impfschutz/nicht_vorhanden</link>
+                        </entry>
+                        <entry align="left">nicht vorhanden</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/impfschutz/998">http://xschule.digital/def/xschule/0.4/code/impfschutz/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/impfschutz/997">http://xschule.digital/def/xschule/0.4/code/impfschutz/997</link>
+                        </entry>
+                        <entry align="left">Wert aus rechtlichen Gründen nicht übermittelt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/impfschutz/999">http://xschule.digital/def/xschule/0.4/code/impfschutz/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.jahrgangsstufe.Jahrgangsstufe-Codes">
+         <title>Jahrgangsstufe</title>
+         <para>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. 
+
+Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde allerdings mit einigen zusätzlichen Werten ergänzt. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Jahrgangsstufe</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Jahrgangsstufe</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:jahrgangsstufe</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/einfuehrungsphase">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/einfuehrungsphase</link>
+                        </entry>
+                        <entry align="left">Einführungsphase</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_0">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_0</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 0</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_1">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_1</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_10">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_10</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 10</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_11">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_11</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 11</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_12">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_12</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 12</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_13">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_13</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 13</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_2">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_2</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_3">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_3</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_4">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_4</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 4</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_5">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_5</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 5</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_6">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_6</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 6</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_7">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_7</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 7</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_8">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_8</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 8</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_9">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/jahrgangsstufe_9</link>
+                        </entry>
+                        <entry align="left">Jahrgangsstufe 9</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/nicht_zugeordnet">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/nicht_zugeordnet</link>
+                        </entry>
+                        <entry align="left">keiner Jahrgangsstufe zugeordnet</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_1">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_1</link>
+                        </entry>
+                        <entry align="left">Qualifikationsphase 1</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_2">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_2</link>
+                        </entry>
+                        <entry align="left">Qualifikationsphase 2</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_3">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_3</link>
+                        </entry>
+                        <entry align="left">Qualifikationsphase 3</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_4">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/qualifikationsphase_4</link>
+                        </entry>
+                        <entry align="left">Qualifikationsphase 4</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar</link>
+                        </entry>
+                        <entry align="left">Jahrgangsübergreifende Primarstufe</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar_sekundar_I">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_primar_sekundar_I</link>
+                        </entry>
+                        <entry align="left">Jahrgangsübergreifende Primar- und Sekundarstufe I</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I</link>
+                        </entry>
+                        <entry align="left">Jahrgangsübergreifende Sekundarstufe I</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_II">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_II</link>
+                        </entry>
+                        <entry align="left">Jahrgangsübergreifende Sekundarstufe II</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I_II">http://xschule.digital/def/xschule/0.4/code/jahrgangsstufe/uebergreifend_sekundar_I_II</link>
+                        </entry>
+                        <entry align="left">Jahrgangsübergreifende Sekundarstufe I und II</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.krankheit.Krankheit-Codes">
+         <title>Krankheit</title>
+         <para>Liste von Krankheiten, zu denen ein Impfschutz erhoben wird. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Krankheit</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Krankheit</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:krankheit</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Liste von Krankheiten, zu denen ein Impfschutz erhoben wird.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/krankheit/masern">http://xschule.digital/def/xschule/0.4/code/krankheit/masern</link>
+                        </entry>
+                        <entry align="left">Masern</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.kursbereich.Kursbereich-Codes">
+         <title>Kursbereich</title>
+         <para>Die Leistung kann in einem bestimmen Kursbereich erbracht
+			werden.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Kursbereich</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Kursbereich</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:kursbereich</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Die Leistung kann in einem bestimmen Kursbereich erbracht
+			werden.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlpflichtunterricht">http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlpflichtunterricht</link>
+                        </entry>
+                        <entry align="left">Wahlpflichtunterricht</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursbereich/pflichtunterricht">http://xschule.digital/def/xschule/0.4/code/kursbereich/pflichtunterricht</link>
+                        </entry>
+                        <entry align="left">Pflichtunterricht</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlunterricht">http://xschule.digital/def/xschule/0.4/code/kursbereich/wahlunterricht</link>
+                        </entry>
+                        <entry align="left">Wahlunterricht</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.kursdifferenzierung.Kursdifferenzierung-Codes">
+         <title>Kursdifferenzierung</title>
+         <para>Die Leistung kann in einer bestimmten Kursdifferenzierung erbracht
+			werden.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Kursdifferenzierung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Kursdifferenzierung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:kursdifferenzierung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Die Leistung kann in einer bestimmen Kursdifferenzierungen erbracht
+			werden.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/grundlegendes_anforderungsniveau">http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/grundlegendes_anforderungsniveau</link>
+                        </entry>
+                        <entry align="left">grundlegendes Anforderungsniveau (früher: Grundkurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/erhoehtes_anforderungsniveau">http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/erhoehtes_anforderungsniveau</link>
+                        </entry>
+                        <entry align="left">erhöhtes Anforderungsniveau (früher Leistungskurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/e-kurs">http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/e-kurs</link>
+                        </entry>
+                        <entry align="left">E-Kurs, (Erweiterter Kurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/z-kurs">http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/z-kurs</link>
+                        </entry>
+                        <entry align="left">Z-Kurs, (Zusatzkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/g-kurs">http://xschule.digital/def/xschule/0.4/code/kursdifferenzierung/g-kurs</link>
+                        </entry>
+                        <entry align="left">G-Kurs, (Grundkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xbildung-de.publicationsoffice-eu.taxonomie.nqr-dqr.NQR-DQR-Codes">
+         <title>NQR/DQR</title><para>Der Europäische Qualifikationsrahmen (EQR) ist eine europäische
+			Initiative zur besseren Vergleichbarkeit der Bildungsabschlüsse in Europa. Er ist ein
+			Bezugsrahmen, mit dem die Qualifikationssysteme und -rahmen verschiedener Länder
+			miteinander vergleichbar gemacht werden. Der Deutsche Qualifikationsrahmen (DQR) ist ein
+			nationaler Qualifikationsrahmen (NQR), mit dessen Hilfe alle Qualifikationen des
+			deutschen Bildungssystems den acht Niveaus des Europäischen Qualifikationsrahmens (EQR)
+			zugeordnet werden können.</para> <para>Offizielle Dokumente und
+			weitergehende Informationen über die Gremienstruktur für die deutsche Umsetzung können
+			hier abgerufen werden: <link
+			xlink:href="https://www.dqr.de/dqr/de/der-dqr/der-dqr_node.html"
+			xmlns:xlink="http://www.w3.org/1999/xlink">https://www.dqr.de/dqr/de/der-dqr/der-dqr_node.html</link></para>
+			<para>XSchule verwendet die Version, die vom <link
+			xlink:href="https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/national-qualification-framework"
+			xmlns:xlink="http://www.w3.org/1999/xlink">EU Publication Office technisch
+			zur Verfügung gestellt</link> wird. Der zu verwendende Schlüssel ist die URI des
+			gewünschten Eintrags, der über den Button "Browse content" gefunden werden
+			kann. Im Folgenden wird ein Auszug zur Verfügung gestellt:</para> <itemizedlist
+			spacing="compact" mark="-">
+			<listitem><para><emphasis role="bold">DQR Niveau
+			2</emphasis> :
+			http://data.europa.eu/snb/qdr/c_c71cce15</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			3</emphasis> :
+			http://data.europa.eu/snb/qdr/c_c37d888a</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			4</emphasis> :
+			http://data.europa.eu/snb/qdr/c_12a84182</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			5</emphasis> :
+			http://data.europa.eu/snb/qdr/c_bd9f8e42</para></listitem>
+			</itemizedlist><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Nationaler Qualifikationsrahmen</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>NQR/DQR</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xbildung-de:publicationsoffice-eu:taxonomie:nqr-dqr</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>Technisch: Publications Office of the European Union; Inhaltlich:
+			Directorate-General for Employment, Social Affairs and Inclusion (PO.EU for DG EMPL)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>v.5.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.nachpruefung.Nachpruefung-Codes">
+         <title>Nachpruefung</title>
+         <para>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder
+			verpflichtender Art handelt. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Nachpruefung</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Nachpruefung</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:nachpruefung</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachpruefung/freiwillige_nachpruefung">http://xschule.digital/def/xschule/0.4/code/nachpruefung/freiwillige_nachpruefung</link>
+                        </entry>
+                        <entry align="left">freiwillige Nachprüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachpruefung/verpflichtende_nachpruefung">http://xschule.digital/def/xschule/0.4/code/nachpruefung/verpflichtende_nachpruefung</link>
+                        </entry>
+                        <entry align="left">verpflichtende Nachprüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachpruefung/998">http://xschule.digital/def/xschule/0.4/code/nachpruefung/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachpruefung/999">http://xschule.digital/def/xschule/0.4/code/nachpruefung/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.nachweisperiode.Nachweisperiode-Codes">
+         <title>Nachweisperiode</title>
+         <para>Die Nachweisperiode gibt an, um welchen Zeitraum es sich handelt. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Nachweisperiode</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Nachweisperiode</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:nachweisperiode</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Die Codeliste beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das
+			jeweilige Zeugnis (meistens Halbjahres- bzw. Volljahreszeugnis).</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachweisperiode/jahr">http://xschule.digital/def/xschule/0.4/code/nachweisperiode/jahr</link>
+                        </entry>
+                        <entry align="left">Jahr</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachweisperiode/halbjahr">http://xschule.digital/def/xschule/0.4/code/nachweisperiode/halbjahr</link>
+                        </entry>
+                        <entry align="left">Halbjahr</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachweisperiode/998">http://xschule.digital/def/xschule/0.4/code/nachweisperiode/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachweisperiode/semester">http://xschule.digital/def/xschule/0.4/code/nachweisperiode/semester</link>
+                        </entry>
+                        <entry align="left">Semester</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/nachweisperiode/trimester">http://xschule.digital/def/xschule/0.4/code/nachweisperiode/trimester</link>
+                        </entry>
+                        <entry align="left">Trimester</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.teilnahmegemeinsamerunterricht.TeilnahmeGemeinsamerUnterricht-Codes">
+         <title>TeilnahmeGemeinsamerUnterricht</title>
+         <para>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich
+			handelt.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>TeilnahmeGemeinsamerUnterricht</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>TeilnahmeGemeinsamerUnterricht</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich
+			handelt.</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/zielgleich">http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/zielgleich</link>
+                        </entry>
+                        <entry align="left">Zielgleich</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/zieldifferent">http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/zieldifferent</link>
+                        </entry>
+                        <entry align="left">Zieldifferent</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/997">http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/997</link>
+                        </entry>
+                        <entry align="left">Wert aus rechtlichen Gründen nicht übermittelt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/998">http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/999">http://xschule.digital/def/xschule/0.4/code/teilnahmegemeinsamerunterricht/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.versetzungsoderausnahmetatbestandstyp.VersetzungsOderAusnahmetatbestandstyp-Codes">
+         <title>VersetzungsOderAusnahmetatbestandstyp</title>
+         <para>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen
+			anderen gemacht. Sollte keine Angabe möglich sein, wird der Grund dafür
+			angegeben.</para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>VersetzungsOderAusnahmetatbestandstyp</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>VersetzungsOderAusnahmetatbestandstyp</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:versetzungsoderausnahmetatbestandstyp</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/998">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/998</link>
+                        </entry>
+                        <entry align="left">Wert nicht in Liste</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/997">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/997</link>
+                        </entry>
+                        <entry align="left">Wert aus rechtlichen Gründen nicht übermittelt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_mit_nachpruefung">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_mit_nachpruefung</link>
+                        </entry>
+                        <entry align="left">Versetzung mit Nachprüfung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_durch_konferenzbeschluss">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_durch_konferenzbeschluss</link>
+                        </entry>
+                        <entry align="left">Versetzung durch Konferenzbeschluss</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/schulformwechsel_ohne_versetzung">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/schulformwechsel_ohne_versetzung</link>
+                        </entry>
+                        <entry align="left">Schulformwechsel ohne Versetzung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr</link>
+                        </entry>
+                        <entry align="left">Keine Versetzung und keine Nachprüfung mehr</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/999">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/999</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/aufruecken">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/aufruecken</link>
+                        </entry>
+                        <entry align="left">Aufrücken</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung</link>
+                        </entry>
+                        <entry align="left">freiwillige Wiederholung (Rückversetzung)</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_auf_probe">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung_auf_probe</link>
+                        </entry>
+                        <entry align="left">Versetzung auf Probe</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/versetzung</link>
+                        </entry>
+                        <entry align="left">Versetzung</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung">http://xschule.digital/def/xschule/0.4/code/versetzungstyp/keine_versetzung</link>
+                        </entry>
+                        <entry align="left">keine Versetzung</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.zeugnisart.Zeugnisart-Codes">
+         <title>Zeugnisart</title>
+         <para>Liste der möglichen Zeugnisarten. </para>
+         <section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="meta" colnum="1" colwidth="37mm"/>
+                  <colspec colname="wert" colnum="2" colwidth="123mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Zeugnisart</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Zeugnisart</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:zeugnisart</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>0.4</entry>
+                     </row>
+                     <row>
+                        <entry>Beschreibung (Version)</entry>
+                        <entry>Die Art des Zeugnisses gibt an um welche Zeugnisart es sich handelt.
+		</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colname="key" colnum="1" colwidth="90mm"/>
+                  <colspec colname="val" colnum="2" colwidth="70mm"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code (Code)</entry>
+                        <entry align="left">beschreibung</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/abschlusszeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/abschlusszeugnis</link>
+                        </entry>
+                        <entry align="left">Abschlusszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/abgangszeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/abgangszeugnis</link>
+                        </entry>
+                        <entry align="left">Abgangszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/halbsjahreszeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/halbsjahreszeugnis</link>
+                        </entry>
+                        <entry align="left">Halbjahreszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/jahreszeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/jahreszeugnis</link>
+                        </entry>
+                        <entry align="left">Jahreszeugnis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/zwischenzeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/zwischenzeugnis</link>
+                        </entry>
+                        <entry align="left">Zwischenzeugnis</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/0.4/code/zeugnisart/vorlaeufiges_zeugnis">http://xschule.digital/def/xschule/0.4/code/zeugnisart/vorlaeufiges_zeugnis</link>
+                        </entry>
+                        <entry align="left">Vorlaeufiges Zeugnis</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
+   </section>
+</appendix>

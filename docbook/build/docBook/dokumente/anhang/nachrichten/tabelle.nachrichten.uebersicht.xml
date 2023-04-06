@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE informaltable [<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent"> %complete;]><informaltable xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de">
+   <tgroup xmlns:xlink="http://www.w3.org/1999/xlink" cols="4">
+      <colspec colnum="1" colname="c1" colwidth="43mm"/>
+      <colspec colnum="2" colname="c2" colwidth="13mm"/>
+      <colspec colnum="3" colname="c3" colwidth="79mm"/>
+      <colspec colnum="4" colname="c5" colwidth="25mm"/>
+      <thead>
+         <row>
+            <entry align="center">Bezeichnung</entry>
+            <entry align="center">Nr.</entry>
+            <entry align="center">Beschreibung</entry>
+            <entry align="center">Seite</entry>
+         </row>
+      </thead>
+      <tbody>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xschule-basisdatentypen.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xschule-baukasten.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="center" namest="c1" nameend="c5">
+               <emphasis role="bold">Schema-Datei: xschule-nachweise.xsd</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>schueler.wechsel.0001</para>
+            </entry>
+            <entry>
+               <para>0001</para>
+            </entry>
+            <entry><para>Diese Nachricht dient der Anmeldung eines Schülers / einer Schülerin an einer anderen Schule. Dabei werden sowohl Daten der vorigen wie auch Daten der zukünftigen Schule sowie Informationen zum/zur Schüler:in und den Sorgeberechtigten übermittelt.</para></entry>
+            <entry>
+               <para>
+                  <xref role="Seite" linkend="XSchule.Nachweise.schueler.wechsel.0001"/>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>schueler.abiturzeugnis.0002</para>
+            </entry>
+            <entry>
+               <para>0002</para>
+            </entry>
+            <entry><para>Diese Nachricht bildet das Abiturzeugnis ab. Dies enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen.</para></entry>
+            <entry>
+               <para>
+                  <xref role="Seite" linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"/>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>schueler.zeugnis.0003</para>
+            </entry>
+            <entry>
+               <para>0003</para>
+            </entry>
+            <entry><para>Diese Nachricht bildet ein "generisches" Zeugnis ab. Es wird davon ausgegangen, dass alle Angaben, die auf einem Realschulabschluss-Zeugnis gemacht werden müssen, mit diesem generischen Zeugnis abgedeckt werden.</para>
+<para>Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem/der Schüler:in, der Art des Abschlusses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</para></entry>
+            <entry>
+               <para>
+                  <xref role="Seite" linkend="XSchule.Nachweise.schueler.zeugnis.0003"/>
+               </para>
+            </entry>
+         </row>
+      </tbody>
+   </tgroup>
+</informaltable>

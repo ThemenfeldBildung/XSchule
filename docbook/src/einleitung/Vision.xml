@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE preface [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+	xml:id="spezifikation.vorwort">
+	<info>
+		<title>Vision XSchule</title>
+	</info>
+
+
+	<para>Ende 2025 kommt der deutschlandweit einheitliche Datenstandard XSchule im Schulwesen zum
+		Einsatz. Als anerkannter Interoperabilitätsstand wird er 2022 auf die
+		Standardisierungsagenda des IT-Planungsrates gehoben, 2023 pilotiert, 2024 in die Fläche
+		gebracht und mit Übergangszeitraum vom IT-Planungsrat für die Geltungsbereiche „digitales
+		Schulzeugnis“ und „Datensatz für Schulwechsel“ zur Nutzung verpflichtend eingeführt.</para>
+	<para>Die Hersteller von Schulverwaltungssystemen haben für ausgewiesene OZG-Anwendungsfälle
+		ihre Schnittstellen auf den definierten und erprobten Interoperabilitätsstandard XSchule
+		angepasst. Dadurch können zahlreiche Leistungen des OZG-Katalogs in der Lebenslage Schule im
+		sog. „Once Only-Reifegrad“ digital abgebildet werden. Schulzeugnisse werden als digitale
+		Bildungsnachweise zusätzlich zum analogen Original in digitaler, signierter und
+		maschinenverarbeitbarer Form dem Schüler ausgehändigt und oder in ein Bildungsrepository
+		eingestellt. Diese Zeugnisse zeichnen sich durch eine Kongruenz zwischen der
+		Präsentationsebene (PDF bzw. PDF/A) und den zugehörigen Metadaten aus. Bewerbungen sind
+		durch wegfallende Beglaubigungen, kostenlose Kopien von Dateien und ausfallende
+		Rücksendungen von Originalurkunden medienbruchfrei und kostengünstig möglich. Im möglichen
+		Fall eines später bekanntwerdenden Betrugs oder bei nachträglicher Aberkennung von
+		akademischen Titeln, können diese Bildungszertifikate für alle Konsumenten (Hochschulen,
+		Unternehmen, Behörden) nachvollziehbar widerrufen werden.</para>
+	<para>Schulakten liegen in digitaler Form vor und berücksichtigen das Konzept des lebenslangen
+		Lernens. Der durch Schulanmeldung, Schulwechsel oder Übergänge in andere Lebenslagen
+		notwendige Datenerhebungsaufwand wird für die Beteiligten im Datenaustausch möglichst
+		gering gehalten: Das impliziert einen geringeren Aufwand für Schüler, ihre Sorgeberechtigten,
+		Schulen und Schulbehörden, da die – im gemeinsamen Standard XSchule – abgestimmten
+		Datenumfänge in vorgegebener Qualität importiert, validiert und verarbeitet werden
+		können.</para>
+	<para>Die Interoperabilität zu einer dann bestehenden modernisierten und vernetzten
+		Basisregisterlandschaft (Melderegister, Personenstandsregister,
+		Identifikationsnummernregister, BAföG-Register, Datenschutzcockpit, Komponenten für den
+		Nachweisabruf sowie ggf. zentrale Sorgerechtsregister) wird während der Schaffung des
+		gemeinsamen Kerns berücksichtigt und fortlaufend fortgeschrieben.</para>
+	<para>Das Fachmodul XSchule gliedert sich gemeinsam mit weiteren bildungsbezogenen Fachmodulen
+		wie z.B. „XHochschule“ in ein übergeordnetes Basismodul „XBildung“ ein.</para>
+
+</chapter>

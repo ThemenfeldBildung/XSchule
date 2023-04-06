@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.NachweisinhabenderSchueler">
+   <title>NachweisinhabenderSchueler</title>
+   <subtitle>Typ: <emphasis role="codebf">NachweisinhabenderSchueler</emphasis>
+   </subtitle><para>Der Schüler ist eine natürliche Person welcher durch die Teilnahme an einem Bildungsangebot (Schule, Hochschule, Weiterbildungsstätte, Ausbildungsstätte, weitere) Wissen und Kompetenzen erworben hat, welche man mit Bildungsnachweisen (z.B. Zeugnis) beurkunden oder bescheinigen kann.</para><para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">NatuerlichePerson</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/nachweisinhabenderschueler_list.xml"/>
+</section>

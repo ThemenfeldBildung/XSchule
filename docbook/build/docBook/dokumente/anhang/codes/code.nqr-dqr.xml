@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Codes.Code.NQR_DQR"
+         status="&specstatus;"
+         revision="&xrecent;">
+   <title>Code.NQR-DQR</title>
+   <informaltable>
+      <tgroup cols="2">
+         <colspec colnum="1" colname="des" colwidth="22mm"/>
+         <colspec colnum="2" colname="val" colwidth="138mm"/>
+         <thead>
+            <row>
+               <entry>Codelisten</entry>
+               <entry/>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry>-beschreibung</entry>
+               <entry><para>Der Europäische Qualifikationsrahmen (EQR) ist eine europäische
+			Initiative zur besseren Vergleichbarkeit der Bildungsabschlüsse in Europa. Er ist ein
+			Bezugsrahmen, mit dem die Qualifikationssysteme und -rahmen verschiedener Länder
+			miteinander vergleichbar gemacht werden. Der Deutsche Qualifikationsrahmen (DQR) ist ein
+			nationaler Qualifikationsrahmen (NQR), mit dessen Hilfe alle Qualifikationen des
+			deutschen Bildungssystems den acht Niveaus des Europäischen Qualifikationsrahmens (EQR)
+			zugeordnet werden können.</para> <para>Offizielle Dokumente und
+			weitergehende Informationen über die Gremienstruktur für die deutsche Umsetzung können
+			hier abgerufen werden: <link
+			xlink:href="https://www.dqr.de/dqr/de/der-dqr/der-dqr_node.html"
+			xmlns:xlink="http://www.w3.org/1999/xlink">https://www.dqr.de/dqr/de/der-dqr/der-dqr_node.html</link></para>
+			<para>XSchule verwendet die Version, die vom <link
+			xlink:href="https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/national-qualification-framework"
+			xmlns:xlink="http://www.w3.org/1999/xlink">EU Publication Office technisch
+			zur Verfügung gestellt</link> wird. Der zu verwendende Schlüssel ist die URI des
+			gewünschten Eintrags, der über den Button "Browse content" gefunden werden
+			kann. Im Folgenden wird ein Auszug zur Verfügung gestellt:</para> <itemizedlist
+			spacing="compact" mark="-">
+			<listitem><para><emphasis role="bold">DQR Niveau
+			2</emphasis> :
+			http://data.europa.eu/snb/qdr/c_c71cce15</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			3</emphasis> :
+			http://data.europa.eu/snb/qdr/c_c37d888a</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			4</emphasis> :
+			http://data.europa.eu/snb/qdr/c_12a84182</para></listitem>
+			<listitem><para><emphasis role="bold">DQR Niveau
+			5</emphasis> :
+			http://data.europa.eu/snb/qdr/c_bd9f8e42</para></listitem>
+			</itemizedlist></entry>
+            </row>
+            <row>
+               <entry>-nutzung</entry>
+               <entry>Typ: 2, siehe Beschreibung</entry>
+            </row>
+            <row>
+               <entry>-kennung</entry>
+               <entry>urn:xbildung-de:publicationsoffice-eu:taxonomie:nqr-dqr</entry>
+            </row>
+            <row>
+               <entry>-version</entry>
+               <entry>v.5.</entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../verwendung/complexTypes/code.nqr_dqr_list.xml"/>
+</section>

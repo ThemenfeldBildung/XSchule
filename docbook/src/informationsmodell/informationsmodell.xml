@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE chapter [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+  xml:id="spezifikation.informationsmodell">
+  <info>
+    <title>Das Informationsmodell</title>
+  </info>
+  
+  <include xmlns="http://www.w3.org/2001/XInclude" href="codesUndCodelisten.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="baukasten.xml"/>
+
+</chapter>
