@@ -2,7 +2,7 @@
 name: Rückmeldung zu einer Codeliste
 about: Hinweise, Fehler oder Ergänzungen zu einer Codeliste melden.
 title: '[Kürzel Bundesland][betroffene Codeliste]: [kurzer Titel]'
-labels: Codeliste, open, V0.2
+labels: Codeliste, open, V0.5
 assignees: init-xschule
 ---
 
