@@ -1,76 +1,297 @@
 <?xml version="1.0" standalone="yes" ?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE appendix [
-        <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
     %complete;
 ]>
 
-<appendix version="5" xml:id="anhang.historie" xml:lang="de" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+<appendix version="5" xml:id="anhang.historie" xml:lang="de" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <info>
         <title>Versionshistorie</title>
     </info>
     <para>In der Versionshistorie werden die Änderungen der aktuellen Version zur Vorversion der
-        Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen aufgeführt.</para>
-    
-    <section xml:id="spezifikation.anhang.versionshistorie05">
+        Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
+        aufgeführt.</para>
+
+    <section xml:id="spezifikation.anhang.versionshistorie06">
         <info>
-            <title>Version &version;</title>
+            <title>Version 0.6</title>
         </info>
         <para>Veröffentlichungsdatum: &fassung;</para>
-        <para>Veränderungen zur vorherigen Version: Schwerpunkte waren die anpassungen an der Klasse Fremdsprache, eine umfangreiche
-            Überarbeitung der Codelisten-Inhalte und Beschreibungen und die Überführung auf XÖV 3.0. Im Detail:</para>
-        <itemizedlist>
-            <listitem><para>XSC-242: XSC auf XÖV 3.0 überführen</para></listitem>
-            <listitem><para>XSC-244: XInneres-Basismodul ausbauen</para></listitem>
-            <listitem><para>XSC-220: Bezeichnung "Kind", "Schüler", "Junger Mensch" vereinheitlichen</para></listitem>
-            
-            <listitem><para>XSC-224: Metadaten der XSC Codelisten mit XBD vereinheitlichen</para></listitem>
-            <listitem><para>XSC-245: Die Codeliste "Liste aktive Schulen" löschen</para></listitem>
-            <listitem><para>XSC-215: Die Codeliste "Kursbereich/Verpflichtungsgrad" an KMK Liste anpassen</para></listitem>
-            <listitem><para>XSC-203: Die Codeliste "Bemerkung" erweitern und Beschreibungen überarbeitet</para></listitem>
-            <listitem><para>XSC-175: Die Codeliste "AbfolgeDerFremdsprachen" anlegen</para></listitem>
-            <listitem><para>XSC-246: In der Codeliste "NQR-DQR" die Version anpassen</para></listitem>
-            <listitem><para>XSC-186: Die Codelisten "Kursbereich" und "Kursdifferentierung" umbenennen</para></listitem>
-            
-            <listitem><para>XSC-233: Zeugnisse um Datum des Erwerbs erweitern</para></listitem>
-            <listitem><para>XSC-186: Eigenschaft Leistungsebene entfernen</para></listitem>
-            <listitem><para>XSC-230: Fremdsprache erweitern um Abfolge und belegteJahre, GER auf Codeliste geändert</para></listitem>
-            <listitem><para>XSC-204: Fremdsprache erweitern um Herkunftssprachlicher Unterricht (HSU)</para></listitem>
-            
-            <listitem><para>XSC-177: ReisenderSchueler überabeiten (BrancheDesUnternehmens entfernen, nameUnternehmen auf xsd:NameOrganisation ändern, Stammschule verpflichtend)</para></listitem>
-            <listitem><para>XSC-238: Beschreibung gesetzlicherVertreter überarbeiten</para></listitem>
-            <listitem><para>XSC-226: Schulform und Schulprofil (auch) an den Schüler hängen</para></listitem>
-        </itemizedlist>
+
+        <section>
+            <title>Änderungen im Zusammenhang mit XBildung 0.95</title>
+            <para>Folgende Änderungen in XBildung 0.95 hatten zur Folge, dass auch Anpassungen an
+                XSchule vorgenommen wurden. Die Änderungen, die notwendig werden, weil sie von
+                XBildung geerbt wurden, werden hier nicht genannt. </para>
+            <simplesect>
+                <title>Einheitliches Vorgehen für String-basierte Datentypen und
+                    Mehrsprachigkeit</title>
+                <para>XBildung 0.95 hat in diesem Zusammenhang drei Änderungen vorgenommen, die sich
+                    auch auf XSchule auswirken: Wahl des Datentyps, Umgang mit Mehrsprachigkeit und
+                    Häufigkeit bei xbd:String.Localized. </para>
+                <para>Bei allen <link linkend="spezifikation.dokumenteFuerDenDatenaustausch"
+                        >Dokumenten für den Datenaustausch</link> ist die Eigenschaft "sprache" nun
+                    verpflichtend (Häufigkeit 1, statt 0..n). Damit wird die Standard-Sprache des
+                    Dokuments festgelegt. Die Sprache eines Elements vom Typ xbd:String.Localized
+                    muss nur noch angegeben werden, wenn sie davon abweicht. </para>
+                <para>Daher wurde die Kardinalität der Eigenschaften vom Typ xbd:String.Localized in
+                    den folgenden Klassen von 0..n auf 0..1 geändert: </para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="XSchule.Nachweise.schueler.wechsel.0001"
+                                >Wechselnachricht</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"
+                                >Abiturzeugnis</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link linkend="XSchule.Nachweise.schueler.zeugnis.0003"
+                            >Zeugnis</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link linkend="XSchule.Baukasten.Bemerkung">Bemerkung</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link linkend="XSchule.Baukasten.Pruefungsergebnis"
+                                >Pruefungsergebnis</link></para>
+                    </listitem>
+                    <listitem>
+                        <para><link linkend="XSchule.Baukasten.Unterrichtsteilnahme"
+                                >Unterrichtsteilnahme</link></para>
+                    </listitem>
+                </itemizedlist>
+            </simplesect>
+            <simplesect>
+                <title>Nutzen von EQF statt NQR/DQR</title>
+                <para>Die Eigenschaft "niveau" der allgemeinen Angaben in <link
+                        linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link>
+                    und <link linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link>
+                    verwendet die international verständliche Codeliste xbd:EQF, statt wie bisher
+                    NQR-DQR. Die Codeliste NQR-DQR wurde entfernt. </para>
+            </simplesect>
+        </section>
+
+        <section>
+            <title>Änderungen bezüglich des Schulwechsels</title>
+            <para>Die <link linkend="XSchule.Nachweise.schueler.wechsel.0001"
+                    >Wechselnachricht</link> wurde nach Auswertung aller Schulgesetze grundlegend
+                überarbeitet und erweitert. </para>
+        </section>
+
+        <section>
+            <title>Sonstige Änderungen</title>
+            <simplesect>
+                <title>Codeliste xsc:ArtDerHZB</title>
+                <para>Um die Art einer erworbenen Hochschulzugangsberechtigung anzugeben, können
+                        <link linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"
+                        >Abiturzeugnis</link> und <link
+                        linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link> statt wie
+                    bisher Freitext auf die Codeliste <link
+                        linkend="tabelle.urn.xschule-digital.destatis.codeliste.artderhzb.ArtDerHZB-Codes"
+                        >Art der HZB</link> zurückgreifen. </para>
+            </simplesect>
+            <simplesect>
+                <title>Codeliste xbd:ArtDerSchule</title>
+                <para>Um die besuchte bzw. angebotene Schulart zu beschreiben, wird statt einem
+                    Freitext die auf dem KMK Kerndatensatz basierende Codeliste xbd:ArtDerSchule
+                    verwendet. </para>
+                <para>Betroffen sind die Klassen <link
+                        linkend="XSchule.Baukasten.NachweisinhabenderSchueler"
+                        >NachweisinhabenderSchueler</link>, <link linkend="XSchule.Baukasten.Schule"
+                        >Schule</link> und <link linkend="XSchule.Baukasten.WechselnderSchueler"
+                        >WechselnderSchueler</link>. </para>
+            </simplesect>
+        </section>
+
+        <simplesect>
+            <title>Liste der umgesetzten Tickets</title>
+            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+            <itemizedlist>
+                <listitem override="none">
+                    <para><emphasis role="bold">Änderungen im Zusammenhang mit XBildung
+                            0.95</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-271: XBD 0.95 einbinden</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-291: Änderungen der Kardinalität von
+                        String.Localized-Eigenschaften</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-270: Nutzen von EQF statt NQR/DQR</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-234: von DIN SPEC 91379 auf DIN 91379 wechseln</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-260: teilbekanntesDatum von XBD benutzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-201: Standard-Codes in Codelisten überarbeiten</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-290: xbd:Bundesland statt xsc:Bundesland nutzen</para>
+                </listitem>
+                <listitem override="none">
+                    <para>&nbsp;</para>
+                </listitem>
+
+                <listitem override="none">
+                    <para><emphasis role="bold">Änderungen bezüglich des
+                        Schulwechsels</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-254: UML-Diagramm für Schulwechsel erstellen </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-279: sonderpädagogischer Förderbedarf ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-278: Fremdsprachinformationen für Wechsel ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-277: Schullaufbahndaten für Schulwechsel ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-276: Fehltage ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-275: Praktikum für Wechselnachricht aufnehmen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-273: Migrationshintergrund für Schulwechsel ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-272: Konfession ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-188: Codeliste ArtDerSchulaufnahme ergänzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-250: Abbildung zum I.4.1 Schulwechsel in der Primarstufe
+                        überarbeiten</para>
+                </listitem>
+                <listitem override="none">
+                    <para>&nbsp;</para>
+                </listitem>
+
+
+                <listitem override="none">
+                    <para><emphasis role="bold">Sonstige Änderungen</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-51: Klasse Impfschutz in ImpfnachweisVorhanden umbenennen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-281: überarbeitete XSC-Journey in die Spezifikation einbinden</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-259: Codeliste xbd:ArtDerSchule nutzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-179: Codeliste xsc:ArtDerHZB aufnehmen und nutzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-243: xsc:BewertungsschemaAbitur zu Gunsten von Eintrag in
+                        xbd:Bewertungsschema löschen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-258: Beschreibung von Zeitraum in Schuljahrgang anpassen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-252: Zweck von Bildungsgang in der Beschreibung spezifizieren</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-283: Metadaten zur Konfiguration im Modell aktualisieren</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-288: Entfernen der Einträge in der Typ-2-Codeliste Gesetzlicher
+                        Vertreter</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-289: Weitere Vereinheitlichung der Benennung und Beschreibung von
+                        Codelisten</para>
+                </listitem>
+
+            </itemizedlist>
+        </simplesect>
     </section>
-    
-    <section xml:id="spezifikation.anhang.versionshistorie04">
+
+    <section xml:id="spezifikation.anhang.versionshistorie05">
         <info>
-            <title>Version 0.4</title>
+            <title>Version 0.5</title>
         </info>
-        <para>Veröffentlichungsdatum: 18. November 2022</para>
-        <para>Veränderungen zur vorherigen Version:</para>
+        <para>Veröffentlichungsdatum: 6. April 2023</para>
+        <para>Veränderungen zur vorherigen Version: Schwerpunkte waren die anpassungen an der Klasse
+            Fremdsprache, eine umfangreiche Überarbeitung der Codelisten-Inhalte und Beschreibungen
+            und die Überführung auf XÖV 3.0. Im Detail:</para>
         <itemizedlist>
-            <listitem><para>XSC-225: Wechselnachricht um Angabe der geplanten Jahrgangsstufe und Informationen zur Versetzung ergänzen, Beschreibung Schule anpassen</para></listitem>
-            <listitem><para>XSC-222: GesetzlicherVertreterSchlüssel Version 3 mit "Mutter, Elternteil" und "Vater, Elternteil" verwenden</para></listitem>
-            <listitem><para>XSC-213: AufnehmendeSchule/Schule von xbd:Organisation statt xbd:Bildungseinrichtung erben lassen</para></listitem>
-            <listitem><para>XSC-212: Zeugnisse von xbd:Dokument statt xbd:Bildungsnachweis erben lassen</para></listitem>
-            <listitem><para>XSC-210: Codeliste Halbjahr einen Punkt aus URL entfernen</para></listitem>
-            <listitem><para>XSC-209: Verwendung von 3-stelligen ISO 639-3 Language Codes präzisieren</para></listitem>
-            <listitem><para>XSC-197: Codeliste Kursbereich erstellen</para></listitem>
-            <listitem><para>XSC-196: Codeliste Kursdifferenzierung erstellen</para></listitem>
-            <listitem><para>XSC-195: Kardinalität von fach auf 0..* ändern</para></listitem>
-            <listitem><para>XSC-194: Schulprofil von Codeliste auf String.Localized ändern, Codeliste entfernen</para></listitem>
-            <listitem><para>XSC-191: Kardinalität von GER auf 2 reduzieren</para></listitem>
-            <listitem><para>XSC-189: Codeliste Versetzungstyp Wert "Nein mit Nachprüfung" auf "Ja mit Nachprüfung" ändern</para></listitem>
-            <listitem><para>XSC-185: Abiturzeugnis: Bezug auf gesamte Oberstufe erweitern</para></listitem>
-            <listitem><para>XSC-176: Codeliste ArtWeitererSprachkenntnisse erstellen und verwenden</para></listitem>
-            <listitem><para>XSC-172: Unterrichtsteilnahme überarbeiten</para></listitem>
-            <listitem><para>XSC-153: Schullaufbahn auf letzten Eintrag beschränken</para></listitem>
-            <listitem><para>XSC-143: Angaben zum gesetzlichen Vertreter und Einbindung als Erziehungsberechtigter in der Wechselnachricht überarbeiten</para></listitem>
-            <listitem><para>XSC-118: Schulform und Schulart von Codeliste auf String.Localized ändern</para></listitem>
-            <listitem><para>XSC-113: Anschriften auf xbd:Anschrift vereinheitlichen und Pflichtfelder entfernen</para></listitem>
-            <listitem><para>XSC-104: Bildungsgang von Codeliste auf String.Localized ändern</para></listitem>
-            <listitem><para>XSC-40: Beschreibung zum AW-Schulwechsel überarbeiten</para></listitem>
+            <listitem>
+                <para>XSC-242: XSC auf XÖV 3.0 überführen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-244: XInneres-Basismodul ausbauen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-220: Bezeichnung "Kind", "Schüler", "Junger Mensch"
+                    vereinheitlichen</para>
+            </listitem>
+
+            <listitem>
+                <para>XSC-224: Metadaten der XSC Codelisten mit XBD vereinheitlichen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-245: Die Codeliste "Liste aktive Schulen" löschen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-215: Die Codeliste "Kursbereich/Verpflichtungsgrad" an KMK Liste
+                    anpassen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-203: Die Codeliste "Bemerkung" erweitern und Beschreibungen
+                    überarbeitet</para>
+            </listitem>
+            <listitem>
+                <para>XSC-175: Die Codeliste "AbfolgeDerFremdsprachen" anlegen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-246: In der Codeliste "NQR-DQR" die Version anpassen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-186: Die Codelisten "Kursbereich" und "Kursdifferentierung"
+                    umbenennen</para>
+            </listitem>
+
+            <listitem>
+                <para>XSC-233: Zeugnisse um Datum des Erwerbs erweitern</para>
+            </listitem>
+            <listitem>
+                <para>XSC-186: Eigenschaft Leistungsebene entfernen</para>
+            </listitem>
+            <listitem>
+                <para>XSC-230: Fremdsprache erweitern um Abfolge und belegteJahre, GER auf Codeliste
+                    geändert</para>
+            </listitem>
+            <listitem>
+                <para>XSC-204: Fremdsprache erweitern um Herkunftssprachlicher Unterricht
+                    (HSU)</para>
+            </listitem>
+
+            <listitem>
+                <para>XSC-177: ReisenderSchueler überabeiten (BrancheDesUnternehmens entfernen,
+                    nameUnternehmen auf xsd:NameOrganisation ändern, Stammschule
+                    verpflichtend)</para>
+            </listitem>
+            <listitem>
+                <para>XSC-238: Beschreibung gesetzlicherVertreter überarbeiten</para>
+            </listitem>
+            <listitem>
+                <para>XSC-226: Schulform und Schulprofil (auch) an den Schüler hängen</para>
+            </listitem>
         </itemizedlist>
     </section>
 </appendix>

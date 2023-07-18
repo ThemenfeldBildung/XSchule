@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Nachweisperiode-Codes</ShortName>
       <LongName>Nachweisperiode</LongName>
-      <Version>0.5</Version>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:nachweisperiode</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:nachweisperiode_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,15 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/halbjahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/halbjahr</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Halbjahr</SimpleValue>
@@ -59,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/jahr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/jahr</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Jahr</SimpleValue>
@@ -67,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/semester</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/semester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Semester</SimpleValue>
@@ -75,10 +67,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/trimester</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/trimester</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Trimester</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

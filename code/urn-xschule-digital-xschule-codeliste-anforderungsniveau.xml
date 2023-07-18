@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Anforderungsniveau-Codes</ShortName>
       <LongName>Anforderungsniveau</LongName>
-      <Version>0.5</Version>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>E-Kurs, (Erweiterter Kurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/erhoehtes_anforderungsniveau</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>erhöhtes Anforderungsniveau (früher Leistungskurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>G-Kurs, (Grundkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/grundlegendes_anforderungsniveau</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>grundlegendes Anforderungsniveau (früher: Grundkurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</SimpleValue>
@@ -75,10 +75,34 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/z-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/z-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Z-Kurs, (Zusatzkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

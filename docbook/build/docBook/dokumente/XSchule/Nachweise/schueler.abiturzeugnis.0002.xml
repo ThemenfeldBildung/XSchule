@@ -143,11 +143,10 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Bundesland"
-                        role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Bundesland" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -160,16 +159,16 @@
                   <emphasis role="bold">niveau</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.NQR-DQR</emphasis>
+                  <emphasis role="codebf">Code.EQF</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.NQR_DQR" role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.NQR_DQR" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -182,21 +181,21 @@
                   <emphasis role="bold">artDerHZB</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Code.ArtDerHZB</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB" role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt die Art der Hochschulzugangsberechtigung an.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Gibt die Art der Hochschulzugangsberechtigung an, die gegebenenfalls mit diesem Zeugnis erworben wurde.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -263,7 +262,7 @@
                   <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeC</emphasis>
+                  <emphasis role="codebf">datatypeB</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -530,7 +529,7 @@
                   <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -541,7 +540,7 @@
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier mehrsprachig beschrieben werden, wie die Durchschnittsnote und Punktzahl berechnet wird. Grundsätzlich sollte davon ausgegangen werden, dass sich dies aus den Angaben in Block I und II und den Vorgaben der KMK ableiten lässt.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier beschrieben werden, wie die Durchschnittsnote und Punktzahl berechnet wird. Grundsätzlich sollte davon ausgegangen werden, dass sich dies aus den Angaben in Block I und II und den Vorgaben der KMK ableiten lässt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

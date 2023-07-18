@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="265.446875" height="490">
+<svg xmlns="http://www.w3.org/2000/svg" width="349.609375" height="586">
    <defs>
       <style type="text/css">
                         text {
@@ -37,8 +37,8 @@
                         } 
                     </style>
    </defs>
-   <rect width="255.44687499999998"
-         height="480"
+   <rect width="339.609375"
+         height="576"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -114,14 +114,14 @@
             y2="114"
             class="type-structure-optional"/>
       <g transform="translate(55,144)">
-         <rect width="146.671875" height="18" class="element-upper"/>
-         <rect width="146.671875" height="18" y="18" class="element-lower"/>
+         <rect width="165.03125" height="18" class="element-upper"/>
+         <rect width="165.03125" height="18" y="18" class="element-lower"/>
          <text font-size="12" x="3.6" y="12" font-weight="bold">schulform</text>
-         <line x1="0" y1="18" x2="146.671875" y2="18"/>
+         <line x1="0" y1="18" x2="165.03125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(146.671875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xbd:Code.ArtDerSchule</text>
+         <g transform="translate(165.03125,0)"/>
       </g>
       <line x1="33"
             y1="162"
@@ -164,14 +164,14 @@
             y2="210"
             class="type-structure-optional"/>
       <g transform="translate(55,240)">
-         <rect width="146.671875" height="18" class="element-upper"/>
-         <rect width="146.671875" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">schulprofil</text>
-         <line x1="0" y1="18" x2="146.671875" y2="18"/>
+         <rect width="178.671875" height="18" class="element-upper"/>
+         <rect width="178.671875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">migrationshintergrund</text>
+         <line x1="0" y1="18" x2="178.671875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
-         <g transform="translate(146.671875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Migrationshintergrund</text>
+         <g transform="translate(178.671875,0)"/>
       </g>
       <line x1="33"
             y1="258"
@@ -189,14 +189,14 @@
             y2="258"
             class="type-structure-optional"/>
       <g transform="translate(55,288)">
-         <rect width="167.015625" height="18" class="element-upper"/>
-         <rect width="167.015625" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">schuelerReisender</text>
-         <line x1="0" y1="18" x2="167.015625" y2="18"/>
+         <rect width="146.671875" height="18" class="element-upper"/>
+         <rect width="146.671875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">schulprofil</text>
+         <line x1="0" y1="18" x2="146.671875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:ReisenderSchueler</text>
-         <g transform="translate(167.015625,0)"/>
+         <text font-size="12" x="35.353125" y="30">xbd:String.Localized</text>
+         <g transform="translate(146.671875,0)"/>
       </g>
       <line x1="33"
             y1="306"
@@ -214,14 +214,14 @@
             y2="306"
             class="type-structure-optional"/>
       <g transform="translate(55,336)">
-         <rect width="119.609375" height="18" class="element-upper"/>
-         <rect width="119.609375" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">impfung</text>
-         <line x1="0" y1="18" x2="119.609375" y2="18"/>
+         <rect width="167.015625" height="18" class="element-upper"/>
+         <rect width="167.015625" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">schuelerReisender</text>
+         <line x1="0" y1="18" x2="167.015625" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:Impfschutz</text>
-         <g transform="translate(119.609375,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:ReisenderSchueler</text>
+         <g transform="translate(167.015625,0)"/>
       </g>
       <line x1="33"
             y1="354"
@@ -232,24 +232,21 @@
             fill="black"
             x="53"
             y="352"
-            text-anchor="end">0..*</text>
+            text-anchor="end">0..1</text>
       <line x1="33"
             y1="306"
             x2="33"
             y2="354"
             class="type-structure-optional"/>
       <g transform="translate(55,384)">
-         <rect width="165.22187499999998" height="18" class="element-upper"/>
-         <rect width="165.22187499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">auskunftssperreGueltigkeit</text>
-         <line x1="0" y1="18" x2="165.22187499999998" y2="18"/>
+         <rect width="195.703125" height="18" class="element-upper"/>
+         <rect width="195.703125" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">impfung</text>
+         <line x1="0" y1="18" x2="195.703125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:Zeitraum</text>
-         <g transform="translate(165.22187499999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:ImpfnachweisVorhanden</text>
+         <g transform="translate(195.703125,0)"/>
       </g>
       <line x1="33"
             y1="402"
@@ -265,6 +262,59 @@
             y1="354"
             x2="33"
             y2="402"
+            class="type-structure-optional"/>
+      <g transform="translate(55,432)">
+         <rect width="165.22187499999998" height="18" class="element-upper"/>
+         <rect width="165.22187499999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">auskunftssperreGueltigkeit</text>
+         <line x1="0" y1="18" x2="165.22187499999998" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xbd:Zeitraum</text>
+         <g transform="translate(165.22187499999998,0)"/>
+      </g>
+      <line x1="33"
+            y1="450"
+            x2="55"
+            y2="450"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="448"
+            text-anchor="end">0..*</text>
+      <line x1="33"
+            y1="402"
+            x2="33"
+            y2="450"
+            class="type-structure-optional"/>
+      <g transform="translate(55,480)">
+         <rect width="268.609375" height="18" class="element-upper"/>
+         <rect width="268.609375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">sonderpaedagogischerFoerderbedarf</text>
+         <line x1="0" y1="18" x2="268.609375" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xsc:SonderpaedagogischerFoerderbedarf</text>
+         <g transform="translate(268.609375,0)"/>
+      </g>
+      <line x1="33"
+            y1="498"
+            x2="55"
+            y2="498"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="496"
+            text-anchor="end">0..*</text>
+      <line x1="33"
+            y1="450"
+            x2="33"
+            y2="498"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

@@ -5,22 +5,21 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.TeilbekanntesDatumMitUnbekannt">
-   <title>TeilbekanntesDatumMitUnbekannt</title>
-   <subtitle>Typ: <emphasis role="codebf">TeilbekanntesDatumMitUnbekannt</emphasis>
-   </subtitle><para>Mit diesem Datentyp kann entweder ein teilweise bekanntes Datum übermittelt oder angegeben werden, dass ein Tagesdatum vollständig unbekannt ist. Ist das Datum vollständig unbekannt, wird das Kindelement <code>unbekannt</code> übermittelt, welches den Wert <code>true</code> enthält.</para>
-<para><emphasis>Hinweis: </emphasis>Diese Klasse wurde aus XInneres übernommen.</para><figure xml:id="figure.XSchule.Baukasten.TeilbekanntesDatumMitUnbekannt">
-      <title>TeilbekanntesDatumMitUnbekannt</title>
+         xml:id="XSchule.Baukasten.KlasseUebersprungen">
+   <title>KlasseUebersprungen</title>
+   <subtitle>Typ: <emphasis role="codebf">KlasseUebersprungen</emphasis>
+   </subtitle><para>Hier werden Angaben zu Klassenstufen gemacht, die von jungen Menschen im Verlauf ihrer Schullaufbahn ggf. übersprungen wurden.</para><figure xml:id="figure.XSchule.Baukasten.KlasseUebersprungen">
+      <title>KlasseUebersprungen</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/TeilbekanntesDatumMitUnbekannt.svg"/>
+                       fileref="../../../zeichnungen/XSchule/Baukasten/KlasseUebersprungen.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XSchule.Baukasten.TeilbekanntesDatumMitUnbekannt">
+   <informaltable xml:id="table.XSchule.Baukasten.KlasseUebersprungen">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -35,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">TeilbekanntesDatumMitUnbekannt</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">KlasseUebersprungen</emphasis>
                </entry>
             </row>
             <row>
@@ -49,45 +48,45 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">teilbekanntesDatum</emphasis>
+                  <emphasis role="bold">jahr</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+                  <emphasis role="codebf">xs:gYear</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.TeilbekanntesDatum" role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.TeilbekanntesDatum" role="Seitenzahl"/>
-               </entry>
+               <entry/>
+               <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Das teilweise bekannte Datum</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier wird das Jahr, in dem eine Klassenstufe übersprungen wurde, angegeben.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">unbekannt</emphasis>
+                  <emphasis role="bold">klassenstufe</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:boolean</emphasis>
+                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Verwendung dieses Merkmals zeigt an, dass das Datum vollständig unbekannt ist.</para><para>In diesem Element/Attribut ist nur Wert <quote>true</quote> zulässig (fixed-Wert).</para>
-               </entry>
+               <entry namest="indent0" nameend="page"><para>Unter Verwendung der Jahrgangsstufe-Codeliste kann hier angegeben werden, welche Klassenstufe übersprungen wurde.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/teilbekanntesdatummitunbekannt_list.xml"/>
+            href="../../anhang/verwendung/complexTypes/klasseuebersprungen_list.xml"/>
 </section>

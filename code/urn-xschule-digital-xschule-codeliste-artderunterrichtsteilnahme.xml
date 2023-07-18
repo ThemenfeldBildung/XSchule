@@ -4,7 +4,7 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>ArtDerUnterrichtsteilnahme</xoev-cl-4:shortName>
+         <xoev-cl-4:shortName>Art der Unterrichtsteilnahme</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Die Codeliste beinhaltet verschiedene Arten der Teilnahme am Unterricht, wie sie im Rahmen des Schulwechsels relevant sind. Die Liste wurde vom XSchule-Projekt erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDerUnterrichtsteilnahme-Codes</ShortName>
       <LongName>ArtDerUnterrichtsteilnahme</LongName>
-      <Version>0.5</Version>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,15 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderunterrichtsteilnahme/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderunterrichtsteilnahme/freigestellt</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/freigestellt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freigestellt</SimpleValue>
@@ -59,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderunterrichtsteilnahme/freiwillig</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/freiwillig</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freiwillig</SimpleValue>
@@ -67,10 +59,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderunterrichtsteilnahme/verpflichtend</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/verpflichtend</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>verpflichtend</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

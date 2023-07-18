@@ -112,7 +112,7 @@
                   <emphasis role="bold">schulform</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Code.ArtDerSchule</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -125,8 +125,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet, da es keine bundesländerübergreifende Definition gibt. Vergleiche an dieser Stelle die Art der Bildungseinrichtung (Schulen) gemäß Kultusministerkonferenz vom 15.12.2011.</para>
-<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -146,8 +145,29 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet den Bildungsganges, den der junge Mensch zuletzt besucht hat. Das kann beispielsweise der G8 oder G9 Bildungsgang sein.</para>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet den Bildungsgang, der an der abgebenden Schule zuletzt besucht wurde. Das kann beispielsweise der G8 oder G9 Bildungsgang sein.</para>
 <para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">migrationshintergrund</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Migrationshintergrund</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Migrationshintergrund"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Migrationshintergrund" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Migrationshintergrund junger Menschen ist für den Schulwechsel insbesondere für statistische Zwecke wichtig.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -195,16 +215,17 @@
                   <emphasis role="bold">impfung</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Impfschutz</emphasis>
+                  <emphasis role="codebf">ImpfnachweisVorhanden</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Impfschutz" role="AbschnittNummer"/>
+                  <xref linkend="XSchule.Baukasten.ImpfnachweisVorhanden"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Impfschutz" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.ImpfnachweisVorhanden" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -229,6 +250,28 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum jungen Mensch übermittelt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">sonderpaedagogischerFoerderbedarf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page">Mit diesem Element können die Daten zum sonderpädagogischen Förderbedarf übermittelt werden.</entry>
             </row>
          </tbody>
       </tgroup>

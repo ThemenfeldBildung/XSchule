@@ -4,7 +4,7 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>TeilnahmeGemeinsamerUnterricht</xoev-cl-4:shortName>
+         <xoev-cl-4:shortName>Teilnahme gemeinsamer Unterricht</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich handelt. Weitere Informationen: https://www.einfach-teilhaben.de/DE/AS/Themen/Schule/FoerderungSchule/GemeinsamerUnterricht/gemeinsamerunterricht_node.html#doc11179432bodyText1</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionDescription>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich handelt.</xoev-cl-4:versionDescription>
@@ -13,10 +13,10 @@
    </Annotation>
    <Identification>
       <ShortName>TeilnahmeGemeinsamerUnterricht-Codes</ShortName>
-      <LongName>TeilnahmeGemeinsamerUnterricht</LongName>
-      <Version>0.5</Version>
+      <LongName>Teilnahme gemeinsamer Unterricht</LongName>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:teilnahmegemeinsamerunterricht_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -44,31 +44,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/997</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/999</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht bekannt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/zieldifferent</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/zieldifferent</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zieldifferent</SimpleValue>
@@ -76,10 +52,34 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/teilnahmegemeinsamerunterricht/zielgleich</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/zielgleich</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zielgleich</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

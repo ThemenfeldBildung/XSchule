@@ -7,60 +7,71 @@
 <chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:id="spezifikation.einleitung.dieKernanwendungsfälle">
-
+	
 	<info>
 		<title>Kernanwendungsfälle</title>
 	</info>
-
-
-
-
+	
+	
+	
+	
 	<para>Auf Basis der Schuljourney und der Priorisierung der darin verorteten LeiKa-Leistungen
 		(z.B. Priorität der Leistungen aufgrund von Relevanz für Übertritt in weitere Lebenslagen,
 		Häufigkeit der Anwendungsfälle, etc.) wurden sog. Kernanwendungsfälle identifiziert. Diese
 		sollen priorisiert in dem XSchule-Datenaustauschmodell abgebildet werden. Sukzessive sollen
 		dann mehr und mehr Anwendungsfälle in XSchule enthalten sein.</para>
 	<para>Die Kernanwendungsfälle sind der Schulwechsel in der Primarstufe sowie das Ausstellen
-			<link linkend="XSchule.Nachweise.schueler.zeugnis.0003">des Zeugnisses der allgemeinen
+		<link linkend="XSchule.Nachweise.schueler.zeugnis.0003">des Zeugnisses der allgemeinen
 			Hochschulreife (Abiturzeugnis).</link> Seit und mit der XSchule-Version 0.3 werden
 		iterativ weitere Datenfelder in der Spezifikation aufgenommen, die sowohl den Wechsel in der
 		Sekundarstufe I/II sowie das Ausstellen von weiteren Zeugnisarten (s. <link
 			linkend="XSchule.Nachweise.schueler.zeugnis.0003">II.A.3 schueler.zeugnis.0003</link>)
 		ermöglichen sollen. Die Beschreibung der zwei Kernanwendungsfälle (s. I.4.1 und I.4.2) ist unverändert gültig. </para>
-
+	
 	<section>
 		<info>
-			<title>Schulwechsel in der Primarstufe</title>
+			<title>Schulwechsel</title>
 		</info>
-		<para>Während des Besuchs der Primarstufe ist initial kein Wechsel der Schule
-			vorgesehen.</para>
-		<para>Falls aus verschiedenen Gründen (z.B. Umzug) ein (bundesländerübergreifender) Schulwechsel
-			erforderlich ist, stellt sich der vorliegende Ist-Stand wie folgt dar: Zunächst müssen
-			die Erziehungsberechtigten des jungen Menschen diesen an der neuen Schule anmelden (ggf. unter
-			Berücksichtigung der Schulsprengel) und hier alle notwendigen Unterlagen analog
-			vorlegen. Sofern sich die Erziehungsberechtigten wie gesetzlich vorgesehen innerhalb von
-			2 Woche nach Umzug bei der zuständigen Meldebehörde ummelden, wird auch die
-			neue/aufnehmende Schule mithilfe eines regelmäßigen Abzugs von XMeld über den
-			schulpflichtigen jungen Mensch informiert und könnte dann ebenfalls auf die Erziehungsberechtigten
-			zukommen (mit der Bitte um Schulanmeldung). Um den jungen Mensch an der Schule aufnehmen zu
-			können, fordert die neue/aufnehmende Schule in der Regel die Akte bei der
-			alten/abgebenden Schule an, welche diese dann in der Regel postalisch versendet. Hierbei
-			gehen einige Informationen verloren, die aus datenschutzrechtlichen Gründen nicht
-			übergeben werden (z.B. sensible Daten wie medizinische Informationen, Konfession, etc.).
-			Falls diese erforderlich sind, müssen die Erziehungsberechtigen diese Informationen
-			erneut bereitstellen. Nur wenn die Erziehungsberechtigen explizit zustimmen, kann die
-			gesamte Akte inklusive aller sensiblen Daten an die neue/aufnehmende Schule
-			übermittelt werden.</para>
-		<para>Skizzierter Ist-Stand des bundesländerübergreifenden Schulwechsels (abgestimmt im
-			Arbeitskreis Berlin-Hessen-XSchule)</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata align="center" fileref="../abbildungen/Einleitung_Abb_2.png" format="PNG"
-					scale="42"/>
-			</imageobject>
-		</mediaobject>
+		<section> <info><title>analoger Schulwechsel in der Primarstufe</title>
+		</info>
+			<para>Während des Besuchs der Primarstufe ist initial kein Wechsel der Schule
+				vorgesehen.</para>
+			<para>Falls aus verschiedenen Gründen (z.B. Umzug) ein (bundesländerübergreifender) Schulwechsel
+				erforderlich ist, stellt sich der vorliegende Ist-Stand wie folgt dar: Zunächst müssen
+				die Erziehungsberechtigten des jungen Menschen diesen an der neuen Schule anmelden (ggf. unter
+				Berücksichtigung der Schulsprengel) und hier alle notwendigen Unterlagen analog
+				vorlegen. Sofern sich die Erziehungsberechtigten wie gesetzlich vorgesehen innerhalb von
+				2 Woche nach Umzug bei der zuständigen Meldebehörde ummelden, wird auch die
+				neue/aufnehmende Schule mithilfe eines regelmäßigen Abzugs von XMeld über den
+				schulpflichtigen jungen Mensch informiert und könnte dann ebenfalls auf die Erziehungsberechtigten
+				zukommen (mit der Bitte um Schulanmeldung). Um den jungen Mensch an der Schule aufnehmen zu
+				können, fordert die neue/aufnehmende Schule in der Regel die Akte bei der
+				alten/abgebenden Schule an, welche diese dann in der Regel postalisch versendet. Hierbei
+				gehen einige Informationen verloren, die aus datenschutzrechtlichen Gründen nicht
+				übergeben werden (z.B. sensible Daten wie medizinische Informationen, Konfession, etc.).
+				Falls diese erforderlich sind, müssen die Erziehungsberechtigen diese Informationen
+				erneut bereitstellen. Nur wenn die Erziehungsberechtigen explizit zustimmen, kann die
+				gesamte Akte inklusive aller sensiblen Daten an die neue/aufnehmende Schule
+				übermittelt werden.</para>
+			<para>Skizzierter Ist-Stand des bundesländerübergreifenden Schulwechsels (abgestimmt im
+				Arbeitskreis Berlin-Hessen-XSchule):</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata align="center" fileref="../abbildungen/Analoger_(Grund-)Schulwechsel.svg" format="SVG"
+						scale="42"/>
+				</imageobject>
+			</mediaobject>
+		</section>
+		<section><info><title>Digitaler Schulwechsel</title></info>
+			<para>Basierend auf dem Austausch mit den Stakeholdern wurde folgender SOLL-Stand für einen digitalen Schulwechsel entwickelt:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata align="center" fileref="../abbildungen/Schulwechsel_0.6.svg" format="SVG"
+						scale="42"/>
+				</imageobject>
+			</mediaobject>
+		</section>
 	</section>
-
 	<section>
 		<info>
 			<title>Ausstellen des Zeugnisses der allgemeinen Hochschulreife (Abiturzeugnis)</title>
@@ -80,8 +91,9 @@
 					scale="80"/>
 			</imageobject>
 		</mediaobject>
+		
+		
+		
+		
 	</section>
-
-
-
 </chapter>

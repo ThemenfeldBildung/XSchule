@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes" ?>
-<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xmlc5.0/rcg/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!DOCTYPE section [
     <!ENTITY % complete SYSTEM "../../ent/complete.ent">
     %complete;
@@ -16,50 +16,52 @@
         href="../../build/docBook/dokumente/anhang/codes/code-uebersichtstabelle.xml"/>
     
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/code.AbfolgeDerFremdsprachen.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.abfolgederfremdsprachen.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/code.Abiturfach.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.abiturfach.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Anforderungsniveau.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.anforderungsniveau.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.ArtDerBemerkung.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.artderbemerkung.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.ArtDerSchulaufnahme.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.artderhzb.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.ArtDerUnterrichtsteilnahme.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.artderschulaufnahme.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.ArtWeitererSprachkenntnisse.xml"/>    
+        href="../../build/docbook/dokumente/anhang/codes/code.artderunterrichtsteilnahme.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Aufgabenfeld.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.artdessonderpaedagogischenfoerderbedarfes.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/Code.BewertungsschemaAbitur.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.artweiterersprachkenntnisse.xml"/>    
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Bundesland.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.aufgabenfeld.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/code.faecherliste.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.faecherliste.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.GesetzlicherVertreter.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.gesetzlichervertreter.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/Code.Halbjahr.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.halbjahr.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/Code.Impfschutz.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.impfschutz.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Jahrgangsstufe.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.jahrgangsstufe.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/codes/Code.Krankheit.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.konfession.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Nachpruefung.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.krankheit.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Nachweisperiode.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.laufbahnempfehlung.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.NQR-DQR.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.nachpruefung.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.TeilnahmeGemeinsamerUnterricht.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.nachweisperiode.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Verpflichtungsgrad.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.teilnahmegemeinsamerunterricht.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/code.versetzungsoderausnahmetatbestandstyp.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.verpflichtungsgrad.xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude"
-        href="../../build/docBook/dokumente/anhang/Codes/Code.Zeugnisart.xml"/>
+        href="../../build/docbook/dokumente/anhang/codes/code.versetzungstyp.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude"
+        href="../../build/docbook/dokumente/anhang/codes/code.zeugnisart.xml"/>
 
 </chapter>

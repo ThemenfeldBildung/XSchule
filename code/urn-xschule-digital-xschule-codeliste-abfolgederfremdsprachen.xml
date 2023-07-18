@@ -4,7 +4,7 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>AbfolgeDerFremdsprachen</xoev-cl-4:shortName>
+         <xoev-cl-4:shortName>Abfolge der Fremdsprachen</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Diese Codeliste enhält Werte, um angeben zu können, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
@@ -12,10 +12,10 @@
    </Annotation>
    <Identification>
       <ShortName>AbfolgeDerFremdsprachen-Codes</ShortName>
-      <LongName>AbfolgeDerFremdsprachen</LongName>
-      <Version>0.5</Version>
+      <LongName>Abfolge der Fremdsprachen</LongName>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:abfolgederfremdsprachen_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/1_fremdsprache</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/1_fremdsprache</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>1. Fremdsprache</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/2_fremdsprache</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/2_fremdsprache</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>2. Fremdsprache</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/3_fremdsprache</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/3_fremdsprache</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>3. Fremdsprache</SimpleValue>
@@ -67,10 +67,26 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/abfolgederfremdsprachen/998</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

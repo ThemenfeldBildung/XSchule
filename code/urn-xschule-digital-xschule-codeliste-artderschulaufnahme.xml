@@ -4,7 +4,7 @@
              xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
    <Annotation>
       <Description>
-         <xoev-cl-4:shortName>ArtDerSchulaufnahme</xoev-cl-4:shortName>
+         <xoev-cl-4:shortName>Art der Schulaufnahme</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription>Die Art der Schulaufnahme gibt an, wie der junge Mensch in die Schule aufgenommen wurde. Sollte keine Auskunft möglich sein, kann der Grund dafür angegeben werden. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
@@ -12,10 +12,10 @@
    </Annotation>
    <Identification>
       <ShortName>ArtDerSchulaufnahme-Codes</ShortName>
-      <LongName>ArtDerSchulaufnahme</LongName>
-      <Version>0.5</Version>
+      <LongName>Art der Schulaufnahme</LongName>
+      <Version>0.6</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme_0.5</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderschulaufnahme_0.6</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,31 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/997</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert aus rechtlichen Gründen nicht übermittelt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/998</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht in Liste</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/999</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Wert nicht bekannt</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_mit_inklusion</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_mit_inklusion</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung mit Inklusion</SimpleValue>
@@ -75,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_nach_zurueckstellung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_nach_zurueckstellung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung nach Zurückstellung</SimpleValue>
@@ -83,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Einschulung Schule freier Trägerschaft</SimpleValue>
@@ -91,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/regeleinschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/regeleinschulung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Regeleinschulung</SimpleValue>
@@ -99,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schulwechsel (außerhalb Schulbezirk)</SimpleValue>
@@ -107,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/vorzeitige_einschulung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/vorzeitige_einschulung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>vorzeitige Einschulung</SimpleValue>
@@ -115,10 +91,42 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.5/code/artderschulaufnahme/zurueckstellung_gewuenscht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/zurueckstellung_erfolgt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Zurückstellung erfolgt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/zurueckstellung_gewuenscht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zurückstellung gewünscht</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

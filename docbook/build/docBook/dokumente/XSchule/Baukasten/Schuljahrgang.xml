@@ -64,7 +64,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde. Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres. Wird davon abgewichen, sollte die Eigenschaft "zusatz" genutzt werden, um die Abweichung zu begründen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -87,18 +87,17 @@
                   <emphasis role="bold">versetzungsOderAusnahmetatbestandstyp</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.VersetzungsOderAusnahmetatbestandstyp</emphasis>
+                  <emphasis role="codebf">Code.Versetzungstyp</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp"
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp"
-                        role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp" role="Seitenzahl"/>
                </entry>
             </row>
             <row>

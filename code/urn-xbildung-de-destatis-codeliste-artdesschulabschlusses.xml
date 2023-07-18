@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDesSchulabschlusses-Codes</ShortName>
       <LongName>Art des Schulabschlusses</LongName>
-      <Version>0.94</Version>
+      <Version>0.95</Version>
       <CanonicalUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses_0.94</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses_0.95</CanonicalVersionUri>
       <Agency>
          <LongName>Statistisches Bundesamt, Wiesbaden</LongName>
       </Agency>
@@ -49,7 +49,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/allgemeine_hochschulreife</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/allgemeine_hochschulreife</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>allgemeine Hochschulreife</SimpleValue>
@@ -60,7 +60,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/fachhochschulreife</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/fachhochschulreife</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fachhochschulreife</SimpleValue>
@@ -71,7 +71,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/hauptschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/hauptschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Hauptschulabschluss bzw. entsprechendem Abschluss</SimpleValue>
@@ -82,7 +82,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/ohne_hauptschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/ohne_hauptschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>ohne Hauptschulabschluss; einschl. Abschluss der Förderschule mit Förderschwerpunkt Lernen und Abschluss der Förderschule mit Förderschwerpunkt geistige Entwicklunng</SimpleValue>
@@ -93,7 +93,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/realschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/realschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Realschulabschluss (Mittlerer Abschluss)</SimpleValue>
@@ -101,6 +101,24 @@
          <Value ColumnRef="mapping-ISCED2011L">
             <SimpleValue>2</SimpleValue>
          </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/~wert_nicht_bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht bekannt</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCED2011L"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/~wert_nicht_in_liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wert nicht in Liste</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCED2011L"/>
       </Row>
    </SimpleCodeList>
 </gc:CodeList>

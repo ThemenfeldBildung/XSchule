@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="321.703125" height="430">
+<svg xmlns="http://www.w3.org/2000/svg" width="333.03125" height="478">
    <defs>
       <style type="text/css">
                         text {
@@ -37,8 +37,8 @@
                         } 
                     </style>
    </defs>
-   <rect width="311.703125"
-         height="420"
+   <rect width="323.03125"
+         height="468"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -188,14 +188,14 @@
             y2="258"
             class="type-structure-optional"/>
       <g transform="translate(55,288)">
-         <rect width="145.71875" height="18" class="element-upper"/>
-         <rect width="145.71875" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">fach</text>
-         <line x1="0" y1="18" x2="145.71875" y2="18"/>
+         <rect width="252.03125" height="18" class="element-upper"/>
+         <rect width="252.03125" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">erreichterAbschluss</text>
+         <line x1="0" y1="18" x2="252.03125" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:Code.Abiturfach</text>
-         <g transform="translate(145.71875,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Code.ArtWeitererSprachkenntnisse</text>
+         <g transform="translate(252.03125,0)"/>
       </g>
       <line x1="33"
             y1="306"
@@ -213,17 +213,14 @@
             y2="306"
             class="type-structure-optional"/>
       <g transform="translate(55,336)">
-         <rect width="193.78437499999998" height="18" class="element-upper"/>
-         <rect width="193.78437499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">herkunftssprachlicherUnterricht</text>
-         <line x1="0" y1="18" x2="193.78437499999998" y2="18"/>
+         <rect width="145.71875" height="18" class="element-upper"/>
+         <rect width="145.71875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">fach</text>
+         <line x1="0" y1="18" x2="145.71875" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xs:boolean</text>
-         <g transform="translate(193.78437499999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xsc:Code.Abiturfach</text>
+         <g transform="translate(145.71875,0)"/>
       </g>
       <line x1="33"
             y1="354"
@@ -239,6 +236,34 @@
             y1="306"
             x2="33"
             y2="354"
+            class="type-structure-optional"/>
+      <g transform="translate(55,384)">
+         <rect width="193.78437499999998" height="18" class="element-upper"/>
+         <rect width="193.78437499999998"
+               height="18"
+               y="18"
+               class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">herkunftssprachlicherUnterricht</text>
+         <line x1="0" y1="18" x2="193.78437499999998" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xs:boolean</text>
+         <g transform="translate(193.78437499999998,0)"/>
+      </g>
+      <line x1="33"
+            y1="402"
+            x2="55"
+            y2="402"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="400"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="354"
+            x2="33"
+            y2="402"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"

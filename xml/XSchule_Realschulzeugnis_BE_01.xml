@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.zeugnis.0003 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/0.5/xsd http://xschule.digital/def/xschule/0.5/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/0.94/xsd"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/0.6/xsd http://xschule.digital/def/xschule/0.6/xsd/xschule.xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/0.5/xsd">
+    xmlns:xsc="http://xschule.digital/def/xschule/0.6/xsd">
 
     <!--
         Datum: 06.04.2022
@@ -24,21 +24,20 @@
         <xbd:beginn>2020-07-01</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
 
-    <xbd:sprache>
-        <xbd:sprache>
-            <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-        </xbd:sprache>
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20230614-0">
+        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
     <xsc:allgemeineAngaben>
         <xsc:artDesZeugnisses>
-            <code>http://xschule.digital/def/xschule/0.5/code/zeugnisart/abschlusszeugnis</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/zeugnisart/abschlusszeugnis</code>
         </xsc:artDesZeugnisses>
         <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
         </xsc:jahrgangsstufe>
         <xsc:nachweisperiode>
-            <code>http://xschule.digital/def/xschule/0.5/code/nachweisperiode/jahr</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/jahr</code>
         </xsc:nachweisperiode>
         <xsc:bundesland listVersionID="2010-04-01"
             listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
@@ -47,30 +46,35 @@
         </xsc:bundesland>
         <xsc:niveau>
             <code>http://data.europa.eu/snb/qdr/c_c71cce15</code>
-            <!-- DQR 2 -->
+            <!-- DQR 2-->
         </xsc:niveau>
-        <xsc:artDerHZB/>
         <xsc:artDesSchulabschlusses>
-            <code>http://xbildung.de/def/xbildung/0.94/code/artdesschulabschlusses/realschulabschluss</code>
+            <code>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/realschulabschluss</code>
         </xsc:artDesSchulabschlusses>
     </xsc:allgemeineAngaben>
 
     <xsc:schueler>
         <xbd:nameNatuerlichePerson>
+            <xbd:anrede>Frau</xbd:anrede>
             <xbd:familienname>
                 <xbd:name>Mustermann</xbd:name>
             </xbd:familienname>
             <xbd:vorname>
                 <xbd:name>Erika</xbd:name>
             </xbd:vorname>
-            <xbd:anrede>Frau</xbd:anrede>
+
         </xbd:nameNatuerlichePerson>
         <xbd:geburt>
-            <xbd:datum>2003-09-26</xbd:datum>
+            <xbd:datum>
+                <xbd:jahrMonatTag>2003-09-26</xbd:jahrMonatTag>
+            </xbd:datum>
             <xbd:geburtsort>
                 <xbd:ort>Berlin</xbd:ort>
-                <xbd:staat listVersionID="7" listURI="urn:xoev-de:kosit:codeliste:country-codes">
-                    <code>DE</code>
+                <xbd:staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="">
+                    <code>000</code>
+                    <name>Deutschland</name>
                 </xbd:staat>
             </xbd:geburtsort>
         </xbd:geburt>
@@ -80,26 +84,31 @@
     </xsc:schueler>
 
     <xsc:schule>
-        <xbd:identifikation>
-            <xbd:id>BE_081522</xbd:id>
-        </xbd:identifikation>
         <xbd:name>
             <xbd:name>Realschule zum guten Muster</xbd:name>
         </xbd:name>
+        <xbd:identifikation>
+            <xbd:id>BE_081522</xbd:id>
+        </xbd:identifikation>
+
         <xbd:anschrift>
             <xbd:strasse>Musterdammallee</xbd:strasse>
             <xbd:hausnummer>50</xbd:hausnummer>
-            <xbd:ort>Berlin</xbd:ort>
-            <xbd:staat>
-                <xbd:staat listVersionID="7" listURI="urn:xoev-de:kosit:codeliste:country-codes">
-                    <code>DE</code>
-                </xbd:staat>
-            </xbd:staat>
             <xbd:postfach>3450</xbd:postfach>
+            <xbd:ort>Berlin</xbd:ort>
+            <xbd:staat
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                listVersionID="">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
         </xbd:anschrift>
-        <xsc:schulform>Integrierte Sekundarschule</xsc:schulform>
+        <xsc:schulform>
+            <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/110</code>
+        </xsc:schulform>
+        <!-- Integrierte Sekundarschule -->
         <xsc:artDerTraegerschaft>
-            <code>http://xbildung.de/def/xbildung/0.94/code/artdertraegerschaft/40</code>
+            <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>
         </xsc:artDerTraegerschaft>
     </xsc:schule>
 
@@ -141,22 +150,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0232</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
             <xsc:vermittelteSprachkenntnis>
                 <xsc:sprache>
@@ -202,22 +211,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0231</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
             <xsc:vermittelteSprachkenntnis>
                 <xsc:sprache>
@@ -246,22 +255,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0223</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -285,22 +294,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0532</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -324,22 +333,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0222</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -363,19 +372,19 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -399,19 +408,19 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/z-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/z-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -452,22 +461,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0541</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -508,22 +517,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0511</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -564,22 +573,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0531</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -620,22 +629,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0533</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -659,22 +668,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0213</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -698,22 +707,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0215</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -737,22 +746,22 @@
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.94/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xbd:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/1014</code>
             </xbd:schluesselISCEDF2013>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.5/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
@@ -768,14 +777,14 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
             <xsc:artDerPruefung>
-                <code>http://xbildung.de/def/xbildung/0.94/code/artderpruefung/schriftliche_pruefung</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
             <xsc:bezeichnung>Deutsch</xsc:bezeichnung>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefung>
 
@@ -790,14 +799,14 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
             <xsc:artDerPruefung>
-                <code>http://xbildung.de/def/xbildung/0.94/code/artderpruefung/schriftliche_pruefung</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefung>
 
@@ -812,14 +821,14 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
             <xsc:artDerPruefung>
-                <code>http://xbildung.de/def/xbildung/0.94/code/artderpruefung/schriftliche_pruefung</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/e-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefung>
 
@@ -834,14 +843,14 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
             <xsc:artDerPruefung>
-                <code>http://xbildung.de/def/xbildung/0.94/code/artderpruefung/praesentationspruefung</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/praesentationspruefung</code>
             </xsc:artDerPruefung>
             <xsc:bezeichnung>Geografie</xsc:bezeichnung>
             <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.5/code/anforderungsniveau/g-kurs</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.5/code/verpflichtungsgrad/pflichtunterricht</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefung>
     </xsc:leistungen>
@@ -852,10 +861,10 @@
                 <code>https://publications.europa.eu/resource/authority/language/SPA</code>
             </xsc:sprache>
             <xsc:beginn>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_5</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_5</code>
             </xsc:beginn>
             <xsc:ende>
-                <code>http://xschule.digital/def/xschule/0.5/code/jahrgangsstufe/jahrgangsstufe_10</code>
+                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:ende>
             <!-- Zwischen B2 und C1 -->
             <xsc:ger>
@@ -871,28 +880,28 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/10</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/10</code>
         </xsc:art>
         <xsc:beschreibung>Hat erfolgreich teilgenommen an der Arbeitsgruppe "Rezitation und Laienspiel"</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Das Schulgesetz (SchulG) für das Land Berlin vom 26. Januar 2004 in der jeweils geltenden Fassung.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Die Verordnung über die Schularten und Bildungsgänge der Sekundarstufe I (Sek I-VO) vom 31. März 2010 in der jeweils geltenden Fassung.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/20</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/20</code>
         </xsc:art>
         <xsc:beschreibung>Ein Beiblatt (Schul Z 620) ist NICHT Bestandteil dieses Zeugnisses.
         </xsc:beschreibung>
@@ -900,14 +909,14 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Mit diesen Leistungen im Jahrgangsteil werden die Bedingungen für die erweiterte Berufsbildungsreife gemäß § 44 Absatz 4 Sek I-VO erfüllt.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.5/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Mit diesen Leistungen im Prüfungsteil werden die Bedingungen für die erweiterte Berufsbildungsreife gemäß § 44 Absatz 2 Nummer 1 Sek I-VO erfüllt.</xsc:beschreibung>
     </xsc:bemerkung>

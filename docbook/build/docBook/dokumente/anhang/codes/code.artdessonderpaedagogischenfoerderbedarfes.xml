@@ -5,11 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp"
+         xml:id="XSchule.Baukasten.Codes.Code.ArtDesSonderpaedagogischenFoerderbedarfes"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.VersetzungsOderAusnahmetatbestandstyp</title>
-   <informaltable>
+   <title>Code.ArtDesSonderpaedagogischenFoerderbedarfes</title><para>Zum Art des sonderpädagogischen Förderbedarfes kann jedes Bundesland eigene Codeliste verwenden. Die Codelisten können auf XBildung gehostet werden.</para><informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -22,26 +21,23 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry><para>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden. Sollte keine Angabe möglich sein, kann der Grund dafür angegeben werden.</para>
-<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para></entry>
+               <entry>unbestimmt</entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.versetzungsoderausnahmetatbestandstyp.VersetzungsOderAusnahmetatbestandstyp-Codes"
-                        role="Seite"/>
-               </entry>
+               <entry>Typ: 4, siehe Beschreibung des Code-Datentyps</entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:versetzungsoderausnahmetatbestandstyp</entry>
+               <entry>unbestimmt</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.5</entry>
+               <entry>unbestimmt</entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.versetzungsoderausnahmetatbestandstyp_list.xml"/>
+            href="../verwendung/complexTypes/code.artdessonderpaedagogischenfoerderbedarfes_list.xml"/>
 </section>

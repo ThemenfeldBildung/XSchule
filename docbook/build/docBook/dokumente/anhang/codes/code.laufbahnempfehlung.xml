@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.BewertungsschemaAbitur"
+         xml:id="XSchule.Baukasten.Codes.Code.Laufbahnempfehlung"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.BewertungsschemaAbitur</title>
+   <title>Code.Laufbahnempfehlung</title>
    <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
@@ -22,25 +22,25 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry>Das Bewertungsschema nach dem Beschluss der KMK zur Umsetzung der Noten in Punkte gibt Aufschluss über die Umrechnung von Punkten, Noten und der Abbildung der Note in Wortschrift.</entry>
+               <entry><para>Mit dieser Codeliste werden die Laufbahnempfehlungen für die Sekundarstufe I angegeben.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.kmk.codeliste.bewertungsschemaabitur.BewertungsschemaAbitur-Codes"
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.laufbahnempfehlung.Laufbahnempfehlung-Codes"
                         role="Seite"/>
                </entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:kmk:codeliste:bewertungsschemaabitur</entry>
+               <entry>urn:xschule-digital:xschule:codeliste:laufbahnempfehlung</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>1972</entry>
+               <entry>0.6</entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.bewertungsschemaabitur_list.xml"/>
+            href="../verwendung/complexTypes/code.laufbahnempfehlung_list.xml"/>
 </section>

@@ -200,7 +200,7 @@
                   <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -219,16 +219,16 @@
                   <emphasis role="bold">schullaufbahn</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Schulaufnahme</emphasis>
+                  <emphasis role="codebf">Schullaufbahn</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schulaufnahme" role="AbschnittNummer"/>
+                  <xref linkend="XSchule.Baukasten.Schullaufbahn" role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schulaufnahme" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Schullaufbahn" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -276,13 +276,17 @@
                   <emphasis role="bold">datum</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">xs:date</emphasis>
+                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -335,23 +339,103 @@
                   <emphasis role="bold">versetzungsOderAusnahmetatbestandstyp</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.VersetzungsOderAusnahmetatbestandstyp</emphasis>
+                  <emphasis role="codebf">Code.Versetzungstyp</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp"
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.VersetzungsOderAusnahmetatbestandstyp"
-                        role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="1" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen oder zu Ausnahmetatbeständen im Fall keiner Versetzung gemacht. </para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">fehltage</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fehltage</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehltage" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehltage" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier können die Angaben zur Erfassung von Fehltagen im laufenden bzw. vergangenen Schuljahr gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">fremdsprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fremdsprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fremdsprache" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fremdsprache" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier können die Angaben zu den Fremdsprachen gemacht werden, die schulisch belegt wurden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">praktikum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Praktikum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier können für den Schulbesuch relevante Praktika angegeben werden, bspw. ein Pflichtpraktikum in der Sekundarstufe I.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">konfession</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Konfession</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Konfession"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Konfession" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann die Konfession von jungen Menschen im Schulwechsel angegeben werden, sofern diese für den Schulbesuch relevant ist.</para></entry>
             </row>
          </tbody>
       </tgroup>
