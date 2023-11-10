@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Förderschwerpunkt</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Liste enthält von der KMK beschlossene Förderschwerpunkte. Sie basiert auf dem KMK-Dokument "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten (Version 4.0)".</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Foerderschwerpunkt-Codes</ShortName>
+      <LongName>Förderschwerpunkt</LongName>
+      <Version>2019</Version>
+      <CanonicalUri>urn:xschule-digital:kmk:codeliste:foerderschwerpunkt</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:foerderschwerpunkt_2019</CanonicalVersionUri>
+      <Agency>
+         <LongName>Kultusministerkonferenz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Fachbezeichnung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/emotionale_und_soziale_entwicklung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Emotionale und soziale Entwicklung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/geistige_entwicklung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Geistige Entwicklung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/hoeren</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Hören</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/keinem_schwerpunkt_zugeordnet</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>keinem Schwerpunkt zugeordnet</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/koerperliche_und_motorische_entwicklung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Körperliche und motorische Entwicklung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/lernen</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Lernen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/lernen_sprache_emotionale_und_soziale_entwicklung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Lernen, Sprache, Emotionale und soziale Entwicklung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>ohne sonderpädagogische Förderung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/schwerst_mehrfachbehinderung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Schwerst-/Mehrfachbehinderung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/sehen</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sehen</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/sprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sprache</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/unterricht_kranker_schuelerinnen_und_schueler</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Unterricht kranker Schülerinnen und Schüler</SimpleValue>
+         </Value>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

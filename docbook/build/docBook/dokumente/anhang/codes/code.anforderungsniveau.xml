@@ -8,8 +8,9 @@
          xml:id="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Anforderungsniveau</title>
-   <informaltable>
+   <title>Code.Anforderungsniveau</title><para>Wie im Kapitel <xref linkend="spezifikation.profilbildung.codelisten_typ4" role="Titel"/> beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden.</para>
+<para>Dazu muss im XML sowohl das Attribut <emphasis role="codebf">listURI</emphasis> als auch <emphasis role="codebf">listVersionID</emphasis> verwendet werden.</para>
+<para>XSchule stellt die Codeliste <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.anforderungsniveau.Anforderungsniveau-Codes" role="Titel"/> zur Verfügung.</para><informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -22,22 +23,19 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry><para>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern.</para>
-<para><emphasis role="bold">Grundlage:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf">https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</link></para></entry>
+               <entry>unbestimmt</entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.anforderungsniveau.Anforderungsniveau-Codes"
-                        role="Seite"/>
-               </entry>
+               <entry>Typ: 4, siehe Beschreibung des Code-Datentyps</entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:anforderungsniveau</entry>
+               <entry>unbestimmt</entry>
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.6</entry>
+               <entry>unbestimmt</entry>
             </row>
          </tbody>
       </tgroup>

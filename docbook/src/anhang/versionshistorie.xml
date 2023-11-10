@@ -14,11 +14,151 @@
         Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
         aufgeführt.</para>
 
+    <section xml:id="spezifikation.anhang.versionshistorie07">
+        <info>
+            <title>Version 0.7</title>
+        </info>
+        <para>Veröffentlichungsdatum: &fassung;</para>
+
+        <section>
+            <title>Ermöglichung von Profilbildung</title>
+            <para>Das Modell wurde so ergänzt, dass es erweiterbar ist. Dadurch können insbesondere
+                die Wechselnachricht und die Schulbescheinigung in spezialisierten, z.B.
+                bundeslandspezifischen Anwendungsfällen verwendet werden.</para>
+            <para>Welche Voraussetzungen für eine Erweiterung erfüllt sein müssen und wie diese
+                umgesetzt werden kann, wird im neu hinzugefügten Kapitel <link
+                    linkend="spezifikation.profilbildung">Erweiterbarkeit und Profilbildung</link>,
+                beschrieben. Die dort aufgeführten Codelisten sind zur Erweiterung vorgesehen. Wird
+                der Wert "wert_nicht_in_liste" ausgewählt, erlaubt die Modellierung nun eine
+                Freitext-Angabe. </para>
+            <para>Für die Modellierung bedeutet das, dass erweiterbare Codelisten nun als anonyme
+                Klasse umgesetzt sind und die Code-Werte zusätzlich in einen &lt;xsc:code&gt;-Tag
+                eingeschlossen werden.</para>
+        </section>
+
+        <section>
+            <title>Neuer Nachweis: Schulbescheinigung</title>
+            <para>Es wurde die neue Nachweisnachricht <link
+                    linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004"
+                    >Schulbescheinigung</link> angelegt und ihr Zweck als <link
+                    linkend="spezifikation.einleitung.dieKernanwendungsfälle.0004"
+                    >Anwendungsfall</link> beschrieben. </para>
+        </section>
+
+        <section>
+            <title>Sonstige Änderungen</title>
+            <simplesect>
+                <title>Codeliste Förderschwerpunkt</title>
+                <para>In der Klasse <link
+                        linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
+                        >SonderpaedagogischerFoerderbedarf</link> wurde das Kindelement "art" auf
+                    Datentyp String.Localized umgestellt. Dem Kindlement "schwerpunkt" wurde der
+                    Datentyp <link linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
+                        >Code.Foerderschwerpunkt</link> mit Nutzungstyp-4 (unbenannte Codeliste)
+                    zugewiesen. Wie im Kapitel <link
+                        linkend="spezifikation.profilbildung.codelisten_wnil">II.2.2 Nutzung
+                        externer Wertelisten</link> beschrieben wird, kann diese Eigenschaft mit
+                    anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. XSchule
+                    stellt die Codeliste <link
+                        linkend="tabelle.urn.xschule-digital.kmk.codeliste.foerderschwerpunkt.Foerderschwerpunkt-Codes"
+                        >Förderschwerpunkt</link> zur Verfügung. </para>
+            </simplesect>
+            <simplesect>
+                <title>Digitale Signaturen</title>
+                <para>XSchule bindet die XSDs ein, um <link linkend="externe.modelle.">W3C-XML
+                        Signaturen</link> zu ermöglichen. Um die Nachweise mit einer "enveloped"
+                    Signatur versehen zu können, haben sie "ds:Signature" als letztes
+                    (optionales) Element erhalten.</para>
+            </simplesect>
+        </section>
+
+        <simplesect>
+            <title>Liste der umgesetzten Tickets</title>
+            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+            <itemizedlist>
+
+                <listitem override="none">
+                    <para><emphasis role="bold">Änderungen bezüglich des
+                        Schulzeugnis</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-318: niveau umbennen in niveauEQR</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-255: Umgang mit Jahres-/Zwischenzeugnis als Abiturzeugnis
+                        erläutern</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-315: Nachweiszeitraum in Zeugnisse aufnehmen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-327: Schematron-Regeln für schueler.zeugnis.0003 löschen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-311: Anforderungsniveaus auf KMK beschränken und als Typ-4
+                        umsetzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-314: Codeliste Aufgabenfeld an KMK Vorgaben anpassen</para>
+                </listitem>
+                <listitem override="none">
+                    <para>&nbsp;</para>
+                </listitem>
+                <listitem override="none">
+                    <para><emphasis role="bold">Änderungen bezüglich des
+                        Schulwechsels</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-297: Nutzung von WechselnderSchueler:kommunikation/kontaktmoeglichkeit
+                        überprüfen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-307: Erstellen Codeliste für Förderschwerpunkt</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-317: Reihenfolge von Bezeichnung und Beschreibung ändern</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-310: Erweiterung-Eigenschaft für Wechselnachricht und
+                        Schulbescheinigung hinzufügen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-316: WechselnderSchueler: xbd:Kurs durch xsc:Schulkurs ersetzen</para>
+                </listitem>
+                <listitem override="none">
+                    <para>&nbsp;</para>
+                </listitem>
+                <listitem override="none">
+                    <para><emphasis role="bold">Sonstige Änderungen</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>XSC-292: Schulbescheinigung als Dokument und neues Unterkapitel I.4.3
+                        aufnehmen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-184: Typ-4-Codelisten und Eigenschaften für Profilbildung
+                        anpassen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-309: Codeliste mit ~wert_nicht_in_liste erweiterbar machen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-294: Codelisten Angleich Name (lang)/Name (kurz)</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-296: Nachweise mit XML-Signatur signierbar machen</para>
+                </listitem>
+            </itemizedlist>
+        </simplesect>
+
+    </section>
+
+
     <section xml:id="spezifikation.anhang.versionshistorie06">
         <info>
             <title>Version 0.6</title>
         </info>
-        <para>Veröffentlichungsdatum: &fassung;</para>
+        <para>Veröffentlichungsdatum: 18. Juli 2023</para>
 
         <section>
             <title>Änderungen im Zusammenhang mit XBildung 0.95</title>
@@ -219,79 +359,5 @@
 
             </itemizedlist>
         </simplesect>
-    </section>
-
-    <section xml:id="spezifikation.anhang.versionshistorie05">
-        <info>
-            <title>Version 0.5</title>
-        </info>
-        <para>Veröffentlichungsdatum: 6. April 2023</para>
-        <para>Veränderungen zur vorherigen Version: Schwerpunkte waren die anpassungen an der Klasse
-            Fremdsprache, eine umfangreiche Überarbeitung der Codelisten-Inhalte und Beschreibungen
-            und die Überführung auf XÖV 3.0. Im Detail:</para>
-        <itemizedlist>
-            <listitem>
-                <para>XSC-242: XSC auf XÖV 3.0 überführen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-244: XInneres-Basismodul ausbauen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-220: Bezeichnung "Kind", "Schüler", "Junger Mensch"
-                    vereinheitlichen</para>
-            </listitem>
-
-            <listitem>
-                <para>XSC-224: Metadaten der XSC Codelisten mit XBD vereinheitlichen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-245: Die Codeliste "Liste aktive Schulen" löschen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-215: Die Codeliste "Kursbereich/Verpflichtungsgrad" an KMK Liste
-                    anpassen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-203: Die Codeliste "Bemerkung" erweitern und Beschreibungen
-                    überarbeitet</para>
-            </listitem>
-            <listitem>
-                <para>XSC-175: Die Codeliste "AbfolgeDerFremdsprachen" anlegen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-246: In der Codeliste "NQR-DQR" die Version anpassen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-186: Die Codelisten "Kursbereich" und "Kursdifferentierung"
-                    umbenennen</para>
-            </listitem>
-
-            <listitem>
-                <para>XSC-233: Zeugnisse um Datum des Erwerbs erweitern</para>
-            </listitem>
-            <listitem>
-                <para>XSC-186: Eigenschaft Leistungsebene entfernen</para>
-            </listitem>
-            <listitem>
-                <para>XSC-230: Fremdsprache erweitern um Abfolge und belegteJahre, GER auf Codeliste
-                    geändert</para>
-            </listitem>
-            <listitem>
-                <para>XSC-204: Fremdsprache erweitern um Herkunftssprachlicher Unterricht
-                    (HSU)</para>
-            </listitem>
-
-            <listitem>
-                <para>XSC-177: ReisenderSchueler überabeiten (BrancheDesUnternehmens entfernen,
-                    nameUnternehmen auf xsd:NameOrganisation ändern, Stammschule
-                    verpflichtend)</para>
-            </listitem>
-            <listitem>
-                <para>XSC-238: Beschreibung gesetzlicherVertreter überarbeiten</para>
-            </listitem>
-            <listitem>
-                <para>XSC-226: Schulform und Schulprofil (auch) an den Schüler hängen</para>
-            </listitem>
-        </itemizedlist>
     </section>
 </appendix>

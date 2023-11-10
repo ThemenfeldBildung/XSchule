@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsc="http://xschule.digital/def/xschule/0.6/xsd"
+           xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
            xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xschule.digital/def/xschule/0.6/xsd"
-           version="0.6"
+           targetNamespace="http://xschule.digital/def/xschule/0.7/xsd"
+           version="0.7"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,8 +18,8 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>0.6</version>
-            <versionXOEVProfil>3.0.0</versionXOEVProfil>
+            <version>0.7</version>
+            <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
             <versionModellierungswerkzeug>19.0 SP 3</versionModellierungswerkzeug>
@@ -106,7 +106,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -141,126 +141,21 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="Code.Abiturfach">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Abiturfach</nameLang>
-               <nameKurz>Abiturfach</nameKurz>
-               <nameTechnisch>Abiturfach-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:kmk:codeliste:abiturfach</kennung>
-               <beschreibung>Diese Liste enthält von der KMK beschlossene Abiturfächer. Sie basiert auf den KMK-Dokumenten "Liste über Verabschiedung und Inkrafttreten der einzelnen EPA" und dem "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten (Version 4.0)". Die Listen wurden vom XSchule-Projekt zusammengeführt und die Fächer auf ISCED-F und Fremdsprachen gemappt. Sie wird zusätzlich online zur Verfügung gestellt. Link zur Webseite: https://xschule.digital/web/kmk_abiturfaecher_de</beschreibung>
-               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
-               <herausgebernameKurz>KMK</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>2019</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Fachbezeichnung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-               <mapping-ISCEDF2013-URI>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>optional</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-ISCEDF2013-URI>
-               <description-en-GB>
-                  <spaltennameLang>Subject Designation</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-en-GB>
-               <mapping-ISOLanguage-URI>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>optional</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-ISOLanguage-URI>
-            </codelistenspalten>
-            <genutzteCodeSpalte>code</genutzteCodeSpalte>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xsc:Abiturfach-Codes"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xschule-digital:kmk:codeliste:abiturfach"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="2019"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="Code.Anforderungsniveau">
       <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Anforderungsniveau</nameLang>
-               <nameKurz>Anforderungsniveau</nameKurz>
-               <nameTechnisch>Anforderungsniveau-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:xschule:codeliste:anforderungsniveau</kennung>
-               <beschreibung>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</beschreibung>
-               <herausgebernameLang>XSchule</herausgebernameLang>
-               <herausgebernameKurz>XSchule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>0.6</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Anforderungsniveau</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-            <genutzteCodeSpalte>code</genutzteCodeSpalte>
-         </xs:appinfo>
+         <xs:documentation>Wie im Kapitel beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden. XSchule stellt die Codeliste zur Verfügung.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
             <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xsc:Anforderungsniveau-Codes"/>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
             </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xschule-digital:xschule:codeliste:anforderungsniveau"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="0.6"/>
+            <xs:attribute name="listURI" type="xs:anyURI" use="required"/>
+            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -277,7 +172,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -310,7 +205,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -385,7 +280,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -418,7 +313,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -435,7 +330,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -470,21 +365,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="Code.ArtDesSonderpaedagogischenFoerderbedarfes">
-      <xs:annotation>
-         <xs:documentation>Zum Art des sonderpädagogischen Förderbedarfes kann jedes Bundesland eigene Codeliste verwenden. Die Codelisten können auf XBildung gehostet werden.</xs:documentation>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" type="xs:token" form="unqualified"/>
-            </xs:sequence>
-            <xs:attribute name="listURI" type="xs:anyURI" use="required"/>
-            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -501,7 +382,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -536,7 +417,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -591,9 +472,23 @@
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="Code.Auskunftssperre"/>
-   <xs:complexType name="Code.Faecherliste">
+   <xs:complexType name="Code.Fach">
       <xs:annotation>
-         <xs:documentation>XSchule stellt die Codeliste "Abiturfach" zur Verfügung. Das Vorgehen für andere Fächerlisten wird derzeit erarbeitet.</xs:documentation>
+         <xs:documentation>Wie im Kapitel beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden. XSchule stellt die Codeliste zur Verfügung.</xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:restriction base="xoev-code:Code">
+            <xs:sequence>
+               <xs:element name="code" type="xs:token" form="unqualified"/>
+            </xs:sequence>
+            <xs:attribute name="listURI" type="xs:anyURI" use="required"/>
+            <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
+         </xs:restriction>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Code.Foerderschwerpunkt">
+      <xs:annotation>
+         <xs:documentation>Wie im Kapitel beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden. XSchule stellt die Codeliste zur Verfügung.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
@@ -654,7 +549,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -687,7 +582,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -704,7 +599,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -737,7 +632,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -754,7 +649,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -787,13 +682,13 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="Code.Konfession">
       <xs:annotation>
-         <xs:documentation>Diese Codeliste kann verwendet werden, um die für den Schulbesuch relevanten Informationen zur Konfession junger Menschen zu erfassen. Da die Bundesländer unterschiedliche Listen verwenden, wird hier keine konkrete Codeliste vorgeschrieben.</xs:documentation>
+         <xs:documentation>XSchule stellt keine zentrale Codeliste zur Verfügung, um die für den Schulbesuch relevanten Informationen zur Konfession junger Menschen anzugeben. Wie im Kapitel beschrieben wird, muss diese Eigenschaft mit einer anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
@@ -818,7 +713,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -851,7 +746,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -868,7 +763,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -901,7 +796,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -918,7 +813,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -951,7 +846,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -968,7 +863,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1001,7 +896,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1018,7 +913,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <beschreibung>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich
 			handelt.</beschreibung>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -1055,7 +950,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1067,12 +962,12 @@
                <nameKurz>Verpflichtungsgrad</nameKurz>
                <nameTechnisch>Verpflichtungsgrad-Codes</nameTechnisch>
                <kennung>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad</kennung>
-               <beschreibung>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</beschreibung>
+               <beschreibung>Die Codeliste enhält die möglichen Verpflichtungsgrade besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK (4.0) für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden.</beschreibung>
                <herausgebernameLang>XSchule</herausgebernameLang>
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1105,7 +1000,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1122,7 +1017,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1155,7 +1050,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1172,7 +1067,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -1205,9 +1100,45 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="0.6"/>
+                          fixed="0.7"/>
          </xs:restriction>
       </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="Erweiterung">
+      <xs:annotation>
+         <xs:documentation>Ersteller von Nachweisen haben die Möglichkeit, diese durch dieses generische Schlüssel/Wert-Element zu erweitern. Dadurch können zusätzliche Informationen in Form von benutzerdefinierten Schlüssel/Wert-Paaren hinzugefügt werden, ohne die bestehende Struktur zu beeinträchtigen. Dadurch wird die Anpassung an individuelle Anforderungen erleichtert und gleichzeitig die Interoperabilität der Nachweise weitestgehend gewährleistet. So vorgenommene Erweiterungen müssen im Kontext ihrer Verwendung abgesprochen und dokumentiert werden, damit sie von Empfängern des Nachweises verstanden werden können. Soll die Eigenschaft zusammen mit einer Werteliste verwendet werden, funktioniert sie wie ein Typ-4-Code-Datentyp. Dann müssen also die Eigenschaften listURI und listVersionID angeben werden.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="eigenschaft" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:documentation>Konkrete Schlüssel/Wert-Paare mit zusätzlichen Informationen.</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="schluessel" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Der Schlüssel (Key) ist eine eindeutige Kennzeichnung, die verwendet wird, um auf einen bestimmten Wert zuzugreifen.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="wert" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Der Wert (Value) ist die eigentliche Information oder Daten, die mit einem bestimmten Schlüssel verknüpft sind. Er enthält die relevante Information, die gespeichert oder abgerufen werden soll.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+               <xs:attribute name="listURI" type="xs:anyURI" use="optional">
+                  <xs:annotation>
+                     <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.</xs:documentation>
+                  </xs:annotation>
+               </xs:attribute>
+               <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional">
+                  <xs:annotation>
+                     <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.</xs:documentation>
+                  </xs:annotation>
+               </xs:attribute>
+            </xs:complexType>
+         </xs:element>
+      </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Fehltage">
       <xs:annotation>
@@ -1236,12 +1167,24 @@
                <xs:documentation>Angabe der betrachteten Sprache. Dies erfolgt über die URI, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="abfolge"
-                     minOccurs="0"
-                     type="xsc:Code.AbfolgeDerFremdsprachen">
+         <xs:element name="abfolge" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Mit der Abfolge der Fremdsprachen kann festgehalten werden, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.AbfolgeDerFremdsprachen">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="beginn" minOccurs="0" type="xsc:Code.Jahrgangsstufe">
             <xs:annotation>
@@ -1270,7 +1213,7 @@
                <xs:documentation>Hier ist die Angabe zum erworbenen Sprachabschluss wie Latinum, Graecum oder Hebraecum möglich.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fach" minOccurs="0" type="xsc:Code.Abiturfach">
+         <xs:element name="fach" minOccurs="0" type="xsc:Code.Fach">
             <xs:annotation>
                <xs:documentation>Hier ist die Angabe zum Fach möglich.</xs:documentation>
             </xs:annotation>
@@ -1381,10 +1324,24 @@
          <xs:documentation>Hier können Angaben über den Impfschutz von jungen Menschen gemacht werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="impfschutz" type="xsc:Code.Impfschutz">
+         <xs:element name="impfschutz">
             <xs:annotation>
                <xs:documentation>Mit dem Impfschutz wird angegeben, ob ein junger Mensch geimpft wurde oder nicht, bzw. aus welchem Grund keine Angabe über die Impfung vorliegt.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.Impfschutz">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="krankheit" type="xsc:Code.Krankheit">
             <xs:annotation>
@@ -1491,7 +1448,7 @@
          <xs:element name="notenuebersichtUnterjaehrigerWechsel"
                      minOccurs="0"
                      maxOccurs="unbounded"
-                     type="xbd:Kurs">
+                     type="xsc:Schulkurs">
             <xs:annotation>
                <xs:documentation>Notenübersicht bei unterjährigem Wechsel.</xs:documentation>
             </xs:annotation>
@@ -1521,7 +1478,7 @@
          <xs:element name="fach"
                      minOccurs="0"
                      maxOccurs="unbounded"
-                     type="xsc:Code.Abiturfach">
+                     type="xsc:Code.Fach">
             <xs:annotation>
                <xs:documentation>Dieses Feld beinhaltet den Namen des Faches, in dem die Abiturprüfung abgelegt wurde.</xs:documentation>
             </xs:annotation>
@@ -1533,17 +1490,43 @@
                <xs:documentation>Die Leistung kann auf einem bestimmen Anforderungsniveau erbracht werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="verpflichtungsgrad"
-                     minOccurs="0"
-                     type="xsc:Code.Verpflichtungsgrad">
+         <xs:element name="verpflichtungsgrad" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Die Leistung kann mit einem bestimmen Verpflichtungsgrad erbracht werden.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.Verpflichtungsgrad">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="nachpruefung" minOccurs="0" type="xsc:Code.Nachpruefung">
+         <xs:element name="nachpruefung" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.Nachpruefung">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -1577,10 +1560,24 @@
                <xs:documentation>Datum des Eintritts in die Schullaufbahn.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="art" type="xsc:Code.ArtDerSchulaufnahme">
+         <xs:element name="art">
             <xs:annotation>
                <xs:documentation>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.ArtDerSchulaufnahme">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -1638,12 +1635,24 @@
                <xs:documentation>Schulbesuchsjahre innerhalb der Schuleingangsphase</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="teilnahmeGemeinsamerUnterricht"
-                     minOccurs="0"
-                     type="xsc:Code.TeilnahmeGemeinsamerUnterricht">
+         <xs:element name="teilnahmeGemeinsamerUnterricht" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Hier können Angaben dazu gemacht werden, ob der Unterricht zielgleich oder zieldifferent ist.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.TeilnahmeGemeinsamerUnterricht">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -1662,12 +1671,24 @@
                <xs:documentation>Hier kann angegeben werden, ob der Schulwechsel mit einer Versetzung verbunden ist.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="versetzungsOderAusnahmetatbestandstyp"
-                     minOccurs="0"
-                     type="xsc:Code.Versetzungstyp">
+         <xs:element name="versetzungsOderAusnahmetatbestandstyp" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen oder zu Ausnahmetatbeständen im Fall keiner Versetzung gemacht.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.Versetzungstyp">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="teilnahmeAmGanztagsangebot" minOccurs="0" type="xs:boolean">
             <xs:annotation>
@@ -1699,15 +1720,29 @@
       <xs:complexContent>
          <xs:extension base="xbd:Kurs">
             <xs:sequence>
-               <xs:element name="aufgabenfeld" minOccurs="0" type="xsc:Code.Aufgabenfeld">
+               <xs:element name="aufgabenfeld" minOccurs="0">
                   <xs:annotation>
                      <xs:documentation>Die Pflicht- und Wahlfächer umfassen verschiedene Aufgabenfelder. Für den Unterricht in Religionslehre bzw. im Ersatzfach gelten jeweils die Bestimmungen der Länder.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:sequence>
+                        <xs:element name="code" type="xsc:Code.Aufgabenfeld">
+                           <xs:annotation>
+                              <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                           </xs:annotation>
+                        </xs:element>
+                        <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                           <xs:annotation>
+                              <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                           </xs:annotation>
+                        </xs:element>
+                     </xs:sequence>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="fach"
                            minOccurs="0"
                            maxOccurs="unbounded"
-                           type="xsc:Code.Abiturfach">
+                           type="xsc:Code.Fach">
                   <xs:annotation>
                      <xs:documentation>Der Schlüsselwert der Leistung.</xs:documentation>
                   </xs:annotation>
@@ -1719,12 +1754,24 @@
                      <xs:documentation>Die Leistung kann auf einem bestimmen Anforderungsniveau erbracht werden.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="verpflichtungsgrad"
-                           minOccurs="0"
-                           type="xsc:Code.Verpflichtungsgrad">
+               <xs:element name="verpflichtungsgrad" minOccurs="0">
                   <xs:annotation>
                      <xs:documentation>Die Leistung kann mit einem bestimmen Verpflichtungsgrad erbracht werden.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:sequence>
+                        <xs:element name="code" type="xsc:Code.Verpflichtungsgrad">
+                           <xs:annotation>
+                              <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                           </xs:annotation>
+                        </xs:element>
+                        <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                           <xs:annotation>
+                              <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                           </xs:annotation>
+                        </xs:element>
+                     </xs:sequence>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="halbjahr" type="xsc:Code.Halbjahr">
                   <xs:annotation>
@@ -1763,12 +1810,24 @@
                <xs:documentation>Hier wird der Beginn der Schulpflicht für junge Menschen dokumentiert, um die Überwachung der Schulpflichtzeit zu ermöglichen.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="schullaufbahnempfehlung"
-                     minOccurs="0"
-                     type="xsc:Code.Laufbahnempfehlung">
+         <xs:element name="schullaufbahnempfehlung" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Diese Codeliste zeigt die Laufbahnempfehlung für die Sekundarstufe I an.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.Laufbahnempfehlung">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="schulaufnahme" minOccurs="0" type="xsc:Schulaufnahme">
             <xs:annotation>
@@ -1798,7 +1857,7 @@
          <xs:documentation>Hier können die Angaben zum sonderpädagogischen Förderbedarf gemacht werden.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="art" type="xsc:Code.ArtDesSonderpaedagogischenFoerderbedarfes">
+         <xs:element name="art" type="xbd:String.Localized">
             <xs:annotation>
                <xs:documentation>Angaben zur Art des sonderpädagogischen Förderbedarfes.</xs:documentation>
             </xs:annotation>
@@ -1806,7 +1865,7 @@
          <xs:element name="schwerpunkt"
                      minOccurs="0"
                      maxOccurs="unbounded"
-                     type="xbd:String.Localized">
+                     type="xsc:Code.Foerderschwerpunkt">
             <xs:annotation>
                <xs:documentation>Angaben zum Schwerpunkt des sonderpädagogischen Förderbedarfes.</xs:documentation>
             </xs:annotation>
@@ -1863,7 +1922,7 @@
          <xs:element name="fach"
                      minOccurs="0"
                      maxOccurs="unbounded"
-                     type="xsc:Code.Faecherliste">
+                     type="xsc:Code.Fach">
             <xs:annotation>
                <xs:documentation>Ein Schlüssel einer oder mehrerer Fächerlisten.</xs:documentation>
             </xs:annotation>
@@ -1875,10 +1934,24 @@
                <xs:documentation>Hier steht der Name der Arbeitsgemeinschaft, an der teilgenommen wurde.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="art" minOccurs="0" type="xsc:Code.ArtDerUnterrichtsteilnahme">
+         <xs:element name="art" minOccurs="0">
             <xs:annotation>
                <xs:documentation>Hier kann eine Bemerkung zu Freistellung, Wahl-, Pflichtteilnahme erfolgen.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:sequence>
+                  <xs:element name="code" type="xsc:Code.ArtDerUnterrichtsteilnahme">
+                     <xs:annotation>
+                        <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                     <xs:annotation>
+                        <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:complexType>
          </xs:element>
          <xs:element name="nichtteilnahmeAmUnterricht" minOccurs="0" type="xs:boolean">
             <xs:annotation>
@@ -1904,12 +1977,20 @@
       <xs:complexContent>
          <xs:extension base="xbd:NatuerlichePerson">
             <xs:sequence>
-               <xs:element name="kontaktmoeglichkeit"
+               <xs:element name="sonderpaedagogischerFoerderbedarf"
                            minOccurs="0"
                            maxOccurs="unbounded"
-                           type="xbd:Kommunikation">
+                           type="xsc:SonderpaedagogischerFoerderbedarf">
                   <xs:annotation>
-                     <xs:documentation>Die Kontaktmöglichkeit fasst Angaben über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</xs:documentation>
+                     <xs:documentation>Mit diesem Element können die Daten zum sonderpädagogischen Förderbedarf übermittelt werden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="impfung"
+                           minOccurs="0"
+                           maxOccurs="unbounded"
+                           type="xsc:ImpfnachweisVorhanden">
+                  <xs:annotation>
+                     <xs:documentation>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des jungen Menschen mitgeteilt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="herkunftssprache"
@@ -1928,16 +2009,6 @@
                      <xs:documentation>Hier kann die Sprache angegeben werden, die vorrangig im Haushalt des jungen Menschen gesprochen wird. Es ist die URI zu verwenden, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="schulform" minOccurs="0" type="xbd:Code.ArtDerSchule">
-                  <xs:annotation>
-                     <xs:documentation>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="bildungsgang" minOccurs="0" type="xbd:String.Localized">
-                  <xs:annotation>
-                     <xs:documentation>Dieses Feld beinhaltet den Bildungsgang, der an der abgebenden Schule zuletzt besucht wurde. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Hinweis: Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="migrationshintergrund"
                            minOccurs="0"
                            type="xsc:Migrationshintergrund">
@@ -1945,22 +2016,24 @@
                      <xs:documentation>Der Migrationshintergrund junger Menschen ist für den Schulwechsel insbesondere für statistische Zwecke wichtig.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="schulprofil" minOccurs="0" type="xbd:String.Localized">
-                  <xs:annotation>
-                     <xs:documentation>Als Schulprofil wird ein besonderer Bildungsschwerpunkt der besuchten Schule verstanden, wenn sich dieser zum Beispiel auf das Vorhandensein und die Intensität bestimmter Fächer im Lehrplan auswirkt. Hinweis: Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="schuelerReisender" minOccurs="0" type="xsc:ReisenderSchueler">
                   <xs:annotation>
                      <xs:documentation>Befinden sich junge Menschen aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen, müssen hier zusätzliche Angaben gemacht werden.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="impfung"
-                           minOccurs="0"
-                           maxOccurs="unbounded"
-                           type="xsc:ImpfnachweisVorhanden">
+               <xs:element name="schulform" minOccurs="0" type="xbd:Code.ArtDerSchule">
                   <xs:annotation>
-                     <xs:documentation>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des jungen Menschen mitgeteilt.</xs:documentation>
+                     <xs:documentation>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="schulprofil" minOccurs="0" type="xbd:String.Localized">
+                  <xs:annotation>
+                     <xs:documentation>Als Schulprofil wird ein besonderer Bildungsschwerpunkt der besuchten Schule verstanden, wenn sich dieser zum Beispiel auf das Vorhandensein und die Intensität bestimmter Fächer im Lehrplan auswirkt. Hinweis: Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="bildungsgang" minOccurs="0" type="xbd:String.Localized">
+                  <xs:annotation>
+                     <xs:documentation>Dieses Feld beinhaltet den Bildungsgang, der an der abgebenden Schule zuletzt besucht wurde. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Hinweis: Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element name="auskunftssperreGueltigkeit"
@@ -1969,14 +2042,6 @@
                            type="xbd:Zeitraum">
                   <xs:annotation>
                      <xs:documentation>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum jungen Mensch übermittelt.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="sonderpaedagogischerFoerderbedarf"
-                           minOccurs="0"
-                           maxOccurs="unbounded"
-                           type="xsc:SonderpaedagogischerFoerderbedarf">
-                  <xs:annotation>
-                     <xs:documentation>Mit diesem Element können die Daten zum sonderpädagogischen Förderbedarf übermittelt werden.</xs:documentation>
                   </xs:annotation>
                </xs:element>
             </xs:sequence>
@@ -1996,7 +2061,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -2017,819 +2082,42 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/1_fremdsprache">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/1_fremdsprache">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>1. Fremdsprache</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/2_fremdsprache">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/2_fremdsprache">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>2. Fremdsprache</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/3_fremdsprache">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/3_fremdsprache">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>3. Fremdsprache</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/abfolgederfremdsprachen/~wert_nicht_uebermittelbar_rechtliche_gruende">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="Abiturfach-Codes">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Abiturfach</nameLang>
-               <nameKurz>Abiturfach</nameKurz>
-               <nameTechnisch>Abiturfach-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:kmk:codeliste:abiturfach</kennung>
-               <beschreibung>Diese Liste enthält von der KMK beschlossene Abiturfächer. Sie basiert auf den KMK-Dokumenten "Liste über Verabschiedung und Inkrafttreten der einzelnen EPA" und dem "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten (Version 4.0)". Die Listen wurden vom XSchule-Projekt zusammengeführt und die Fächer auf ISCED-F und Fremdsprachen gemappt. Sie wird zusätzlich online zur Verfügung gestellt. Link zur Webseite: https://xschule.digital/web/kmk_abiturfaecher_de</beschreibung>
-               <herausgebernameLang>Kultusministerkonferenz</herausgebernameLang>
-               <herausgebernameKurz>KMK</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>2019</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Fachbezeichnung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-               <mapping-ISCEDF2013-URI>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>optional</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-ISCEDF2013-URI>
-               <description-en-GB>
-                  <spaltennameLang>Subject Designation</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-en-GB>
-               <mapping-ISOLanguage-URI>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>optional</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </mapping-ISOLanguage-URI>
-            </codelistenspalten>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/100">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Biologie</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0511</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Biology</description-en-GB>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1000">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Russisch-orthodoxe Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1020">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/SWE</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Schwedisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1040">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/DSB</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Sorbisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1060">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/HSB</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Sorbisch/Wendisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1080">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0312</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Sozialkunde/Politik</description-de-DE>
-                  <description-en-GB>Political sciences and civics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1100">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0319</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Sozialwissenschaften</description-de-DE>
-                  <description-en-GB>Social and behavioural sciences</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1120">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0314</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Soziologie</description-de-DE>
-                  <description-en-GB>Sociology and cultural studies</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1140">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/SPA</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Spanisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1160">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/1014</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Sport</description-de-DE>
-                  <description-en-GB>Sports</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1180">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0799</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Technik</description-de-DE>
-                  <description-en-GB>Engineering, manufacturing and construction</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/120">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Chemie</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0531</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Chemistry</description-en-GB>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1200">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Tschechisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/CES</mapping-ISOLanguage-URI>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1220">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Türkisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/TUR</mapping-ISOLanguage-URI>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1240">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Ungarisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/HUN</mapping-ISOLanguage-URI>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1260">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wirtschaft</description-de-DE>
-                  <description-en-GB>Economics</description-en-GB>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0311</mapping-ISCEDF2013-URI>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/1280">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wirtschaftsinformatik</description-de-DE>
-                  <description-en-GB>Information and Communication Technologies</description-en-GB>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0619</mapping-ISCEDF2013-URI>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/140">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Chinesisch</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Language acquisition</description-en-GB>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/ZHO</mapping-ISOLanguage-URI>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/160">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/DAN</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Dänisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/180">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0215</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Darstellendes Spiel</description-de-DE>
-                  <description-en-GB>Music and performing arts</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/200">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/DEU</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0232</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Deutsch</description-de-DE>
-                  <description-en-GB>Literature and linguistics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/220">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/ENG</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Englisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/240">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0510</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Ernährung</description-de-DE>
-                  <description-en-GB>Biological and related sciences</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/260">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0111</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Erziehungswissenschaft</description-de-DE>
-                  <description-en-GB>Education science</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/280">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0188</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Erziehungswissenschaften (Pädagogik/Psychologie)</description-de-DE>
-                  <description-en-GB>Inter-disciplinary programmes and qualifications involving education</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/300">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0223</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Ethik</description-de-DE>
-                  <description-en-GB>Philosophy and ethics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/320">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Evangelische Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/340">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/PES</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Farsi</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/360">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/FRA</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Französisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/380">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0532</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Geographie</description-de-DE>
-                  <description-en-GB>Earth Sciences</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/40">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Agrartechnik mit Biologie</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0810</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Agriculture</description-en-GB>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/400">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0532</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Geologie</description-de-DE>
-                  <description-en-GB>Earth Sciences</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/420">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0222</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Geschichte</description-de-DE>
-                  <description-en-GB>History and archaeology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/440">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0910</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Gesundheit</description-de-DE>
-                  <description-en-GB>Health</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/460">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/ELL</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Griechisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/480">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Griechisch-orthodoxe Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/500">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/HEB</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Hebräisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/520">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0611</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Informatik</description-de-DE>
-                  <description-en-GB>Computer use</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/540">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Islamischer Religionsunterricht</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/560">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Israelitische Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/580">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/ITA</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Italienisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/60">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Arabisch</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Language acquisition</description-en-GB>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/ARA</mapping-ISOLanguage-URI>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/600">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/JPN</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Japanisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/620">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Jüdische Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/640">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0221</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Katholische Religionslehre</description-de-DE>
-                  <description-en-GB>Religion and theology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/660">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0213</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Kunst</description-de-DE>
-                  <description-en-GB>Fine arts</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/680">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/LAT</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0232</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Latein</description-de-DE>
-                  <description-en-GB>Literature and linguistics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/700">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/LAV</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Lettisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/720">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/LIT</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Litauisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/740">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0541</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Mathematik</description-de-DE>
-                  <description-en-GB>Mathematics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/760">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0215</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Musik</description-de-DE>
-                  <description-en-GB>Music and performing arts</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/780">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/GRC</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Neugriechisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/80">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Bautechnik</description-de-DE>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0730</mapping-ISCEDF2013-URI>
-                  <description-en-GB>Architecture and construction</description-en-GB>
-                  <mapping-ISOLanguage-URI/>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/800">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/NDS</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Niederdeutsch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/820">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/NLD</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Niederländisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/840">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0223</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Philosophie</description-de-DE>
-                  <description-en-GB>Philosophy and ethics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/860">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0533</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Physik</description-de-DE>
-                  <description-en-GB>Physics</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/880">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/POL</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Polnisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/900">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>http://publications.europa.eu/resource/authority/language/POR</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Portugiesisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/920">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0313</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Psychologie</description-de-DE>
-                  <description-en-GB>Psychology</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/940">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI/>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0421</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Recht</description-de-DE>
-                  <description-en-GB>Law</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/960">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/RON</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Rumänisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/2019/code/abiturfach/980">
-            <xs:annotation>
-               <xs:appinfo>
-                  <mapping-ISOLanguage-URI>https://publications.europa.eu/resource/authority/language/RUS</mapping-ISOLanguage-URI>
-                  <mapping-ISCEDF2013-URI>http://data.europa.eu/snb/isced-f/0231</mapping-ISCEDF2013-URI>
-                  <description-de-DE>Russisch</description-de-DE>
-                  <description-en-GB>Language acquisition</description-en-GB>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="Anforderungsniveau-Codes">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>Anforderungsniveau</nameLang>
-               <nameKurz>Anforderungsniveau</nameKurz>
-               <nameTechnisch>Anforderungsniveau-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:xschule:codeliste:anforderungsniveau</kennung>
-               <beschreibung>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</beschreibung>
-               <herausgebernameLang>XSchule</herausgebernameLang>
-               <herausgebernameKurz>XSchule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>0.6</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Anforderungsniveau</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>E-Kurs, (Erweiterter Kurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>erhöhtes Anforderungsniveau (früher Leistungskurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>G-Kurs, (Grundkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>grundlegendes Anforderungsniveau (früher: Grundkurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/z-kurs">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Z-Kurs, (Zusatzkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_bekannt">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wert nicht bekannt</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_in_liste">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Wert nicht in Liste</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
@@ -2851,7 +2139,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -2872,63 +2160,63 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/10">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/10">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freie Formulierung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/20">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/20">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>sonstige standardisierte Bemerkung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/25">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/25">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Äquivalenzbemerkung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/28">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Rechtsgrundlage</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/30">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/30">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Arbeitsgemeinschaft</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/40">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/40">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>allgemeine Beurteilung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/50">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/50">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>schulisches Engagement</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/55">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/55">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>außerschulisches Engagement</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderbemerkung/60">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderbemerkung/60">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Befreiung</description-de-DE>
@@ -3274,7 +2562,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3295,77 +2583,77 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_mit_inklusion">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/einschulung_mit_inklusion">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung mit Inklusion</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung nach Zurückstellung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung Schule freier Trägerschaft</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/regeleinschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/regeleinschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Regeleinschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Schulwechsel (außerhalb Schulbezirk)</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/vorzeitige_einschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/vorzeitige_einschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorzeitige Einschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/zurueckstellung_erfolgt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/zurueckstellung_erfolgt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung erfolgt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/zurueckstellung_gewuenscht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/zurueckstellung_gewuenscht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung gewünscht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
@@ -3387,7 +2675,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3408,28 +2696,28 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/freigestellt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderunterrichtsteilnahme/freigestellt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freigestellt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/freiwillig">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderunterrichtsteilnahme/freiwillig">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freiwillig</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/verpflichtend">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderunterrichtsteilnahme/verpflichtend">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>verpflichtend</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artderunterrichtsteilnahme/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artderunterrichtsteilnahme/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -3451,7 +2739,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3473,42 +2761,42 @@
          <xs:documentation>Diese Liste gibt die Art der zusätzlichen Sprachprüfung im Abitur an.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/graecum">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/graecum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Graecum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/hebraicum_alt_und_neusprachlich">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/hebraicum_alt_und_neusprachlich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Alt- und Neusprachliches Hebraicum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/hebraicum_altsprachlich">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/hebraicum_altsprachlich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Altsprachliches Hebraicum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/latinum">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/latinum">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Latinum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/latinum_gross">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/latinum_gross">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Großes Latinum</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/artweiterersprachkenntnisse/latinum_klein">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/artweiterersprachkenntnisse/latinum_klein">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Kleines Latinum</description-de-DE>
@@ -3551,38 +2839,31 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10">
+         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>Sprachlich-literarisch-künstlerisches Aufgabenfeld</description-de-DE>
+                  <description-de-DE>gesellschaftswissenschaftliches Aufgabenfeld</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20">
+         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>Gesellschaftswissenschaftliches Aufgabenfeld</description-de-DE>
+                  <description-de-DE>mathematisch-naturwissenschaftlich-technisches Aufgabenfeld</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30">
+         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>Mathematisch-naturwissenschaftlich technisches Aufgabenfeld</description-de-DE>
+                  <description-de-DE>ohne Zuordnung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/40">
+         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk">
             <xs:annotation>
                <xs:appinfo>
-                  <description-de-DE>Facharbeit</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/kmk/1974/code/aufgabenfeld/50">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Besondere Lernleistung</description-de-DE>
+                  <description-de-DE>sprachlich-literarisch-künstlerisches Aufgabenfeld</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
@@ -3608,7 +2889,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3629,21 +2910,21 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>1. Halbjahr</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>2. Halbjahr</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/halbjahr/ganzes_jahr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Ganzes Jahr</description-de-DE>
@@ -3665,7 +2946,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3686,35 +2967,35 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/impfschutz/nicht_vorhanden">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/impfschutz/nicht_vorhanden">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>nicht vorhanden</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/impfschutz/vorhanden">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/impfschutz/vorhanden">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorhanden</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/impfschutz/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/impfschutz/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/impfschutz/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/impfschutz/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/impfschutz/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/impfschutz/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
@@ -3736,7 +3017,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3757,175 +3038,175 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/einfuehrungsphase">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/einfuehrungsphase">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einführungsphase</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_0">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_0">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 0</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_1">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 1</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_10">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 10</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_11">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_11">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 11</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_12">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_12">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 12</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_13">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_13">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 13</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_2">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 2</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_3">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 3</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_4">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_4">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 4</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_5">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_5">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 5</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_6">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_6">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 6</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_7">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_7">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 7</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_8">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_8">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 8</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_9">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_9">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsstufe 9</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/nicht_zugeordnet">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/nicht_zugeordnet">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>keiner Jahrgangsstufe zugeordnet</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Qualifikationsphase 1</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Qualifikationsphase 2</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_3">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_3">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Qualifikationsphase 3</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_4">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_4">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Qualifikationsphase 4</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/uebergreifend_primar">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/uebergreifend_primar">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsübergreifende Primarstufe</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/uebergreifend_primar_sekundar_I">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/uebergreifend_primar_sekundar_I">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsübergreifende Primar- und Sekundarstufe I</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/uebergreifend_sekundar_I">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/uebergreifend_sekundar_I">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsübergreifende Sekundarstufe I</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/uebergreifend_sekundar_II">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/uebergreifend_sekundar_II">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsübergreifende Sekundarstufe II</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/uebergreifend_sekundar_I_II">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/uebergreifend_sekundar_I_II">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahrgangsübergreifende Sekundarstufe I und II</description-de-DE>
@@ -3947,7 +3228,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3968,7 +3249,7 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/krankheit/masern">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/krankheit/masern">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Masern</beschreibung>
@@ -3990,7 +3271,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4011,98 +3292,98 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/beobachtungsstufeGymnasium">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/beobachtungsstufeGymnasium">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Beobachtungsstufe des Gymnasiums</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/eingeschraenkteWahlDerSchulart">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/eingeschraenkteWahlDerSchulart">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Hauptschule oder Realschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/freieWahlDerSchulart">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/freieWahlDerSchulart">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Hauptschule oder Realschule oder Gymnasium</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/gesamtschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/gesamtschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Gesamtschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/gymnasium">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/gymnasium">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Gymnasium</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/hauptschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/hauptschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Hauptschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/mittelschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/mittelschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Mittelschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/oberschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/oberschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Oberschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/orientierungsstufe">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/orientierungsstufe">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Orientierungsstufe</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/realschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/realschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Realschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/regionaleSchule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/regionaleSchule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Regionale Schule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/wirtschaftsschule">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/wirtschaftsschule">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Wirtschaftsschule</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Wert nicht bekannt</beschreibung>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/laufbahnempfehlung/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <beschreibung>Wert nicht in Liste</beschreibung>
@@ -4124,7 +3405,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4145,28 +3426,28 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachpruefung/freiwillige_nachpruefung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachpruefung/freiwillige_nachpruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freiwillige Nachprüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachpruefung/verpflichtende_nachpruefung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachpruefung/verpflichtende_nachpruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>verpflichtende Nachprüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachpruefung/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachpruefung/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachpruefung/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachpruefung/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -4188,7 +3469,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4209,35 +3490,35 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachweisperiode/halbjahr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachweisperiode/halbjahr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Halbjahr</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachweisperiode/jahr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachweisperiode/jahr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahr</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachweisperiode/semester">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachweisperiode/semester">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Semester</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachweisperiode/trimester">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachweisperiode/trimester">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Trimester</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/nachweisperiode/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/nachweisperiode/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -4259,7 +3540,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <beschreibung>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich
 			handelt.</beschreibung>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
@@ -4282,35 +3563,35 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/zieldifferent">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/zieldifferent">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zieldifferent</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/zielgleich">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/zielgleich">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zielgleich</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/teilnahmegemeinsamerunterricht/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
@@ -4327,12 +3608,12 @@
                <nameKurz>Verpflichtungsgrad</nameKurz>
                <nameTechnisch>Verpflichtungsgrad-Codes</nameTechnisch>
                <kennung>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad</kennung>
-               <beschreibung>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</beschreibung>
+               <beschreibung>Die Codeliste enhält die möglichen Verpflichtungsgrade besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK (4.0) für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden.</beschreibung>
                <herausgebernameLang>XSchule</herausgebernameLang>
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4353,56 +3634,56 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/foerderunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/foerderunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Förderunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/freiwilliger_unterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/freiwilliger_unterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freiwilliger Unterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/kompensationsunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/kompensationsunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Kompensationsunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Pflichtunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlpflichtunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wahlunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/zusatzunterricht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/zusatzunterricht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zusatzunterricht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
@@ -4424,7 +3705,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4445,84 +3726,84 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/aufruecken">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/aufruecken">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Aufrücken</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>freiwillige Wiederholung (Rückversetzung)</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/keine_versetzung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/keine_versetzung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>keine Versetzung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Keine Versetzung und keine Nachprüfung mehr</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/schulformwechsel_ohne_versetzung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/schulformwechsel_ohne_versetzung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Schulformwechsel ohne Versetzung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/versetzung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Versetzung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/versetzung_auf_probe">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_auf_probe">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Versetzung auf Probe</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/versetzung_durch_konferenzbeschluss">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_durch_konferenzbeschluss">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Versetzung durch Konferenzbeschluss</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/versetzung_mit_nachpruefung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_mit_nachpruefung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Versetzung mit Nachprüfung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/versetzungstyp/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
@@ -4544,7 +3825,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>0.6</version>
+               <version>0.7</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -4565,42 +3846,42 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/abgangszeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/abgangszeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Abgangszeugnis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/abschlusszeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/abschlusszeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Abschlusszeugnis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/halbsjahreszeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/halbsjahreszeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Halbjahreszeugnis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/jahreszeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/jahreszeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Jahreszeugnis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/vorlaeufiges_zeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/vorlaeufiges_zeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Vorläufiges Zeugnis</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/0.6/code/zeugnisart/zwischenzeugnis">
+         <xs:enumeration value="http://xschule.digital/def/xschule/0.7/code/zeugnisart/zwischenzeugnis">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zwischenzeugnis</description-de-DE>

@@ -15,7 +15,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="86"
+                       scale="73"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.zeugnis.0003.svg"/>
          </imageobject>
       </mediaobject>
@@ -113,11 +113,28 @@
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">nachweisperiode</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.Nachweisperiode</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode"
@@ -129,8 +146,51 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</para></entry>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nachweiszeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Zeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Erlaubt den Zeitraum, auf den sich das Zeugnis bezieht, mit Start- und Enddatum anzugeben. Hinweis: Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -157,7 +217,7 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">niveau</emphasis>
+                  <emphasis role="bold">niveauEQR</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Code.EQF</emphasis>
@@ -174,7 +234,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden. Diese Angaben beziehen sich auf die Niveaus des  Europäischen Qualifikationsrahmens (EQR).</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -341,50 +401,6 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">kurs</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Schulkurs</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Schulkurs" role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Schulkurs" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Fasst alle Angaben zu den belegten Schulkursen des jungen Menschs zusammen.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">pruefung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Pruefungsergebnis</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Pruefungsergebnis" role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Pruefungsergebnis" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
                   <emphasis role="bold">bezeichnung</emphasis>
                </entry>
                <entry>
@@ -423,8 +439,52 @@
                </entry>
             </row>
             <row>
-               <entry rowsep="1" colsep="1"/>
+               <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier die Beschreibung dieses Blocks angegeben werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">kurs</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Schulkurs</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Schulkurs" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Schulkurs" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Fasst alle Angaben zu den belegten Schulkursen des jungen Menschs zusammen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">pruefung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Pruefungsergebnis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Pruefungsergebnis" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Pruefungsergebnis" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -439,6 +499,51 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Die kombinierte Bewertung erlaubt eine flexible Erstellung verschiedener „Gesamtnoten“.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">bezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier die Bezeichnung dieser kombinierten Bewertung angegeben werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier beschrieben werden, wie die kombinierte Bewertung berechnet wird.</para>
+<para>Um die einbezogenen Kurse zu kennzeichnen, sind auch die Eigenschaften kursart und berechnungsgrundlage zu nutzen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -491,11 +596,28 @@
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">verpflichtungsgrad</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Die kombinierte Bewertung kann evtl. mit einem bestimmen Verpflichtungsgrad erbracht werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.Verpflichtungsgrad</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
@@ -507,53 +629,29 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die kombinierte Bewertung kann evtl. mit einem bestimmen Verpflichtungsgrad erbracht werden.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">bezeichnung</emphasis>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">xs:string</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
+               <entry/>
+               <entry/>
             </row>
             <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier die Bezeichnung dieser kombinierten Bewertung angegeben werden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">beschreibung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
+               <entry rowsep="1" colsep="0"/>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier beschrieben werden, wie die kombinierte Bewertung berechnet wird.</para>
-<para>Um die einbezogenen Kurse zu kennzeichnen, sind auch die Eigenschaften kursart und berechnungsgrundlage zu nutzen.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -635,6 +733,23 @@
             <row>
                <entry namest="indent0" nameend="page"><para>Als Bemerkung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen erfasst werden.</para></entry>
             </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ds:Signature</emphasis> (ref)</entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle." role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann eine digitale Signatur angegeben werden.</para></entry>
+            </row>
          </tbody>
       </tgroup>
    </informaltable>
@@ -653,68 +768,34 @@
             </thead>
             <tbody>
                <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;V&#x200B;o&#x200B;r&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Vorname vom Zeugnisinhabenden muss angegeben sein.</entry>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:vorname[1]/xbd:name[1]))</emphasis>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                      </para>
                   </entry>
                </row>
                <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;F&#x200B;a&#x200B;m&#x200B;i&#x200B;l&#x200B;i&#x200B;e&#x200B;n&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Familienname vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:familienname[1]/xbd:name[1]))</emphasis>
-                     </para>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:block-i/xsc:kurs/xsc:verpflichtungsgrad</emphasis>
                   </entry>
                </row>
                <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-                  <entry>Der Geburtsort vom Zeugnisinhabenden muss angegeben sein.</entry>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;G&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:geburtsort[1]/xbd:ort[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;t&#x200B;a&#x200B;g&#x200B;</entry>
-                  <entry>Das Geburtsdatum vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:datum[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;W&#x200B;o&#x200B;h&#x200B;n&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-                  <entry>Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;B&#x200B;i&#x200B;l&#x200B;d&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;e&#x200B;i&#x200B;n&#x200B;r&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;N&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Name der Bildungseinrichtung, die das Zeugnis ausstellt, muss angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schule[1]/xbd:name[1]/xbd:name[1]))</emphasis>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                      </para>
                   </entry>
                </row>

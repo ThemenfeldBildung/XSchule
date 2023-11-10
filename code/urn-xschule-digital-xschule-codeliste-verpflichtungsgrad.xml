@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Verpflichtungsgrad</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste enhält die möglichen Verpflichtungsgrade besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK (4.0) für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Die Teilnahme an einer Arbeitsgemeinschaft muss als strukturierte Bemerkung (Seite ) modelliert werden.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Verpflichtungsgrad-Codes</ShortName>
       <LongName>Verpflichtungsgrad</LongName>
-      <Version>0.6</Version>
+      <Version>0.7</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad_0.6</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:verpflichtungsgrad_0.7</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/foerderunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/foerderunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Förderunterricht</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/freiwilliger_unterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/freiwilliger_unterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freiwilliger Unterricht</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/kompensationsunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/kompensationsunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Kompensationsunterricht</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Pflichtunterricht</SimpleValue>
@@ -75,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlpflichtunterricht</SimpleValue>
@@ -83,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wahlunterricht</SimpleValue>
@@ -91,7 +91,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/zusatzunterricht</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/zusatzunterricht</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Zusatzunterricht</SimpleValue>
@@ -99,7 +99,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

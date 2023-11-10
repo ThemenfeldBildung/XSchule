@@ -37,9 +37,9 @@
    <para>Die Namen der Code-Datentypen und der Codelisten stellen Links zu den jeweiligen Detail-Abschnitten dar.</para>
    <informaltable version="5" xml:lang="de" xml:id="code-uebersichtstabelle">
       <tgroup cols="4">
-         <colspec colnum="1" colname="code" colwidth="74mm"/>
-         <colspec colnum="2" colname="codeliste" colwidth="65mm"/>
-         <colspec colnum="3" colname="version" colwidth="14mm"/>
+         <colspec colnum="1" colname="code" colwidth="64mm"/>
+         <colspec colnum="2" colname="codeliste" colwidth="55mm"/>
+         <colspec colnum="3" colname="version" colwidth="34mm"/>
          <colspec colnum="4" colname="nutzung" colwidth="7mm"/>
          <thead>
             <row>
@@ -59,18 +59,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.abfolgederfremdsprachen.AbfolgeDerFremdsprachen-Codes">Abfolge der Fremdsprachen</link>
                </entry>
-               <entry align="left">0.6</entry>
-               <entry align="left">1</entry>
-            </row>
-            <row>
-               <entry align="left">
-                  <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Abiturfach">Code.Abiturfach</link>
-               </entry>
-               <entry align="left">
-                  <link role="schwarz"
-                        linkend="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes">Abiturfach</link>
-               </entry>
-               <entry align="left">2019</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -78,12 +67,9 @@
                   <link role="schwarz"
                         linkend="XSchule.Baukasten.Codes.Code.Anforderungsniveau">Code.Anforderungsniveau</link>
                </entry>
-               <entry align="left">
-                  <link role="schwarz"
-                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.anforderungsniveau.Anforderungsniveau-Codes">Anforderungsniveau</link>
-               </entry>
-               <entry align="left">0.6</entry>
-               <entry align="left">1</entry>
+               <entry align="left">--</entry>
+               <entry align="left">--</entry>
+               <entry align="left">4</entry>
             </row>
             <row>
                <entry align="left">
@@ -93,7 +79,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderbemerkung.ArtDerBemerkung-Codes">Art der Bemerkung</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -116,7 +102,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.ArtDerSchulaufnahme-Codes">Art der Schulaufnahme</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -128,17 +114,8 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.ArtDerUnterrichtsteilnahme-Codes">Art der Unterrichtsteilnahme</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
-            </row>
-            <row>
-               <entry align="left">
-                  <link role="schwarz"
-                        linkend="XSchule.Baukasten.Codes.Code.ArtDesSonderpaedagogischenFoerderbedarfes">Code.ArtDesSonderpaedagogischenFoerderbedarfes</link>
-               </entry>
-               <entry align="left">--</entry>
-               <entry align="left">--</entry>
-               <entry align="left">4</entry>
             </row>
             <row>
                <entry align="left">
@@ -149,7 +126,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artweiterersprachkenntnisse.ArtWeitererSprachkenntnisse-Code">Art weiterer Sprachkenntnisse</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -165,7 +142,16 @@
             </row>
             <row>
                <entry align="left">
-                  <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Faecherliste">Code.Faecherliste</link>
+                  <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Fach">Code.Fach</link>
+               </entry>
+               <entry align="left">--</entry>
+               <entry align="left">--</entry>
+               <entry align="left">4</entry>
+            </row>
+            <row>
+               <entry align="left">
+                  <link role="schwarz"
+                        linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt">Code.Foerderschwerpunkt</link>
                </entry>
                <entry align="left">--</entry>
                <entry align="left">--</entry>
@@ -191,7 +177,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.halbjahr.Halbjahr-Codes">Halbjahr</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -202,7 +188,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.impfschutz.Impfschutz-Codes">Impfschutz</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -213,7 +199,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.jahrgangsstufe.Jahrgangsstufe-Codes">Jahrgangsstufe</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -232,7 +218,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.krankheit.Krankheit-Codes">Krankheit</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -244,7 +230,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.laufbahnempfehlung.Laufbahnempfehlung-Codes">Laufbahnempfehlung</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -255,7 +241,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachpruefung.Nachpruefung-Codes">Nachprüfung</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -266,7 +252,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachweisperiode.Nachweisperiode-Codes">Nachweisperiode</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -278,7 +264,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.teilnahmegemeinsamerunterricht.TeilnahmeGemeinsamerUnterricht-Codes">Teilnahme gemeinsamer Unterricht</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -290,7 +276,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.verpflichtungsgrad.Verpflichtungsgrad-Codes">Verpflichtungsgrad</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -301,7 +287,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.versetzungstyp.Versetzungstyp-Codes">Versetzungstyp</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
             <row>
@@ -312,7 +298,7 @@
                   <link role="schwarz"
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.zeugnisart.Zeugnisart-Codes">Zeugnisart</link>
                </entry>
-               <entry align="left">0.6</entry>
+               <entry align="left">0.7</entry>
                <entry align="left">1</entry>
             </row>
          </tbody>

@@ -5,10 +5,12 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.Faecherliste"
+         xml:id="XSchule.Baukasten.Codes.Code.Fach"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Faecherliste</title><para>XSchule stellt die Codeliste "Abiturfach" zur Verfügung. Das Vorgehen für andere Fächerlisten wird derzeit erarbeitet.</para><informaltable>
+   <title>Code.Fach</title><para>Wie im Kapitel <xref linkend="spezifikation.profilbildung.codelisten_typ4" role="Titel"/> beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden.</para>
+<para>Dazu muss im XML sowohl das Attribut <emphasis role="codebf">listURI</emphasis> als auch <emphasis role="codebf">listVersionID</emphasis> verwendet werden.</para>
+<para>XSchule stellt die Codeliste <xref linkend="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes" role="Titel"/> zur Verfügung.</para><informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
          <colspec colnum="2" colname="val" colwidth="138mm"/>
@@ -39,5 +41,5 @@
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.faecherliste_list.xml"/>
+            href="../verwendung/complexTypes/code.fach_list.xml"/>
 </section>

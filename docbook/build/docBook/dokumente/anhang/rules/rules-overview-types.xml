@@ -11,6 +11,246 @@
             <entry>Regel / XPath</entry>
          </row>
       </thead>
-      <tbody/>
+      <tbody>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Fremdsprache</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:abfolge</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;F&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ ImpfnachweisVorhanden</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:impfschutz</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;I&#x200B;S&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Pruefungsergebnis</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:NotenuebersichtUndZeugnis/xsc:notenuebersichtUnterjaehrigerWechsel/xsc:verpflichtungsgrad</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;G&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:nachpruefung</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;9&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;r&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Schulaufnahme</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:art</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ SchulformspezifischeZusatzdaten</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:teilnahmeGemeinsamerUnterricht</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;6&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;T&#x200B;g&#x200B;U&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Schuljahrgang</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:BesuchteSchule/xsc:schuljahrgang/xsc:versetzungsOderAusnahmetatbestandstyp</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;T&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Schulkurs</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:NotenuebersichtUndZeugnis/xsc:notenuebersichtUnterjaehrigerWechsel/xsc:aufgabenfeld</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;F&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:NotenuebersichtUndZeugnis/xsc:notenuebersichtUnterjaehrigerWechsel/xsc:verpflichtungsgrad</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;G&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Schullaufbahn</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:schullaufbahnempfehlung</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;4&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;L&#x200B;E&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel" align="center">
+               <emphasis role="bold">Typ Unterrichtsteilnahme</emphasis>
+               <?dbhtml bgcolor="#EEEEEE"?>
+               <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:BesuchteSchule/xsc:schuljahrgang/xsc:unterrichtsteilnahme/xsc:art</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;U&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+      </tbody>
    </tgroup>
 </informaltable>

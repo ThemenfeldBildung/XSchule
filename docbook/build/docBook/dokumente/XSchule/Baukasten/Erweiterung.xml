@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Erweiterung">
+   <title>Erweiterung</title>
+   <subtitle>Typ: <emphasis role="codebf">Erweiterung</emphasis>
+   </subtitle><para>Ersteller von Nachweisen haben die Möglichkeit, diese durch dieses generische Schlüssel/Wert-Element zu erweitern. Dadurch können zusätzliche Informationen in Form von benutzerdefinierten Schlüssel/Wert-Paaren hinzugefügt werden, ohne die bestehende Struktur zu beeinträchtigen.</para>
+<para>Dadurch wird die Anpassung an individuelle Anforderungen erleichtert und gleichzeitig die Interoperabilität der Nachweise weitestgehend gewährleistet.</para>
+<para>So vorgenommene Erweiterungen müssen im Kontext ihrer Verwendung abgesprochen und dokumentiert werden, damit sie von Empfängern des Nachweises verstanden werden können.</para>
+<para>Soll die Eigenschaft zusammen mit einer Werteliste verwendet werden, funktioniert sie wie ein Typ-4-Code-Datentyp. Dann müssen also die Eigenschaften listURI und listVersionID angeben werden.</para><figure xml:id="figure.XSchule.Baukasten.Erweiterung">
+      <title>Erweiterung</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XSchule/Baukasten/Erweiterung.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Erweiterung">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelement von <emphasis role="codebf">Erweiterung</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">eigenschaft</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Konkrete Schlüssel/Wert-Paare mit zusätzlichen Informationen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis>
+                     <emphasis role="bold">listURI</emphasis>
+                  </emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:anyURI</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis>
+                     <emphasis role="bold">listVersionID</emphasis>
+                  </emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:normalizedString</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">schluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Der Schlüssel (Key) ist eine eindeutige Kennzeichnung, die verwendet wird, um auf einen bestimmten Wert zuzugreifen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">wert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Der Wert (Value) ist die eigentliche Information oder Daten, die mit einem bestimmten Schlüssel verknüpft sind. Er enthält die relevante Information, die gespeichert oder abgerufen werden soll.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/erweiterung_list.xml"/>
+</section>

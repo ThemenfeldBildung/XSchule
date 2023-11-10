@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE preface [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+    xml:id="spezifikation.profilbildung">
+    <info>
+        <title>Erweiterbarkeit und Profilbildung</title>
+    </info>
+    <para>Um das XSchule-Datenmodell und die hier modellierten Nachweise flexibler einsetzen zu
+        können, wurde das Modell so erstellt, dass es erweiterbar ist. Dadurch können insbesondere
+        die Wechselnachricht und die Schulbescheinigung in spezialisierten, z.B.
+        bundeslandspezifischen Anwendungsfällen verwendet werden. Das Abiturzeugnis hingegen
+        benötigt ein bundesweit einheitliches Datenmodell, sodass eine Erweiterbarkeit an dieser
+        Stelle nur eingeschränkt möglich sein sollte.</para>
+    <para>Damit Erweiterungen oder ganze Profile ihren Nutzen voll entfalten können, müssen sie
+        umfassend abgestimmt werden. Dazu müssen die Bedarfe der einzelnen Stakeholder identifiziert
+        werden: Benötigte Eigenschaften und Werteliste müssen fachlich, rechtlich, technisch sowie
+        datenschutzrechtlich abgestimmt werden.</para>
+    <para>In welchen Bereichen das Modell erweitert werden kann, lässt sich auf drei Bereiche
+        eingrenzen: das Hinzufügen eines Eintrags in eine Werteliste, das Nutzen einer externen
+        Werteliste und das Hinzufügen einer einzelnen Eigenschaft.</para>
+
+    <section xml:id="spezifikation.profilbildung.codelisten_wnil">
+        <info>
+            <title>Ergänzen von Werten in Wertelisten</title>
+        </info>
+        <para>Bei einem fehlenden Eintrag in einer Werteliste müssen sowohl die Eigenschaft als auch
+            die Werteliste selbst bereits im Datenmodell vorhanden sein. Zudem muss die Werteliste
+            zur Erweiterung vorgesehen sein. In diesem Fall existiert der Eintrag „Wert nicht in
+            Liste“. Wird dieser Wert ausgewählt, kann zusätzlich das Feld "nichtGelisteterWert"
+            befüllt werden. Soll ein fehlender Wert zukünftig fest in die Codelisten aufgenommen
+            werden, muss ein Change Request gestellt werden. (Siehe <xref
+                linkend="spezifikation.profilbildung.changeprozess" role="Titel"/>.)</para>
+        <para>Folgende Wertelisten sind derzeit in XSchule zur Erweiterung vorgesehen:</para>
+        <itemizedlist>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.abfolgederfremdsprachen.AbfolgeDerFremdsprachen-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.ArtDerSchulaufnahme-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.ArtDerUnterrichtsteilnahme-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.kmk.codeliste.aufgabenfeld.Aufgabenfeld-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.impfschutz.Impfschutz-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.laufbahnempfehlung.Laufbahnempfehlung-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachpruefung.Nachpruefung-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.nachweisperiode.Nachweisperiode-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.teilnahmegemeinsamerunterricht.TeilnahmeGemeinsamerUnterricht-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.verpflichtungsgrad.Verpflichtungsgrad-Codes"
+                        role="Titel"/></para>
+            </listitem>
+            <listitem>
+                <para><xref
+                        linkend="tabelle.urn.xschule-digital.xschule.codeliste.versetzungstyp.Versetzungstyp-Codes"
+                        role="Titel"/></para>
+            </listitem>
+        </itemizedlist>
+
+    </section>
+
+    <section xml:id="spezifikation.profilbildung.codelisten_typ4">
+        <info>
+            <title>Nutzung externer Wertelisten</title>
+        </info>
+        <para>Bei manchen Eigenschaft steht fest, dass sie auf eine Werteliste verweisen sollen,
+            welche Werteliste genau genutzt werden soll, hängt aber vom Anwendungsfall ab. In diesem
+            Fall wurde der Typ-4-Code-Datentyp gewählt, bei dem neben dem Codewert auch die Kennung
+            der zu verwendenden Codeliste und ihre Version übermittelt werden muss. Gegebenenfalls
+            wird eine Codeliste vorgeschlagen, wie z.B. bei <xref
+                linkend="XSchule.Baukasten.Codes.Code.Fach" role="Titel"/>.</para>
+        <para>Die betroffenen Codelisten sind die, die in der <xref linkend="code-uebersicht"
+                role="Titel"/> als Typ 4 geführt werden. Soll eine Werteliste im Standard empfohlen
+            werden, muss ein Change Request gestellt werden. (Siehe <xref
+                linkend="spezifikation.profilbildung.changeprozess" role="Titel"/>.)</para>
+    </section>
+
+    <section xml:id="spezifikation.profilbildung.eigenschaften">
+        <info>
+            <title>Ergänzen von neuen Eigenschaften</title>
+        </info>
+        <para>In manchen Fällen fehlt eine Eigenschaft ganz. Ist sie für den Anwendungsfall bzw. das
+            Profil unabdingbar, kann sie unter Verwendung der Klasse <xref
+                linkend="XSchule.Baukasten.Erweiterung" role="Titel"/> zur Wechselnachricht oder zur
+            Schulbescheinigung hinzugefügt werden. Hier soll nocheinmal die Notwendigkeit des
+            Abstimmungsprozesses und der Dokumentation von solchen Erweiterungen hervorgehoben
+            werden. Die Möglichkeit, bei der Erstellung von Nachweisen solche Erweiterungen
+            vorzunehmen, darf nicht dazu führen, dass ggf. datenschutzkritische Informationen
+            den Nachweisen unabgestimmt hinzugefügt werden. Soll eine fehlende Eigenschaft
+            zukünftig fest in das Datenmodell aufgenommen werden, muss ein Change Request gestellt
+            werden. (Siehe <xref linkend="spezifikation.profilbildung.changeprozess" role="Titel"
+            />.)</para>
+        <para> Soll die Eigenschaft zusammen mit einer Werteliste verwendet werden, funktioniert sie
+            wie ein Typ-4-Code-Datentyp.</para>
+    </section>
+
+    <section xml:id="spezifikation.profilbildung.changeprozess">
+        <info>
+            <title>Übernahme von Anpassungen in das XSchule-Datenmodell</title>
+        </info>
+        <para>Wird im Rahmen einer Profilbildung deutlich, dass die Erweiterung grundsätzlich für
+            XSchule in Betracht kommen sollte, muss hierfür ein Change Request (CR) an XSchule gestellt
+            werden. Dies geschieht derzeit im Rahmen von Workshops und auf <link
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="https://github.com/OZG-TFBildung/XSchule/issues">GitHub</link>. Der
+            Prozess wird zukünftig im noch zu veröffentlichenden Pflegekonzept beschrieben.</para>
+    </section>
+</chapter>

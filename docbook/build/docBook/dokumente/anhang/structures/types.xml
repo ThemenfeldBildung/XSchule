@@ -320,6 +320,8 @@
       <kosit:property name="schuljahrgang/zeitraum/zusatz"/>
       <kosit:property name="schuljahrgang/versetzt"/>
       <kosit:property name="schuljahrgang/versetzungsOderAusnahmetatbestandstyp"/>
+      <kosit:property name="schuljahrgang/versetzungsOderAusnahmetatbestandstyp/code"/>
+      <kosit:property name="schuljahrgang/versetzungsOderAusnahmetatbestandstyp/nichtGelisteterWert"/>
       <kosit:property name="schuljahrgang/teilnahmeAmGanztagsangebot"/>
       <kosit:property name="schuljahrgang/jahrgangsstufe"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme"/>
@@ -331,6 +333,8 @@
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/arbeitsgemeinschaft"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/arbeitsgemeinschaft/@lang"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/art"/>
+      <kosit:property name="schuljahrgang/unterrichtsteilnahme/art/code"/>
+      <kosit:property name="schuljahrgang/unterrichtsteilnahme/art/nichtGelisteterWert"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/zusatz"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/zusatz/@lang"/>
       <kosit:property name="schuljahrgang/unterrichtsteilnahme/nichtteilnahmeGenehmigt"/>
@@ -348,9 +352,6 @@
    </kosit:type>
    <kosit:type name="Code.AbfolgeDerFremdsprachen"
                id="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen"
-               prefix="xsc"/>
-   <kosit:type name="Code.Abiturfach"
-               id="XSchule.Baukasten.Codes.Code.Abiturfach"
                prefix="xsc"/>
    <kosit:type name="Code.AmtlicherGemeindeschluessel" prefix="xbd"/>
    <kosit:type name="Code.Anforderungsniveau"
@@ -373,9 +374,6 @@
                id="XSchule.Baukasten.Codes.Code.ArtDerUnterrichtsteilnahme"
                prefix="xsc"/>
    <kosit:type name="Code.ArtDesSchulabschlusses" prefix="xbd"/>
-   <kosit:type name="Code.ArtDesSonderpaedagogischenFoerderbedarfes"
-               id="XSchule.Baukasten.Codes.Code.ArtDesSonderpaedagogischenFoerderbedarfes"
-               prefix="xsc"/>
    <kosit:type name="Code.ArtWeitererSprachkenntnisse"
                id="XSchule.Baukasten.Codes.Code.ArtWeitererSprachkenntnisse"
                prefix="xsc"/>
@@ -391,8 +389,11 @@
    <kosit:type name="Code.CEFR" prefix="xbd"/>
    <kosit:type name="Code.EQF" prefix="xbd"/>
    <kosit:type name="Code.Erreichbarkeit" prefix="xbd"/>
-   <kosit:type name="Code.Faecherliste"
-               id="XSchule.Baukasten.Codes.Code.Faecherliste"
+   <kosit:type name="Code.Fach"
+               id="XSchule.Baukasten.Codes.Code.Fach"
+               prefix="xsc"/>
+   <kosit:type name="Code.Foerderschwerpunkt"
+               id="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
                prefix="xsc"/>
    <kosit:type name="Code.Geschlecht" prefix="xbd"/>
    <kosit:type name="Code.GesetzlicherVertreter"
@@ -463,6 +464,13 @@
       <kosit:property name="titel"/>
       <kosit:property name="titel/@lang"/>
    </kosit:type>
+   <kosit:type name="Erweiterung" id="XSchule.Baukasten.Erweiterung" prefix="xsc">
+      <kosit:property name="eigenschaft"/>
+      <kosit:property name="eigenschaft/schluessel"/>
+      <kosit:property name="eigenschaft/wert"/>
+      <kosit:property name="eigenschaft/@listURI"/>
+      <kosit:property name="eigenschaft/@listVersionID"/>
+   </kosit:type>
    <kosit:type name="Fehltage" id="XSchule.Baukasten.Fehltage" prefix="xsc">
       <kosit:property name="anzahlGesamt"/>
       <kosit:property name="davonEntschuldigt"/>
@@ -471,6 +479,8 @@
                id="XSchule.Baukasten.Fremdsprache"
                prefix="xsc">
       <kosit:property name="abfolge"/>
+      <kosit:property name="abfolge/code"/>
+      <kosit:property name="abfolge/nichtGelisteterWert"/>
       <kosit:property name="beginn"/>
       <kosit:property name="belegteJahre"/>
       <kosit:property name="ende"/>
@@ -711,6 +721,8 @@
                id="XSchule.Baukasten.ImpfnachweisVorhanden"
                prefix="xsc">
       <kosit:property name="impfschutz"/>
+      <kosit:property name="impfschutz/code"/>
+      <kosit:property name="impfschutz/nichtGelisteterWert"/>
       <kosit:property name="krankheit"/>
    </kosit:type>
    <kosit:type name="KlasseUebersprungen"
@@ -1323,6 +1335,29 @@
       <kosit:property name="letztesZeugnis/gueltigkeit/ende"/>
       <kosit:property name="letztesZeugnis/gueltigkeit/zusatz"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/nichtGelisteterWert"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/fach"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/anforderungsniveau"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/halbjahr"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/jahrgangsstufe"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/berechnungsgrundlage"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/sprache"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/beginn"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ende"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ger"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/fach"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/belegteJahre"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/erreichterAbschluss"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/nichtGelisteterWert"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/identifikation"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/identifikation/id"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/identifikation/beschreibung"/>
@@ -1422,6 +1457,8 @@
       <kosit:property name="bezeichnung/@lang"/>
       <kosit:property name="fach"/>
       <kosit:property name="nachpruefung"/>
+      <kosit:property name="nachpruefung/code"/>
+      <kosit:property name="nachpruefung/nichtGelisteterWert"/>
       <kosit:property name="note"/>
       <kosit:property name="note/note"/>
       <kosit:property name="note/wortbezeichnung"/>
@@ -1444,6 +1481,8 @@
       <kosit:property name="note/bewertungsschemaPunkte/besteBewertung"/>
       <kosit:property name="note/bewertungsschemaPunkte/weitereInformationen"/>
       <kosit:property name="verpflichtungsgrad"/>
+      <kosit:property name="verpflichtungsgrad/code"/>
+      <kosit:property name="verpflichtungsgrad/nichtGelisteterWert"/>
    </kosit:type>
    <kosit:type name="ReisenderSchueler"
                id="XSchule.Baukasten.ReisenderSchueler"
@@ -1553,6 +1592,8 @@
                id="XSchule.Baukasten.Schulaufnahme"
                prefix="xsc">
       <kosit:property name="art"/>
+      <kosit:property name="art/code"/>
+      <kosit:property name="art/nichtGelisteterWert"/>
       <kosit:property name="eintrittsdatum"/>
    </kosit:type>
    <kosit:type name="Schule" id="XSchule.Baukasten.Schule" prefix="xsc">
@@ -1654,6 +1695,8 @@
                prefix="xsc">
       <kosit:property name="schulbesuchsjahreInSchuleingangsphase"/>
       <kosit:property name="teilnahmeGemeinsamerUnterricht"/>
+      <kosit:property name="teilnahmeGemeinsamerUnterricht/code"/>
+      <kosit:property name="teilnahmeGemeinsamerUnterricht/nichtGelisteterWert"/>
    </kosit:type>
    <kosit:type name="Schuljahrgang"
                id="XSchule.Baukasten.Schuljahrgang"
@@ -1669,12 +1712,16 @@
       <kosit:property name="unterrichtsteilnahme/arbeitsgemeinschaft"/>
       <kosit:property name="unterrichtsteilnahme/arbeitsgemeinschaft/@lang"/>
       <kosit:property name="unterrichtsteilnahme/art"/>
+      <kosit:property name="unterrichtsteilnahme/art/code"/>
+      <kosit:property name="unterrichtsteilnahme/art/nichtGelisteterWert"/>
       <kosit:property name="unterrichtsteilnahme/zusatz"/>
       <kosit:property name="unterrichtsteilnahme/zusatz/@lang"/>
       <kosit:property name="unterrichtsteilnahme/nichtteilnahmeGenehmigt"/>
       <kosit:property name="unterrichtsteilnahme/nichtteilnahmeAmUnterricht"/>
       <kosit:property name="versetzt"/>
       <kosit:property name="versetzungsOderAusnahmetatbestandstyp"/>
+      <kosit:property name="versetzungsOderAusnahmetatbestandstyp/code"/>
+      <kosit:property name="versetzungsOderAusnahmetatbestandstyp/nichtGelisteterWert"/>
       <kosit:property name="zeitraum"/>
       <kosit:property name="zeitraum/beginn"/>
       <kosit:property name="zeitraum/ende"/>
@@ -1683,6 +1730,8 @@
    <kosit:type name="Schulkurs" id="XSchule.Baukasten.Schulkurs" prefix="xsc">
       <kosit:property name="anforderungsniveau"/>
       <kosit:property name="aufgabenfeld"/>
+      <kosit:property name="aufgabenfeld/code"/>
+      <kosit:property name="aufgabenfeld/nichtGelisteterWert"/>
       <kosit:property name="berechnungsgrundlage"/>
       <kosit:property name="beschreibung"/>
       <kosit:property name="beschreibung/@lang"/>
@@ -1732,8 +1781,12 @@
       <kosit:property name="vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
       <kosit:property name="vermittelteSprachkenntnis/belegteJahre"/>
       <kosit:property name="vermittelteSprachkenntnis/abfolge"/>
+      <kosit:property name="vermittelteSprachkenntnis/abfolge/code"/>
+      <kosit:property name="vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
       <kosit:property name="vermittelteSprachkenntnis/erreichterAbschluss"/>
       <kosit:property name="verpflichtungsgrad"/>
+      <kosit:property name="verpflichtungsgrad/code"/>
+      <kosit:property name="verpflichtungsgrad/nichtGelisteterWert"/>
    </kosit:type>
    <kosit:type name="Schullaufbahn"
                id="XSchule.Baukasten.Schullaufbahn"
@@ -1752,14 +1805,19 @@
       <kosit:property name="schulaufnahme"/>
       <kosit:property name="schulaufnahme/eintrittsdatum"/>
       <kosit:property name="schulaufnahme/art"/>
+      <kosit:property name="schulaufnahme/art/code"/>
+      <kosit:property name="schulaufnahme/art/nichtGelisteterWert"/>
       <kosit:property name="schullaufbahnempfehlung"/>
+      <kosit:property name="schullaufbahnempfehlung/code"/>
+      <kosit:property name="schullaufbahnempfehlung/nichtGelisteterWert"/>
    </kosit:type>
+   <kosit:type name="Signature" prefix="ds"/>
    <kosit:type name="SonderpaedagogischerFoerderbedarf"
                id="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
                prefix="xsc">
       <kosit:property name="art"/>
+      <kosit:property name="art/@lang"/>
       <kosit:property name="schwerpunkt"/>
-      <kosit:property name="schwerpunkt/@lang"/>
       <kosit:property name="sonderpaedagogischesGutachten"/>
       <kosit:property name="sonderpaedagogischesGutachten/@lang"/>
       <kosit:property name="teilnahmeFoerdermassnahme"/>
@@ -1791,6 +1849,8 @@
       <kosit:property name="arbeitsgemeinschaft"/>
       <kosit:property name="arbeitsgemeinschaft/@lang"/>
       <kosit:property name="art"/>
+      <kosit:property name="art/code"/>
+      <kosit:property name="art/nichtGelisteterWert"/>
       <kosit:property name="fach"/>
       <kosit:property name="nichtteilnahmeAmUnterricht"/>
       <kosit:property name="nichtteilnahmeGenehmigt"/>
@@ -1861,17 +1921,14 @@
       <kosit:property name="identifikationsnummer/gueltigkeit/zusatz"/>
       <kosit:property name="impfung"/>
       <kosit:property name="impfung/impfschutz"/>
+      <kosit:property name="impfung/impfschutz/code"/>
+      <kosit:property name="impfung/impfschutz/nichtGelisteterWert"/>
       <kosit:property name="impfung/krankheit"/>
       <kosit:property name="kommunikation"/>
       <kosit:property name="kommunikation/kanal"/>
       <kosit:property name="kommunikation/kennung"/>
       <kosit:property name="kommunikation/zusatz"/>
       <kosit:property name="kommunikation/istDienstlich"/>
-      <kosit:property name="kontaktmoeglichkeit"/>
-      <kosit:property name="kontaktmoeglichkeit/kanal"/>
-      <kosit:property name="kontaktmoeglichkeit/kennung"/>
-      <kosit:property name="kontaktmoeglichkeit/zusatz"/>
-      <kosit:property name="kontaktmoeglichkeit/istDienstlich"/>
       <kosit:property name="migrationshintergrund"/>
       <kosit:property name="migrationshintergrund/geburtsland"/>
       <kosit:property name="migrationshintergrund/jahrDesZuzugs"/>
@@ -2037,8 +2094,8 @@
       <kosit:property name="schulprofil/@lang"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf/art"/>
+      <kosit:property name="sonderpaedagogischerFoerderbedarf/art/@lang"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf/schwerpunkt"/>
-      <kosit:property name="sonderpaedagogischerFoerderbedarf/schwerpunkt/@lang"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf/therapiemassnahme"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf/therapiemassnahme/@lang"/>
       <kosit:property name="sonderpaedagogischerFoerderbedarf/teilnahmeFoerdermassnahme"/>

@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Anforderungsniveau</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. Grundlage: https://www.kmk.org/fileadmin/pdf/Statistik/FAQ_KDS.pdf</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste enhält die möglichen Anforderungsniveaus besuchter Unterrichte. Sie basiert auf dem Kerndatensatz der KMK (4.0) für die gymnasiale Oberstufe, erweitert um Rückmeldungen von XSchule-Stakeholdern. In der Version 1.0 von XSchule wird sich diese Codeliste voraussichtlich auf die von der KMK festgelegten Werte für die gymnasiale Oberstufe beschränken. Bundeslandspezifische Codelisten werden dann, wie im Kapitel beschrieben, abgebildet.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Anforderungsniveau-Codes</ShortName>
       <LongName>Anforderungsniveau</LongName>
-      <Version>0.6</Version>
+      <Version>0.7</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau_0.6</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:anforderungsniveau_0.7</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/e-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/e-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>E-Kurs, (Erweiterter Kurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>erhöhtes Anforderungsniveau (früher Leistungskurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/g-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/g-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>G-Kurs, (Grundkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>grundlegendes Anforderungsniveau (früher: Grundkurs), verwendet u.a. für Kurse der gymnasialen Oberstufe</SimpleValue>
@@ -75,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/z-kurs</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/z-kurs</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Z-Kurs, (Zusatzkurs) verwendet u.a. für Kurse der integrierten Gesamtschule und Oberschule</SimpleValue>
@@ -83,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -91,7 +91,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -99,7 +99,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>

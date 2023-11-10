@@ -51,18 +51,16 @@
                   <emphasis role="bold">art</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.ArtDesSonderpaedagogischenFoerderbedarfes</emphasis>
+                  <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDesSonderpaedagogischenFoerderbedarfes"
-                        role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDesSonderpaedagogischenFoerderbedarfes"
-                        role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -73,16 +71,18 @@
                   <emphasis role="bold">schwerpunkt</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Code.Foerderschwerpunkt</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
