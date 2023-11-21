@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.abiturzeugnis.0002 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/0.6/xsd http://xschule.digital/def/xschule/0.6/xsd/xschule.xsd"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/0.7/xsd http://xschule.digital/def/xschule/0.7/xsd/xschule.xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/0.6/xsd">
+    xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
 
     <!--
-        Datum: 06.04.2023
+        Datum: 21.11.2023
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Niklas Aschenborn
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+        Link zur Beispieldatei: https://xbildung.de/web/musternachweis/35440
     -->
 
     <xbd:titel>Zeugnis der allgemeinen Hochschulreife</xbd:titel>
@@ -23,34 +24,39 @@
         <xbd:beginn>2019-07-05</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
 
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
     <xsc:allgemeineAngaben>
         <xsc:artDesZeugnisses>
-            <code>http://xschule.digital/def/xschule/0.6/code/zeugnisart/abschlusszeugnis</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/zeugnisart/abschlusszeugnis</code>
         </xsc:artDesZeugnisses>
+
         <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
         </xsc:jahrgangsstufe>
         <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
         </xsc:jahrgangsstufe>
         <xsc:nachweisperiode>
-            <code>http://xschule.digital/def/xschule/0.6/code/nachweisperiode/halbjahr</code>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/0.7/code/nachweisperiode/halbjahr</code>
+            </xsc:code>
         </xsc:nachweisperiode>
+
         <xsc:bundesland listVersionID="2010-04-01"
             listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
             <code>05</code>
             <!-- NRW -->
         </xsc:bundesland>
-        <xsc:niveau>
-            <code>http://data.europa.eu/snb/qdr/c_12a84182</code>
-            <!-- DQR 4-->
-        </xsc:niveau>
-        <xsc:artDerHZB><code>http://xschule.digital/def/destatis/ws2022/code/artderhzb/03</code></xsc:artDerHZB>
+
+        <xsc:niveauEQR>
+            <code>http://data.europa.eu/snb/eqf/4</code>
+        </xsc:niveauEQR>
+        <xsc:artDerHZB>
+            <code>http://xschule.digital/def/destatis/ws2022/code/artderhzb/03</code>
+        </xsc:artDerHZB>
         <xsc:artDesSchulabschlusses>
             <code>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/allgemeine_hochschulreife</code>
         </xsc:artDesSchulabschlusses>
@@ -75,7 +81,7 @@
                 <xbd:ort>Padeborn</xbd:ort>
                 <xbd:staat
                     listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="">
+                    listVersionID="2023-04-24">
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
@@ -96,21 +102,28 @@
         <xbd:anschrift>
             <xbd:strasse>Rampendal</xbd:strasse>
             <xbd:hausnummer>63</xbd:hausnummer>
+            <xbd:postleitzahl>32657</xbd:postleitzahl>
             <xbd:ort>Lemgo</xbd:ort>
             <xbd:staat
                 listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                listVersionID="">
+                listVersionID="2023-02-24">
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
+            <xbd:verwaltungspolitischeKodierung>
+                <xbd:kreis listVersionID="2021-07-31">
+                    <code>05766</code>
+                    <!-- Kreis Lippe -->
+                </xbd:kreis>
+            </xbd:verwaltungspolitischeKodierung>
         </xbd:anschrift>
         <xsc:schulform>
             <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/100</code>
             <!-- Städt. Gymnasium für Jungen und Mädchen -->
         </xsc:schulform>
-
         <xsc:artDerTraegerschaft>
             <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>
+            <!-- Kommune -->
         </xsc:artDerTraegerschaft>
     </xsc:schule>
 
@@ -132,7 +145,8 @@
          Physik               05   06  07 07
          Kath Religionslehre  05   10  __ __ 
          Sport                12   12  08 08
-        -->
+    -->
+
     <xsc:block-i>
         <xsc:kurs>
             <xbd:bezeichnung>Deutsch (LK/eA)</xbd:bezeichnung>
@@ -140,45 +154,47 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0232</code>
-            </xbd:schluesselISCEDF2013>
+            <!-- 
+                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -187,45 +203,47 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0232</code>
-            </xbd:schluesselISCEDF2013>
+            <!-- 
+                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -234,45 +252,47 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0232</code>
-            </xbd:schluesselISCEDF2013>
+            <!-- 
+                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -281,45 +301,47 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0232</code>
-            </xbd:schluesselISCEDF2013>
+            <!-- 
+                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -328,45 +350,42 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0231</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
                 <!-- Englisch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/ENG</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -375,45 +394,42 @@
                 <xbd:punkte>08</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0231</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
                 <!-- Englisch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/ENG</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -422,45 +438,42 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0231</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
                 <!-- Englisch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/ENG</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -469,45 +482,42 @@
                 <xbd:punkte>06</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0231</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
                 <!-- Englisch -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <xsc:vermittelteSprachkenntnis>
-                <xsc:sprache>
-                    <code>https://publications.europa.eu/resource/authority/language/ENG</code>
-                </xsc:sprache>
-            </xsc:vermittelteSprachkenntnis>
+            <!-- 
+                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
+            -->
         </xsc:kurs>
 
         <xsc:kurs>
@@ -516,32 +526,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
-            <!--- Kunsterziehung -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
+                <!-- Kunst -->
+            </xsc:fach>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -552,32 +565,35 @@
                 <xbd:punkte>06</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/10</code>
-                <!-- Sprachlich-literarisch-künstlerisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
-            <!--- Kunsterziehung -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
+                <!-- Kunst -->
+            </xsc:fach>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -588,38 +604,35 @@
                 <xbd:punkte>06</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0532</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
                 <!-- Geographie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -630,38 +643,35 @@
                 <xbd:punkte>09</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0532</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
                 <!-- Geographie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -672,38 +682,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0532</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
                 <!-- Geographie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -714,38 +721,35 @@
                 <xbd:punkte>04</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/nicht_bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0532</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
                 <!-- Geographie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -756,38 +760,35 @@
                 <xbd:punkte>10</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0222</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -798,38 +799,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0222</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -840,38 +838,35 @@
                 <xbd:punkte>10</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0319</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
                 <!-- Sozialwissenschaften -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -882,38 +877,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0319</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
                 <!-- Sozialwissenschaften -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -924,38 +916,35 @@
                 <xbd:punkte>12</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0111</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
                 <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -966,38 +955,35 @@
                 <xbd:punkte>08</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0111</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
                 <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1008,38 +994,35 @@
                 <xbd:punkte>08</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0111</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
                 <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1050,38 +1033,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0111</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/20</code>
-                <!-- Gesellschaftswissenschaftliches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
                 <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1092,38 +1072,35 @@
                 <xbd:punkte>04</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/nicht_bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0541</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1134,38 +1111,35 @@
                 <xbd:punkte>04</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/nicht_bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0541</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1176,38 +1150,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0541</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1218,38 +1189,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0541</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1260,38 +1228,35 @@
                 <xbd:punkte>04</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/nicht_bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0511</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
                 <!-- Biologie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1302,38 +1267,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0511</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
                 <!-- Biologie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1344,38 +1306,35 @@
                 <xbd:punkte>08</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0511</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
                 <!-- Biologie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1386,38 +1345,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0511</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
                 <!-- Biologie -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1428,38 +1384,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0533</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
                 <!-- Physik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1470,38 +1423,35 @@
                 <xbd:punkte>06</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0533</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
                 <!-- Physik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1512,38 +1462,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0533</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
                 <!-- Physik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1554,38 +1501,35 @@
                 <xbd:punkte>07</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0533</code>
-            </xbd:schluesselISCEDF2013>
             <xsc:aufgabenfeld>
-                <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/30</code>
-                <!-- Mathematisch-naturwissenschaftlich-technisches Aufgabenfeld -->
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</code>
+                </xsc:code>
             </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
                 <!-- Physik -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1596,34 +1540,35 @@
                 <xbd:punkte>05</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0221</code>
-            </xbd:schluesselISCEDF2013>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
                 <!-- Kath. Religionslehre -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1634,34 +1579,35 @@
                 <xbd:punkte>10</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/0221</code>
-            </xbd:schluesselISCEDF2013>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
                 <!-- Kath. Religionslehre -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1672,34 +1618,35 @@
                 <xbd:punkte>12</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/1014</code>
-            </xbd:schluesselISCEDF2013>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
                 <!-- Sport -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1710,73 +1657,35 @@
                 <xbd:punkte>12</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/1014</code>
-            </xbd:schluesselISCEDF2013>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
                 <!-- Sport -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-
-        <xsc:kurs>
-            <xbd:bezeichnung>Sport</xbd:bezeichnung>
-            <xbd:note>
-                <xbd:punkte>08</xbd:punkte>
-                <xbd:bewertungsschemaPunkte>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
-                </xbd:bewertungsschemaPunkte>
-            </xbd:note>
-            <xbd:status>
-                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
-            </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/1014</code>
-            </xbd:schluesselISCEDF2013>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
-                <!-- Sport -->
-            </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
@@ -1787,39 +1696,78 @@
                 <xbd:punkte>08</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
-                    <xbd:beschreibung>Für die Umsetzung von Noten in Punkte gilt das
-                        Bewertungsschema der KMK von 1972</xbd:beschreibung>
-                    <xbd:besteBewertung>15</xbd:besteBewertung>
-                    <xbd:bestandenAbBewertung>05</xbd:bestandenAbBewertung>
-                    <xbd:schlechtesteBewertung>00</xbd:schlechtesteBewertung>
                 </xbd:bewertungsschemaPunkte>
             </xbd:note>
             <xbd:status>
                 <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
             </xbd:status>
-            <xbd:schluesselISCEDF2013>
-                <code>http://data.europa.eu/snb/isced-f/1014</code>
-            </xbd:schluesselISCEDF2013>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
                 <!-- Sport -->
             </xsc:fach>
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.6/code/halbjahr/2_halbjahr</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Sport</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
+            </xbd:note>
+            <xbd:status>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+            </xbd:status>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
+                <!-- Sport -->
+            </xsc:fach>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
     </xsc:block-i>
-
 
     <xsc:block-ii>
         <xsc:pruefungsergebnis>
@@ -1832,15 +1780,19 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
+                <!-- Deutsch -->
             </xsc:fach>
-            <!-- Deutsch -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1854,15 +1806,19 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/muendliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
             </xsc:fach>
             <!-- Deutsch -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1876,15 +1832,19 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <!-- Erziehungswissenschaft -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1892,22 +1852,25 @@
             <xsc:note>
                 <xbd:punkte>11</xbd:punkte>
                 <xbd:bewertungsschemaPunkte>
-                    <xbd:schemaURI>http://www.xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15
-                    </xbd:schemaURI>
+                    <xbd:schemaURI>http://www.xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
                 </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/muendliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
             </xsc:fach>
-            <!-- Erziehungswissenschaft -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1921,15 +1884,19 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/schriftliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
             </xsc:fach>
-            <!-- Englisch -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1943,15 +1910,19 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/muendliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
             </xsc:fach>
-            <!-- Englisch -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
 
@@ -1965,19 +1936,22 @@
             <xsc:artDerPruefung>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artderpruefung/muendliche_pruefung</code>
             </xsc:artDerPruefung>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
+                <!-- Physik -->
             </xsc:fach>
-            <!-- Physik -->
-            <xsc:anforderungsniveau>
-                <code>http://xschule.digital/def/xschule/0.6/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="0.7">
+                <code>http://xschule.digital/def/xschule/0.7/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
             </xsc:anforderungsniveau>
             <xsc:verpflichtungsgrad>
-                <code>http://xschule.digital/def/xschule/0.6/code/verpflichtungsgrad/pflichtunterricht</code>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
             </xsc:verpflichtungsgrad>
         </xsc:pruefungsergebnis>
     </xsc:block-ii>
-
 
     <xsc:block-iii>
         <xsc:durchschnittsnote>
@@ -2004,17 +1978,16 @@
         </xsc:punktsummeBlockII>
     </xsc:block-iii>
 
-
     <xsc:fremdsprachen>
         <xsc:fremdsprache>
             <xsc:sprache>
                 <code>https://publications.europa.eu/resource/authority/language/ENG</code>
             </xsc:sprache>
             <xsc:beginn>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_5</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_5</code>
             </xsc:beginn>
             <xsc:ende>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/qualifikationsphase_2</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:ende>
             <!-- Zwischen B2 und C1 -->
             <xsc:ger>
@@ -2025,7 +1998,7 @@
                 <code>http://data.europa.eu/snb/cefr/c_2f49f1ce</code>
                 <!-- C1 -->
             </xsc:ger>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
             </xsc:fach>
         </xsc:fremdsprache>
@@ -2035,16 +2008,16 @@
                 <code>http://publications.europa.eu/resource/authority/language/FRA</code>
             </xsc:sprache>
             <xsc:beginn>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_6</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_6</code>
             </xsc:beginn>
             <xsc:ende>
-                <code>http://xschule.digital/def/xschule/0.6/code/jahrgangsstufe/jahrgangsstufe_9</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_9</code>
             </xsc:ende>
             <xsc:ger>
                 <code>http://data.europa.eu/snb/cefr/c_0427b00c</code>
                 <!-- B1 -->
             </xsc:ger>
-            <xsc:fach>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2019">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/360</code>
             </xsc:fach>
         </xsc:fremdsprache>
@@ -2052,7 +2025,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Vereinbarung zur Gestaltung der gymnasialen Oberstufe und der
             Abiturprüfung (Beschluss der Kultusministerkonferenz vom 7. Juli 1972 in der jeweils
@@ -2061,7 +2034,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Bildungsstandards für die Allgemeine Hochschulreife und Vereinbarungen
             über die Einheitlichen Prüfungsanforderungen in der Abiturprüfung</xsc:beschreibung>
@@ -2069,7 +2042,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.6/code/artderbemerkung/28</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/28</code>
         </xsc:art>
         <xsc:beschreibung>Verordnung über den Bildungsgang und die Abiturprüfung in der gymnasialen
             Oberstufe - APO-GOSt - vom 5. Oktober 1998 in der jeweils geltenden Fassung (BASS 13-32

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.zeugnis.0003 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/0.7/xsd http://xschule.digital/def/xschule/0.7/xsd/xschule.xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+    xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
+
+    <!--
+        Datum: 13.11.2023
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+        Link zur Beispieldatei ohne Musterdaten: https://xbildung.de/web/musternachweis/33620
+        Musterdaten erstellt anhand: https://www.landesrecht-bw.de/jportal/?quelle=jlink&docid=jlr-RealSchulPrVBW2020V5P13&psml=bsbawueprod.psml&max=true
+    -->
+
+    <xbd:titel>Zeugnis über den Realschulabschluss</xbd:titel>
+
+    <xbd:ausstellung>
+        <xbd:datum>2022-07-01</xbd:datum>
+        <xbd:ort>Heidelberg</xbd:ort>
+    </xbd:ausstellung>
+
+    <xbd:gueltigkeitszeitraum>
+        <xbd:beginn>2022-07-01</xbd:beginn>
+    </xbd:gueltigkeitszeitraum>
+
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20230614-0">
+        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xsc:allgemeineAngaben>
+        <xsc:artDesZeugnisses>
+            <code>http://xschule.digital/def/xschule/0.7/code/zeugnisart/abschlusszeugnis</code>
+        </xsc:artDesZeugnisses>
+        <xsc:jahrgangsstufe>
+            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+        </xsc:jahrgangsstufe>
+        <xsc:nachweisperiode>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/0.7/code/nachweisperiode/jahr</code>
+            </xsc:code>
+        </xsc:nachweisperiode>
+        <xsc:bundesland listVersionID="2010-04-01"
+            listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
+            <code>08</code>
+            <!-- BW -->
+            <!-- 08 -->
+        </xsc:bundesland>
+        <xsc:niveauEQR>
+            <code>http://data.europa.eu/snb/eqf/3</code>
+            <!-- Realschulabschluss DQR 3-->
+        </xsc:niveauEQR>
+        <xsc:artDesSchulabschlusses>
+            <code>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/realschulabschluss</code>
+        </xsc:artDesSchulabschlusses>
+    </xsc:allgemeineAngaben>
+
+    <xsc:schueler>
+        <xbd:nameNatuerlichePerson>
+            <xbd:anrede>Frau</xbd:anrede>
+            <xbd:familienname>
+                <xbd:name>Musterlich</xbd:name>
+            </xbd:familienname>
+            <xbd:vorname>
+                <xbd:name>Lisa</xbd:name>
+            </xbd:vorname>
+        </xbd:nameNatuerlichePerson>
+        <xbd:geburt>
+            <xbd:datum>
+                <xbd:jahrMonatTag>2005-06-20</xbd:jahrMonatTag>
+            </xbd:datum>
+            <xbd:geburtsort>
+                <xbd:ort>Heidelberg</xbd:ort>
+                <xbd:staat
+                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                    listVersionID="2023-02-24">
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </xbd:staat>
+            </xbd:geburtsort>
+        </xbd:geburt>
+        <xbd:anschrift>
+            <xbd:ort>Heidelberg</xbd:ort>
+        </xbd:anschrift>
+    </xsc:schueler>
+
+    <xsc:schule>
+        <xbd:name>
+            <xbd:name>Musterhafte Gemeinschaftsschule Heidelberg</xbd:name>
+            <!-- kein xbd:identifikation für Musterschule -->
+        </xbd:name>
+
+        <xbd:anschrift>
+            <xbd:strasse>Musterbaumweg</xbd:strasse>
+            <xbd:hausnummer>21</xbd:hausnummer>
+            <xbd:ort>Heidelberg</xbd:ort>
+            <xbd:staat
+                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
+                listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
+            <!-- kein xbd:verwaltungspolitischeKodierung angebeben -->
+        </xbd:anschrift>
+        <xsc:schulform>
+            <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/110</code>
+        </xsc:schulform>
+        <!-- Integrierte Gesamtschule -->
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>
+        </xsc:artDerTraegerschaft>
+        <!-- Kommune -->
+    </xsc:schule>
+
+    <!-- Schriftliche Prüfungsfächer Deutsch, Mathematik , Englisch sowie Alltagskultur, Ernährung, Soziales (AES) -->
+    <xsc:leistungen>
+        <xsc:kurs>
+            <xbd:bezeichnung>Deutsch</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <xbd:status>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+            </xbd:status>
+            <xbd:schluesselISCEDF2013>
+                <code>http://data.europa.eu/snb/isced-f/0232</code>
+            </xbd:schluesselISCEDF2013>
+            <!-- Code.Fach Deutsch -->
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+            <xsc:vermittelteSprachkenntnis>
+                <xsc:sprache>
+                    <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+                </xsc:sprache>
+            </xsc:vermittelteSprachkenntnis>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Mathematik</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <xbd:status>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+            </xbd:status>
+            <xbd:schluesselISCEDF2013>
+                <code>http://data.europa.eu/snb/isced-f/0541</code>
+            </xbd:schluesselISCEDF2013>
+            <!-- Code.Fach Mathematik -->
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Englisch</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <xbd:status>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+            </xbd:status>
+            <xbd:schluesselISCEDF2013>
+                <code>http://data.europa.eu/snb/isced-f/0231</code>
+            </xbd:schluesselISCEDF2013>
+            <!-- Code.Fach Englisch -->
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+            <xsc:vermittelteSprachkenntnis>
+                <xsc:sprache>
+                    <code>https://publications.europa.eu/resource/authority/language/ENG</code>
+                </xsc:sprache>
+            </xsc:vermittelteSprachkenntnis>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Alltagskultur, Ernährung, Soziales (AES)</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <xbd:status>
+                <code>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</code>
+            </xbd:status>
+            <!-- AES kein Abiturfach -->
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Geschichte</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Geographie</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Gemeinschaftskunde</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Wirtschaft / Berufs- und Studienorientierung</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Physik</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Chemie</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Biologie</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Musik</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Bildende Kunst</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Sport</xbd:bezeichnung>
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Technik</xbd:bezeichnung>
+            <!-- Wahlpflichtbereich -->
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xbd:bezeichnung>Naturwissenschaft und Technik (NwT)</xbd:bezeichnung>
+            <!-- Profilfach -->
+            <!-- Profilfächer in BW siehe https://km-bw.de/,Lde/Startseite/Schule/Profile+GMS -->
+            <!-- Das Profilfach wird zusätzlich zu dem im 6. bzw. 7. Schuljahr gewählten Wahlpflichtfach unterrichtet -->
+            <xbd:note>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xbd:note>
+            <!-- xsc:verpflichtungsgrad nicht angegeben -->
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:jahrgangsstufe>
+            <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+            <!-- *nicht maßgebend für das Bestehen der Abschlussprüfung -->
+        </xsc:kurs>
+    </xsc:leistungen>
+
+    <xsc:kombinierteBewertung>
+        <xsc:bezeichnung>Durchschnitt der Gesamtleistungen und Gesamtnote</xsc:bezeichnung>
+        <xsc:note>
+            <!-- xbd:note nicht zulässig in xsc:kombinierteBewertung? -->
+            <xbd:note>2</xbd:note>
+            <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+            </xbd:bewertungsschemaNote>
+        </xsc:note>
+    </xsc:kombinierteBewertung>
+
+    <xsc:fremdsprachen>
+        <xsc:fremdsprache>
+            <xsc:sprache>
+                <code>https://publications.europa.eu/resource/authority/language/ENG</code>
+            </xsc:sprache>
+            <xsc:beginn>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_5</code>
+            </xsc:beginn>
+            <xsc:ende>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_10</code>
+            </xsc:ende>
+            <!-- Niveau der erworbenen Kenntnisse in den angegebenen Fremdsprachen:** -->
+            <!-- **entsprechend dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER) -->
+            <!-- Zwischen B2 und C1 -->
+            <xsc:ger>
+                <code>http://data.europa.eu/snb/cefr/c_097c5ed1</code>
+                <!-- B2 -->
+            </xsc:ger>
+            <xsc:ger>
+                <code>http://data.europa.eu/snb/cefr/c_2f49f1ce</code>
+                <!-- C1 -->
+            </xsc:ger>
+        </xsc:fremdsprache>
+    </xsc:fremdsprachen>
+
+    <xsc:bemerkung>
+        <xsc:art>
+            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/30</code>
+            <!-- Code 30 Arbeitsgemeinschaft -->
+        </xsc:art>
+        <xsc:beschreibung>Hat erfolgreich teilgenommen an der Arbeitsgemeinschaft "Stricken nach Muster"</xsc:beschreibung>
+    </xsc:bemerkung>
+
+</xsc:schueler.zeugnis.0003>
