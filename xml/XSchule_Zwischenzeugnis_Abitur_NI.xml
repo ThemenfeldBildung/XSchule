@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
 
     <!--
-        Datum: 20.11.2023
+        Datum: 27.11.2023
         Name der Beispieldatei: (Zwischen-)Zeugnis der allgemeinen Hochschulreife
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Hinweis: Das verwendete Musterzeugnis nutzt das Template des Abiturzeugnisses, befüllt aber nur die ersten 
@@ -20,8 +20,7 @@
         <xbd:datum>2021-05-21</xbd:datum>
     </xbd:ausstellung>
 
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
@@ -37,8 +36,8 @@
                 <code>http://xschule.digital/def/xschule/0.7/code/nachweisperiode/halbjahr</code>
             </xsc:code>
         </xsc:nachweisperiode>
-        <xsc:bundesland listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland"
-            listVersionID="">
+        <xsc:bundesland listVersionID="2010-04-01">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland -->
             <code>03</code>
             <!-- Niedersachsen -->
         </xsc:bundesland>

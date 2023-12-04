@@ -8,24 +8,24 @@
 
     <!--
         Datum: 24.11.2023
-        Name der Beispieldatei: XSchule_Wechsel_01
-        Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Primarstufe
+        Name der Beispieldatei: XSchule_Wechsel_Journey_Sekundarstufe_I
+        Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel zur Sekundarstufe I (Station in der XSchule-Journey: 7. Wechsel zu Sek I)
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         
         Fachlicher Sachverhalt: 
-        Schüler der Klasse 1 aus der Schule Musterschule im Bundesland Brandenburg geht ab 01.09.2022 normal versetzt in die 2. Klasse im Bundesland Bayern.
+        Schüler der Klasse 6 der Grundschule im Musterweg geht ab 01.09.2016 in die 7. Klasse der Musteroberschule.
     -->
 
     <xbd:titel>Schülerakte</xbd:titel>
 
     <xbd:ausstellung>
-        <xbd:datum>2022-07-14</xbd:datum>
-        <xbd:ort>Hamburg</xbd:ort>
+        <xbd:datum>2016-08-01</xbd:datum>
+        <xbd:ort>Brandenburg an der Havel</xbd:ort>
     </xbd:ausstellung>
 
     <xbd:gueltigkeitszeitraum>
-        <xbd:beginn>2022-07-14</xbd:beginn>
-        <xbd:ende>2024-01-14</xbd:ende>
+        <xbd:beginn>2016-09-01</xbd:beginn>
+        <xbd:ende>2017-02-01</xbd:ende>
     </xbd:gueltigkeitszeitraum>
 
     <xbd:sprache>
@@ -38,29 +38,61 @@
                 <xbd:name>Mustermann</xbd:name>
             </xbd:familienname>
             <xbd:vorname>
-                <xbd:name>Maximilian</xbd:name>
+                <xbd:name>René</xbd:name>
             </xbd:vorname>
             <xbd:rufname>
-                <xbd:name>Max</xbd:name>
+                <xbd:name>René</xbd:name>
             </xbd:rufname>
         </xbd:nameNatuerlichePerson>
         <xbd:geburt>
             <xbd:datum>
-                <xbd:jahrMonatTag>2013-02-26</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2004-01-01</xbd:jahrMonatTag>
             </xbd:datum>
             <xbd:geburtsort>
-                <xbd:ort>Villingen-Schwenningen</xbd:ort>
-                <xbd:staat listVersionID="2022-02-18">
+                <xbd:ort>Überlingen</xbd:ort>
+                <xbd:staat listVersionID="2016-01-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
             </xbd:geburtsort>
         </xbd:geburt>
+        <xbd:staatsangehoerigkeit listVersionID="2016-01-01">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+            <code>124</code>
+            <name>belgisch</name>
+        </xbd:staatsangehoerigkeit>
+        <xbd:anschrift>
+            <xbd:strasse>Am Musterdeich</xbd:strasse>
+            <xbd:hausnummer>36</xbd:hausnummer>
+            <xbd:postleitzahl>14776</xbd:postleitzahl>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
+            <xbd:verwaltungspolitischeKodierung>
+                <xbd:regionalschluessel listVersionID="2016-06-01">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs -->
+                    <code>120510000000</code>
+                    <!-- Brandenburg an der Havel, Stadt -->
+                </xbd:regionalschluessel>
+            </xbd:verwaltungspolitischeKodierung>
+        </xbd:anschrift>
+        <xbd:geschlecht>
+            <xbd:geschlecht>
+                <code>m</code>
+            </xbd:geschlecht>
+        </xbd:geschlecht>
         <xbd:identifikationsnummer>
-            <xbd:id>7568522</xbd:id>
+            <xbd:id>3767526</xbd:id>
             <xbd:beschreibung>Schülernummer</xbd:beschreibung>
         </xbd:identifikationsnummer>
+        <xsc:sonderpaedagogischerFoerderbedarf>
+            <xsc:art>Dyskalkulie</xsc:art>
+            <xsc:schwerpunkt listURI="urn:xschule-digital:kmk:codeliste:foerderschwerpunkt"
+                listVersionID="2019">
+                <code>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</code>
+                <!-- abweichend vom fiktiven Ausstellungsdatum 2016 -->
+            </xsc:schwerpunkt>
+            <xsc:sonderpaedagogischesGutachten>Sonderpädagogisches Gutachten vom 07.02.2013</xsc:sonderpaedagogischesGutachten>
+        </xsc:sonderpaedagogischerFoerderbedarf>
         <xsc:impfung>
             <xsc:impfschutz>
                 <xsc:code>
@@ -72,25 +104,28 @@
             </xsc:krankheit>
         </xsc:impfung>
         <xsc:herkunftssprache>
-            <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
         </xsc:herkunftssprache>
         <xsc:verkehrssprache>
-            <code>http://publications.europa.eu/resource/authority/language/POR</code>
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
         </xsc:verkehrssprache>
+        <xsc:schulform>
+            <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/050</code>
+            <!-- Grundschule (1 - 4) -->
+        </xsc:schulform>
     </xsc:schueler>
 
     <xsc:erziehungsberechtigter>
         <xsc:gesetzlicherVertreterSchluessel>
-            <code>1</code>
-            <!-- Vater, Elternteil -->
+            <code>2</code>
+            <!-- Mutter, Elternteil -->
         </xsc:gesetzlicherVertreterSchluessel>
         <xsc:anschrift>
-            <xbd:strasse>Musterstraße</xbd:strasse>
-            <xbd:hausnummer>84</xbd:hausnummer>
-            <xbd:postleitzahl>79104</xbd:postleitzahl>
-            <xbd:ort>Freiburg im Breisgau</xbd:ort>
-            <xbd:staat listVersionID="2022-02-18">
-                <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+            <xbd:strasse>Am Musterdeich</xbd:strasse>
+            <xbd:hausnummer>36</xbd:hausnummer>
+            <xbd:postleitzahl>14776</xbd:postleitzahl>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
+            <xbd:staat listVersionID="2016-01-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
@@ -100,8 +135,50 @@
                 <code>03</code>
                 <!-- Telefon mobil -->
             </xbd:kanal>
-            <xbd:kennung>0049 171 443 353</xbd:kennung>
+            <xbd:kennung>0049 174 463 357</xbd:kennung>
             <xbd:istDienstlich>false</xbd:istDienstlich>
+        </xsc:kontakt>
+        <xsc:weitereDaten>
+            <xsc:natuerlichePerson>
+                <xsc:name>
+                    <xbd:anrede>Frau</xbd:anrede>
+                    <xbd:familienname>
+                        <xbd:name>Mustermann</xbd:name>
+                    </xbd:familienname>
+                    <xbd:vorname>
+                        <xbd:name>Louise</xbd:name>
+                    </xbd:vorname>
+                </xsc:name>
+                <xsc:geburt>
+                    <xbd:jahrMonatTag>1980-03-11</xbd:jahrMonatTag>
+                </xsc:geburt>
+            </xsc:natuerlichePerson>
+        </xsc:weitereDaten>
+    </xsc:erziehungsberechtigter>
+
+    <xsc:erziehungsberechtigter>
+        <xsc:gesetzlicherVertreterSchluessel>
+            <code>1</code>
+            <!-- Vater, Elternteil -->
+        </xsc:gesetzlicherVertreterSchluessel>
+        <xsc:anschrift>
+            <xbd:strasse>Am Musterdeich</xbd:strasse>
+            <xbd:hausnummer>36</xbd:hausnummer>
+            <xbd:postleitzahl>14776</xbd:postleitzahl>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
+            <xbd:staat listVersionID="2016-01-01">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
+        </xsc:anschrift>
+        <xsc:kontakt>
+            <xbd:kanal>
+                <code>03</code>
+                <!-- Telefon mobil -->
+            </xbd:kanal>
+            <xbd:kennung>0049 173 453 729</xbd:kennung>
+            <xbd:istDienstlich>true</xbd:istDienstlich>
+            <xbd:zusatz>Notfallkontakt zum Vater</xbd:zusatz>
         </xsc:kontakt>
         <xsc:weitereDaten>
             <xsc:natuerlichePerson>
@@ -115,50 +192,7 @@
                     </xbd:vorname>
                 </xsc:name>
                 <xsc:geburt>
-                    <xbd:jahrMonatTag>1980-11-14</xbd:jahrMonatTag>
-                </xsc:geburt>
-            </xsc:natuerlichePerson>
-        </xsc:weitereDaten>
-    </xsc:erziehungsberechtigter>
-
-    <xsc:erziehungsberechtigter>
-        <xsc:gesetzlicherVertreterSchluessel>
-            <code>2</code>
-            <!-- Mutter, Elternteil -->
-        </xsc:gesetzlicherVertreterSchluessel>
-        <xsc:anschrift>
-            <xbd:strasse>Musterstraße</xbd:strasse>
-            <xbd:hausnummer>84</xbd:hausnummer>
-            <xbd:postleitzahl>79104</xbd:postleitzahl>
-            <xbd:ort>Freiburg im Breisgau</xbd:ort>
-            <xbd:staat listVersionID="2022-02-18">
-                <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
-                <code>000</code>
-                <name>Deutschland</name>
-            </xbd:staat>
-        </xsc:anschrift>
-        <xsc:kontakt>
-            <xbd:kanal>
-                <code>03</code>
-                <!-- Telefon mobil -->
-            </xbd:kanal>
-            <xbd:kennung>0049 123 456 789</xbd:kennung>
-            <xbd:istDienstlich>true</xbd:istDienstlich>
-            <xbd:zusatz>Notfallkontakt zur Mutter</xbd:zusatz>
-        </xsc:kontakt>
-        <xsc:weitereDaten>
-            <xsc:natuerlichePerson>
-                <xsc:name>
-                    <xbd:anrede>Frau</xbd:anrede>
-                    <xbd:familienname>
-                        <xbd:name>Mustermann</xbd:name>
-                    </xbd:familienname>
-                    <xbd:vorname>
-                        <xbd:name>Sabine</xbd:name>
-                    </xbd:vorname>
-                </xsc:name>
-                <xsc:geburt>
-                    <xbd:jahrMonatTag>1980-12-20</xbd:jahrMonatTag>
+                    <xbd:jahrMonatTag>1980-02-17</xbd:jahrMonatTag>
                 </xsc:geburt>
             </xsc:natuerlichePerson>
         </xsc:weitereDaten>
@@ -166,39 +200,45 @@
 
     <xsc:aufnahme>
         <xsc:datum>
-            <xbd:jahrMonatTag>2022-09-01</xbd:jahrMonatTag>
+            <xbd:jahrMonatTag>2016-09-01</xbd:jahrMonatTag>
         </xsc:datum>
         <xsc:jahrgang>
-            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_7</code>
         </xsc:jahrgang>
         <xsc:versetzt>true</xsc:versetzt>
+        <!-- normale Versetzung ohne Ausnahmetatbestand -->
         <xsc:versetzungsOderAusnahmetatbestandstyp>
             <xsc:code>
                 <code>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung</code>
-                <!-- normale Versetzung ohne Ausnahmetatbestand -->
             </xsc:code>
         </xsc:versetzungsOderAusnahmetatbestandstyp>
     </xsc:aufnahme>
 
     <xsc:aufnehmendeSchule>
         <xbd:name>
-            <xbd:name>Musterschule im Breisgau</xbd:name>
-            <xbd:kurzbezeichnung>Musterschule</xbd:kurzbezeichnung>
+            <xbd:name>Musteroberschule</xbd:name>
+            <xbd:kurzbezeichnung>MOS</xbd:kurzbezeichnung>
         </xbd:name>
+        <xbd:kommunikation>
+            <xbd:kanal>
+                <code>01</code>
+                <!-- E-Mail -->
+            </xbd:kanal>
+            <xbd:kennung>musteroberschule-bbstadt@beispiel.com</xbd:kennung>
+        </xbd:kommunikation>
         <xbd:identifikation>
-            <xbd:id>BY_106345</xbd:id>
+            <xbd:id>BB_10040</xbd:id>
         </xbd:identifikation>
         <xbd:anschrift>
-            <xbd:strasse>Schwarzwaldstraße</xbd:strasse>
-            <xbd:hausnummer>107</xbd:hausnummer>
-            <xbd:postleitzahl>79194</xbd:postleitzahl>
-            <xbd:ort>Vörstetten</xbd:ort>
-            <xbd:ortFruehererGemeindename>Gundelfingen a.d.Donau, St</xbd:ortFruehererGemeindename>
+            <xbd:strasse>Musterschule-Allee</xbd:strasse>
+            <xbd:hausnummer>7</xbd:hausnummer>
+            <xbd:postleitzahl>14770</xbd:postleitzahl>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
             <xbd:verwaltungspolitischeKodierung>
-                <xbd:gemeindeschluessel listVersionID="2022-08-31">
+                <xbd:gemeindeschluessel listVersionID="2016-06-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags -->
-                    <code>09773136</code>
-                    <!-- Gundelfingen a.d.Donau, St -->
+                    <code>12051000</code>
+                    <!-- Brandenburg an der Havel, Stadt -->
                 </xbd:gemeindeschluessel>
             </xbd:verwaltungspolitischeKodierung>
         </xbd:anschrift>
@@ -207,39 +247,37 @@
     <xsc:besuchteSchule>
         <xsc:angabeSchule>
             <xbd:name>
-                <xbd:name>Grundschule Potsdam</xbd:name>
-                <xbd:kurzbezeichnung>GS Potsdam</xbd:kurzbezeichnung>
+                <xbd:name>Grundschule im Musterweg</xbd:name>
+                <xbd:kurzbezeichnung>GSM</xbd:kurzbezeichnung>
             </xbd:name>
             <xbd:kommunikation>
                 <xbd:kanal>
                     <code>01</code>
                     <!-- E-Mail -->
                 </xbd:kanal>
-                <xbd:kennung>beispielschule@example.com</xbd:kennung>
+                <xbd:kennung>gsm-bbstadt@beispiel.com</xbd:kennung>
             </xbd:kommunikation>
             <xbd:identifikation>
-                <xbd:id>BB_106124</xbd:id>
+                <xbd:id>BB_10020</xbd:id>
             </xbd:identifikation>
             <xsc:schulform>
                 <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/050</code>
                 <!-- Grundschule (1 - 4) -->
             </xsc:schulform>
-            <xsc:schulprofil>mit Schwerpunkt Musik</xsc:schulprofil>
-            <xsc:bildungsgang>G8</xsc:bildungsgang>
         </xsc:angabeSchule>
         <xsc:zeitraum>
-            <xbd:beginn>2020-09-01</xbd:beginn>
-            <xbd:ende>2021-07-01</xbd:ende>
+            <xbd:beginn>2012-11-15</xbd:beginn>
+            <xbd:ende>2016-07-01</xbd:ende>
         </xsc:zeitraum>
         <xsc:schuljahrgang>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_6</code>
             </xsc:jahrgangsstufe>
             <xsc:unterrichtsteilnahme>
-                <!-- Genehmigte Nichtteilnahme am Unterricht im ersten Monat der ersten Klasse-->
+                <!-- Genehmigte Nichtteilnahme am Unterricht in der sechsten Klasse-->
                 <xsc:zeitraum>
-                    <xbd:beginn>2020-09-01</xbd:beginn>
-                    <xbd:ende>2020-10-01</xbd:ende>
+                    <xbd:beginn>2015-11-01</xbd:beginn>
+                    <xbd:ende>2015-11-15</xbd:ende>
                 </xsc:zeitraum>
                 <xsc:art>
                     <xsc:code>
@@ -253,7 +291,6 @@
     </xsc:besuchteSchule>
 
     <xsc:schulformspezifischeZusatzdaten>
-        <xsc:schulbesuchsjahreInSchuleingangsphase>1</xsc:schulbesuchsjahreInSchuleingangsphase>
         <xsc:teilnahmeGemeinsamerUnterricht>
             <xsc:code>
                 <code>http://xschule.digital/def/xschule/0.7/code/teilnahmegemeinsamerunterricht/zielgleich</code>
@@ -261,17 +298,34 @@
         </xsc:teilnahmeGemeinsamerUnterricht>
     </xsc:schulformspezifischeZusatzdaten>
 
+    <xsc:fremdsprache>
+        <xsc:sprache>
+            <code>http://publications.europa.eu/resource/authority/language/ENG</code>
+        </xsc:sprache>
+        <xsc:abfolge>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/0.7/code/abfolgederfremdsprachen/1_fremdsprache</code>
+            </xsc:code>
+        </xsc:abfolge>
+        <xsc:beginn>
+            <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+        </xsc:beginn>
+        <xsc:belegteJahre>4</xsc:belegteJahre>
+    </xsc:fremdsprache>
+
     <xsc:schullaufbahn>
         <xsc:beginnDerSchulpflicht>
-            <xbd:jahrMonatTag>2021-08-01</xbd:jahrMonatTag>
+            <xbd:jahrMonatTag>2010-09-01</xbd:jahrMonatTag>
         </xsc:beginnDerSchulpflicht>
-        <xsc:schulaufnahme>
-            <xsc:eintrittsdatum>2021-08-01</xsc:eintrittsdatum>
-            <xsc:art>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/artderschulaufnahme/regeleinschulung</code>
-                </xsc:code>
-            </xsc:art>
-        </xsc:schulaufnahme>
+        <xsc:schullaufbahnempfehlung>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/0.7/code/laufbahnempfehlung/gymnasium</code>
+            </xsc:code>
+        </xsc:schullaufbahnempfehlung>
     </xsc:schullaufbahn>
+
+    <xsc:fehltage>
+        <xsc:anzahlGesamt>20</xsc:anzahlGesamt>
+        <xsc:davonEntschuldigt>20</xsc:davonEntschuldigt>
+    </xsc:fehltage>
 </xsc:schueler.wechsel.0001>

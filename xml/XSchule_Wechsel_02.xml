@@ -7,26 +7,29 @@
     xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd">
 
     <!--
-        Datum: 21.11.2023
-        Name der Beispieldatei: Wechsel_02
+        Datum: 24.11.2023
+        Name der Beispieldatei: XSchule_Wechsel_02
         Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Sekundarstufe
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
        
         Fachlicher Sachverhalt:
-        Schüler der Klasse 8 aus der Schule Mustergymnasium aus Bundesland Saarland wechselt ab 01.09.2023 in die 9. Klasse des Bundeslandes NRW. 
+        Schüler der Klasse 8 aus der Schule Mustergymnasium im Bundesland Saarland wechselt ab 01.09.2023 in die 9. Klasse des Bundeslandes NRW. 
     -->
 
     <xbd:titel>Schülerakte</xbd:titel>
+
     <xbd:ausstellung>
         <xbd:datum>2023-07-14</xbd:datum>
         <xbd:ort>Homburg</xbd:ort>
     </xbd:ausstellung>
+
     <xbd:gueltigkeitszeitraum>
         <xbd:beginn>2023-07-14</xbd:beginn>
         <xbd:ende>2024-01-14</xbd:ende>
+        <!-- Gültigkeitszeitraum Datum abgleichen -->
     </xbd:gueltigkeitszeitraum>
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+
+    <xbd:sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
@@ -45,9 +48,8 @@
             </xbd:datum>
             <xbd:geburtsort>
                 <xbd:ort>Homburg</xbd:ort>
-                <xbd:staat
-                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="">
+                <xbd:staat listVersionID="2023-02-24">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
@@ -70,17 +72,14 @@
                     <code>http://xschule.digital/def/xschule/0.7/code/impfschutz/vorhanden</code>
                 </xsc:code>
             </xsc:impfschutz>
-            <xsc:krankheit listURI="urn:xschule-digital:xschule:codeliste:krankheit"
-                listVersionID="0.7">
+            <xsc:krankheit>
                 <code>http://xschule.digital/def/xschule/0.7/code/krankheit/masern</code>
             </xsc:krankheit>
         </xsc:impfung>
-        <xsc:herkunftssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20230614-0">
+        <xsc:herkunftssprache>
             <code>http://publications.europa.eu/resource/authority/language/DEU</code>
         </xsc:herkunftssprache>
-        <xsc:verkehrssprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-            listVersionID="20230614-0">
+        <xsc:verkehrssprache>
             <code>http://publications.europa.eu/resource/authority/language/FRA</code>
         </xsc:verkehrssprache>
     </xsc:schueler>
@@ -89,14 +88,14 @@
         <xsc:datum>
             <xbd:jahrMonatTag>2023-09-01</xbd:jahrMonatTag>
         </xsc:datum>
-        <xsc:jahrgang listURI="urn:xschule-digital:xschule:codeliste:jahrgangsstufe"
-            listVersionID="0.7">
+        <xsc:jahrgang>
             <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_9</code>
         </xsc:jahrgang>
         <xsc:versetzt>true</xsc:versetzt>
         <xsc:versetzungsOderAusnahmetatbestandstyp>
             <xsc:code>
                 <code>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung</code>
+                <!-- normale Versetzung ohne Ausnahmetatbestand -->
             </xsc:code>
         </xsc:versetzungsOderAusnahmetatbestandstyp>
     </xsc:aufnahme>
@@ -112,12 +111,12 @@
             <xbd:postleitzahl>48147</xbd:postleitzahl>
             <xbd:ort>Münster</xbd:ort>
         </xbd:anschrift>
-        <xsc:artDerTraegerschaft listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft"
-            listVersionID="0.95">
+        <xsc:artDerTraegerschaft>
             <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>
+            <!-- Kommune -->
         </xsc:artDerTraegerschaft>
     </xsc:aufnehmendeSchule>
-    
+
     <xsc:besuchteSchule>
         <xsc:angabeSchule>
             <xbd:name>
@@ -126,14 +125,14 @@
             </xbd:name>
             <xbd:anschrift>
                 <xbd:strasse>u. Allee</xbd:strasse>
+                <!-- Straßenname -->
                 <xbd:hausnummer>75</xbd:hausnummer>
                 <xbd:postleitzahl>66424</xbd:postleitzahl>
                 <xbd:ort>Homburg</xbd:ort>
             </xbd:anschrift>
-            <xsc:artDerTraegerschaft
-                listURI="urn:xbildung-de:xbildung:codeliste:artdertraegerschaft"
-                listVersionID="0.95">
+            <xsc:artDerTraegerschaft>
                 <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>
+                <!-- Kommune -->
             </xsc:artDerTraegerschaft>
         </xsc:angabeSchule>
         <xsc:schuljahrgang>
@@ -145,8 +144,7 @@
                 </xsc:code>
             </xsc:versetzungsOderAusnahmetatbestandstyp>
             <xsc:teilnahmeAmGanztagsangebot>false</xsc:teilnahmeAmGanztagsangebot>
-            <xsc:jahrgangsstufe listURI="urn:xschule-digital:xschule:codeliste:jahrgangsstufe"
-                listVersionID="0.7">
+            <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_8</code>
             </xsc:jahrgangsstufe>
         </xsc:schuljahrgang>

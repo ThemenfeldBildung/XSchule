@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
 
     <!--
-        Datum: 21.11.2023
+        Datum: 27.11.2023
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Gudula Barmett
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
@@ -23,8 +23,7 @@
         <xbd:beginn>2021-03-21</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
 
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
@@ -45,8 +44,8 @@
             </xsc:code>
         </xsc:nachweisperiode>
 
-        <xsc:bundesland listVersionID="2010-04-01"
-            listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
+        <xsc:bundesland listVersionID="2010-04-01">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland -->
             <code>07</code>
             <!-- RP -->
         </xsc:bundesland>
@@ -79,9 +78,8 @@
             </xbd:datum>
             <xbd:geburtsort>
                 <xbd:ort>Wiesbaden-Dotzheim</xbd:ort>
-                <xbd:staat
-                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="2023-02-24">
+                <xbd:staat listVersionID="2022-02-18">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
@@ -105,14 +103,14 @@
             <xbd:hausnummer>2</xbd:hausnummer>
             <xbd:postleitzahl>55116</xbd:postleitzahl>
             <xbd:ort>Mainz</xbd:ort>
-            <xbd:staat
-                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                listVersionID="2023-02-24">
+            <xbd:staat listVersionID="2022-02-18">
+                <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
             <xbd:verwaltungspolitischeKodierung>
                 <xbd:kreis listVersionID="2021-07-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>07315</code>
                     <!-- Mainz, kreisfreie Stadt -->
                 </xbd:kreis>
@@ -141,7 +139,7 @@
         Bildende Kunst               10  12  10  12
         Spanisch                     11  09  11  13
     -->
-    
+
     <xsc:block-i>
         <xsc:kurs>
             <xbd:bezeichnung xml:lang="de">Deutsch (LK/eA)</xbd:bezeichnung>

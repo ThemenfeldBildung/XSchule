@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
 
     <!--
-        Datum: 21.11.2023
+        Datum: 24.11.2023
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Niklas Aschenborn
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Link zur Beispieldatei: https://xbildung.de/web/musternachweis/35440
@@ -45,8 +45,8 @@
             </xsc:code>
         </xsc:nachweisperiode>
 
-        <xsc:bundesland listVersionID="2010-04-01"
-            listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
+        <xsc:bundesland listVersionID="2010-04-01">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland -->
             <code>05</code>
             <!-- NRW -->
         </xsc:bundesland>
@@ -79,9 +79,8 @@
             </xbd:datum>
             <xbd:geburtsort>
                 <xbd:ort>Padeborn</xbd:ort>
-                <xbd:staat
-                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="2023-04-24">
+                <xbd:staat listVersionID="2023-04-24">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
@@ -104,14 +103,13 @@
             <xbd:hausnummer>63</xbd:hausnummer>
             <xbd:postleitzahl>32657</xbd:postleitzahl>
             <xbd:ort>Lemgo</xbd:ort>
-            <xbd:staat
-                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                listVersionID="2023-02-24">
+            <xbd:staat listVersionID="2023-02-24">
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
             <xbd:verwaltungspolitischeKodierung>
                 <xbd:kreis listVersionID="2021-07-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>05766</code>
                     <!-- Kreis Lippe -->
                 </xbd:kreis>
@@ -119,7 +117,7 @@
         </xbd:anschrift>
         <xsc:schulform>
             <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/100</code>
-            <!-- Städt. Gymnasium für Jungen und Mädchen -->
+            <!-- Gymnasium -->
         </xsc:schulform>
         <xsc:artDerTraegerschaft>
             <code>http://xbildung.de/def/xbildung/0.95/code/artdertraegerschaft/40</code>

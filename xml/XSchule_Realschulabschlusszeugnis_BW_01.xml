@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
 
     <!--
-        Datum: 13.11.2023
+        Datum: 27.11.2023
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Link zur Beispieldatei ohne Musterdaten: https://xbildung.de/web/musternachweis/33620
         Musterdaten erstellt anhand: https://www.landesrecht-bw.de/jportal/?quelle=jlink&docid=jlr-RealSchulPrVBW2020V5P13&psml=bsbawueprod.psml&max=true
@@ -24,8 +24,7 @@
         <xbd:beginn>2022-07-01</xbd:beginn>
     </xbd:gueltigkeitszeitraum>
 
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
 
@@ -41,11 +40,10 @@
                 <code>http://xschule.digital/def/xschule/0.7/code/nachweisperiode/jahr</code>
             </xsc:code>
         </xsc:nachweisperiode>
-        <xsc:bundesland listVersionID="2010-04-01"
-            listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland">
+        <xsc:bundesland listVersionID="2010-04-01">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland -->
             <code>08</code>
             <!-- BW -->
-            <!-- 08 -->
         </xsc:bundesland>
         <xsc:niveauEQR>
             <code>http://data.europa.eu/snb/eqf/3</code>
@@ -72,9 +70,8 @@
             </xbd:datum>
             <xbd:geburtsort>
                 <xbd:ort>Heidelberg</xbd:ort>
-                <xbd:staat
-                    listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                    listVersionID="2023-02-24">
+                <xbd:staat listVersionID="2022-02-18">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xbd:staat>
@@ -88,20 +85,17 @@
     <xsc:schule>
         <xbd:name>
             <xbd:name>Musterhafte Gemeinschaftsschule Heidelberg</xbd:name>
-            <!-- kein xbd:identifikation für Musterschule -->
         </xbd:name>
 
         <xbd:anschrift>
             <xbd:strasse>Musterbaumweg</xbd:strasse>
             <xbd:hausnummer>21</xbd:hausnummer>
             <xbd:ort>Heidelberg</xbd:ort>
-            <xbd:staat
-                listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit"
-                listVersionID="2023-02-24">
+            <xbd:staat listVersionID="2022-02-18">
+                <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                 <code>000</code>
                 <name>Deutschland</name>
             </xbd:staat>
-            <!-- kein xbd:verwaltungspolitischeKodierung angebeben -->
         </xbd:anschrift>
         <xsc:schulform>
             <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/110</code>
@@ -468,7 +462,6 @@
     <xsc:kombinierteBewertung>
         <xsc:bezeichnung>Durchschnitt der Gesamtleistungen und Gesamtnote</xsc:bezeichnung>
         <xsc:note>
-            <!-- xbd:note nicht zulässig in xsc:kombinierteBewertung? -->
             <xbd:note>2</xbd:note>
             <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
             <xbd:bewertungsschemaNote>
@@ -509,5 +502,4 @@
         </xsc:art>
         <xsc:beschreibung>Hat erfolgreich teilgenommen an der Arbeitsgemeinschaft "Stricken nach Muster"</xsc:beschreibung>
     </xsc:bemerkung>
-
 </xsc:schueler.zeugnis.0003>
