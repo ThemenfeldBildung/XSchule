@@ -14,63 +14,217 @@
         Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
         aufgeführt.</para>
 
-    <section xml:id="spezifikation.anhang.versionshistorie07">
+    <section xml:id="spezifikation.anhang.versionshistorie10">
         <info>
-            <title>Version 0.7</title>
+            <title>Version &version;</title>
         </info>
         <para>Veröffentlichungsdatum: &fassung;</para>
 
         <section>
-            <title>Ermöglichung von Profilbildung</title>
-            <para>Das Modell wurde so ergänzt, dass es erweiterbar ist. Dadurch können insbesondere
-                die Wechselnachricht und die Schulbescheinigung in spezialisierten, z.B.
-                bundeslandspezifischen Anwendungsfällen verwendet werden.</para>
-            <para>Welche Voraussetzungen für eine Erweiterung erfüllt sein müssen und wie diese
-                umgesetzt werden kann, wird im neu hinzugefügten Kapitel <link
-                    linkend="spezifikation.profilbildung">Erweiterbarkeit und Profilbildung</link>,
-                beschrieben. Die dort aufgeführten Codelisten sind zur Erweiterung vorgesehen. Wird
-                der Wert "wert_nicht_in_liste" ausgewählt, erlaubt die Modellierung nun eine
-                Freitext-Angabe. </para>
-            <para>Für die Modellierung bedeutet das, dass erweiterbare Codelisten nun als anonyme
-                Klasse umgesetzt sind und die Code-Werte zusätzlich in einen &lt;xsc:code&gt;-Tag
-                eingeschlossen werden.</para>
+            <title>Neues Konzept zur Einbindung der Kernkomponenten</title>
+            <para>Die XÖV-Kernkomponenten wurden aus XBildung entfernt und sind mit der Version 1.0
+                XSchule direkt über die XÖV-Bibliothek eingebunden.</para>
+            <para> Die Kernkomponente NatuerlichePerson wurde anwendungsfallspezifisch modelliert
+                und wurde dadurch zu <link linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
+                    >Schueler</link>, <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
+                    >SchuelerWechselnd</link> und <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
+                    >SchuelerAbiturzeugnis</link>. Durch SchuelerWechselnd kann der Anwendungsfall
+                der <link linkend="XSchule.Nachweise.schueler.wechsel.0001">Wechselnachricht</link>
+                erfüllt werden, SchuelerAbiturzeugnis wird im <link
+                    linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link>
+                verwendet. Der <link linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
+                    >Schueler</link> findet im <link
+                    linkend="XSchule.Nachweise.schueler.zeugnis.0003">generischen Zeugnis</link>
+                sowie in der <link linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004"
+                    >Schulbescheinigung</link> Anwendung. Neben der <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Anschrift">Anschrift</link> wurde
+                zusätzlich die <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis"
+                    >AnschriftSchuelerAbiturzeugnis</link> angelegt. Hierbei handelt es sich um eine
+                reduzierte Anschrift, die lediglich aus Postleitzahl, Ort und Staat besteht und für
+                das Abiturzeugnis verwendet wird. </para>
+            <para> Im Rahmen der Neueinbindung der Kernkomponenten aus der XÖV-Bibliothek ins
+                XSchule-Modell wurde die Klasse <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link> strukturell
+                überarbeitet. Drei Kernkomponenten <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link>, <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht">SchuleBesucht</link>
+                und <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
+                    >SchuleAufnehmend</link> wurden als Kernkomponente "Organisation" aus der
+                XÖV-Bibliothek mit fach- und anwendungsfallspezifischen Änderungen ins Modell
+                aufgenommen.</para>
+            <para>Zu den Kernkomponenten kommt die <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe">Ortsangabe</link> hinzu,
+                die als reduzierte Anschrift verwendet wird.</para>
         </section>
 
         <section>
-            <title>Neuer Nachweis: Schulbescheinigung</title>
-            <para>Es wurde die neue Nachweisnachricht <link
+            <title>Strukturelle Überarbeitung der Nachricht schueler.wechsel.0001</title>
+            <para>Die Nachricht <link linkend="XSchule.Nachweise.schueler.wechsel.0001"
+                    >schueler.wechsel.0001</link> wurde strukturell überarbeitet. Die Eigenschaft
+                "konfession" vom Datentyp <link linkend="XSchule.Baukasten.Codes.Code.Konfession"
+                    >Code.Konfession</link> wurde der Klasse <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
+                    >SchuelerWechselnd</link> zugeordnet. Die Eigenschaft "aufnahme" wurde der
+                Klasse <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
+                    >SchuleAufnehmend</link> zugeordnet. Die Eigenschaft "artDerSchulaufnahme" mit
+                der entsprechend hinterlegten Codeliste <link
+                    linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
+                    >ArtDerSchulaufnahme</link> wurde aus der Klasse "Schullaufbahn" entfernt und
+                als Kindelement der Eigenschaft "aufnahme" in der Klasse <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
+                    >SchuleAufnehmend</link> hinzugefügt. Die Eigenschaften
+                "schulformspezifischeZusatzdaten" vom Datentyp <link
+                    linkend="XSchule.Baukasten.SchulformspezifischeZusatzdaten"
+                    >SchulformspezifischeZusatzdaten</link>, "wahlpflichtkurs" vom Datentyp <link
+                    linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link> und "fehltage" vom
+                Datentyp <link linkend="XSchule.Baukasten.Fehltage">Fehltage</link> wurden der
+                Klasse <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht"
+                    >SchuleBesucht</link> zugeordnet.</para>
+        </section>
+
+        <section>
+            <title>Erweiterbare Codelisten</title>
+            <para>Die folgenden Codelisten sind zusätzlich zur Erweiterung vorgesehen:
+                    <emphasis>ArtDerPruefung</emphasis> (genutzt von <link
+                    linkend="XSchule.Baukasten.Pruefungsergebnis">Pruefungsergebnis</link>),
+                    <emphasis>ArtDerSchule</emphasis> (genutzt von <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Schueler">Schueler</link>, <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
+                    >SchuelerAbiturzeugnis</link>, <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
+                    >SchuelerWechselnd</link>, <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link> und <link
+                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht">SchuleBesucht</link>)
+                und <emphasis>ArtDesSchulabschlusses</emphasis> (genutzt in <link
                     linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004"
-                    >Schulbescheinigung</link> angelegt und ihr Zweck als <link
-                    linkend="spezifikation.einleitung.dieKernanwendungsfälle.0004"
-                    >Anwendungsfall</link> beschrieben. </para>
+                    >Schulbescheinigung</link>, <link
+                    linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link> und
+                    <link linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link>. Wird der
+                Wert "wert_nicht_in_liste" ausgewählt, erlaubt die Modellierung nun eine
+                Freitext-Angabe. Für die Modellierung bedeutet das, dass erweiterbare Codelisten nun
+                als anonyme Klasse umgesetzt sind und die Code-Werte zusätzlich in einen
+                &lt;xsc:code&gt;-Tag eingeschlossen werden.</para>
+        </section>
+
+        <section>
+            <title>Weitere Änderungen an Codelisten</title>
+            <para> Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
+                    >Verpflichtungsgrad</link> wurde um die Werte "außerunterrichtliche Angebote"
+                und "freiwillige Zusatzangebote" ergänzt. </para>
+            <para>Des Weiteren wurde die Codeliste <link
+                    linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp">Versetzungstyp</link> um
+                die Werte "Schulformwechsel ohne Versetzung", "Versetzung mit Überspringen einer
+                Klasse", "Versetzung mit Schulformwechsel" sowie "Versetzung mit Notenschutz"
+                ergänzt.</para>
+            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
+                    >Jahrgangsstufe</link> wurde im Rahmen der Umstellung auf KDS 4.0 umfassend
+                erweitert.</para>
+            <para>Da die Codelisten <link linkend="XSchule.Baukasten.Codes.Code.Fach"
+                    >Abiturfach</link>, <link linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB"
+                    >ArtDerHZB</link>, <link
+                    linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
+                    >Foederschwerpunkt</link> und <link
+                    linkend="XSchule.Baukasten.Codes.Code.Aufgabenfeld">Aufgabenfeld</link> von
+                XSchule technisch zur Verfügung gestellt werden, wurde ihre Version auf 1.0
+                vereinheitlicht. Das hat auch Auswirkung auf die URI der Codelisten-Werte.</para>
+            <para/>
         </section>
 
         <section>
             <title>Sonstige Änderungen</title>
-            <simplesect>
-                <title>Codeliste Förderschwerpunkt</title>
-                <para>In der Klasse <link
-                        linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
-                        >SonderpaedagogischerFoerderbedarf</link> wurde das Kindelement "art" auf
-                    Datentyp String.Localized umgestellt. Dem Kindlement "schwerpunkt" wurde der
-                    Datentyp <link linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
-                        >Code.Foerderschwerpunkt</link> mit Nutzungstyp-4 (unbenannte Codeliste)
-                    zugewiesen. Wie im Kapitel <link
-                        linkend="spezifikation.profilbildung.codelisten_wnil">II.2.2 Nutzung
-                        externer Wertelisten</link> beschrieben wird, kann diese Eigenschaft mit
-                    anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. XSchule
-                    stellt die Codeliste <link
-                        linkend="tabelle.urn.xschule-digital.kmk.codeliste.foerderschwerpunkt.Foerderschwerpunkt-Codes"
-                        >Förderschwerpunkt</link> zur Verfügung. </para>
-            </simplesect>
-            <simplesect>
-                <title>Digitale Signaturen</title>
-                <para>XSchule bindet die XSDs ein, um <link linkend="externe.modelle.">W3C-XML
-                        Signaturen</link> zu ermöglichen. Um die Nachweise mit einer "enveloped"
-                    Signatur versehen zu können, haben sie "ds:Signature" als letztes
-                    (optionales) Element erhalten.</para>
-            </simplesect>
+            <para>Es wurde die Klasse <link linkend="XSchule.Baukasten.Anlage">Anlage</link>
+                umgesetzt, die eine Übermittlung von Anlagen ermöglicht. XSchule legt sich nicht
+                abschließend darauf fest, wie Anlagen übermittelt werden sollen. Wird die Anlage
+                nicht in die XML-Datei eingebettet, wird davon ausgegangen, dass sie über den
+                Dateinamen und das verwendete Übertragungs- bzw. Auslieferungsverfahren eindeutig
+                identifiziert werden kann. </para>
+            <para>Die Klasse Schulkurs und die bisher nachgenutzte Klasse Kurs aus XBildung wurden
+                vereint. Die Klasse <link linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link>
+                enthält nun alle Eigenschaften der beiden vorherigen Klassen.</para>
+            <para>Zudem erfolgte eine Umbenennung von sonderpaedagogischesGutachten in anlage sowie
+                Anpassung der Multiplizität auf 1..n und Anpassung der Beschreibung.</para>
         </section>
+
+        <section>
+            <title>Liste der umgesetzten Tickets</title>
+            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>XSC-366: Codeliste Jahrgangsstufe überarbeiten </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-360: Eigenschaft Sonderpädagogisches Gutachten zu Anlage
+                        verallgemeinert</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-358: Codeliste Versetzungstyp überarbeiten</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-357: xbd:Ortsangabe nachnutzen </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-355: Schueler in Schulbescheinigung verwenden und schuljahr
+                        hinzufügen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-354: ortFruehererGemeindename aus Anschrift löschen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-353: Schule statt ausstellendeSchule in Schulbescheinigung
+                        verwenden</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-352: xbd:Kurs vollständig in Schulkurs einbauen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-351: Codeliste mit ~wert_nicht_in_liste erweiterbar machen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-350: Klasse Anlage erstellen und nutzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-347: Codelisten weitestgehend auf sprechende Werte umstellen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-344: Versionierung von Codelisten prüfen und ggf. anpassen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-325: Beschreibung und Werte von Codelisten, die auf dem Kerndatensatz
+                        4.0 basieren, vereinheitlichen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-322: Codeliste Verpflichtungsgrad überarbeiten </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-321: Beschreibung zu sonderpädagogischem Förderbedarf und
+                        Förderschwerpunkt verbessern</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-249: Kernkomponenten in XSchule anwendungsfallspezifisch
+                        einsetzen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-150: Rolle der Anschrift bei Unterbringung in Kinderheim / Jugendheim
+                        klären</para>
+                </listitem>
+
+            </itemizedlist>
+        </section>
+    </section>
+
+    <section xml:id="spezifikation.anhang.versionshistorie07">
+        <info>
+            <title>Version 0.7</title>
+        </info>
+        <para>Veröffentlichungsdatum: 10.11.2023</para>
+
+        <para> Veränderungen zur vorherigen Version: Das Modell wurde so ergänzt, dass es
+            erweiterbar ist. Dadurch können insbesondere die Wechselnachricht und die
+            Schulbescheinigung in spezialisierten, z.B. bundeslandspezifischen Anwendungsfällen
+            verwendet werden. </para>
 
         <simplesect>
             <title>Liste der umgesetzten Tickets</title>
@@ -151,213 +305,5 @@
             </itemizedlist>
         </simplesect>
 
-    </section>
-
-
-    <section xml:id="spezifikation.anhang.versionshistorie06">
-        <info>
-            <title>Version 0.6</title>
-        </info>
-        <para>Veröffentlichungsdatum: 18. Juli 2023</para>
-
-        <section>
-            <title>Änderungen im Zusammenhang mit XBildung 0.95</title>
-            <para>Folgende Änderungen in XBildung 0.95 hatten zur Folge, dass auch Anpassungen an
-                XSchule vorgenommen wurden. Die Änderungen, die notwendig werden, weil sie von
-                XBildung geerbt wurden, werden hier nicht genannt. </para>
-            <simplesect>
-                <title>Einheitliches Vorgehen für String-basierte Datentypen und
-                    Mehrsprachigkeit</title>
-                <para>XBildung 0.95 hat in diesem Zusammenhang drei Änderungen vorgenommen, die sich
-                    auch auf XSchule auswirken: Wahl des Datentyps, Umgang mit Mehrsprachigkeit und
-                    Häufigkeit bei xbd:String.Localized. </para>
-                <para>Bei allen <link linkend="spezifikation.dokumenteFuerDenDatenaustausch"
-                        >Dokumenten für den Datenaustausch</link> ist die Eigenschaft "sprache" nun
-                    verpflichtend (Häufigkeit 1, statt 0..n). Damit wird die Standard-Sprache des
-                    Dokuments festgelegt. Die Sprache eines Elements vom Typ xbd:String.Localized
-                    muss nur noch angegeben werden, wenn sie davon abweicht. </para>
-                <para>Daher wurde die Kardinalität der Eigenschaften vom Typ xbd:String.Localized in
-                    den folgenden Klassen von 0..n auf 0..1 geändert: </para>
-                <itemizedlist>
-                    <listitem>
-                        <para><link linkend="XSchule.Nachweise.schueler.wechsel.0001"
-                                >Wechselnachricht</link></para>
-                    </listitem>
-                    <listitem>
-                        <para><link linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"
-                                >Abiturzeugnis</link></para>
-                    </listitem>
-                    <listitem>
-                        <para><link linkend="XSchule.Nachweise.schueler.zeugnis.0003"
-                            >Zeugnis</link></para>
-                    </listitem>
-                    <listitem>
-                        <para><link linkend="XSchule.Baukasten.Bemerkung">Bemerkung</link></para>
-                    </listitem>
-                    <listitem>
-                        <para><link linkend="XSchule.Baukasten.Pruefungsergebnis"
-                                >Pruefungsergebnis</link></para>
-                    </listitem>
-                    <listitem>
-                        <para><link linkend="XSchule.Baukasten.Unterrichtsteilnahme"
-                                >Unterrichtsteilnahme</link></para>
-                    </listitem>
-                </itemizedlist>
-            </simplesect>
-            <simplesect>
-                <title>Nutzen von EQF statt NQR/DQR</title>
-                <para>Die Eigenschaft "niveau" der allgemeinen Angaben in <link
-                        linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link>
-                    und <link linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link>
-                    verwendet die international verständliche Codeliste xbd:EQF, statt wie bisher
-                    NQR-DQR. Die Codeliste NQR-DQR wurde entfernt. </para>
-            </simplesect>
-        </section>
-
-        <section>
-            <title>Änderungen bezüglich des Schulwechsels</title>
-            <para>Die <link linkend="XSchule.Nachweise.schueler.wechsel.0001"
-                    >Wechselnachricht</link> wurde nach Auswertung aller Schulgesetze grundlegend
-                überarbeitet und erweitert. </para>
-        </section>
-
-        <section>
-            <title>Sonstige Änderungen</title>
-            <simplesect>
-                <title>Codeliste xsc:ArtDerHZB</title>
-                <para>Um die Art einer erworbenen Hochschulzugangsberechtigung anzugeben, können
-                        <link linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"
-                        >Abiturzeugnis</link> und <link
-                        linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link> statt wie
-                    bisher Freitext auf die Codeliste <link
-                        linkend="tabelle.urn.xschule-digital.destatis.codeliste.artderhzb.ArtDerHZB-Codes"
-                        >Art der HZB</link> zurückgreifen. </para>
-            </simplesect>
-            <simplesect>
-                <title>Codeliste xbd:ArtDerSchule</title>
-                <para>Um die besuchte bzw. angebotene Schulart zu beschreiben, wird statt einem
-                    Freitext die auf dem KMK Kerndatensatz basierende Codeliste xbd:ArtDerSchule
-                    verwendet. </para>
-                <para>Betroffen sind die Klassen <link
-                        linkend="XSchule.Baukasten.NachweisinhabenderSchueler"
-                        >NachweisinhabenderSchueler</link>, <link linkend="XSchule.Baukasten.Schule"
-                        >Schule</link> und <link linkend="XSchule.Baukasten.WechselnderSchueler"
-                        >WechselnderSchueler</link>. </para>
-            </simplesect>
-        </section>
-
-        <simplesect>
-            <title>Liste der umgesetzten Tickets</title>
-            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
-            <itemizedlist>
-                <listitem override="none">
-                    <para><emphasis role="bold">Änderungen im Zusammenhang mit XBildung
-                            0.95</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-271: XBD 0.95 einbinden</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-291: Änderungen der Kardinalität von
-                        String.Localized-Eigenschaften</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-270: Nutzen von EQF statt NQR/DQR</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-234: von DIN SPEC 91379 auf DIN 91379 wechseln</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-260: teilbekanntesDatum von XBD benutzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-201: Standard-Codes in Codelisten überarbeiten</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-290: xbd:Bundesland statt xsc:Bundesland nutzen</para>
-                </listitem>
-                <listitem override="none">
-                    <para>&nbsp;</para>
-                </listitem>
-
-                <listitem override="none">
-                    <para><emphasis role="bold">Änderungen bezüglich des
-                        Schulwechsels</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-254: UML-Diagramm für Schulwechsel erstellen </para>
-                </listitem>
-                <listitem>
-                    <para>XSC-279: sonderpädagogischer Förderbedarf ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-278: Fremdsprachinformationen für Wechsel ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-277: Schullaufbahndaten für Schulwechsel ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-276: Fehltage ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-275: Praktikum für Wechselnachricht aufnehmen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-273: Migrationshintergrund für Schulwechsel ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-272: Konfession ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-188: Codeliste ArtDerSchulaufnahme ergänzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-250: Abbildung zum I.4.1 Schulwechsel in der Primarstufe
-                        überarbeiten</para>
-                </listitem>
-                <listitem override="none">
-                    <para>&nbsp;</para>
-                </listitem>
-
-
-                <listitem override="none">
-                    <para><emphasis role="bold">Sonstige Änderungen</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-51: Klasse Impfschutz in ImpfnachweisVorhanden umbenennen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-281: überarbeitete XSC-Journey in die Spezifikation einbinden</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-259: Codeliste xbd:ArtDerSchule nutzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-179: Codeliste xsc:ArtDerHZB aufnehmen und nutzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-243: xsc:BewertungsschemaAbitur zu Gunsten von Eintrag in
-                        xbd:Bewertungsschema löschen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-258: Beschreibung von Zeitraum in Schuljahrgang anpassen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-252: Zweck von Bildungsgang in der Beschreibung spezifizieren</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-283: Metadaten zur Konfiguration im Modell aktualisieren</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-288: Entfernen der Einträge in der Typ-2-Codeliste Gesetzlicher
-                        Vertreter</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-289: Weitere Vereinheitlichung der Benennung und Beschreibung von
-                        Codelisten</para>
-                </listitem>
-
-            </itemizedlist>
-        </simplesect>
     </section>
 </appendix>

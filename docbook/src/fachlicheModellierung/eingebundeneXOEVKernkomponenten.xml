@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE chapter [
+    <!ENTITY % complete SYSTEM "../../ent/complete.ent">
+    %complete;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5" xml:lang="de"
+  xml:id="spezifikation.eingebundeneXOEVKernkomponenten">
+  <info>
+    <title>Kernkomponenten</title>
+  </info>
+
+  <para> Mit der Version 1.0 von XBildung wurde ein neues Konzept zur Einbindung von Kernkomponenten
+    erstellt. Dieses Konzept sieht es vor, dass die Fachmodule die Kernkomponenten direkt einbinden,
+    diese jedoch so angepasst werden, wie es das jeweilige Fachmodul erfordert. </para>
+  <para> Für XSchule wurde beispielsweise die Kernkomponente NatuerlichePerson in Schueler, 
+    SchuelerAbiturzeugnis und SchuelerWechselnd umbenannt. Im Sinne der Datensparsamkeit wurde
+    hier direkt in zwei verschiedene Anwendungsfälle unterschieden.</para>
+  <para>Im folgenden sind alle XSchule-spezifischen Kernkomponenten aufgelistet:</para>
+
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/AllgemeinerName.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/AlternativeRepraesentation.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Anschrift.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/AnschriftSchuelerAbiturzeugnis.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Geburt.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/GeburtSchuelerAbiturzeugnis.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Identifikation.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Kommunikation.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/NameNatuerlichePerson.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/NameOrganisation.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Ortsangabe.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Schueler.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/SchuelerAbiturzeugnis.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/SchuelerWechselnd.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Schule.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/SchuleAufnehmend.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/SchuleBesucht.xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/VerwaltungspolitischeKodierung.xml"/>
+  <include xmlns="http://www.w3.org/2001/XInclude"
+    href="../../build/docBook/dokumente/xschule/Baukasten/Kernkomponenten/Zeitraum.xml"/>
+
+
+</chapter>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Anlage">
+   <title>Anlage</title>
+   <subtitle>Typ: <emphasis role="codebf">Anlage</emphasis>
+   </subtitle><para>Diese Klasse ermöglicht die Übermittlung von Anlagen. XSchule legt sich nicht abschließend darauf fest, wie Anlagen übermittelt werden sollen. Wird die Anlage nicht in die XML-Datei eingebettet, wird davon ausgegangen, dass sie über den Dateinamen und das verwendete Übertragungs- bzw. Auslieferungsverfahren eindeutig identifiziert werden kann.</para><figure xml:id="figure.XSchule.Baukasten.Anlage">
+      <title>Anlage</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../zeichnungen/XSchule/Baukasten/Anlage.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Anlage">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Anlage</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">dateiname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dateiname der Anlage mit Dateinamenerweiterung.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Fachliche oder inhaltliche Bezeichnung der Anlage.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">mediaType</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Freitextangabe des <link xlink:href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Media Type (MIME-Type)</link> der Anlage. Für PDF würde man z.B. <emphasis role="codebf">application/pdf</emphasis> verwenden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">binaerdarstellung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:base64Binary</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Im Base64-Format kodierte Binärdaten. Das Base64-Kodierungsschema ist in RFC 4648 definiert.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../anhang/verwendung/complexTypes/anlage_list.xml"/>
+</section>

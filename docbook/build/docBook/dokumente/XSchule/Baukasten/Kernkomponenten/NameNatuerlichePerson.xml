@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson">
+   <title>NameNatuerlichePerson</title>
+   <subtitle>Typ: <emphasis role="codebf">NameNatuerlichePerson</emphasis>
+   </subtitle><para>Der Name einer Person ist eine Benennung dieser Person, die dazu dient, diese Person von anderen Personen zu unterscheiden.</para>
+<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson">
+      <title>NameNatuerlichePerson</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/NameNatuerlichePerson.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">NameNatuerlichePerson</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">titel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Titel wird häufig im Zusammenhang mit Namen verwendet, ist aber  kein orginärer Bestandteil des Namens. Im Unterschied dazu gehören Adelstitel zum Familiennamen und sind daher in diesem Verständnis kein Titel. Zu den Titeln zählen beispielsweise akademische Grade, Dienst- und Amtsbezeichnungen oder militärische Ränge. Es können auch Titel übermittelt werden, die keine Titel im Sinne des Meldewesens sind.</para>
+
+<para>Beispiel: Dr.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anrede</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Anrede ist der Namenszusatz (auch eine Anrede ohne Namen nur mit Titel ist eine Anrede!) bei der Anrede (mündlich oder schriftlich) oder bei einem Anruf (fernmündlich) an eine Person oder Personengruppe.</para>
+
+<para>Anmerkung: Die komplette Anrede einer Person kann in einem Feld übermittelt werden.</para>
+
+<para>Beispiel: Herr, Frau, Herr Staatssekretär, Frau Bundeskanzlerin, Herr Botschafter, Eure Eminenz</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">familienname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Familienname ist der aktuelle Nachname einer Person und Ausdruck einer bestimmten Familienzugehörigkeit dieser Person.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">geburtsname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Geburtsname ist der Nachname einer Person, der sich jeweils aus dem Geburtseintrag für diese Person ergibt. Der Geburtsname ist i.d.R. der Nachname, der vor der ersten Eheschließung oder Lebenspartnerschaft geführt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">vorname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Vorname ist der Name bzw. der Teil des Namens, der nicht die Zugehörigkeit zu einer Familie ausdrückt, sondern das Individuum innerhalb der Familie bezeichnet und dazu dient, es von anderen Familienmitgliedern zu unterscheiden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">rufname</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">AllgemeinerName</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Rufname ist der im alltäglichen Gebrauch zu nutzende Vorname.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/namenatuerlicheperson_list.xml"/>
+</section>

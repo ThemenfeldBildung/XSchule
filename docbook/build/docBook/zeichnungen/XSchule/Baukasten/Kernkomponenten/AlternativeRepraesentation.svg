@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="246.19062499999998"
-     height="142">
+<svg xmlns="http://www.w3.org/2000/svg" width="302.43125" height="190">
    <defs>
       <style type="text/css">
                         text {
@@ -39,59 +37,81 @@
                         } 
                     </style>
    </defs>
-   <rect width="236.19062499999998"
-         height="132"
+   <rect width="292.43125"
+         height="180"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
          style="stroke: grey;fill: white;"/>
-   <text font-size="14" x="3.6" y="18" font-weight="bold">complexType ReisenderSchueler</text>
+   <text font-size="14" x="3.6" y="18" font-weight="bold">complexType AlternativeRepraesentation</text>
    <g transform="translate(10,34)">
       <g transform="translate(55,0)">
-         <rect width="165.19062499999998" height="18" class="element-upper"/>
-         <rect width="165.19062499999998"
-               height="18"
-               y="18"
-               class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">reiseMitUnternehmenName</text>
-         <line x1="0" y1="18" x2="165.19062499999998" y2="18"/>
+         <rect width="130.75" height="18" class="element-upper"/>
+         <rect width="130.75" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">repraesentation</text>
+         <line x1="0" y1="18" x2="130.75" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xbd:NameOrganisation</text>
-         <g transform="translate(165.19062499999998,0)"/>
+         <text font-size="12" x="35.353125" y="30">xs:base64Binary</text>
+         <g transform="translate(130.75,0)"/>
       </g>
       <line x1="33"
             y1="18"
             x2="55"
             y2="18"
-            class="type-structure-optional"/>
-      <text font-size="11" fill="black" x="53" y="16" text-anchor="end">0..*</text>
+            class="type-structure-required"/>
+      <text font-size="11" fill="black" x="53" y="16" text-anchor="end"/>
       <line x1="33"
             y1="18"
             x2="33"
             y2="18"
             class="type-structure-required"/>
       <g transform="translate(55,48)">
-         <rect width="97.03125" height="18" class="element-upper"/>
-         <rect width="97.03125" height="18" y="18" class="element-lower"/>
-         <text font-size="12" x="3.6" y="12" font-weight="bold">stammschule</text>
-         <line x1="0" y1="18" x2="97.03125" y2="18"/>
+         <rect width="147.734375" height="18" class="element-upper"/>
+         <rect width="147.734375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">algorithmus</text>
+         <line x1="0" y1="18" x2="147.734375" y2="18"/>
          <text font-size="12" fill="grey" x="3.6" y="30">type</text>
          <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
-         <text font-size="12" x="35.353125" y="30">xsc:Schule</text>
-         <g transform="translate(97.03125,0)"/>
+         <text font-size="12" x="35.353125" y="30">din91379:datatypeC</text>
+         <g transform="translate(147.734375,0)"/>
       </g>
       <line x1="33"
             y1="66"
             x2="55"
             y2="66"
-            class="type-structure-required"/>
-      <text font-size="11" fill="black" x="53" y="64" text-anchor="end"/>
+            class="type-structure-optional"/>
+      <text font-size="11" fill="black" x="53" y="64" text-anchor="end">0..1</text>
       <line x1="33"
             y1="18"
             x2="33"
             y2="66"
-            class="type-structure-required"/>
+            class="type-structure-optional"/>
+      <g transform="translate(55,96)">
+         <rect width="147.734375" height="18" class="element-upper"/>
+         <rect width="147.734375" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">hinweis</text>
+         <line x1="0" y1="18" x2="147.734375" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">din91379:datatypeC</text>
+         <g transform="translate(147.734375,0)"/>
+      </g>
+      <line x1="33"
+            y1="114"
+            x2="55"
+            y2="114"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="112"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="66"
+            x2="33"
+            y2="114"
+            class="type-structure-optional"/>
       <circle cx="15"
               cy="18"
               r="10"

@@ -8,7 +8,7 @@
          xml:id="XSchule.Baukasten.Schulkurs">
    <title>Schulkurs</title>
    <subtitle>Typ: <emphasis role="codebf">Schulkurs</emphasis>
-   </subtitle><para>Ergänzt den xbd:Kurs um die Eigenschaften, die notwendig sind, um einen Schulkurs sowie gegebenenfalls die damit verbundenen Leistungen der Lernenden zu beschreiben.</para><figure xml:id="figure.XSchule.Baukasten.Schulkurs">
+   </subtitle><para>Angaben, um einen Schulkurs sowie gegebenenfalls die damit verbundenen erbrachten Leistungen zu beschreiben.</para><figure xml:id="figure.XSchule.Baukasten.Schulkurs">
       <title>Schulkurs</title>
       <mediaobject>
          <imageobject>
@@ -19,7 +19,6 @@
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">Kurs</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
    <informaltable xml:id="table.XSchule.Baukasten.Schulkurs">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
@@ -47,6 +46,149 @@
             </row>
          </thead>
          <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Eindeutige Identifikation eines Kurses.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld enhält den Namen / Titel / Bezeichnung des Schulkurses, z.B. "Deutsch" oder "Lineare Algebra II".</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld enhält die Beschreibung eines Schulkurses.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schwerpunkt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld benennt den Schwerpunkt eines Schulkurses, sofern dieser nicht in der Bezeichnung oder Beschreibung
+des Kurses abgebildet ist.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">note</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld dient der Angabe einer Note / einer Bewertung für einen Schulkurs.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">status</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Kursstatus</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld gibt den Status eines Schulkurses aus Sicht eines jungen Menschen an. Mögliche Status sind beispielsweise "bestanden", "nicht bestanden", oder "erfolgreich teilgenommen".</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schluesselISCEDF2013</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ISCEDF2013</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe des ISCED-F 2013 Schlüssel, um die Inhalte des Schulkurses zu beschreiben.</para></entry>
+            </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">aufgabenfeld</emphasis>
@@ -120,7 +262,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Schlüsselwert der Leistung.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Codelisten-Einträge, die den Schulkurs im fachlichen Kontext der Verwendung klar identifizieren.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -142,7 +284,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Leistung kann auf einem bestimmen Anforderungsniveau erbracht werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Schulkurs kann auf einem bestimmen Anforderungsniveau durchgeführt werden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -156,7 +298,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Leistung kann mit einem bestimmen Verpflichtungsgrad erbracht werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Schulkurs kann mit einem bestimmen Verpflichtungsgrad durchgeführt werden.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -218,7 +360,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Schulkurs kann im ersten oder zweiten Halbjahr des Schuljahres stattfinden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Schulkurs kann z.B. im ersten oder zweiten Halbjahr des Schuljahres stattfinden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -239,7 +381,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier können Angaben zur Jahrgangsstufe angegeben werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier wird angegeben, in welcher Jahrgangsstufe der Schulkurs besucht wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">

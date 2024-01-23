@@ -22,8 +22,10 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry><para>In Deutschland existieren im Bereich der Schulen je Bundesland bis zu 13 Jahrgangsstufen, die sich in die Primarstufe (Jahrgangsstufe 1-4 bzw. in Berlin und Brandenburg 5-6), Sekundarstufe I (Jahrgangsstufe 5-10 bzw. in Berlin und Brandenburg 7-10) und Sekundarstufe II (Jahrgangsstufe 11-12 bzw. 13) aufteilen lassen. In den Anwendungsfällen Schulwechsel und beim Ausstellen eines Abgangs- bzw. Abschlusszeugnisses besteht die Notwendigkeit eine Jahrgangsstufe (1-13) angeben zu können.</para>
-<para>Die Codeliste orientiert sich am KDS 4.0 der KMK, wurde jedoch um zusätzliche Werten ergänzt.</para></entry>
+               <entry><para>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0.
+Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenstufe" (laufende Nummer 2.3), "Klassen-/Jahrgangsstufe/Schuljahrgang des Schülers/der Schülerin" (laufende Nummer 4.9) und "Schulische Herkunft: Im Vorjahr besuchte Jahrgangs-/Klassenstufe (laufende Nummer 4.18)".</para>
+
+<para>Stakeholde-Feedback hat dazu geführt, dass die Codeliste den Begriff "Jahrgangsstufe" statt "Klassenstufe" verwendet. Zudem wurden die Werte "Jahrgangsstufe 11-13" und "Qualifikationsphase 3 und 4" ergänzt.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
@@ -37,7 +39,7 @@
             </row>
             <row>
                <entry>-version</entry>
-               <entry>0.7</entry>
+               <entry>1.0</entry>
             </row>
          </tbody>
       </tgroup>

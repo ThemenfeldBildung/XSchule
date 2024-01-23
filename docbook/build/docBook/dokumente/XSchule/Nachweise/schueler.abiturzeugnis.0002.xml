@@ -15,7 +15,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="79"
+                       scale="76"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.abiturzeugnis.0002.svg"/>
          </imageobject>
       </mediaobject>
@@ -182,10 +182,11 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -263,11 +264,28 @@
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">artDesSchulabschlusses</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe der Art des Schulabschlusses.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.ArtDesSchulabschlusses</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -277,8 +295,29 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Angabe der Art des Schulabschlusses.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -294,7 +333,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Datum und Ort des Erwebs des Zeugnisses. Unterscheidet sich vom (ggf. technischen) Angaben der Eigenschaft "ausstellung", die das xbd:Dokument zur Verfügung stellt. Wird ein Zeugnis neu ausgestellt, ändert sich dadurch üblicherweise der Zeitpunkt des Erwebs nicht.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Datum und Ort des Erwerbs des Zeugnisses. Unterscheidet sich von der (ggf. technischen) Angabe der Eigenschaft "ausstellung", die das xbd:Dokument zur Verfügung stellt. Wird ein Zeugnis neu ausgestellt, ändert sich dadurch üblicherweise der Zeitpunkt des Erwerbs nicht.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="0"/>
@@ -323,40 +362,42 @@
                   <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">Ortsangabe</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="1" colsep="0"/>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).</para>
-<para>Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Hier werden Angaben zum Ort des Erwerbs gemacht (bestehend aus Ort und ggf. Staat).</para>
+</entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">schueler</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">NachweisinhabenderSchueler</emphasis>
+                  <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.NachweisinhabenderSchueler"
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.NachweisinhabenderSchueler"
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
                         role="Seitenzahl"/>
                </entry>
             </row>
@@ -374,10 +415,11 @@
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="AbschnittNummer"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -718,79 +760,29 @@
             </thead>
             <tbody>
                <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;V&#x200B;o&#x200B;r&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Vorname vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:vorname[1]/xbd:name[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;F&#x200B;a&#x200B;m&#x200B;i&#x200B;l&#x200B;i&#x200B;e&#x200B;n&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Familienname vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:familienname[1]/xbd:name[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-                  <entry>Der Geburtsort vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:geburtsort[1]/xbd:ort[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;t&#x200B;a&#x200B;g&#x200B;</entry>
-                  <entry>Das Geburtsdatum vom Zeugnisinhabenden muss angegeben sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:datum[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;W&#x200B;o&#x200B;h&#x200B;n&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-                  <entry>Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;B&#x200B;i&#x200B;l&#x200B;d&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;e&#x200B;i&#x200B;n&#x200B;r&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;N&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-                  <entry>Der Name der Bildungseinrichtung, die das Zeugnis ausstellt, muss angegeben werden.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">not(empty(xsc:schule[1]/xbd:name[1]/xbd:name[1]))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;2&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
                   <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der KMK-Abiturfächer-Liste versehen sein.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
                         <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:kmk:codeliste:abiturfach']) &gt; 0</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xsc:allgemeineAngaben/xsc:artDesSchulabschlusses</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                      </para>
                   </entry>
                </row>

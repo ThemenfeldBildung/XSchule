@@ -1,15 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><!ENTITY element.ref.aufnehmendeschule.artdertraegerschaft '<emphasis role="codebf">artDerTraegerschaft</emphasis>'>
-                        <!ENTITY element.datentyp.ref.aufnehmendeschule.artdertraegerschaft 'Element <emphasis role="codebf">artDerTraegerschaft</emphasis> in Datentyp <emphasis role="codebf">AufnehmendeSchule</emphasis>'>
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY element.ref.allgemeinername.alternativerepraesentation '<emphasis role="codebf">alternativeRepraesentation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.allgemeinername.alternativerepraesentation 'Element <emphasis role="codebf">alternativeRepraesentation</emphasis> in Datentyp <emphasis role="codebf">AllgemeinerName</emphasis>'>
+                        <!ENTITY element.ref.allgemeinername.name '<emphasis role="codebf">name</emphasis>'>
+                        <!ENTITY element.datentyp.ref.allgemeinername.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">AllgemeinerName</emphasis>'>
+                        <!ENTITY element.ref.allgemeinername.nichtvorhanden '<emphasis role="codebf">nichtVorhanden</emphasis>'>
+                        <!ENTITY element.datentyp.ref.allgemeinername.nichtvorhanden 'Element <emphasis role="codebf">nichtVorhanden</emphasis> in Datentyp <emphasis role="codebf">AllgemeinerName</emphasis>'>
+                        <!ENTITY element.ref.alternativerepraesentation.algorithmus '<emphasis role="codebf">algorithmus</emphasis>'>
+                        <!ENTITY element.datentyp.ref.alternativerepraesentation.algorithmus 'Element <emphasis role="codebf">algorithmus</emphasis> in Datentyp <emphasis role="codebf">AlternativeRepraesentation</emphasis>'>
+                        <!ENTITY element.ref.alternativerepraesentation.hinweis '<emphasis role="codebf">hinweis</emphasis>'>
+                        <!ENTITY element.datentyp.ref.alternativerepraesentation.hinweis 'Element <emphasis role="codebf">hinweis</emphasis> in Datentyp <emphasis role="codebf">AlternativeRepraesentation</emphasis>'>
+                        <!ENTITY element.ref.alternativerepraesentation.repraesentation '<emphasis role="codebf">repraesentation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.alternativerepraesentation.repraesentation 'Element <emphasis role="codebf">repraesentation</emphasis> in Datentyp <emphasis role="codebf">AlternativeRepraesentation</emphasis>'>
+                        <!ENTITY element.ref.anlage.bezeichnung '<emphasis role="codebf">bezeichnung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anlage.bezeichnung 'Element <emphasis role="codebf">bezeichnung</emphasis> in Datentyp <emphasis role="codebf">Anlage</emphasis>'>
+                        <!ENTITY element.ref.anlage.binaerdarstellung '<emphasis role="codebf">binaerdarstellung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anlage.binaerdarstellung 'Element <emphasis role="codebf">binaerdarstellung</emphasis> in Datentyp <emphasis role="codebf">Anlage</emphasis>'>
+                        <!ENTITY element.ref.anlage.dateiname '<emphasis role="codebf">dateiname</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anlage.dateiname 'Element <emphasis role="codebf">dateiname</emphasis> in Datentyp <emphasis role="codebf">Anlage</emphasis>'>
+                        <!ENTITY element.ref.anlage.mediatype '<emphasis role="codebf">mediaType</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anlage.mediatype 'Element <emphasis role="codebf">mediaType</emphasis> in Datentyp <emphasis role="codebf">Anlage</emphasis>'>
+                        <!ENTITY element.ref.anschrift.hausnummer '<emphasis role="codebf">hausnummer</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.hausnummer 'Element <emphasis role="codebf">hausnummer</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.ort '<emphasis role="codebf">ort</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.ort 'Element <emphasis role="codebf">ort</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.ortsteil '<emphasis role="codebf">ortsteil</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.ortsteil 'Element <emphasis role="codebf">ortsteil</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.postfach '<emphasis role="codebf">postfach</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.postfach 'Element <emphasis role="codebf">postfach</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.postleitzahl '<emphasis role="codebf">postleitzahl</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.postleitzahl 'Element <emphasis role="codebf">postleitzahl</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.staat '<emphasis role="codebf">staat</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.staat 'Element <emphasis role="codebf">staat</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.strasse '<emphasis role="codebf">strasse</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.strasse 'Element <emphasis role="codebf">strasse</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.verwaltungspolitischekodierung '<emphasis role="codebf">verwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.verwaltungspolitischekodierung 'Element <emphasis role="codebf">verwaltungspolitischeKodierung</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschrift.zusatz '<emphasis role="codebf">zusatz</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschrift.zusatz 'Element <emphasis role="codebf">zusatz</emphasis> in Datentyp <emphasis role="codebf">Anschrift</emphasis>'>
+                        <!ENTITY element.ref.anschriftschuelerabiturzeugnis.ort '<emphasis role="codebf">ort</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschriftschuelerabiturzeugnis.ort 'Element <emphasis role="codebf">ort</emphasis> in Datentyp <emphasis role="codebf">AnschriftSchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.anschriftschuelerabiturzeugnis.postleitzahl '<emphasis role="codebf">postleitzahl</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschriftschuelerabiturzeugnis.postleitzahl 'Element <emphasis role="codebf">postleitzahl</emphasis> in Datentyp <emphasis role="codebf">AnschriftSchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.anschriftschuelerabiturzeugnis.staat '<emphasis role="codebf">staat</emphasis>'>
+                        <!ENTITY element.datentyp.ref.anschriftschuelerabiturzeugnis.staat 'Element <emphasis role="codebf">staat</emphasis> in Datentyp <emphasis role="codebf">AnschriftSchuelerAbiturzeugnis</emphasis>'>
                         <!ENTITY element.ref.bemerkung.art '<emphasis role="codebf">art</emphasis>'>
                         <!ENTITY element.datentyp.ref.bemerkung.art 'Element <emphasis role="codebf">art</emphasis> in Datentyp <emphasis role="codebf">Bemerkung</emphasis>'>
                         <!ENTITY element.ref.bemerkung.beschreibung '<emphasis role="codebf">beschreibung</emphasis>'>
                         <!ENTITY element.datentyp.ref.bemerkung.beschreibung 'Element <emphasis role="codebf">beschreibung</emphasis> in Datentyp <emphasis role="codebf">Bemerkung</emphasis>'>
-                        <!ENTITY element.ref.besuchteschule.angabeschule '<emphasis role="codebf">angabeSchule</emphasis>'>
-                        <!ENTITY element.datentyp.ref.besuchteschule.angabeschule 'Element <emphasis role="codebf">angabeSchule</emphasis> in Datentyp <emphasis role="codebf">BesuchteSchule</emphasis>'>
-                        <!ENTITY element.ref.besuchteschule.schuljahrgang '<emphasis role="codebf">schuljahrgang</emphasis>'>
-                        <!ENTITY element.datentyp.ref.besuchteschule.schuljahrgang 'Element <emphasis role="codebf">schuljahrgang</emphasis> in Datentyp <emphasis role="codebf">BesuchteSchule</emphasis>'>
-                        <!ENTITY element.ref.besuchteschule.zeitraum '<emphasis role="codebf">zeitraum</emphasis>'>
-                        <!ENTITY element.datentyp.ref.besuchteschule.zeitraum 'Element <emphasis role="codebf">zeitraum</emphasis> in Datentyp <emphasis role="codebf">BesuchteSchule</emphasis>'>
                         <!ENTITY element.ref.erweiterung.eigenschaft '<emphasis role="codebf">eigenschaft</emphasis>'>
                         <!ENTITY element.datentyp.ref.erweiterung.eigenschaft 'Element <emphasis role="codebf">eigenschaft</emphasis> in Datentyp <emphasis role="codebf">Erweiterung</emphasis>'>
                         <!ENTITY element.ref.fehltage.anzahlgesamt '<emphasis role="codebf">anzahlGesamt</emphasis>'>
@@ -34,6 +70,14 @@
                         <!ENTITY element.datentyp.ref.fremdsprache.herkunftssprachlicherunterricht 'Element <emphasis role="codebf">herkunftssprachlicherUnterricht</emphasis> in Datentyp <emphasis role="codebf">Fremdsprache</emphasis>'>
                         <!ENTITY element.ref.fremdsprache.sprache '<emphasis role="codebf">sprache</emphasis>'>
                         <!ENTITY element.datentyp.ref.fremdsprache.sprache 'Element <emphasis role="codebf">sprache</emphasis> in Datentyp <emphasis role="codebf">Fremdsprache</emphasis>'>
+                        <!ENTITY element.ref.geburt.datum '<emphasis role="codebf">datum</emphasis>'>
+                        <!ENTITY element.datentyp.ref.geburt.datum 'Element <emphasis role="codebf">datum</emphasis> in Datentyp <emphasis role="codebf">Geburt</emphasis>'>
+                        <!ENTITY element.ref.geburt.geburtsort '<emphasis role="codebf">geburtsort</emphasis>'>
+                        <!ENTITY element.datentyp.ref.geburt.geburtsort 'Element <emphasis role="codebf">geburtsort</emphasis> in Datentyp <emphasis role="codebf">Geburt</emphasis>'>
+                        <!ENTITY element.ref.geburtschuelerabiturzeugnis.datum '<emphasis role="codebf">datum</emphasis>'>
+                        <!ENTITY element.datentyp.ref.geburtschuelerabiturzeugnis.datum 'Element <emphasis role="codebf">datum</emphasis> in Datentyp <emphasis role="codebf">GeburtSchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.geburtschuelerabiturzeugnis.geburtsort '<emphasis role="codebf">geburtsort</emphasis>'>
+                        <!ENTITY element.datentyp.ref.geburtschuelerabiturzeugnis.geburtsort 'Element <emphasis role="codebf">geburtsort</emphasis> in Datentyp <emphasis role="codebf">GeburtSchuelerAbiturzeugnis</emphasis>'>
                         <!ENTITY element.ref.gesetzlichervertreter.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
                         <!ENTITY element.datentyp.ref.gesetzlichervertreter.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">GesetzlicherVertreter</emphasis>'>
                         <!ENTITY element.ref.gesetzlichervertreter.auskunftssperregueltigkeit '<emphasis role="codebf">auskunftssperreGueltigkeit</emphasis>'>
@@ -46,6 +90,12 @@
                         <!ENTITY element.datentyp.ref.gesetzlichervertreter.tagderbeendigung 'Element <emphasis role="codebf">tagDerBeendigung</emphasis> in Datentyp <emphasis role="codebf">GesetzlicherVertreter</emphasis>'>
                         <!ENTITY element.ref.gesetzlichervertreter.weiteredaten '<emphasis role="codebf">weitereDaten</emphasis>'>
                         <!ENTITY element.datentyp.ref.gesetzlichervertreter.weiteredaten 'Element <emphasis role="codebf">weitereDaten</emphasis> in Datentyp <emphasis role="codebf">GesetzlicherVertreter</emphasis>'>
+                        <!ENTITY element.ref.identifikation.beschreibung '<emphasis role="codebf">beschreibung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.identifikation.beschreibung 'Element <emphasis role="codebf">beschreibung</emphasis> in Datentyp <emphasis role="codebf">Identifikation</emphasis>'>
+                        <!ENTITY element.ref.identifikation.gueltigkeit '<emphasis role="codebf">gueltigkeit</emphasis>'>
+                        <!ENTITY element.datentyp.ref.identifikation.gueltigkeit 'Element <emphasis role="codebf">gueltigkeit</emphasis> in Datentyp <emphasis role="codebf">Identifikation</emphasis>'>
+                        <!ENTITY element.ref.identifikation.id '<emphasis role="codebf">id</emphasis>'>
+                        <!ENTITY element.datentyp.ref.identifikation.id 'Element <emphasis role="codebf">id</emphasis> in Datentyp <emphasis role="codebf">Identifikation</emphasis>'>
                         <!ENTITY element.ref.impfnachweisvorhanden.impfschutz '<emphasis role="codebf">impfschutz</emphasis>'>
                         <!ENTITY element.datentyp.ref.impfnachweisvorhanden.impfschutz 'Element <emphasis role="codebf">impfschutz</emphasis> in Datentyp <emphasis role="codebf">ImpfnachweisVorhanden</emphasis>'>
                         <!ENTITY element.ref.impfnachweisvorhanden.krankheit '<emphasis role="codebf">krankheit</emphasis>'>
@@ -60,20 +110,42 @@
                         <!ENTITY element.datentyp.ref.klassewiederholt.jahr 'Element <emphasis role="codebf">jahr</emphasis> in Datentyp <emphasis role="codebf">KlasseWiederholt</emphasis>'>
                         <!ENTITY element.ref.klassewiederholt.klassenstufe '<emphasis role="codebf">klassenstufe</emphasis>'>
                         <!ENTITY element.datentyp.ref.klassewiederholt.klassenstufe 'Element <emphasis role="codebf">klassenstufe</emphasis> in Datentyp <emphasis role="codebf">KlasseWiederholt</emphasis>'>
+                        <!ENTITY element.ref.kommunikation.istdienstlich '<emphasis role="codebf">istDienstlich</emphasis>'>
+                        <!ENTITY element.datentyp.ref.kommunikation.istdienstlich 'Element <emphasis role="codebf">istDienstlich</emphasis> in Datentyp <emphasis role="codebf">Kommunikation</emphasis>'>
+                        <!ENTITY element.ref.kommunikation.kanal '<emphasis role="codebf">kanal</emphasis>'>
+                        <!ENTITY element.datentyp.ref.kommunikation.kanal 'Element <emphasis role="codebf">kanal</emphasis> in Datentyp <emphasis role="codebf">Kommunikation</emphasis>'>
+                        <!ENTITY element.ref.kommunikation.kennung '<emphasis role="codebf">kennung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.kommunikation.kennung 'Element <emphasis role="codebf">kennung</emphasis> in Datentyp <emphasis role="codebf">Kommunikation</emphasis>'>
+                        <!ENTITY element.ref.kommunikation.zusatz '<emphasis role="codebf">zusatz</emphasis>'>
+                        <!ENTITY element.datentyp.ref.kommunikation.zusatz 'Element <emphasis role="codebf">zusatz</emphasis> in Datentyp <emphasis role="codebf">Kommunikation</emphasis>'>
                         <!ENTITY element.ref.migrationshintergrund.geburtsland '<emphasis role="codebf">geburtsland</emphasis>'>
                         <!ENTITY element.datentyp.ref.migrationshintergrund.geburtsland 'Element <emphasis role="codebf">geburtsland</emphasis> in Datentyp <emphasis role="codebf">Migrationshintergrund</emphasis>'>
                         <!ENTITY element.ref.migrationshintergrund.jahrdeszuzugs '<emphasis role="codebf">jahrDesZuzugs</emphasis>'>
                         <!ENTITY element.datentyp.ref.migrationshintergrund.jahrdeszuzugs 'Element <emphasis role="codebf">jahrDesZuzugs</emphasis> in Datentyp <emphasis role="codebf">Migrationshintergrund</emphasis>'>
-                        <!ENTITY element.ref.nachweisinhabenderschueler.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
-                        <!ENTITY element.datentyp.ref.nachweisinhabenderschueler.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">NachweisinhabenderSchueler</emphasis>'>
-                        <!ENTITY element.ref.nachweisinhabenderschueler.schulform '<emphasis role="codebf">schulform</emphasis>'>
-                        <!ENTITY element.datentyp.ref.nachweisinhabenderschueler.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">NachweisinhabenderSchueler</emphasis>'>
-                        <!ENTITY element.ref.nachweisinhabenderschueler.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
-                        <!ENTITY element.datentyp.ref.nachweisinhabenderschueler.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">NachweisinhabenderSchueler</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.anrede '<emphasis role="codebf">anrede</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.anrede 'Element <emphasis role="codebf">anrede</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.familienname '<emphasis role="codebf">familienname</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.familienname 'Element <emphasis role="codebf">familienname</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.geburtsname '<emphasis role="codebf">geburtsname</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.geburtsname 'Element <emphasis role="codebf">geburtsname</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.rufname '<emphasis role="codebf">rufname</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.rufname 'Element <emphasis role="codebf">rufname</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.titel '<emphasis role="codebf">titel</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.titel 'Element <emphasis role="codebf">titel</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.namenatuerlicheperson.vorname '<emphasis role="codebf">vorname</emphasis>'>
+                        <!ENTITY element.datentyp.ref.namenatuerlicheperson.vorname 'Element <emphasis role="codebf">vorname</emphasis> in Datentyp <emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.ref.nameorganisation.kurzbezeichnung '<emphasis role="codebf">kurzbezeichnung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.nameorganisation.kurzbezeichnung 'Element <emphasis role="codebf">kurzbezeichnung</emphasis> in Datentyp <emphasis role="codebf">NameOrganisation</emphasis>'>
+                        <!ENTITY element.ref.nameorganisation.name '<emphasis role="codebf">name</emphasis>'>
+                        <!ENTITY element.datentyp.ref.nameorganisation.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">NameOrganisation</emphasis>'>
                         <!ENTITY element.ref.notenuebersichtundzeugnis.letzteszeugnis '<emphasis role="codebf">letztesZeugnis</emphasis>'>
                         <!ENTITY element.datentyp.ref.notenuebersichtundzeugnis.letzteszeugnis 'Element <emphasis role="codebf">letztesZeugnis</emphasis> in Datentyp <emphasis role="codebf">NotenuebersichtUndZeugnis</emphasis>'>
                         <!ENTITY element.ref.notenuebersichtundzeugnis.notenuebersichtunterjaehrigerwechsel '<emphasis role="codebf">notenuebersichtUnterjaehrigerWechsel</emphasis>'>
                         <!ENTITY element.datentyp.ref.notenuebersichtundzeugnis.notenuebersichtunterjaehrigerwechsel 'Element <emphasis role="codebf">notenuebersichtUnterjaehrigerWechsel</emphasis> in Datentyp <emphasis role="codebf">NotenuebersichtUndZeugnis</emphasis>'>
+                        <!ENTITY element.ref.ortsangabe.ort '<emphasis role="codebf">ort</emphasis>'>
+                        <!ENTITY element.datentyp.ref.ortsangabe.ort 'Element <emphasis role="codebf">ort</emphasis> in Datentyp <emphasis role="codebf">Ortsangabe</emphasis>'>
+                        <!ENTITY element.ref.ortsangabe.staat '<emphasis role="codebf">staat</emphasis>'>
+                        <!ENTITY element.datentyp.ref.ortsangabe.staat 'Element <emphasis role="codebf">staat</emphasis> in Datentyp <emphasis role="codebf">Ortsangabe</emphasis>'>
                         <!ENTITY element.ref.pruefungsergebnis.anforderungsniveau '<emphasis role="codebf">anforderungsniveau</emphasis>'>
                         <!ENTITY element.datentyp.ref.pruefungsergebnis.anforderungsniveau 'Element <emphasis role="codebf">anforderungsniveau</emphasis> in Datentyp <emphasis role="codebf">Pruefungsergebnis</emphasis>'>
                         <!ENTITY element.ref.pruefungsergebnis.artderpruefung '<emphasis role="codebf">artDerPruefung</emphasis>'>
@@ -88,22 +160,128 @@
                         <!ENTITY element.datentyp.ref.pruefungsergebnis.note 'Element <emphasis role="codebf">note</emphasis> in Datentyp <emphasis role="codebf">Pruefungsergebnis</emphasis>'>
                         <!ENTITY element.ref.pruefungsergebnis.verpflichtungsgrad '<emphasis role="codebf">verpflichtungsgrad</emphasis>'>
                         <!ENTITY element.datentyp.ref.pruefungsergebnis.verpflichtungsgrad 'Element <emphasis role="codebf">verpflichtungsgrad</emphasis> in Datentyp <emphasis role="codebf">Pruefungsergebnis</emphasis>'>
-                        <!ENTITY element.ref.reisenderschueler.reisemitunternehmenname '<emphasis role="codebf">reiseMitUnternehmenName</emphasis>'>
-                        <!ENTITY element.datentyp.ref.reisenderschueler.reisemitunternehmenname 'Element <emphasis role="codebf">reiseMitUnternehmenName</emphasis> in Datentyp <emphasis role="codebf">ReisenderSchueler</emphasis>'>
-                        <!ENTITY element.ref.reisenderschueler.stammschule '<emphasis role="codebf">stammschule</emphasis>'>
-                        <!ENTITY element.datentyp.ref.reisenderschueler.stammschule 'Element <emphasis role="codebf">stammschule</emphasis> in Datentyp <emphasis role="codebf">ReisenderSchueler</emphasis>'>
-                        <!ENTITY element.ref.schulaufnahme.art '<emphasis role="codebf">art</emphasis>'>
-                        <!ENTITY element.datentyp.ref.schulaufnahme.art 'Element <emphasis role="codebf">art</emphasis> in Datentyp <emphasis role="codebf">Schulaufnahme</emphasis>'>
-                        <!ENTITY element.ref.schulaufnahme.eintrittsdatum '<emphasis role="codebf">eintrittsdatum</emphasis>'>
-                        <!ENTITY element.datentyp.ref.schulaufnahme.eintrittsdatum 'Element <emphasis role="codebf">eintrittsdatum</emphasis> in Datentyp <emphasis role="codebf">Schulaufnahme</emphasis>'>
+                        <!ENTITY element.ref.schueler.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.geburt '<emphasis role="codebf">geburt</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.geburt 'Element <emphasis role="codebf">geburt</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.identifikationsnummer '<emphasis role="codebf">identifikationsnummer</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.identifikationsnummer 'Element <emphasis role="codebf">identifikationsnummer</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.namenatuerlicheperson '<emphasis role="codebf">nameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.namenatuerlicheperson 'Element <emphasis role="codebf">nameNatuerlichePerson</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.schulform '<emphasis role="codebf">schulform</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schueler.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schueler.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">Schueler</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.geburt '<emphasis role="codebf">geburt</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.geburt 'Element <emphasis role="codebf">geburt</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.identifikationsnummer '<emphasis role="codebf">identifikationsnummer</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.identifikationsnummer 'Element <emphasis role="codebf">identifikationsnummer</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.namenatuerlicheperson '<emphasis role="codebf">nameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.namenatuerlicheperson 'Element <emphasis role="codebf">nameNatuerlichePerson</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.schulform '<emphasis role="codebf">schulform</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerabiturzeugnis.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerabiturzeugnis.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                        <!ENTITY element.ref.schuelerreisend.reisemitunternehmenname '<emphasis role="codebf">reiseMitUnternehmenName</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerreisend.reisemitunternehmenname 'Element <emphasis role="codebf">reiseMitUnternehmenName</emphasis> in Datentyp <emphasis role="codebf">SchuelerReisend</emphasis>'>
+                        <!ENTITY element.ref.schuelerreisend.stammschule '<emphasis role="codebf">stammschule</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerreisend.stammschule 'Element <emphasis role="codebf">stammschule</emphasis> in Datentyp <emphasis role="codebf">SchuelerReisend</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.auskunftssperregueltigkeit '<emphasis role="codebf">auskunftssperreGueltigkeit</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.auskunftssperregueltigkeit 'Element <emphasis role="codebf">auskunftssperreGueltigkeit</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.geburt '<emphasis role="codebf">geburt</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.geburt 'Element <emphasis role="codebf">geburt</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.geschlecht '<emphasis role="codebf">geschlecht</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.geschlecht 'Element <emphasis role="codebf">geschlecht</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.herkunftssprache '<emphasis role="codebf">herkunftssprache</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.herkunftssprache 'Element <emphasis role="codebf">herkunftssprache</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.identifikationsnummer '<emphasis role="codebf">identifikationsnummer</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.identifikationsnummer 'Element <emphasis role="codebf">identifikationsnummer</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.impfung '<emphasis role="codebf">impfung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.impfung 'Element <emphasis role="codebf">impfung</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.kommunikation '<emphasis role="codebf">kommunikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.kommunikation 'Element <emphasis role="codebf">kommunikation</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.konfession '<emphasis role="codebf">konfession</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.konfession 'Element <emphasis role="codebf">konfession</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.migrationshintergrund '<emphasis role="codebf">migrationshintergrund</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.migrationshintergrund 'Element <emphasis role="codebf">migrationshintergrund</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.namenatuerlicheperson '<emphasis role="codebf">nameNatuerlichePerson</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.namenatuerlicheperson 'Element <emphasis role="codebf">nameNatuerlichePerson</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.schuelerreisender '<emphasis role="codebf">schuelerReisender</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.schuelerreisender 'Element <emphasis role="codebf">schuelerReisender</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.schulform '<emphasis role="codebf">schulform</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.sonderpaedagogischerfoerderbedarf '<emphasis role="codebf">sonderpaedagogischerFoerderbedarf</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.sonderpaedagogischerfoerderbedarf 'Element <emphasis role="codebf">sonderpaedagogischerFoerderbedarf</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.staatsangehoerigkeit '<emphasis role="codebf">staatsangehoerigkeit</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.staatsangehoerigkeit 'Element <emphasis role="codebf">staatsangehoerigkeit</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schuelerwechselnd.verkehrssprache '<emphasis role="codebf">verkehrssprache</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuelerwechselnd.verkehrssprache 'Element <emphasis role="codebf">verkehrssprache</emphasis> in Datentyp <emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                        <!ENTITY element.ref.schule.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schule.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
                         <!ENTITY element.ref.schule.artdertraegerschaft '<emphasis role="codebf">artDerTraegerschaft</emphasis>'>
                         <!ENTITY element.datentyp.ref.schule.artdertraegerschaft 'Element <emphasis role="codebf">artDerTraegerschaft</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
                         <!ENTITY element.ref.schule.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
                         <!ENTITY element.datentyp.ref.schule.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
+                        <!ENTITY element.ref.schule.identifikation '<emphasis role="codebf">identifikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schule.identifikation 'Element <emphasis role="codebf">identifikation</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
+                        <!ENTITY element.ref.schule.kommunikation '<emphasis role="codebf">kommunikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schule.kommunikation 'Element <emphasis role="codebf">kommunikation</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
+                        <!ENTITY element.ref.schule.name '<emphasis role="codebf">name</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schule.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
                         <!ENTITY element.ref.schule.schulform '<emphasis role="codebf">schulform</emphasis>'>
                         <!ENTITY element.datentyp.ref.schule.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
                         <!ENTITY element.ref.schule.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
                         <!ENTITY element.datentyp.ref.schule.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">Schule</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.artdertraegerschaft '<emphasis role="codebf">artDerTraegerschaft</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.artdertraegerschaft 'Element <emphasis role="codebf">artDerTraegerschaft</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.aufnahme '<emphasis role="codebf">aufnahme</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.aufnahme 'Element <emphasis role="codebf">aufnahme</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.identifikation '<emphasis role="codebf">identifikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.identifikation 'Element <emphasis role="codebf">identifikation</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.kommunikation '<emphasis role="codebf">kommunikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.kommunikation 'Element <emphasis role="codebf">kommunikation</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schuleaufnehmend.name '<emphasis role="codebf">name</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schuleaufnehmend.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.anschrift '<emphasis role="codebf">anschrift</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.anschrift 'Element <emphasis role="codebf">anschrift</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.artdertraegerschaft '<emphasis role="codebf">artDerTraegerschaft</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.artdertraegerschaft 'Element <emphasis role="codebf">artDerTraegerschaft</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.fehltage '<emphasis role="codebf">fehltage</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.fehltage 'Element <emphasis role="codebf">fehltage</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.identifikation '<emphasis role="codebf">identifikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.identifikation 'Element <emphasis role="codebf">identifikation</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.kommunikation '<emphasis role="codebf">kommunikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.kommunikation 'Element <emphasis role="codebf">kommunikation</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.name '<emphasis role="codebf">name</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.name 'Element <emphasis role="codebf">name</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.schulform '<emphasis role="codebf">schulform</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.schulformspezifischezusatzdaten '<emphasis role="codebf">schulformspezifischeZusatzdaten</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.schulformspezifischezusatzdaten 'Element <emphasis role="codebf">schulformspezifischeZusatzdaten</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.schuljahrgang '<emphasis role="codebf">schuljahrgang</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.schuljahrgang 'Element <emphasis role="codebf">schuljahrgang</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.wahpflichtkurs '<emphasis role="codebf">wahpflichtkurs</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.wahpflichtkurs 'Element <emphasis role="codebf">wahpflichtkurs</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
+                        <!ENTITY element.ref.schulebesucht.zeitraum '<emphasis role="codebf">zeitraum</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulebesucht.zeitraum 'Element <emphasis role="codebf">zeitraum</emphasis> in Datentyp <emphasis role="codebf">SchuleBesucht</emphasis>'>
                         <!ENTITY element.ref.schulformspezifischezusatzdaten.schulbesuchsjahreinschuleingangsphase '<emphasis role="codebf">schulbesuchsjahreInSchuleingangsphase</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulformspezifischezusatzdaten.schulbesuchsjahreinschuleingangsphase 'Element <emphasis role="codebf">schulbesuchsjahreInSchuleingangsphase</emphasis> in Datentyp <emphasis role="codebf">SchulformspezifischeZusatzdaten</emphasis>'>
                         <!ENTITY element.ref.schulformspezifischezusatzdaten.teilnahmegemeinsamerunterricht '<emphasis role="codebf">teilnahmeGemeinsamerUnterricht</emphasis>'>
@@ -126,12 +304,26 @@
                         <!ENTITY element.datentyp.ref.schulkurs.aufgabenfeld 'Element <emphasis role="codebf">aufgabenfeld</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.berechnungsgrundlage '<emphasis role="codebf">berechnungsgrundlage</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulkurs.berechnungsgrundlage 'Element <emphasis role="codebf">berechnungsgrundlage</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.beschreibung '<emphasis role="codebf">beschreibung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.beschreibung 'Element <emphasis role="codebf">beschreibung</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.bezeichnung '<emphasis role="codebf">bezeichnung</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.bezeichnung 'Element <emphasis role="codebf">bezeichnung</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.fach '<emphasis role="codebf">fach</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulkurs.fach 'Element <emphasis role="codebf">fach</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.halbjahr '<emphasis role="codebf">halbjahr</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulkurs.halbjahr 'Element <emphasis role="codebf">halbjahr</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.identifikation '<emphasis role="codebf">identifikation</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.identifikation 'Element <emphasis role="codebf">identifikation</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.jahrgangsstufe '<emphasis role="codebf">jahrgangsstufe</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulkurs.jahrgangsstufe 'Element <emphasis role="codebf">jahrgangsstufe</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.note '<emphasis role="codebf">note</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.note 'Element <emphasis role="codebf">note</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.schluesseliscedf2013 '<emphasis role="codebf">schluesselISCEDF2013</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.schluesseliscedf2013 'Element <emphasis role="codebf">schluesselISCEDF2013</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.schwerpunkt '<emphasis role="codebf">schwerpunkt</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.schwerpunkt 'Element <emphasis role="codebf">schwerpunkt</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
+                        <!ENTITY element.ref.schulkurs.status '<emphasis role="codebf">status</emphasis>'>
+                        <!ENTITY element.datentyp.ref.schulkurs.status 'Element <emphasis role="codebf">status</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.vermitteltesprachkenntnis '<emphasis role="codebf">vermittelteSprachkenntnis</emphasis>'>
                         <!ENTITY element.datentyp.ref.schulkurs.vermitteltesprachkenntnis 'Element <emphasis role="codebf">vermittelteSprachkenntnis</emphasis> in Datentyp <emphasis role="codebf">Schulkurs</emphasis>'>
                         <!ENTITY element.ref.schulkurs.verpflichtungsgrad '<emphasis role="codebf">verpflichtungsgrad</emphasis>'>
@@ -142,16 +334,14 @@
                         <!ENTITY element.datentyp.ref.schullaufbahn.klasseuebersprungen 'Element <emphasis role="codebf">klasseUebersprungen</emphasis> in Datentyp <emphasis role="codebf">Schullaufbahn</emphasis>'>
                         <!ENTITY element.ref.schullaufbahn.klassewiederholt '<emphasis role="codebf">klasseWiederholt</emphasis>'>
                         <!ENTITY element.datentyp.ref.schullaufbahn.klassewiederholt 'Element <emphasis role="codebf">klasseWiederholt</emphasis> in Datentyp <emphasis role="codebf">Schullaufbahn</emphasis>'>
-                        <!ENTITY element.ref.schullaufbahn.schulaufnahme '<emphasis role="codebf">schulaufnahme</emphasis>'>
-                        <!ENTITY element.datentyp.ref.schullaufbahn.schulaufnahme 'Element <emphasis role="codebf">schulaufnahme</emphasis> in Datentyp <emphasis role="codebf">Schullaufbahn</emphasis>'>
                         <!ENTITY element.ref.schullaufbahn.schullaufbahnempfehlung '<emphasis role="codebf">schullaufbahnempfehlung</emphasis>'>
                         <!ENTITY element.datentyp.ref.schullaufbahn.schullaufbahnempfehlung 'Element <emphasis role="codebf">schullaufbahnempfehlung</emphasis> in Datentyp <emphasis role="codebf">Schullaufbahn</emphasis>'>
+                        <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.anlage '<emphasis role="codebf">anlage</emphasis>'>
+                        <!ENTITY element.datentyp.ref.sonderpaedagogischerfoerderbedarf.anlage 'Element <emphasis role="codebf">anlage</emphasis> in Datentyp <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>'>
                         <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.art '<emphasis role="codebf">art</emphasis>'>
                         <!ENTITY element.datentyp.ref.sonderpaedagogischerfoerderbedarf.art 'Element <emphasis role="codebf">art</emphasis> in Datentyp <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>'>
                         <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.schwerpunkt '<emphasis role="codebf">schwerpunkt</emphasis>'>
                         <!ENTITY element.datentyp.ref.sonderpaedagogischerfoerderbedarf.schwerpunkt 'Element <emphasis role="codebf">schwerpunkt</emphasis> in Datentyp <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>'>
-                        <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.sonderpaedagogischesgutachten '<emphasis role="codebf">sonderpaedagogischesGutachten</emphasis>'>
-                        <!ENTITY element.datentyp.ref.sonderpaedagogischerfoerderbedarf.sonderpaedagogischesgutachten 'Element <emphasis role="codebf">sonderpaedagogischesGutachten</emphasis> in Datentyp <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>'>
                         <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.teilnahmefoerdermassnahme '<emphasis role="codebf">teilnahmeFoerdermassnahme</emphasis>'>
                         <!ENTITY element.datentyp.ref.sonderpaedagogischerfoerderbedarf.teilnahmefoerdermassnahme 'Element <emphasis role="codebf">teilnahmeFoerdermassnahme</emphasis> in Datentyp <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>'>
                         <!ENTITY element.ref.sonderpaedagogischerfoerderbedarf.therapiemassnahme '<emphasis role="codebf">therapiemassnahme</emphasis>'>
@@ -170,24 +360,20 @@
                         <!ENTITY element.datentyp.ref.unterrichtsteilnahme.zeitraum 'Element <emphasis role="codebf">zeitraum</emphasis> in Datentyp <emphasis role="codebf">Unterrichtsteilnahme</emphasis>'>
                         <!ENTITY element.ref.unterrichtsteilnahme.zusatz '<emphasis role="codebf">zusatz</emphasis>'>
                         <!ENTITY element.datentyp.ref.unterrichtsteilnahme.zusatz 'Element <emphasis role="codebf">zusatz</emphasis> in Datentyp <emphasis role="codebf">Unterrichtsteilnahme</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.auskunftssperregueltigkeit '<emphasis role="codebf">auskunftssperreGueltigkeit</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.auskunftssperregueltigkeit 'Element <emphasis role="codebf">auskunftssperreGueltigkeit</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.bildungsgang '<emphasis role="codebf">bildungsgang</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.bildungsgang 'Element <emphasis role="codebf">bildungsgang</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.herkunftssprache '<emphasis role="codebf">herkunftssprache</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.herkunftssprache 'Element <emphasis role="codebf">herkunftssprache</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.impfung '<emphasis role="codebf">impfung</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.impfung 'Element <emphasis role="codebf">impfung</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.migrationshintergrund '<emphasis role="codebf">migrationshintergrund</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.migrationshintergrund 'Element <emphasis role="codebf">migrationshintergrund</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.schuelerreisender '<emphasis role="codebf">schuelerReisender</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.schuelerreisender 'Element <emphasis role="codebf">schuelerReisender</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.schulform '<emphasis role="codebf">schulform</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.schulform 'Element <emphasis role="codebf">schulform</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.schulprofil '<emphasis role="codebf">schulprofil</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.schulprofil 'Element <emphasis role="codebf">schulprofil</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.sonderpaedagogischerfoerderbedarf '<emphasis role="codebf">sonderpaedagogischerFoerderbedarf</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.sonderpaedagogischerfoerderbedarf 'Element <emphasis role="codebf">sonderpaedagogischerFoerderbedarf</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                        <!ENTITY element.ref.wechselnderschueler.verkehrssprache '<emphasis role="codebf">verkehrssprache</emphasis>'>
-                        <!ENTITY element.datentyp.ref.wechselnderschueler.verkehrssprache 'Element <emphasis role="codebf">verkehrssprache</emphasis> in Datentyp <emphasis role="codebf">WechselnderSchueler</emphasis>'>
+                        <!ENTITY element.ref.verwaltungspolitischekodierung.bezirk '<emphasis role="codebf">bezirk</emphasis>'>
+                        <!ENTITY element.datentyp.ref.verwaltungspolitischekodierung.bezirk 'Element <emphasis role="codebf">bezirk</emphasis> in Datentyp <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.ref.verwaltungspolitischekodierung.bundesland '<emphasis role="codebf">bundesland</emphasis>'>
+                        <!ENTITY element.datentyp.ref.verwaltungspolitischekodierung.bundesland 'Element <emphasis role="codebf">bundesland</emphasis> in Datentyp <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.ref.verwaltungspolitischekodierung.gemeindeschluessel '<emphasis role="codebf">gemeindeschluessel</emphasis>'>
+                        <!ENTITY element.datentyp.ref.verwaltungspolitischekodierung.gemeindeschluessel 'Element <emphasis role="codebf">gemeindeschluessel</emphasis> in Datentyp <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.ref.verwaltungspolitischekodierung.kreis '<emphasis role="codebf">kreis</emphasis>'>
+                        <!ENTITY element.datentyp.ref.verwaltungspolitischekodierung.kreis 'Element <emphasis role="codebf">kreis</emphasis> in Datentyp <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.ref.verwaltungspolitischekodierung.regionalschluessel '<emphasis role="codebf">regionalschluessel</emphasis>'>
+                        <!ENTITY element.datentyp.ref.verwaltungspolitischekodierung.regionalschluessel 'Element <emphasis role="codebf">regionalschluessel</emphasis> in Datentyp <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                        <!ENTITY element.ref.zeitraum.beginn '<emphasis role="codebf">beginn</emphasis>'>
+                        <!ENTITY element.datentyp.ref.zeitraum.beginn 'Element <emphasis role="codebf">beginn</emphasis> in Datentyp <emphasis role="codebf">Zeitraum</emphasis>'>
+                        <!ENTITY element.ref.zeitraum.ende '<emphasis role="codebf">ende</emphasis>'>
+                        <!ENTITY element.datentyp.ref.zeitraum.ende 'Element <emphasis role="codebf">ende</emphasis> in Datentyp <emphasis role="codebf">Zeitraum</emphasis>'>
+                        <!ENTITY element.ref.zeitraum.zusatz '<emphasis role="codebf">zusatz</emphasis>'>
+                        <!ENTITY element.datentyp.ref.zeitraum.zusatz 'Element <emphasis role="codebf">zusatz</emphasis> in Datentyp <emphasis role="codebf">Zeitraum</emphasis>'>
                         

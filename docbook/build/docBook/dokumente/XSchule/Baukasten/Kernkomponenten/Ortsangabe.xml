@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
-<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
 %complete;]><section xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.BesuchteSchule">
-   <title>BesuchteSchule</title>
-   <subtitle>Typ: <emphasis role="codebf">BesuchteSchule</emphasis>
-   </subtitle><para>Die Klasse BesuchteSchule enthält für Bildungseinrichtungen entlang der Lebenslage Schule allgemeine Angaben zur letzten besuchten Schule.</para><figure xml:id="figure.XSchule.Baukasten.BesuchteSchule">
-      <title>BesuchteSchule</title>
+         xml:id="XSchule.Baukasten.Kernkomponenten.Ortsangabe">
+   <title>Ortsangabe</title>
+   <subtitle>Typ: <emphasis role="codebf">Ortsangabe</emphasis>
+   </subtitle><para>Hier werden Angaben zum Ort und dem Staat gemacht.</para><figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.Ortsangabe">
+      <title>Ortsangabe</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/BesuchteSchule.svg"/>
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/Ortsangabe.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XSchule.Baukasten.BesuchteSchule">
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.Ortsangabe">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">BesuchteSchule</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Ortsangabe</emphasis>
                </entry>
             </row>
             <row>
@@ -48,30 +48,30 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">angabeSchule</emphasis>
+                  <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Schule</emphasis>
+                  <emphasis role="codebf">datatypeB</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="AbschnittNummer"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier können Angaben zur Schule gemacht werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum Ort gemacht.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">zeitraum</emphasis>
+                  <emphasis role="bold">staat</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Zeitraum</emphasis>
+                  <emphasis role="codebf">Code.Staat</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -84,32 +84,12 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Wert Zeitraum gibt Aufschluss über die Dauer des Besuchs der letzten besuchten Schule.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">schuljahrgang</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Schuljahrgang</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Schuljahrgang" role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Schuljahrgang" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Hier können Angaben zum zuletzt besuchten Schuljahrgang gemacht werden.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum Staat gemacht.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/besuchteschule_list.xml"/>
+            href="../../../anhang/verwendung/complexTypes/ortsangabe_list.xml"/>
 </section>

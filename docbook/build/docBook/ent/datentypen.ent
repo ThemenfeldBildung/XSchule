@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><!ENTITY datentyp.ref.aufnehmendeschule '<emphasis role="codebf">AufnehmendeSchule</emphasis>'>
-                    <!ENTITY datentyp.ref.link.aufnehmendeschule '<link linkend="XSchule.Baukasten.AufnehmendeSchule">AufnehmendeSchule</link>'>
-                    <!ENTITY datentyp.ref.xref.aufnehmendeschule '<xref linkend="XSchule.Baukasten.AufnehmendeSchule" role="AS"/>'>
+<?xml version="1.0" encoding="UTF-8"?><!ENTITY datentyp.ref.allgemeinername '<emphasis role="codebf">AllgemeinerName</emphasis>'>
+                    <!ENTITY datentyp.ref.link.allgemeinername '<link linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName">AllgemeinerName</link>'>
+                    <!ENTITY datentyp.ref.xref.allgemeinername '<xref linkend="XSchule.Baukasten.Kernkomponenten.AllgemeinerName" role="AS"/>'>
+                    <!ENTITY datentyp.ref.alternativerepraesentation '<emphasis role="codebf">AlternativeRepraesentation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.alternativerepraesentation '<link linkend="XSchule.Baukasten.Kernkomponenten.AlternativeRepraesentation">AlternativeRepraesentation</link>'>
+                    <!ENTITY datentyp.ref.xref.alternativerepraesentation '<xref linkend="XSchule.Baukasten.Kernkomponenten.AlternativeRepraesentation" role="AS"/>'>
+                    <!ENTITY datentyp.ref.anlage '<emphasis role="codebf">Anlage</emphasis>'>
+                    <!ENTITY datentyp.ref.link.anlage '<link linkend="XSchule.Baukasten.Anlage">Anlage</link>'>
+                    <!ENTITY datentyp.ref.xref.anlage '<xref linkend="XSchule.Baukasten.Anlage" role="AS"/>'>
+                    <!ENTITY datentyp.ref.anschrift '<emphasis role="codebf">Anschrift</emphasis>'>
+                    <!ENTITY datentyp.ref.link.anschrift '<link linkend="XSchule.Baukasten.Kernkomponenten.Anschrift">Anschrift</link>'>
+                    <!ENTITY datentyp.ref.xref.anschrift '<xref linkend="XSchule.Baukasten.Kernkomponenten.Anschrift" role="AS"/>'>
+                    <!ENTITY datentyp.ref.anschriftschuelerabiturzeugnis '<emphasis role="codebf">AnschriftSchuelerAbiturzeugnis</emphasis>'>
+                    <!ENTITY datentyp.ref.link.anschriftschuelerabiturzeugnis '<link linkend="XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis">AnschriftSchuelerAbiturzeugnis</link>'>
+                    <!ENTITY datentyp.ref.xref.anschriftschuelerabiturzeugnis '<xref linkend="XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis" role="AS"/>'>
                     <!ENTITY datentyp.ref.bemerkung '<emphasis role="codebf">Bemerkung</emphasis>'>
                     <!ENTITY datentyp.ref.link.bemerkung '<link linkend="XSchule.Baukasten.Bemerkung">Bemerkung</link>'>
                     <!ENTITY datentyp.ref.xref.bemerkung '<xref linkend="XSchule.Baukasten.Bemerkung" role="AS"/>'>
-                    <!ENTITY datentyp.ref.besuchteschule '<emphasis role="codebf">BesuchteSchule</emphasis>'>
-                    <!ENTITY datentyp.ref.link.besuchteschule '<link linkend="XSchule.Baukasten.BesuchteSchule">BesuchteSchule</link>'>
-                    <!ENTITY datentyp.ref.xref.besuchteschule '<xref linkend="XSchule.Baukasten.BesuchteSchule" role="AS"/>'>
                     <!ENTITY datentyp.ref.code.abfolgederfremdsprachen '<emphasis role="codebf">Code.AbfolgeDerFremdsprachen</emphasis>'>
                     <!ENTITY datentyp.ref.link.code.abfolgederfremdsprachen '<link linkend="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen">Code.AbfolgeDerFremdsprachen</link>'>
                     <!ENTITY datentyp.ref.xref.code.abfolgederfremdsprachen '<xref linkend="XSchule.Baukasten.Codes.Code.AbfolgeDerFremdsprachen" role="AS"/>'>
@@ -88,9 +97,18 @@
                     <!ENTITY datentyp.ref.fremdsprache '<emphasis role="codebf">Fremdsprache</emphasis>'>
                     <!ENTITY datentyp.ref.link.fremdsprache '<link linkend="XSchule.Baukasten.Fremdsprache">Fremdsprache</link>'>
                     <!ENTITY datentyp.ref.xref.fremdsprache '<xref linkend="XSchule.Baukasten.Fremdsprache" role="AS"/>'>
+                    <!ENTITY datentyp.ref.geburt '<emphasis role="codebf">Geburt</emphasis>'>
+                    <!ENTITY datentyp.ref.link.geburt '<link linkend="XSchule.Baukasten.Kernkomponenten.Geburt">Geburt</link>'>
+                    <!ENTITY datentyp.ref.xref.geburt '<xref linkend="XSchule.Baukasten.Kernkomponenten.Geburt" role="AS"/>'>
+                    <!ENTITY datentyp.ref.geburtschuelerabiturzeugnis '<emphasis role="codebf">GeburtSchuelerAbiturzeugnis</emphasis>'>
+                    <!ENTITY datentyp.ref.link.geburtschuelerabiturzeugnis '<link linkend="XSchule.Baukasten.Kernkomponenten.GeburtSchuelerAbiturzeugnis">GeburtSchuelerAbiturzeugnis</link>'>
+                    <!ENTITY datentyp.ref.xref.geburtschuelerabiturzeugnis '<xref linkend="XSchule.Baukasten.Kernkomponenten.GeburtSchuelerAbiturzeugnis" role="AS"/>'>
                     <!ENTITY datentyp.ref.gesetzlichervertreter '<emphasis role="codebf">GesetzlicherVertreter</emphasis>'>
                     <!ENTITY datentyp.ref.link.gesetzlichervertreter '<link linkend="XSchule.Baukasten.GesetzlicherVertreter">GesetzlicherVertreter</link>'>
                     <!ENTITY datentyp.ref.xref.gesetzlichervertreter '<xref linkend="XSchule.Baukasten.GesetzlicherVertreter" role="AS"/>'>
+                    <!ENTITY datentyp.ref.identifikation '<emphasis role="codebf">Identifikation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.identifikation '<link linkend="XSchule.Baukasten.Kernkomponenten.Identifikation">Identifikation</link>'>
+                    <!ENTITY datentyp.ref.xref.identifikation '<xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation" role="AS"/>'>
                     <!ENTITY datentyp.ref.impfnachweisvorhanden '<emphasis role="codebf">ImpfnachweisVorhanden</emphasis>'>
                     <!ENTITY datentyp.ref.link.impfnachweisvorhanden '<link linkend="XSchule.Baukasten.ImpfnachweisVorhanden">ImpfnachweisVorhanden</link>'>
                     <!ENTITY datentyp.ref.xref.impfnachweisvorhanden '<xref linkend="XSchule.Baukasten.ImpfnachweisVorhanden" role="AS"/>'>
@@ -100,27 +118,48 @@
                     <!ENTITY datentyp.ref.klassewiederholt '<emphasis role="codebf">KlasseWiederholt</emphasis>'>
                     <!ENTITY datentyp.ref.link.klassewiederholt '<link linkend="XSchule.Baukasten.KlasseWiederholt">KlasseWiederholt</link>'>
                     <!ENTITY datentyp.ref.xref.klassewiederholt '<xref linkend="XSchule.Baukasten.KlasseWiederholt" role="AS"/>'>
+                    <!ENTITY datentyp.ref.kommunikation '<emphasis role="codebf">Kommunikation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.kommunikation '<link linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation">Kommunikation</link>'>
+                    <!ENTITY datentyp.ref.xref.kommunikation '<xref linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation" role="AS"/>'>
                     <!ENTITY datentyp.ref.migrationshintergrund '<emphasis role="codebf">Migrationshintergrund</emphasis>'>
                     <!ENTITY datentyp.ref.link.migrationshintergrund '<link linkend="XSchule.Baukasten.Migrationshintergrund">Migrationshintergrund</link>'>
                     <!ENTITY datentyp.ref.xref.migrationshintergrund '<xref linkend="XSchule.Baukasten.Migrationshintergrund" role="AS"/>'>
-                    <!ENTITY datentyp.ref.nachweisinhabenderschueler '<emphasis role="codebf">NachweisinhabenderSchueler</emphasis>'>
-                    <!ENTITY datentyp.ref.link.nachweisinhabenderschueler '<link linkend="XSchule.Baukasten.NachweisinhabenderSchueler">NachweisinhabenderSchueler</link>'>
-                    <!ENTITY datentyp.ref.xref.nachweisinhabenderschueler '<xref linkend="XSchule.Baukasten.NachweisinhabenderSchueler" role="AS"/>'>
+                    <!ENTITY datentyp.ref.namenatuerlicheperson '<emphasis role="codebf">NameNatuerlichePerson</emphasis>'>
+                    <!ENTITY datentyp.ref.link.namenatuerlicheperson '<link linkend="XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson">NameNatuerlichePerson</link>'>
+                    <!ENTITY datentyp.ref.xref.namenatuerlicheperson '<xref linkend="XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson" role="AS"/>'>
+                    <!ENTITY datentyp.ref.nameorganisation '<emphasis role="codebf">NameOrganisation</emphasis>'>
+                    <!ENTITY datentyp.ref.link.nameorganisation '<link linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation">NameOrganisation</link>'>
+                    <!ENTITY datentyp.ref.xref.nameorganisation '<xref linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation" role="AS"/>'>
                     <!ENTITY datentyp.ref.notenuebersichtundzeugnis '<emphasis role="codebf">NotenuebersichtUndZeugnis</emphasis>'>
                     <!ENTITY datentyp.ref.link.notenuebersichtundzeugnis '<link linkend="XSchule.Baukasten.NotenuebersichtUndZeugnis">NotenuebersichtUndZeugnis</link>'>
                     <!ENTITY datentyp.ref.xref.notenuebersichtundzeugnis '<xref linkend="XSchule.Baukasten.NotenuebersichtUndZeugnis" role="AS"/>'>
+                    <!ENTITY datentyp.ref.ortsangabe '<emphasis role="codebf">Ortsangabe</emphasis>'>
+                    <!ENTITY datentyp.ref.link.ortsangabe '<link linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe">Ortsangabe</link>'>
+                    <!ENTITY datentyp.ref.xref.ortsangabe '<xref linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe" role="AS"/>'>
                     <!ENTITY datentyp.ref.pruefungsergebnis '<emphasis role="codebf">Pruefungsergebnis</emphasis>'>
                     <!ENTITY datentyp.ref.link.pruefungsergebnis '<link linkend="XSchule.Baukasten.Pruefungsergebnis">Pruefungsergebnis</link>'>
                     <!ENTITY datentyp.ref.xref.pruefungsergebnis '<xref linkend="XSchule.Baukasten.Pruefungsergebnis" role="AS"/>'>
-                    <!ENTITY datentyp.ref.reisenderschueler '<emphasis role="codebf">ReisenderSchueler</emphasis>'>
-                    <!ENTITY datentyp.ref.link.reisenderschueler '<link linkend="XSchule.Baukasten.ReisenderSchueler">ReisenderSchueler</link>'>
-                    <!ENTITY datentyp.ref.xref.reisenderschueler '<xref linkend="XSchule.Baukasten.ReisenderSchueler" role="AS"/>'>
-                    <!ENTITY datentyp.ref.schulaufnahme '<emphasis role="codebf">Schulaufnahme</emphasis>'>
-                    <!ENTITY datentyp.ref.link.schulaufnahme '<link linkend="XSchule.Baukasten.Schulaufnahme">Schulaufnahme</link>'>
-                    <!ENTITY datentyp.ref.xref.schulaufnahme '<xref linkend="XSchule.Baukasten.Schulaufnahme" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schueler '<emphasis role="codebf">Schueler</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schueler '<link linkend="XSchule.Baukasten.Kernkomponenten.Schueler">Schueler</link>'>
+                    <!ENTITY datentyp.ref.xref.schueler '<xref linkend="XSchule.Baukasten.Kernkomponenten.Schueler" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schuelerabiturzeugnis '<emphasis role="codebf">SchuelerAbiturzeugnis</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schuelerabiturzeugnis '<link linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis">SchuelerAbiturzeugnis</link>'>
+                    <!ENTITY datentyp.ref.xref.schuelerabiturzeugnis '<xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schuelerreisend '<emphasis role="codebf">SchuelerReisend</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schuelerreisend '<link linkend="XSchule.Baukasten.SchuelerReisend">SchuelerReisend</link>'>
+                    <!ENTITY datentyp.ref.xref.schuelerreisend '<xref linkend="XSchule.Baukasten.SchuelerReisend" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schuelerwechselnd '<emphasis role="codebf">SchuelerWechselnd</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schuelerwechselnd '<link linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd">SchuelerWechselnd</link>'>
+                    <!ENTITY datentyp.ref.xref.schuelerwechselnd '<xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd" role="AS"/>'>
                     <!ENTITY datentyp.ref.schule '<emphasis role="codebf">Schule</emphasis>'>
-                    <!ENTITY datentyp.ref.link.schule '<link linkend="XSchule.Baukasten.Schule">Schule</link>'>
-                    <!ENTITY datentyp.ref.xref.schule '<xref linkend="XSchule.Baukasten.Schule" role="AS"/>'>
+                    <!ENTITY datentyp.ref.link.schule '<link linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link>'>
+                    <!ENTITY datentyp.ref.xref.schule '<xref linkend="XSchule.Baukasten.Kernkomponenten.Schule" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schuleaufnehmend '<emphasis role="codebf">SchuleAufnehmend</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schuleaufnehmend '<link linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend">SchuleAufnehmend</link>'>
+                    <!ENTITY datentyp.ref.xref.schuleaufnehmend '<xref linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend" role="AS"/>'>
+                    <!ENTITY datentyp.ref.schulebesucht '<emphasis role="codebf">SchuleBesucht</emphasis>'>
+                    <!ENTITY datentyp.ref.link.schulebesucht '<link linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht">SchuleBesucht</link>'>
+                    <!ENTITY datentyp.ref.xref.schulebesucht '<xref linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht" role="AS"/>'>
                     <!ENTITY datentyp.ref.schulformspezifischezusatzdaten '<emphasis role="codebf">SchulformspezifischeZusatzdaten</emphasis>'>
                     <!ENTITY datentyp.ref.link.schulformspezifischezusatzdaten '<link linkend="XSchule.Baukasten.SchulformspezifischeZusatzdaten">SchulformspezifischeZusatzdaten</link>'>
                     <!ENTITY datentyp.ref.xref.schulformspezifischezusatzdaten '<xref linkend="XSchule.Baukasten.SchulformspezifischeZusatzdaten" role="AS"/>'>
@@ -139,7 +178,10 @@
                     <!ENTITY datentyp.ref.unterrichtsteilnahme '<emphasis role="codebf">Unterrichtsteilnahme</emphasis>'>
                     <!ENTITY datentyp.ref.link.unterrichtsteilnahme '<link linkend="XSchule.Baukasten.Unterrichtsteilnahme">Unterrichtsteilnahme</link>'>
                     <!ENTITY datentyp.ref.xref.unterrichtsteilnahme '<xref linkend="XSchule.Baukasten.Unterrichtsteilnahme" role="AS"/>'>
-                    <!ENTITY datentyp.ref.wechselnderschueler '<emphasis role="codebf">WechselnderSchueler</emphasis>'>
-                    <!ENTITY datentyp.ref.link.wechselnderschueler '<link linkend="XSchule.Baukasten.WechselnderSchueler">WechselnderSchueler</link>'>
-                    <!ENTITY datentyp.ref.xref.wechselnderschueler '<xref linkend="XSchule.Baukasten.WechselnderSchueler" role="AS"/>'>
+                    <!ENTITY datentyp.ref.verwaltungspolitischekodierung '<emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>'>
+                    <!ENTITY datentyp.ref.link.verwaltungspolitischekodierung '<link linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung">VerwaltungspolitischeKodierung</link>'>
+                    <!ENTITY datentyp.ref.xref.verwaltungspolitischekodierung '<xref linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung" role="AS"/>'>
+                    <!ENTITY datentyp.ref.zeitraum '<emphasis role="codebf">Zeitraum</emphasis>'>
+                    <!ENTITY datentyp.ref.link.zeitraum '<link linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum">Zeitraum</link>'>
+                    <!ENTITY datentyp.ref.xref.zeitraum '<xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="AS"/>'>
                     

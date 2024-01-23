@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.Kommunikation">
+   <title>Kommunikation</title>
+   <subtitle>Typ: <emphasis role="codebf">Kommunikation</emphasis>
+   </subtitle><para>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</para>
+<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.Kommunikation">
+      <title>Kommunikation</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/Kommunikation.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.Kommunikation">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kanal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Erreichbarkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der "kanal" gibt an, über welchen Kommunikationskanal eine Erreichbarkeit besteht.</para>  
+
+<para>Beispiele: Telefon, Fax, E-Mail</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kennung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die "kennung" beinhaltet die konkreten Angaben zur Erreichbarkeit über einen Kommunikationskanal, d.h. die Telefonnummer, Faxnummer, E-Mail-Adresse oder dergleichen. Die Kennung soll strukturiert erfasst werden.</para>
+
+<para>Anmerkung: Die Erfassung von Telefonnummern oder Faxnummern kann nach  der Gliederungsvorschrift von DIN 5008 oder E.123 der internationalen Fernmeldeunion erfolgen. 
+
+Als allgemeine Gliederungsvorschrift gilt nach DIN 5008 die Trennung von Ländervorwahl, Ortskennzahl und Teilnehmernummer durch ein Leerzeichen und die Abtrennung der Durchwahl durch einen Bindestrich. 
+
+Nach E.123 werden Ländervorwahl, Ortskennzahl und Teilnehmernummer ebenfalls durch Leerzeichen getrennt, bei nationalen Rufnummern wird die Ortskennzahl als vernachlässigbarer Teil zusätzlich in Klammern gesetzt.
+
+Eine E-Mail-Adresse wird aufgeteilt in einen local-part und einen domain-part, die durch @(at)-Zeichen getrennt werden. Die zulässigen Zeichen für den local part definiert RFC 2822, für den domain-part gelten die Syntaxregeln des Domain Name Systems.</para>
+
+<para>Beispiele: +49 30 12345-67 (internationale Rufnummer nach DIN 5008)
+
+030 12345-67 ( nationale Rufnummern nach DIN 5008)
+
++49 89 1234567 (internationale Rufnummer nach E.123)
+
+(089) 123456) (nationale Rufnummer nach E.123)
+
+tel:+49-30-1234567 (Uniform Resource Identifier nach RFC 3966)</para>
+
+
+
+
+
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">istDienstlich</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit der Komponente "istDienstlich" kann angegeben werden, ob es sich um dienstliche oder private Kommunikationsdaten handelt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zusatz</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Im "zusatz" können zusätzliche freie Angaben zur Erreichbarkeit über einen Kommunikationskanal gemacht werden.</para> 
+
+<para>Beispiel: erreichbar tagsüber zwischen 9 und 16 Uhr</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/kommunikation_list.xml"/>
+</section>

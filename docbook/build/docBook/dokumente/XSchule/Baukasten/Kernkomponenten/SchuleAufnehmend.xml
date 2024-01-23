@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend">
+   <title>SchuleAufnehmend</title>
+   <subtitle>Typ: <emphasis role="codebf">SchuleAufnehmend</emphasis>
+   </subtitle><para>Die Klasse enthält für Bildungseinrichtungen entlang der Lebenslage Schule allgemeine Angaben zur
+Organisation, in die gewechselt werden kann.</para>
+<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend">
+      <title>SchuleAufnehmend</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="107"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/SchuleAufnehmend.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">SchuleAufnehmend</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">name</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">NameOrganisation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zum offiziellen Namen einer Organisation.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</para>
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>eindeutige Identifikation einer Organisation im Bildungswesen</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Anschrift"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Anschrift" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angaben zur Anschrift der Organisation. Bei Bedarf kann über den Typ der Anschrift auf deren Verwendung als Postanschrift,
+Niederlassungsanschrift oder Gründungsanschrift verwiesen werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">artDerTraegerschaft</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerTraegerschaft</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Angabe, ob eine Bildungseinrichtung z.B. staatlich oder privat geführt wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">aufnahme</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Bündelt Angaben zur Aufnahme des jungen Menschen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">datum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Gibt das (geplante) Aufnahmedatum an, sofern es der besuchten Schule zum Zeitpunkt der Nachrichtenerstellung bekannt ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">jahrgang</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Gibt den (geplanten) Jahrgang an, in den der junge Mensch nach dem Wechsel aufgenommen werden soll.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">artDerSchulaufnahme</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Hier muss eine Angabe zu Details der Schulaufnahme gemacht werden. Sollte keine Auskunft möglich sein, wird der Grund dafür angegeben.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerSchulaufnahme</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">versetzt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:boolean</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Hier kann angegeben werden, ob der Schulwechsel mit einer Versetzung verbunden ist.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">versetzungsOderAusnahmetatbestandstyp</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Hier werden Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen oder zu Ausnahmetatbeständen im Fall keiner Versetzung gemacht. </para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Versetzungstyp</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/schuleaufnehmend_list.xml"/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xsc:aufnahme/xsc:artDerSchulaufnahme</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xsc:aufnahme/xsc:versetzungsOderAusnahmetatbestandstyp</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;T&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

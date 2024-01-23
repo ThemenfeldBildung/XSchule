@@ -5,21 +5,21 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.ReisenderSchueler">
-   <title>ReisenderSchueler</title>
-   <subtitle>Typ: <emphasis role="codebf">ReisenderSchueler</emphasis>
-   </subtitle><para>Hier werden Angaben zu jungen Menschen gemacht, die sich aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen befinden.</para><figure xml:id="figure.XSchule.Baukasten.ReisenderSchueler">
-      <title>ReisenderSchueler</title>
+         xml:id="XSchule.Baukasten.SchuelerReisend">
+   <title>SchuelerReisend</title>
+   <subtitle>Typ: <emphasis role="codebf">SchuelerReisend</emphasis>
+   </subtitle><para>Hier werden Angaben zu jungen Menschen gemacht, die sich aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen befinden.</para><figure xml:id="figure.XSchule.Baukasten.SchuelerReisend">
+      <title>SchuelerReisend</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/ReisenderSchueler.svg"/>
+                       fileref="../../../zeichnungen/XSchule/Baukasten/SchuelerReisend.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XSchule.Baukasten.ReisenderSchueler">
+   <informaltable xml:id="table.XSchule.Baukasten.SchuelerReisend">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">ReisenderSchueler</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">SchuelerReisend</emphasis>
                </entry>
             </row>
             <row>
@@ -57,10 +57,12 @@
                   <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameOrganisation"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -77,10 +79,11 @@
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="AbschnittNummer"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Schule" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -91,5 +94,5 @@
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/reisenderschueler_list.xml"/>
+            href="../../anhang/verwendung/complexTypes/schuelerreisend_list.xml"/>
 </section>

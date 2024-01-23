@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.Anschrift">
+   <title>Anschrift</title>
+   <subtitle>Typ: <emphasis role="codebf">Anschrift</emphasis>
+   </subtitle><para>Die Klasse enthält die Angaben zu der Anschrift.</para>
+
+<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.Anschrift">
+      <title>Anschrift</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/Anschrift.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.Anschrift">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">strasse</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Eine Straße ist ein planmäßig angelegter, im allgemeinen befestigter Verkehrsweg innerhalb eines Ortes.</para> 
+
+<para>Die "strasse" enthält den Namen/die Bezeichnung einer Straße.</para>
+
+<para>Anmerkung: Es soll möglichst der amtliche Straßenname aus einem offiziellen Straßenverzeichnis genutzt werden.</para>
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">hausnummer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Eine Hausnummer dient der genauen Lokalisierung eines Grundstücks, Gebäudes oder Gebäudeteils (Eingang) in einer Straße.</para> 
+
+<para>Anmerkung: Hausnummern können entsprechend der üblichen Praxis in vielen Gemeinden mit ergänzenden Angaben zur weiteren Unterteilung versehen werden, etwa "12a" oder "17 1/3".
+
+Da manche Gebäude oder Organisationen sich als Einheit über mehrere Hausnummern erstrecken, können auch Hausnummernbereiche angegeben werden, etwa "12a - 12e" oder "1 - 3".</para>
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">postfach</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Postfach (oft Postfachnummer) ist ein Schlüssel zur Identifikation eines Postfaches in einer Postfiliale.</para>
+
+<para>Anmerkung: Eine Beschränkung auf numerische Postfachbezeichnungen wurde bewusst nicht vorgenommen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">postleitzahl</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Eine Postleitzahl ist eine Angabe, um postalische Zustellgebiete unabhängig von Gebietskörperschaften (Gemeinde, Kreis, ...) zu bezeichnen.</para>
+
+<para>Anmerkung: In Deutschland sind durch Postleitzahlen bezeichnete Bereiche und verwaltungspolitische Grenzen in der Regel aufeinander abgestimmt. Größere Gemeinden und Städte sind häufig in mehrere Postleitzahlengebiete aufgeteilt. Postleitzahlen werden durch die Deutsche Post AG verwaltet. 
+
+Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht vorgenommen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ort</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der "ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).</para>
+
+<para>Anmerkung: Als Ortsname sollte der amtliche Gemeindename genutzt werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">ortsteil</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Ortsteil ist Teil eines Ortes und dient zur Untergliederung dieses Ortes.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">zusatz</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeB</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Anschriftenzusatz beinhaltet ggf. erforderliche weitere Präzisierungen zu einer Anschrift.</para>
+
+<para>Anmerkung: Anschriftenzusätze können der Anschrift hinzugefügt werden, um eine Adressierung zu erleichtern oder ein Objekt genauer zu beschreiben, als es mit den klassischen Attributen einer Anschrift allein möglich ist.
+
+Auf eine Festlegung des Formats von Anschriftenzusätzen wurde wegen der uneinheitlichen Verwendung verzichtet.</para>
+
+<para>Beispiele: Hinterhof, 3. Aufgang, Haus A, 3. Stock, Appartement 25a,  3. Stock - Appartement 25 a, #325a, Raum 77</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">staat</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Staat</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Staat, dem die Anschrift postalisch zugeordnet wird.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">verwaltungspolitischeKodierung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die "verwaltungspolitischeKodierung" beinhaltet Informationen, mit denen eine Anschrift verwaltungspolitisch eindeutig zugeordnet werden kann.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/anschrift_list.xml"/>
+</section>

@@ -20,79 +20,29 @@
             </entry>
          </row>
          <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;V&#x200B;o&#x200B;r&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-            <entry>Der Vorname vom Zeugnisinhabenden muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:vorname[1]/xbd:name[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;F&#x200B;a&#x200B;m&#x200B;i&#x200B;l&#x200B;i&#x200B;e&#x200B;n&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-            <entry>Der Familienname vom Zeugnisinhabenden muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:familienname[1]/xbd:name[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-            <entry>Der Geburtsort vom Zeugnisinhabenden muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:geburtsort[1]/xbd:ort[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;t&#x200B;a&#x200B;g&#x200B;</entry>
-            <entry>Das Geburtsdatum vom Zeugnisinhabenden muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:datum[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;W&#x200B;o&#x200B;h&#x200B;n&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-            <entry>Der Wohnort vom Zeugnisinhabenden muss angegeben werden.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:anschrift[1]/xbd:ort[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;B&#x200B;i&#x200B;l&#x200B;d&#x200B;u&#x200B;n&#x200B;g&#x200B;s&#x200B;e&#x200B;i&#x200B;n&#x200B;r&#x200B;i&#x200B;c&#x200B;h&#x200B;t&#x200B;u&#x200B;n&#x200B;g&#x200B;N&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-            <entry>Der Name der Bildungseinrichtung, die das Zeugnis ausstellt, muss angegeben werden.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schule[1]/xbd:name[1]/xbd:name[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;2&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
             <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der KMK-Abiturfächer-Liste versehen sein.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
                   <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:kmk:codeliste:abiturfach']) &gt; 0</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:allgemeineAngaben/xsc:artDesSchulabschlusses</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
                </para>
             </entry>
          </row>
@@ -114,62 +64,18 @@
          </row>
          <row>
             <entry namest="id" nameend="regel" align="center">
-               <emphasis role="bold">Globales Element schueler.wechsel.0001</emphasis>
+               <emphasis role="bold">Globales Element schueler.schulbescheinigung.0004</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
                <?dbfo bgcolor="#EEEEEE"?>
             </entry>
          </row>
          <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;V&#x200B;o&#x200B;r&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-            <entry>Der Vorname vom wechselnden Schüler muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:vorname[1]/xbd:name[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;1&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;F&#x200B;a&#x200B;m&#x200B;i&#x200B;l&#x200B;i&#x200B;e&#x200B;n&#x200B;n&#x200B;a&#x200B;m&#x200B;e&#x200B;</entry>
-            <entry>Der Familienname vom wechselnden Schüler muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:nameNatuerlichePerson[1]/xbd:familienname[1]/xbd:name[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;o&#x200B;r&#x200B;t&#x200B;</entry>
-            <entry>Der Geburtsort vom wechselnden Schüler muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:geburtsort[1]/xbd:ort[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;1&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;G&#x200B;e&#x200B;b&#x200B;u&#x200B;r&#x200B;t&#x200B;s&#x200B;t&#x200B;a&#x200B;g&#x200B;</entry>
-            <entry>Das Geburtsdatum vom wechselnden Schüler muss angegeben sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">not(empty(xsc:schueler[1]/xbd:geburt[1]/xbd:datum[1]))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xsc:aufnahme/xsc:versetzungsOderAusnahmetatbestandstyp</emphasis>
+               <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:artDesSchulabschlusses</emphasis>
             </entry>
          </row>
          <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;8&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;T&#x200B;</entry>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
             <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
          </row>
          <row>
@@ -184,6 +90,22 @@
                <emphasis role="bold">Globales Element schueler.zeugnis.0003</emphasis>
                <?dbhtml bgcolor="#EEEEEE"?>
                <?dbfo bgcolor="#EEEEEE"?>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:artDesSchulabschlusses</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
             </entry>
          </row>
          <row>

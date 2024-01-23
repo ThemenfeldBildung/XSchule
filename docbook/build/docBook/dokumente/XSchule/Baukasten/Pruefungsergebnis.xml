@@ -70,6 +70,21 @@
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">artDerPruefung</emphasis>
                </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Art der Prüfung kann verschiedene Ausprägungen haben. Bspw. kann angegeben werden, ob es sich um eine schriftlich oder mündlich abgelegte Prüfung handelt.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
                <entry>
                   <emphasis role="codebf">Code.ArtDerPruefung</emphasis>
                </entry>
@@ -84,7 +99,26 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Die Art der Prüfung kann verschiedene Ausprägungen haben. Bspw. kann angegeben werden, ob es sich um eine schriftlich oder mündlich abgelegte Prüfung handelt.</para></entry>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -285,6 +319,22 @@
                </row>
                <row>
                   <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;G&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xsc:artDerPruefung</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;2&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;P&#x200B;</entry>
                   <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
                </row>
                <row>

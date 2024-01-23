@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.AlternativeRepraesentation">
+   <title>AlternativeRepraesentation</title>
+   <subtitle>Typ: <emphasis role="codebf">AlternativeRepraesentation</emphasis>
+   </subtitle><para>Die "AlternativeRepraesentation" beinhaltet das mit ihm verbundene Objekt in einer alternativen Form, die einer festgelegten Konvention folgt. Das Element kann Inhalte anderer Elemente des verbundenen Objekts beinhalten. Die in der Komponente "AlternativeRepraesentation" übermittelten Informationen müssen redundant zu den anderen Elementen des mit ihm verbundenen Objekts sein. Eine "AlternativeRepraesentation" kann auch eine multimediale Abbildung des Objektes darstellen. Hierzu zählen beispielsweise Logos oder Bilder.</para>
+
+<para>Beispiel: Ein Beispiel für die Verwendung einer alternativen Repraesentation ist die Übermittlung von Namen. Der Name "Andrè Müller" würde nach ICAO-Standard, in dem keine Umlaute erlaubt sind, daher alternativ als "ANDRE MUELLER" übertragen.</para><figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.AlternativeRepraesentation">
+      <title>AlternativeRepraesentation</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/AlternativeRepraesentation.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.AlternativeRepraesentation">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">AlternativeRepraesentation</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">repraesentation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:base64Binary</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Komponente "repraesentation" enthält die alternative Repräsentation von Inhalten, die originär an anderer Stelle und in anderer Form übermittelt werden und der festgelegten Konvention folgt.</para>
+
+<para>Als Datentyp wird Binary (BASE64) gewählt, damit jeder beliebige Inhalt (so z. B. auch XML) in jeder beliebigen Codierung übermittelt werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">algorithmus</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Komponente "algorithmus" enthält den Algorithmus, der (möglichst in formaler Notation) genau beschreibt wie die alternative Repräsentation erzeugt wird.</para> 
+
+<para>Beispiel: Analog der Vorgehensweise bei XML Signature, wo über URIs die Hashalgorithmen benannt werden, in Form von URLs oder URIs.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">hinweis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeC</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Komponente "hinweis" enthält einen zusätzlichen Hinweis des Senders über die von ihm intendierte Umgehensweise mit der alternativen Repräsentation.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/alternativerepraesentation_list.xml"/>
+</section>

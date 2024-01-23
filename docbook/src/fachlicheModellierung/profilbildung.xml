@@ -42,15 +42,45 @@
                         role="Titel"/></para>
             </listitem>
             <listitem>
+                <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ArtDerPruefung"
+                        >Code.ArtDerPruefung</link></para>
+            </listitem>
+
+            <listitem>
+                <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule"
+                        >Code.ArtDerSchule</link></para>
+            </listitem>
+            <!--<listitem>
+                <para><xref
+                    linkend="tabelle.urn.xbildung-de.xbildung.codeliste.artderpruefung.ArtDerPruefung-Codes"
+                    role="Titel"/></para>
+            </listitem>-->
+            <listitem>
                 <para><xref
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.ArtDerSchulaufnahme-Codes"
                         role="Titel"/></para>
             </listitem>
+            <!--<listitem>
+                <para><xref
+                    linkend="tabelle.urn.xbildung-de.kmk.codeliste.artderschule.ArtDerSchule-Codes"
+                    role="Titel"/></para>
+            </listitem>-->
             <listitem>
                 <para><xref
                         linkend="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.ArtDerUnterrichtsteilnahme-Codes"
                         role="Titel"/></para>
             </listitem>
+            <listitem>
+                <para><link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="
+                    http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ArtDesSchulabschlusses">Code.ArtDesSchulabschlusses</link></para>
+            </listitem>
+            <!--<listitem>
+                <para><xref
+                    linkend="tabelle.urn.xbildung-de.destatis.codeliste.artdesschulabschlusses.ArtDesSchulabschlusses-Codes"
+                    role="Titel"/></para>
+            </listitem>-->
             <listitem>
                 <para><xref
                         linkend="tabelle.urn.xschule-digital.kmk.codeliste.aufgabenfeld.Aufgabenfeld-Codes"
@@ -121,11 +151,10 @@
             Schulbescheinigung hinzugefügt werden. Hier soll nocheinmal die Notwendigkeit des
             Abstimmungsprozesses und der Dokumentation von solchen Erweiterungen hervorgehoben
             werden. Die Möglichkeit, bei der Erstellung von Nachweisen solche Erweiterungen
-            vorzunehmen, darf nicht dazu führen, dass ggf. datenschutzkritische Informationen
-            den Nachweisen unabgestimmt hinzugefügt werden. Soll eine fehlende Eigenschaft
-            zukünftig fest in das Datenmodell aufgenommen werden, muss ein Change Request gestellt
-            werden. (Siehe <xref linkend="spezifikation.profilbildung.changeprozess" role="Titel"
-            />.)</para>
+            vorzunehmen, darf nicht dazu führen, dass ggf. datenschutzkritische Informationen den
+            Nachweisen unabgestimmt hinzugefügt werden. Soll eine fehlende Eigenschaft zukünftig
+            fest in das Datenmodell aufgenommen werden, muss ein Change Request gestellt werden.
+            (Siehe <xref linkend="spezifikation.profilbildung.changeprozess" role="Titel"/>.)</para>
         <para> Soll die Eigenschaft zusammen mit einer Werteliste verwendet werden, funktioniert sie
             wie ein Typ-4-Code-Datentyp.</para>
     </section>
@@ -135,8 +164,8 @@
             <title>Übernahme von Anpassungen in das XSchule-Datenmodell</title>
         </info>
         <para>Wird im Rahmen einer Profilbildung deutlich, dass die Erweiterung grundsätzlich für
-            XSchule in Betracht kommen sollte, muss hierfür ein Change Request (CR) an XSchule gestellt
-            werden. Dies geschieht derzeit im Rahmen von Workshops und auf <link
+            XSchule in Betracht kommen sollte, muss hierfür ein Change Request (CR) an XSchule
+            gestellt werden. Dies geschieht derzeit im Rahmen von Workshops und auf <link
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xlink:href="https://github.com/OZG-TFBildung/XSchule/issues">GitHub</link>. Der
             Prozess wird zukünftig im noch zu veröffentlichenden Pflegekonzept beschrieben.</para>

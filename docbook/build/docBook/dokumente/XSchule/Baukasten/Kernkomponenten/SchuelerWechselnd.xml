@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd">
+   <title>SchuelerWechselnd</title>
+   <subtitle>Typ: <emphasis role="codebf">SchuelerWechselnd</emphasis>
+   </subtitle><para>Der wechselnde Schüler bzw. die wechselnde Schülerin ist eine natürliche Person, die bei einer anderen Schule angemeldet wird. Die aufnehmende Schule benötigt dabei Informationen, die über die Daten der Klasse "NachweisinhabenderSchueler" hinausgehen.</para><figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd">
+      <title>SchuelerWechselnd</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="104"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/SchuelerWechselnd.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">SchuelerWechselnd</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">nameNatuerlichePerson</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">NameNatuerlichePerson</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.NameNatuerlichePerson"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier werden Informationen zu den Namen einer natürlichen Person zusammengefasst.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Geburt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Geburt"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Geburt" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Geburt einer natürlichen Person gemacht.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">staatsangehoerigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Staatsangehoerigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die "staatsangehoerigkeit" einer natürlichen Person gibt an, welchem Staat die Person angehört. Die Staatsangehörigkeit ist das rechtliche Band zwischen dem Staat und dem Staatsangehörigen und bestimmt Rechte wie Pflichten zwischen Staat und Staatsangehörigem.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Anschrift</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Anschrift"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Anschrift" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Anschrift einer natürlichen Person gemacht. Sollte eine Unterbringung im Jugendheim vorliegen und dessen Anschrift von der Meldeanschrift des jungen Menschen abweichen, so kann dies im Feld "zusatz" vermerkt werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Geschlecht</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Komponente "geschlecht" repräsentiert die Angaben zum Geschlecht einer natürlichen Person.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">identifikationsnummer</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Identifikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Identifikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Persönliche Identifikationsnummer einer natürlichen Person, die sie kontextbezogen von allen anderen Personen eindeutig unterscheidet. Eine natürliche Person kann mehrere Identifikationsnummern haben.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Kommunikation</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Kommunikation"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>"Kommunikation" fasst Angaben zur Erreichbarkeit über elektronische Kommunikationskanäle (z.B. Telefon, Fax, E-Mail) zusammen.</para>
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">sonderpaedagogischerFoerderbedarf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">SonderpaedagogischerFoerderbedarf</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SonderpaedagogischerFoerderbedarf"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page">Mit diesem Element können die Daten zum sonderpädagogischen Förderbedarf übermittelt werden.</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">impfung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">ImpfnachweisVorhanden</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.ImpfnachweisVorhanden"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.ImpfnachweisVorhanden" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden Daten zu Impfungen, bzw. Schutz des jungen Menschen mitgeteilt.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">herkunftssprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Language</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier wird die Sprache angegeben, die eine Person als erstes erworben hat. In der Regel handelt es sich um die Sprache des Herkunftslandes. Es ist die URI zu verwenden, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">verkehrssprache</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Language</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann die Sprache angegeben werden, die vorrangig im Haushalt des jungen Menschen gesprochen wird. Es ist die URI zu verwenden, die das Publications Office der EU in ihrer "Language Authority Table" veröffentlicht hat.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">migrationshintergrund</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Migrationshintergrund</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Migrationshintergrund"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Migrationshintergrund" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Der Migrationshintergrund junger Menschen ist für den Schulwechsel insbesondere für statistische Zwecke wichtig.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">konfession</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Konfession</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Konfession"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Codes.Code.Konfession" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier kann die Konfession von jungen Menschen im Schulwechsel angegeben werden, sofern diese für den Schulbesuch relevant ist.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schuelerReisender</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">SchuelerReisend</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SchuelerReisend" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.SchuelerReisend" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Befinden sich junge Menschen aufgrund der beruflichen Situation der Sorgeberechtigten dauerhaft oder über lange Zeiträume auf Reisen, müssen hier zusätzliche Angaben gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schulform</emphasis>
+               </entry>
+               <entry/>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet die Schulform, die der junge Mensch zuletzt besucht hat. Die Begriffe "Schulform" und "Schulart" werden hier austauschbar verwendet.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">code</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.ArtDerSchule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schulprofil</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Als Schulprofil wird ein besonderer Bildungsschwerpunkt der besuchten Schule verstanden, wenn sich dieser zum Beispiel auf das Vorhandensein und die Intensität bestimmter Fächer im Lehrplan auswirkt.</para>
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bildungsgang</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Dieses Feld beinhaltet den Bildungsgang, der an der abgebenden Schule zuletzt besucht wurde. Das kann beispielsweise der G8 oder G9 Bildungsgang sein.</para>
+<para><emphasis>Hinweis: </emphasis>Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">auskunftssperreGueltigkeit</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Zeitraum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Mit diesem Element werden bei Vorliegen ggf. die Zeiträume einer Auskunftssperre zum jungen Mensch übermittelt.</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/schuelerwechselnd_list.xml"/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xsc:Schueler/xsc:schulform</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;4&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
+</section>

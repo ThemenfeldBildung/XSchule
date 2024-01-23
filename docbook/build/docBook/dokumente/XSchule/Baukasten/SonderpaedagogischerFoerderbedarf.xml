@@ -64,7 +64,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page">Angaben zur Art des sonderpädagogischen Förderbedarfes.</entry>
+               <entry namest="indent0" nameend="page"><para>Dieses Element gibt die konkrete Art des sonderpädadgogischen Förderbedarfes an. Dies bezieht sich auf spezifische Diagnosen, beispielsweise Dyskalkulie.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -86,7 +86,7 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page">Angaben zum Schwerpunkt des sonderpädagogischen Förderbedarfes.</entry>
+               <entry namest="indent0" nameend="page"><para>Dieses Element gibt den Förderschwerpunkt an. Der Schwerpunkt kategorisiert, in welchem Bereich der Förderbedarf liegt. Da die Bundesländer unterschiedliche Wertelisten nutzen, wird an dieser Stelle keine Vorgabe gemacht. XSchule stellt jedoch eine Musterliste "Förderschwerpunkt" zur Verfügung.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -156,10 +156,11 @@
                   <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -168,23 +169,23 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">sonderpaedagogischesGutachten</emphasis>
+                  <emphasis role="bold">anlage</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
+                  <emphasis role="codebf">Anlage</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">1..n</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Anlage" role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Anlage" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page">Angaben zum Datum und Aussteller des sonderpaedagogischen Gutachtens. (Über den Umgang mit Anhängen muss noch entschieden werden.)</entry>
+               <entry namest="indent0" nameend="page"><para>In diesem Element können Anlagen/Anhänge beigefügt werden. Dazu gehört vor allem das sonderpädagogische Gutachten, das für Fördermaßnahmen benötigt wird. Sollten andere Bescheide zur Feststellung von Förderbedarfen erforderlich sein, können diese hier ebenfalls angegeben werden.</para></entry>
             </row>
          </tbody>
       </tgroup>

@@ -14,7 +14,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="110"
+                       scale="109"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.schulbescheinigung.0004.svg"/>
          </imageobject>
       </mediaobject>
@@ -50,81 +50,22 @@
                <entry namest="indent0" nameend="child">
                   <emphasis role="bold">schueler</emphasis>
                </entry>
-               <entry/>
+               <entry>
+                  <emphasis role="codebf">Schueler</emphasis>
+               </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
-               <entry/>
-               <entry/>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schueler" role="Seitenzahl"/>
+               </entry>
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Hier werden Angaben zum jungen Menschen gemacht, den die Bescheinigung betrifft.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">name</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">NameNatuerlichePerson</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier steht der Name des jungen Menschen, für den bzw. die die Schulbescheinigung ausgestellt wird.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Geburt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier werden das Geburtsdatum und der Geburtsort des jungen Menschen angegeben.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Anschrift</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier steht die Anschrift des jungen Menschen, für den bzw. die die Schulbescheinigung ausgestellt wird. Sie umfasst zum Beispiel den Ort, die Straße und Hausnummer sowie ggf. einen Addresszusatz.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -168,11 +109,28 @@
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">schuljahr</emphasis>
                </entry>
-               <entry>
-                  <emphasis role="codebf">Zeitraum</emphasis>
-               </entry>
+               <entry/>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde. Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">beginn</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -182,8 +140,33 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde. Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres. Wird davon abgewichen, sollte die Eigenschaft "zusatz" genutzt werden, um die Abweichung zu begründen.</para></entry>
+               <entry namest="indent2" nameend="page"><para>Der Beginn beschreibt das Jahr, in dem das Schuljahr beginnt. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">ende</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">TeilbekanntesDatum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Das Ende beschreibt das Jahr, in dem das Schuljahr endet. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -197,44 +180,41 @@
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum"
+                        role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum (ggf. geplanten) Anfangs- und Enddatum des Schulbesuchs gemacht werden.</para></entry>
+               <entry namest="indent1" nameend="page"><para> Erlaubt den Zeitraum, auf den sich die Schulbescheinigung bezieht, mit Start- und/oder Enddatum anzugeben.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">voraussichtlicherAbschluss</emphasis>
                </entry>
-               <entry>
-                  <emphasis role="codebf">Code.ArtDesSchulabschlusses</emphasis>
-               </entry>
+               <entry/>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
+               <entry/>
+               <entry/>
             </row>
             <row>
-               <entry rowsep="1" colsep="1"/>
+               <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Hier wir der voraussichtliche erreichte Schulabschlusses angegeben.</para></entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">ausstellendeSchule</emphasis>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">code</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Organisation</emphasis>
+                  <emphasis role="codebf">Code.ArtDesSchulabschlusses</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
@@ -247,7 +227,50 @@
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Hier werden Angaben zur Schule gemacht, die die Bescheinigung ausstellt. Sie umfassen zum Beispiel den Namen und die Anschrift.</para></entry>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">nichtGelisteterWert</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:string</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">schule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Schule</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schule" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die Klasse Schule enthält allgemeine Angaben zur Bildungseinrichtung, die die Schulbescheinigung ausgestellt hat.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -290,4 +313,37 @@
       </tgroup>
    </informaltable>
    <para/>
+   <section>
+      <title>Geschäftsregeln</title>
+      <informaltable xml:id="table.XSchule.Nachweise.schueler.schulbescheinigung.0004.rules">
+         <tgroup cols="2">
+            <colspec colname="id" colnum="1" colwidth="20mm"/>
+            <colspec colname="regel" colnum="2" colwidth="140mm"/>
+            <thead>
+               <row>
+                  <entry>ID</entry>
+                  <entry>Regel / XPath</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:artDesSchulabschlusses</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </informaltable>
+   </section>
 </section>

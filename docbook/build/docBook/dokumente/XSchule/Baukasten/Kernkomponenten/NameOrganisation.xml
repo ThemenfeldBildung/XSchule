@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
-<!ENTITY % complete SYSTEM "../../../../../ent/complete.ent">
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
 %complete;]><section xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.AufnehmendeSchule">
-   <title>AufnehmendeSchule</title>
-   <subtitle>Typ: <emphasis role="codebf">AufnehmendeSchule</emphasis>
-   </subtitle><para>Die Klasse enthält für Bildungseinrichtungen entlang der Lebenslage Schule allgemeine Angaben zur Organisation, in die gewechselt werden kann.</para><figure xml:id="figure.XSchule.Baukasten.AufnehmendeSchule">
-      <title>AufnehmendeSchule</title>
+         xml:id="XSchule.Baukasten.Kernkomponenten.NameOrganisation">
+   <title>NameOrganisation</title>
+   <subtitle>Typ: <emphasis role="codebf">NameOrganisation</emphasis>
+   </subtitle><para>"NameOrganisation" fasst die Angaben zum Namen einer Organisation zusammen.</para> <figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.NameOrganisation">
+      <title>NameOrganisation</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/AufnehmendeSchule.svg"/>
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/NameOrganisation.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <para>Dieser Typ  ist eine Erweiterung des Basistyps <emphasis role="codebf">Organisation</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
-   <informaltable xml:id="table.XSchule.Baukasten.AufnehmendeSchule">
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.NameOrganisation">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -35,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelement von <emphasis role="codebf">AufnehmendeSchule</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">NameOrganisation</emphasis>
                </entry>
             </row>
             <row>
@@ -49,28 +48,48 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">artDerTraegerschaft</emphasis>
+                  <emphasis role="bold">name</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Code.ArtDerTraegerschaft</emphasis>
+                  <emphasis role="codebf">datatypeE</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Offizieller Name einer Organisation. Entspricht bei registrierten Organisationen dem im Register eingetragenen Namen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kurzbezeichnung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">datatypeE</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Quelle"/>
                </entry>
                <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+                  <xref linkend="externe.modelle.XOEV_Bibliothek" role="Seitenzahl"/>
                </entry>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Angabe, ob eine Bildungseinrichtung z.B. staatlich oder privat geführt wird.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Kurzbezeichnung des Namen einer Organisation.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/aufnehmendeschule_list.xml"/>
+            href="../../../anhang/verwendung/complexTypes/nameorganisation_list.xml"/>
 </section>

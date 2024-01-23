@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDerBemerkung-Codes</ShortName>
       <LongName>ArtDerBemerkung</LongName>
-      <Version>0.7</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:artderbemerkung</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderbemerkung_0.7</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:artderbemerkung_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,23 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/10</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>freie Formulierung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/20</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>sonstige standardisierte Bemerkung</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/25</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/aequivalenzbemerkung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Äquivalenzbemerkung</SimpleValue>
@@ -67,23 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/28</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Rechtsgrundlage</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/30</SimpleValue>
-         </Value>
-         <Value ColumnRef="description-de-DE">
-            <SimpleValue>Arbeitsgemeinschaft</SimpleValue>
-         </Value>
-      </Row>
-      <Row>
-         <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/40</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>allgemeine Beurteilung</SimpleValue>
@@ -91,15 +59,23 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/50</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>schulisches Engagement</SimpleValue>
+            <SimpleValue>Arbeitsgemeinschaft</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/55</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/befreiung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Befreiung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_ausserschulisch</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>außerschulisches Engagement</SimpleValue>
@@ -107,10 +83,34 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/60</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_schulisch</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Befreiung</SimpleValue>
+            <SimpleValue>schulisches Engagement</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/freie_formulierung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>freie Formulierung</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Rechtsgrundlage</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>sonstige standardisierte Bemerkung</SimpleValue>
          </Value>
       </Row>
    </SimpleCodeList>

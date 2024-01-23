@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE section [
+<!ENTITY % complete SYSTEM "../../../../../../ent/complete.ent">
+%complete;]><section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5"
+         xml:lang="de"
+         xml:id="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung">
+   <title>VerwaltungspolitischeKodierung</title>
+   <subtitle>Typ: <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>
+   </subtitle><para>Die Komponente "VerwaltungspolitischeKodierung" beinhaltet Informationen, die eine verwaltungspolitisch eindeutige Zuordnung ermöglichen.</para> <figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung">
+      <title>VerwaltungspolitischeKodierung</title>
+      <mediaobject>
+         <imageobject>
+            <imagedata format="svg"
+                       align="center"
+                       scale="110"
+                       fileref="../../../../zeichnungen/XSchule/Baukasten/Kernkomponenten/VerwaltungspolitischeKodierung.svg"/>
+         </imageobject>
+      </mediaobject>
+   </figure>
+   <informaltable xml:id="table.XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung">
+      <tgroup cols="11">
+         <colspec colname="indent0" colnum="1" colwidth="5mm"/>
+         <colspec colname="indent1" colnum="2" colwidth="5mm"/>
+         <colspec colname="indent2" colnum="3" colwidth="5mm"/>
+         <colspec colname="indent3" colnum="4" colwidth="5mm"/>
+         <colspec colname="indent4" colnum="5" colwidth="5mm"/>
+         <colspec colname="indent5" colnum="6" colwidth="5mm"/>
+         <colspec colname="child" colnum="7" colwidth="27mm"/>
+         <colspec colname="type" colnum="8" colwidth="65mm"/>
+         <colspec colname="cardinality" colnum="9" colwidth="12mm"/>
+         <colspec colname="reference" colnum="10" colwidth="14mm"/>
+         <colspec colname="page" colnum="11" colwidth="12mm"/>
+         <thead>
+            <row>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">Kindelement</entry>
+               <entry>Typ</entry>
+               <entry>Anz.</entry>
+               <entry>Ref.</entry>
+               <entry>Seite</entry>
+            </row>
+         </thead>
+         <tbody>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">kreis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Kreis</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>In Deutschland bezeichnet der Kreis eine bestimmt Region, einen Stadt- oder Landkreis.</para>
+
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bezirk</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Bezirk</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>In Deutschland wird mit Bezirk eine bestimmte Region bezeichnet, die einem Regierungsbezirk, einem ehemaligen Regierungsbezirk oder einer anderen statistischen Einheit entspricht, die zwar mehrere Kreise umfasst, jedoch kleiner als ein Bundesland ist.</para>
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">bundesland</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Bundesland</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>In Deutschland bezeichnet ein Bundesland eine bestimmte Region und umfasst mehrere Kreise und Bezirke (Ausnahme bilden die sogenannten Stadtstaaten).</para>
+
+</entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">gemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.AmtlicherGemeindeschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Gemeindeschlüssel ist ein Schlüssel zur Identifikation einer Gemeinde oder sonstiger Gebietskörperschaften (Kreis, Bezirk, Bundesland).</para>
+
+<para>Anmerkung: In Deutschland ist der Amtliche Gemeindeschlüssel (AGS) als Gemeindeschlüssel 8-stellig und bundesweit gültig. Der AGS wird vom Statistischen Bundesamt herausgegeben.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">regionalschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Code.Regionalschluessel</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Ein Regionalschlüssel ist ein Schlüssel zur Identifikation einer Gemeinde oder sonstiger Gebietskörperschaften (Kreis, Bezirks, Bundesland).</para>
+
+<para>Anmerkung: In Deutschland ist der Regionalschlüssel (RS) 12-stellig und bundesweit gültig.
+Der RS wird im Statistischen Bundesamt gesammelt (Rückläufe aus den Ländern) und veröffentlicht. Der AGS kann aus dem RS abgeleitet werden (Stellen 1-5 und 10-12).</para></entry>
+            </row>
+         </tbody>
+      </tgroup>
+   </informaltable>
+   <para/>
+   <include xmlns="http://www.w3.org/2001/XInclude"
+            href="../../../anhang/verwendung/complexTypes/verwaltungspolitischekodierung_list.xml"/>
+</section>

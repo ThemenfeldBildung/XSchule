@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>ArtDesSchulabschlusses-Codes</ShortName>
       <LongName>Art des Schulabschlusses</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:destatis:codeliste:artdesschulabschlusses_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>Statistisches Bundesamt, Wiesbaden</LongName>
       </Agency>
@@ -23,7 +23,6 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code Name</LongName>
          <Data Type="string"/>
       </Column>
       <Column Id="description-de-DE" Use="optional">
@@ -49,7 +48,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/allgemeine_hochschulreife</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/allgemeine_hochschulreife</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>allgemeine Hochschulreife</SimpleValue>
@@ -60,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/fachhochschulreife</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/fachhochschulreife</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Fachhochschulreife</SimpleValue>
@@ -71,7 +70,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/hauptschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/hauptschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Hauptschulabschluss bzw. entsprechendem Abschluss</SimpleValue>
@@ -82,7 +81,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/ohne_hauptschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/ohne_hauptschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>ohne Hauptschulabschluss; einschl. Abschluss der Förderschule mit Förderschwerpunkt Lernen und Abschluss der Förderschule mit Förderschwerpunkt geistige Entwicklunng</SimpleValue>
@@ -93,7 +92,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/realschulabschluss</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/realschulabschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Realschulabschluss (Mittlerer Abschluss)</SimpleValue>
@@ -104,7 +103,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -113,7 +112,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
