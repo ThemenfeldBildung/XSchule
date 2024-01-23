@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Förderschwerpunkt</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Liste enthält von der KMK beschlossene Förderschwerpunkte. Sie basiert auf dem KMK-Dokument "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten (Version 4.0)".</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0. Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (laufende Nummer 4.25), ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Foerderschwerpunkt-Codes</ShortName>
       <LongName>Förderschwerpunkt</LongName>
-      <Version>2019</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xschule-digital:kmk:codeliste:foerderschwerpunkt</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:foerderschwerpunkt_2019</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:foerderschwerpunkt_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>Kultusministerkonferenz</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/emotionale_und_soziale_entwicklung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/emotionale_und_soziale_entwicklung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Emotionale und soziale Entwicklung</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/geistige_entwicklung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/geistige_entwicklung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Geistige Entwicklung</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/hoeren</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/hoeren</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Hören</SimpleValue>
@@ -67,15 +67,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/keinem_schwerpunkt_zugeordnet</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/keinem_schwerpunkt_zugeordnet</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>keinem Schwerpunkt zugeordnet</SimpleValue>
+            <SimpleValue>keinem Förderschwerpunkt zugeordnet</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/koerperliche_und_motorische_entwicklung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/koerperliche_und_motorische_entwicklung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Körperliche und motorische Entwicklung</SimpleValue>
@@ -83,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/lernen</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/lernen</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Lernen</SimpleValue>
@@ -91,15 +91,15 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/lernen_sprache_emotionale_und_soziale_entwicklung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/lernen_sprache_emotionale_und_soziale_entwicklung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
-            <SimpleValue>Lernen, Sprache, Emotionale und soziale Entwicklung</SimpleValue>
+            <SimpleValue>Lernen, Sprache, Emotionale und soziale Entwicklung (LSE)</SimpleValue>
          </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>ohne sonderpädagogische Förderung</SimpleValue>
@@ -107,7 +107,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/schwerst_mehrfachbehinderung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/schwerst_mehrfachbehinderung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schwerst-/Mehrfachbehinderung</SimpleValue>
@@ -115,7 +115,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/sehen</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/sehen</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sehen</SimpleValue>
@@ -123,7 +123,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/sprache</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/sprache</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Sprache</SimpleValue>
@@ -131,7 +131,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/unterricht_kranker_schuelerinnen_und_schueler</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/unterricht_kranker_schuelerinnen_und_schueler</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Unterricht kranker Schülerinnen und Schüler</SimpleValue>

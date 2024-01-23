@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Kursstatus</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen des Status eines Kurses. Sie wurde mit den Stakeholdern von XBildung und seinen Fachmodulen gemäß den Bedarfen für die jeweiligen Anwendungsfälle erstellt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen für den Status eines Kurses. Die Liste wurde mit den Stakeholdern von XBildung und seinen Fachmodulen gemäß den Bedarfen der jeweiligen Anwendungsfälle erstellt. Der angegebene Wert gibt den Kursstatus aus der Sicht der lernenden Person an.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XBildung.de</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Kursstatus-Codes</ShortName>
       <LongName>Kursstatus</LongName>
-      <Version>0.95</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xbildung-de:xbildung:codeliste:kursstatus</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:kursstatus_0.95</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:kursstatus_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XBildung</LongName>
       </Agency>
@@ -48,7 +48,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/kursstatus/befreit</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/kursstatus/befreit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>befreit</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/kursstatus/bestanden</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>bestanden</SimpleValue>
@@ -70,7 +70,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/kursstatus/erfolgreich_teilgenommen</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/kursstatus/erfolgreich_teilgenommen</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>erfolgreich teilgenommen</SimpleValue>
@@ -81,7 +81,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/kursstatus/nicht_bestanden</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>nicht bestanden</SimpleValue>
@@ -92,7 +92,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/0.95/code/kursstatus/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/kursstatus/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>

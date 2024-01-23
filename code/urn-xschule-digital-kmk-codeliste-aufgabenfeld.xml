@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Aufgabenfeld</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste enthält die einheitlichen Aufgabenfelder der allgemeinen Hochschulreife, die von der KMK festgelegt wurden. Quelle: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/​1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Die Codeliste basiert auf den einheitlichen Aufgabenfeldern der Allgemeinen Hochschulreife, die von der KMK festgelegt wurden, ergänzt um "Wert nicht in Liste". Quelle 1972: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf Quelle 1974: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/?1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Aufgabenfeld-Codes</ShortName>
       <LongName>Aufgabenfeld</LongName>
-      <Version>1974</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xschule-digital:kmk:codeliste:aufgabenfeld</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:aufgabenfeld_1974</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:aufgabenfeld_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>Kultusministerkonferenz</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ges</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>gesellschaftswissenschaftliches Aufgabenfeld</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/mnt</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>mathematisch-naturwissenschaftlich-technisches Aufgabenfeld</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/ohne_zuordnung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>ohne Zuordnung</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/slk</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>sprachlich-literarisch-künstlerisches Aufgabenfeld</SimpleValue>
@@ -75,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/kmk/1974/code/aufgabenfeld/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>

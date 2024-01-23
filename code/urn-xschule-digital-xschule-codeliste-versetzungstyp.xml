@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Versetzungstyp-Codes</ShortName>
       <LongName>Versetzungs- oder Ausnahmetatbestandstyp</LongName>
-      <Version>0.7</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xschule-digital:xschule:codeliste:versetzungstyp</CanonicalUri>
-      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:versetzungstyp_0.7</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xschule-digital:xschule:codeliste:versetzungstyp_1.0</CanonicalVersionUri>
       <Agency>
          <LongName>XSchule</LongName>
       </Agency>
@@ -43,7 +43,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/aufruecken</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/aufruecken</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Aufrücken</SimpleValue>
@@ -51,7 +51,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/freiwillige_wiederholung_rueckversetzung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>freiwillige Wiederholung (Rückversetzung)</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/keine_versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/keine_versetzung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>keine Versetzung</SimpleValue>
@@ -67,7 +67,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/keine_versetzung_und_keine_nachpruefung_mehr</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Keine Versetzung und keine Nachprüfung mehr</SimpleValue>
@@ -75,7 +75,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/schulformwechsel_ohne_versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/schulformwechsel_ohne_versetzung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Schulformwechsel ohne Versetzung</SimpleValue>
@@ -83,7 +83,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung</SimpleValue>
@@ -91,7 +91,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_auf_probe</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_auf_probe</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung auf Probe</SimpleValue>
@@ -99,7 +99,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_durch_konferenzbeschluss</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_durch_konferenzbeschluss</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung durch Konferenzbeschluss</SimpleValue>
@@ -107,7 +107,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/versetzung_mit_nachpruefung</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_mit_nachpruefung</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Versetzung mit Nachprüfung</SimpleValue>
@@ -115,7 +115,31 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_mit_notenschutz</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Versetzung mit Notenschutz</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_mit_schulformwechsel</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Versetzung mit Schulformwechsel</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung_mit_ueberspringen_einer_klasse</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Versetzung mit Überspringen einer Klasse</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
@@ -123,7 +147,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
@@ -131,7 +155,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xschule.digital/def/xschule/0.7/code/versetzungstyp/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
+            <SimpleValue>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/~wert_nicht_uebermittelbar_rechtliche_gruende</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</SimpleValue>
