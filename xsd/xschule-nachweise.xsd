@@ -625,85 +625,89 @@
          <xs:documentation>Eine Bescheinigung, die bestätigt, dass der angegebene junge Mensch zum genannten Zeitraum die entsprechende Schule besucht hat.</xs:documentation>
       </xs:annotation>
       <xs:complexType>
-         <xs:sequence>
-            <xs:element name="schueler" type="xsc:Schueler">
-               <xs:annotation>
-                  <xs:documentation>Hier werden Angaben zum jungen Menschen gemacht, den die Bescheinigung betrifft.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="schulbesuch">
-               <xs:annotation>
-                  <xs:documentation>Hier werden Angaben zum Schulbesuch des jungen Menschen gemacht. Unter anderem können hier z. B. das Schuljahr oder der voraussichtliche Abschluss angegeben werden.</xs:documentation>
-               </xs:annotation>
-               <xs:complexType>
-                  <xs:sequence>
-                     <xs:element name="jahrgangsstufe" minOccurs="0" type="xsc:Code.Jahrgangsstufe">
-                        <xs:annotation>
-                           <xs:documentation>Hier können Angaben zur Jahrgangsstufe gemacht werden, welche der junge Mensch zum Zeitpunkt der ausgestellten Schulbescheinigung gerade besucht.</xs:documentation>
-                        </xs:annotation>
-                     </xs:element>
-                     <xs:element name="schuljahr" minOccurs="0">
-                        <xs:annotation>
-                           <xs:documentation>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde. Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres.</xs:documentation>
-                        </xs:annotation>
-                        <xs:complexType>
-                           <xs:sequence>
-                              <xs:element name="beginn" type="xbd:TeilbekanntesDatum">
-                                 <xs:annotation>
-                                    <xs:documentation>Der Beginn beschreibt das Jahr, in dem das Schuljahr beginnt. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</xs:documentation>
-                                 </xs:annotation>
-                              </xs:element>
-                              <xs:element name="ende" type="xbd:TeilbekanntesDatum">
-                                 <xs:annotation>
-                                    <xs:documentation>Das Ende beschreibt das Jahr, in dem das Schuljahr endet. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</xs:documentation>
-                                 </xs:annotation>
-                              </xs:element>
-                           </xs:sequence>
-                        </xs:complexType>
-                     </xs:element>
-                     <xs:element name="zeitraum" minOccurs="0" type="xsc:Zeitraum">
-                        <xs:annotation>
-                           <xs:documentation>Erlaubt den Zeitraum, auf den sich die Schulbescheinigung bezieht, mit Start- und/oder Enddatum anzugeben.</xs:documentation>
-                        </xs:annotation>
-                     </xs:element>
-                     <xs:element name="voraussichtlicherAbschluss" minOccurs="0">
-                        <xs:annotation>
-                           <xs:documentation>Hier wir der voraussichtliche erreichte Schulabschlusses angegeben.</xs:documentation>
-                        </xs:annotation>
-                        <xs:complexType>
-                           <xs:sequence>
-                              <xs:element name="code" type="xbd:Code.ArtDesSchulabschlusses">
-                                 <xs:annotation>
-                                    <xs:documentation>Wert aus der Codeliste.</xs:documentation>
-                                 </xs:annotation>
-                              </xs:element>
-                              <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
-                                 <xs:annotation>
-                                    <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
-                                 </xs:annotation>
-                              </xs:element>
-                           </xs:sequence>
-                        </xs:complexType>
-                     </xs:element>
-                  </xs:sequence>
-               </xs:complexType>
-            </xs:element>
-            <xs:element name="schule" type="xsc:Schule">
-               <xs:annotation>
-                  <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Bildungseinrichtung, die die Schulbescheinigung ausgestellt hat.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element name="erweiterung" minOccurs="0" type="xsc:Erweiterung">
-               <xs:annotation>
-                  <xs:documentation>Ermöglicht den Nachweis mit Hilfe von Schlüssel/Wert-Elementen zu erweitern.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-            <xs:element ref="ds:Signature" minOccurs="0">
-               <xs:annotation>
-                  <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
-               </xs:annotation>
-            </xs:element>
-         </xs:sequence>
+         <xs:complexContent>
+            <xs:extension base="xbd:Dokument">
+               <xs:sequence>
+                  <xs:element name="schueler" type="xsc:Schueler">
+                     <xs:annotation>
+                        <xs:documentation>Hier werden Angaben zum jungen Menschen gemacht, den die Bescheinigung betrifft.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="schulbesuch">
+                     <xs:annotation>
+                        <xs:documentation>Hier werden Angaben zum Schulbesuch des jungen Menschen gemacht. Unter anderem können hier z. B. das Schuljahr oder der voraussichtliche Abschluss angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="jahrgangsstufe" minOccurs="0" type="xsc:Code.Jahrgangsstufe">
+                              <xs:annotation>
+                                 <xs:documentation>Hier können Angaben zur Jahrgangsstufe gemacht werden, welche der junge Mensch zum Zeitpunkt der ausgestellten Schulbescheinigung gerade besucht.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="schuljahr" minOccurs="0">
+                              <xs:annotation>
+                                 <xs:documentation>Angabe des Zeitraumes, über den eine bestimmte Jahrgangsstufe besucht wurde. Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres.</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="beginn" type="xbd:TeilbekanntesDatum">
+                                       <xs:annotation>
+                                          <xs:documentation>Der Beginn beschreibt das Jahr, in dem das Schuljahr beginnt. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="ende" type="xbd:TeilbekanntesDatum">
+                                       <xs:annotation>
+                                          <xs:documentation>Das Ende beschreibt das Jahr, in dem das Schuljahr endet. Es kann entweder ein vollständig bekanntes oder ein teilweise bekanntes Datum übermittelt werden.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
+                           <xs:element name="zeitraum" minOccurs="0" type="xsc:Zeitraum">
+                              <xs:annotation>
+                                 <xs:documentation>Erlaubt den Zeitraum, auf den sich die Schulbescheinigung bezieht, mit Start- und/oder Enddatum anzugeben.</xs:documentation>
+                              </xs:annotation>
+                           </xs:element>
+                           <xs:element name="voraussichtlicherAbschluss" minOccurs="0">
+                              <xs:annotation>
+                                 <xs:documentation>Hier wir der voraussichtliche erreichte Schulabschlusses angegeben.</xs:documentation>
+                              </xs:annotation>
+                              <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="code" type="xbd:Code.ArtDesSchulabschlusses">
+                                       <xs:annotation>
+                                          <xs:documentation>Wert aus der Codeliste.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="nichtGelisteterWert" minOccurs="0" type="xs:string">
+                                       <xs:annotation>
+                                          <xs:documentation>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</xs:documentation>
+                                       </xs:annotation>
+                                    </xs:element>
+                                 </xs:sequence>
+                              </xs:complexType>
+                           </xs:element>
+                        </xs:sequence>
+                     </xs:complexType>
+                  </xs:element>
+                  <xs:element name="schule" type="xsc:Schule">
+                     <xs:annotation>
+                        <xs:documentation>Die Klasse Schule enthält allgemeine Angaben zur Bildungseinrichtung, die die Schulbescheinigung ausgestellt hat.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="erweiterung" minOccurs="0" type="xsc:Erweiterung">
+                     <xs:annotation>
+                        <xs:documentation>Ermöglicht den Nachweis mit Hilfe von Schlüssel/Wert-Elementen zu erweitern.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element ref="ds:Signature" minOccurs="0">
+                     <xs:annotation>
+                        <xs:documentation>Hier kann eine digitale Signatur angegeben werden.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:sequence>
+            </xs:extension>
+         </xs:complexContent>
       </xs:complexType>
    </xs:element>
 </xs:schema>

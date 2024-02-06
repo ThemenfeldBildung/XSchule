@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.zeugnis.0003 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/0.7/xsd http://xschule.digital/def/xschule/0.7/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/0.95/xsd"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/0.7/xsd">
+    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
 
     <!--
-        Datum: 07.11.2023
+        Datum: 02.02.2024
         Beispieldatei: https://xbildung.de/def/rep/hb/example/abschlusszeugnis_berufsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt 
     -->
 
-    <xbd:titel>Abschlusszeugnis Rechtsanwaltsfachangestellter</xbd:titel>
+    <titel>Abschlusszeugnis Rechtsanwaltsfachangestellter</titel>
 
-    <xbd:ausstellung>
-        <xbd:datum>2022-07-11</xbd:datum>
-        <xbd:ort>Bremen</xbd:ort>
-    </xbd:ausstellung>
+    <ausstellung>
+        <datum>2022-07-11</datum>
+        <ort><ort>Bremen</ort></ort>
+    </ausstellung>
 
-    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20230614-0">
+    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20231213-0">
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-    </xbd:sprache>
+    </sprache>
 
     <xsc:allgemeineAngaben>
         <xsc:artDesZeugnisses>
-            <code>http://xschule.digital/def/xschule/0.7/code/zeugnisart/abschlusszeugnis</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/zeugnisart/abschlusszeugnis</code>
         </xsc:artDesZeugnisses>
         <!-- xsc:jahrgangsstufe: Keine Angabe... Codeliste passt nicht genau --> <!-- xsc:jahrgangsstufe: ggf. erweiterung der Codeliste durch 1.- 4. Ausbildungsjahr oder neue Codeliste?  -->
 
         <!-- xsc:nachweisperiode: Ganzer Ausbildungszeitraum, wird derzeit nicht unterstützt -->
         <xsc:nachweisperiode>
             <xsc:code>
-                <code>http://xschule.digital/def/xschule/0.7/code/nachweisperiode/~wert_nicht_in_liste</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/nachweisperiode/~wert_nicht_in_liste</code>
             </xsc:code>
             <xsc:nichtGelisteterWert>Ausbildungszeitraum zum Rechtsanwaltsfachangestellten</xsc:nichtGelisteterWert>
         </xsc:nachweisperiode>
 
         <!-- xsc:nachweiszeitraum: Hergeleitet aus 3-jähriger Ausbildung und  --> <!-- xsc:nachweiszeitraum: schwierig, denn die Ausbildungszeit kann sich sehr unterscheiden aber sollte erstmal passen-->
         <xsc:nachweiszeitraum>
-            <xbd:beginn>2019-08-01</xbd:beginn>
-            <xbd:ende>2022-07-31</xbd:ende>
+            <xsc:beginn>2019-08-01</xsc:beginn>
+            <xsc:ende>2022-07-31</xsc:ende>
         </xsc:nachweiszeitraum>
 
         <xsc:bundesland listVersionID="2010-04-01">
@@ -62,53 +62,52 @@
              Aber: "Dieses Zeugnis schließt den Mittleren Schulabschluss ein"
         -->
         <xsc:artDesSchulabschlusses>
-            <code>http://xbildung.de/def/xbildung/0.95/code/artdesschulabschlusses/realschulabschluss</code>
+            <xsc:code>
+                <code>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/realschulabschluss</code>
+            </xsc:code>
         </xsc:artDesSchulabschlusses>
 
         <xsc:erwerb>
             <xsc:datum>2022-07-11</xsc:datum>
-            <xsc:ort>Bremen</xsc:ort>
+            <xsc:ort><ort>Bremen</ort></xsc:ort>
         </xsc:erwerb>
     </xsc:allgemeineAngaben>
 
     <xsc:schueler>
-        <xbd:nameNatuerlichePerson>
-            <xbd:anrede>Herr</xbd:anrede>
-            <xbd:familienname>
-                <xbd:name>Mustermann</xbd:name>
-            </xbd:familienname>
-            <xbd:vorname>
-                <xbd:name>Schüler</xbd:name>
-            </xbd:vorname>
-        </xbd:nameNatuerlichePerson>
-        <xbd:geburt>
-            <xbd:datum>
-                <xbd:jahrMonatTag>1999-01-01</xbd:jahrMonatTag>
-            </xbd:datum>
-            <xbd:geburtsort>
-                <xbd:ort>Deir Ezzor</xbd:ort>
+        <xsc:nameNatuerlichePerson>
+            <xsc:familienname><xsc:name>Mustermann</xsc:name></xsc:familienname>
+            <xsc:vorname><xsc:name>Schüler</xsc:name></xsc:vorname>
+        </xsc:nameNatuerlichePerson>
+        
+        <xsc:geburt>
+            <xsc:datum><jahrMonatTag>1999-01-01</jahrMonatTag></xsc:datum>
+            
+            <xsc:geburtsort>
+                <ort>Deir Ezzor</ort>
                 <!-- xbd:staat: nicht auf Zeugnis genannt, hier aber ggf. relevant. Aber auch datenschutztechnisch kritisch. -->
-                <xbd:staat listVersionID="2023-02-24">
+                <staat listVersionID="2023-07-27">
                     <code>475</code>
                     <name>Arabische Republik Syrien</name>
-                </xbd:staat>
-            </xbd:geburtsort>
-        </xbd:geburt>
+                </staat>
+            </xsc:geburtsort>
+        </xsc:geburt>
         <!-- xbd:anschrift: nicht angegeben, nicht einmal Wohnort -->
         <xsc:bildungsgang>Rechtsanwaltsfachangestellter</xsc:bildungsgang>
         <!-- keine sonstigen Angaben für xsc:schueler relevant -->
     </xsc:schueler>
 
     <xsc:schule>
-        <xbd:name>
-            <xbd:name>Schulzentrum Grenzstraße</xbd:name>
-        </xbd:name>
+        <xsc:name>
+            <xsc:name>Schulzentrum Grenzstraße</xsc:name>
+        </xsc:name>
         <!-- xsc:schule: keine Angaben wie Identifikation oder Anschrift auf dem Zeugnis, aber möglich -->
         <!-- xsc:schulform: 220 = Berufsfachschule - unklar, ob das die richtige Auswahl ist --><!-- xsc:schulform: Berufsschule wäre hier korrekt 
             (konkret sogar kaufmännische Berufsschule; ggf. um Schulformen der berufsbildenden Schulen ergänzen oder einfach nur berufsbildende Schule als Art -->
-        <!-- xsc:schulform: Auswahl aus http://xbildung.de/def/xbildung/0.95/spec/xbd_spezifikation_0.95.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule -->
+        <!-- xsc:schulform: Auswahl aus http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule -->
         <xsc:schulform>
-            <code>http://xbildung.de/def/kmk/kds/4.0/code/artderschule/220</code>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
+            </xsc:code>
         </xsc:schulform>
         <!-- xsc:artDerTraegerschaft: nicht angegeben -->
     </xsc:schule>
@@ -116,22 +115,22 @@
     <xsc:leistungen>
         <xsc:bezeichnung>Berufsübergreifender Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
-            <xbd:bezeichnung>Deutsch</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Deutsch</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
@@ -139,115 +138,115 @@
                      Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
                 -->
                 
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
         <xsc:kurs>
-            <xbd:bezeichnung>Wirtschaftsenglisch</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Wirtschaftsenglisch</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
                      Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
                 -->
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
         <xsc:kurs>
-            <xbd:bezeichnung>Politik</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Politik</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
                      Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
                 -->
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
         <xsc:kurs>
-            <xbd:bezeichnung>Grundlagen des Rechnungswesens</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Grundlagen des Rechnungswesens</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/pflichtunterricht</code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
                      Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
                 -->
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
 
         <xsc:kurs>
-            <xbd:bezeichnung>Moderner Schriftverkehr</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Moderner Schriftverkehr</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/0.7/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
                      Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
                 -->
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
     </xsc:leistungen>
@@ -256,261 +255,261 @@
         <xsc:bezeichnung>Berufsbezogener Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 1 - Berufsbezogener Lernbereich präsentieren</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 1 - Berufsbezogener Lernbereich präsentieren</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>4</xbd:note>
-                <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>4</note>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 2 - Beruf und Ausbildungsbetrieborganisieren</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 2 - Beruf und Ausbildungsbetrieborganisieren</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 3 - Arbeitsabläufe im Team und Abwicklung von Verträgen anwenden</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 3 - Arbeitsabläufe im Team und Abwicklung von Verträgen anwenden</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>4</xbd:note>
-                <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>4</note>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 4 - Schuldrechtliche Regelungen bei der Vorbereitung geltend machen</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 4 - Schuldrechtliche Regelungen bei der Vorbereitung geltend machen</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 5 - Ansprüche außergerichtlich wahrnehmen</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 5 - Ansprüche außergerichtlich wahrnehmen</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 6 - Aufgaben im Personalbereich kontrollieren und bewerten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 6 - Aufgaben im Personalbereich kontrollieren und bewerten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>4</xbd:note>
-                <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>4</note>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 7 - Geschäftsprozesse erfassen,betriebliche Entscheidungen beurteilen</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 7 - Geschäftsprozesse erfassen,betriebliche Entscheidungen beurteilen</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 8 - Wirtschaftliche Einflüsse auf der Auftragsbearbeitung anwenden</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 8 - Wirtschaftliche Einflüsse auf der Auftragsbearbeitung anwenden</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 9 - Sachenrechtliche Regelungen bei selbstständig bearbeiten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 9 - Sachenrechtliche Regelungen bei selbstständig bearbeiten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 10 - Aufgaben im gerichtlichen Mahnwesen erstinstanzlichen Verfahren bearbeiten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 10 - Aufgaben im gerichtlichen Mahnwesen erstinstanzlichen Verfahren bearbeiten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_2</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 11 - Das zivilrechtliche Mandat im Rechtsmittelverfahren begleiten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 11 - Das zivilrechtliche Mandat im Rechtsmittelverfahren begleiten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>4</xbd:note>
-                <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>4</note>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 12 - Rechtsbehelfs- und Vorgänge in der Zwangsvollstreckung bearbeiten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 12 - Rechtsbehelfs- und Vorgänge in der Zwangsvollstreckung bearbeiten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>4</xbd:note>
-                <xbd:wortbezeichnung>ausreichend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>4</note>
+                <wortbezeichnung>ausreichend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 13 - Angelegenheiten tätig werden</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 13 - Angelegenheiten tätig werden</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>3</xbd:note>
-                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-            <xbd:bezeichnung>Lernfeld 14 - In familien- und erbrechtlichen Besondere Verfahren bearbeiten</xbd:bezeichnung>
-            <xbd:note>
+            <xsc:bezeichnung>Lernfeld 14 - In familien- und erbrechtlichen Besondere Verfahren bearbeiten</xsc:bezeichnung>
+            <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <xbd:note>2</xbd:note>
-                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
-                <xbd:bewertungsschemaNote>
-                    <xbd:schemaURI>http://xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
-                </xbd:bewertungsschemaNote>
-            </xbd:note>
+                <note>2</note>
+                <wortbezeichnung>gut</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
             <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/0.7/code/halbjahr/ganzes_jahr</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/0.7/code/jahrgangsstufe/jahrgangsstufe_3</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
         </xsc:kurs>
     </xsc:leistungen>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/20</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
         </xsc:art>
         <xsc:beschreibung>Ziel des Bildungsganges nach der Verordnung über die Ausbildung in den Bildungsgängen
             der Berufsschule (Berufsschulverordnung) vom 10. April 2019 (Brem.GBl. S. 197) erreicht.</xsc:beschreibung>
@@ -518,14 +517,14 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/30</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft</code>
         </xsc:art>
         <xsc:beschreibung>Dieses Zeugnis schließt den Mittleren Schulabschluss ein.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/30</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft</code>
         </xsc:art>
         <xsc:beschreibung>Nach der Vereinbarung über den Abschluss der
             Berufsschule (Beschluss der Kultusministerkonferenz vom 01.06.1979 i.d.F. vom 04.12.1997) wird das
@@ -534,7 +533,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/0.7/code/artderbemerkung/20</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
         </xsc:art>
         <xsc:beschreibung>Unentschuldigt versäumte Unterrichtsstunden: 0</xsc:beschreibung>
     </xsc:bemerkung>

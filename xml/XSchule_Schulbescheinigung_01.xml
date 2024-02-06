@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.schulbescheinigung.0004 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
+
+    <!--
+        Datum: 02.02.2024
+        Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Schülerin Muster
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+        Link zur Beispieldatei: https://xbildung.de/web/musternachweis/30080
+    -->
+
+    <titel>Schulbescheinigung</titel>
+    <ausstellung>
+        <datum>2023-03-01</datum>
+        <ort>
+            <ort>Bremen</ort>
+        </ort>
+    </ausstellung>
+
+    <gueltigkeitsdatum>2023-03-01</gueltigkeitsdatum>
+    <sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </sprache>
+
+    <xsc:schueler>
+        <xsc:nameNatuerlichePerson>
+            <xsc:familienname>
+                <xsc:name>Muster</xsc:name>
+            </xsc:familienname>
+            <xsc:vorname>
+                <xsc:name>Schülerin</xsc:name>
+            </xsc:vorname>
+        </xsc:nameNatuerlichePerson>
+        <xsc:geburt>
+            <xsc:datum>
+                <jahrMonatTag>2004-09-01</jahrMonatTag>
+            </xsc:datum>
+            <xsc:geburtsort>
+                <ort>Bremen</ort>
+                <staat listVersionID="2023-04-24">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </staat>
+            </xsc:geburtsort>
+        </xsc:geburt>
+        <xsc:anschrift>
+            <xsc:strasse>Baumschulenweg</xsc:strasse>
+            <xsc:hausnummer>3</xsc:hausnummer>
+            <xsc:postleitzahl>28213</xsc:postleitzahl>
+            <xsc:ort>Bremen</xsc:ort>
+            <xsc:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xsc:staat>
+            <xsc:verwaltungspolitischeKodierung>
+                <xsc:kreis listVersionID="2021-07-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
+                    <code>04011</code>
+                    <!-- Bremen, Stadt -->
+                </xsc:kreis>
+            </xsc:verwaltungspolitischeKodierung>
+        </xsc:anschrift>
+    </xsc:schueler>
+
+    <xsc:schulbesuch>
+        <xsc:jahrgangsstufe>
+            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+        </xsc:jahrgangsstufe>
+        <xsc:zeitraum>
+            <xsc:ende>2023-06-30</xsc:ende>
+            <!-- "Voraussichtlich wird die Schule besucht bis zum ..." -->
+        </xsc:zeitraum>
+    </xsc:schulbesuch>
+
+    <xsc:schule>
+        <xsc:name>
+            <xsc:name>Kippenberg-Gymnasium</xsc:name>
+        </xsc:name>
+        <xsc:kommunikation>
+            <xsc:kanal>
+                <code>02</code>
+            </xsc:kanal>
+            <xsc:kennung>+49 421 555-3640</xsc:kennung>
+        </xsc:kommunikation>
+        <xsc:kommunikation>
+            <xsc:kanal>
+                <code>04</code>
+            </xsc:kanal>
+            <xsc:kennung>+49 421 555-59093</xsc:kennung>
+        </xsc:kommunikation>
+        <xsc:anschrift>
+            <xsc:strasse>Schwachhauser Heerstraße</xsc:strasse>
+            <xsc:hausnummer>62</xsc:hausnummer>
+            <xsc:postleitzahl>28209</xsc:postleitzahl>
+            <xsc:ort>Bremen</xsc:ort>
+            <xsc:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xsc:staat>
+            <xsc:verwaltungspolitischeKodierung>
+                <xsc:kreis listVersionID="2021-07-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
+                    <code>04011</code>
+                    <!-- Bremen, Stadt -->
+                </xsc:kreis>
+            </xsc:verwaltungspolitischeKodierung>
+        </xsc:anschrift>
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/kommune</code>
+        </xsc:artDerTraegerschaft>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/gymnasium</code>
+            </xsc:code>
+        </xsc:schulform>
+    </xsc:schule>
+
+</xsc:schueler.schulbescheinigung.0004>
