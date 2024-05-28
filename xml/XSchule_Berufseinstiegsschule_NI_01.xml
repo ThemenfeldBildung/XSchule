@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
 
     <!--
-        Datum: 02.02.2024
+        Datum: 28.05.2024
         Beispieldatei: https://xbildung.de/def/rep/ni/example/zeugnis_berufseinstiegsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
@@ -106,12 +106,12 @@
         <xsc:kurs>
             <xsc:bezeichnung>Technik</xsc:bezeichnung>
             <xsc:schwerpunkt>Holztechnik</xsc:schwerpunkt>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
         </xsc:kurs>
     </xsc:leistungen><!-- Ist dieser Block an dieser Stelle so tatsächlich notwendig? Falls ja, dann Fachrichtung muss angegeben werden, Schwerpunkt ist optional-->
     
@@ -119,27 +119,27 @@
         <xsc:bezeichnung>berufsübergreifender Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>Kommunikation in der Lebens- und Arbeitswelt</xsc:bezeichnung>
-            <xsc:note>
-                <wortbezeichnung>sehr gut</wortbezeichnung>
-            </xsc:note>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code> 
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr> <!-- muss es nicht: http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr oder aber 2_halbjahr sein (wird nicht ersichtlich) -->
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code> 
-            </xsc:jahrgangsstufe>
+            <xsc:note>
+                <wortbezeichnung>sehr gut</wortbezeichnung>
+            </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>Förderung Grundlagenwissen</xsc:bezeichnung>
-            <xsc:note>
-                <wortbezeichnung>gut</wortbezeichnung>
-            </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code> 
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <wortbezeichnung>gut</wortbezeichnung>
+            </xsc:note>
         </xsc:kurs>
     </xsc:leistungen>
 
@@ -147,6 +147,12 @@
         <xsc:bezeichnung>berufsbezogener Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>QB 1</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>3</note>
                 <wortbezeichnung>befriedigend</wortbezeichnung>
@@ -154,31 +160,31 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 2</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>1</note>
                 <wortbezeichnung>sehr gut</wortbezeichnung>
                 <bewertungsschemaNote>
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
-            </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
+            </xsc:note>   
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 3</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>2</note>
                 <wortbezeichnung>gut</wortbezeichnung>
@@ -186,15 +192,15 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 4</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>1</note>
                 <wortbezeichnung>sehr gut</wortbezeichnung>
@@ -202,15 +208,15 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 5</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>5</note>
                 <wortbezeichnung>mangelhaft</wortbezeichnung>
@@ -218,15 +224,15 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 6</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <note>1</note>
                 <wortbezeichnung>sehr gut</wortbezeichnung>
@@ -234,12 +240,6 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
     </xsc:leistungen>
 
@@ -247,15 +247,15 @@
         <xsc:bezeichnung>berufsbezogener Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>Optionale Lernangebote</xsc:bezeichnung>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/erfolgreich_teilgenommen</code>
-            </xsc:status>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/erfolgreich_teilgenommen</code>
+            </xsc:status>
         </xsc:kurs>
     </xsc:leistungen>
 

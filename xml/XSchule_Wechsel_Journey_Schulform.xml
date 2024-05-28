@@ -53,7 +53,7 @@
                     <!--https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
-                </staat>                
+                </staat>
             </xsc:geburtsort>
         </xsc:geburt>
         <xsc:staatsangehoerigkeit listVersionID="2012-09-01">
@@ -87,8 +87,10 @@
                 listVersionID="1.0">
                 <code>http://xschule.digital/def/kmk/1.0/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</code>
             </xsc:schwerpunkt>
-            <xsc:anlage><xsc:dateiname>Sonderpädagogisches Gutachten vom 
-                07.02.2013</xsc:dateiname></xsc:anlage>
+            <xsc:anlage>
+                <xsc:dateiname>Sonderpädagogisches Gutachten vom 
+                07.02.2013</xsc:dateiname>
+            </xsc:anlage>
         </xsc:sonderpaedagogischerFoerderbedarf>
         <xsc:impfung>
             <xsc:impfschutz>
@@ -106,9 +108,10 @@
         <xsc:verkehrssprache>
             <code>http://publications.europa.eu/resource/authority/language/FRA</code>
         </xsc:verkehrssprache>
-        <xsc:schulform><xsc:code>
-            <code>http://xbildung.de/def/kmk/1.0/code/artderschule/realschule</code>
-        </xsc:code>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/realschule</code>
+            </xsc:code>
             <!-- Realschule -->
         </xsc:schulform>
     </xsc:schueler>
@@ -250,24 +253,24 @@
         <xsc:name>
             <xsc:name>Musteroberschule</xsc:name>
             <xsc:kurzbezeichnung>MOS</xsc:kurzbezeichnung>
-            </xsc:name>
+        </xsc:name>
         <xsc:kommunikation>
             <xsc:kanal>
-                    <code>01</code>
-                    <!-- E-Mail -->
-                </xsc:kanal>
+                <code>01</code>
+                <!-- E-Mail -->
+            </xsc:kanal>
             <xsc:kennung>musteroberschule-bbstadt@beispiel.de</xsc:kennung>
-            </xsc:kommunikation>
+        </xsc:kommunikation>
         <xsc:identifikation>
             <xsc:id>BB_10040</xsc:id>
             <xsc:beschreibung>Identifikatiosnummer</xsc:beschreibung>
         </xsc:identifikation>
         <xsc:schulform>
             <xsc:code>
-                    <code>http://xbildung.de/def/kmk/1.0/code/artderschule/realschule</code>
-                </xsc:code>
-                <!-- Realschule -->
-            </xsc:schulform>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/realschule</code>
+            </xsc:code>
+            <!-- Realschule -->
+        </xsc:schulform>
         <xsc:schulformspezifischeZusatzdaten>
             <xsc:teilnahmeGemeinsamerUnterricht>
                 <xsc:code>
@@ -275,7 +278,7 @@
                 </xsc:code>
             </xsc:teilnahmeGemeinsamerUnterricht>
         </xsc:schulformspezifischeZusatzdaten>
-        
+
         <xsc:zeitraum>
             <xsc:beginn>2016-09-01</xsc:beginn>
             <xsc:ende>2017-08-31</xsc:ende>
@@ -307,14 +310,14 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_7</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
         </xsc:wahpflichtkurs>
-        
+
         <xsc:wahpflichtkurs>
             <xsc:bezeichnung>Latein</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>
@@ -322,12 +325,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_7</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
         </xsc:wahpflichtkurs>
         <xsc:fehltage>
             <xsc:anzahlGesamt>20</xsc:anzahlGesamt>
@@ -335,9 +338,9 @@
         </xsc:fehltage>
     </xsc:besuchteSchule>
 
-    
 
-    
+
+
 
     <xsc:fremdsprache>
         <xsc:sprache>
@@ -375,5 +378,5 @@
         </xsc:beginnDerSchulpflicht>
     </xsc:schullaufbahn>
 
-    
+
 </xsc:schueler.wechsel.0001>

@@ -5,10 +5,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Codes.Code.Krankheit"
+         xml:id="XSchule.Baukasten.Codes.Code.Kursstatus"
          status="&specstatus;"
          revision="&xrecent;">
-   <title>Code.Krankheit</title>
+   <title>Code.Kursstatus</title>
    <informaltable>
       <tgroup cols="2">
          <colspec colnum="1" colname="des" colwidth="22mm"/>
@@ -22,18 +22,18 @@
          <tbody>
             <row>
                <entry>-beschreibung</entry>
-               <entry><para>Liste von Krankheiten, zu denen Informationen erhoben werden können. </para>
-<para>Diese Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para></entry>
+               <entry><para>Diese Codeliste enthält mögliche Ausprägungen für den Status eines Kurses aus der Sicht der lernenden Person, ergänzt um "Wert nicht bekannt".</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para></entry>
             </row>
             <row>
                <entry>-nutzung</entry>
-               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.krankheit.Krankheit-Codes"
+               <entry>Typ: 1, Inhalte der Codeliste siehe <xref linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursstatus.Kursstatus-Codes"
                         role="Seite"/>
                </entry>
             </row>
             <row>
                <entry>-kennung</entry>
-               <entry>urn:xschule-digital:xschule:codeliste:krankheit</entry>
+               <entry>urn:xschule-digital:xschule:codeliste:kursstatus</entry>
             </row>
             <row>
                <entry>-version</entry>
@@ -43,5 +43,5 @@
       </tgroup>
    </informaltable>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../verwendung/complexTypes/code.krankheit_list.xml"/>
+            href="../verwendung/complexTypes/code.kursstatus_list.xml"/>
 </section>

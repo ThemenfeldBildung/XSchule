@@ -100,7 +100,7 @@
         </xsc:verkehrssprache>
         <xsc:schulform>
             <xsc:code>
-                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/grundschule_1_4</code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/schulartunabhaengige_orientierungsstufe</code>
             </xsc:code>
             <!-- In den Bundesländern Berlin und Brandenburg umfasst die Grundschule die Klassen 1 bis 6. In der bundeseinheitlichen Statistik werden die 5. und 6. Klassenstufen an diesen Schulen der Schulartunabhängigen Orientierungsstufe zugeordnet.
 (Quelle: Statistisches Bundesamt, Fachserie 11, Reihe 1, 2009/10) -->
@@ -258,7 +258,7 @@
             <xsc:id>BW_10000</xsc:id>
             <xsc:beschreibung>Identifikationsnummer</xsc:beschreibung>
         </xsc:identifikation>
-        
+
         <xsc:schulform>
             <xsc:code>
                 <code>http://xbildung.de/def/kmk/1.0/code/artderschule/grundschule_1_4</code>
@@ -273,8 +273,8 @@
                 </xsc:code>
             </xsc:teilnahmeGemeinsamerUnterricht>
         </xsc:schulformspezifischeZusatzdaten>
-        
-        
+
+
         <xsc:schulprofil>MINT-Schule</xsc:schulprofil>
 
         <xsc:zeitraum>
@@ -308,12 +308,12 @@
 
     <xsc:notenuebersichtUndZeugnis>
         <xsc:notenuebersichtUnterjaehrigerWechsel>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
         </xsc:notenuebersichtUnterjaehrigerWechsel>
     </xsc:notenuebersichtUndZeugnis>
 
@@ -331,5 +331,5 @@
             <jahrMonatTag>2010-09-01</jahrMonatTag>
         </xsc:beginnDerSchulpflicht>
     </xsc:schullaufbahn>
-    
+
 </xsc:schueler.wechsel.0001>

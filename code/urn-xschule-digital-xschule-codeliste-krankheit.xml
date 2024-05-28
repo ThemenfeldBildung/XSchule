@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Krankheit</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Liste von Krankheiten, zu denen Informationen erhoben werden können. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Liste von Krankheiten, zu denen Informationen erhoben werden können. Diese Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -25,8 +25,8 @@
          <ShortName>code</ShortName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
          <LongName>Krankheit</LongName>
          <Data Type="string"/>
       </Column>
@@ -45,7 +45,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/krankheit/masern</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Masern</SimpleValue>
          </Value>
       </Row>

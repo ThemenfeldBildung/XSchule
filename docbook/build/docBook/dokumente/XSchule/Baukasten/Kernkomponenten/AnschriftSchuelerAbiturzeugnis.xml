@@ -8,9 +8,7 @@
          xml:id="XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis">
    <title>AnschriftSchuelerAbiturzeugnis</title>
    <subtitle>Typ: <emphasis role="codebf">AnschriftSchuelerAbiturzeugnis</emphasis>
-   </subtitle><para>Die Klasse enthält die Angaben zu der Anschrift der nachweisinhabenden Person.</para>
-
-<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis">
+   </subtitle><para>Diese Klasse enthält die Angaben zur Anschrift, die zur nachweisinhabenden Person im Abiturzeugnis relevant sind.</para><figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis">
       <title>AnschriftSchuelerAbiturzeugnis</title>
       <mediaobject>
          <imageobject>
@@ -53,7 +51,7 @@
                   <emphasis role="bold">postleitzahl</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -77,7 +75,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>

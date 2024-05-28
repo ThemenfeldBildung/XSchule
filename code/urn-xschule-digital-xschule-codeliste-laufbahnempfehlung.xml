@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Laufbahnempfehlung</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Mit dieser Codeliste werden die Laufbahnempfehlungen für die Sekundarstufe I angegeben.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Mit dieser Codeliste werden die Laufbahnempfehlungen für die Sekundarstufe I angegeben, ergänzt um "Wert nicht bekannt" und "Wert nicht in Liste". Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -25,9 +25,9 @@
          <ShortName>code</ShortName>
          <Data Type="string"/>
       </Column>
-      <Column Id="beschreibung" Use="required">
-         <ShortName>beschreibung</ShortName>
-         <LongName>Krankheit</LongName>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Laufbahnempfehlung</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">
@@ -45,7 +45,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/beobachtungsstufe_gymnasium</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Beobachtungsstufe des Gymnasiums</SimpleValue>
          </Value>
       </Row>
@@ -53,7 +53,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/eingeschraenkte_wahl</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Hauptschule oder Realschule</SimpleValue>
          </Value>
       </Row>
@@ -61,7 +61,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/freie_wahl</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Hauptschule oder Realschule oder Gymnasium</SimpleValue>
          </Value>
       </Row>
@@ -69,7 +69,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/gesamtschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Gesamtschule</SimpleValue>
          </Value>
       </Row>
@@ -77,7 +77,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/gymnasium</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Gymnasium</SimpleValue>
          </Value>
       </Row>
@@ -85,7 +85,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/hauptschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Hauptschule</SimpleValue>
          </Value>
       </Row>
@@ -93,7 +93,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/mittelschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Mittelschule</SimpleValue>
          </Value>
       </Row>
@@ -101,7 +101,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/oberschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Oberschule</SimpleValue>
          </Value>
       </Row>
@@ -109,7 +109,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/orientierungsstufe</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Orientierungsstufe</SimpleValue>
          </Value>
       </Row>
@@ -117,7 +117,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/realschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Realschule</SimpleValue>
          </Value>
       </Row>
@@ -125,7 +125,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/regionale_schule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Regionale Schule</SimpleValue>
          </Value>
       </Row>
@@ -133,7 +133,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/wirtschaftsschule</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wirtschaftsschule</SimpleValue>
          </Value>
       </Row>
@@ -141,7 +141,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/~wert_nicht_bekannt</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
       </Row>
@@ -149,7 +149,7 @@
          <Value ColumnRef="code">
             <SimpleValue>http://xschule.digital/def/xschule/1.0/code/laufbahnempfehlung/~wert_nicht_in_liste</SimpleValue>
          </Value>
-         <Value ColumnRef="beschreibung">
+         <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
       </Row>

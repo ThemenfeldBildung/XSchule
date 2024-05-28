@@ -58,6 +58,9 @@
             <para>Zu den Kernkomponenten kommt die <link
                     linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe">Ortsangabe</link> hinzu,
                 die als reduzierte Anschrift verwendet wird.</para>
+            <para>Zudem wurden die Beschreibungstexte der einzelnen Klassen und Attribute der
+                Kernkomponenten angepasst und dadurch auf den jeweiligen XSchule-spezifischen
+                Anwendungsfall zugeschnitten. </para>
         </section>
 
         <section>
@@ -131,6 +134,10 @@
                 XSchule technisch zur Verfügung gestellt werden, wurde ihre Version auf 1.0
                 vereinheitlicht. Das hat auch Auswirkung auf die URI der Codelisten-Werte.</para>
             <para/>
+            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Kursstatus"
+                    >Kursstatus</link> wurde in den vorherigen XSchule-Versionen über XBildung
+                eingebunden. Mit der Version 1.0 wurde die Codeliste aus XBildung entfernt und wird
+                nun direkt bei XSchule eingebunden.</para>
         </section>
 
         <section>
@@ -143,21 +150,64 @@
                 identifiziert werden kann. </para>
             <para>Die Klasse Schulkurs und die bisher nachgenutzte Klasse Kurs aus XBildung wurden
                 vereint. Die Klasse <link linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link>
-                enthält nun alle Eigenschaften der beiden vorherigen Klassen.</para>
-            <para>Zudem erfolgte eine Umbenennung von sonderpaedagogischesGutachten in anlage sowie
-                Anpassung der Multiplizität auf 1..n und Anpassung der Beschreibung.</para>
+                enthält nun alle Eigenschaften der beiden vorherigen Klassen, wobei die Reihenfolge
+                der Eigenschaften verändert wurde.</para>
+            <para>Zudem erfolgte eine Umbenennung von "sonderpaedagogischesGutachten" in "anlage".
+                Die Multiplizität wurde auf "1..n" geändert und die Beschreibung angepasst.</para>
+            <para>Die <link xlink:href="#spezifikation.einleitung.dieSchuljourney"
+                    >XSchule-Journey</link> wurde überarbeitet und mit den anderen Teilvorhaben
+                harmonisiert, indem nun jeder einzelne Schritt innerhalb der XSchule-Journey
+                beschrieben wird.</para>
         </section>
 
         <section>
             <title>Liste der umgesetzten Tickets</title>
             <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
             <itemizedlist>
+                <!-- für Ticketliste relevant? <listitem>
+                    <para>XSC-382: Finale Version XBildung V1.0 einbinden</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-379: RDF-Ausspielung bei Codelisten optimieren </para>
+                </listitem> 
+                <listitem>
+                    <para>XSC-377: Spaltenbezeichnungen in Codelisten bereinigen</para>
+                </listitem>
+               -->
+                <listitem>
+                    <para>XSC-376: Codeliste Kursstatus erstellen </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-375: XSC-Journey überarbeiten </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-372: Schulbescheinigung zu einer Erweiterung vom Dokument
+                        machen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-371: Zweite Beispielinstanznachricht für Schulbescheinigung
+                        erstellen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-368: Beschreibung der Kernkomponenten anpassen</para>
+                </listitem>
                 <listitem>
                     <para>XSC-366: Codeliste Jahrgangsstufe überarbeiten </para>
                 </listitem>
                 <listitem>
+                    <para>XSC-365: URI in Codeliste Abiturfächer auf XSC an Spezifikation anpassen
+                        und Herkunft dokumentieren </para>
+                </listitem>
+                <listitem>
+                    <para>XSC-364: Herkunft zusätzlicher Werte in XSC Codelisten
+                        dokumentieren</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-361: Reihenfolge Eigenschaften Schulkurs optimieren </para>
+                </listitem>
+                <listitem>
                     <para>XSC-360: Eigenschaft Sonderpädagogisches Gutachten zu Anlage
-                        verallgemeinert</para>
+                        verallgemeinern</para>
                 </listitem>
                 <listitem>
                     <para>XSC-358: Codeliste Versetzungstyp überarbeiten</para>
@@ -186,10 +236,17 @@
                     <para>XSC-350: Klasse Anlage erstellen und nutzen</para>
                 </listitem>
                 <listitem>
+                    <para>XSC-348: Wechselinstanz Primarwechsel XSC-Journey: ArtDerSchule auf
+                        schulartunabhaengige_orientierungsstufe umstellen</para>
+                </listitem>
+                <listitem>
                     <para>XSC-347: Codelisten weitestgehend auf sprechende Werte umstellen</para>
                 </listitem>
                 <listitem>
                     <para>XSC-344: Versionierung von Codelisten prüfen und ggf. anpassen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-340: Beispielinstanznachricht für Schulbescheinigung erstellen </para>
                 </listitem>
                 <listitem>
                     <para>XSC-325: Beschreibung und Werte von Codelisten, die auf dem Kerndatensatz

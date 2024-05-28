@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.abiturzeugnis.0002 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+<xsc:schueler.abiturzeugnis.0002 xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
+    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd">
 
     <!--
-        Datum: 02.02.2024
+        Datum: 27.05.2024
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Niklas Aschenborn
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Link zur Beispieldatei: https://xbildung.de/web/musternachweis/35440
@@ -151,29 +151,20 @@
     <xsc:block-i>
         <xsc:kurs>
             <xsc:bezeichnung>Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
-            <!-- 
-                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
+                <!-- Deutsch -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
-                <!-- Deutsch -->
-            </xsc:fach>
+            <!-- 
+                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -184,12 +175,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -200,29 +200,20 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
-            <!-- 
-                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
+                <!-- Deutsch -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
-                <!-- Deutsch -->
-            </xsc:fach>
+            <!-- 
+                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -233,12 +224,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -249,6 +249,36 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Deutsch (LK/eA)</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
+                <!-- Deutsch -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <!-- 
+                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -256,38 +286,8 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <!-- 
-                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
-                <!-- Deutsch -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -298,29 +298,20 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
-            <!-- 
-                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
+                <!-- Deutsch -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/200</code>
-                <!-- Deutsch -->
-            </xsc:fach>
+            <!-- 
+                Verzicht auf xsc:schluesselISCEDF2013, da die verwendete Codeliste
+                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                bereits ein Mapping auf ISCED-F 2013 integriert.
+            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -331,12 +322,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -347,24 +347,15 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
-                <!-- Englisch -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -375,12 +366,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -391,6 +391,31 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>08</punkte>
                 <bewertungsschemaPunkte>
@@ -398,33 +423,8 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
-                <!-- Englisch -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -435,6 +435,31 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -442,33 +467,8 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
-                <!-- Englisch -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -479,24 +479,15 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
+                <!-- Englisch -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/220</code>
-                <!-- Englisch -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -507,12 +498,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>06</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
@@ -523,6 +523,31 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Kunsterziehung</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
+                <!-- Kunst -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>05</punkte>
                 <bewertungsschemaPunkte>
@@ -530,56 +555,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
-                <!-- Kunst -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Kunsterziehung</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
+                <!-- Kunst -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/660</code>
-                <!-- Kunst -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -590,17 +581,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>06</punkte>
                 <bewertungsschemaPunkte>
@@ -608,17 +594,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
+                <!-- Geographie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
-                <!-- Geographie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -629,17 +620,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>06</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
+                <!-- Geographie -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>09</punkte>
                 <bewertungsschemaPunkte>
@@ -647,17 +672,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
+                <!-- Geographie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
-                <!-- Geographie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -668,17 +698,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -686,17 +711,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
+                <!-- Geographie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
-                <!-- Geographie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -707,17 +737,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Geographie</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>04</punkte>
                 <bewertungsschemaPunkte>
@@ -725,56 +750,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/380</code>
-                <!-- Geographie -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>10</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
+                <!-- Geschichte -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
-                <!-- Geschichte -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -785,35 +776,35 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>10</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
+                <!-- Geschichte -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/420</code>
-                <!-- Geschichte -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -824,17 +815,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>07</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Sozialwissenschaften</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
+                <!-- Sozialwissenschaften -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>10</punkte>
                 <bewertungsschemaPunkte>
@@ -842,17 +867,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Sozialwissenschaften</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
+                <!-- Sozialwissenschaften -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
-                <!-- Sozialwissenschaften -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -863,17 +893,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Sozialwissenschaften</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -881,38 +906,38 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1100</code>
-                <!-- Sozialwissenschaften -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Erziehungswissenschaft (LK/eA)</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>12</punkte>
                 <bewertungsschemaPunkte>
@@ -920,56 +945,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
-                <!-- Erziehungswissenschaft -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Erziehungswissenschaft (LK/eA)</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
-                <!-- Erziehungswissenschaft -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -980,17 +971,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Erziehungswissenschaft (LK/eA)</xsc:bezeichnung>
             <xsc:note>
                 <punkte>08</punkte>
                 <bewertungsschemaPunkte>
@@ -998,17 +984,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Erziehungswissenschaft (LK/eA)</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
-                <!-- Erziehungswissenschaft -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1019,17 +1010,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>08</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Erziehungswissenschaft (LK/eA)</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
+                <!-- Erziehungswissenschaft -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -1037,38 +1062,38 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ges</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/260</code>
-                <!-- Erziehungswissenschaft -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/erhoehtes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
+                <!-- Mathematik -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>04</punkte>
                 <bewertungsschemaPunkte>
@@ -1076,17 +1101,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
+                <!-- Mathematik -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
-                <!-- Mathematik -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1097,17 +1127,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>04</punkte>
                 <bewertungsschemaPunkte>
@@ -1115,56 +1140,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
-                <!-- Mathematik -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
+                <!-- Mathematik -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
-                <!-- Mathematik -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1175,17 +1166,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
             <xsc:note>
                 <punkte>05</punkte>
                 <bewertungsschemaPunkte>
@@ -1193,17 +1179,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
+                <!-- Mathematik -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/740</code>
-                <!-- Mathematik -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1214,35 +1205,35 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>04</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/nicht_bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
+                <!-- Biologie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
-                <!-- Biologie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1253,35 +1244,35 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>04</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
+                <!-- Biologie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
-                <!-- Biologie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1292,17 +1283,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
+                <!-- Biologie -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>08</punkte>
                 <bewertungsschemaPunkte>
@@ -1310,17 +1335,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Biologie</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
+                <!-- Biologie -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
-                <!-- Biologie -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1331,17 +1361,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Biologie</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -1349,56 +1374,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/100</code>
-                <!-- Biologie -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Physik</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
             <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
                 <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
                 <!-- Physik -->
             </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1409,17 +1400,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>05</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Physik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
+                <!-- Physik -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>06</punkte>
                 <bewertungsschemaPunkte>
@@ -1427,56 +1452,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
-                <!-- Physik -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Physik</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
+                <!-- Physik -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
-                <!-- Physik -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1487,17 +1478,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Physik</xsc:bezeichnung>
             <xsc:note>
                 <punkte>07</punkte>
                 <bewertungsschemaPunkte>
@@ -1505,17 +1491,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Physik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
+                <!-- Physik -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/mnt</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/860</code>
-                <!-- Physik -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1526,17 +1517,51 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>07</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Kath. Religionslehre</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
+                <!-- Kath. Religionslehre -->
+            </xsc:fach>
+            <xsc:aufgabenfeld>
+                <xsc:code>
+                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
+                </xsc:code>
+            </xsc:aufgabenfeld>
+            <xsc:anforderungsniveau
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>05</punkte>
                 <bewertungsschemaPunkte>
@@ -1544,17 +1569,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Kath. Religionslehre</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
+                <!-- Kath. Religionslehre -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
-                <!-- Kath. Religionslehre -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1565,17 +1595,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Kath. Religionslehre</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>10</punkte>
                 <bewertungsschemaPunkte>
@@ -1583,17 +1608,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Sport</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
+                <!-- Sport -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/640</code>
-                <!-- Kath. Religionslehre -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1604,17 +1634,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Sport</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>12</punkte>
                 <bewertungsschemaPunkte>
@@ -1622,17 +1647,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Sport</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
+                <!-- Sport -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
-                <!-- Sport -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1643,17 +1673,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
             </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Sport</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <punkte>12</punkte>
                 <bewertungsschemaPunkte>
@@ -1661,56 +1686,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
-            <xsc:aufgabenfeld>
-                <xsc:code>
-                    <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
-                </xsc:code>
-            </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
-                <!-- Sport -->
-            </xsc:fach>
-            <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
-                listVersionID="1.0">
-                <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/grundlegendes_anforderungsniveau</code>
-            </xsc:anforderungsniveau>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-            </xsc:jahrgangsstufe>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Sport</xsc:bezeichnung>
-            <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
-            </xsc:note>
-            <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
-            </xsc:status>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
+                <!-- Sport -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
-                <!-- Sport -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1721,17 +1712,12 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
+            </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-            </xsc:jahrgangsstufe>
-            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Sport</xsc:bezeichnung>
             <xsc:note>
                 <punkte>08</punkte>
                 <bewertungsschemaPunkte>
@@ -1739,17 +1725,22 @@
                 </bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
-                <code>http://xbildung.de/def/xbildung/1.0/code/kursstatus/bestanden</code>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
+            <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Sport</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
+                <!-- Sport -->
+            </xsc:fach>
             <xsc:aufgabenfeld>
                 <xsc:code>
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/ohne_zuordnung</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
-                <code>http://xschule.digital/def/kmk/2019/code/abiturfach/1160</code>
-                <!-- Sport -->
-            </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -1760,12 +1751,21 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <punkte>08</punkte>
+                <bewertungsschemaPunkte>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
+                </bewertungsschemaPunkte>
+            </xsc:note>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
+            </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
         </xsc:kurs>
     </xsc:block-i>

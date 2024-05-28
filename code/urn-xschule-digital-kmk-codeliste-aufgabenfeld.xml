@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Aufgabenfeld</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste basiert auf den einheitlichen Aufgabenfeldern der Allgemeinen Hochschulreife, die von der KMK festgelegt wurden, ergänzt um "Wert nicht in Liste". Quelle 1972: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf Quelle 1974: https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/?1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste basiert auf den einheitlichen Aufgabenfeldern der Allgemeinen Hochschulreife, die von der KMK festgelegt wurden, ergänzt um "Wert nicht in Liste". Beschluss der KMK von 1972 (PDF): https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf Beschluss der KMK von 1974 (PDF): https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/?1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -27,7 +27,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Beschreibung</LongName>
+         <LongName>Aufgabenfeld</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">

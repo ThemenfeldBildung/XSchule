@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Impfschutz</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Die Codeliste soll es ermöglichen, möglichst datensparsam den Stand des gesetzlich geforderten Nachweises einer Immunität zu übermitteln, ohne auf medizinische Details einzugehen. Hinweis: Benennung und Inhalt der Codeliste und der dazugehörigen Klassen und Eigenschaften, befinden sich weiterhin in der Abstimmung. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste soll es ermöglichen, möglichst datensparsam den Stand des gesetzlich geforderten Nachweises einer Immunität zu übermitteln, ohne auf medizinische Details einzugehen. Sie wurde ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt". Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -27,7 +27,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Wert</LongName>
+         <LongName>Impfschutz</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">

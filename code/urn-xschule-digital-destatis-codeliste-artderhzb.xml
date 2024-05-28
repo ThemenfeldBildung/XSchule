@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Art der HZB</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Liste enthält Herkunft (Schulart/Prüfung) und Grad von Hochschulzugangsberechtigungen. Sie basiert auf den Schlüsselverzeichnissen für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik, die jährlich von Destatis herausgegeben werden. Hinweis: Die Codeliste wird initial als Typ-1-Codeliste durch XSchule veröffentlicht. Mittelfristig wird angestrebt, dass auf eine direkt durch Destatis veröffentlichte Version verwiesen werden kann. Dann soll es auch möglich sein, auf eine andere als die neueste Version zu verweisen. Link zur Webseite: https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik Quelle (PDF): https://www.statistik-nord.de/​fileadmin/​Dokumente/​Erhebungen/​Hochschulstatistiken/​1_Studenten_​2_Pr%C3%BCfungen/​Schluesselverzeichnis_​WS_2022.pdf Quelle (Excel): https://www.statistik-nord.de/​fileadmin/​Dokumente/​Erhebungen/​Hochschulstatistiken/​1_Studenten_​2_Pr%C3%BCfungen/​Schluesselverzeichnis_​WS_2022.xlsx</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält Herkunft (Schulart/Prüfung) und Grad von Hochschulzugangsberechtigungen. Sie basiert auf den Schlüsselverzeichnissen für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik, die jährlich von Destatis herausgegeben werden. Hinweis: Die Codeliste wird initial als Typ-1-Codeliste durch XSchule veröffentlicht. Mittelfristig wird angestrebt, dass auf eine direkt durch Destatis veröffentlichte Version verwiesen werden kann. Dann soll es auch möglich sein, auf eine andere als die neueste Version zu verweisen. Erhebungsinformationen zur Studierendenstatistik: https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik Quelle WS 2023/2024 und SS 2024 (PDF): https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2023.pdf</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>Destatis</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -23,7 +23,7 @@
    <ColumnSet>
       <Column Id="code" Use="required">
          <ShortName>code</ShortName>
-         <LongName>Code Name</LongName>
+         <LongName/>
          <Data Type="string"/>
       </Column>
       <Column Id="description-de-DE" Use="optional">

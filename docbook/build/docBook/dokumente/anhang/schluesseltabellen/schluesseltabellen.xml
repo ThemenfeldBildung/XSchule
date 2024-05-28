@@ -205,6 +205,16 @@
                <row>
                   <entry align="left">
                      <link role="schwarz"
+                           linkend="tabelle.urn.xschule-digital.xschule.codeliste.kursstatus.Kursstatus-Codes">Kursstatus</link>
+                  </entry>
+                  <entry align="left">1.0</entry>
+                  <entry align="left">
+                     <link role="schwarz" linkend="XSchule.Baukasten.Codes.Code.Kursstatus">Code.Kursstatus</link>
+                  </entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <link role="schwarz"
                            linkend="tabelle.urn.xschule-digital.xschule.codeliste.laufbahnempfehlung.Laufbahnempfehlung-Codes">Laufbahnempfehlung</link>
                   </entry>
                   <entry align="left">1.0</entry>
@@ -283,7 +293,7 @@
             xml:id="schluesseltabellen.details">
       <title>Details</title>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.abfolgederfremdsprachen.AbfolgeDerFremdsprachen-Codes">
-         <title>Abfolge der Fremdsprachen</title><para>Diese Codeliste enhält Werte, um angeben zu können, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde.</para>
+         <title>Abfolge der Fremdsprachen</title><para>Diese Codeliste enthält Einträge, um angeben zu können, ob eine Fremdsprache als 1., 2. oder 3. Fremdsprache belegt wurde, ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -377,7 +387,7 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes">
-         <title>Abiturfach</title><para>Diese Liste enthält von der KMK beschlossene Abiturfächer. Sie basiert auf den KMK-Dokumenten "Liste über Verabschiedung und Inkrafttreten der einzelnen EPA" und dem "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten (Version 4.0)".</para>
+         <title>Abiturfach</title><para>Diese Liste enthält von der KMK beschlossene Abiturfächer. Sie basiert auf den KMK-Dokumenten <link xlink:href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2007/2007_05_10-Liste-EPA.pdf">"Liste über Verabschiedung und Inkrafttreten der einzelnen EPA" </link> und <link xlink:href="https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1972/1972_07_07-Listen-Ziff-8-3-1.pdf">"Gegenseitige Anerkennung unbefristet angebotener Prüfungsfächer"</link>.</para>
 <para>Die Listen wurden vom XSchule-Projekt zusammengeführt und die Fächer auf <link xlink:href="https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/international-education-classification">ISCED-F</link> und <link xlink:href="https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Fremdsprachen</link> gemappt. Sie wird zusätzlich online zur Verfügung gestellt.</para>
 <para><emphasis role="bold">Link zur Webseite:</emphasis> <link xlink:href="https://xschule.digital/web/kmk_abiturfaecher_de">https://xschule.digital/web/kmk_abiturfaecher_de</link></para>
 <section>
@@ -469,6 +479,17 @@
                            <link xlink:href="http://data.europa.eu/snb/isced-f/0730">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​i​s​c​e​d​-​f​/​0​7​3​0</link>
                         </entry>
                         <entry align="left">Architecture and construction</entry>
+                        <entry align="left"/>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/kmk/1.0/code/abiturfach/90">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​k​m​k​/​1​.​0​/​c​o​d​e​/​a​b​i​t​u​r​f​a​c​h​/​9​0</link>
+                        </entry>
+                        <entry align="left">Berufliche Informatik</entry>
+                        <entry align="left">
+                           <link xlink:href="http://data.europa.eu/snb/isced-f/0610">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​i​s​c​e​d​-​f​/​0​6​1​0</link>
+                        </entry>
+                        <entry align="left">Information and Communication Technologies (ICTs)</entry>
                         <entry align="left"/>
                      </row>
                      <row>
@@ -691,7 +712,7 @@
                         </entry>
                         <entry align="left">Language acquisition</entry>
                         <entry align="left">
-                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ELL">h​t​t​p​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​E​L​L</link>
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/GRC">h​t​t​p​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​G​R​C</link>
                         </entry>
                      </row>
                      <row>
@@ -825,19 +846,6 @@
                      </row>
                      <row>
                         <entry align="left">
-                           <link xlink:href="http://xschule.digital/def/kmk/1.0/code/abiturfach/700">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​k​m​k​/​1​.​0​/​c​o​d​e​/​a​b​i​t​u​r​f​a​c​h​/​7​0​0</link>
-                        </entry>
-                        <entry align="left">Lettisch</entry>
-                        <entry align="left">
-                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​i​s​c​e​d​-​f​/​0​2​3​1</link>
-                        </entry>
-                        <entry align="left">Language acquisition</entry>
-                        <entry align="left">
-                           <link xlink:href="https://publications.europa.eu/resource/authority/language/LAV">h​t​t​p​s​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​L​A​V</link>
-                        </entry>
-                     </row>
-                     <row>
-                        <entry align="left">
                            <link xlink:href="http://xschule.digital/def/kmk/1.0/code/abiturfach/720">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​k​m​k​/​1​.​0​/​c​o​d​e​/​a​b​i​t​u​r​f​a​c​h​/​7​2​0</link>
                         </entry>
                         <entry align="left">Litauisch</entry>
@@ -881,7 +889,7 @@
                         </entry>
                         <entry align="left">Language acquisition</entry>
                         <entry align="left">
-                           <link xlink:href="http://publications.europa.eu/resource/authority/language/GRC">h​t​t​p​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​G​R​C</link>
+                           <link xlink:href="http://publications.europa.eu/resource/authority/language/ELL">h​t​t​p​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​E​L​L</link>
                         </entry>
                      </row>
                      <row>
@@ -979,19 +987,6 @@
                         </entry>
                         <entry align="left">Law</entry>
                         <entry align="left"/>
-                     </row>
-                     <row>
-                        <entry align="left">
-                           <link xlink:href="http://xschule.digital/def/kmk/1.0/code/abiturfach/960">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​k​m​k​/​1​.​0​/​c​o​d​e​/​a​b​i​t​u​r​f​a​c​h​/​9​6​0</link>
-                        </entry>
-                        <entry align="left">Rumänisch</entry>
-                        <entry align="left">
-                           <link xlink:href="http://data.europa.eu/snb/isced-f/0231">h​t​t​p​:​/​/​d​a​t​a​.​e​u​r​o​p​a​.​e​u​/​s​n​b​/​i​s​c​e​d​-​f​/​0​2​3​1</link>
-                        </entry>
-                        <entry align="left">Language acquisition</entry>
-                        <entry align="left">
-                           <link xlink:href="https://publications.europa.eu/resource/authority/language/RON">h​t​t​p​s​:​/​/​p​u​b​l​i​c​a​t​i​o​n​s​.​e​u​r​o​p​a​.​e​u​/​r​e​s​o​u​r​c​e​/​a​u​t​h​o​r​i​t​y​/​l​a​n​g​u​a​g​e​/​R​O​N</link>
-                        </entry>
                      </row>
                      <row>
                         <entry align="left">
@@ -1192,7 +1187,7 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.anforderungsniveau.Anforderungsniveau-Codes">
-         <title>Anforderungsniveau</title><para>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0. Sie enthält die möglichen Ausprägungen des Merkmals "Anforderungsniveau" (laufende Nummer 3.6), ergänzt um "Wert nicht bekannt".</para>
+         <title>Anforderungsniveau</title><para>Diese Codeliste basiert auf dem <link xlink:href="https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP17/Drucksachen/5000/17_5514_D.pdf">Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0</link>. Sie enthält die möglichen Ausprägungen des Merkmals "Anforderungsniveau" (laufende Nummer 3.6), ergänzt um "Wert nicht bekannt".</para>
 <para>Die Codeliste beschränkt sich auf die von der KMK festgelegten Werte für die gymnasiale Oberstufe. Bundeslandspezifische Codelisten müssen, wie im Kapitel <xref linkend="spezifikation.profilbildung.codelisten_typ4" role="Titel"/> beschrieben, abgebildet werden.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -1268,7 +1263,7 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderbemerkung.ArtDerBemerkung-Codes">
-         <title>Art der Bemerkung</title><para>Die Liste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit sie trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</para>
+         <title>Art der Bemerkung</title><para>Die Codeliste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit diese trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können.</para>
 <para>Welcher Wert verwendet wird, beeinflusst insbesondere, welche bzw. ob eine "Beschreibung" in der Klasse "Bemerkung" erwartet wird.</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
@@ -1381,12 +1376,11 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.destatis.codeliste.artderhzb.ArtDerHZB-Codes">
-         <title>Art der HZB</title><para>Diese Liste enthält Herkunft (Schulart/Prüfung) und Grad von Hochschulzugangsberechtigungen.</para>
+         <title>Art der HZB</title><para>Diese Codeliste enthält Herkunft (Schulart/Prüfung) und Grad von Hochschulzugangsberechtigungen.</para>
 <para>Sie basiert auf den Schlüsselverzeichnissen für die Studenten- und Prüfungsstatistik, Promovierendenstatistik und Gasthörerstatistik, die jährlich von Destatis herausgegeben werden. </para>
 <para><emphasis><emphasis role="bold">Hinweis:</emphasis> Die Codeliste wird initial als Typ-1-Codeliste durch XSchule veröffentlicht. Mittelfristig wird angestrebt, dass auf eine direkt durch Destatis veröffentlichte Version verwiesen werden kann. Dann soll es auch möglich sein, auf eine andere als die neueste Version zu verweisen.</emphasis></para>
-<para><emphasis role="bold">Link zur Webseite:</emphasis> <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik</link></para>
-<para><emphasis role="bold">Quelle (PDF):</emphasis> <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2022.pdf">https://www.statistik-nord.de/​fileadmin/​Dokumente/​Erhebungen/​Hochschulstatistiken/​1_Studenten_​2_Pr%C3%BCfungen/​Schluesselverzeichnis_​WS_2022.pdf</link></para>
-<para><emphasis role="bold">Quelle (Excel):</emphasis> <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2022.xlsx">https://www.statistik-nord.de/​fileadmin/​Dokumente/​Erhebungen/​Hochschulstatistiken/​1_Studenten_​2_Pr%C3%BCfungen/​Schluesselverzeichnis_​WS_2022.xlsx</link></para><section>
+<para><emphasis role="bold">Erhebungsinformationen zur Studierendenstatistik:</emphasis> <link xlink:href="https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik">https://www.statistik-nord.de/zahlen-fakten/bildung-rechtspflege/erhebungsinformationen-hochschulstatistiken/studierendenstatistik</link></para>
+<para><emphasis role="bold">Quelle WS 2023/2024 und SS 2024 (PDF):</emphasis> <link xlink:href="https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2023.pdf">https://www.statistik-nord.de/fileadmin/Dokumente/Erhebungen/Hochschulstatistiken/1_Studenten_2_Pr%C3%BCfungen/Schluesselverzeichnis_WS_2023.pdf</link></para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -1432,7 +1426,7 @@
                   <colspec colnum="3" colname="desc"/>
                   <thead>
                      <row>
-                        <entry align="left">code (Code Name)</entry>
+                        <entry align="left">code</entry>
                         <entry align="left">description-de-DE (Schulart / Prüfung)</entry>
                         <entry align="left">mapping-grad (Grad der HZB)</entry>
                      </row>
@@ -1690,7 +1684,7 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.ArtDerSchulaufnahme-Codes">
-         <title>Art der Schulaufnahme</title><para>Die Art der Schulaufnahme gibt an, wie der junge Mensch in die Schule aufgenommen wurde. Sollte keine Auskunft möglich sein, kann der Grund dafür angegeben werden.</para>
+         <title>Art der Schulaufnahme</title><para>Die Art der Schulaufnahme gibt an, wie ein junger Mensch in die Schule aufgenommen wurde, ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -1814,8 +1808,8 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.ArtDerUnterrichtsteilnahme-Codes">
-         <title>Art der Unterrichtsteilnahme</title><para>Die Codeliste beinhaltet verschiedene Arten der Teilnahme am Unterricht, wie sie im Rahmen des Schulwechsels relevant sind.</para>
-<para>Die Liste wurde vom XSchule-Projekt erstellt.</para><section>
+         <title>Art der Unterrichtsteilnahme</title><para>Diese Codeliste beinhaltet verschiedene Arten der Teilnahme am Unterricht, wie sie im Rahmen des Schulwechsels relevant sind, ergänzt um "Wert nicht in Liste".</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -1896,8 +1890,8 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.artweiterersprachkenntnisse.ArtWeitererSprachkenntnisse-Code">
-         <title>Art weiterer Sprachkenntnisse</title><para>Diese Codeliste ermöglicht die Angabe von zusätzlichen, standardisierten Sprachkenntnissen. Sie basiert auf der "Vereinbarung über das Latinum und das Graecum", erweitert um landesspezifische Bedarfe der XSchule-Stakeholdern.</para>
-<para><emphasis role="bold">Grundlage:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf">https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_​Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf</link></para><section>
+         <title>Art weiterer Sprachkenntnisse</title><para>Diese Codeliste ermöglicht die Angabe von zusätzlichen, standardisierten Sprachkenntnissen. Sie basiert auf der "Vereinbarung über das Latinum und das Graecum" (Beschluss der Kultusministerkonferenz vom 22.09.2005), erweitert um landesspezifische Bedarfe der XSchule-Stakeholder.</para>
+<para><emphasis role="bold">Beschluss der Kultusministerkonferenz (PDF):</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf">https://www.kmk.org/fileadmin/Dateien/pdf/PresseUndAktuelles/Beschluesse_​Veroeffentlichungen/allg_Schulwesen/Latinum_Graecum.pdf</link></para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -1943,7 +1937,7 @@
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">description-de-DE (Beschreibung)</entry>
+                        <entry align="left">description-de-DE (Art weiterer Sprachkenntnisse)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -1990,9 +1984,9 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.aufgabenfeld.Aufgabenfeld-Codes">
-         <title>Aufgabenfeld</title><para>Die Codeliste basiert auf den einheitlichen Aufgabenfeldern der Allgemeinen Hochschulreife, die von der KMK festgelegt wurden, ergänzt um "Wert nicht in Liste".</para>
-<para><emphasis role="bold">Quelle 1972:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf">https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf</link></para>
-<para><emphasis role="bold">Quelle 1974:</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf">https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/?1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</link></para><section>
+         <title>Aufgabenfeld</title><para>Diese Codeliste basiert auf den einheitlichen Aufgabenfeldern der Allgemeinen Hochschulreife, die von der KMK festgelegt wurden, ergänzt um "Wert nicht in Liste".</para>
+<para><emphasis role="bold">Beschluss der KMK von 1972 (PDF):</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf">https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1972/1972_07_07-VB-gymnasiale-Oberstufe-Abiturpruefung.pdf</link></para>
+<para><emphasis role="bold">Beschluss der KMK von 1974 (PDF):</emphasis> <link xlink:href="https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf">https://www.kmk.org/fileadmin/veroeffentlichungen_beschluesse/?1974/1974_01_08-Zeugnis-Allg-Hochschulreife.pdf</link></para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -2038,7 +2032,7 @@
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">description-de-DE (Beschreibung)</entry>
+                        <entry align="left">description-de-DE (Aufgabenfeld)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -2079,8 +2073,7 @@
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.kmk.codeliste.foerderschwerpunkt.Foerderschwerpunkt-Codes">
-         <title>Förderschwerpunkt</title><para>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0.
-Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (laufende Nummer 4.25), ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para><section>
+         <title>Förderschwerpunkt</title><para>Die Codeliste basiert auf dem <link xlink:href="https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP17/Drucksachen/5000/17_5514_D.pdf">Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0</link>. Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (laufende Nummer 4.25).</para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -2126,7 +2119,7 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">description-de-DE (Fachbezeichnung)</entry>
+                        <entry align="left">description-de-DE (Förderschwerpunkt)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -2211,7 +2204,7 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
       <section xml:id="tabelle.urn.de.dsmeld.schluesseltabelle.gesetzlicher.vertreter.GesetzlicherVertreter-Codes">
          <title>Gesetzlicher Vertreter</title><para>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld.</para>
 
-<para><emphasis role="bold">Link zur Webseite:</emphasis> <link xlink:href="https://www.xrepository.de/details/urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter">https://www.xrepository.de/details/​urn​:de​:dsmeld​:schluesseltabelle​:gesetzlicher​.vertreter</link></para>
+<para><emphasis role="bold">Codeliste DSMeld Gesetzlicher Vertreter im XRepository:</emphasis> <link xlink:href="https://www.xrepository.de/details/urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter">https://www.xrepository.de/details/​urn​:de​:dsmeld​:schluesseltabelle​:gesetzlicher​.vertreter</link></para>
 
 <para><emphasis role="bold">Code:</emphasis> Der zu verwendende Schlüssel ist der Eintrag in der empfohlenen Codespalte "key".</para>
 <para><emphasis role="bold">Beispiele:</emphasis> (Element : Code)
@@ -2261,7 +2254,7 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.halbjahr.Halbjahr-Codes">
-         <title>Halbjahr</title><para>Die Codeliste bildet typische Zeiträume im schulischen Kontext ab, insbesondere die möglichen Halbjahre.</para>
+         <title>Halbjahr</title><para>Die Codeliste bildet typische Zeiträume im schulischen Kontext ab, insbesondere die möglichen Schulhalbjahre.</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -2337,8 +2330,7 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.impfschutz.Impfschutz-Codes">
-         <title>Impfschutz</title><para>Die Codeliste soll es ermöglichen, möglichst datensparsam den Stand des gesetzlich geforderten Nachweises einer Immunität zu übermitteln, ohne auf medizinische Details einzugehen.</para>
-<para><emphasis role="italic">Hinweis:</emphasis> Benennung und Inhalt der Codeliste und der dazugehörigen Klassen und Eigenschaften, befinden sich weiterhin in der Abstimmung.</para>
+         <title>Impfschutz</title><para>Diese Codeliste soll es ermöglichen, möglichst datensparsam den Stand des gesetzlich geforderten Nachweises einer Immunität zu übermitteln, ohne auf medizinische Details einzugehen. Sie wurde ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -2385,7 +2377,7 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">description-de-DE (Wert)</entry>
+                        <entry align="left">description-de-DE (Impfschutz)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -2426,10 +2418,9 @@ Sie enthält die möglichen Ausprägungen des Merkmals "Förderschwerpunkt" (lau
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.jahrgangsstufe.Jahrgangsstufe-Codes">
-         <title>Jahrgangsstufe</title><para>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0.
-Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenstufe" (laufende Nummer 2.3), "Klassen-/Jahrgangsstufe/Schuljahrgang des Schülers/der Schülerin" (laufende Nummer 4.9) und "Schulische Herkunft: Im Vorjahr besuchte Jahrgangs-/Klassenstufe (laufende Nummer 4.18)".</para>
+         <title>Jahrgangsstufe</title><para>Die Codeliste basiert auf dem <link xlink:href="https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP17/Drucksachen/5000/17_5514_D.pdf">Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0</link>. Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenstufe" (laufende Nummer 2.3), "Klassen-/Jahrgangsstufe/Schuljahrgang des Schülers/der Schülerin" (laufende Nummer 4.9) und "Schulische Herkunft: Im Vorjahr besuchte Jahrgangs-/Klassenstufe (laufende Nummer 4.18)".</para>
 
-<para>Stakeholde-Feedback hat dazu geführt, dass die Codeliste den Begriff "Jahrgangsstufe" statt "Klassenstufe" verwendet. Zudem wurden die Werte "Jahrgangsstufe 11-13" und "Qualifikationsphase 3 und 4" ergänzt.</para><section>
+<para>Stakeholder-Feedback hat dazu geführt, dass die Codeliste den Begriff "Jahrgangsstufe" statt "Klassenstufe" verwendet. Zudem wurden die Werte "Jahrgangsstufe 11-13" und "Qualifikationsphase 3 und 4" ergänzt.</para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -2709,7 +2700,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.krankheit.Krankheit-Codes">
          <title>Krankheit</title><para>Liste von Krankheiten, zu denen Informationen erhoben werden können. </para>
-<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
+<para>Diese Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -2755,7 +2746,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">beschreibung (Krankheit)</entry>
+                        <entry align="left">description-de-DE (Krankheit)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -2771,8 +2762,104 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          </section>
          <?KoSIT-FO hard-pagebreak?>
       </section>
+      <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.kursstatus.Kursstatus-Codes">
+         <title>Kursstatus</title><para>Diese Codeliste enthält mögliche Ausprägungen für den Status eines Kurses aus der Sicht der lernenden Person, ergänzt um "Wert nicht bekannt".</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
+            <title>Metadaten</title>
+            <informaltable>
+               <tgroup cols="2">
+                  <colspec colnum="1" colname="meta" colwidth="30mm"/>
+                  <colspec colnum="2" colname="wert" colwidth="130mm"/>
+                  <thead>
+                     <row>
+                        <entry>Metadatenelement</entry>
+                        <entry>Wert</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry>Name (lang)</entry>
+                        <entry>Kursstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Name (kurz)</entry>
+                        <entry>Kursstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Kennung</entry>
+                        <entry>urn:xschule-digital:xschule:codeliste:kursstatus</entry>
+                     </row>
+                     <row>
+                        <entry>Herausgeber</entry>
+                        <entry>XSchule (XSchule)</entry>
+                     </row>
+                     <row>
+                        <entry>Version</entry>
+                        <entry>1.0</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <section>
+            <title>Daten</title>
+            <informaltable>
+               <tgroup cols="3">
+                  <colspec colnum="1" colname="key"/>
+                  <colspec colnum="2" colname="val"/>
+                  <colspec colnum="3" colname="desc"/>
+                  <thead>
+                     <row>
+                        <entry align="left">code</entry>
+                        <entry align="left">description-de-DE (Status)</entry>
+                        <entry align="left">description-en-GB (Status)</entry>
+                     </row>
+                  </thead>
+                  <tbody>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/1.0/code/kursstatus/befreit">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​x​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​k​u​r​s​s​t​a​t​u​s​/​b​e​f​r​e​i​t</link>
+                        </entry>
+                        <entry align="left">befreit</entry>
+                        <entry align="left">exempted</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​x​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​k​u​r​s​s​t​a​t​u​s​/​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">bestanden</entry>
+                        <entry align="left">passed</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/1.0/code/kursstatus/erfolgreich_teilgenommen">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​x​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​k​u​r​s​s​t​a​t​u​s​/​e​r​f​o​l​g​r​e​i​c​h​_​t​e​i​l​g​e​n​o​m​m​e​n</link>
+                        </entry>
+                        <entry align="left">erfolgreich teilgenommen</entry>
+                        <entry align="left">participation successful</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​x​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​k​u​r​s​s​t​a​t​u​s​/​n​i​c​h​t​_​b​e​s​t​a​n​d​e​n</link>
+                        </entry>
+                        <entry align="left">nicht bestanden</entry>
+                        <entry align="left">failed</entry>
+                     </row>
+                     <row>
+                        <entry align="left">
+                           <link xlink:href="http://xschule.digital/def/xschule/1.0/code/kursstatus/~wert_nicht_bekannt">h​t​t​p​:​/​/​x​s​c​h​u​l​e​.​d​i​g​i​t​a​l​/​d​e​f​/​x​s​c​h​u​l​e​/​1​.​0​/​c​o​d​e​/​k​u​r​s​s​t​a​t​u​s​/​~​w​e​r​t​_​n​i​c​h​t​_​b​e​k​a​n​n​t</link>
+                        </entry>
+                        <entry align="left">Wert nicht bekannt</entry>
+                        <entry align="left">value not known</entry>
+                     </row>
+                  </tbody>
+               </tgroup>
+            </informaltable>
+         </section>
+         <?KoSIT-FO hard-pagebreak?>
+      </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.laufbahnempfehlung.Laufbahnempfehlung-Codes">
-         <title>Laufbahnempfehlung</title><para>Mit dieser Codeliste werden die Laufbahnempfehlungen für die Sekundarstufe I angegeben.</para><section>
+         <title>Laufbahnempfehlung</title><para>Mit dieser Codeliste werden die Laufbahnempfehlungen für die Sekundarstufe I angegeben, ergänzt um "Wert nicht bekannt" und "Wert nicht in Liste".</para>
+<para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -2818,7 +2905,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">beschreibung (Krankheit)</entry>
+                        <entry align="left">description-de-DE (Laufbahnempfehlung)</entry>
                      </row>
                   </thead>
                   <tbody>
@@ -2913,7 +3000,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.nachpruefung.Nachpruefung-Codes">
-         <title>Nachprüfung</title><para>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt.</para>
+         <title>Nachprüfung</title><para>Die Codeliste gibt an, ob es sich um eine Nachprüfung freiwilliger oder verpflichtender Art handelt, ergänzt um "Wert nicht bekannt" und "Wert nicht in Liste".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -2995,7 +3082,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.nachweisperiode.Nachweisperiode-Codes">
-         <title>Nachweisperiode</title><para>Die Nachweisperiode gibt an, um welchen Zeitraum es sich handelt.</para>
+         <title>Nachweisperiode</title><para>Die Nachweisperiode gibt an, um welchen Zeitraum es sich handelt, ergänzt um "Wert nicht in Liste".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -3083,8 +3170,8 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.teilnahmegemeinsamerunterricht.TeilnahmeGemeinsamerUnterricht-Codes">
-         <title>Teilnahme gemeinsamer Unterricht</title><para>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich handelt.</para>
-<para><emphasis role="bold">Weitere Informationen:</emphasis> <link xlink:href="https://www.einfach-teilhaben.de/DE/AS/Themen/Schule/FoerderungSchule/GemeinsamerUnterricht/gemeinsamerunterricht_node.html#doc11179432bodyText1">https://www.einfach-teilhaben.de/DE/AS/Themen/Schule/FoerderungSchule/GemeinsamerUnterricht/gemeinsamerunterricht_node.html#doc11179432bodyText1</link></para><section>
+         <title>Teilnahme gemeinsamer Unterricht</title><para>Diese Codeliste gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich handelt, ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para>
+<para><emphasis role="bold">Weitere Informationen zu Formen des gemeinsamen Unterrichts:</emphasis> <link xlink:href="https://www.einfach-teilhaben.de/DE/AS/Themen/Schule/FoerderungSchule/GemeinsamerUnterricht/gemeinsamerunterricht_node.html#doc11179432bodyText1">https://www.einfach-teilhaben.de/DE/AS/Themen/Schule/FoerderungSchule/GemeinsamerUnterricht/gemeinsamerunterricht_node.html#doc11179432bodyText1</link></para><section>
             <title>Metadaten</title>
             <informaltable>
                <tgroup cols="2">
@@ -3116,11 +3203,6 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
                      <row>
                         <entry>Version</entry>
                         <entry>1.0</entry>
-                     </row>
-                     <row>
-                        <entry>Beschreibung (Version)</entry>
-                        <entry>Gibt an, um welche Art der Teilnahme am gemeinsamen Unterricht es sich
-			handelt.</entry>
                      </row>
                   </tbody>
                </tgroup>
@@ -3176,7 +3258,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.verpflichtungsgrad.Verpflichtungsgrad-Codes">
-         <title>Verpflichtungsgrad</title><para>Die Codeliste basiert auf dem Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0. Sie enthält die möglichen Verpflichtungsgrade besuchter Unterrichte, erweitert um "Wert nicht in Liste" und landesspezifische Bedarfe der XSchule-Stakeholder.</para>
+         <title>Verpflichtungsgrad</title><para>Die Codeliste basiert auf dem <link xlink:href="https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP17/Drucksachen/5000/17_5514_D.pdf">Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0</link>. Sie enthält die möglichen Verpflichtungsgrade besuchter Unterrichte, erweitert um "Wert nicht in Liste" und landesspezifische Bedarfe der XSchule-Stakeholder.</para>
 <para>Die Teilnahme an einer Arbeitsgemeinschaft muss als <link linkend="XSchule.Baukasten.Bemerkung">strukturierte Bemerkung</link> (Seite <xref linkend="XSchule.Baukasten.Bemerkung" role="Seitenzahl"/>) modelliert werden.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -3294,7 +3376,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
          <?KoSIT-FO hard-pagebreak?>
       </section>
       <section xml:id="tabelle.urn.xschule-digital.xschule.codeliste.versetzungstyp.Versetzungstyp-Codes">
-         <title>Versetzungstyp</title><para>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden. Sollte keine Angabe möglich sein, kann der Grund dafür angegeben werden.</para>
+         <title>Versetzungstyp</title><para>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden, ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt".</para>
 <para>Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</para><section>
             <title>Metadaten</title>
             <informaltable>
@@ -3341,7 +3423,7 @@ Sie enthält die Synthese aller möglichen Ausprägungen der Merkmale "Klassenst
                   <thead>
                      <row>
                         <entry align="left">code</entry>
-                        <entry align="left">description-de-DE (Beschreibung)</entry>
+                        <entry align="left">description-de-DE (Versetzungstyp)</entry>
                      </row>
                   </thead>
                   <tbody>

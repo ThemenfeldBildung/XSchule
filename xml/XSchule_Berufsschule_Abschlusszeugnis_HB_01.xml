@@ -7,7 +7,7 @@
     xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
 
     <!--
-        Datum: 02.02.2024
+        Datum: 28.05.2024
         Beispieldatei: https://xbildung.de/def/rep/hb/example/abschlusszeugnis_berufsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt 
     -->
@@ -116,22 +116,12 @@
         <xsc:bezeichnung>Berufsübergreifender Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>Deutsch</xsc:bezeichnung>
-            <xsc:note>
-                <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
-            </xsc:note>
+            
             <xsc:verpflichtungsgrad>
                 <xsc:code>
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
@@ -140,10 +130,9 @@
                 
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
             </xsc:jahrgangsstufe>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Wirtschaftsenglisch</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -152,14 +141,15 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Wirtschaftsenglisch</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>
                 <xsc:code>
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
@@ -167,10 +157,9 @@
                 -->
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Politik</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -179,14 +168,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Politik</xsc:bezeichnung>
+            
             <xsc:verpflichtungsgrad>
                 <xsc:code>
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
@@ -194,10 +185,9 @@
                 -->
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgangsstufe>
-        </xsc:kurs>
-
-        <xsc:kurs>
-            <xsc:bezeichnung>Grundlagen des Rechnungswesens</xsc:bezeichnung>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -206,14 +196,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
+        </xsc:kurs>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Grundlagen des Rechnungswesens</xsc:bezeichnung>
+            
             <xsc:verpflichtungsgrad>
                 <xsc:code>
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
             <xsc:jahrgangsstufe>
                 <!-- xsc:jahrgangsstufe: 
                      Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
@@ -221,10 +213,36 @@
                 -->
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
+                <note>3</note>
+                <wortbezeichnung>befriedigend</wortbezeichnung>
+                <bewertungsschemaNote>
+                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
+                </bewertungsschemaNote>
+            </xsc:note>
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Moderner Schriftverkehr</xsc:bezeichnung>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <!-- xsc:jahrgangsstufe: 
+                     Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
+                     Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
+                -->
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -233,21 +251,7 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:verpflichtungsgrad>
-                <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
-                </xsc:code>
-            </xsc:verpflichtungsgrad>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <!-- xsc:jahrgangsstufe: 
-                     Es gibt keine Möglichkeit "ganzer Nachweiszeitraum" oder "vorhergegangenes Ausbildungsjahr" auszuwählen. 
-                     Mit * markierte Noten wurden zufällig beispielhaft auf Jahrgangsstufe 1 und 2 verteilt. Ohne * auf Jahrgangsstufe 3. 
-                -->
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
+            
         </xsc:kurs>
     </xsc:leistungen>
 
@@ -256,6 +260,12 @@
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 1 - Berufsbezogener Lernbereich präsentieren</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>4</note>
@@ -264,16 +274,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 2 - Beruf und Ausbildungsbetrieborganisieren</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -282,16 +292,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 3 - Arbeitsabläufe im Team und Abwicklung von Verträgen anwenden</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>4</note>
@@ -300,16 +310,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 4 - Schuldrechtliche Regelungen bei der Vorbereitung geltend machen</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -318,16 +328,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 5 - Ansprüche außergerichtlich wahrnehmen</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -336,16 +346,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 6 - Aufgaben im Personalbereich kontrollieren und bewerten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>4</note>
@@ -354,16 +364,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 7 - Geschäftsprozesse erfassen,betriebliche Entscheidungen beurteilen</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -372,16 +382,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 8 - Wirtschaftliche Einflüsse auf der Auftragsbearbeitung anwenden</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -390,16 +400,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 9 - Sachenrechtliche Regelungen bei selbstständig bearbeiten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -408,16 +418,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 10 - Aufgaben im gerichtlichen Mahnwesen erstinstanzlichen Verfahren bearbeiten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -426,16 +436,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 11 - Das zivilrechtliche Mandat im Rechtsmittelverfahren begleiten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>4</note>
@@ -444,16 +454,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 12 - Rechtsbehelfs- und Vorgänge in der Zwangsvollstreckung bearbeiten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>4</note>
@@ -462,16 +472,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 13 - Angelegenheiten tätig werden</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>3</note>
@@ -480,16 +490,16 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
         <xsc:kurs>
             <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
             <xsc:bezeichnung>Lernfeld 14 - In familien- und erbrechtlichen Besondere Verfahren bearbeiten</xsc:bezeichnung>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
             <xsc:note>
                 <!-- Schema und Umrechnung von Wortbezeichnung zu Note hergeleitet -->
                 <note>2</note>
@@ -498,12 +508,6 @@
                     <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
                 </bewertungsschemaNote>
             </xsc:note>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
-            </xsc:jahrgangsstufe>
         </xsc:kurs>
     </xsc:leistungen>
 

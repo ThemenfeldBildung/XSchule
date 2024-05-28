@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Versetzungstyp</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden. Sollte keine Angabe möglich sein, kann der Grund dafür angegeben werden. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Mit dieser Codeliste können Detailangaben zur Versetzung von einem Schuljahrgang in einen anderen gemacht werden, ergänzt um "Wert nicht bekannt", "Wert nicht in Liste" sowie "Wert aus rechtlichen Gründen nicht übermittelt". Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XSchule</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -27,7 +27,7 @@
       </Column>
       <Column Id="description-de-DE" Use="required">
          <ShortName>description-de-DE</ShortName>
-         <LongName>Beschreibung</LongName>
+         <LongName>Versetzungstyp</LongName>
          <Data Type="string"/>
       </Column>
       <Key Id="codeKey">

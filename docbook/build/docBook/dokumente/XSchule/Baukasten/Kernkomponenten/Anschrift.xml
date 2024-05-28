@@ -8,9 +8,7 @@
          xml:id="XSchule.Baukasten.Kernkomponenten.Anschrift">
    <title>Anschrift</title>
    <subtitle>Typ: <emphasis role="codebf">Anschrift</emphasis>
-   </subtitle><para>Die Klasse enthält die Angaben zu der Anschrift.</para>
-
-<figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.Anschrift">
+   </subtitle><para>Diese Klasse beschreibt einen Ort mit den klassischen Ordnungsbegriffen wie Orts- und Straßennamen sowie ergänzenden Informationen wie Ortsteil und Postfach.</para><figure xml:id="figure.XSchule.Baukasten.Kernkomponenten.Anschrift">
       <title>Anschrift</title>
       <mediaobject>
          <imageobject>
@@ -53,7 +51,7 @@
                   <emphasis role="bold">strasse</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -78,7 +76,7 @@
                   <emphasis role="bold">hausnummer</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -103,7 +101,7 @@ Da manche Gebäude oder Organisationen sich als Einheit über mehrere Hausnummer
                   <emphasis role="bold">postfach</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -125,7 +123,7 @@ Da manche Gebäude oder Organisationen sich als Einheit über mehrere Hausnummer
                   <emphasis role="bold">postleitzahl</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -149,7 +147,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">ort</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -171,7 +169,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">ortsteil</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>
@@ -191,7 +189,7 @@ Eine Beschränkung auf deutsche Postleitzahlen (5-stellig) wurde bewusst nicht v
                   <emphasis role="bold">zusatz</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">datatypeB</emphasis>
+                  <emphasis role="codebf">datatypeC</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">0..1</emphasis>

@@ -2,32 +2,6 @@
 <kosit:types xmlns:kosit="http://www.xoev.de/de/kosit-zubehoer/3_0_0"
              xmlns="http://docbook.org/ns/docbook"
              xmlns:xlink="http://www.w3.org/1999/xlink">
-   <kosit:type name="Abschlussarbeit" prefix="xbd">
-      <kosit:property name="noteDerArbeit"/>
-      <kosit:property name="noteDerArbeit/note"/>
-      <kosit:property name="noteDerArbeit/wortbezeichnung"/>
-      <kosit:property name="noteDerArbeit/wortbezeichnung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/schemaURI"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/beschreibung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/beschreibung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/schlechtesteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/bestandenAbBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/besteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaNote/weitereInformationen"/>
-      <kosit:property name="noteDerArbeit/punkte"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/schemaURI"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/beschreibung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/beschreibung/@lang"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/schlechtesteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/bestandenAbBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/besteBewertung"/>
-      <kosit:property name="noteDerArbeit/bewertungsschemaPunkte/weitereInformationen"/>
-      <kosit:property name="titelDerArbeit"/>
-      <kosit:property name="titelDerArbeit/@lang"/>
-      <kosit:property name="urlDerArbeit"/>
-   </kosit:type>
    <kosit:type name="AllgemeinerName"
                id="XSchule.Baukasten.Kernkomponenten.AllgemeinerName"
                prefix="xsc">
@@ -76,7 +50,6 @@
       <kosit:property name="postleitzahl"/>
       <kosit:property name="staat"/>
    </kosit:type>
-   <kosit:type name="Anschriftstyp-Codes" prefix=""/>
    <kosit:type name="BehoerdeType" prefix="bn-beh">
       <kosit:property name="erreichbarkeit"/>
       <kosit:property name="erreichbarkeit/kanal"/>
@@ -153,7 +126,6 @@
    <kosit:type name="Code.Anforderungsniveau"
                id="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
                prefix="xsc"/>
-   <kosit:type name="Code.Anschriftstyp" prefix="xbd"/>
    <kosit:type name="Code.ArtDerBemerkung"
                id="XSchule.Baukasten.Codes.Code.ArtDerBemerkung"
                prefix="xsc"/>
@@ -217,7 +189,9 @@
                id="XSchule.Baukasten.Codes.Code.Krankheit"
                prefix="xsc"/>
    <kosit:type name="Code.Kreis" prefix="xbd"/>
-   <kosit:type name="Code.Kursstatus" prefix="xbd"/>
+   <kosit:type name="Code.Kursstatus"
+               id="XSchule.Baukasten.Codes.Code.Kursstatus"
+               prefix="xsc"/>
    <kosit:type name="Code.Language" prefix="xbd"/>
    <kosit:type name="Code.Laufbahnempfehlung"
                id="XSchule.Baukasten.Codes.Code.Laufbahnempfehlung"
@@ -228,7 +202,6 @@
    <kosit:type name="Code.Nachweisperiode"
                id="XSchule.Baukasten.Codes.Code.Nachweisperiode"
                prefix="xsc"/>
-   <kosit:type name="Code.Namensart" prefix="xbd"/>
    <kosit:type name="Code.Regionalschluessel" prefix="xbd"/>
    <kosit:type name="Code.Staat" prefix="xbd"/>
    <kosit:type name="Code.Staatsangehoerigkeit" prefix="xbd"/>
@@ -807,10 +780,33 @@
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/identifikation/gueltigkeit/zusatz"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/bezeichnung"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/bezeichnung/@lang"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/beschreibung"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/beschreibung/@lang"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/fach"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/schwerpunkt"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/schwerpunkt/@lang"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/nichtGelisteterWert"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/beschreibung"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/beschreibung/@lang"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/anforderungsniveau"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/nichtGelisteterWert"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/schluesselISCEDF2013"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/sprache"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/code"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/beginn"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ende"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/belegteJahre"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ger"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/erreichterAbschluss"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/fach"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/jahrgangsstufe"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/halbjahr"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note/note"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note/wortbezeichnung"/>
@@ -833,30 +829,7 @@
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note/bewertungsschemaPunkte/besteBewertung"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note/bewertungsschemaPunkte/weitereInformationen"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/status"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/schluesselISCEDF2013"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/code"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/aufgabenfeld/nichtGelisteterWert"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/fach"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/anforderungsniveau"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/code"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/verpflichtungsgrad/nichtGelisteterWert"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/halbjahr"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/jahrgangsstufe"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/berechnungsgrundlage"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/sprache"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/code"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/beginn"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ende"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/belegteJahre"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/ger"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/erreichterAbschluss"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/fach"/>
-      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
    </kosit:type>
    <kosit:type name="Ortsangabe"
                id="XSchule.Baukasten.Kernkomponenten.Ortsangabe"
@@ -1425,10 +1398,33 @@
       <kosit:property name="wahpflichtkurs/identifikation/gueltigkeit/zusatz"/>
       <kosit:property name="wahpflichtkurs/bezeichnung"/>
       <kosit:property name="wahpflichtkurs/bezeichnung/@lang"/>
-      <kosit:property name="wahpflichtkurs/beschreibung"/>
-      <kosit:property name="wahpflichtkurs/beschreibung/@lang"/>
+      <kosit:property name="wahpflichtkurs/fach"/>
       <kosit:property name="wahpflichtkurs/schwerpunkt"/>
       <kosit:property name="wahpflichtkurs/schwerpunkt/@lang"/>
+      <kosit:property name="wahpflichtkurs/aufgabenfeld"/>
+      <kosit:property name="wahpflichtkurs/aufgabenfeld/code"/>
+      <kosit:property name="wahpflichtkurs/aufgabenfeld/nichtGelisteterWert"/>
+      <kosit:property name="wahpflichtkurs/beschreibung"/>
+      <kosit:property name="wahpflichtkurs/beschreibung/@lang"/>
+      <kosit:property name="wahpflichtkurs/anforderungsniveau"/>
+      <kosit:property name="wahpflichtkurs/verpflichtungsgrad"/>
+      <kosit:property name="wahpflichtkurs/verpflichtungsgrad/code"/>
+      <kosit:property name="wahpflichtkurs/verpflichtungsgrad/nichtGelisteterWert"/>
+      <kosit:property name="wahpflichtkurs/schluesselISCEDF2013"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/sprache"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge/code"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/beginn"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/ende"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/belegteJahre"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/ger"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/erreichterAbschluss"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/fach"/>
+      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
+      <kosit:property name="wahpflichtkurs/jahrgangsstufe"/>
+      <kosit:property name="wahpflichtkurs/halbjahr"/>
       <kosit:property name="wahpflichtkurs/note"/>
       <kosit:property name="wahpflichtkurs/note/note"/>
       <kosit:property name="wahpflichtkurs/note/wortbezeichnung"/>
@@ -1451,30 +1447,7 @@
       <kosit:property name="wahpflichtkurs/note/bewertungsschemaPunkte/besteBewertung"/>
       <kosit:property name="wahpflichtkurs/note/bewertungsschemaPunkte/weitereInformationen"/>
       <kosit:property name="wahpflichtkurs/status"/>
-      <kosit:property name="wahpflichtkurs/schluesselISCEDF2013"/>
-      <kosit:property name="wahpflichtkurs/aufgabenfeld"/>
-      <kosit:property name="wahpflichtkurs/aufgabenfeld/code"/>
-      <kosit:property name="wahpflichtkurs/aufgabenfeld/nichtGelisteterWert"/>
-      <kosit:property name="wahpflichtkurs/fach"/>
-      <kosit:property name="wahpflichtkurs/anforderungsniveau"/>
-      <kosit:property name="wahpflichtkurs/verpflichtungsgrad"/>
-      <kosit:property name="wahpflichtkurs/verpflichtungsgrad/code"/>
-      <kosit:property name="wahpflichtkurs/verpflichtungsgrad/nichtGelisteterWert"/>
-      <kosit:property name="wahpflichtkurs/halbjahr"/>
-      <kosit:property name="wahpflichtkurs/jahrgangsstufe"/>
       <kosit:property name="wahpflichtkurs/berechnungsgrundlage"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/sprache"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge/code"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/abfolge/nichtGelisteterWert"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/beginn"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/ende"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/belegteJahre"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/ger"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/erreichterAbschluss"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/fach"/>
-      <kosit:property name="wahpflichtkurs/vermittelteSprachkenntnis/herkunftssprachlicherUnterricht"/>
       <kosit:property name="zeitraum"/>
       <kosit:property name="zeitraum/beginn"/>
       <kosit:property name="zeitraum/ende"/>
