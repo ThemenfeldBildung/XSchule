@@ -14,19 +14,14 @@
 		(z.B. Priorität der Leistungen aufgrund von Relevanz für Übertritt in weitere Lebenslagen,
 		Häufigkeit der Anwendungsfälle, etc.) wurden sog. Kernanwendungsfälle identifiziert. Diese
 		sollen priorisiert in dem XSchule-Datenaustauschmodell abgebildet werden. Sukzessive sollen
-		dann mehr und mehr Anwendungsfälle in XSchule enthalten sein.</para>
+		dann mehr und mehr Anwendungsfälle in XSchule enthalten sein.
+	</para>
 	<para>Die Kernanwendungsfälle sind der <link linkend="XSchule.Nachweise.schueler.wechsel.0001"
-			>Schulwechsel</link> in der Primarstufe sowie das Ausstellen <link
+			>Schulwechsel</link> sowie das Ausstellen <link
 			linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">des Zeugnisses der allgemeinen
-			Hochschulreife (Abiturzeugnis)</link>. Ab Version 0.7 wurde die <link
-			linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004">Ausstellen der
-			Bescheinigung über den Schulbesuch</link> noch mit aufgenommen. </para>
-	<para>Seit und mit der XSchule-Version 0.3 werden iterativ weitere Datenfelder in der
-		Spezifikation aufgenommen, die sowohl den Wechsel in der Sekundarstufe I/II sowie das
-		Ausstellen von weiteren Zeugnisarten (s. <link
-			linkend="XSchule.Nachweise.schueler.zeugnis.0003">II.A.3 schueler.zeugnis.0003</link>)
-		ermöglichen sollen.</para>
-	<section>
+			Hochschulreife (Abiturzeugnis)</link>. Darüber hinaus definiert die XSchule-Spezifikation <xref
+		linkend="spezifikation.einleitung.dieKernanwendungsfälle.0004" role="Titel"/> wie die Ausstellung weiterer Zeugnisarten und der Schulbescheinigung.</para>
+		<section>
 		<info>
 			<title>Schulwechsel</title>
 		</info>
@@ -82,8 +77,8 @@
 		<info>
 			<title>Ausstellen des Zeugnisses der allgemeinen Hochschulreife (Abiturzeugnis)</title>
 		</info>
-		<para>Den jungen Menschen wird nach erfolgreichem Abschluss der Sekundarstufe II das Zeugnis der
-			allgemeinen Hochschulreife ausgestellt. Dieses Zeugnis ermöglicht ihnen dann den
+		<para>Den jungen Menschen wird nach erfolgreichem Abschluss der Sekundarstufe II das Zeugnis
+			der allgemeinen Hochschulreife ausgestellt. Dieses Zeugnis ermöglicht ihnen dann den
 			Übertritt in weitere Lebenslagen, wie beispielsweise in die Lebenslage Studium durch die
 			Bewerbung an Universitäten und Hochschulen oder den Übergang in den Beruf durch die
 			Bewerbung bei potenziellen Arbeitgebern. Für die Ausstellung des Zeugnisses der
@@ -94,26 +89,65 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata align="center" fileref="../abbildungen/Einleitung_Abb_3.svg" format="SVG"
-					scale="80"/>
+					scale="56"/>
 			</imageobject>
+			<caption>
+				<para>Hinweis: Diese Dartstellung dient lediglich als Illustration. Alle angegebenen Formeln, Bemerkungen, etc. sind nicht verbindlich.</para>
+			</caption>
 		</mediaobject>
 	</section>
 	<section xml:id="spezifikation.einleitung.dieKernanwendungsfälle.0004">
 		<info>
-			<title>Ausstellen der Bescheinigung über den Schulbesuch (Schulbescheinigung)</title>
+			<title>Weitere Anwendungsfälle</title>
 		</info>
-		<para>Die Schulbescheinigung ist ein offizielles Dokument, das von Schulen ausgestellt wird
-			und bestätigt, dass ein junger Mensch an einer bestimmten Schule eingeschrieben ist und
-			dort Schulbildung erhält.</para>
-		<para>Im Gegensatz zu Schulzeugnissen muss für die Ausstellung einer Schulbescheinigung ein
-			entsprechender Antrag des jungen Menschen bzw. der erziehungsberechtigten Person
-			vorliegen. Für einen solchen Antrag kann es mehrere Gründe geben. In einigen Fällen
-			benötigen Erziehungsberechtigte eine Bescheinigung über den Schulbesuch, um bestimmte
-			staatliche Leistungen zu erhalten. Die Schulbescheinigung ist auch erforderlich für
-			junge Menschen, die eine weite Strecke zur Schule zurücklegen müssen, um eine Erstattung
-			der Fahrtkosten beantragen.</para>
-		<para>Außerdem ist eine Schulbescheinigung häufig als Vorlage beim Arbeitgeber erforderlich,
-			wenn junge Menschen neben der Schule arbeiten möchten oder ein Schulpraktikum
-			absolvieren müssen.</para>
+		<para>Neben den beiden Kernanwendungsfällen werden noch Nachweise für andere Anwendungsfälle
+			zur Verfügung gestellt.</para>
+		<section>
+			<info>
+				<title>Generisches Zeugnis</title>
+			</info>
+			<para>Das generische Zeugnis soll die maximale Flexibilität für die Erstellung einer
+				digitalen Zeugnisausfertigung erlauben. In seiner ersten Ausprägung beinhaltete es
+				alle Informationen, die für die Darstellung von Realschul-Zeugnissen notwendig sind. </para>
+			<para>Mit der Einführung des BVJ-Zeugnisses wurde das generische Zeugnis um weitere
+				nachnutzbare Elemente erweitert. Dieses Vorgehen ist auch zukünftig geplant: Wird
+				für ein spezielles Zeugnis eine Anforderung identifiziert, die auch in anderen
+				Kontexten genutzt werden könnte, wird sie für das spezifische Zeugnis und das
+				generische Zeugnis umgesetzt.</para>
+			<para>Wenn in einem Umsetzungsprojekt das Datenmodell des generischen Zeugnisses genutzt
+				werden soll, sollte die geplante Nutzung ("Profilierung") dokumentiert werden.
+				Hierfür kann zum Beispiel das KoSIT-Tool "XÖV-Suite" (<link
+					xlink:href="https://suite.xoev.de/">https://suite.xoev.de/</link>) genutzt
+				werden.</para>
+		</section>
+		<section>
+			<info>
+				<title>Ausstellen der Bescheinigung über den Schulbesuch
+					(Schulbescheinigung)</title>
+			</info>
+			<para>Die Schulbescheinigung ist ein offizielles Dokument, das von Schulen ausgestellt
+				wird und bestätigt, dass ein junger Mensch an einer bestimmten Schule eingeschrieben
+				ist und dort Schulbildung erhält.</para>
+			<para>Im Gegensatz zu Schulzeugnissen muss für die Ausstellung einer Schulbescheinigung
+				ein entsprechender Antrag des jungen Menschen bzw. der erziehungsberechtigten Person
+				vorliegen. Für einen solchen Antrag kann es mehrere Gründe geben. In einigen Fällen
+				benötigen Erziehungsberechtigte eine Bescheinigung über den Schulbesuch, um
+				bestimmte staatliche Leistungen zu erhalten. Die Schulbescheinigung ist auch
+				erforderlich für junge Menschen, die eine weite Strecke zur Schule zurücklegen
+				müssen, um eine Erstattung der Fahrtkosten beantragen.</para>
+			<para>Außerdem ist eine Schulbescheinigung häufig als Vorlage beim Arbeitgeber
+				erforderlich, wenn junge Menschen neben der Schule arbeiten möchten oder ein
+				Schulpraktikum absolvieren müssen.</para>
+		</section>
+		<section>
+			<info>
+				<title>Zeugnis Berufsvorbereitungsjahr</title>
+			</info>
+			<para>Das Zeugnis für das Berufsvorbereitungsjahr ist als Zusammenarbeit zwischen den
+				Stakeholdern von XSchule und XBerufsbildung entstanden. Ausganspunkt für die
+				Modellierung waren Zeugnisse für das Berufsvorbereitungsjahr. Das Datenmodell ist
+				jedoch so flexibel gehalten worden, dass es auch für vergleichbare
+				berufsvorbereitende Bildungsgänge genutzt werden kann.</para>
+		</section>
 	</section>
 </chapter>

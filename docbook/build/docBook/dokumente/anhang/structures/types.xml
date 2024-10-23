@@ -126,9 +126,7 @@
    <kosit:type name="Code.Anforderungsniveau"
                id="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
                prefix="xsc"/>
-   <kosit:type name="Code.ArtDerBemerkung"
-               id="XSchule.Baukasten.Codes.Code.ArtDerBemerkung"
-               prefix="xsc"/>
+   <kosit:type name="Code.ArtDerBemerkung" prefix="xbd"/>
    <kosit:type name="Code.ArtDerHZB"
                id="XSchule.Baukasten.Codes.Code.ArtDerHZB"
                prefix="xsc"/>
@@ -164,9 +162,7 @@
                id="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
                prefix="xsc"/>
    <kosit:type name="Code.Geschlecht" prefix="xbd"/>
-   <kosit:type name="Code.GesetzlicherVertreter"
-               id="XSchule.Baukasten.Codes.Code.GesetzlicherVertreter"
-               prefix="xsc"/>
+   <kosit:type name="Code.GesetzlicherVertreter" prefix="xbd"/>
    <kosit:type name="Code.Halbjahr"
                id="XSchule.Baukasten.Codes.Code.Halbjahr"
                prefix="xsc"/>
@@ -196,6 +192,7 @@
    <kosit:type name="Code.Laufbahnempfehlung"
                id="XSchule.Baukasten.Codes.Code.Laufbahnempfehlung"
                prefix="xsc"/>
+   <kosit:type name="Code.Lernzeitmodell" prefix="xbd"/>
    <kosit:type name="Code.Nachpruefung"
                id="XSchule.Baukasten.Codes.Code.Nachpruefung"
                prefix="xsc"/>
@@ -228,6 +225,7 @@
       <kosit:property name="ausstellung/ort/ort"/>
       <kosit:property name="ausstellung/ort/staat"/>
       <kosit:property name="gueltigkeitsdatum"/>
+      <kosit:property name="nonce"/>
       <kosit:property name="sprache"/>
       <kosit:property name="titel"/>
       <kosit:property name="titel/@lang"/>
@@ -830,6 +828,7 @@
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/note/bewertungsschemaPunkte/weitereInformationen"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/status"/>
       <kosit:property name="notenuebersichtUnterjaehrigerWechsel/berechnungsgrundlage"/>
+      <kosit:property name="notenuebersichtUnterjaehrigerWechsel/stunden"/>
    </kosit:type>
    <kosit:type name="Ortsangabe"
                id="XSchule.Baukasten.Kernkomponenten.Ortsangabe"
@@ -1021,6 +1020,56 @@
       <kosit:property name="schulform/nichtGelisteterWert"/>
       <kosit:property name="schulprofil"/>
       <kosit:property name="schulprofil/@lang"/>
+   </kosit:type>
+   <kosit:type name="SchuelerBVJZeugnis"
+               id="XSchule.Baukasten.Kernkomponenten.SchuelerBVJZeugnis"
+               prefix="xsc">
+      <kosit:property name="geburt"/>
+      <kosit:property name="geburt/datum"/>
+      <kosit:property name="geburt/datum/jahrMonatTag"/>
+      <kosit:property name="geburt/datum/jahrMonat"/>
+      <kosit:property name="geburt/datum/jahr"/>
+      <kosit:property name="geburt/geburtsort"/>
+      <kosit:property name="geburt/geburtsort/ort"/>
+      <kosit:property name="geburt/geburtsort/staat"/>
+      <kosit:property name="identifikationsnummer"/>
+      <kosit:property name="identifikationsnummer/id"/>
+      <kosit:property name="identifikationsnummer/beschreibung"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/beginn"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/ende"/>
+      <kosit:property name="identifikationsnummer/gueltigkeit/zusatz"/>
+      <kosit:property name="nameNatuerlichePerson"/>
+      <kosit:property name="nameNatuerlichePerson/titel"/>
+      <kosit:property name="nameNatuerlichePerson/anrede"/>
+      <kosit:property name="nameNatuerlichePerson/familienname"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/name"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/alternativeRepraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/alternativeRepraesentation/repraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/alternativeRepraesentation/algorithmus"/>
+      <kosit:property name="nameNatuerlichePerson/familienname/alternativeRepraesentation/hinweis"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/name"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/alternativeRepraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/alternativeRepraesentation/repraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/alternativeRepraesentation/algorithmus"/>
+      <kosit:property name="nameNatuerlichePerson/geburtsname/alternativeRepraesentation/hinweis"/>
+      <kosit:property name="nameNatuerlichePerson/vorname"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/name"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/alternativeRepraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/alternativeRepraesentation/repraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/alternativeRepraesentation/algorithmus"/>
+      <kosit:property name="nameNatuerlichePerson/vorname/alternativeRepraesentation/hinweis"/>
+      <kosit:property name="nameNatuerlichePerson/rufname"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/name"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/nichtVorhanden"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/alternativeRepraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/alternativeRepraesentation/repraesentation"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/alternativeRepraesentation/algorithmus"/>
+      <kosit:property name="nameNatuerlichePerson/rufname/alternativeRepraesentation/hinweis"/>
    </kosit:type>
    <kosit:type name="SchuelerReisend"
                id="XSchule.Baukasten.SchuelerReisend"
@@ -1448,6 +1497,7 @@
       <kosit:property name="wahpflichtkurs/note/bewertungsschemaPunkte/weitereInformationen"/>
       <kosit:property name="wahpflichtkurs/status"/>
       <kosit:property name="wahpflichtkurs/berechnungsgrundlage"/>
+      <kosit:property name="wahpflichtkurs/stunden"/>
       <kosit:property name="zeitraum"/>
       <kosit:property name="zeitraum/beginn"/>
       <kosit:property name="zeitraum/ende"/>
@@ -1535,6 +1585,7 @@
       <kosit:property name="schwerpunkt"/>
       <kosit:property name="schwerpunkt/@lang"/>
       <kosit:property name="status"/>
+      <kosit:property name="stunden"/>
       <kosit:property name="vermittelteSprachkenntnis"/>
       <kosit:property name="vermittelteSprachkenntnis/sprache"/>
       <kosit:property name="vermittelteSprachkenntnis/abfolge"/>

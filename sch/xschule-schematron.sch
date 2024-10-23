@@ -15,11 +15,11 @@
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.0/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.1/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
-   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/1.0/xsd"/>
+   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/1.1/xsd"/>
    <sch:pattern>
       <!--Abstrakte Regeln-->
       <!-- /Data/XSchule/Nachweise/schueler.abiturzeugnis.0002 -->
@@ -73,6 +73,11 @@
          <sch:assert id="XSC-1000-0004-WNIL_LE"
                      test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</sch:assert>
       </sch:rule>
+      <!-- /Data/XSchule/Baukasten/Anonymous/wnil.Lernzeitmodell -->
+      <sch:rule id="rule-XSC-1000-0015-WNIL_LZM" abstract="true">
+         <sch:assert id="XSC-1000-0015-WNIL_LZM"
+                     test="(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))">Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</sch:assert>
+      </sch:rule>
       <!-- /Data/XSchule/Baukasten/Anonymous/wnil.Nachpruefung -->
       <sch:rule id="rule-XSC-1000-0009-WNIL_NPr" abstract="true">
          <sch:assert id="XSC-1000-0009-WNIL_NPr"
@@ -105,6 +110,9 @@
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:abfolge">
          <sch:extends rule="rule-XSC-1000-0001-WNIL_AdF"/>
       </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:abfolge">
+         <sch:extends rule="rule-XSC-1000-0001-WNIL_AdF"/>
+      </sch:rule>
       <sch:rule context="xsc:schueler.wechsel.0001//xsc:abfolge">
          <sch:extends rule="rule-XSC-1000-0001-WNIL_AdF"/>
       </sch:rule>
@@ -132,6 +140,9 @@
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:verpflichtungsgrad">
          <sch:extends rule="rule-XSC-1000-0007-WNIL_VG"/>
       </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:verpflichtungsgrad">
+         <sch:extends rule="rule-XSC-1000-0007-WNIL_VG"/>
+      </sch:rule>
       <sch:rule context="xsc:schueler.wechsel.0001//xsc:verpflichtungsgrad">
          <sch:extends rule="rule-XSC-1000-0007-WNIL_VG"/>
       </sch:rule>
@@ -144,10 +155,16 @@
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:nachpruefung">
          <sch:extends rule="rule-XSC-1000-0009-WNIL_NPr"/>
       </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:nachpruefung">
+         <sch:extends rule="rule-XSC-1000-0009-WNIL_NPr"/>
+      </sch:rule>
       <sch:rule context="xsc:schueler.zeugnis.0003//xsc:nachpruefung">
          <sch:extends rule="rule-XSC-1000-0009-WNIL_NPr"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:aufgabenfeld">
+         <sch:extends rule="rule-XSC-1000-0010-WNIL_AF"/>
+      </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:aufgabenfeld">
          <sch:extends rule="rule-XSC-1000-0010-WNIL_AF"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.wechsel.0001//xsc:aufgabenfeld">
@@ -162,10 +179,16 @@
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:artDerPruefung">
          <sch:extends rule="rule-XSC-1000-0012-WNIL_AdP"/>
       </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:artDerPruefung">
+         <sch:extends rule="rule-XSC-1000-0012-WNIL_AdP"/>
+      </sch:rule>
       <sch:rule context="xsc:schueler.zeugnis.0003//xsc:artDerPruefung">
          <sch:extends rule="rule-XSC-1000-0012-WNIL_AdP"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:artDesSchulabschlusses">
+         <sch:extends rule="rule-XSC-1000-0013-WNIL_AdSA"/>
+      </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:artDesSchulabschlusses">
          <sch:extends rule="rule-XSC-1000-0013-WNIL_AdSA"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.schulbescheinigung.0004//xsc:voraussichtlicherAbschluss">
@@ -177,6 +200,9 @@
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:schulform">
          <sch:extends rule="rule-XSC-1000-0014-WNIL_AdS"/>
       </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:schulform">
+         <sch:extends rule="rule-XSC-1000-0014-WNIL_AdS"/>
+      </sch:rule>
       <sch:rule context="xsc:schueler.schulbescheinigung.0004//xsc:schulform">
          <sch:extends rule="rule-XSC-1000-0014-WNIL_AdS"/>
       </sch:rule>
@@ -185,6 +211,12 @@
       </sch:rule>
       <sch:rule context="xsc:schueler.zeugnis.0003//xsc:schulform">
          <sch:extends rule="rule-XSC-1000-0014-WNIL_AdS"/>
+      </sch:rule>
+      <sch:rule context="xsc:schueler.bvjzeugnis.0005//xsc:lernzeitmodell">
+         <sch:extends rule="rule-XSC-1000-0015-WNIL_LZM"/>
+      </sch:rule>
+      <sch:rule context="xsc:schueler.zeugnis.0003//xsc:lernzeitmodell">
+         <sch:extends rule="rule-XSC-1000-0015-WNIL_LZM"/>
       </sch:rule>
    </sch:pattern>
 </sch:schema>

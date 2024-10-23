@@ -13,167 +13,157 @@
     <para>In der Versionshistorie werden die Änderungen der aktuellen Version zur Vorversion der
         Spezifikation dargestellt. Es werden die Änderungen der letzten zwei Versionen
         aufgeführt.</para>
-
-    <section xml:id="spezifikation.anhang.versionshistorie10">
+    <section xml:id="spezifikation.anhang.versionshistorie11">
         <info>
             <title>Version &version;</title>
         </info>
         <para>Veröffentlichungsdatum: &fassung;</para>
 
         <section>
-            <title>Neues Konzept zur Einbindung der Kernkomponenten</title>
-            <para>Die XÖV-Kernkomponenten wurden aus XBildung entfernt und sind mit der Version 1.0
-                XSchule direkt über die XÖV-Bibliothek eingebunden.</para>
-            <para> Die Kernkomponente NatuerlichePerson wurde anwendungsfallspezifisch modelliert
-                und wurde dadurch zu <link linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
-                    >Schueler</link>, <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
-                    >SchuelerWechselnd</link> und <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
-                    >SchuelerAbiturzeugnis</link>. Durch SchuelerWechselnd kann der Anwendungsfall
-                der <link linkend="XSchule.Nachweise.schueler.wechsel.0001">Wechselnachricht</link>
-                erfüllt werden, SchuelerAbiturzeugnis wird im <link
-                    linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link>
-                verwendet. Der <link linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
-                    >Schueler</link> findet im <link
-                    linkend="XSchule.Nachweise.schueler.zeugnis.0003">generischen Zeugnis</link>
-                sowie in der <link linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004"
-                    >Schulbescheinigung</link> Anwendung. Neben der <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Anschrift">Anschrift</link> wurde
-                zusätzlich die <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.AnschriftSchuelerAbiturzeugnis"
-                    >AnschriftSchuelerAbiturzeugnis</link> angelegt. Hierbei handelt es sich um eine
-                reduzierte Anschrift, die lediglich aus Postleitzahl, Ort und Staat besteht und für
-                das Abiturzeugnis verwendet wird. </para>
-            <para> Im Rahmen der Neueinbindung der Kernkomponenten aus der XÖV-Bibliothek ins
-                XSchule-Modell wurde die Klasse <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link> strukturell
-                überarbeitet. Drei Kernkomponenten <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link>, <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht">SchuleBesucht</link>
-                und <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
-                    >SchuleAufnehmend</link> wurden als Kernkomponente "Organisation" aus der
-                XÖV-Bibliothek mit fach- und anwendungsfallspezifischen Änderungen ins Modell
-                aufgenommen.</para>
-            <para>Zu den Kernkomponenten kommt die <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe">Ortsangabe</link> hinzu,
-                die als reduzierte Anschrift verwendet wird.</para>
-            <para>Zudem wurden die Beschreibungstexte der einzelnen Klassen und Attribute der
-                Kernkomponenten angepasst und dadurch auf den jeweiligen XSchule-spezifischen
-                Anwendungsfall zugeschnitten. </para>
+            <title>Aufnahme des BVJ-Zeugnisses</title>
+            <para>Es wurde ein neuer Nachweis aufgenommen; das Zeugnis des berufsvorbereitenden
+                Jahres (kurz: <link linkend="XSchule.Nachweise.schueler.bvjzeugnis.0005"
+                    >BVJ-Zeugnis</link>). Die Modellierung des Nachweises wurde zusammen mit <link
+                    xlink:href="https://www.xberufsbildung.de/web/">XBerufsbildung</link>
+                erarbeitet. In einem <link
+                    xlink:href="https://xbildung.de/web/events/2024/XSchule_Workshop_II">gemeinsamen
+                    Workshop</link> wurden hier mit den Stakeholdern beider Teilvorhaben die
+                Anforderungen an das BVJ-Zeugnis erhoben und diskutiert.</para>
+            <para>Das BVJ-Zeugnis wurde initial anhand des generischen Zeugnisses erstellt und die
+                spezifischen Anforderungen wurden im Verlauf der Modellierung geschärft. Die
+                allgemeinen Angaben auf dem BVJ-Zeugnis enthalten neben der <link
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.ArtDesSchulabschlusses"
+                    >Art des Schulabschlusses</link>, der <link
+                    linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode">Nachweisperiode</link>
+                und der <link linkend="XSchule.Baukasten.Codes.Code.Zeugnisart">Zeugnisart</link> auch sehr spezifische Angaben, wie z. B. den
+                Berufsbereich, die Fachrichtung, die Art der Berufsreife und den Schwerpunkt. Die
+                Angaben zum <link linkend="XSchule.Baukasten.Kernkomponenten.SchuelerBVJZeugnis"
+                    >Schüler im BVJ-Zeugnis</link> enthalten Namen, Geburtsort- und Datum sowie die
+                Möglichkeit eine Identifikationsnummer anzugeben.</para>
+            <para>Einige Anpassungen für das BVJ-Zeugnis haben Auswirkungen auf das generische
+                Zeugnis. Diese sind im folgenden Abschnitt beschrieben:</para>
         </section>
 
         <section>
-            <title>Strukturelle Überarbeitung der Nachricht schueler.wechsel.0001</title>
-            <para>Die Nachricht <link linkend="XSchule.Nachweise.schueler.wechsel.0001"
-                    >schueler.wechsel.0001</link> wurde strukturell überarbeitet. Die Eigenschaft
-                "konfession" vom Datentyp <link linkend="XSchule.Baukasten.Codes.Code.Konfession"
-                    >Code.Konfession</link> wurde der Klasse <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
-                    >SchuelerWechselnd</link> zugeordnet. Die Eigenschaft "aufnahme" wurde der
-                Klasse <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
-                    >SchuleAufnehmend</link> zugeordnet. Die Eigenschaft "artDerSchulaufnahme" mit
-                der entsprechend hinterlegten Codeliste <link
-                    linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
-                    >ArtDerSchulaufnahme</link> wurde aus der Klasse "Schullaufbahn" entfernt und
-                als Kindelement der Eigenschaft "aufnahme" in der Klasse <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleAufnehmend"
-                    >SchuleAufnehmend</link> hinzugefügt. Die Eigenschaften
-                "schulformspezifischeZusatzdaten" vom Datentyp <link
-                    linkend="XSchule.Baukasten.SchulformspezifischeZusatzdaten"
-                    >SchulformspezifischeZusatzdaten</link>, "wahlpflichtkurs" vom Datentyp <link
-                    linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link> und "fehltage" vom
-                Datentyp <link linkend="XSchule.Baukasten.Fehltage">Fehltage</link> wurden der
-                Klasse <link linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht"
-                    >SchuleBesucht</link> zugeordnet.</para>
+            <title>Änderungen am generischen Zeugnis</title>
+            <para>Das <link linkend="XSchule.Nachweise.schueler.zeugnis.0003">generische
+                    Zeugnis</link> wurde um einige Elemente ergänzt, die als Anforderungen an das
+                BVJ-Zeugnis Eingang bei XSchule erhalten haben. Auch für das generische Zeugnis kann
+                nun ein Schwerpunkt des Bildungsgangs angegeben werden. Zudem kann nun
+                gekennzeichnet werden, in welchem <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.Lernzeitmodell"
+                    >Lernzeitmodell</link> ein Bildungsgang absolviert wird (z. B. in Voll- oder
+                Teilzeit). Auch die Angabe zur Art der Berufsreife kann im generischen Zeugnis
+                angegeben werden.</para>
+            <para>Unabhängig vom BVJ-Zeugnis wurde dem generischen Zeugnis die Eigenschaft Praktikum
+                hinzugefügt. Diese verweist auf die Klasse <link
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="https://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Praktikum"
+                    >Praktikum</link> aus XBildung und dient zur
+                Angabe von Daten zu einem absolvierten Praktikum.</para>
         </section>
 
         <section>
-            <title>Erweiterbare Codelisten</title>
-            <para>Die folgenden Codelisten sind zusätzlich zur Erweiterung vorgesehen:
-                    <emphasis>ArtDerPruefung</emphasis> (genutzt von <link
-                    linkend="XSchule.Baukasten.Pruefungsergebnis">Pruefungsergebnis</link>),
-                    <emphasis>ArtDerSchule</emphasis> (genutzt von <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Schueler">Schueler</link>, <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerAbiturzeugnis"
-                    >SchuelerAbiturzeugnis</link>, <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuelerWechselnd"
-                    >SchuelerWechselnd</link>, <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.Schule">Schule</link> und <link
-                    linkend="XSchule.Baukasten.Kernkomponenten.SchuleBesucht">SchuleBesucht</link>)
-                und <emphasis>ArtDesSchulabschlusses</emphasis> (genutzt in <link
-                    linkend="XSchule.Nachweise.schueler.schulbescheinigung.0004"
-                    >Schulbescheinigung</link>, <link
-                    linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002">Abiturzeugnis</link> und
-                    <link linkend="XSchule.Nachweise.schueler.zeugnis.0003">Zeugnis</link>. Wird der
-                Wert "wert_nicht_in_liste" ausgewählt, erlaubt die Modellierung nun eine
-                Freitext-Angabe. Für die Modellierung bedeutet das, dass erweiterbare Codelisten nun
-                als anonyme Klasse umgesetzt sind und die Code-Werte zusätzlich in einen
-                &lt;xsc:code&gt;-Tag eingeschlossen werden.</para>
-        </section>
-
-        <section>
-            <title>Weitere Änderungen an Codelisten</title>
-            <para> Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
-                    >Verpflichtungsgrad</link> wurde um die Werte "außerunterrichtliche Angebote"
-                und "freiwillige Zusatzangebote" ergänzt. </para>
-            <para>Des Weiteren wurde die Codeliste <link
-                    linkend="XSchule.Baukasten.Codes.Code.Versetzungstyp">Versetzungstyp</link> um
-                die Werte "Schulformwechsel ohne Versetzung", "Versetzung mit Überspringen einer
-                Klasse", "Versetzung mit Schulformwechsel" sowie "Versetzung mit Notenschutz"
-                ergänzt.</para>
-            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
-                    >Jahrgangsstufe</link> wurde im Rahmen der Umstellung auf KDS 4.0 umfassend
+            <title>Änderungen an Codelisten</title>
+            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.ArtDerSchulaufnahme"
+                    >ArtDerSchulaufnahme</link> wurde um den Wert flexible Einschulung
                 erweitert.</para>
-            <para>Da die Codelisten <link linkend="XSchule.Baukasten.Codes.Code.Fach"
-                    >Abiturfach</link>, <link linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB"
-                    >ArtDerHZB</link>, <link
-                    linkend="XSchule.Baukasten.Codes.Code.Foerderschwerpunkt"
-                    >Foederschwerpunkt</link> und <link
-                    linkend="XSchule.Baukasten.Codes.Code.Aufgabenfeld">Aufgabenfeld</link> von
-                XSchule technisch zur Verfügung gestellt werden, wurde ihre Version auf 1.0
-                vereinheitlicht. Das hat auch Auswirkung auf die URI der Codelisten-Werte.</para>
-            <para/>
-            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Kursstatus"
-                    >Kursstatus</link> wurde in den vorherigen XSchule-Versionen über XBildung
-                eingebunden. Mit der Version 1.0 wurde die Codeliste aus XBildung entfernt und wird
-                nun direkt bei XSchule eingebunden.</para>
+            <para>In der Codeliste <xref
+                    linkend="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes"
+                    role="Titel"/> wurden die englischen Beschreibungen der Fächer spezifiziert. Als
+                Quelle wurden hierbei die Werte aus ISCED-F-2013 verwendet.</para>
+            <para>Die Codeliste <link linkend="XSchule.Baukasten.Codes.Code.Fach">Fach</link> wurde
+                nach dem Beispiel der Codeliste <xref
+                    linkend="tabelle.urn.xschule-digital.kmk.codeliste.abiturfach.Abiturfach-Codes"
+                    role="Titel"/> erstellt. Die Fächer in der Liste wurde auf die Publications
+                Office Liste ISCED-F gemappt.</para>
+            <para>Die Codelisten <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.ArtDerBemerkung"
+                    >ArtDerBemerkung</link> und <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="http://xbildung.de/def/xbildung/1.1/spec/xbd_spezifikation_1.1.pdf#XBildung.Baukasten.Codes.Code.GesetzlicherVertreter"
+                    >Gesetzlicher Vertreter</link> sind nicht länger direkt über XSchule
+                eingebunden. Sie werden nun über XBildung bezogen.</para>
         </section>
 
         <section>
             <title>Sonstige Änderungen</title>
-            <para>Es wurde die Klasse <link linkend="XSchule.Baukasten.Anlage">Anlage</link>
-                umgesetzt, die eine Übermittlung von Anlagen ermöglicht. XSchule legt sich nicht
-                abschließend darauf fest, wie Anlagen übermittelt werden sollen. Wird die Anlage
-                nicht in die XML-Datei eingebettet, wird davon ausgegangen, dass sie über den
-                Dateinamen und das verwendete Übertragungs- bzw. Auslieferungsverfahren eindeutig
-                identifiziert werden kann. </para>
-            <para>Die Klasse Schulkurs und die bisher nachgenutzte Klasse Kurs aus XBildung wurden
-                vereint. Die Klasse <link linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link>
-                enthält nun alle Eigenschaften der beiden vorherigen Klassen, wobei die Reihenfolge
-                der Eigenschaften verändert wurde.</para>
-            <para>Zudem erfolgte eine Umbenennung von "sonderpaedagogischesGutachten" in "anlage".
-                Die Multiplizität wurde auf "1..n" geändert und die Beschreibung angepasst.</para>
-            <para>Die <link xlink:href="#spezifikation.einleitung.dieSchuljourney"
-                    >XSchule-Journey</link> wurde überarbeitet und mit den anderen Teilvorhaben
-                harmonisiert, indem nun jeder einzelne Schritt innerhalb der XSchule-Journey
-                beschrieben wird.</para>
+            <para>Die Klasse <link linkend="XSchule.Baukasten.Schulkurs">Schulkurs</link> wurde um
+                die Angabe der Stundenanzahl ergänzt. Diese Eigenschaft gibt an, in welchem Umfang
+                ein Schulfach gelehrt wurde. Üblicherweise entspricht die Angabe der (Schul-)
+                Stunden dem Zeitrichtwert oder der Stundentafel des jeweiligen
+                Anwendungsfalls.</para>
         </section>
 
         <section>
             <title>Liste der umgesetzten Tickets</title>
             <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
             <itemizedlist>
-                <!-- für Ticketliste relevant? <listitem>
-                    <para>XSC-382: Finale Version XBildung V1.0 einbinden</para>
+                <listitem>
+                    <para>XSC-378 Codeliste für KDS-Fächer erstellen</para>
                 </listitem>
                 <listitem>
-                    <para>XSC-379: RDF-Ausspielung bei Codelisten optimieren </para>
-                </listitem> 
-                <listitem>
-                    <para>XSC-377: Spaltenbezeichnungen in Codelisten bereinigen</para>
+                    <para>XSC-380 Beschreibung des Code-Datentyps "Foerderschwerpunkt"
+                        anpassen</para>
                 </listitem>
-               -->
+                <listitem>
+                    <para>XSC-383 Codeliste "Abiturfach" überarbeiten</para>
+                </listitem>
+                <!--<listitem><para>XSC-385	Codelisten-URNs auf Konsistenz mit XRepository prüfen</para></listitem>-->
+                <listitem>
+                    <para>XSC-387 Codeliste "ArtDerBemerkung" über XBD einbinden</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-390 Codeliste "Gesetzlicher Vertreter" über XBD einbinden</para>
+                </listitem>
+                <!--<listitem><para>XSC-392	Codeliste "ArtDerBemerkung" zusammenführen und über XBD einbinden</para></listitem>-->
+                <listitem>
+                    <para>XSC-393 "Praktikum" in generisches Zeugnis aufnehmen</para>
+                </listitem>
+                <!--<listitem><para>XSC-395	AnschriftSchuelerAbiturzeugnis in AnschriftSchuelerReduziert umbenennen</para></listitem>-->
+                <listitem>
+                    <para>XSC-396 "Stunden" in die Klasse "Schulkurs" aufnehmen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-397 „Art der Berufsbildungsreife“ in die Nachrichten
+                        "schueler.zeugnis.0003" und "schueler.bvjzeugnis.0005" aufnehmen</para>
+                </listitem>
+                <!--<listitem><para>XSC-398	BVJ Zeugnis entsprechend der Aussagen im WS anpassen</para></listitem>-->
+                <listitem>
+                    <para>XSC-399 "Lernzeitmodell" ins generische Zeugnis aufnehmen</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-400 Kapitel "Kernanwendungsfälle" überarbeiten</para>
+                </listitem>
+                <listitem>
+                    <para>XSC-401 Abschnitt "Implementierung" ergänzen</para>
+                </listitem>
+                <!--<listitem>
+                    <para>XSC-402 XBildung V1.1 in XSchule einbinden</para>
+                </listitem>-->
+                <listitem>
+                    <para>XSC-403 "Anlage" in die Nachricht "schueler.zeugnis.0003" aufnehmen</para>
+                </listitem>
+                <!--<listitem><para>XSC-404	Feedback Niedersachsen für die V1.1</para></listitem>-->
+                <listitem>
+                    <para>XSC-408 Wert "Flexible Einschulung" in die Codeliste "ArtDerSchulaufnahme"
+                        aufnehmen</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </section>
+
+
+    <section xml:id="spezifikation.anhang.versionshistorie10">
+        <info>
+            <title>Version 1.0</title>
+        </info>
+        <para>Veröffentlichungsdatum: 28.05.2024</para>
+
+        <section>
+            <title>Liste der umgesetzten Tickets</title>
+            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
+            <itemizedlist>
                 <listitem>
                     <para>XSC-376: Codeliste Kursstatus erstellen </para>
                 </listitem>
@@ -272,95 +262,4 @@
         </section>
     </section>
 
-    <section xml:id="spezifikation.anhang.versionshistorie07">
-        <info>
-            <title>Version 0.7</title>
-        </info>
-        <para>Veröffentlichungsdatum: 10.11.2023</para>
-
-        <para> Veränderungen zur vorherigen Version: Das Modell wurde so ergänzt, dass es
-            erweiterbar ist. Dadurch können insbesondere die Wechselnachricht und die
-            Schulbescheinigung in spezialisierten, z.B. bundeslandspezifischen Anwendungsfällen
-            verwendet werden. </para>
-
-        <simplesect>
-            <title>Liste der umgesetzten Tickets</title>
-            <para>Folgende (intern dokumentierte) Tickets wurden umgesetzt:</para>
-            <itemizedlist>
-
-                <listitem override="none">
-                    <para><emphasis role="bold">Änderungen bezüglich des
-                        Schulzeugnis</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-318: niveau umbennen in niveauEQR</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-255: Umgang mit Jahres-/Zwischenzeugnis als Abiturzeugnis
-                        erläutern</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-315: Nachweiszeitraum in Zeugnisse aufnehmen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-327: Schematron-Regeln für schueler.zeugnis.0003 löschen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-311: Anforderungsniveaus auf KMK beschränken und als Typ-4
-                        umsetzen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-314: Codeliste Aufgabenfeld an KMK Vorgaben anpassen</para>
-                </listitem>
-                <listitem override="none">
-                    <para>&nbsp;</para>
-                </listitem>
-                <listitem override="none">
-                    <para><emphasis role="bold">Änderungen bezüglich des
-                        Schulwechsels</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-297: Nutzung von WechselnderSchueler:kommunikation/kontaktmoeglichkeit
-                        überprüfen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-307: Erstellen Codeliste für Förderschwerpunkt</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-317: Reihenfolge von Bezeichnung und Beschreibung ändern</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-310: Erweiterung-Eigenschaft für Wechselnachricht und
-                        Schulbescheinigung hinzufügen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-316: WechselnderSchueler: xbd:Kurs durch xsc:Schulkurs ersetzen</para>
-                </listitem>
-                <listitem override="none">
-                    <para>&nbsp;</para>
-                </listitem>
-                <listitem override="none">
-                    <para><emphasis role="bold">Sonstige Änderungen</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>XSC-292: Schulbescheinigung als Dokument und neues Unterkapitel I.4.3
-                        aufnehmen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-184: Typ-4-Codelisten und Eigenschaften für Profilbildung
-                        anpassen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-309: Codeliste mit ~wert_nicht_in_liste erweiterbar machen</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-294: Codelisten Angleich Name (lang)/Name (kurz)</para>
-                </listitem>
-                <listitem>
-                    <para>XSC-296: Nachweise mit XML-Signatur signierbar machen</para>
-                </listitem>
-            </itemizedlist>
-        </simplesect>
-
-    </section>
 </appendix>

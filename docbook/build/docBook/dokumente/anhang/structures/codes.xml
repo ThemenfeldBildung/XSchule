@@ -45,6 +45,18 @@
       <kosit:entry code="http://xbildung.de/def/kmk/1.0/code/artderschule/~wert_nicht_bekannt">Wert nicht bekannt</kosit:entry>
       <kosit:entry code="http://xbildung.de/def/kmk/1.0/code/artderschule/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
    </kosit:codelist>
+   <kosit:codelist urn="urn:xbildung-de:xbildung:codeliste:artderbemerkung"
+                   id="tabelle.urn.xbildung-de.xbildung.codeliste.artderbemerkung.ArtDerBemerkung-Codes">
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/aequivalenzbemerkung">Äquivalenzbemerkung</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/allgemeine_beurteilung">allgemeine Beurteilung</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/arbeitsgemeinschaft">Arbeitsgemeinschaft</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/befreiung">Befreiung</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/engagement_ausserschulisch">außerschulisches Engagement</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/engagement_schulisch">schulisches Engagement</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/freie_formulierung">freie Formulierung</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage">Rechtsgrundlage</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung">sonstige standardisierte Bemerkung</kosit:entry>
+   </kosit:codelist>
    <kosit:codelist urn="urn:xbildung-de:xbildung:codeliste:artderpruefung"
                    id="tabelle.urn.xbildung-de.xbildung.codeliste.artderpruefung.ArtDerPruefung-Codes">
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/artderpruefung/besondere_lernleistung">besondere Lernleistung</kosit:entry>
@@ -79,6 +91,15 @@
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15">Notensystem der KMK aus dem Jahre 1972, verwendet für Leistungen aus der Qualifkationsphase. Es werden in einem Kurs mindestens 5 Punkte zum Bestehen benötigt. Maximal möglich sind 15 Punkte.</kosit:entry>
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_hochschulnote_5_4_1">Notensystem der KMK aus dem Jahre 2003, verwendet für die Bewertung von Leistungen erbracht im Verlauf des Hochschulstudiums. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</kosit:entry>
       <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1">Notensystem der KMK für die Bewertung von Leistungen erbracht im Verlauf der Primar- und Sekundarstufe. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</kosit:entry>
+   </kosit:codelist>
+   <kosit:codelist urn="urn:xbildung-de:xbildung:codeliste:lernzeitmodell"
+                   id="tabelle.urn.xbildung-de.xbildung.codeliste.lernzeitmodell.Lernzeitmodell-Codes">
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/dual-ausbildungsintegriert">Dual (ausbildungsintegriert)</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/dual-praxisintegriert">Dual (praxisintegriert)</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/teilzeit">Teilzeit</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/vollzeit">Vollzeit</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/~wert_nicht_bekannt">Wert nicht bekannt</kosit:entry>
+      <kosit:entry code="http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
    </kosit:codelist>
    <kosit:codelist urn="urn:xschule-digital:destatis:codeliste:artderhzb"
                    id="tabelle.urn.xschule-digital.destatis.codeliste.artderhzb.ArtDerHZB-Codes">
@@ -135,31 +156,20 @@
       <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/abfolgederfremdsprachen/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
       <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/abfolgederfremdsprachen/~wert_nicht_uebermittelbar_rechtliche_gruende">Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</kosit:entry>
    </kosit:codelist>
-   <kosit:codelist urn="urn:xschule-digital:xschule:codeliste:artderbemerkung"
-                   id="tabelle.urn.xschule-digital.xschule.codeliste.artderbemerkung.ArtDerBemerkung-Codes">
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/aequivalenzbemerkung">Äquivalenzbemerkung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung">allgemeine Beurteilung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft">Arbeitsgemeinschaft</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/befreiung">Befreiung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_ausserschulisch">außerschulisches Engagement</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_schulisch">schulisches Engagement</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/freie_formulierung">freie Formulierung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage">Rechtsgrundlage</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung">sonstige standardisierte Bemerkung</kosit:entry>
-   </kosit:codelist>
    <kosit:codelist urn="urn:xschule-digital:xschule:codeliste:artderschulaufnahme"
                    id="tabelle.urn.xschule-digital.xschule.codeliste.artderschulaufnahme.ArtDerSchulaufnahme-Codes">
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_mit_inklusion">Einschulung mit Inklusion</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_nach_zurueckstellung">Einschulung nach Zurückstellung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">Einschulung Schule freier Trägerschaft</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/regeleinschulung">Regeleinschulung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">Schulwechsel (außerhalb Schulbezirk)</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/vorzeitige_einschulung">vorzeitige Einschulung</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/zurueckstellung_erfolgt">Zurückstellung erfolgt</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/zurueckstellung_gewuenscht">Zurückstellung gewünscht</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_bekannt">Wert nicht bekannt</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
-      <kosit:entry code="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_mit_inklusion">Einschulung mit Inklusion</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_nach_zurueckstellung">Einschulung nach Zurückstellung</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">Einschulung Schule freier Trägerschaft</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/flexible_einschulung">flexible Einschulung</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/regeleinschulung">Regeleinschulung</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">Schulwechsel (außerhalb Schulbezirk)</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/vorzeitige_einschulung">vorzeitige Einschulung</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_erfolgt">Zurückstellung erfolgt</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_gewuenscht">Zurückstellung gewünscht</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_bekannt">Wert nicht bekannt</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_in_liste">Wert nicht in Liste</kosit:entry>
+      <kosit:entry code="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</kosit:entry>
    </kosit:codelist>
    <kosit:codelist urn="urn:xschule-digital:xschule:codeliste:artderunterrichtsteilnahme"
                    id="tabelle.urn.xschule-digital.xschule.codeliste.artderunterrichtsteilnahme.ArtDerUnterrichtsteilnahme-Codes">

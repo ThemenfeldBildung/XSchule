@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.wechsel.0001 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd https://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
+<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
 
     <!--
-        Datum: 02.02.2024
+        Datum: 22.10.2024
         Name der Beispieldatei: XSchule_Wechsel_01
         Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Primarstufe
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
@@ -15,21 +16,19 @@
         Fachlicher Sachverhalt: 
         Schüler der Klasse 1 aus der Schule Musterschule im Bundesland Brandenburg geht ab 01.09.2022 normal versetzt in die 2. Klasse im Bundesland Bayern.
     -->
+    <xbd:titel>Schülerakte</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2022-07-14</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Hamburg</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
 
-    <titel>Schülerakte</titel>
+    <xbd:gueltigkeitsdatum>2022-07-14</xbd:gueltigkeitsdatum>
 
-    <ausstellung>
-        <datum>2022-07-14</datum>
-        <ort>
-            <ort>Hamburg</ort>
-        </ort>
-    </ausstellung>
-
-    <gueltigkeitsdatum>2022-07-14</gueltigkeitsdatum>
-
-    <sprache>
+    <xbd:sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    </xbd:sprache>
 
     <xsc:schueler>
         <xsc:nameNatuerlichePerson>
@@ -45,7 +44,7 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <jahrMonatTag>2013-02-26</jahrMonatTag>
+                <xbd:jahrMonatTag>2013-02-26</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <ort>Villingen-Schwenningen</ort>
@@ -114,7 +113,7 @@
                     </xsc:vorname>
                 </xsc:name>
                 <xsc:geburt>
-                    <jahrMonatTag>1980-11-14</jahrMonatTag>
+                    <xbd:jahrMonatTag>1980-11-14</xbd:jahrMonatTag>
                 </xsc:geburt>
             </xsc:natuerlichePerson>
         </xsc:weitereDaten>
@@ -157,7 +156,7 @@
                     </xsc:vorname>
                 </xsc:name>
                 <xsc:geburt>
-                    <jahrMonatTag>1980-12-20</jahrMonatTag>
+                    <xbd:jahrMonatTag>1980-12-20</xbd:jahrMonatTag>
                 </xsc:geburt>
             </xsc:natuerlichePerson>
         </xsc:weitereDaten>
@@ -188,14 +187,14 @@
 
         <xsc:aufnahme>
             <xsc:datum>
-                <jahrMonatTag>2022-09-01</jahrMonatTag>
+                <xbd:jahrMonatTag>2022-09-01</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:jahrgang>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_2</code>
             </xsc:jahrgang>
             <xsc:artDerSchulaufnahme>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</code>
+                    <code>http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</code>
                 </xsc:code>
             </xsc:artDerSchulaufnahme>
             <xsc:versetzt>true</xsc:versetzt>
@@ -267,11 +266,11 @@
         </xsc:schuljahrgang>
     </xsc:besuchteSchule>
 
-    
+
 
     <xsc:schullaufbahn>
         <xsc:beginnDerSchulpflicht>
-            <jahrMonatTag>2021-08-01</jahrMonatTag>
+            <xbd:jahrMonatTag>2021-08-01</xbd:jahrMonatTag>
         </xsc:beginnDerSchulpflicht>
     </xsc:schullaufbahn>
 </xsc:schueler.wechsel.0001>

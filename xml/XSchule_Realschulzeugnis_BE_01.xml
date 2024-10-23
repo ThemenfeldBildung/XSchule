@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.zeugnis.0003
-    xmlns:dinspec91379="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"
+<xsc:schueler.zeugnis.0003 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd">
 
     <!--
-        Datum: 28.05.2024
+        Datum: 22.10.2024
         Name der Beispieldatei: Nachweis Realschulzeugnis nach Musterdatei Erika Mustermann
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Link zur Beispieldatei ohne Musterdaten: https://xbildung.de/web/musternachweis/41280
     -->
 
-    <titel>Zeugnis über die erweiterte Berufsbildungsreife</titel>
-    <ausstellung>
-        <datum>2020-07-01</datum>
-        <ort>
-            <ort>Berlin</ort>
-        </ort>
-    </ausstellung>
+    <xbd:titel>Zeugnis über die erweiterte Berufsbildungsreife</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2020-07-01</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Berlin</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
 
-    <gueltigkeitsdatum>2020-07-01</gueltigkeitsdatum>
+    <xbd:gueltigkeitsdatum>2020-07-01</xbd:gueltigkeitsdatum>
 
-    <sprache>
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    </xbd:sprache>
 
     <xsc:allgemeineAngaben>
         <xsc:artDesZeugnisses>
@@ -65,7 +62,7 @@
 
         <xsc:geburt>
             <xsc:datum>
-                <jahrMonatTag>2003-09-26</jahrMonatTag>
+                <xbd:jahrMonatTag>2003-09-26</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <ort>Berlin</ort>
@@ -87,9 +84,9 @@
         </xsc:name>
         <xsc:identifikation>
             <xsc:id>BE_081522</xsc:id>
-            <xsc:beschreibung></xsc:beschreibung>
+            <xsc:beschreibung/>
         </xsc:identifikation>
-        
+
         <xsc:anschrift>
             <xsc:strasse>Musterdammallee</xsc:strasse>
             <xsc:hausnummer>50</xsc:hausnummer>
@@ -125,7 +122,7 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            
+
             <xsc:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0232</code>
             </xsc:schluesselISCEDF2013>
@@ -140,35 +137,35 @@
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
-            
+
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
-            
+
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
-            
+
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
@@ -176,7 +173,7 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
-            
+
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -187,7 +184,7 @@
                     <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
                 </xsc:code>
             </xsc:verpflichtungsgrad>
-            
+
             <xsc:schluesselISCEDF2013>
                 <code>http://data.europa.eu/snb/isced-f/0231</code>
             </xsc:schluesselISCEDF2013>
@@ -197,7 +194,7 @@
                 </xsc:sprache>
             </xsc:vermittelteSprachkenntnis>
 
-            
+
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_10</code>
             </xsc:jahrgangsstufe>
@@ -205,33 +202,33 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
-            
+
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
-            
+
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
@@ -259,17 +256,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -298,17 +295,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -337,17 +334,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -357,7 +354,7 @@
         <xsc:kurs>
             <xsc:bezeichnung>Politische Bildung</xsc:bezeichnung>
             <xsc:anforderungsniveau
-                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau" 
+                listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
                 <code>http://xschule.digital/def/xschule/1.0/code/anforderungsniveau/g-kurs</code>
             </xsc:anforderungsniveau>
@@ -373,17 +370,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -409,17 +406,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -448,31 +445,31 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
-            
+
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -501,30 +498,30 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -553,30 +550,30 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -605,30 +602,30 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>GR-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>2</xbd:note>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>GR-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -657,17 +654,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -696,17 +693,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -735,17 +732,17 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <punkte>8</punkte>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                    <beschreibung>ER-Niveau</beschreibung>
-                </bewertungsschemaNote>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                    <beschreibung>Punkte</beschreibung>
-                </bewertungsschemaPunkte>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:punkte>8</xbd:punkte>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                    <xbd:beschreibung>ER-Niveau</xbd:beschreibung>
+                </xbd:bewertungsschemaNote>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                    <xbd:beschreibung>Punkte</xbd:beschreibung>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -756,11 +753,11 @@
 
         <xsc:pruefung>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
 
             <xsc:artDerPruefung>
@@ -768,7 +765,7 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            
+
             <xsc:bezeichnung>Deutsch</xsc:bezeichnung>
 
             <xsc:anforderungsniveau
@@ -786,11 +783,11 @@
 
         <xsc:pruefung>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
 
             <xsc:artDerPruefung>
@@ -798,7 +795,7 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            
+
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
 
             <xsc:anforderungsniveau
@@ -816,11 +813,11 @@
 
         <xsc:pruefung>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
 
             <xsc:artDerPruefung>
@@ -828,7 +825,7 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            
+
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
 
             <xsc:anforderungsniveau
@@ -846,11 +843,11 @@
 
         <xsc:pruefung>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:note>3</xbd:note>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
 
             <xsc:artDerPruefung>
@@ -858,7 +855,7 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/praesentationspruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            
+
             <xsc:bezeichnung>Geografie</xsc:bezeichnung>
 
             <xsc:anforderungsniveau
@@ -904,28 +901,28 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/arbeitsgemeinschaft</code>
         </xsc:art>
         <xsc:beschreibung>Hat erfolgreich teilgenommen an der Arbeitsgruppe "Rezitation und Laienspiel"</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Das Schulgesetz (SchulG) für das Land Berlin vom 26. Januar 2004 in der jeweils geltenden Fassung.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Die Verordnung über die Schularten und Bildungsgänge der Sekundarstufe I (Sek I-VO) vom 31. März 2010 in der jeweils geltenden Fassung.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
         </xsc:art>
         <xsc:beschreibung>Ein Beiblatt (Schul Z 620) ist NICHT Bestandteil dieses Zeugnisses.
         </xsc:beschreibung>
@@ -933,14 +930,14 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Mit diesen Leistungen im Jahrgangsteil werden die Bedingungen für die erweiterte Berufsbildungsreife gemäß § 44 Absatz 4 Sek I-VO erfüllt.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Mit diesen Leistungen im Prüfungsteil werden die Bedingungen für die erweiterte Berufsbildungsreife gemäß § 44 Absatz 2 Nummer 1 Sek I-VO erfüllt.</xsc:beschreibung>
     </xsc:bemerkung>

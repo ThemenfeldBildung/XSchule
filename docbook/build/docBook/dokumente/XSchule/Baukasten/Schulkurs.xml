@@ -14,7 +14,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="110"
+                       scale="109"
                        fileref="../../../zeichnungen/XSchule/Baukasten/Schulkurs.svg"/>
          </imageobject>
       </mediaobject>
@@ -419,6 +419,22 @@ des Kurses abgebildet ist.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Gibt an, ob diese Leistung in die Berechnung eingebracht werden soll. Die genaue Auswirkung hängt vom jeweiligen fachlichen Kontext ab.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">stunden</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Gibt an, in welchem Umfang dieses Schulfach gelehrt wurde. Üblicherweise entspricht die Angabe der (Schul-) Stunden dem Zeitrichtwert oder der Stundentafel des jeweiligen Anwendungsfalls.</para></entry>
             </row>
          </tbody>
       </tgroup>

@@ -1,65 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.zeugnis.0003 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+<xsc:schueler.bvjzeugnis.0005 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
 
     <!--
-        Datum: 28.05.2024
+        Datum: 22.10.2024
         Beispieldatei: https://xbildung.de/def/rep/ni/example/zeugnis_berufseinstiegsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
 
 
-    <titel>Zeugnis Berufseinstiegsschule Klasse 1</titel> <!-- Die Berufseinstiegsschule ist im Land Niedersachsen die Bezeichnung für eine Berufsschule, 
+    <xbd:titel>Zeugnis Berufseinstiegsschule Klasse 1</xbd:titel>
+    <!-- Die Berufseinstiegsschule ist im Land Niedersachsen die Bezeichnung für eine Berufsschule, 
         an der das Berufsvorbereitungsjahr (BVJ) oder das Berufsgrundbildungsjahr (in Niedersachsen Berufseinstiegsklasse genannt) absolviert werden kann. 
         Berufseinstiegsschulen sind an den meisten öffentlichen sowie wenigen freien Berufsschulen in Niedersachsen eingerichtet. Andere Bundesländer haben ähnliche 
         Schulformen eingerichtet, etwa die Jungarbeiterklasse in Bayern und Baden-Württemberg. -->
 
-    <ausstellung>
-        <datum>2020-07-01</datum>
-        <ort><ort>Hannover</ort></ort>
-    </ausstellung>
+    <xbd:ausstellung>
+        <xbd:datum>2020-07-01</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Hannover</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
 
-    <ausstellung><datum>2020-07-01</datum></ausstellung>
+    <xbd:ausstellung>
+        <xbd:datum>2020-07-01</xbd:datum>
+    </xbd:ausstellung>
 
-    <sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
-        listVersionID="20231213-0">
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    </xbd:sprache>
 
     <xsc:allgemeineAngaben>
-        <!-- xsc:artDesZeugnisses: hergeleitet -->
         <xsc:artDesZeugnisses>
             <code>http://xschule.digital/def/xschule/1.0/code/zeugnisart/jahreszeugnis</code>
         </xsc:artDesZeugnisses>
-        <!-- xsc:jahrgangsstufe: "Klasse 1"? Codeliste passt nicht genau -->
-        <!-- xsc:jahrgangsstufe: "Qualifizierungsphase 1/2" würde eher passen weil: In die Klasse 1 
-            werden nur Schülerinnen und Schüler aufgenommen, die noch schulpflichtig sind und bei denen im Rahmen der Beratung ein Bedarf an individueller 
-            Förderung festgestellt wurde.In die Klasse 2 kann aufgenommen werden, wer die Klasse 1 oder die Sprach- und Integrationsklasse 
-            erfolgreich besucht hat oder eine Abschlussklasse des Sekundarbereichs I einer allgemeinbildenden Schule ohne Abschluss verlassen hat. So eine Klasse 1 kann als erste Qualiphase betrachtet werden; Klasse 2 als 
-        Qualiphase 2--> 
-        <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
-        </xsc:jahrgangsstufe>
-        <!-- xsc:nachweisperiode: hergeleitet -->
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d522fb6b2c6045421013d1c5769e959ddce4c269
+        <xsc:bildungsgang>Berufseinstiegsschule</xsc:bildungsgang>
+        <xsc:fachrichtung>Technik</xsc:fachrichtung>
+        <xsc:schwerpunkt>Holztechnik</xsc:schwerpunkt>
+        <xsc:klasse>Klasse 1</xsc:klasse>
+
         <xsc:nachweisperiode>
-            <xsc:code>
-                <code>http://xschule.digital/def/xschule/1.0/code/nachweisperiode/jahr</code>
-            </xsc:code>
+            <code>http://xschule.digital/def/xschule/1.0/code/nachweisperiode/jahr</code>
         </xsc:nachweisperiode>
+
+        <xsc:nachweiszeitraum>
+            <xsc:beginn>2019-08-01</xsc:beginn>
+            <xsc:ende>2020-07-01</xsc:ende>
+        </xsc:nachweiszeitraum>
+<<<<<<< HEAD
+
+=======
+ 
+       <!--Schulpflicht hergeleitet-->
+>>>>>>> d522fb6b2c6045421013d1c5769e959ddce4c269
+        <xsc:schulpflicht>
+            <xsc:erfuellt>true</xsc:erfuellt>
+        </xsc:schulpflicht>
+
         <xsc:bundesland listVersionID="2010-04-01">
             <code>03</code>
         </xsc:bundesland>
         <xsc:niveauEQR>
             <code>http://data.europa.eu/snb/eqf/1</code>
         </xsc:niveauEQR>
+<<<<<<< HEAD
+
+        <xsc:artDerBerufsreife/>
+
+=======
         
-        <!-- xsc:nachweiszeitraum: fehlt noch - wäre aber 2020/2021?-->
-        <!-- xsc:artDerHZB: nicht relevant -->
-        <!-- xsc:artDesSchulabschlusses: nicht relevant, da kein Abschluss; erst relevant bei Klasse 2 dann ggf. Abschluss erlangt -->
+        <!-- xsc:artDesSchulabschlusses: nicht relevant, da kein Abschluss; erst relevant bei Klasse 2 dann ggf. Abschluss erlangt; genauso Art der Berufsreife -->
+         
+>>>>>>> d522fb6b2c6045421013d1c5769e959ddce4c269
     </xsc:allgemeineAngaben>
 
     <xsc:schueler>
@@ -74,76 +97,70 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <jahrMonatTag>2002-12-19</jahrMonatTag>
+                <xbd:jahrMonatTag>2002-12-19</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <ort>Musterstadt</ort>
-                <!-- xsc:staat: nicht auf Zeugnis genannt-->
             </xsc:geburtsort>
         </xsc:geburt>
-        <!-- xsc:anschrift: nicht angegeben, nicht einmal Wohnort -->
-        <xsc:bildungsgang>Fachrichtung Technik, Schwerpunkt Holztechnik</xsc:bildungsgang>
-        <!-- keine sonstigen Angaben für xsc:schueler relevant --> <!-- ggf. macht es Sinn Klasse 1 vor der Fachrichtung anzugeben? -->
     </xsc:schueler>
 
     <xsc:schule>
         <xsc:name>
             <xsc:name>Berufsbildende Schule Name der Schule</xsc:name>
-        </xsc:name>
-        <!-- xsc:schule: keine Angaben wie Identifikation oder Anschrift auf dem Zeugnis, aber möglich -->
-        <!-- xsc:schulform: 220 = Berufsfachschule - unklar, ob das die richtige Auswahl ist --> <!-- xsc:schulform: 220 = Berufsfachschule - tendenziell sind es Berufsschulen, aber das kann je BL variieren -->
-        <!-- xsc:schulform: Auswahl aus http://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf#XBildung.Baukasten.Codes.Code.ArtDerSchule -->
-        <xsc:schulform>
+        </xsc:name><xsc:schulform>
             <xsc:code>
                 <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
             </xsc:code>
         </xsc:schulform>
-        <!-- xsc:artDerTraegerschaft: nicht angegeben -->
     </xsc:schule>
 
-    <xsc:leistungen>
-        <xsc:bezeichnung>Fachrichtung</xsc:bezeichnung>
+    <xsc:fehltage>
+        <xsc:anzahlGesamt>12</xsc:anzahlGesamt>
+        <xsc:davonEntschuldigt>12</xsc:davonEntschuldigt>
+    </xsc:fehltage>
+
+    <xsc:lernbereich>
+        <xsc:bezeichnung>berufsübergreifender Lernbereich</xsc:bezeichnung>
+        <xsc:gesamtnote>
+            <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+            </xbd:bewertungsschemaNote>
+        </xsc:gesamtnote>
         <xsc:kurs>
-            <xsc:bezeichnung>Technik</xsc:bezeichnung>
-            <xsc:schwerpunkt>Holztechnik</xsc:schwerpunkt>
+            <xsc:bezeichnung>Kommunikation in der Lebens- und Arbeitswelt</xsc:bezeichnung>
             <xsc:jahrgangsstufe>
                 <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
-        </xsc:kurs>
-    </xsc:leistungen><!-- Ist dieser Block an dieser Stelle so tatsächlich notwendig? Falls ja, dann Fachrichtung muss angegeben werden, Schwerpunkt ist optional-->
-    
-    <xsc:leistungen>
-        <xsc:bezeichnung>berufsübergreifender Lernbereich</xsc:bezeichnung>
-        <xsc:kurs>
-            <xsc:bezeichnung>Kommunikation in der Lebens- und Arbeitswelt</xsc:bezeichnung>
-            <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code> 
-            </xsc:jahrgangsstufe>
-            <xsc:halbjahr>
-                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
-            </xsc:halbjahr> <!-- muss es nicht: http://xschule.digital/def/xschule/0.6/code/halbjahr/1_halbjahr oder aber 2_halbjahr sein (wird nicht ersichtlich) -->
             <xsc:note>
-                <wortbezeichnung>sehr gut</wortbezeichnung>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>Förderung Grundlagenwissen</xsc:bezeichnung>
             <xsc:jahrgangsstufe>
-                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code> 
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_1</code>
             </xsc:jahrgangsstufe>
             <xsc:halbjahr>
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <wortbezeichnung>gut</wortbezeichnung>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
-    </xsc:leistungen>
+    </xsc:lernbereich>
 
-    <xsc:leistungen>
+    <xsc:lernbereich>
         <xsc:bezeichnung>berufsbezogener Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>QB 1</xsc:bezeichnung>
@@ -154,11 +171,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>3</note>
-                <wortbezeichnung>befriedigend</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:wortbezeichnung>befriedigend</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
@@ -170,12 +186,11 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>1</note>
-                <wortbezeichnung>sehr gut</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
-            </xsc:note>   
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
             <xsc:bezeichnung>QB 3</xsc:bezeichnung>
@@ -186,11 +201,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>2</note>
-                <wortbezeichnung>gut</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:wortbezeichnung>gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
@@ -202,11 +216,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>1</note>
-                <wortbezeichnung>sehr gut</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
@@ -218,11 +231,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>5</note>
-                <wortbezeichnung>mangelhaft</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:wortbezeichnung>mangelhaft</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
         <xsc:kurs>
@@ -234,16 +246,15 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <note>1</note>
-                <wortbezeichnung>sehr gut</wortbezeichnung>
-                <bewertungsschemaNote>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-                </bewertungsschemaNote>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
-    </xsc:leistungen>
+    </xsc:lernbereich>
 
-    <xsc:leistungen>
+    <xsc:lernbereich>
         <xsc:bezeichnung>berufsbezogener Lernbereich</xsc:bezeichnung>
         <xsc:kurs>
             <xsc:bezeichnung>Optionale Lernangebote</xsc:bezeichnung>
@@ -257,66 +268,35 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/erfolgreich_teilgenommen</code>
             </xsc:status>
         </xsc:kurs>
-    </xsc:leistungen>
-
-    <xsc:kombinierteBewertung>
-        <xsc:bezeichnung>berufsübergreifender Lernbereich</xsc:bezeichnung>
-        <xsc:beschreibung>Beinhaltet den 2. Block der Leistungen mit der Bezeichnung "berufsübergreifender Lernbereich".</xsc:beschreibung><!-- muss es nicht 1. Block sein? -->
-        <xsc:note>
-            <note>1</note>
-            <wortbezeichnung>sehr gut</wortbezeichnung>
-            <bewertungsschemaNote>
-                <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-            </bewertungsschemaNote>
-        </xsc:note>
-    </xsc:kombinierteBewertung>
-
-    <xsc:kombinierteBewertung>
-        <xsc:bezeichnung>berufsbezogener Lernbereich</xsc:bezeichnung>
-        <xsc:beschreibung>Beinhaltet den 3. Block der Leistungen mit der Bezeichnung "berufsbezogener Lernbereich".</xsc:beschreibung> <!-- muss es nicht 2. Block sein?-->
-        <xsc:note>
-            <note>2</note>
-            <wortbezeichnung>gut</wortbezeichnung>
-            <bewertungsschemaNote>
-                <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</schemaURI>
-            </bewertungsschemaNote>
-        </xsc:note>
-    </xsc:kombinierteBewertung>
+    </xsc:lernbereich>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
         </xsc:art>
         <xsc:beschreibung>Ihr Arbeitsverhalten entspricht den Erwartungen.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
         </xsc:art>
         <xsc:beschreibung>Ihr Sozialverhalten entspricht den Erwartungen.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
-        </xsc:art>
-        <xsc:beschreibung>Fehltage: 12 - davon entschuldigt: 12</xsc:beschreibung>
-    </xsc:bemerkung>
-
-    <xsc:bemerkung>
-        <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/allgemeine_beurteilung</code>
         </xsc:art>
         <xsc:beschreibung>Die Lern- und Persönlichkeitsentwicklung lassen den erfolgreichen Besuch der Klasse 2 erwarten.</xsc:beschreibung>
     </xsc:bemerkung>
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/aequivalenzbemerkung</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/aequivalenzbemerkung</code>
         </xsc:art>
         <xsc:beschreibung>Zu diesem Zeugnis gehören eine Bescheinigung über die in den Unterrichtsmodulen angestrebten Kompeten-
             zen im berufsübergreifenden Lernbereich und die Kompetenzbilder der im Zeugnis ausgewiesenen Qualifizie-
             rungsbausteine.</xsc:beschreibung>
     </xsc:bemerkung>
-</xsc:schueler.zeugnis.0003>
+</xsc:schueler.bvjzeugnis.0005>

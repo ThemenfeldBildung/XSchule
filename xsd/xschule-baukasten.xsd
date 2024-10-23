@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd"
+           xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
            xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-           xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+           xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-           targetNamespace="http://xschule.digital/def/xschule/1.0/xsd"
-           version="1.0"
+           targetNamespace="http://xschule.digital/def/xschule/1.1/xsd"
+           version="1.1-prerelease"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,7 +18,7 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>1.0</version>
+            <version>1.1-prerelease</version>
             <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -27,8 +27,8 @@
          </versionStandard>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.0/xsd/xbildung-baukasten.xsd"
-              namespace="http://xbildung.de/def/xbildung/1.0/xsd"/>
+   <xs:import schemaLocation="http://xbildung.de/def/xbildung/1.1/xsd/xbildung-baukasten.xsd"
+              namespace="http://xbildung.de/def/xbildung/1.1/xsd"/>
    <xs:import schemaLocation="http://xoev.de/schemata/code/1_0/xoev-code.xsd"
               namespace="http://xoev.de/schemata/code/1_0"/>
    <xs:import schemaLocation="https://xoev.de/schemata/din/91379/2022-08/din-norm-91379-datatypes.xsd"
@@ -188,7 +188,7 @@
          <xs:documentation>Die Klasse "Bemerkung" beinhaltet Angaben zu weiterführenden Informationen mit direktem Schulbezug, die aber nicht einzelnen Fächern zugeordnet sind. Darunter fallen können etwa die Teilnahme an Förderunterricht, freiwilligen Arbeitsgemeinschaften oder Schülerwettbewerben (z.B. "Teilnahme an Jugend Forscht"). Mehrere gleichartige Bemerkungen (z.B. Teilnahme an verschiedenen Arbeitsgemeinschaften) werden über das mehrfache Einbinden der Klasse "Bemerkung" abgebildet, nicht durch mehrere Beschreibungen oder Aufzählungen innerhalb der Beschreibung.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="art" type="xsc:Code.ArtDerBemerkung">
+         <xs:element name="art" type="xbd:Code.ArtDerBemerkung">
             <xs:annotation>
                <xs:documentation>Die Art der Bemerkung gibt an, ob es sich um standardisierte Bemerkungen handelt oder nicht.</xs:documentation>
             </xs:annotation>
@@ -266,56 +266,6 @@
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
-   <xs:complexType name="Code.ArtDerBemerkung">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>ArtDerBemerkung</nameLang>
-               <nameKurz>Art der Bemerkung</nameKurz>
-               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:xschule:codeliste:artderbemerkung</kennung>
-               <beschreibung>Die Codeliste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit diese trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können. Welcher Wert verwendet wird, beeinflusst insbesondere, welche bzw. ob eine "Beschreibung" in der Klasse "Bemerkung" erwartet wird. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</beschreibung>
-               <herausgebernameLang>XSchule</herausgebernameLang>
-               <herausgebernameKurz>XSchule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>1.0</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Art der Bemerkung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-            <genutzteCodeSpalte>code</genutzteCodeSpalte>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xsc:ArtDerBemerkung-Codes"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:xschule-digital:xschule:codeliste:artderbemerkung"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="1.0"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
    <xs:complexType name="Code.ArtDerHZB">
       <xs:annotation>
          <xs:appinfo>
@@ -386,7 +336,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>1.0</version>
+               <version>1.1</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -419,7 +369,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="1.0"/>
+                          fixed="1.1"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -580,7 +530,7 @@
    <xs:complexType name="Code.Auskunftssperre"/>
    <xs:complexType name="Code.Fach">
       <xs:annotation>
-         <xs:documentation>Wie im Kapitel beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden. XSchule stellt die Codeliste zur Verfügung.</xs:documentation>
+         <xs:documentation>Wie im Kapitel beschrieben wird, kann diese Eigenschaft mit anwendungsfall- oder bundeslandspezifischen Codelisten verwendet werden. Welche verwendet wird, muss bei Erstellung des Dokuments festgelegt werden. Dazu muss im XML sowohl das Attribut listURI als auch listVersionID verwendet werden. XSchule stellt die Codelisten und zur Verfügung.</xs:documentation>
       </xs:annotation>
       <xs:complexContent>
          <xs:restriction base="xoev-code:Code">
@@ -603,42 +553,6 @@
             </xs:sequence>
             <xs:attribute name="listURI" type="xs:anyURI" use="required"/>
             <xs:attribute name="listVersionID" type="xs:normalizedString" use="required"/>
-         </xs:restriction>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="Code.GesetzlicherVertreter">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>DSMeld Gesetzlicher Vertreter (DSMeld 0001)</nameLang>
-               <nameKurz>Gesetzlicher Vertreter</nameKurz>
-               <nameTechnisch>gesetzlicher.vertreter</nameTechnisch>
-               <kennung>urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter</kennung>
-               <beschreibung>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld. Codeliste DSMeld Gesetzlicher Vertreter im XRepository: https://www.xrepository.de/details/​urn​:de​:dsmeld​:schluesseltabelle​:gesetzlicher​.vertreter Code: Der zu verwendende Schlüssel ist der Eintrag in der empfohlenen Codespalte "key". Beispiele: (Element : Code) Vater, Elternteil : 1 Mutter, Elternteil : 2 anderer gesetzlicher Vertreter (natürliche Person) : 3 anderer gesetzlicher Vertreter (juristische Person) : 4</beschreibung>
-               <herausgebernameLang>Koordinierungsstelle für IT-Standards</herausgebernameLang>
-               <herausgebernameKurz>KoSIT</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>3</version>
-               <bezugsort>https://www.xrepository.de/details/urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter_3</bezugsort>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten/>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:restriction base="xoev-code:Code">
-            <xs:sequence>
-               <xs:element name="code" form="unqualified" type="xs:token"/>
-            </xs:sequence>
-            <xs:attribute name="listURI"
-                          type="xs:anyURI"
-                          use="optional"
-                          fixed="urn:de:dsmeld:schluesseltabelle:gesetzlicher.vertreter"/>
-            <xs:attribute name="listVersionID"
-                          type="xs:normalizedString"
-                          use="optional"
-                          fixed="3"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1429,7 +1343,7 @@
       </xs:annotation>
       <xs:sequence>
          <xs:element name="gesetzlicherVertreterSchluessel"
-                     type="xsc:Code.GesetzlicherVertreter">
+                     type="xbd:Code.GesetzlicherVertreter">
             <xs:annotation>
                <xs:documentation>Mit dieser Schlüsseltabelle wird die Art der gesetzlichen Vertretung abgebildet. Siehe Blatt 0001 des DSMeld.</xs:documentation>
             </xs:annotation>
@@ -1954,6 +1868,31 @@
          <xs:element name="bildungsgang" minOccurs="0" type="xbd:String.Localized">
             <xs:annotation>
                <xs:documentation>Dieses Feld beinhaltet den Bildungsgang, in dem der Nachweis erbracht wurde. Das kann beispielsweise der G8 oder G9 Bildungsgang sein. Hinweis: Die Angabe erfolgt übergangsweise als Text, bis entschieden wurde, ob und wie sie als Codeliste abgebildet werden kann.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SchuelerBVJZeugnis">
+      <xs:annotation>
+         <xs:documentation>Diese Klasse enthält Informationen über eine natürliche Person, die an einem Bildungsangebot teilnimmt oder teilgenommen hat. Eine Anschrift für den jungen Menschen ist auf dieser Art des Zeugnisses nicht notwendig.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="nameNatuerlichePerson" type="xsc:NameNatuerlichePerson">
+            <xs:annotation>
+               <xs:documentation>Hier werden Informationen zu den Namen einer natürlichen Person zusammengefasst.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="geburt" minOccurs="0" type="xsc:Geburt">
+            <xs:annotation>
+               <xs:documentation>Hier werden Angaben zur Geburt einer natürlichen Person gemacht.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="identifikationsnummer"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="xsc:Identifikation">
+            <xs:annotation>
+               <xs:documentation>Persönliche Identifikationsnummer einer natürlichen Person, die sie kontextbezogen von allen anderen Personen eindeutig unterscheidet. Eine natürliche Person kann mehrere Identifikationsnummern haben.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
@@ -2624,6 +2563,11 @@
                <xs:documentation>Gibt an, ob diese Leistung in die Berechnung eingebracht werden soll. Die genaue Auswirkung hängt vom jeweiligen fachlichen Kontext ab.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="stunden" minOccurs="0" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Gibt an, in welchem Umfang dieses Schulfach gelehrt wurde. Üblicherweise entspricht die Angabe der (Schul-) Stunden dem Zeitrichtwert oder der Stundentafel des jeweiligen Anwendungsfalls.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="Schullaufbahn">
@@ -2680,7 +2624,7 @@
       <xs:sequence>
          <xs:element name="art" type="xbd:String.Localized">
             <xs:annotation>
-               <xs:documentation>Dieses Element gibt die konkrete Art des sonderpädadgogischen Förderbedarfes an. Dies bezieht sich auf spezifische Diagnosen, beispielsweise Dyskalkulie.</xs:documentation>
+               <xs:documentation>Dieses Element gibt die konkrete Art des sonderpädadgogischen Förderbedarfes an. Dies bezieht sich auf spezifische Diagnosen.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="schwerpunkt"
@@ -2922,105 +2866,6 @@
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="ArtDerBemerkung-Codes">
-      <xs:annotation>
-         <xs:appinfo>
-            <codeliste>
-               <nameLang>ArtDerBemerkung</nameLang>
-               <nameKurz>Art der Bemerkung</nameKurz>
-               <nameTechnisch>ArtDerBemerkung-Codes</nameTechnisch>
-               <kennung>urn:xschule-digital:xschule:codeliste:artderbemerkung</kennung>
-               <beschreibung>Die Codeliste "Art der Bemerkung" bildet häufige Bemerkungen ab, damit diese trotz ihres unstrukturierten Charakters besser strukturiert erfasst werden können. Welcher Wert verwendet wird, beeinflusst insbesondere, welche bzw. ob eine "Beschreibung" in der Klasse "Bemerkung" erwartet wird. Die Liste wurde vom XSchule-Projekt in Zusammenarbeit mit den Stakeholdern erstellt.</beschreibung>
-               <herausgebernameLang>XSchule</herausgebernameLang>
-               <herausgebernameKurz>XSchule</herausgebernameKurz>
-            </codeliste>
-            <versionCodeliste>
-               <version>1.0</version>
-               <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
-            </versionCodeliste>
-            <codelistenspalten>
-               <code>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>true</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>true</empfohleneCodeSpalte>
-               </code>
-               <description-de-DE>
-                  <spaltennameLang>Art der Bemerkung</spaltennameLang>
-                  <datentyp>string</datentyp>
-                  <codeSpalte>false</codeSpalte>
-                  <verwendung>required</verwendung>
-                  <empfohleneCodeSpalte>false</empfohleneCodeSpalte>
-               </description-de-DE>
-            </codelistenspalten>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/aequivalenzbemerkung">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Äquivalenzbemerkung</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/allgemeine_beurteilung">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>allgemeine Beurteilung</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/arbeitsgemeinschaft">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Arbeitsgemeinschaft</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/befreiung">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Befreiung</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_ausserschulisch">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>außerschulisches Engagement</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/engagement_schulisch">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>schulisches Engagement</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/freie_formulierung">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>freie Formulierung</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>Rechtsgrundlage</description-de-DE>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderbemerkung/sonstige_standardisierte_bemerkung">
-            <xs:annotation>
-               <xs:appinfo>
-                  <description-de-DE>sonstige standardisierte Bemerkung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
@@ -3362,7 +3207,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>1.0</version>
+               <version>1.1</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3383,77 +3228,84 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_mit_inklusion">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_mit_inklusion">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung mit Inklusion</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung nach Zurückstellung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung Schule freier Trägerschaft</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/regeleinschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/flexible_einschulung">
+            <xs:annotation>
+               <xs:appinfo>
+                  <description-de-DE>flexible Einschulung</description-de-DE>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/regeleinschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Regeleinschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Schulwechsel (außerhalb Schulbezirk)</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/vorzeitige_einschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/vorzeitige_einschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorzeitige Einschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/zurueckstellung_erfolgt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_erfolgt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung erfolgt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/zurueckstellung_gewuenscht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_gewuenscht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung gewünscht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.0/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>

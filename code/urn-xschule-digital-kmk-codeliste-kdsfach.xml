@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName>Fach gem. KDS</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription>Diese Liste enthält Fächer aus dem "Kerndatensatz (KDS) der Länder für schulstatistische Individualdaten in der Version 4.0" , Abschnitt "3. Unterrichtseinheiten (UE)", zu laufender Nummer 3.5, unter dem Merkmal "Fach". Die Liste wurde vom XSchule-Projekt erstellt und die Fächer auf ISCED-F und Fremdsprachen gemappt.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName>KMK</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>Fach-Codes</ShortName>
+      <LongName>Fach gemäß Kerndatensatz</LongName>
+      <Version>1.0</Version>
+      <CanonicalUri>urn:xschule-digital:kmk:codeliste:kdsfach</CanonicalUri>
+      <CanonicalVersionUri>urn:xschule-digital:kmk:codeliste:kdsfach_1.0</CanonicalVersionUri>
+      <Agency>
+         <LongName>Kultusministerkonferenz</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="code" Use="required">
+         <ShortName>code</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-de-DE" Use="required">
+         <ShortName>description-de-DE</ShortName>
+         <LongName>Fachbezeichnung</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="mapping-ISCEDF2013-URI" Use="optional">
+         <ShortName>mapping-ISCEDF2013-URI</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="description-en-GB" Use="required">
+         <ShortName>description-en-GB</ShortName>
+         <LongName>Subject Designation</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="mapping-ISOLanguage-URI" Use="optional">
+         <ShortName>mapping-ISOLanguage-URI</ShortName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="codeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>codeKey</ShortName>
+         <ColumnRef Ref="code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/110</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Berufsbezogenes Fach (Fachpraxis und Fachtheorie) fächerübergreifend</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0417</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Work skills</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/130</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Bildende Kunst</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0213</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Fine arts</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/150</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Biologie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0511</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Biology</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/170</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Chemie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0531</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Chemistry</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/190</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Deutsch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Literature and linguistics (German)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/DEU</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/210</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Deutsch als Zweitsprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (German)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/DEU</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/230</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Englisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (English)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ENG</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/250</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Erdkunde</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0532</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Earth Sciences</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/270</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Ethik/Religionskunde</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Philosophy and ethics (ethics/religion)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/290</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Evangelischer Religionsunterricht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Religion and theology (Evangelical)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/30</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Altgriechisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (ancient Greek (to 1453))</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/GRC</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/310</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Französisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (French)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/FRA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/330</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Geschichte</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0222</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>History and archaeology</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/350</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Informatik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0611</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Computer use</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/370</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Islamischer Religionsunterricht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Religion and theology (Islamic)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/390</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Italienisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (Italian)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ITA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/410</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Katholischer Religionsunterricht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Religion and theology (Catholic)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/430</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Latein</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0232</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Literature and linguistics (Latin)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/LAT</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/450</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Mathematik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0541</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Mathematics</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/470</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Musik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0215</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Music and performing arts (music)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/490</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Neugriechisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (Greek)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/ELL</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/50</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Andere/sonstiges naturwissenschaftliches Fach</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0500</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Natural sciences, mathematics and statistics not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/510</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Philosophie</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0223</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Philosophy and ethics (philosophy)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/530</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Physik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0533</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Physics</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/550</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Psychologie/Pädagogik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0310</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Psychology</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/570</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Russisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (Russian)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>https://publications.europa.eu/resource/authority/language/RUS</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/590</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstige alte Sprache</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (ancient language)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/610</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstige moderne Fremdsprachen</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (modern language)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/630</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstiger Religionsunterricht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0221</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Religion and theology</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/650</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstiges Fach</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI"/>
+         <Value ColumnRef="description-en-GB"/>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/670</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstiges Fach musisch-künstlerischer Bereich</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0210</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Arts not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/690</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sonstiges gesellschaftswissenschaftliches Fach</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0300</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Social sciences, journalism and information not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/70</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Andere/sonstiges technisches Fach</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0700</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Engineering, manufacturing and construction not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/710</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sozialkunde/Politik</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0312</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Political sciences and civics</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/730</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Spanisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (Spanish)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/SPA</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/750</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Sport</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/1014</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Sports</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/770</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Textiles Gestalten</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0723</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Textiles (clothes, footwear and leather)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/790</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Türkisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0231</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Language acquisition (Turkish)</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI">
+            <SimpleValue>http://publications.europa.eu/resource/authority/language/TUR</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/810</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Werken</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0214</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Handicrafts</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/830</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Wirtschaft/Verwaltung/Recht</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0400</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Business, administration and law not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xschule.digital/def/kmk/1.0/code/kdsfach/90</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Arbeitslehre</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISCEDF2013-URI">
+            <SimpleValue>http://data.europa.eu/snb/isced-f/0710</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-en-GB">
+            <SimpleValue>Engineering and engineering trades not further defined</SimpleValue>
+         </Value>
+         <Value ColumnRef="mapping-ISOLanguage-URI"/>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

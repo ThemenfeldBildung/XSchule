@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.schulbescheinigung.0004 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
+<xsc:schueler.schulbescheinigung.0004 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
 
     <!--
-        Datum: 28.05.2024
+        Datum: 22.10.2024
         Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Julia Musterfrau
         Link zur Beispieldatei: http://xbildung.de/def/rep/he/example/schulbesuchsbescheinigung.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
-        Link zur Beispieldatei: N/A
     -->
 
-    <titel>Schulbesuchsbescheinigung</titel>
-    <ausstellung>
-        <datum>2023-01-17</datum>
-        <ort>
-            <ort>Frankfurt am Main</ort>
-        </ort>
-    </ausstellung>
-    
-    <gueltigkeitsdatum>2023-01-17</gueltigkeitsdatum>
-    <sprache>
-        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    <xbd:titel>Schulbesuchsbescheinigung</xbd:titel>
+    <xbd:ausstellung>
+        <xbd:datum>2023-01-17</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Frankfurt am Main</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
 
-    <xsc:schueler>   
+    <xbd:gueltigkeitsdatum>2023-01-17</xbd:gueltigkeitsdatum>
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xsc:schueler>
         <xsc:nameNatuerlichePerson>
             <xsc:familienname>
                 <xsc:name>Musterfrau</xsc:name>
@@ -38,7 +38,7 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <jahrMonatTag>2012-10-23</jahrMonatTag>
+                <xbd:jahrMonatTag>2012-10-23</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <ort>Wiesbaden</ort>
@@ -68,7 +68,7 @@
         </xsc:anschrift>
     </xsc:schueler>
 
-    <xsc:schulbesuch>   
+    <xsc:schulbesuch>
         <xsc:jahrgangsstufe>
             <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_6</code>
         </xsc:jahrgangsstufe>
@@ -76,7 +76,7 @@
             <xsc:beginn>2023-09-12</xsc:beginn>
             <xsc:ende>2023-07-31</xsc:ende>
             <!-- "... besucht unsere Schule vom 12.09.2022 bis voraussichtlich 31.07.2024 ..." -->
-        </xsc:zeitraum>        
+        </xsc:zeitraum>
     </xsc:schulbesuch>
 
     <xsc:schule>
@@ -98,7 +98,7 @@
                     <code>04011</code>
                     <!-- Bremen, Stadt -->
                 </xsc:kreis>
-            </xsc:verwaltungspolitischeKodierung>           
+            </xsc:verwaltungspolitischeKodierung>
         </xsc:anschrift>
         <xsc:artDerTraegerschaft>
             <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/kommune</code>

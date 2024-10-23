@@ -5,23 +5,23 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Nachweise.schueler.zeugnis.0003">
-   <title>schueler.zeugnis.0003</title>
-   <subtitle>Nachricht: <emphasis role="codebf">schueler.zeugnis.0003</emphasis>
-   </subtitle><para>Diese Nachricht bildet ein "generisches" Zeugnis ab. Es wird davon ausgegangen, dass alle Angaben, die auf einem Realschulabschluss-Zeugnis gemacht werden müssen, mit diesem generischen Zeugnis abgedeckt werden.</para>
-<para>Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art des Abschlusses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</para><figure xml:id="figure.XSchule.Nachweise.schueler.zeugnis.0003">
-      <title>schueler.zeugnis.0003</title>
+         xml:id="XSchule.Nachweise.schueler.bvjzeugnis.0005">
+   <title>schueler.bvjzeugnis.0005</title>
+   <subtitle>Nachricht: <emphasis role="codebf">schueler.bvjzeugnis.0005</emphasis>
+   </subtitle><para>Diese Nachricht bildet ein Zeugnis eines berufsvorbereitenden Bildungsgangs ab, der mit dem Berufsvorbereitungsjahr vergleichbar ist.</para>
+<para>Die Nachricht enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art des Abschlusses sowie Informationen zu den einzelnen besuchten Kursen und weiteren erbrachten Leistungen.</para><figure xml:id="figure.XSchule.Nachweise.schueler.bvjzeugnis.0005">
+      <title>schueler.bvjzeugnis.0005</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="54"
-                       fileref="../../../zeichnungen/XSchule/Nachweise/schueler.zeugnis.0003.svg"/>
+                       scale="60"
+                       fileref="../../../zeichnungen/XSchule/Nachweise/schueler.bvjzeugnis.0005.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
    <para>Diese Nachricht  ist eine Erweiterung des Basistyps <emphasis role="codebf">Dokument</emphasis> (siehe <xref linkend="externe.modelle.XBildung" role="AS"/>).</para>
-   <informaltable xml:id="table.XSchule.Nachweise.schueler.zeugnis.0003">
+   <informaltable xml:id="table.XSchule.Nachweise.schueler.bvjzeugnis.0005">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -36,7 +36,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">schueler.zeugnis.0003</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">schueler.bvjzeugnis.0005</emphasis>
                </entry>
             </row>
             <row>
@@ -88,6 +88,72 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">bildungsgang</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Dieses Feld benennt den Bildungsgang. Z.B.: BVJ.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">berufsbereich</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Dieses Feld benennt die Berufsbereiche des Bildungsgangs.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">fachrichtung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Dieses Feld benennt die Fachrichtung des Bildungsgangs.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
                   <emphasis role="bold">schwerpunkt</emphasis>
                </entry>
                <entry>
@@ -106,29 +172,6 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="page"><para>Dieses Feld benennt den Schwerpunkt des Bildungsgangs.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">jahrgangsstufe</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..2</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt die Jahrgangsstufe an, auf die sich das Zeugnis bezieht. Für ein Abiturzeugnis kann mehr als ein Halbjahr angegeben werden.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -157,28 +200,11 @@
                <entry namest="indent1" nameend="child">
                   <emphasis role="bold">nachweisperiode</emphasis>
                </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">code</emphasis>
-               </entry>
                <entry>
                   <emphasis role="codebf">Code.Nachweisperiode</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">1</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode"
@@ -190,29 +216,8 @@
                </entry>
             </row>
             <row>
-               <entry rowsep="0" colsep="0"/>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">nichtGelisteterWert</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="1" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -363,28 +368,6 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">artDerHZB</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.ArtDerHZB</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB" role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtDerHZB" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt die Art der Hochschulzugangsberechtigung an, die gegebenenfalls mit diesem Zeugnis erworben wurde.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
                   <emphasis role="bold">artDesSchulabschlusses</emphasis>
                </entry>
                <entry/>
@@ -519,7 +502,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Angabe zum Lernzeitmodell.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe, ob der Bildungsgang in Vollzeit oder Teilzeit absolviert wird.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="0"/>
@@ -570,17 +553,18 @@
                   <emphasis role="bold">schueler</emphasis>
                </entry>
                <entry>
-                  <emphasis role="codebf">Schueler</emphasis>
+                  <emphasis role="codebf">SchuelerBVJZeugnis</emphasis>
                </entry>
                <entry>
                   <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schueler"
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerBVJZeugnis"
                         role="AbschnittNummer"/>
                </entry>
                <entry>
-                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Schueler" role="Seitenzahl"/>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.SchuelerBVJZeugnis"
+                        role="Seitenzahl"/>
                </entry>
             </row>
             <row>
@@ -609,7 +593,47 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">leistungen</emphasis>
+                  <emphasis role="bold">fehltage</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fehltage</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehltage" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehltage" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier können die Angaben zur Erfassung von Fehltagen im laufenden bzw. vergangenen Schuljahr gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">gesamtnote</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Die kombinierte Bewertung erlaubt eine flexible Erstellung verschiedener „Gesamtnoten“.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">lernbereich</emphasis>
                </entry>
                <entry/>
                <entry>
@@ -619,7 +643,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Kurse und Prüfungen, die dieses Zeugnis dokumentiert, werden in Blöcken zusammengefasst. Es wird empfohlen, Leistungen nicht ohne fachlichen Grund auf mehrere Blöcke aufzuteilen.</para>
+               <entry namest="indent0" nameend="page"><para>Kurse und Prüfungen, die dieses Zeugnis dokumentiert, werden in Lernbereichen zusammengefasst. Es wird empfohlen, Leistungen nicht ohne fachlichen Grund auf mehrere Blöcke aufzuteilen.</para>
 <para>Die Möglichkeit Blöcke zu bilden und diese zu beschreiben, darf nicht dazu führen, dass auf die Befüllung der Meta-Daten einer Leistung (Art der Prüfung, Kursart, ...) verzichtet wird. Zudem soll die Reihenfolge der XML-Elemente den üblichen Regelungen folgen.</para></entry>
             </row>
             <row>
@@ -669,6 +693,28 @@
             <row>
                <entry rowsep="0" colsep="1"/>
                <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">gesamtnote</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Benotung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
                   <emphasis role="bold">kurs</emphasis>
                </entry>
                <entry>
@@ -712,195 +758,13 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">kombinierteBewertung</emphasis>
-               </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die kombinierte Bewertung erlaubt eine flexible Erstellung verschiedener „Gesamtnoten“.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">bezeichnung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier die Bezeichnung dieser kombinierten Bewertung angegeben werden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">beschreibung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">String.Localized</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Bei Bedarf kann hier beschrieben werden, wie die kombinierte Bewertung berechnet wird.</para>
-<para>Um die einbezogenen Kurse zu kennzeichnen, sind auch die Eigenschaften kursart und berechnungsgrundlage zu nutzen.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">note</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Benotung</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">anforderungsniveau</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Anforderungsniveau</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Anforderungsniveau"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die kombinierte Bewertung kann auf einem bestimmen Anforderungsniveau erbracht werden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">verpflichtungsgrad</emphasis>
-               </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die kombinierte Bewertung kann evtl. mit einem bestimmen Verpflichtungsgrad erbracht werden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">code</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Verpflichtungsgrad</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Verpflichtungsgrad"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">nichtGelisteterWert</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="1" colsep="0"/>
-               <entry rowsep="1" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">fremdsprachen</emphasis>
-               </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen zusammen, in denen Kenntnisse erworben wurden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
                   <emphasis role="bold">fremdsprache</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">Fremdsprache</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">0..1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Fremdsprache" role="AbschnittNummer"/>
@@ -910,52 +774,7 @@
                </entry>
             </row>
             <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen, in denen Kenntnisse erworben wurden, zusammen.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">weitereSprachkenntnisse</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.ArtWeitererSprachkenntnisse</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtWeitererSprachkenntnisse"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.ArtWeitererSprachkenntnisse"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier kann der Erwerb zusätzlicher Nachweise über Sprachkenntnisse angegeben werden.</para></entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">praktikum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Praktikum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..n</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
-               </entry>
-               <entry>
-                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page"><para>Diese Klasse dient zur Angabe von Daten zu einem absolvierten Praktikum.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Die Klasse Fremdsprache fasst die Angaben zu den Sprachen zusammen, in denen Kenntnisse erworben wurden.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -976,6 +795,26 @@
             </row>
             <row>
                <entry namest="indent0" nameend="page"><para>Als Bemerkung kann eine Vielzahl von weiteren strukturierten und unstrukturierte Informationen erfasst werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">praktikum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Praktikum</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Diese Klasse dient zur Angabe von Daten zu einem absolvierten Praktikum.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -1020,7 +859,7 @@
    <para/>
    <section>
       <title>Geschäftsregeln</title>
-      <informaltable xml:id="table.XSchule.Nachweise.schueler.zeugnis.0003.rules">
+      <informaltable xml:id="table.XSchule.Nachweise.schueler.bvjzeugnis.0005.rules">
          <tgroup cols="2">
             <colspec colname="id" colnum="1" colwidth="20mm"/>
             <colspec colname="regel" colnum="2" colwidth="140mm"/>
@@ -1049,39 +888,7 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
-                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:block-i/xsc:kurs/xsc:verpflichtungsgrad</emphasis>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;7&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;V&#x200B;G&#x200B;</entry>
-                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xsc:schueler.bvjzeugnis.0005/xsc:allgemeineAngaben/xsc:lernzeitmodell</emphasis>
+                     <emphasis role="codebf">xsc:allgemeineAngaben/xsc:lernzeitmodell</emphasis>
                   </entry>
                </row>
                <row>

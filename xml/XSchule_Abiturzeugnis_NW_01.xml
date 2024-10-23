@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.abiturzeugnis.0002 xmlns:xbd="http://xbildung.de/def/xbildung/1.0/xsd"
-    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.0/xsd"
+<xsc:schueler.abiturzeugnis.0002 xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.0/xsd http://xschule.digital/def/xschule/1.0/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
 
     <!--
-        Datum: 27.05.2024
+        Datum: 22.10.2024
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Niklas Aschenborn
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
-        Link zur Beispieldatei: https://xbildung.de/web/musternachweis/35440
+        Link zur Beispieldatei: https://xbildung.de/def/rep/nw/example/zeugnis_der_allgemeinen_hochschulreife_der_gymnasialen_oberstufe_mit_musterdaten.pdf
     -->
 
-    <titel>Zeugnis der allgemeinen Hochschulreife</titel>
+    <xbd:titel>Zeugnis der allgemeinen Hochschulreife</xbd:titel>
 
-    <ausstellung>
-        <datum>2019-07-05</datum>
-        <ort>
-            <ort>Lemgo</ort>
-        </ort>
-    </ausstellung>
 
-    <gueltigkeitsdatum>2019-07-05</gueltigkeitsdatum>
+    <xbd:ausstellung>
+        <xbd:datum>2019-07-05</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Lemgo</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
 
-    <sprache>
+    <xbd:gueltigkeitsdatum>2019-07-05</xbd:gueltigkeitsdatum>
+
+    <xbd:sprache>
         <code>https://publications.europa.eu/resource/authority/language/DEU</code>
-    </sprache>
+    </xbd:sprache>
 
     <xsc:allgemeineAngaben>
         <xsc:artDesZeugnisses>
@@ -77,7 +79,7 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <jahrMonatTag>1999-12-30</jahrMonatTag>
+                <xbd:jahrMonatTag>1999-12-30</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <ort>Padeborn</ort>
@@ -182,10 +184,11 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -231,10 +234,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -280,10 +283,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -329,10 +332,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -373,10 +376,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -417,10 +420,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -461,17 +464,16 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <!-- 
-                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
+            <!-- Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
                     <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="1.0">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
@@ -505,10 +507,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>06</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -549,10 +551,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -588,10 +590,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>06</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -627,10 +629,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>06</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -666,10 +668,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>09</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>09</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -705,10 +707,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -744,10 +746,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>04</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>04</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
@@ -783,10 +785,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>10</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>10</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -822,10 +824,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -861,10 +863,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>10</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>10</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -900,10 +902,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -939,10 +941,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>12</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>12</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -978,10 +980,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1017,10 +1019,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1056,10 +1058,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1095,10 +1097,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>04</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>04</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
@@ -1134,10 +1136,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>04</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>04</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
@@ -1173,10 +1175,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1212,10 +1214,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1251,10 +1253,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>04</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>04</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/nicht_bestanden</code>
@@ -1290,10 +1292,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1329,10 +1331,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1368,10 +1370,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1407,10 +1409,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1446,10 +1448,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>06</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>06</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1485,10 +1487,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1524,10 +1526,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1563,10 +1565,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>05</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>05</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1602,10 +1604,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>10</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>10</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1641,10 +1643,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>12</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>12</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1680,10 +1682,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>12</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>12</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1719,10 +1721,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/1_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1758,10 +1760,10 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
             </xsc:halbjahr>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:status>
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
@@ -1773,10 +1775,10 @@
     <xsc:block-ii>
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>01</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>01</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1801,10 +1803,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>00</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>00</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1829,10 +1831,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1857,10 +1859,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>11</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://www.xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>11</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://www.xbildung.de/def/xbildung/0.95/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1885,10 +1887,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>08</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>08</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1913,10 +1915,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>07</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>07</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1941,10 +1943,10 @@
 
         <xsc:pruefungsergebnis>
             <xsc:note>
-                <punkte>03</punkte>
-                <bewertungsschemaPunkte>
-                    <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</schemaURI>
-                </bewertungsschemaPunkte>
+                <xbd:punkte>03</xbd:punkte>
+                <xbd:bewertungsschemaPunkte>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</xbd:schemaURI>
+                </xbd:bewertungsschemaPunkte>
             </xsc:note>
             <xsc:artDerPruefung>
                 <xsc:code>
@@ -1970,26 +1972,26 @@
 
     <xsc:block-iii>
         <xsc:durchschnittsnote>
-            <note>3.5</note>
-            <wortbezeichnung>Drei Komma Fünf</wortbezeichnung>
+            <xbd:note>3.5</xbd:note>
+            <xbd:wortbezeichnung>Drei Komma Fünf</xbd:wortbezeichnung>
         </xsc:durchschnittsnote>
         <xsc:gesamtpunktzahl>
-            <punkte>385</punkte>
-            <bewertungsschemaPunkte>
-                <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_300_900</schemaURI>
-            </bewertungsschemaPunkte>
+            <xbd:punkte>385</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_300_900</xbd:schemaURI>
+            </xbd:bewertungsschemaPunkte>
         </xsc:gesamtpunktzahl>
         <xsc:punktsummeBlockI>
-            <punkte>284</punkte>
-            <bewertungsschemaPunkte>
-                <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_200_600</schemaURI>
-            </bewertungsschemaPunkte>
+            <xbd:punkte>284</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_200_600</xbd:schemaURI>
+            </xbd:bewertungsschemaPunkte>
         </xsc:punktsummeBlockI>
         <xsc:punktsummeBlockII>
-            <punkte>101</punkte>
-            <bewertungsschemaPunkte>
-                <schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_100_300</schemaURI>
-            </bewertungsschemaPunkte>
+            <xbd:punkte>101</xbd:punkte>
+            <xbd:bewertungsschemaPunkte>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_100_300</xbd:schemaURI>
+            </xbd:bewertungsschemaPunkte>
         </xsc:punktsummeBlockII>
     </xsc:block-iii>
 
@@ -2040,7 +2042,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Vereinbarung zur Gestaltung der gymnasialen Oberstufe und der
             Abiturprüfung (Beschluss der Kultusministerkonferenz vom 7. Juli 1972 in der jeweils
@@ -2049,7 +2051,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Bildungsstandards für die Allgemeine Hochschulreife und Vereinbarungen
             über die Einheitlichen Prüfungsanforderungen in der Abiturprüfung</xsc:beschreibung>
@@ -2057,7 +2059,7 @@
 
     <xsc:bemerkung>
         <xsc:art>
-            <code>http://xschule.digital/def/xschule/1.0/code/artderbemerkung/rechtsgrundlage</code>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artderbemerkung/rechtsgrundlage</code>
         </xsc:art>
         <xsc:beschreibung>Verordnung über den Bildungsgang und die Abiturprüfung in der gymnasialen
             Oberstufe - APO-GOSt - vom 5. Oktober 1998 in der jeweils geltenden Fassung (BASS 13-32

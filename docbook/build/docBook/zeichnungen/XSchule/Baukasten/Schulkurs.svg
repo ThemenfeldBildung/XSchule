@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="452.971875" height="862">
+<svg xmlns="http://www.w3.org/2000/svg" width="452.971875" height="910">
    <defs>
       <style type="text/css">
                         text {
@@ -38,7 +38,7 @@
                     </style>
    </defs>
    <rect width="442.971875"
-         height="852"
+         height="900"
          stroke-dasharray="3,3"
          rx="1"
          ry="1"
@@ -539,6 +539,31 @@
             y1="738"
             x2="33"
             y2="786"
+            class="type-structure-optional"/>
+      <g transform="translate(55,816)">
+         <rect width="96.6875" height="18" class="element-upper"/>
+         <rect width="96.6875" height="18" y="18" class="element-lower"/>
+         <text font-size="12" x="3.6" y="12" font-weight="bold">stunden</text>
+         <line x1="0" y1="18" x2="96.6875" y2="18"/>
+         <text font-size="12" fill="grey" x="3.6" y="30">type</text>
+         <line x1="31.753125" y1="18" x2="31.753125" y2="36"/>
+         <text font-size="12" x="35.353125" y="30">xs:decimal</text>
+         <g transform="translate(96.6875,0)"/>
+      </g>
+      <line x1="33"
+            y1="834"
+            x2="55"
+            y2="834"
+            class="type-structure-optional"/>
+      <text font-size="11"
+            fill="black"
+            x="53"
+            y="832"
+            text-anchor="end">0..1</text>
+      <line x1="33"
+            y1="786"
+            x2="33"
+            y2="834"
             class="type-structure-optional"/>
       <circle cx="15"
               cy="18"
