@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+
+    <!--
+        Datum: 24.02.2025
+        Name der Beispieldatei: XSchule_Wechsel_Journey_Traegerschaft
+        Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel zu anderer Trägerschaft (Station in der XSchule-Journey: 16. Wechsel zu anderer Trägerschaft)
+        Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+        
+        
+        Fachlicher Sachverhalt: 
+        Schüler der Klasse 11 des Freien Mustergymnasiums Brandenburg geht ab 01.09.2022 in die 12. Klasse des öffentlichen Beispiel-von-Muster-Gymnasiums.
+    -->
+
+    <xbd:titel>Schülerakte</xbd:titel>
+
+    <xbd:ausstellung>
+        <xbd:datum>2022-08-01</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+
+    <xbd:gueltigkeitsdatum>2022-08-01</xbd:gueltigkeitsdatum>
+
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xsc:schueler>
+        <xsc:nameNatuerlichePerson>
+            <xsc:familienname>
+                <xsc:name>Mustermann</xsc:name>
+            </xsc:familienname>
+            <xsc:vorname>
+                <xsc:name>René</xsc:name>
+            </xsc:vorname>
+            <xsc:rufname>
+                <xsc:name>René</xsc:name>
+            </xsc:rufname>
+        </xsc:nameNatuerlichePerson>
+        <xsc:geburt>
+            <xsc:datum>
+                <xbd:jahrMonatTag>2004-01-01</xbd:jahrMonatTag>
+            </xsc:datum>
+            <xsc:geburtsort>
+                <xsc:ort>Überlingen</xsc:ort>
+                <xsc:staat listVersionID="2023-02-24">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </xsc:staat>
+            </xsc:geburtsort>
+        </xsc:geburt>
+        <xsc:staatsangehoerigkeit listVersionID="2023-02-24">
+            <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+            <code>124</code>
+            <name>belgisch</name>
+        </xsc:staatsangehoerigkeit>
+        <xsc:anschrift>
+            <xsc:strasse>Am Musterdeich</xsc:strasse>
+            <xsc:hausnummer>36</xsc:hausnummer>
+            <xsc:postfach>14776</xsc:postfach>
+            <xsc:ort>Brandenburg an der Havel</xsc:ort>
+            <xsc:verwaltungspolitischeKodierung>
+                <xsc:regionalschluessel listVersionID="2023-08-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs -->
+                    <code>120510000000</code>
+                    <!-- Brandenburg an der Havel, Stadt -->
+                </xsc:regionalschluessel>
+            </xsc:verwaltungspolitischeKodierung>
+        </xsc:anschrift>
+        <xsc:geschlecht>
+            <code>m</code>
+        </xsc:geschlecht>
+        <xsc:identifikationsnummer>
+            <xsc:id>3767526</xsc:id>
+            <xsc:beschreibung>Schülernummer</xsc:beschreibung>
+        </xsc:identifikationsnummer>
+        <xsc:sonderpaedagogischerFoerderbedarf>
+            <xsc:art>Dyskalkulie</xsc:art>
+            <xsc:schwerpunkt listURI="urn:xschule-digital:kmk:codeliste:foerderschwerpunkt"
+                listVersionID="1.0">
+                <code>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</code>
+            </xsc:schwerpunkt>
+            <xsc:anlage>
+                <xsc:dateiname>Sonderpädagogisches Gutachten vom 07.02.2013</xsc:dateiname>
+            </xsc:anlage>
+        </xsc:sonderpaedagogischerFoerderbedarf>
+        <xsc:impfung>
+            <xsc:impfschutz>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/impfschutz/vorhanden</code>
+                </xsc:code>
+            </xsc:impfschutz>
+            <xsc:krankheit>
+                <code>http://xschule.digital/def/xschule/1.0/code/krankheit/masern</code>
+            </xsc:krankheit>
+        </xsc:impfung>
+        <xsc:herkunftssprache>
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
+        </xsc:herkunftssprache>
+        <xsc:verkehrssprache>
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
+        </xsc:verkehrssprache>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/gymnasium</code>
+            </xsc:code>
+            <!-- Gymnasium -->
+        </xsc:schulform>
+        <xsc:bildungsgang>G8</xsc:bildungsgang>
+    </xsc:schueler>
+
+    <xsc:erziehungsberechtigter>
+        <xsc:gesetzlicherVertreterSchluessel>
+            <code>2</code>
+            <!-- Mutter, Elternteil -->
+        </xsc:gesetzlicherVertreterSchluessel>
+        <xsc:anschrift>
+            <xsc:strasse>Am Musterdeich</xsc:strasse>
+            <xsc:hausnummer>36</xsc:hausnummer>
+            <xsc:postleitzahl>14776</xsc:postleitzahl>
+            <xsc:ort>Brandenburg an der Havel</xsc:ort>
+            <xsc:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xsc:staat>
+        </xsc:anschrift>
+        <xsc:kontakt>
+            <xsc:kanal>
+                <code>03</code>
+                <!-- Telefon mobil -->
+            </xsc:kanal>
+            <xsc:kennung>0049 174 463 357</xsc:kennung>
+            <xsc:istDienstlich>false</xsc:istDienstlich>
+        </xsc:kontakt>
+        <xsc:weitereDaten>
+            <xsc:natuerlichePerson>
+                <xsc:name>
+                    <xsc:anrede>Frau</xsc:anrede>
+                    <xsc:familienname>
+                        <xsc:name>Mustermann</xsc:name>
+                    </xsc:familienname>
+                    <xsc:vorname>
+                        <xsc:name>Louise</xsc:name>
+                    </xsc:vorname>
+                </xsc:name>
+                <xsc:geburt>
+                    <xbd:jahrMonatTag>1980-03-11</xbd:jahrMonatTag>
+                </xsc:geburt>
+            </xsc:natuerlichePerson>
+        </xsc:weitereDaten>
+    </xsc:erziehungsberechtigter>
+
+    <xsc:erziehungsberechtigter>
+        <xsc:gesetzlicherVertreterSchluessel>
+            <code>1</code>
+            <!-- Vater, Elternteil -->
+        </xsc:gesetzlicherVertreterSchluessel>
+        <xsc:anschrift>
+            <xsc:strasse>Am Musterdeich</xsc:strasse>
+            <xsc:hausnummer>36</xsc:hausnummer>
+            <xsc:postleitzahl>14776</xsc:postleitzahl>
+            <xsc:ort>Brandenburg an der Havel</xsc:ort>
+            <xsc:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xsc:staat>
+        </xsc:anschrift>
+        <xsc:kontakt>
+            <xsc:kanal>
+                <code>03</code>
+                <!-- Telefon mobil -->
+            </xsc:kanal>
+            <xsc:kennung>0049 173 453 729</xsc:kennung>
+            <xsc:istDienstlich>true</xsc:istDienstlich>
+            <xsc:zusatz>Notfallkontakt zum Vater</xsc:zusatz>
+        </xsc:kontakt>
+        <xsc:weitereDaten>
+            <xsc:natuerlichePerson>
+                <xsc:name>
+                    <xsc:anrede>Herr</xsc:anrede>
+                    <xsc:familienname>
+                        <xsc:name>Mustermann</xsc:name>
+                    </xsc:familienname>
+                    <xsc:vorname>
+                        <xsc:name>Peter</xsc:name>
+                    </xsc:vorname>
+                </xsc:name>
+                <xsc:geburt>
+                    <xbd:jahrMonatTag>1980-02-17</xbd:jahrMonatTag>
+                </xsc:geburt>
+            </xsc:natuerlichePerson>
+        </xsc:weitereDaten>
+    </xsc:erziehungsberechtigter>
+
+    <xsc:aufnehmendeSchule>
+        <xsc:name>
+            <xsc:name>Beispiel-von-Muster-Gymnasium</xsc:name>
+            <xsc:kurzbezeichnung>BMG</xsc:kurzbezeichnung>
+        </xsc:name>
+        <xsc:identifikation>
+            <xsc:id>BB_10060</xsc:id>
+            <xsc:beschreibung>Identifikationsnummer</xsc:beschreibung>
+        </xsc:identifikation>
+        <xsc:anschrift>
+            <xsc:strasse>Musterallee</xsc:strasse>
+            <xsc:hausnummer>24</xsc:hausnummer>
+            <xsc:postleitzahl>14770</xsc:postleitzahl>
+            <xsc:ort>Brandenburg an der Havel</xsc:ort>
+            <xsc:verwaltungspolitischeKodierung>
+                <xsc:gemeindeschluessel listVersionID="2023-08-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags -->
+                    <code>12051000</code>
+                    <!-- Brandenburg an der Havel, Stadt -->
+                </xsc:gemeindeschluessel>
+            </xsc:verwaltungspolitischeKodierung>
+        </xsc:anschrift>
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/land</code>
+            <!-- Land -->
+        </xsc:artDerTraegerschaft>
+        <xsc:aufnahme>
+            <xsc:datum>
+                <xbd:jahrMonatTag>2022-09-01</xbd:jahrMonatTag>
+            </xsc:datum>
+            <xsc:jahrgang>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_12</code>
+            </xsc:jahrgang>
+            <xsc:artDerSchulaufnahme>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/~wert_nicht_bekannt</code>
+                </xsc:code>
+            </xsc:artDerSchulaufnahme>
+            <xsc:versetzt>true</xsc:versetzt>
+            <!-- normale Versetzung ohne Ausnahmetatbestand -->
+            <xsc:versetzungsOderAusnahmetatbestandstyp>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</code>
+                </xsc:code>
+            </xsc:versetzungsOderAusnahmetatbestandstyp>
+        </xsc:aufnahme>
+    </xsc:aufnehmendeSchule>
+
+    <xsc:besuchteSchule>
+        <xsc:name>
+            <xsc:name>Freies Mustergymnasium Brandenburg</xsc:name>
+            <xsc:kurzbezeichnung>FMGB</xsc:kurzbezeichnung>
+        </xsc:name>
+        <xsc:kommunikation>
+            <xsc:kanal>
+                <code>01</code>
+                <!-- E-Mail -->
+            </xsc:kanal>
+            <xsc:kennung>freies-mustergymnasium-bbstadt@beispiel.de</xsc:kennung>
+        </xsc:kommunikation>
+        <xsc:identifikation>
+            <xsc:id>BB_10040</xsc:id>
+            <xsc:beschreibung>Identifikationsnummer</xsc:beschreibung>
+        </xsc:identifikation>
+
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/privat</code>
+            <!-- Privat -->
+        </xsc:artDerTraegerschaft>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/gymnasium</code>
+            </xsc:code>
+            <!-- Gymnasium -->
+        </xsc:schulform>
+        <xsc:schulformspezifischeZusatzdaten>
+            <xsc:teilnahmeGemeinsamerUnterricht>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/teilnahmegemeinsamerunterricht/zielgleich</code>
+                </xsc:code>
+            </xsc:teilnahmeGemeinsamerUnterricht>
+        </xsc:schulformspezifischeZusatzdaten>
+        <xsc:zeitraum>
+            <xsc:beginn>2021-09-01</xsc:beginn>
+            <xsc:ende>2022-08-01</xsc:ende>
+        </xsc:zeitraum>
+        <xsc:schuljahrgang>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_11</code>
+            </xsc:jahrgangsstufe>
+            <xsc:unterrichtsteilnahme>
+                <!-- Genehmigte Nichtteilnahme am Unterricht in der elften Klasse-->
+                <xsc:zeitraum>
+                    <xsc:beginn>2021-11-01</xsc:beginn>
+                    <xsc:ende>2021-11-15</xsc:ende>
+                </xsc:zeitraum>
+                <xsc:art>
+                    <xsc:code>
+                        <code>http://xschule.digital/def/xschule/1.0/code/artderunterrichtsteilnahme/freigestellt</code>
+                    </xsc:code>
+                </xsc:art>
+                <xsc:nichtteilnahmeAmUnterricht>true</xsc:nichtteilnahmeAmUnterricht>
+                <xsc:nichtteilnahmeGenehmigt>true</xsc:nichtteilnahmeGenehmigt>
+            </xsc:unterrichtsteilnahme>
+        </xsc:schuljahrgang>
+        <xsc:wahpflichtkurs>
+            <xsc:bezeichnung>Deutsch</xsc:bezeichnung>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_11</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+        </xsc:wahpflichtkurs>
+
+        <xsc:wahpflichtkurs>
+            <xsc:bezeichnung>Chemie</xsc:bezeichnung>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_11</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/2_halbjahr</code>
+            </xsc:halbjahr>
+        </xsc:wahpflichtkurs>
+        <xsc:fehltage>
+            <xsc:anzahlGesamt>20</xsc:anzahlGesamt>
+            <xsc:davonEntschuldigt>20</xsc:davonEntschuldigt>
+        </xsc:fehltage>
+    </xsc:besuchteSchule>
+
+    <xsc:fremdsprache>
+        <xsc:sprache>
+            <code>http://publications.europa.eu/resource/authority/language/ENG</code>
+        </xsc:sprache>
+        <xsc:abfolge>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/1.0/code/abfolgederfremdsprachen/1_fremdsprache</code>
+            </xsc:code>
+        </xsc:abfolge>
+        <xsc:beginn>
+            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_3</code>
+        </xsc:beginn>
+        <xsc:belegteJahre>9</xsc:belegteJahre>
+    </xsc:fremdsprache>
+
+    <xsc:fremdsprache>
+        <xsc:sprache>
+            <code>http://publications.europa.eu/resource/authority/language/SPA</code>
+        </xsc:sprache>
+        <xsc:abfolge>
+            <xsc:code>
+                <code>http://xschule.digital/def/xschule/1.0/code/abfolgederfremdsprachen/2_fremdsprache</code>
+            </xsc:code>
+        </xsc:abfolge>
+        <xsc:beginn>
+            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_7</code>
+        </xsc:beginn>
+        <xsc:belegteJahre>6</xsc:belegteJahre>
+    </xsc:fremdsprache>
+
+    <xsc:schullaufbahn>
+        <xsc:beginnDerSchulpflicht>
+            <xbd:jahrMonatTag>2010-09-01</xbd:jahrMonatTag>
+        </xsc:beginnDerSchulpflicht>
+        <xsc:klasseWiederholt>
+            <xsc:jahr>2008</xsc:jahr>
+            <xsc:klassenstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_8</code>
+            </xsc:klassenstufe>
+            <xsc:anzahlWiederholungen>1</xsc:anzahlWiederholungen>
+        </xsc:klasseWiederholt>
+    </xsc:schullaufbahn>
+
+    <xsc:praktikum>
+        <xbd:zeitraum>
+            <xbd:beginn>2021-02-06</xbd:beginn>
+            <xbd:ende>2021-02-24</xbd:ende>
+        </xbd:zeitraum>
+        <xbd:namePraktikumsstelle>Apotheke am Musterdeich Brandenburg an der
+            Havel</xbd:namePraktikumsstelle>
+        <xbd:ort>
+            <xbd:ort>Brandenburg an der Havel</xbd:ort>
+        </xbd:ort>
+    </xsc:praktikum>
+</xsc:schueler.wechsel.0001>

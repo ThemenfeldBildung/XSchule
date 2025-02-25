@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.bvjzeugnis.0005 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+
+    <!--
+        Datum: 25.02.2025
+        Beispieldatei: - - -
+        Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+    -->
+
+
+    <xbd:titel>Abschlusszeugnis Berufsvorbereitungsjahr</xbd:titel>
+    <!-- Abschlusszeugnis des Berufsvorbereitungsjahrs der Berufsbildenden Schule Technik, Gewerbe, Hauswirtschaft und Sozialwesen der Berufsschule Bad Kreuznach -->
+
+    <xbd:ausstellung>
+        <xbd:datum>2024-11-11</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Bad Kreuznach</xbd:ort>
+            <xbd:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xbd:staat>
+        </xbd:ort>
+    </xbd:ausstellung>
+
+    <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
+        listVersionID="20240925-0">
+        <code>https://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xsc:allgemeineAngaben>
+        <xsc:artDesZeugnisses>
+            <code>http://xschule.digital/def/xschule/1.0/code/zeugnisart/abschlusszeugnis</code>
+        </xsc:artDesZeugnisses>
+
+        <xsc:bildungsgang>BVJ</xsc:bildungsgang>
+        <xsc:schwerpunkt>Ernährung</xsc:schwerpunkt>
+        <xsc:schwerpunkt>Bautechnik</xsc:schwerpunkt>
+        <xsc:klasse>Klasse BVJ24A</xsc:klasse>
+
+        <xsc:nachweiszeitraum>
+            <xsc:beginn>2024-08-26</xsc:beginn>
+            <xsc:ende>2024-11-11</xsc:ende>
+        </xsc:nachweiszeitraum>
+
+        <xsc:schulpflicht>
+            <xsc:erfuellt>true</xsc:erfuellt>
+        </xsc:schulpflicht>
+
+        <xsc:bundesland listVersionID="2010-04-01">
+            <code>07</code>
+            <!-- Rheinland-Pfalz -->
+        </xsc:bundesland>
+        <xsc:niveauEQR>
+            <code>http://data.europa.eu/snb/eqf/2</code>
+        </xsc:niveauEQR>
+        <xsc:artDerBerufsreife>Berufsreife</xsc:artDerBerufsreife>
+        <xsc:artDesSchulabschlusses>
+            <xsc:code>
+                <code>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/hauptschulabschluss</code>
+            </xsc:code>
+        </xsc:artDesSchulabschlusses>
+        <xsc:erwerb>
+            <xsc:datum>2024-11-11</xsc:datum>
+            <xsc:ort>
+                <xsc:ort>Bad Kreuznach</xsc:ort>
+                <xsc:staat listVersionID="2023-02-24">
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </xsc:staat>
+            </xsc:ort>
+        </xsc:erwerb>
+    </xsc:allgemeineAngaben>
+
+    <xsc:schueler>
+        <xsc:nameNatuerlichePerson>
+            <xsc:anrede>Frau</xsc:anrede>
+            <xsc:familienname>
+                <xsc:name>Muster</xsc:name>
+            </xsc:familienname>
+            <xsc:vorname>
+                <xsc:name>Renate</xsc:name>
+            </xsc:vorname>
+        </xsc:nameNatuerlichePerson>
+        <xsc:geburt>
+            <xsc:datum>
+                <xbd:jahrMonatTag>2009-01-16</xbd:jahrMonatTag>
+            </xsc:datum>
+            <xsc:geburtsort>
+                <xsc:ort>Bad Kreuznach</xsc:ort>
+                <xsc:staat listVersionID="2023-02-24">
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </xsc:staat>
+            </xsc:geburtsort>
+        </xsc:geburt>
+    </xsc:schueler>
+
+    <xsc:schule>
+        <xsc:name>
+            <xsc:name>Berufsbildende Schule - Technik - Gewerbe - Hauswirtschaft - Sozialwesen</xsc:name>
+        </xsc:name>
+        <xsc:anschrift>
+            <xsc:ort>Bad Kreuznach</xsc:ort>
+            <xsc:staat listVersionID="2023-02-24">
+                <code>000</code>
+                <name>Deutschland</name>
+            </xsc:staat>
+        </xsc:anschrift>
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/kreis</code>
+        </xsc:artDerTraegerschaft>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsvorbereitungsjahr</code>
+            </xsc:code>
+        </xsc:schulform>
+        <xsc:schulform>
+            <xsc:code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
+            </xsc:code>
+        </xsc:schulform>
+    </xsc:schule>
+
+    <!-- Berufliches Lernen und Arbeiten -->
+    <xsc:lernbereich>
+        <xsc:bezeichnung>Berufliches Lernen und Arbeiten</xsc:bezeichnung>
+        <xsc:beschreibung>
+            Das Kernfach und Pflichtfach "Berufliches Lernen und Arbeiten" gliedert 
+            sich in "Berufsbezogener Unterricht" und "Unterricht in Fachpraxis". Beide teilen 
+            sich zusätzlich noch in die jeweiligen Schwerpunkte auf. Diese wwrden als separate 
+            Lernbereiche modelliert.
+        </xsc:beschreibung>
+        <xsc:gesamtnote>
+            <xbd:note>1</xbd:note>
+            <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+            <xbd:bewertungsschemaNote>
+                <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+            </xbd:bewertungsschemaNote>
+        </xsc:gesamtnote>
+
+        <xsc:kurs>
+            <xsc:bezeichnung>Berufsbezogener Unterricht</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/kernfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <xsc:kurs>
+            <xsc:bezeichnung>Unterricht in Fachpraxis</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/kernfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+    </xsc:lernbereich>
+
+    <!-- Alle weiteren Leistungen -->
+    <xsc:lernbereich>
+        <xsc:bezeichnung>Leistungen</xsc:bezeichnung>
+        <xsc:beschreibung>"Berufliches Lernen und Arbeiten" wurde als separater Lernbereich abgebildet.</xsc:beschreibung>
+        <!-- Pflichtfächer -->
+        <!-- Deutsch / Berufsbezogene Kommunikation -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Deutsch / Berufsbezogene Kommunikation</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/190</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/kernfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Mathematik / Berufsbezogenes Rechnen -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Mathematik / Berufsbezogenes Rechnen</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/450</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/kernfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Englisch -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Englisch</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/230</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Sozialkunde und Wirtschaftslehre -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Sozialkunde und Wirtschaftslehre</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/650</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Religion / Ethik -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Religion / Ethik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/270</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Gesundheitserziehung / Sport -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Gesundheitserziehung / Sport</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/750</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Arbeiten mit digitalen Medien / Standardsoftware -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Arbeiten mit digitalen Medien / Standardsoftware</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/650</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Leben und Beruf (teilgenommen) -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Leben und Beruf</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/690</code>
+            </xsc:fach>
+            <xsc:anforderungsniveau listURI="urn:xschule-digital:rp:codeliste:bvj:anforderungsniveau" listVersionID="2025">
+                <code>http://example.org/rp:codeliste:bvj:anforderungsniveau/grundfach</code>
+            </xsc:anforderungsniveau>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/pflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:status>
+                <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/erfolgreich_teilgenommen</code>
+            </xsc:status>
+        </xsc:kurs>
+        
+        <!-- Wahlpflichtfächer -->
+        <!-- Förderunterricht Deutsch / Berufsbezogene Kommunikation -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Förderunterricht Deutsch / Berufsbezogene Kommunikation</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/190</code>
+            </xsc:fach>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Förderunterricht Mathematik / Berufsbezogenes Rechnen -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Förderunterricht Mathematik / Berufsbezogenes Rechnen</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/450</code>
+            </xsc:fach>
+            <xsc:verpflichtungsgrad>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/verpflichtungsgrad/wahlpflichtunterricht</code>
+                </xsc:code>
+            </xsc:verpflichtungsgrad>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+    </xsc:lernbereich>
+
+    <!-- Schwerpunkte des Berufsbezogenen Unterrichts -->
+    <xsc:lernbereich>
+        <xsc:bezeichnung>Schwerpunkte des Berufsbezogenen Unterrichts</xsc:bezeichnung>
+        
+        <!-- Fachtheorie Bautechnik -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Fachtheorie Bautechnik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Fachtheorie Ernährung / Lebensmitteltechnik -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Fachtheorie Ernährung / Lebensmitteltechnik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+    </xsc:lernbereich>
+    
+    <!-- Schwerpunkte des Unterrichts in Fachpraxis -->
+    <xsc:lernbereich>
+        <xsc:bezeichnung>Schwerpunkte des Unterrichts in Fachpraxis</xsc:bezeichnung>
+        
+        <!-- Fachpraxis Bautechnik -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Fachpraxis Bautechnik</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+        
+        <!-- Fachpraxis Ernährung -->
+        <xsc:kurs>
+            <xsc:bezeichnung>Fachpraxis Ernährung</xsc:bezeichnung>
+            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:kdsfach" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/kmk/2025-02-25/code/kdsfach/110</code>
+            </xsc:fach>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/nicht_zugeordnet</code>
+            </xsc:jahrgangsstufe>
+            <xsc:halbjahr>
+                <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
+            </xsc:halbjahr>
+            <xsc:note>
+                <xbd:note>1</xbd:note>
+                <xbd:wortbezeichnung>sehr gut</xbd:wortbezeichnung>
+                <xbd:bewertungsschemaNote>
+                    <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
+                </xbd:bewertungsschemaNote>
+            </xsc:note>
+        </xsc:kurs>
+    </xsc:lernbereich>
+</xsc:schueler.bvjzeugnis.0005>

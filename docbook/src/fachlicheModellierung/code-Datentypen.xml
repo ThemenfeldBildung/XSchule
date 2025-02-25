@@ -9,6 +9,20 @@
     <info>
         <title>Code-Datentypen</title>
     </info>
+    <para>Im Basismodul XBildung werden Code-Datentypen spezifiziert, die in mindestens zwei
+        verschiedenen Teilmodulen (z.B. XHochschule und XSchule) verwendet werden. Code-Datentypen,
+        die nur in einem einzigen Teillmodul zur Anwendung kommen, werden allein in dem
+        entsprechenden Teilmodul (z. B. XSchule) spezifiziert.</para>
+    <para>Wird eine Codeliste von XSchule selbst herausgegeben, gelten folgende Regeln für die Benennung der Version:</para>
+    <itemizedlist>
+        <listitem>
+            <para>War die Codeliste bereits Teil von XSchule Version 1.0 und wurde seit dem nicht verändert, dann verbleibt die Codelisten-Version auf dem Wert "1.0".</para>
+        </listitem>
+        <listitem>
+            <para>Wurde die Codeliste nach der Version 1.0 aufgenommen oder verändert, dann ist ihre Codelisten-Version das Releasedatum (YYYY-MM-DD) der Spezifikation, in der sie veröffentlicht wurde.</para>
+        </listitem>
+    </itemizedlist>
+    <para>Dieses Vorgehen erlaubt es perspektivisch auch, Codelisten-Versionen unabhängig von einer neuen Spezifikation zu veröffentlichen.</para>
 
     <include xmlns="http://www.w3.org/2001/XInclude"
         href="../../build/docBook/dokumente/anhang/codes/code-uebersichtstabelle.xml"/>

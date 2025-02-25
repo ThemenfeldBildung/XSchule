@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Bewertungsschema-Codes</ShortName>
       <LongName>Bewertungsschema</LongName>
-      <Version>1.0</Version>
+      <Version>2025-02-04</Version>
       <CanonicalUri>urn:xbildung-de:xbildung:codeliste:bewertungsschema</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:bewertungsschema_1.0</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:bewertungsschema_2025-02-04</CanonicalVersionUri>
       <Agency>
          <LongName>XBildung</LongName>
       </Agency>
@@ -48,7 +48,7 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_bmj_juristischepruefung_00_04_18</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_bmj_juristischepruefung_00_04_18</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Verordnung über eine Noten- und Punkteskala für die erste und zweite juristische Prüfung vom 3. Dezember 1981 (BGBl. I S. 1243), die durch Artikel 209 Absatz 4 des Gesetzes vom 19. April 2006 (BGBl. I S. 866) geändert worden ist. Es werden mindestens 4 Punkte zum Bestehen benötigt. Maximal möglich sind 18 Punkte.</SimpleValue>
@@ -59,7 +59,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_100_300</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_abitur_000_100_300</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 1972, verwendet im Block II des Abiturzeugnisses. Es werden mindestens 100 Punkte zum Bestehen benötigt. Maximal möglich sind 300 Punkte.</SimpleValue>
@@ -70,7 +70,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_200_600</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_abitur_000_200_600</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 1972, verwendet im Block I des Abiturzeugnisses. Es werden mindestens 200 Punkte zum Bestehen benötigt. Maximal möglich sind 600 Punkte.</SimpleValue>
@@ -81,7 +81,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_280_840</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_abitur_000_280_840</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 1972, verwendet für die Gesamtqualifikation des Abiturzeugnisses. Es werden mindestens 280 Punkte zum Bestehen benötigt. Maximal möglich sind 840 Punkte.</SimpleValue>
@@ -90,7 +90,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_000_300_900</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_abitur_000_300_900</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 1972, verwendet für die Gesamtqualifikation des Abiturzeugnisses. Es werden mindestens 300 Punkte zum Bestehen benötigt. Maximal möglich sind 900 Punkte.</SimpleValue>
@@ -101,7 +101,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_abitur_00_05_15</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_abitur_00_05_15</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 1972, verwendet für Leistungen aus der Qualifkationsphase. Es werden in einem Kurs mindestens 5 Punkte zum Bestehen benötigt. Maximal möglich sind 15 Punkte.</SimpleValue>
@@ -112,7 +112,18 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_hochschulnote_5_4_1</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_alternativehochschulnote_F_D_A</SimpleValue>
+         </Value>
+         <Value ColumnRef="description-de-DE">
+            <SimpleValue>Alternative Ausprägung der Hochschulnote, welche zusätzlich bzw. anstatt der in Deutschland gängigen Note angegeben werden kann. Es wird davon ausgegangen, dass die Noten hierbei als A, B, C, D, E und F ausgewiesen werden und ggf. bei einem Datenaustausch zwischen Hochschulen nach der modifizierten bayerischen Formel umgerechnet werden müsste.</SimpleValue>
+         </Value>
+         <Value ColumnRef="seeAlso">
+            <SimpleValue>https://www.kmk.org/fileadmin/pdf/ZAB/Hochschulzugang_Beschluesse_der_KMK/GesNot05.pdf</SimpleValue>
+         </Value>
+      </Row>
+      <Row>
+         <Value ColumnRef="code">
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_hochschulnote_5_4_1</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK aus dem Jahre 2003, verwendet für die Bewertung von Leistungen erbracht im Verlauf des Hochschulstudiums. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</SimpleValue>
@@ -123,7 +134,7 @@
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/bewertungsschema/de_kmk_schulnote_6_4_1</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Notensystem der KMK für die Bewertung von Leistungen erbracht im Verlauf der Primar- und Sekundarstufe. Es wird mindestens eine 4 zum Bestehen benötigt. Maximal möglich ist eine 1.</SimpleValue>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+
+    <!--
+        Datum: 25.02.2025
+        Name der Beispieldatei: XSchule_Wechsel_02
+        Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel in der Sekundarstufe
+        Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+       
+        Fachlicher Sachverhalt:
+        Schüler der Klasse 8 aus der Schule Mustergymnasium im Bundesland Saarland wechselt ab 01.09.2023 in die 9. Klasse des Bundeslandes NRW. 
+    -->
+
+    <xbd:titel>Schülerakte</xbd:titel>
+
+    <xbd:ausstellung>
+        <xbd:datum>2023-07-14</xbd:datum>
+        <xbd:ort>
+            <xbd:ort>Homburg</xbd:ort>
+        </xbd:ort>
+    </xbd:ausstellung>
+
+    <xbd:gueltigkeitsdatum>2023-07-14</xbd:gueltigkeitsdatum>
+
+    <xbd:sprache>
+        <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+    </xbd:sprache>
+
+    <xsc:schueler>
+        <xsc:nameNatuerlichePerson>
+            <xsc:familienname>
+                <xsc:name>Musterfrau</xsc:name>
+            </xsc:familienname>
+            <xsc:vorname>
+                <xsc:name>Andrea</xsc:name>
+            </xsc:vorname>
+        </xsc:nameNatuerlichePerson>
+        <xsc:geburt>
+            <xsc:datum>
+                <xbd:jahrMonatTag>2009-04-05</xbd:jahrMonatTag>
+            </xsc:datum>
+            <xsc:geburtsort>
+                <xsc:ort>Homburg</xsc:ort>
+                <xsc:staat listVersionID="2023-02-24">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
+                    <code>000</code>
+                    <name>Deutschland</name>
+                </xsc:staat>
+            </xsc:geburtsort>
+        </xsc:geburt>
+        <xsc:anschrift>
+            <xsc:strasse>Schillerstraße</xsc:strasse>
+            <xsc:hausnummer>10</xsc:hausnummer>
+            <xsc:postleitzahl>66424</xsc:postleitzahl>
+            <xsc:ort>Homburg</xsc:ort>
+        </xsc:anschrift>
+        <xsc:geschlecht>
+            <code>w</code>
+        </xsc:geschlecht>
+        <xsc:impfung>
+            <xsc:impfschutz>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/impfschutz/vorhanden</code>
+                </xsc:code>
+            </xsc:impfschutz>
+            <xsc:krankheit>
+                <code>http://xschule.digital/def/xschule/1.0/code/krankheit/masern</code>
+            </xsc:krankheit>
+        </xsc:impfung>
+        <xsc:herkunftssprache>
+            <code>http://publications.europa.eu/resource/authority/language/DEU</code>
+        </xsc:herkunftssprache>
+        <xsc:verkehrssprache>
+            <code>http://publications.europa.eu/resource/authority/language/FRA</code>
+        </xsc:verkehrssprache>
+    </xsc:schueler>
+
+    <xsc:aufnehmendeSchule>
+        <xsc:name>
+            <xsc:name>Pascal-Gymnasium Münster</xsc:name>
+            <xsc:kurzbezeichnung>Pascal-Gym</xsc:kurzbezeichnung>
+        </xsc:name>
+        <xsc:anschrift>
+            <xsc:strasse>Uppenkampstiege</xsc:strasse>
+            <xsc:hausnummer>17</xsc:hausnummer>
+            <xsc:postleitzahl>48147</xsc:postleitzahl>
+            <xsc:ort>Münster</xsc:ort>
+        </xsc:anschrift>
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/kommune</code>
+            <!-- Kommune -->
+        </xsc:artDerTraegerschaft>
+        <xsc:aufnahme>
+            <xsc:datum>
+                <xbd:jahrMonatTag>2023-09-01</xbd:jahrMonatTag>
+            </xsc:datum>
+            <xsc:jahrgang>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_9</code>
+            </xsc:jahrgang>
+            <xsc:artDerSchulaufnahme>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk</code>
+                </xsc:code>
+            </xsc:artDerSchulaufnahme>
+            <xsc:versetzt>true</xsc:versetzt>
+            <xsc:versetzungsOderAusnahmetatbestandstyp>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</code>
+                    <!-- normale Versetzung ohne Ausnahmetatbestand -->
+                </xsc:code>
+            </xsc:versetzungsOderAusnahmetatbestandstyp>
+        </xsc:aufnahme>
+
+    </xsc:aufnehmendeSchule>
+
+    <xsc:besuchteSchule>
+        <xsc:name>
+            <xsc:name>Saarpfalz-Gymnasium Homburg</xsc:name>
+            <xsc:kurzbezeichnung>SPG-Hom</xsc:kurzbezeichnung>
+        </xsc:name>
+        <xsc:anschrift>
+            <xsc:strasse>u. Allee</xsc:strasse>
+            <!-- Straßenname -->
+            <xsc:hausnummer>75</xsc:hausnummer>
+            <xsc:postleitzahl>66424</xsc:postleitzahl>
+            <xsc:ort>Homburg</xsc:ort>
+        </xsc:anschrift>
+        <xsc:artDerTraegerschaft>
+            <code>http://xbildung.de/def/xbildung/1.0/code/artdertraegerschaft/kommune</code>
+            <!-- Kommune -->
+        </xsc:artDerTraegerschaft>
+
+        <xsc:schuljahrgang>
+            <xsc:versetzt>true</xsc:versetzt>
+            <xsc:versetzungsOderAusnahmetatbestandstyp>
+                <xsc:code>
+                    <code>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</code>
+                    <!-- normale Versetzung ohne Ausnahmetatbestand -->
+                </xsc:code>
+            </xsc:versetzungsOderAusnahmetatbestandstyp>
+            <xsc:teilnahmeAmGanztagsangebot>false</xsc:teilnahmeAmGanztagsangebot>
+            <xsc:jahrgangsstufe>
+                <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_8</code>
+            </xsc:jahrgangsstufe>
+        </xsc:schuljahrgang>
+    </xsc:besuchteSchule>
+</xsc:schueler.wechsel.0001>

@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.schulbescheinigung.0004 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
-    xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+<xsc:schueler.schulbescheinigung.0004 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd"
     xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd">
 
     <!--
         Datum: 25.02.2025
-        Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Julia Musterfrau
-        Link zur Beispieldatei: http://xbildung.de/def/rep/he/example/schulbesuchsbescheinigung.pdf
+        Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Schülerin Muster
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
+        Link zur Beispieldatei: https://xbildung.de/web/musternachweis/30080
     -->
 
-    <xbd:titel>Schulbesuchsbescheinigung</xbd:titel>
+    <xbd:titel>Schulbescheinigung</xbd:titel>
     <xbd:ausstellung>
-        <xbd:datum>2023-01-17</xbd:datum>
+        <xbd:datum>2023-03-01</xbd:datum>
         <xbd:ort>
-            <xbd:ort>Frankfurt am Main</xbd:ort>
+            <xbd:ort>Bremen</xbd:ort>
         </xbd:ort>
     </xbd:ausstellung>
 
-    <xbd:gueltigkeitsdatum>2023-01-17</xbd:gueltigkeitsdatum>
+    <xbd:gueltigkeitsdatum>2023-03-01</xbd:gueltigkeitsdatum>
     <xbd:sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
@@ -30,19 +29,19 @@
     <xsc:schueler>
         <xsc:nameNatuerlichePerson>
             <xsc:familienname>
-                <xsc:name>Musterfrau</xsc:name>
+                <xsc:name>Muster</xsc:name>
             </xsc:familienname>
             <xsc:vorname>
-                <xsc:name>Julia</xsc:name>
+                <xsc:name>Schülerin</xsc:name>
             </xsc:vorname>
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <xbd:jahrMonatTag>2012-10-23</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2004-09-01</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
-                <xsc:ort>Wiesbaden</xsc:ort>
-                <xsc:staat listVersionID="2023-04-24">
+                <xsc:ort>Bremen</xsc:ort>
+                <xsc:staat listVersionID="2024-08-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
@@ -50,19 +49,19 @@
             </xsc:geburtsort>
         </xsc:geburt>
         <xsc:anschrift>
-            <xsc:strasse>Bismarckstraße</xsc:strasse>
-            <xsc:hausnummer>8</xsc:hausnummer>
-            <xsc:postleitzahl>63065</xsc:postleitzahl>
-            <xsc:ort>Offenbach am Main-Innenstadt</xsc:ort>
-            <xsc:staat listVersionID="2023-02-24">
+            <xsc:strasse>Baumschulenweg</xsc:strasse>
+            <xsc:hausnummer>3</xsc:hausnummer>
+            <xsc:postleitzahl>28213</xsc:postleitzahl>
+            <xsc:ort>Bremen</xsc:ort>
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
                 <xsc:kreis listVersionID="2021-07-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
-                    <code>06413</code>
-                    <!-- Offenbach am Main, Stadt -->
+                    <code>04011</code>
+                    <!-- Bremen, Stadt -->
                 </xsc:kreis>
             </xsc:verwaltungspolitischeKodierung>
         </xsc:anschrift>
@@ -70,24 +69,35 @@
 
     <xsc:schulbesuch>
         <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/jahrgangsstufe_6</code>
+            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
         </xsc:jahrgangsstufe>
         <xsc:zeitraum>
-            <xsc:beginn>2023-09-12</xsc:beginn>
-            <xsc:ende>2023-07-31</xsc:ende>
-            <!-- "... besucht unsere Schule vom 12.09.2022 bis voraussichtlich 31.07.2024 ..." -->
+            <xsc:ende>2023-06-30</xsc:ende>
+            <!-- "Voraussichtlich wird die Schule besucht bis zum ..." -->
         </xsc:zeitraum>
     </xsc:schulbesuch>
 
     <xsc:schule>
         <xsc:name>
-            <xsc:name>IGS A</xsc:name>
+            <xsc:name>Kippenberg-Gymnasium</xsc:name>
         </xsc:name>
+        <xsc:kommunikation>
+            <xsc:kanal>
+                <code>02</code>
+            </xsc:kanal>
+            <xsc:kennung>+49 421 555-3640</xsc:kennung>
+        </xsc:kommunikation>
+        <xsc:kommunikation>
+            <xsc:kanal>
+                <code>04</code>
+            </xsc:kanal>
+            <xsc:kennung>+49 421 555-59093</xsc:kennung>
+        </xsc:kommunikation>
         <xsc:anschrift>
-            <xsc:strasse>keine Straße</xsc:strasse>
-            <xsc:hausnummer>N/A</xsc:hausnummer>
-            <xsc:postleitzahl>60488</xsc:postleitzahl>
-            <xsc:ort>Frankfurt am Main</xsc:ort>
+            <xsc:strasse>Schwachhauser Heerstraße</xsc:strasse>
+            <xsc:hausnummer>62</xsc:hausnummer>
+            <xsc:postleitzahl>28209</xsc:postleitzahl>
+            <xsc:ort>Bremen</xsc:ort>
             <xsc:staat listVersionID="2023-02-24">
                 <code>000</code>
                 <name>Deutschland</name>
@@ -105,7 +115,7 @@
         </xsc:artDerTraegerschaft>
         <xsc:schulform>
             <xsc:code>
-                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/integrierte_gesamtschule</code>
+                <code>http://xbildung.de/def/kmk/1.0/code/artderschule/gymnasium</code>
             </xsc:code>
         </xsc:schulform>
     </xsc:schule>

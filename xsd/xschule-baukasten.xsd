@@ -5,7 +5,7 @@
            xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
            xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
            targetNamespace="http://xschule.digital/def/xschule/1.1/xsd"
-           version="1.1-prerelease"
+           version="1.1"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
    <xs:annotation>
@@ -18,7 +18,7 @@
             <beschreibung>XSchule</beschreibung>
          </standard>
          <versionStandard>
-            <version>1.1-prerelease</version>
+            <version>1.1</version>
             <versionXOEVProfil>3.0.1</versionXOEVProfil>
             <versionXOEVHandbuch>3.0.0</versionXOEVHandbuch>
             <versionXGenerator>3.1.1</versionXGenerator>
@@ -336,7 +336,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>1.1</version>
+               <version>2025-02-25</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -369,7 +369,7 @@
             <xs:attribute name="listVersionID"
                           type="xs:normalizedString"
                           use="optional"
-                          fixed="1.1"/>
+                          fixed="2025-02-25"/>
          </xs:restriction>
       </xs:complexContent>
    </xs:complexType>
@@ -1441,7 +1441,7 @@
          </xs:element>
          <xs:element name="beschreibung" type="din91379:datatypeC">
             <xs:annotation>
-               <xs:documentation>Die "beschreibung" muss verwendet werden, um anzugeben, auf welches Identifikationsmittel es sich bei der "id" handelt. Mögliche Einträge können also zum Beispiel "Steuernummer", "Krankenversicherungsnummer" oder "Personalausweis" sein. Es wird angestrebt, eine Liste von erwarteten Werten anzugeben, damit die Identifikationsmittel einheitlich beschrieben werden. Wird die Klasse von einem Fachmodul für eine Eigenschaft verwendet, die den Kontext eindeutig beschreibt, kann auf die Befüllung der "beschreibung" verzichtet werden.</xs:documentation>
+               <xs:documentation>Die "beschreibung" muss verwendet werden, um anzugeben, auf welches Identifikationsmittel es sich bei der "id" handelt. Mögliche Einträge können also zum Beispiel "Steuernummer", "Krankenversicherungsnummer" oder "Personalausweis" sein. Es wird angestrebt, eine Liste von erwarteten Werten anzugeben, damit die Identifikationsmittel einheitlich beschrieben werden. Wird die Klasse von einem Teilmodul für eine Eigenschaft verwendet, die den Kontext eindeutig beschreibt, kann auf die Befüllung der "beschreibung" verzichtet werden.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="gueltigkeit" minOccurs="0" type="xsc:Zeitraum">
@@ -1650,7 +1650,7 @@
          <xs:documentation>Diese Klasse umfasst Informationen über den genauen Ort und den Staat eines Ereignisses, wie z.B. Geburt einer Person oder Erwerb eines Dokuments.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <xs:element name="ort" type="din91379:datatypeC" form="unqualified">
+         <xs:element name="ort" type="din91379:datatypeC" form="qualified">
             <xs:annotation>
                <xs:documentation>Hier werden Angaben zum Ort gemacht.</xs:documentation>
             </xs:annotation>
@@ -1658,7 +1658,7 @@
          <xs:element name="staat"
                      minOccurs="0"
                      type="xbd:Code.Staat"
-                     form="unqualified">
+                     form="qualified">
             <xs:annotation>
                <xs:documentation>Hier werden Angaben zum Staat gemacht.</xs:documentation>
             </xs:annotation>
@@ -3207,7 +3207,7 @@
                <herausgebernameKurz>XSchule</herausgebernameKurz>
             </codeliste>
             <versionCodeliste>
-               <version>1.1</version>
+               <version>2025-02-25</version>
                <versionCodelistenHandbuch>1.2</versionCodelistenHandbuch>
             </versionCodeliste>
             <codelistenspalten>
@@ -3228,84 +3228,84 @@
          </xs:appinfo>
       </xs:annotation>
       <xs:restriction base="xs:token">
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_mit_inklusion">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/einschulung_mit_inklusion">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung mit Inklusion</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/einschulung_nach_zurueckstellung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung nach Zurückstellung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/einschulung_schule_freier_traegerschaft">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Einschulung Schule freier Trägerschaft</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/flexible_einschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/flexible_einschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>flexible Einschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/regeleinschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/regeleinschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Regeleinschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/schulwechsel_ausserhalb_schulbezirk">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Schulwechsel (außerhalb Schulbezirk)</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/vorzeitige_einschulung">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/vorzeitige_einschulung">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>vorzeitige Einschulung</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_erfolgt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/zurueckstellung_erfolgt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung erfolgt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/zurueckstellung_gewuenscht">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/zurueckstellung_gewuenscht">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Zurückstellung gewünscht</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_bekannt">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/~wert_nicht_bekannt">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht bekannt</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_in_liste">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/~wert_nicht_in_liste">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert nicht in Liste</description-de-DE>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://xschule.digital/def/xschule/1.1/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
+         <xs:enumeration value="http://xschule.digital/def/xschule/2025-02-25/code/artderschulaufnahme/~wert_nicht_uebermittelbar_rechtliche_gruende">
             <xs:annotation>
                <xs:appinfo>
                   <description-de-DE>Wert liegt grundsätzlich vor, darf aber aus rechtlichen Gründen nicht übermittelt werden</description-de-DE>

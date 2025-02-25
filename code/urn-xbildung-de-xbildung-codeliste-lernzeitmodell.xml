@@ -5,7 +5,7 @@
    <Annotation>
       <Description>
          <xoev-cl-4:shortName>Lernzeitmodell</xoev-cl-4:shortName>
-         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen.</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:codelistDescription>Diese Codeliste enthält mögliche Ausprägungen von Lernzeitmodellen. Sie wurde mit den Stakeholdern von XBildung und seinen Teilmodulen gemäß den Bedarfen für die jeweiligen Anwendungsfälle erstellt und deckt sich in Teilen mit Einträgen der Liste der Lernzeitmodelle des European Learning Model (ELM). ELM Liste der Lernzeitmodelle: https://op.europa.eu/de/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/learning-schedule</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName>XBildung.de</xoev-cl-4:agencyShortName>
          <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
       </Description>
@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>Lernzeitmodell-Codes</ShortName>
       <LongName>Lernzeitmodell</LongName>
-      <Version>1.0</Version>
+      <Version>2025-02-04</Version>
       <CanonicalUri>urn:xbildung-de:xbildung:codeliste:lernzeitmodell</CanonicalUri>
-      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:lernzeitmodell_1.0</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xbildung-de:xbildung:codeliste:lernzeitmodell_2025-02-04</CanonicalVersionUri>
       <Agency>
          <LongName>XBildung</LongName>
       </Agency>
@@ -28,6 +28,11 @@
       <Column Id="description-de-DE" Use="optional">
          <ShortName>description-de-DE</ShortName>
          <LongName>Lernzeitmodell</LongName>
+         <Data Type="string" Lang="de-DE"/>
+      </Column>
+      <Column Id="mapping-ELMLearningScheduleType" Use="optional">
+         <ShortName>mapping-ELMLearningScheduleType</ShortName>
+         <LongName>ELM Lernzeitmodell</LongName>
          <Data Type="string" Lang="de-DE"/>
       </Column>
       <Key Id="codeKey">
@@ -43,51 +48,61 @@
    <SimpleCodeList>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/dual-ausbildungsintegriert</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/dual-ausbildungsintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dual (ausbildungsintegriert)</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType"/>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/dual-praxisintegriert</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Dual (praxisintegriert)</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType"/>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/teilzeit</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/teilzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Teilzeit</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType">
+            <SimpleValue>https://publications.europa.eu/resource/authority/snb/learning-schedule/f230bae523</SimpleValue>
+         </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/vollzeit</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/vollzeit</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Vollzeit</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType">
+            <SimpleValue>https://publications.europa.eu/resource/authority/snb/learning-schedule/72a0ab92fa</SimpleValue>
+         </Value>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/~wert_nicht_bekannt</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/~wert_nicht_bekannt</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht bekannt</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType"/>
       </Row>
       <Row>
          <Value ColumnRef="code">
-            <SimpleValue>http://xbildung.de/def/xbildung/1.0/code/lernzeitmodell/~wert_nicht_in_liste</SimpleValue>
+            <SimpleValue>http://xbildung.de/def/xbildung/2025-02-04/code/lernzeitmodell/~wert_nicht_in_liste</SimpleValue>
          </Value>
          <Value ColumnRef="description-de-DE">
             <SimpleValue>Wert nicht in Liste</SimpleValue>
          </Value>
+         <Value ColumnRef="mapping-ELMLearningScheduleType"/>
       </Row>
    </SimpleCodeList>
 </gc:CodeList>
