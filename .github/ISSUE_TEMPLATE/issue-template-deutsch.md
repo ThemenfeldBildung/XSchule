@@ -2,7 +2,6 @@
 name: Issue Template Deutsch
 about: Beteiligungsverfahren zur Spezifikation von XSchule
 title: ''
-labels: V0.5, open
 assignees: init-xschule
 
 ---
