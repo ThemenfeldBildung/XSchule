@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.abiturzeugnis.0002 xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd http://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 11.11.2025
         Name der Beispieldatei: Nachweis Abiturzeugnis nach Musterdatei Gudula Barmett
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
@@ -33,18 +33,6 @@
             <code>http://xschule.digital/def/xschule/1.0/code/zeugnisart/abschlusszeugnis</code>
         </xsc:artDesZeugnisses>
 
-        <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_1</code>
-        </xsc:jahrgangsstufe>
-        <xsc:jahrgangsstufe>
-            <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
-        </xsc:jahrgangsstufe>
-        <xsc:nachweisperiode>
-            <xsc:code>
-                <code>http://xschule.digital/def/xschule/1.0/code/nachweisperiode/halbjahr</code>
-            </xsc:code>
-        </xsc:nachweisperiode>
-
         <xsc:bundesland listVersionID="2010-04-01">
             <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland -->
             <code>07</code>
@@ -59,9 +47,22 @@
         </xsc:artDerHZB>
         <xsc:artDesSchulabschlusses>
             <xsc:code>
-                <code>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/allgemeine_hochschulreife</code>
+                <code>http://xbildung.de/def/destatis/2025-10-28/code/artdesschulabschlusses/allgemeine_hochschulreife</code>
             </xsc:code>
         </xsc:artDesSchulabschlusses>
+         <xsc:erwerb>
+            <xsc:datum>2021-03-21</xsc:datum>
+            <xsc:ort>
+                <xsc:ort>Mainz</xsc:ort>
+            </xsc:ort>
+            <xsc:verwaltungspolitischeKodierung>
+                <xsc:kreis listVersionID="2025-03-31">
+                    <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
+                    <code>07315</code>
+                    <!-- Kreisfreie Stadt Mainz -->
+                </xsc:kreis>
+            </xsc:verwaltungspolitischeKodierung>
+        </xsc:erwerb>
     </xsc:allgemeineAngaben>
 
     <xsc:schueler>
@@ -80,7 +81,7 @@
             </xsc:datum>
             <xsc:geburtsort>
                 <xsc:ort>Wiesbaden-Dotzheim</xsc:ort>
-                <xsc:staat listVersionID="2022-02-18">
+                <xsc:staat listVersionID="2024-08-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
@@ -106,13 +107,13 @@
             <xsc:hausnummer>2</xsc:hausnummer>
             <xsc:postleitzahl>55116</xsc:postleitzahl>
             <xsc:ort>Mainz</xsc:ort>
-            <xsc:staat listVersionID="2022-02-18">
+            <xsc:staat listVersionID="2024-08-01">
                 <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:kreis listVersionID="2021-07-31">
+                <xsc:kreis listVersionID="2025-03-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>07315</code>
                     <!-- Mainz, kreisfreie Stadt -->
@@ -146,8 +147,8 @@
     <xsc:block-i>
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!--- Deutsch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -155,11 +156,6 @@
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <!-- 
-                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -181,17 +177,12 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <!-- 
-                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
-            -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!--- Deutsch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -199,11 +190,6 @@
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <!-- 
-                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -225,17 +211,12 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/kursstatus/bestanden</code>
             </xsc:status>
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
-            <!-- 
-                Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
-            -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!--- Deutsch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -243,11 +224,6 @@
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <!-- 
-                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -278,8 +254,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Deutsch (LK/eA)</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!--- Deutsch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -287,11 +263,6 @@
                     <code>http://xschule.digital/def/kmk/1.0/code/aufgabenfeld/slk</code>
                 </xsc:code>
             </xsc:aufgabenfeld>
-            <!-- 
-                Verzicht auf xbd:schluesselISCEDF2013, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                bereits ein Mapping auf ISCED-F 2013 integriert.
-            -->
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
                 listVersionID="1.0">
@@ -315,15 +286,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Sozialkunde</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1080</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1080</code>
                 <!--- Sozialkunde -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -356,8 +327,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Sozialkunde</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1080</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1080</code>
                 <!--- Sozialkunde -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -390,8 +361,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Sozialkunde</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1080</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1080</code>
                 <!--- Sozialkunde -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -424,8 +395,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung xml:lang="de">Sozialkunde</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1080</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1080</code>
                 <!--- Sozialkunde -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -458,8 +429,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
                 <!-- Englisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -490,15 +461,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
                 <!-- Englisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -529,15 +500,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2025-02-25">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
                 <!-- Englisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -568,15 +539,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2025-02-25">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Englisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2025-02-25">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
                 <!-- Englisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -607,15 +578,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/100</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/100</code>
                 <!-- Biologie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -648,8 +619,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/100</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/100</code>
                 <!-- Biologie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -682,8 +653,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/100</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/100</code>
                 <!-- Biologie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -716,8 +687,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Biologie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/100</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/100</code>
                 <!-- Biologie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -750,8 +721,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/420</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -784,8 +755,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/420</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -818,8 +789,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/420</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -852,8 +823,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Geschichte</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/420</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/420</code>
                 <!-- Geschichte -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -886,8 +857,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/740</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -920,8 +891,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/740</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -954,8 +925,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/740</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -988,8 +959,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Mathematik</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/740</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/740</code>
                 <!-- Mathematik -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1022,8 +993,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Chemie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/120</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/120</code>
                 <!-- Chemie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1056,8 +1027,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Chemie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/120</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/120</code>
                 <!-- Chemie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1090,8 +1061,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Chemie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/120</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/120</code>
                 <!-- Chemie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1124,8 +1095,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Chemie</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/120</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/120</code>
                 <!-- Chemie -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1158,8 +1129,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Evangelische Religionslehre</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/320</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/320</code>
                 <!-- Evangelische Religionslehre -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1187,8 +1158,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Evangelische Religionslehre</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/320</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/320</code>
                 <!-- Evangelische Religionslehre -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1216,8 +1187,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Evangelische Religionslehre</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/320</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/320</code>
                 <!-- Evangelische Religionslehre -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1245,8 +1216,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Evangelische Religionslehre</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/320</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/320</code>
                 <!-- Evangelische Religionslehre -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1274,8 +1245,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Sport</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1160</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1160</code>
                 <!-- Sport -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1303,8 +1274,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Sport</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1160</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1160</code>
                 <!-- Sport -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1332,8 +1303,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Sport</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1160</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1160</code>
                 <!-- Sport -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1361,8 +1332,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Sport</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1160</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1160</code>
                 <!-- Sport -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1390,8 +1361,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Bildende Kunst</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/660</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/660</code>
                 <!-- Kunst -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1424,8 +1395,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Bildende Kunst</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/660</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/660</code>
                 <!-- Kunst -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1458,8 +1429,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Bildende Kunst</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/660</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/660</code>
                 <!-- Kunst -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1492,8 +1463,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Bildende Kunst</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/660</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/660</code>
                 <!-- Kunst -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1526,8 +1497,8 @@
 
         <xsc:kurs>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1140</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1140</code>
                 <!-- Spanisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1558,15 +1529,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1140</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1140</code>
                 <!-- Spanisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1597,15 +1568,15 @@
             <xsc:berechnungsgrundlage>false</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2025-02-25">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1140</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1140</code>
                 <!-- Spanisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1636,15 +1607,15 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
 
         <xsc:kurs>
             <xsc:bezeichnung>Spanisch</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1140</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1140</code>
                 <!-- Spanisch -->
             </xsc:fach>
             <xsc:aufgabenfeld>
@@ -1675,7 +1646,7 @@
             <xsc:berechnungsgrundlage>true</xsc:berechnungsgrundlage>
             <!-- 
                 Verzicht auf xsc:vermittelteSprachkenntnis, da die verwendete Codeliste
-                    <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
+                    <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
                 bereits ein Mapping auf vermittelte Sprachkenntnis integriert.
             -->
         </xsc:kurs>
@@ -1693,8 +1664,8 @@
                 </xsc:code>
             </xsc:artDerPruefung>
             <xsc:bezeichnung>Englisch (Facharbeit)</xsc:bezeichnung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
             </xsc:fach>
             <xsc:anforderungsniveau
                 listURI="urn:xschule-digital:xschule:codeliste:anforderungsniveau"
@@ -1718,8 +1689,8 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1741,8 +1712,8 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/muendliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/200</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/200</code>
                 <!-- Deutsch -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1764,8 +1735,8 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1080</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1080</code>
                 <!-- Sozialkunde -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1787,8 +1758,8 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/schriftliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
                 <!-- Englisch -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1810,8 +1781,8 @@
                     <code>http://xbildung.de/def/xbildung/1.0/code/artderpruefung/muendliche_pruefung</code>
                 </xsc:code>
             </xsc:artDerPruefung>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/100</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/100</code>
                 <!-- Biologie -->
             </xsc:fach>
             <xsc:anforderungsniveau
@@ -1862,8 +1833,8 @@
                 <code>http://data.europa.eu/snb/cefr/c_2f49f1ce</code>
                 <!-- C1 -->
             </xsc:ger>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/220</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/220</code>
             </xsc:fach>
         </xsc:fremdsprache>
 
@@ -1875,8 +1846,8 @@
                 <code>http://data.europa.eu/snb/cefr/c_3458f114</code>
                 <!-- A2 -->
             </xsc:ger>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/360</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/360</code>
             </xsc:fach>
         </xsc:fremdsprache>
 
@@ -1888,8 +1859,8 @@
                 <code>http://data.europa.eu/snb/cefr/c_0427b00c</code>
                 <!-- B1 -->
             </xsc:ger>
-            <xsc:fach listURI="urn:xschule-digital:kmk:codeliste:abiturfach" listVersionID="2025-02-25">
-                <code>http://xschule.digital/def/kmk/2025-02-25/code/abiturfach/1140</code>
+            <xsc:fach listURI="urn:xschule-digital:xschule:codeliste:abiturfachdigital" listVersionID="2026">
+                <code>http://xschule.digital/def/xschule/2026/code/abiturfachdigital/1140</code>
             </xsc:fach>
         </xsc:fremdsprache>
     </xsc:fremdsprachen>

@@ -36,7 +36,19 @@
                <para>schueler.abiturzeugnis.0002</para>
             </entry>
             <entry><para>Diese Nachricht bildet das Abiturzeugnis ab. Es enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen sowie Ergebnissen der Abitur-Prüfungen.</para>
-<para>Der Nachrichtentyp ist nur für Abitur-Abschlusszeugnisse geeignet. Zwischenstände, Jahreszeugnisse und andere "Vorstufen" sollen als <xref linkend="XSchule.Nachweise.schueler.zeugnis.0003" role="Titel"/> modelliert werden.</para></entry>
+<para>Der Nachrichtentyp ist nur für Abitur-Abschlusszeugnisse geeignet. Zwischenstände, Jahreszeugnisse und andere "Vorstufen" sollen als <xref linkend="XSchule.Nachweise.schueler.zeugnis.0003" role="Titel"/> modelliert werden.</para>
+
+<para>
+  Der Nachweis <code>schueler.abiturzeugnis.0002</code> stellt eine technische Erweiterung der Klasse <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://xbildung.de/def/xbildung/current/spec/spezifikation.pdf#XBildung.Baukasten.Dokument">Dokument</link>
+ dar. Sie enthält folgende Eigenschaften:<code>sprache</code>, <code>gueltigkeitsdatum</code>, <code>titel</code>, <code>ausstellung</code> und <code>nonce</code>. Für die Erstellung dieses Nachweises gelten folgende Regeln:</para>
+
+<para><itemizedlist spacing="compact" mark="-">
+<listitem><para>Die Eigenschaft <code>sprache</code> <emphasis>MUSS</emphasis>, üblicherweise mit folgendem Code, verwendet werden: <code>https://publications.europa.eu/resource/authority/language/DEU</code></para></listitem>
+<listitem><para>Die Eigenschaft <code>titel</code> <emphasis>SOLL</emphasis> verwendet werden.</para></listitem>
+<listitem><para>Die Eigenschaft <code>ausstellung</code> <emphasis>KANN</emphasis> verwendet werden. Im Vordergrund steht jedoch die Eigenschaft <code>erwerb</code> aus <code>allgemeineAngaben</code>.</para></listitem>
+<listitem><para>Die Eigenschaften <code>gueltigkeitsdatum</code> und <code>nonce</code> sind <emphasis>KÖNNEN</emphasis> verwendet werden.</para></listitem>
+</itemizedlist>
+</para></entry>
             <entry align="center">
                <xref role="Seite" linkend="XSchule.Nachweise.schueler.abiturzeugnis.0002"/>
             </entry>

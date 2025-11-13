@@ -15,18 +15,18 @@
            uri="urn:xoev-de:kosit:xoev:datentyp:din-spec-91379_2019-03"/>
    <sch:ns prefix="ds" uri="http://www.w3.org/2000/09/xmldsig#"/>
    <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
-   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.1/xsd"/>
+   <sch:ns prefix="xbd" uri="http://xbildung.de/def/xbildung/1.2/xsd"/>
    <sch:ns prefix="xml" uri="http://www.w3.org/XML/1998/namespace"/>
    <sch:ns prefix="xoev-code" uri="http://xoev.de/schemata/code/1_0"/>
    <sch:ns prefix="xoev-lc" uri="http://xoev.de/latinchars/1_1/datatypes"/>
-   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/1.1/xsd"/>
+   <sch:ns prefix="xsc" uri="http://xschule.digital/def/xschule/1.2/xsd"/>
    <sch:pattern>
       <!--Abstrakte Regeln-->
       <!-- /Data/XSchule/Nachweise/schueler.abiturzeugnis.0002 -->
-      <sch:rule id="rule-XSC-0002-0100-MUSS-Kurs-Pruefung-KMK-Abiturfach"
+      <sch:rule id="rule-XSC-0002-0100-MUSS-Kurs-Pruefung-AbiturfachDigital"
                 abstract="true">
-         <sch:assert id="XSC-0002-0100-MUSS-Kurs-Pruefung-KMK-Abiturfach"
-                     test="every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:kmk:codeliste:abiturfach']) &gt; 0">Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der KMK-Abiturfächer-Liste versehen sein.</sch:assert>
+         <sch:assert id="XSC-0002-0100-MUSS-Kurs-Pruefung-AbiturfachDigital"
+                     test="every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis[not(xsc:artDerPruefung/xsc:code/code='http://xbildung.de/def/xbildung/1.0/code/artderpruefung/besondere_lernleistung')]) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:xschule:codeliste:abiturfachdigital']) &gt; 0">Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der Abiturfach-Digital-Liste versehen sein.</sch:assert>
       </sch:rule>
       <!-- /Data/XSchule/Baukasten/Anonymous/wnil.AbfolgeDerFremdsprachen -->
       <sch:rule id="rule-XSC-1000-0001-WNIL_AdF" abstract="true">
@@ -105,7 +105,7 @@
       </sch:rule>
       <!--Konkrete Regeln-->
       <sch:rule context="xsc:schueler.abiturzeugnis.0002">
-         <sch:extends rule="rule-XSC-0002-0100-MUSS-Kurs-Pruefung-KMK-Abiturfach"/>
+         <sch:extends rule="rule-XSC-0002-0100-MUSS-Kurs-Pruefung-AbiturfachDigital"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:abfolge">
          <sch:extends rule="rule-XSC-1000-0001-WNIL_AdF"/>
@@ -127,9 +127,6 @@
       </sch:rule>
       <sch:rule context="xsc:schueler.wechsel.0001//xsc:schullaufbahnempfehlung">
          <sch:extends rule="rule-XSC-1000-0004-WNIL_LE"/>
-      </sch:rule>
-      <sch:rule context="xsc:schueler.abiturzeugnis.0002//xsc:nachweisperiode">
-         <sch:extends rule="rule-XSC-1000-0005-WNIL_NPe"/>
       </sch:rule>
       <sch:rule context="xsc:schueler.zeugnis.0003//xsc:nachweisperiode">
          <sch:extends rule="rule-XSC-1000-0005-WNIL_NPe"/>

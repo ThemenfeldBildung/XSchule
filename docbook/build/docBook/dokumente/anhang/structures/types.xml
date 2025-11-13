@@ -237,9 +237,11 @@
       <kosit:property name="eigenschaft/@listURI"/>
       <kosit:property name="eigenschaft/@listVersionID"/>
    </kosit:type>
-   <kosit:type name="Fehltage" id="XSchule.Baukasten.Fehltage" prefix="xsc">
-      <kosit:property name="anzahlGesamt"/>
-      <kosit:property name="davonEntschuldigt"/>
+   <kosit:type name="Fehlzeiten" id="XSchule.Baukasten.Fehlzeiten" prefix="xsc">
+      <kosit:property name="stundenEntschuldigt"/>
+      <kosit:property name="stundenGesamt"/>
+      <kosit:property name="tageEntschuldigt"/>
+      <kosit:property name="tageGesamt"/>
    </kosit:type>
    <kosit:type name="Fremdsprache"
                id="XSchule.Baukasten.Fremdsprache"
@@ -857,6 +859,10 @@
       <kosit:property name="artDerPruefung"/>
       <kosit:property name="artDerPruefung/code"/>
       <kosit:property name="artDerPruefung/nichtGelisteterWert"/>
+      <kosit:property name="aufgabenfeld"/>
+      <kosit:property name="aufgabenfeld/code"/>
+      <kosit:property name="aufgabenfeld/nichtGelisteterWert"/>
+      <kosit:property name="berechnungsgrundlage"/>
       <kosit:property name="bezeichnung"/>
       <kosit:property name="bezeichnung/@lang"/>
       <kosit:property name="fach"/>
@@ -1383,9 +1389,11 @@
       <kosit:property name="artDerTraegerschaft"/>
       <kosit:property name="bildungsgang"/>
       <kosit:property name="bildungsgang/@lang"/>
-      <kosit:property name="fehltage"/>
-      <kosit:property name="fehltage/anzahlGesamt"/>
-      <kosit:property name="fehltage/davonEntschuldigt"/>
+      <kosit:property name="fehlzeiten"/>
+      <kosit:property name="fehlzeiten/tageGesamt"/>
+      <kosit:property name="fehlzeiten/tageEntschuldigt"/>
+      <kosit:property name="fehlzeiten/stundenGesamt"/>
+      <kosit:property name="fehlzeiten/stundenEntschuldigt"/>
       <kosit:property name="identifikation"/>
       <kosit:property name="identifikation/id"/>
       <kosit:property name="identifikation/beschreibung"/>

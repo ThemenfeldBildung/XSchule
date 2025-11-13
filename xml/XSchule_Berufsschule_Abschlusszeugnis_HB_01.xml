@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.zeugnis.0003 xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd https://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 06.11.2025
         Beispieldatei: https://xbildung.de/def/rep/hb/example/abschlusszeugnis_berufsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt 
     -->
@@ -67,7 +67,7 @@
         -->
         <xsc:artDesSchulabschlusses>
             <xsc:code>
-                <code>http://xbildung.de/def/destatis/1.0/code/artdesschulabschlusses/realschulabschluss</code>
+                <code>http://xbildung.de/def/destatis/2025-10-28/code/artdesschulabschlusses/mittlerer_schulabschluss</code>
             </xsc:code>
         </xsc:artDesSchulabschlusses>
 
@@ -97,7 +97,7 @@
             <xsc:geburtsort>
                 <xsc:ort>Deir Ezzor</xsc:ort>
                 <!-- xbd:staat: nicht auf Zeugnis genannt, hier aber ggf. relevant. Aber auch datenschutztechnisch kritisch. -->
-                <xsc:staat listVersionID="2023-07-27">
+                <xsc:staat listVersionID="2024-08-01">
                     <code>475</code>
                     <name>Arabische Republik Syrien</name>
                 </xsc:staat>
@@ -152,9 +152,7 @@
                     <xbd:schemaURI>http://xbildung.de/def/xbildung/2025-02-04/code/bewertungsschema/de_kmk_schulnote_6_4_1</xbd:schemaURI>
                 </xbd:bewertungsschemaNote>
             </xsc:note>
-
         </xsc:kurs>
-
         <xsc:kurs>
             <xsc:bezeichnung>Wirtschaftsenglisch</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>
@@ -181,7 +179,6 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
-
         <xsc:kurs>
             <xsc:bezeichnung>Politik</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>
@@ -208,7 +205,6 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
-
         <xsc:kurs>
             <xsc:bezeichnung>Grundlagen des Rechnungswesens</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>
@@ -235,7 +231,6 @@
                 </xbd:bewertungsschemaNote>
             </xsc:note>
         </xsc:kurs>
-
         <xsc:kurs>
             <xsc:bezeichnung>Moderner Schriftverkehr</xsc:bezeichnung>
             <xsc:verpflichtungsgrad>

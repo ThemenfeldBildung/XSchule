@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd https://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 24.02.2025
+        Datum: 06.11.2025
         Name der Beispieldatei: XSchule_Wechsel_Journey_Sekundarstufe_I
         Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel zur Sekundarstufe I (Station in der XSchule-Journey: 7. Wechsel zu Sek I)
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
@@ -50,14 +50,14 @@
             </xsc:datum>
             <xsc:geburtsort>
                 <xsc:ort>Überlingen</xsc:ort>
-                <xsc:staat listVersionID="2016-01-01">
+                <xsc:staat listVersionID="2024-08-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
                 </xsc:staat>
             </xsc:geburtsort>
         </xsc:geburt>
-        <xsc:staatsangehoerigkeit listVersionID="2016-01-01">
+        <xsc:staatsangehoerigkeit listVersionID="2024-08-01">
             <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
             <code>124</code>
             <name>belgisch</name>
@@ -68,7 +68,7 @@
             <xsc:postleitzahl>14776</xsc:postleitzahl>
             <xsc:ort>Brandenburg an der Havel</xsc:ort>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:regionalschluessel listVersionID="2016-06-01">
+                <xsc:regionalschluessel listVersionID="2025-11-30">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs -->
                     <code>120510000000</code>
                     <!-- Brandenburg an der Havel, Stadt -->
@@ -84,13 +84,11 @@
         </xsc:identifikationsnummer>
         <xsc:sonderpaedagogischerFoerderbedarf>
             <xsc:art>Dyskalkulie</xsc:art>
-            <xsc:schwerpunkt listURI="urn:xschule-digital:kmk:codeliste:foerderschwerpunkt"
-                listVersionID="1.0">
+            <xsc:schwerpunkt listURI="urn:xschule-digital:kmk:codeliste:foerderschwerpunkt" listVersionID="1.0">
                 <code>http://xschule.digital/def/kmk/2019/code/foerderschwerpunkt/ohne_sonderpaedagogische_foerderung</code>
             </xsc:schwerpunkt>
             <xsc:anlage>
-                <xsc:dateiname>Sonderpädagogisches Gutachten vom
-                    07.02.2013</xsc:dateiname>
+                <xsc:dateiname>2013-02-05 Sonderpädagogisches_Gutachten.pdf</xsc:dateiname>
             </xsc:anlage>
         </xsc:sonderpaedagogischerFoerderbedarf>
         <xsc:impfung>
@@ -127,7 +125,7 @@
             <xsc:hausnummer>36</xsc:hausnummer>
             <xsc:postleitzahl>14776</xsc:postleitzahl>
             <xsc:ort>Brandenburg an der Havel</xsc:ort>
-            <xsc:staat listVersionID="2016-01-01">
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
@@ -168,7 +166,7 @@
             <xsc:hausnummer>36</xsc:hausnummer>
             <xsc:postleitzahl>14776</xsc:postleitzahl>
             <xsc:ort>Brandenburg an der Havel</xsc:ort>
-            <xsc:staat listVersionID="2016-01-01">
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
@@ -200,8 +198,6 @@
         </xsc:weitereDaten>
     </xsc:erziehungsberechtigter>
 
-
-
     <xsc:aufnehmendeSchule>
         <xsc:name>
             <xsc:name>Musteroberschule</xsc:name>
@@ -224,7 +220,7 @@
             <xsc:postleitzahl>14770</xsc:postleitzahl>
             <xsc:ort>Brandenburg an der Havel</xsc:ort>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:gemeindeschluessel listVersionID="2016-06-01">
+                <xsc:gemeindeschluessel listVersionID="2025-11-30">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:ags -->
                     <code>12051000</code>
                     <!-- Brandenburg an der Havel, Stadt -->
@@ -247,7 +243,7 @@
             <!-- normale Versetzung ohne Ausnahmetatbestand -->
             <xsc:versetzungsOderAusnahmetatbestandstyp>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</code>
+                    <code>http://xschule.digital/def/xschule/2025-11-01/code/versetzungstyp/versetzung</code>
                 </xsc:code>
             </xsc:versetzungsOderAusnahmetatbestandstyp>
         </xsc:aufnahme>
@@ -306,13 +302,11 @@
                 <xsc:nichtteilnahmeGenehmigt>true</xsc:nichtteilnahmeGenehmigt>
             </xsc:unterrichtsteilnahme>
         </xsc:schuljahrgang>
-        <xsc:fehltage>
-            <xsc:anzahlGesamt>20</xsc:anzahlGesamt>
-            <xsc:davonEntschuldigt>20</xsc:davonEntschuldigt>
-        </xsc:fehltage>
+        <xsc:fehlzeiten>
+            <xsc:tageGesamt>20</xsc:tageGesamt>
+            <xsc:tageEntschuldigt>20</xsc:tageEntschuldigt>
+        </xsc:fehlzeiten>
     </xsc:besuchteSchule>
-
-
 
     <xsc:fremdsprache>
         <xsc:sprache>

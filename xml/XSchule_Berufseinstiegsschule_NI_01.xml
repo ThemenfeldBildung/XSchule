@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.bvjzeugnis.0005 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd http://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 10.11.2025
         Beispieldatei: https://xbildung.de/def/rep/ni/example/zeugnis_berufseinstiegsschule.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
     -->
@@ -21,14 +21,14 @@
         Schulformen eingerichtet, etwa die Jungarbeiterklasse in Bayern und Baden-Württemberg. -->
 
     <xbd:ausstellung>
-        <xbd:datum>2020-07-01</xbd:datum>
+        <xbd:datum>2025-07-01</xbd:datum>
         <xbd:ort>
             <xbd:ort>Hannover</xbd:ort>
         </xbd:ort>
     </xbd:ausstellung>
 
     <xbd:ausstellung>
-        <xbd:datum>2020-07-01</xbd:datum>
+        <xbd:datum>2025-07-01</xbd:datum>
     </xbd:ausstellung>
 
     <xbd:sprache listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:language"
@@ -51,18 +51,18 @@
         </xsc:nachweisperiode>
 
         <xsc:nachweiszeitraum>
-            <xsc:beginn>2019-08-01</xsc:beginn>
-            <xsc:ende>2020-07-01</xsc:ende>
+            <xsc:beginn>2024-08-01</xsc:beginn>
+            <xsc:ende>2025-07-01</xsc:ende>
         </xsc:nachweiszeitraum>
 
         <xsc:schulpflicht>
             <xsc:erfuellt>true</xsc:erfuellt>
         </xsc:schulpflicht>
 
-        <xsc:bundesland listVersionID="2010-04-01">
+        <xsc:bundesland listURI="urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland" listVersionID="2010-04-01">
             <code>03</code>
         </xsc:bundesland>
-        <xsc:niveauEQR>
+        <xsc:niveauEQR listURI="urn:xbildung-de:publicationsoffice-eu:codeliste:eqf" listVersionID="20230118-0">
             <code>http://data.europa.eu/snb/eqf/1</code>
         </xsc:niveauEQR>
 
@@ -80,7 +80,7 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <xbd:jahrMonatTag>2002-12-19</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2009-12-19</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <xsc:ort>Musterstadt</xsc:ort>
@@ -91,17 +91,19 @@
     <xsc:schule>
         <xsc:name>
             <xsc:name>Berufsbildende Schule Name der Schule</xsc:name>
-        </xsc:name><xsc:schulform>
+        </xsc:name>
+        <xsc:schulform>
             <xsc:code>
                 <code>http://xbildung.de/def/kmk/1.0/code/artderschule/berufsfachschule</code>
             </xsc:code>
         </xsc:schulform>
     </xsc:schule>
 
-    <xsc:fehltage>
-        <xsc:anzahlGesamt>12</xsc:anzahlGesamt>
-        <xsc:davonEntschuldigt>12</xsc:davonEntschuldigt>
-    </xsc:fehltage>
+
+    <xsc:fehlzeiten>
+        <xsc:tageGesamt>12</xsc:tageGesamt>
+        <xsc:tageEntschuldigt>12</xsc:tageEntschuldigt>
+    </xsc:fehlzeiten>
 
     <xsc:lernbereich>
         <xsc:bezeichnung>berufsübergreifender Lernbereich</xsc:bezeichnung>
@@ -282,14 +284,14 @@
             zen im berufsübergreifenden Lernbereich und die Kompetenzbilder der im Zeugnis ausgewiesenen Qualifizie-
             rungsbausteine.</xsc:beschreibung>
     </xsc:bemerkung>
-    
+
     <xsc:bemerkung>
         <xsc:art>
             <code>http://xbildung.de/def/xbildung/2025-02-04/code/artderbemerkung/sonstige_standardisierte_bemerkung</code>
         </xsc:art>
         <xsc:beschreibung>Qualifizierungsbaustein: Hat den Qualifizierungsbaustein [XYZ] erworben.</xsc:beschreibung>
     </xsc:bemerkung>
-    
+
     <xsc:praktikum>
         <xbd:zeitraum>
             <xbd:zusatz>Im Umfang von [PraktDauer] Wochen teilgenommen</xbd:zusatz>

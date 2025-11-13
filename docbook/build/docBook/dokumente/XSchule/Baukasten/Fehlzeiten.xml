@@ -5,21 +5,21 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          version="5"
          xml:lang="de"
-         xml:id="XSchule.Baukasten.Fehltage">
-   <title>Fehltage</title>
-   <subtitle>Typ: <emphasis role="codebf">Fehltage</emphasis>
-   </subtitle><para>Hier können die Angaben zur Erfassung von Fehltagen gemacht werden. Der relevante Zeitraum, auf den sich die Angaben beziehen, ergibt sich aus dem Kontext in dem die Klasse verwendet wird.</para><figure xml:id="figure.XSchule.Baukasten.Fehltage">
-      <title>Fehltage</title>
+         xml:id="XSchule.Baukasten.Fehlzeiten">
+   <title>Fehlzeiten</title>
+   <subtitle>Typ: <emphasis role="codebf">Fehlzeiten</emphasis>
+   </subtitle><para>Hier können die Angaben zur Erfassung von Fehlzeiten gemacht werden. Der relevante Zeitraum, auf den sich die Angaben beziehen, ergibt sich aus dem Kontext in dem die Klasse verwendet wird.</para><figure xml:id="figure.XSchule.Baukasten.Fehlzeiten">
+      <title>Fehlzeiten</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
                        scale="110"
-                       fileref="../../../zeichnungen/XSchule/Baukasten/Fehltage.svg"/>
+                       fileref="../../../zeichnungen/XSchule/Baukasten/Fehlzeiten.svg"/>
          </imageobject>
       </mediaobject>
    </figure>
-   <informaltable xml:id="table.XSchule.Baukasten.Fehltage">
+   <informaltable xml:id="table.XSchule.Baukasten.Fehlzeiten">
       <tgroup cols="11">
          <colspec colname="indent0" colnum="1" colwidth="5mm"/>
          <colspec colname="indent1" colnum="2" colwidth="5mm"/>
@@ -34,7 +34,7 @@
          <colspec colname="page" colnum="11" colwidth="12mm"/>
          <thead>
             <row>
-               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Fehltage</emphasis>
+               <entry namest="indent0" nameend="page" align="center">Kindelemente von <emphasis role="codebf">Fehlzeiten</emphasis>
                </entry>
             </row>
             <row>
@@ -48,23 +48,7 @@
          <tbody>
             <row>
                <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">anzahlGesamt</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:decimal</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="page">Hier ist die gesamte Anzahl der Fehltage einzutragen.</entry>
-            </row>
-            <row>
-               <entry namest="indent0" nameend="child">
-                  <emphasis role="bold">davonEntschuldigt</emphasis>
+                  <emphasis role="bold">tageGesamt</emphasis>
                </entry>
                <entry>
                   <emphasis role="codebf">xs:decimal</emphasis>
@@ -76,12 +60,60 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page">Hier ist die Anzahl der entschuldigten Fehltage einzutragen.</entry>
+               <entry namest="indent0" nameend="page"><para>Hier ist die gesamte Anzahl der Fehltage einzutragen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">tageEntschuldigt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier ist die Anzahl der entschuldigten Fehltage einzutragen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">stundenGesamt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier ist die gesamte Anzahl der Fehlstunden einzutragen.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">stundenEntschuldigt</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">xs:decimal</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry/>
+               <entry/>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier ist die Anzahl der entschuldigten Fehlstunden einzutragen.</para></entry>
             </row>
          </tbody>
       </tgroup>
    </informaltable>
    <para/>
    <include xmlns="http://www.w3.org/2001/XInclude"
-            href="../../anhang/verwendung/complexTypes/fehltage_list.xml"/>
+            href="../../anhang/verwendung/complexTypes/fehlzeiten_list.xml"/>
 </section>

@@ -15,7 +15,7 @@
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="54"
+                       scale="53"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.zeugnis.0003.svg"/>
          </imageobject>
       </mediaobject>
@@ -609,6 +609,26 @@
             </row>
             <row>
                <entry namest="indent0" nameend="child">
+                  <emphasis role="bold">fehlzeiten</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">Fehlzeiten</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehlzeiten" role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Fehlzeiten" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="page"><para>Hier können die Angaben zur Erfassung von Fehlzeiten in Form von Fehlstunden oder Fehltagen im laufenden bzw. vergangenen Schuljahr gemacht werden.</para></entry>
+            </row>
+            <row>
+               <entry namest="indent0" nameend="child">
                   <emphasis role="bold">leistungen</emphasis>
                </entry>
                <entry/>
@@ -789,7 +809,7 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen, Facharbeiten oder gesondert bewertete mündliche und schriftliche Prüfungen angegeben.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Die kombinierte Bewertung erlaubt eine flexible Erstellung verschiedener „Gesamtnoten“.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -1049,22 +1069,6 @@
                </row>
                <row>
                   <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
-                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry namest="id" nameend="regel">
                      <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:block-i/xsc:kurs/xsc:verpflichtungsgrad</emphasis>
                   </entry>
                </row>
@@ -1086,6 +1090,22 @@
                </row>
                <row>
                   <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;L&#x200B;Z&#x200B;M&#x200B;</entry>
+                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+               </row>
+               <row>
+                  <entry align="left">
+                     <para>
+                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+                     </para>
+                  </entry>
+               </row>
+               <row>
+                  <entry namest="id" nameend="regel">
+                     <emphasis role="codebf">xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
+                  </entry>
+               </row>
+               <row>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
                   <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
                </row>
                <row>

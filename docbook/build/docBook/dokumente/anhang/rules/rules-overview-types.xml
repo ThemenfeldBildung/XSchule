@@ -67,6 +67,22 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
+               <emphasis role="codebf">null#/xsc:NotenuebersichtUndZeugnis/xsc:notenuebersichtUnterjaehrigerWechsel/xsc:aufgabenfeld</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;0&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;F&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
                <emphasis role="codebf">null#/xsc:NotenuebersichtUndZeugnis/xsc:notenuebersichtUnterjaehrigerWechsel/xsc:verpflichtungsgrad</emphasis>
             </entry>
          </row>

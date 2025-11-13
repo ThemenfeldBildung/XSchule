@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+<xsc:schueler.wechsel.0001 xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
     xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd https://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd https://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 10.11.2025
         Name der Beispieldatei: XSchule_Wechsel_Journey_Schulform
         Beschreibung des Beispieldatensatzes: Stammdatensatz und weitere Angaben zum Wechsel zu anderer Schulform (Station in der XSchule-Journey: 8. Wechsel zu anderer Schulform)
         Lizenz: XSchule - Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
@@ -244,7 +244,7 @@
             <!-- normale Versetzung ohne Ausnahmetatbestand -->
             <xsc:versetzungsOderAusnahmetatbestandstyp>
                 <xsc:code>
-                    <code>http://xschule.digital/def/xschule/1.0/code/versetzungstyp/versetzung</code>
+                    <code>http://xschule.digital/def/xschule/2025-11-01/code/versetzungstyp/versetzung</code>
                 </xsc:code>
             </xsc:versetzungsOderAusnahmetatbestandstyp>
         </xsc:aufnahme>
@@ -333,10 +333,11 @@
                 <code>http://xschule.digital/def/xschule/1.0/code/halbjahr/ganzes_jahr</code>
             </xsc:halbjahr>
         </xsc:wahpflichtkurs>
-        <xsc:fehltage>
-            <xsc:anzahlGesamt>20</xsc:anzahlGesamt>
-            <xsc:davonEntschuldigt>20</xsc:davonEntschuldigt>
-        </xsc:fehltage>
+
+        <xsc:fehlzeiten>
+            <xsc:tageGesamt>20</xsc:tageGesamt>
+            <xsc:tageEntschuldigt>20</xsc:tageEntschuldigt>
+        </xsc:fehlzeiten>
     </xsc:besuchteSchule>
 
 

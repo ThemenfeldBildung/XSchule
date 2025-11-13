@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.schulbescheinigung.0004 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd"
+    xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd"
     xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd">
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd http://xschule.digital/def/xschule/1.2/xsd/xschule.xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 11.11.2025
         Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Julia Musterfrau
         Link zur Beispieldatei: http://xbildung.de/def/rep/he/example/schulbesuchsbescheinigung.pdf
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
@@ -42,7 +42,7 @@
             </xsc:datum>
             <xsc:geburtsort>
                 <xsc:ort>Wiesbaden</xsc:ort>
-                <xsc:staat listVersionID="2023-04-24">
+                <xsc:staat listVersionID="2024-08-01">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staatsangehoerigkeit -->
                     <code>000</code>
                     <name>Deutschland</name>
@@ -54,12 +54,12 @@
             <xsc:hausnummer>8</xsc:hausnummer>
             <xsc:postleitzahl>63065</xsc:postleitzahl>
             <xsc:ort>Offenbach am Main-Innenstadt</xsc:ort>
-            <xsc:staat listVersionID="2023-02-24">
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:kreis listVersionID="2021-07-31">
+                <xsc:kreis listVersionID="2025-03-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>06413</code>
                     <!-- Offenbach am Main, Stadt -->
@@ -88,12 +88,12 @@
             <xsc:hausnummer>N/A</xsc:hausnummer>
             <xsc:postleitzahl>60488</xsc:postleitzahl>
             <xsc:ort>Frankfurt am Main</xsc:ort>
-            <xsc:staat listVersionID="2023-02-24">
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:kreis listVersionID="2021-07-31">
+                <xsc:kreis listVersionID="2025-03-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>04011</code>
                     <!-- Bremen, Stadt -->

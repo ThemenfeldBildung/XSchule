@@ -9,14 +9,6 @@
       <kosit:title/>
       <kosit:property name="allgemeineAngaben"/>
       <kosit:property name="allgemeineAngaben/artDesZeugnisses"/>
-      <kosit:property name="allgemeineAngaben/jahrgangsstufe"/>
-      <kosit:property name="allgemeineAngaben/nachweisperiode"/>
-      <kosit:property name="allgemeineAngaben/nachweisperiode/code"/>
-      <kosit:property name="allgemeineAngaben/nachweisperiode/nichtGelisteterWert"/>
-      <kosit:property name="allgemeineAngaben/nachweiszeitraum"/>
-      <kosit:property name="allgemeineAngaben/nachweiszeitraum/beginn"/>
-      <kosit:property name="allgemeineAngaben/nachweiszeitraum/ende"/>
-      <kosit:property name="allgemeineAngaben/nachweiszeitraum/zusatz"/>
       <kosit:property name="allgemeineAngaben/bundesland"/>
       <kosit:property name="allgemeineAngaben/niveauEQR"/>
       <kosit:property name="allgemeineAngaben/artDerHZB"/>
@@ -28,6 +20,12 @@
       <kosit:property name="allgemeineAngaben/erwerb/ort"/>
       <kosit:property name="allgemeineAngaben/erwerb/ort/ort"/>
       <kosit:property name="allgemeineAngaben/erwerb/ort/staat"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung/kreis"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung/bezirk"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung/bundesland"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung/gemeindeschluessel"/>
+      <kosit:property name="allgemeineAngaben/erwerb/verwaltungspolitischeKodierung/regionalschluessel"/>
       <kosit:property name="ausstellung"/>
       <kosit:property name="ausstellung/datum"/>
       <kosit:property name="ausstellung/ort"/>
@@ -127,6 +125,9 @@
       <kosit:property name="block-i/weitereLeistung/bezeichnung"/>
       <kosit:property name="block-i/weitereLeistung/bezeichnung/@lang"/>
       <kosit:property name="block-i/weitereLeistung/fach"/>
+      <kosit:property name="block-i/weitereLeistung/aufgabenfeld"/>
+      <kosit:property name="block-i/weitereLeistung/aufgabenfeld/code"/>
+      <kosit:property name="block-i/weitereLeistung/aufgabenfeld/nichtGelisteterWert"/>
       <kosit:property name="block-i/weitereLeistung/anforderungsniveau"/>
       <kosit:property name="block-i/weitereLeistung/verpflichtungsgrad"/>
       <kosit:property name="block-i/weitereLeistung/verpflichtungsgrad/code"/>
@@ -134,6 +135,9 @@
       <kosit:property name="block-i/weitereLeistung/nachpruefung"/>
       <kosit:property name="block-i/weitereLeistung/nachpruefung/code"/>
       <kosit:property name="block-i/weitereLeistung/nachpruefung/nichtGelisteterWert"/>
+      <kosit:property name="block-i/weitereLeistung/berechnungsgrundlage"/>
+      <kosit:property name="block-i/beschreibung"/>
+      <kosit:property name="block-i/beschreibung/@lang"/>
       <kosit:property name="block-ii"/>
       <kosit:property name="block-ii/pruefungsergebnis"/>
       <kosit:property name="block-ii/pruefungsergebnis/note"/>
@@ -163,6 +167,9 @@
       <kosit:property name="block-ii/pruefungsergebnis/bezeichnung"/>
       <kosit:property name="block-ii/pruefungsergebnis/bezeichnung/@lang"/>
       <kosit:property name="block-ii/pruefungsergebnis/fach"/>
+      <kosit:property name="block-ii/pruefungsergebnis/aufgabenfeld"/>
+      <kosit:property name="block-ii/pruefungsergebnis/aufgabenfeld/code"/>
+      <kosit:property name="block-ii/pruefungsergebnis/aufgabenfeld/nichtGelisteterWert"/>
       <kosit:property name="block-ii/pruefungsergebnis/anforderungsniveau"/>
       <kosit:property name="block-ii/pruefungsergebnis/verpflichtungsgrad"/>
       <kosit:property name="block-ii/pruefungsergebnis/verpflichtungsgrad/code"/>
@@ -170,6 +177,9 @@
       <kosit:property name="block-ii/pruefungsergebnis/nachpruefung"/>
       <kosit:property name="block-ii/pruefungsergebnis/nachpruefung/code"/>
       <kosit:property name="block-ii/pruefungsergebnis/nachpruefung/nichtGelisteterWert"/>
+      <kosit:property name="block-ii/pruefungsergebnis/berechnungsgrundlage"/>
+      <kosit:property name="block-ii/beschreibung"/>
+      <kosit:property name="block-ii/beschreibung/@lang"/>
       <kosit:property name="block-iii"/>
       <kosit:property name="block-iii/durchschnittsnote"/>
       <kosit:property name="block-iii/durchschnittsnote/note"/>
@@ -429,9 +439,11 @@
       <kosit:property name="bemerkung/art"/>
       <kosit:property name="bemerkung/beschreibung"/>
       <kosit:property name="bemerkung/beschreibung/@lang"/>
-      <kosit:property name="fehltage"/>
-      <kosit:property name="fehltage/anzahlGesamt"/>
-      <kosit:property name="fehltage/davonEntschuldigt"/>
+      <kosit:property name="fehlzeiten"/>
+      <kosit:property name="fehlzeiten/tageGesamt"/>
+      <kosit:property name="fehlzeiten/tageEntschuldigt"/>
+      <kosit:property name="fehlzeiten/stundenGesamt"/>
+      <kosit:property name="fehlzeiten/stundenEntschuldigt"/>
       <kosit:property name="fremdsprache"/>
       <kosit:property name="fremdsprache/sprache"/>
       <kosit:property name="fremdsprache/abfolge"/>
@@ -581,6 +593,9 @@
       <kosit:property name="lernbereich/pruefung/bezeichnung"/>
       <kosit:property name="lernbereich/pruefung/bezeichnung/@lang"/>
       <kosit:property name="lernbereich/pruefung/fach"/>
+      <kosit:property name="lernbereich/pruefung/aufgabenfeld"/>
+      <kosit:property name="lernbereich/pruefung/aufgabenfeld/code"/>
+      <kosit:property name="lernbereich/pruefung/aufgabenfeld/nichtGelisteterWert"/>
       <kosit:property name="lernbereich/pruefung/anforderungsniveau"/>
       <kosit:property name="lernbereich/pruefung/verpflichtungsgrad"/>
       <kosit:property name="lernbereich/pruefung/verpflichtungsgrad/code"/>
@@ -588,6 +603,7 @@
       <kosit:property name="lernbereich/pruefung/nachpruefung"/>
       <kosit:property name="lernbereich/pruefung/nachpruefung/code"/>
       <kosit:property name="lernbereich/pruefung/nachpruefung/nichtGelisteterWert"/>
+      <kosit:property name="lernbereich/pruefung/berechnungsgrundlage"/>
       <kosit:property name="nonce"/>
       <kosit:property name="praktikum"/>
       <kosit:property name="praktikum/zeitraum"/>
@@ -1028,9 +1044,11 @@
       <kosit:property name="besuchteSchule/wahpflichtkurs/status"/>
       <kosit:property name="besuchteSchule/wahpflichtkurs/berechnungsgrundlage"/>
       <kosit:property name="besuchteSchule/wahpflichtkurs/stunden"/>
-      <kosit:property name="besuchteSchule/fehltage"/>
-      <kosit:property name="besuchteSchule/fehltage/anzahlGesamt"/>
-      <kosit:property name="besuchteSchule/fehltage/davonEntschuldigt"/>
+      <kosit:property name="besuchteSchule/fehlzeiten"/>
+      <kosit:property name="besuchteSchule/fehlzeiten/tageGesamt"/>
+      <kosit:property name="besuchteSchule/fehlzeiten/tageEntschuldigt"/>
+      <kosit:property name="besuchteSchule/fehlzeiten/stundenGesamt"/>
+      <kosit:property name="besuchteSchule/fehlzeiten/stundenEntschuldigt"/>
       <kosit:property name="erweiterung"/>
       <kosit:property name="erweiterung/eigenschaft"/>
       <kosit:property name="erweiterung/eigenschaft/schluessel"/>
@@ -1471,6 +1489,11 @@
       <kosit:property name="bemerkung/art"/>
       <kosit:property name="bemerkung/beschreibung"/>
       <kosit:property name="bemerkung/beschreibung/@lang"/>
+      <kosit:property name="fehlzeiten"/>
+      <kosit:property name="fehlzeiten/tageGesamt"/>
+      <kosit:property name="fehlzeiten/tageEntschuldigt"/>
+      <kosit:property name="fehlzeiten/stundenGesamt"/>
+      <kosit:property name="fehlzeiten/stundenEntschuldigt"/>
       <kosit:property name="fremdsprachen"/>
       <kosit:property name="fremdsprachen/fremdsprache"/>
       <kosit:property name="fremdsprachen/fremdsprache/sprache"/>
@@ -1610,6 +1633,9 @@
       <kosit:property name="leistungen/pruefung/bezeichnung"/>
       <kosit:property name="leistungen/pruefung/bezeichnung/@lang"/>
       <kosit:property name="leistungen/pruefung/fach"/>
+      <kosit:property name="leistungen/pruefung/aufgabenfeld"/>
+      <kosit:property name="leistungen/pruefung/aufgabenfeld/code"/>
+      <kosit:property name="leistungen/pruefung/aufgabenfeld/nichtGelisteterWert"/>
       <kosit:property name="leistungen/pruefung/anforderungsniveau"/>
       <kosit:property name="leistungen/pruefung/verpflichtungsgrad"/>
       <kosit:property name="leistungen/pruefung/verpflichtungsgrad/code"/>
@@ -1617,6 +1643,7 @@
       <kosit:property name="leistungen/pruefung/nachpruefung"/>
       <kosit:property name="leistungen/pruefung/nachpruefung/code"/>
       <kosit:property name="leistungen/pruefung/nachpruefung/nichtGelisteterWert"/>
+      <kosit:property name="leistungen/pruefung/berechnungsgrundlage"/>
       <kosit:property name="nonce"/>
       <kosit:property name="praktikum"/>
       <kosit:property name="praktikum/zeitraum"/>

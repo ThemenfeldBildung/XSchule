@@ -20,13 +20,13 @@
             </entry>
          </row>
          <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
-            <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der KMK-Abiturfächer-Liste versehen sein.</entry>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;D&#x200B;i&#x200B;g&#x200B;i&#x200B;t&#x200B;a&#x200B;l&#x200B;</entry>
+            <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der Abiturfach-Digital-Liste versehen sein.</entry>
          </row>
          <row>
             <entry align="left">
                <para>
-                  <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:kmk:codeliste:abiturfach']) &gt; 0</emphasis>
+                  <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis[not(xsc:artDerPruefung/xsc:code/code='http://xbildung.de/def/xbildung/1.0/code/artderpruefung/besondere_lernleistung')]) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:xschule:codeliste:abiturfachdigital']) &gt; 0</emphasis>
                </para>
             </entry>
          </row>
@@ -37,22 +37,6 @@
          </row>
          <row>
             <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
-            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry namest="id" nameend="regel">
-               <emphasis role="codebf">xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
             <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
          </row>
          <row>
@@ -149,22 +133,6 @@
          </row>
          <row>
             <entry namest="id" nameend="regel">
-               <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
-            </entry>
-         </row>
-         <row>
-            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
-            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-         </row>
-         <row>
-            <entry align="left">
-               <para>
-                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-               </para>
-            </entry>
-         </row>
-         <row>
-            <entry namest="id" nameend="regel">
                <emphasis role="codebf">null#/xsc:schueler.abiturzeugnis.0002/xsc:block-i/xsc:kurs/xsc:verpflichtungsgrad</emphasis>
             </entry>
          </row>
@@ -186,6 +154,22 @@
          </row>
          <row>
             <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;L&#x200B;Z&#x200B;M&#x200B;</entry>
+            <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
+         </row>
+         <row>
+            <entry align="left">
+               <para>
+                  <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
+               </para>
+            </entry>
+         </row>
+         <row>
+            <entry namest="id" nameend="regel">
+               <emphasis role="codebf">xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
+            </entry>
+         </row>
+         <row>
+            <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
             <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
          </row>
          <row>

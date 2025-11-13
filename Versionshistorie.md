@@ -2,11 +2,85 @@
 
 <!-- TOC start -->
 
+- [Version 1.2](#version-12)
 - [Version 1.1](#version-11)
 - [Version 1.0](#version-10)
 - [Version 0.7](#version-07)
 
 <!-- TOC end -->
+
+<!-- TOC --><a name="version-12"></a>
+# Version 1.2
+**Veröffentlichungsdatum:** 13.11.2025
+
+## Änderungen am Abiturzeugnis
+
+Im Rahmen der Pilotierung wurden Anpassungen am Bildungsnachweis "Abiturzeugnis" vorgenommen. Besonders betroffen war der allgemeine Teil, der überarbeitet wurde, um die Anforderungen aus der praktischen Erprobung besser abzubilden und die Verständlichkeit sowie Nachvollziehbarkeit zu erhöhen.
+
+### Gelöschte Elemente
+
+Folgende Elemente wurden aus dem allgemeinen Teil gelöscht, um eine einheitliche und einfache Erfassung der Daten zu erleichtern:
+
+- `jahrgangsstufe`
+- `nachweiszeitraum`
+- `nachweispreiode`
+
+### Angepasste Elemente
+
+Folgende Elemente wurden angepasst:
+
+- Felder geerbt von `xbd:Dokument`: Verbindlichkeit beschrieben.
+- `ardDesZeugnisses`: Festgelegt, welcher Code-Wert zu verwenden ist.
+- `bundesland`: Umsetzungshinweis, dass die Verwendung stark empfohlen wird.
+- `niveauEQR`: Umsetzungshinweis, dass die Verwendung (von Niveau 4) stark empfohlen wird.
+- `artDerHZB`: Umsetzungshinweis, dass die Verwendung stark empfohlen wird.
+- `artDesSchulabschlusses`: Feld verpflichtend gemacht. Zudem Umsetzungshinweis, welche Werte üblicherweise verwendet werden.
+- `erwerb`: Feld verpflichtend gemacht und `verwaltungspolitischeKodierung` optional hinzugefügt.
+- Prüfungsergebnisse vom Typ `besondere Lernleistung` müssen keinem Abiturfach zugeordnet werden.
+- Prüfungsergebnisse können einem `aufgabenfeld` zugeordnet werden und explizit als `berechnungsgrundlage` ausgezeichnet werden.
+- Block I und II erhalten in Anlehnung an Block III ein Feld `beschreibung`, in dem Gewichtungen, Normierungsfaktoren, Rechenwege, etc. des Blocks beschrieben werden können.
+
+## Weitere Änderungen
+
+Die Codeliste Versetzungstyp wurde um neue Werte erweitert.
+
+Die Klasse Fehltage wurde in Fehlzeiten umbenannt und ermöglicht nun die Angabe von `tageGesamt`, `tageEntschuldigt`, `stundenGesamt` und `stundenEntschuldigt`. Diese Eigenschaft wurde dem generischen Zeugnis (`schueler.zeugnis.0003`) hinzugefügt.
+
+## Änderungen im Kontext der XÖV-Zertifizierung
+
+Im Kontext des Antrags zur XÖV-Zertifizierung wurden einige Änderungen vorgenommen, um Konformität zu den Kriterien des XÖV-Handbuchs und des XÖV-Codelisten-Handbuchs herzustellen. Die Änderungen haben keine fachlichen Auswirkungen.
+
+## Liste der umgesetzten Tickets
+
+Folgende (intern dokumentierte) Tickets wurden umgesetzt:
+
+- XSC-409 mehrfache Angabe der "Beschreibung" im Block III des Abiturzeugnisses erlauben
+- XSC-430 Kapitel "Hintergrund zu XSchule" aktualisieren
+- XSC-432 Angabe zu Fehltagen in generisches Zeugnis aufnehmen
+- XSC-433 "allgemeineAbgaben" im Abiturzeugnis überarbeiten
+- XSC-434 Weitere Fächer-Codeliste erstellen
+- XSC-435 Errata in Dokumentationstexten der Felder "Gesamtnote" (BVJ-Zeugnis) und Note (generisches Zeugnis) anpassen
+- XSC-436 "Nachweisperiode" aus dem Abiturzeugnis entfernen
+- XSC-437 "Jahrgangsstufe" aus dem Abiturzeugnis entfernen
+- XSC-438 Anpassung der Meta-Daten des Standards (K7, Beschreibung)
+- XSC-439 Language-Eigenschaften in Codelisten umsetzen (NDR-33/K-11)
+- XSC-440 Aktualisierung auf gültige XÖV-Konfiguration / XÖV-Profil 3.0.3
+- XSC-441 Prüfen, ob bereitgestellte Bestandteile autonom validieren
+- XSC-442 Nutzung der XÖV-Kernkomponenten inkl. Abweichungen im Modell dokumentieren
+- XSC-443 "Fehltage" in "Fehlzeiten" umbenennen und "Fehlstunden" aufnehmen
+- XSC-444 Beschreibungen der Blöcke im Abiturzeugnis präzisieren
+- XSC-445 Besondere Lernleistung ohne Abiturfach im Abiturzeugnis ermöglichen
+- XSC-446 "Berechnungsgrundlage" in "Pruefungsergebnis" des Abiturzeugnisses aufnehmen
+- XSC-447 "Erwerb" im Abiturzeugnis verpflichtend machen und um verwaltungspolitische Kodierung ergänzen
+- XSC-448 Angabe zur Art der HZB im Abiturzeugnis empfehlen
+- XSC-449 "Prüfungsergebnis" um "Aufgabenfeld" erweitern
+- XSC-450 Nutzung der Klasse "Dokument" in der Beschreibung des Abiturzeugnisses präzisieren
+- XSC-451 Eigenschaft „artDesZeugnisses“ mit dem Default-Wert „Abschlusszeugnis“ im Abiturzeugnis vorsehen
+- XSC-452 Eigenschaft "nachweiszeitraum" aus dem Abiturzeugnis entfernen
+- XSC-453 Eigenschaft "artDesSchulabschlusses" im Abiturzeugnis erforderlich machen
+- XSC-454 Eigenschaft "bundesland" im Abiturzeugnis erforderlich machen
+- XSC-455 bei der Eigenschaft "niveauEQR" im Abiturzeugnis das Niveau 4 empfehlen
+
 
 <!-- TOC --><a name="version-11"></a>
 # Version 1.1

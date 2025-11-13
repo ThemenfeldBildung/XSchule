@@ -9,13 +9,25 @@
    <title>schueler.abiturzeugnis.0002</title>
    <subtitle>Nachricht: <emphasis role="codebf">schueler.abiturzeugnis.0002</emphasis>
    </subtitle><para>Diese Nachricht bildet das Abiturzeugnis ab. Es enthält Informationen zur Art des Zeugnisses, der besuchten Schule, dem jungen Menschen, der Art der Hochschulberechtigung sowie Informationen zu den einzelnen besuchten Kursen sowie Ergebnissen der Abitur-Prüfungen.</para>
-<para>Der Nachrichtentyp ist nur für Abitur-Abschlusszeugnisse geeignet. Zwischenstände, Jahreszeugnisse und andere "Vorstufen" sollen als <xref linkend="XSchule.Nachweise.schueler.zeugnis.0003" role="Titel"/> modelliert werden.</para><figure xml:id="figure.XSchule.Nachweise.schueler.abiturzeugnis.0002">
+<para>Der Nachrichtentyp ist nur für Abitur-Abschlusszeugnisse geeignet. Zwischenstände, Jahreszeugnisse und andere "Vorstufen" sollen als <xref linkend="XSchule.Nachweise.schueler.zeugnis.0003" role="Titel"/> modelliert werden.</para>
+
+<para>
+  Der Nachweis <code>schueler.abiturzeugnis.0002</code> stellt eine technische Erweiterung der Klasse <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://xbildung.de/def/xbildung/current/spec/spezifikation.pdf#XBildung.Baukasten.Dokument">Dokument</link>
+ dar. Sie enthält folgende Eigenschaften:<code>sprache</code>, <code>gueltigkeitsdatum</code>, <code>titel</code>, <code>ausstellung</code> und <code>nonce</code>. Für die Erstellung dieses Nachweises gelten folgende Regeln:</para>
+
+<para><itemizedlist spacing="compact" mark="-">
+<listitem><para>Die Eigenschaft <code>sprache</code> <emphasis>MUSS</emphasis>, üblicherweise mit folgendem Code, verwendet werden: <code>https://publications.europa.eu/resource/authority/language/DEU</code></para></listitem>
+<listitem><para>Die Eigenschaft <code>titel</code> <emphasis>SOLL</emphasis> verwendet werden.</para></listitem>
+<listitem><para>Die Eigenschaft <code>ausstellung</code> <emphasis>KANN</emphasis> verwendet werden. Im Vordergrund steht jedoch die Eigenschaft <code>erwerb</code> aus <code>allgemeineAngaben</code>.</para></listitem>
+<listitem><para>Die Eigenschaften <code>gueltigkeitsdatum</code> und <code>nonce</code> sind <emphasis>KÖNNEN</emphasis> verwendet werden.</para></listitem>
+</itemizedlist>
+</para><figure xml:id="figure.XSchule.Nachweise.schueler.abiturzeugnis.0002">
       <title>schueler.abiturzeugnis.0002</title>
       <mediaobject>
          <imageobject>
             <imagedata format="svg"
                        align="center"
-                       scale="76"
+                       scale="79"
                        fileref="../../../zeichnungen/XSchule/Nachweise/schueler.abiturzeugnis.0002.svg"/>
          </imageobject>
       </mediaobject>
@@ -83,115 +95,10 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die Art des Zeugnisses gibt an, um welche Zeugnisart es sich handelt.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">jahrgangsstufe</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Jahrgangsstufe</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..2</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Jahrgangsstufe" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt die Jahrgangsstufe an, auf die sich das Zeugnis bezieht. Für ein Abiturzeugnis kann mehr als ein Halbjahr angegeben werden.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">nachweisperiode</emphasis>
-               </entry>
-               <entry/>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die Nachweisperiode beinhaltet Angaben zum konkreten Gültigkeitszeitraum für das jeweilige Zeugnis (meistens Halbjahr- bzw. "Volljahr"-Zeugnis).</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">code</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Code.Nachweisperiode</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Codes.Code.Nachweisperiode"
-                        role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Wert aus der Codeliste.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent2" nameend="child">
-                  <emphasis role="bold">nichtGelisteterWert</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">xs:string</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry/>
-               <entry/>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="0"/>
-               <entry rowsep="1" colsep="1"/>
-               <entry namest="indent2" nameend="page"><para>Freitext-Angabe, wenn der Wert ~wert_nicht_in_liste ausgewählt wurde.</para></entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="child">
-                  <emphasis role="bold">nachweiszeitraum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="codebf">Zeitraum</emphasis>
-               </entry>
-               <entry>
-                  <emphasis role="bold">0..1</emphasis>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum"
-                        role="AbschnittNummer"/>
-               </entry>
-               <entry>
-                  <xref linkend="XSchule.Baukasten.Kernkomponenten.Zeitraum" role="Seitenzahl"/>
-               </entry>
-            </row>
-            <row>
-               <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Erlaubt den Zeitraum, auf den sich das Zeugnis bezieht, mit Start- und Enddatum anzugeben. Hinweis: Üblicher Weise beginnt ein Schuljahr am 1. August und endet am 31. Juli des folgenden Jahres.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Die Art des Zeugnisses gibt an, um welche Zeugnisart es sich handelt.</para>
+<para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Verpflichtend:</emphasis> Für das Abiturzeugnis <emphasis role="bold">muss</emphasis> der folgende Code verwendet werden: <code>http://xschule.digital/def/xschule/1.0/code/zeugnisart/abschlusszeugnis</code></para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -213,7 +120,9 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum Bundesland als Ort der Austellung angegeben werden.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Hier soll das für das Zeugnis zuständige Bundesland angegeben werden.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Verwendung dieser Eigenschaft wird nachdrücklich empfohlen. Der fachliche Grund für einen Verzicht, zum Beispiel weil es sich um eine Deutsche Auslandsschulen handelt, sollte mittels einer <code>&lt;bemerkung&gt;</code> erläutert werden.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -235,7 +144,9 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden. Diese Angaben beziehen sich auf die Niveaus des  Europäischen Qualifikationsrahmens (EQR).</para></entry>
+               <entry namest="indent1" nameend="page"><para>Hier können Angaben zum Niveau des Bildungsnachweises gemacht werden. Diese Angaben beziehen sich auf die Niveaus des  Europäischen Qualifikationsrahmens (EQR).</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Verwendung dieser Eigenschaft wird nachdrücklich empfohlen. Für ein typisches deutsches Abiturzeugnis entspricht der anzuwendende Wert in der Regel:  <code>http://data.europa.eu/snb/eqf/4</code></para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -257,7 +168,9 @@
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Gibt die Art der Hochschulzugangsberechtigung an, die gegebenenfalls mit diesem Zeugnis erworben wurde.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Gibt die Art der Hochschulzugangsberechtigung an, die gegebenenfalls mit diesem Zeugnis erworben wurde.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Verwendung dieser Eigenschaft wird nachdrücklich empfohlen.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -266,14 +179,17 @@
                </entry>
                <entry/>
                <entry>
-                  <emphasis role="bold">0..n</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry/>
                <entry/>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Angabe der Art des Schulabschlusses.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Angabe der Art des Schulabschlusses.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Für ein typisches deutsches Abiturzeugnis entspricht der anzuwendende Wert in der Regel:      
+<code>http://xbildung.de/def/destatis/2025-10-28/code/artdesschulabschlusses/allgemeine_hochschulreife</code> oder  <code>http://xbildung.de/def/destatis/2025-10-28/code/artdesschulabschlusses/fachhochschulreife</code></para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="0"/>
@@ -326,7 +242,7 @@
                </entry>
                <entry/>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry/>
                <entry/>
@@ -345,7 +261,7 @@
                   <emphasis role="codebf">xs:date</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry/>
                <entry/>
@@ -365,7 +281,7 @@
                   <emphasis role="codebf">Ortsangabe</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">1</emphasis>
                </entry>
                <entry>
                   <xref linkend="XSchule.Baukasten.Kernkomponenten.Ortsangabe"
@@ -377,10 +293,38 @@
                </entry>
             </row>
             <row>
-               <entry rowsep="1" colsep="0"/>
-               <entry rowsep="1" colsep="1"/>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
                <entry namest="indent2" nameend="page"><para>Hier werden Angaben zum Ort des Erwerbs gemacht (bestehend aus Ort und ggf. Staat).</para>
 </entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="0"/>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent2" nameend="child">
+                  <emphasis role="bold">verwaltungspolitischeKodierung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">VerwaltungspolitischeKodierung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..1</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
+                        role="AbschnittNummer"/>
+               </entry>
+               <entry>
+                  <xref linkend="XSchule.Baukasten.Kernkomponenten.VerwaltungspolitischeKodierung"
+                        role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
+               <entry rowsep="1" colsep="0"/>
+               <entry rowsep="1" colsep="1"/>
+               <entry namest="indent2" nameend="page"><para>Die "verwaltungspolitischeKodierung" beinhaltet Informationen, mit denen der Ort des Erwerbs verwaltungspolitisch eindeutig zugeordnet werden kann.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Meldung des Landkreises des Erwerbs ist eine bundesweite Aufgabe der Hochschulen. Daher wird die strukturierte Angabe für die Digitalisierung der Prozesse empfohlen.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -481,8 +425,32 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen oder Facharbeiten angegeben, die Teil des Block I sind.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Eigenschaft <code>weitereLeistung.berechnungsgrundlage</code> <emphasis role="bold">soll</emphasis> nur verwendet werden, wenn es tatsächlich weitere Leistungen gibt, die <emphasis role="bold">nicht</emphasis> in die Berechnung einfließen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Mit Hilfe der Klasse Prüfungsergebnis werden an dieser Stelle z.B. besondere Lernleistungen oder Facharbeiten angegeben, die Teil des Block I sind.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Bei Bedarf können hier Gewichtungen, Normierungsfaktoren, Rechenwege, etc. des Blocks I beschrieben werden. Die Beschreibung ersetzt nicht die Verwendung spezialisierter Eigenschaften, etwa die Angabe, ob es sich um einen Kurs mit erhöhtem Anforderungsniveau handelt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -518,8 +486,32 @@
                </entry>
             </row>
             <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="page"><para>Die abgelegten Abiturprüfungen und ggf. besonderen Lernleistungen werden jeweils mit der Klasse Prüfungsergebnis beschrieben.</para><para>
+                     <emphasis role="strong">Umsetzungshinweise:</emphasis>
+                  </para><para><emphasis role="bold">Empfohlen:</emphasis> Die Eigenschaft <code>pruefungsergebnis.berechnungsgrundlage</code> <emphasis role="bold">soll</emphasis> nur verwendet werden, wenn es tatsächlich Prüfungsergebnisse gibt, die <emphasis role="bold">nicht</emphasis> in die Berechnung einfließen.</para></entry>
+            </row>
+            <row>
+               <entry rowsep="0" colsep="1"/>
+               <entry namest="indent1" nameend="child">
+                  <emphasis role="bold">beschreibung</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="codebf">String.Localized</emphasis>
+               </entry>
+               <entry>
+                  <emphasis role="bold">0..n</emphasis>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Quelle"/>
+               </entry>
+               <entry>
+                  <xref linkend="externe.modelle.XBildung" role="Seitenzahl"/>
+               </entry>
+            </row>
+            <row>
                <entry rowsep="1" colsep="1"/>
-               <entry namest="indent1" nameend="page"><para>Die abgelegten Abiturprüfungen und ggf. besonderen Lernleistungen werden jeweils mit der Klasse Prüfungsergebnis beschrieben.</para></entry>
+               <entry namest="indent1" nameend="page"><para>Bei Bedarf können hier Gewichtungen, Normierungsfaktoren, Rechenwege, etc. des Blocks II beschrieben werden. Die Beschreibung ersetzt nicht die Verwendung spezialisierter Eigenschaften, etwa die Angabe, ob es sich um eine Prüfung in einem Kurs mit erhöhtem Anforderungsniveau handelt.</para></entry>
             </row>
             <row>
                <entry namest="indent0" nameend="child">
@@ -533,7 +525,7 @@
                <entry/>
             </row>
             <row>
-               <entry namest="indent0" nameend="page"><para>Der Block III fasst die Berechnung der Gesamtqualifikation und der Durchschnittsnote zusammen.</para></entry>
+               <entry namest="indent0" nameend="page"><para>Der Block III fasst die Berechnung der Gesamtqualifikation und der Durchschnittsnote zusammen. Die hier gemachten Angaben beziehen sich auf die final modifizierten Punkte, also beispielsweise normierte oder gewichtete Werte.</para></entry>
             </row>
             <row>
                <entry rowsep="0" colsep="1"/>
@@ -632,7 +624,7 @@
                   <emphasis role="codebf">String.Localized</emphasis>
                </entry>
                <entry>
-                  <emphasis role="bold">0..1</emphasis>
+                  <emphasis role="bold">0..n</emphasis>
                </entry>
                <entry>
                   <xref linkend="externe.modelle.XBildung" role="Quelle"/>
@@ -760,13 +752,13 @@
             </thead>
             <tbody>
                <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;K&#x200B;M&#x200B;K&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;</entry>
-                  <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der KMK-Abiturfächer-Liste versehen sein.</entry>
+                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;2&#x200B;-&#x200B;0&#x200B;1&#x200B;0&#x200B;0&#x200B;-&#x200B;M&#x200B;U&#x200B;S&#x200B;S&#x200B;-&#x200B;K&#x200B;u&#x200B;r&#x200B;s&#x200B;-&#x200B;P&#x200B;r&#x200B;u&#x200B;e&#x200B;f&#x200B;u&#x200B;n&#x200B;g&#x200B;-&#x200B;A&#x200B;b&#x200B;i&#x200B;t&#x200B;u&#x200B;r&#x200B;f&#x200B;a&#x200B;c&#x200B;h&#x200B;D&#x200B;i&#x200B;g&#x200B;i&#x200B;t&#x200B;a&#x200B;l&#x200B;</entry>
+                  <entry>Alle eingebrachten Abiturfächer und Prüfungen müssen mit einem xsc:fach aus der Abiturfach-Digital-Liste versehen sein.</entry>
                </row>
                <row>
                   <entry align="left">
                      <para>
-                        <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:kmk:codeliste:abiturfach']) &gt; 0</emphasis>
+                        <emphasis role="codebf">every $kurs in (//xsc:kurs[xsc:berechnungsgrundlage='true'] | //xsc:pruefungsergebnis[not(xsc:artDerPruefung/xsc:code/code='http://xbildung.de/def/xbildung/1.0/code/artderpruefung/besondere_lernleistung')]) satisfies count($kurs/xsc:fach[@listURI='urn:xschule-digital:xschule:codeliste:abiturfachdigital']) &gt; 0</emphasis>
                      </para>
                   </entry>
                </row>
@@ -777,22 +769,6 @@
                </row>
                <row>
                   <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;1&#x200B;3&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;A&#x200B;d&#x200B;S&#x200B;A&#x200B;</entry>
-                  <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
-               </row>
-               <row>
-                  <entry align="left">
-                     <para>
-                        <emphasis role="codebf">(exists(*:nichtGelisteterWert) and ends-with(*:code/code/text(), 'wert_nicht_in_liste')) or (empty(*:nichtGelisteterWert) and not(ends-with(*:code/code/text(), 'wert_nicht_in_liste')))</emphasis>
-                     </para>
-                  </entry>
-               </row>
-               <row>
-                  <entry namest="id" nameend="regel">
-                     <emphasis role="codebf">xsc:allgemeineAngaben/xsc:nachweisperiode</emphasis>
-                  </entry>
-               </row>
-               <row>
-                  <entry morerows="1">X&#x200B;S&#x200B;C&#x200B;-&#x200B;1&#x200B;0&#x200B;0&#x200B;0&#x200B;-&#x200B;0&#x200B;0&#x200B;0&#x200B;5&#x200B;-&#x200B;W&#x200B;N&#x200B;I&#x200B;L&#x200B;_&#x200B;N&#x200B;P&#x200B;e&#x200B;</entry>
                   <entry>Nur wenn der Codewert 'wert_nicht_in_liste' ist, darf und muss das Feld 'nichtGelisteterWert' (ggf. leer) vorhanden sein.</entry>
                </row>
                <row>

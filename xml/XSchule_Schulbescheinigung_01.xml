@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsc:schueler.schulbescheinigung.0004 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xschule.digital/def/xschule/1.1/xsd http://xschule.digital/def/xschule/1.1/xsd/xschule.xsd"
-    xmlns:xbd="http://xbildung.de/def/xbildung/1.1/xsd"
+    xsi:schemaLocation="http://xschule.digital/def/xschule/1.2/xsd http://xschule.digital/def/xschule/1.2/xsd/xschule.xsd"
+    xmlns:xbd="http://xbildung.de/def/xbildung/1.2/xsd"
     xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
     xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes"
-    xmlns:xsc="http://xschule.digital/def/xschule/1.1/xsd">
+    xmlns:xsc="http://xschule.digital/def/xschule/1.2/xsd">
 
     <!--
-        Datum: 25.02.2025
+        Datum: 27.10.2025
         Name der Beispieldatei: Nachweis Schulbescheinigung nach Musterdatei Schülerin Muster
         Lizenz: Creative Commons 4.0 Namensnennung International, ]init[ AG im Auftrag des Landes Sachsen-Anhalt
         Link zur Beispieldatei: https://xbildung.de/web/musternachweis/30080
@@ -15,13 +15,13 @@
 
     <xbd:titel>Schulbescheinigung</xbd:titel>
     <xbd:ausstellung>
-        <xbd:datum>2023-03-01</xbd:datum>
+        <xbd:datum>2026-03-01</xbd:datum>
         <xbd:ort>
             <xbd:ort>Bremen</xbd:ort>
         </xbd:ort>
     </xbd:ausstellung>
 
-    <xbd:gueltigkeitsdatum>2023-03-01</xbd:gueltigkeitsdatum>
+    <xbd:gueltigkeitsdatum>2026-03-01</xbd:gueltigkeitsdatum>
     <xbd:sprache>
         <code>http://publications.europa.eu/resource/authority/language/DEU</code>
     </xbd:sprache>
@@ -37,7 +37,7 @@
         </xsc:nameNatuerlichePerson>
         <xsc:geburt>
             <xsc:datum>
-                <xbd:jahrMonatTag>2004-09-01</xbd:jahrMonatTag>
+                <xbd:jahrMonatTag>2008-09-01</xbd:jahrMonatTag>
             </xsc:datum>
             <xsc:geburtsort>
                 <xsc:ort>Bremen</xsc:ort>
@@ -58,7 +58,7 @@
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:kreis listVersionID="2021-07-31">
+                <xsc:kreis listVersionID="2025-03-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>04011</code>
                     <!-- Bremen, Stadt -->
@@ -72,7 +72,7 @@
             <code>http://xschule.digital/def/xschule/1.0/code/jahrgangsstufe/qualifikationsphase_2</code>
         </xsc:jahrgangsstufe>
         <xsc:zeitraum>
-            <xsc:ende>2023-06-30</xsc:ende>
+            <xsc:ende>2026-06-30</xsc:ende>
             <!-- "Voraussichtlich wird die Schule besucht bis zum ..." -->
         </xsc:zeitraum>
     </xsc:schulbesuch>
@@ -98,12 +98,12 @@
             <xsc:hausnummer>62</xsc:hausnummer>
             <xsc:postleitzahl>28209</xsc:postleitzahl>
             <xsc:ort>Bremen</xsc:ort>
-            <xsc:staat listVersionID="2023-02-24">
+            <xsc:staat listVersionID="2024-08-01">
                 <code>000</code>
                 <name>Deutschland</name>
             </xsc:staat>
             <xsc:verwaltungspolitischeKodierung>
-                <xsc:kreis listVersionID="2021-07-31">
+                <xsc:kreis listVersionID="2025-03-31">
                     <!-- https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:kreis -->
                     <code>04011</code>
                     <!-- Bremen, Stadt -->
