@@ -2,8 +2,6 @@
 name: Issue Template Deutsch
 about: Beteiligungsverfahren zur Spezifikation von XSchule
 title: ''
-assignees: init-xschule
-
 ---
 
 **Autor:** [bitte angeben]  

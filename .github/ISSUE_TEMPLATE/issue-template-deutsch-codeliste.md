@@ -1,9 +1,8 @@
 ---
 name: Rückmeldung zu einer Codeliste
 about: Hinweise, Fehler oder Ergänzungen zu einer Codeliste melden.
-title: '[Kürzel Bundesland][betroffene Codeliste]: [kurzer Titel]'
-labels: Codeliste, open, V0.5
-assignees: init-xschule
+title: '[Kürzel Bundesland] [betroffene Codeliste]: [kurzer Titel]'
+labels: Codeliste
 ---
 
 **Autor:** [bitte angeben]  
@@ -12,8 +11,8 @@ assignees: init-xschule
 
 **Kategorie(n) der Rückmeldung:** [z.B.: fehlender Eintrag / falscher Eintrag / Fehler in Eigenschaften / Bedeutung unklar / Mapping (bei Import/Export) unklar...]  
 **Betroffene Codeliste:** [bitte angeben, z.B.: `ArtDerBemerkung`]  
-**Betroffene Codelisten-Version:** [bitte angeben, z.B.: 0.3]  
-**Betroffener Codelisten-Wert:** [bitte angeben, z.B.: `http://xschule.digital/def/xschule/0.3/code/halbjahr/2._halbjahr`]  
+**Betroffene Codelisten-Version:** [bitte angeben, z.B.: 2027-01-01]  
+**Betroffener Codelisten-Wert:** [bitte angeben, z.B.: `http://xschule.digital/def/code/xschule/halbjahr/2_halbjahr`]  
 
 **Beschreibung:**  
 [bitte Beschreibung der Rückmeldung angeben]
